@@ -1,0 +1,8 @@
+root {
+  --font-size-h1: 6px;
+  --font-size-h2: 2px;
+  --font-size-h3: 6px;
+  --font-size-h4: 1px;
+  --font-size-h5: 8px;
+  --font-size-h6: 6px;
+}
