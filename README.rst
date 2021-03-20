@@ -11,10 +11,10 @@ and matures.
 This project originally began as a single package, ``pyansys``, and
 has been expanded to four main packages:
 
-- `PyMAPDL <https://mapdldocs.pyansys.com/>`_ : Pythonic interface to MAPDL
-- `DPF-Core <https://dpfdocs.pyansys.com/>`_ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
-- `DPF-Post <https://postdocs.pyansys.com/>`_ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``DPF-Core``.
-- `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`_: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
+- `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL
+- `DPF-Core <https://dpfdocs.pyansys.com/>`__ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
+- `DPF-Post <https://postdocs.pyansys.com/>`__ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``DPF-Core``.
+- `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
 
 This is an expanding and developing project.  Feel free to post issues
 on the various GitHub pages in this document.  For additional support,
@@ -172,9 +172,9 @@ Resources and Links
 ~~~~~~~~~~~~~~~~~~~
 For more details, see:
 
-  - `DPF-Core Documentation <https://dpfdocs.pyansys.com/>`_
-  - `DPF-Core PyPi <https://pypi.org/project/ansys-dpf-core/>`_
-  - `DPF-Core GitHub <https://github.com/pyansys/DPF-Core>`_
+  - `DPF-Core Documentation <https://dpfdocs.pyansys.com/>`__
+  - `DPF-Core PyPi <https://pypi.org/project/ansys-dpf-core/>`__
+  - `DPF-Core GitHub <https://github.com/pyansys/DPF-Core>`__
 
 
 DPF-Post
@@ -274,7 +274,7 @@ Please see the `PyMAPDL-Reader Documentation
    This module will likely change or be depreciated in the future.
 
    You are encouraged to use the new Data Processing Framework (DPF)
-   modules at `DPF-Core <https://github.com/pyansys/DPF-Core>`_ and
+   modules at `DPF-Core <https://github.com/pyansys/DPF-Core>`__ and
    `DPF-Post <https://github.com/pyansys/DPF-Post>`_ as they provide a
    modern interface to ANSYS result files using a client/server
    interface using the same software used within ANSYS Workbench, but
