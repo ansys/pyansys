@@ -41,7 +41,7 @@ setup(
     author='Ansys',
     maintainer_email='alexander.kaszynski@ansys.com',
     version=__version__,
-    description='Pythonic interfaces Ansys products',
+    description='Pythonic interfaces to Ansys products',
     long_description=open('README.rst').read(),
     long_description_content_type='text/x-rst',
     license='MIT',

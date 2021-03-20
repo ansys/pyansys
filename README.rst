@@ -22,6 +22,17 @@ contact the maintainer of this project at `Alex Kaszynski
 <mailto:alexander.kaszynski@ansys.com>`_ and your requests will be
 routed correctly.
 
+You can also chat on discord at:
+
+.. image:: https://img.shields.io/discord/412182089279209474.svg?label=Discord&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2
+   :target: https://discord.gg/QDaTdx3
+
+Please note that this may or may not be monitored regularly by the
+PyAnsys maintainer(s).  We'll do the best we can to respond, but your
+best bet is to try to post issues on the applicable repository at
+`PyAnsys GitHub <https://github.com/pyansys/>`__.  Look for the
+``Issues`` page within a project's repository page.
+
 .. note::
    To use PyAnsys you need to install the applicable packages for your
    product:
