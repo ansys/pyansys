@@ -43,6 +43,7 @@ setup(
     version=__version__,
     description='Pythonic interfaces Ansys products',
     long_description=open('README.rst').read(),
+    long_description_content_type='text/x-rst',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
