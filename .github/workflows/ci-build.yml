@@ -20,13 +20,13 @@ jobs:
         run: |
           pip install -r requirements_style.txt --disable-pip-version-check
           make
-  
+
       - name: Build Documentation
         run: |
           pip install -r requirements_docs.txt
           make -C docs html
           touch docs/build/html/.nojekyll
-  
+
       - name: Upload Documentation
         uses: actions/upload-artifact@v2.2.1
         with:
@@ -41,9 +41,6 @@ jobs:
           BRANCH: gh-pages
           FOLDER: docs/build/html
           CLEAN: true
-
-        # if: startsWith(github.event.ref, 'refs/tags')
-
 
      - name: Upload to PyPi
        if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
