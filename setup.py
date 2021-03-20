@@ -13,7 +13,7 @@ with io_open(version_file, mode='r') as fd:
     exec(fd.read())
 
 NOTIMPLEMENTED = """
-*** PyAnsys has moved! ***
+*** PyAnsys has moved (and expanded!) ***
 
 To use PyAnsys you need to install the applicable packages for your
 product:
@@ -43,6 +43,7 @@ setup(
     version=__version__,
     description='Pythonic interfaces Ansys products',
     long_description=open('README.rst').read(),
+    long_description_content_type='text/x-rst',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',

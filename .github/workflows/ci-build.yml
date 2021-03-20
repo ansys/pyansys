@@ -1,0 +1,55 @@
+# Build documentation
+name: Documentation Build
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  docs_build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2.1.4
+        with:
+          python-version: 3.8
+
+      - name: Style Check
+        run: |
+          pip install -r requirements_style.txt --disable-pip-version-check
+          make
+
+      - name: Build Documentation
+        run: |
+          pip install -r requirements_docs.txt
+          make -C docs html
+          touch docs/build/html/.nojekyll
+
+      - name: Upload Documentation
+        uses: actions/upload-artifact@v2.2.1
+        with:
+          name: Documentation
+          path: docs/build/html
+          retention-days: 7
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        if: startsWith(github.event.ref, 'refs/tags')
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs/build/html
+          CLEAN: true
+
+      - name: Upload to PyPi
+        if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
+        run: |
+          pip install twine
+          python setup.py sdist
+          twine upload --skip-existing dist/*
+        env:
+          TWINE_USERNAME: "__token__"
+          TWINE_PASSWORD: ${{ secrets.TWINE_TOKEN }}
+          TWINE_REPOSITORY_URL: "https://upload.pypi.org/legacy/"

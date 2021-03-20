@@ -74,6 +74,7 @@ html_theme_options = {
             "icon": "fas fa-box",
         },
     ],
+    "search_bar_position": "navbar"
 }
 
 

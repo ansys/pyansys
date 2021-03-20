@@ -1,6 +1,5 @@
 PyAnsys Project
 ===============
-
 Welcome to the PyAnsys Project!
 
 The PyAnsys project is a collection of Python packages to enable the
@@ -10,7 +9,18 @@ grow to encompass more products and features as the project develops
 and matures.
 
 This project originally began as a single package, ``pyansys``, and
-has been expanded to four main packages and a few supporting packages.
+has been expanded to four main packages:
+
+- `PyMAPDL <https://mapdldocs.pyansys.com/>`_ : Pythonic interface to MAPDL
+- `DPF-Core <https://dpfdocs.pyansys.com/>`_ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
+- `DPF-Post <https://postdocs.pyansys.com/>`_ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``DPF-Core``.
+- `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`_: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
+
+This is an expanding and developing project.  Feel free to post issues
+on the various GitHub pages in this document.  For additional support,
+contact the maintainer of this project at `Alex Kaszynski
+<mailto:alexander.kaszynski@ansys.com>`_ and your requests will be
+routed correctly.
 
 .. note::
    To use PyAnsys you need to install the applicable packages for your
@@ -85,6 +95,8 @@ example, inputting points from a numpy array:
    for i, (x, y, z) in enumerate(points):
        mapdl.k(i + 1, x, y, z)
 
+Resources and Links
+~~~~~~~~~~~~~~~~~~~
 For more details, see:
 
   - `PyMAPDL Documentation <https://mapdldocs.pyansys.com/>`_
@@ -155,8 +167,9 @@ Opening a result file generated from Ansys workbench or MAPDL is as easy as:
          -  incremental_energy
          -  temperature
 
-More Resources
-~~~~~~~~~~~~~~
+
+Resources and Links
+~~~~~~~~~~~~~~~~~~~
 For more details, see:
 
   - `DPF-Core Documentation <https://dpfdocs.pyansys.com/>`_
@@ -224,6 +237,14 @@ Or extract the raw data as a `numpy` array with:
     >>> stress.xx.get_data_at_field(0)
     array([-3.37871094e+10, -4.42471752e+10, -4.13249463e+10, ...,
             3.66408342e+10,  1.40736914e+11,  1.38633557e+11])
+
+Resources and Links
+~~~~~~~~~~~~~~~~~~~
+For more details, see:
+
+  - `DPF-Post Documentation <https://dpfdocs.pyansys.com/>`_
+  - `DPF-Post PyPi <https://pypi.org/project/ansys-dpf-core/>`_
+  - `DPF-Post GitHub <https://github.com/pyansys/DPF-Post>`_
 
 
 Legacy PyMAPDL Reader
@@ -412,6 +433,15 @@ Installation through pip::
 
 You can also visit `pymapdl-reader <https://github.com/pyansys/pymapdl-reader>`_
 to download the source or releases from GitHub.
+
+
+Resources and Links
+~~~~~~~~~~~~~~~~~~~
+For more details, see:
+
+  - `Legacy PyMAPDL Reader Documentation <https://readerdocs.pyansys.com/>`_
+  - `Legacy PyMAPDL Reader PyPi <https://pypi.org/project/ansys-mapdl-reader/>`_
+  - `Legacy PyMAPDL Reader GitHub <https://github.com/pyansys/pymapdl-reader>`_
 
 
 License and Acknowledgments
