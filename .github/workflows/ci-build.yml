@@ -35,12 +35,12 @@ jobs:
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
-        if: startsWith(github.event.ref, 'refs/tags')
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: docs/build/html
           CLEAN: true
+#        if: startsWith(github.event.ref, 'refs/tags')
 
 #      - name: Upload to PyPi
 #        if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
