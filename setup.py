@@ -13,8 +13,6 @@ with io_open(version_file, mode='r') as fd:
     exec(fd.read())
 
 NOTIMPLEMENTED = """
-*** PyAnsys has moved! ***
-
 To use PyAnsys you need to install the applicable packages for your
 product:
 
