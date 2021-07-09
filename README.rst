@@ -120,8 +120,8 @@ For more details, see:
   - `PyMAPDL GitHub <https://github.com/pyansys/pymapdl/>`_
 
 
-PyMAPDL
--------
+PyAEDT
+------
 PyAEDT is intended to consolidate and extend all existing
 functionalities around scripting for Ansys Electronics Desktop (AEDT)
 to allow reuse of existing code, sharing of best practices, and increased
