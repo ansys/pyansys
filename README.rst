@@ -164,6 +164,7 @@ Install this package with:
 
    pip install pyaedt
 
+
 Usage
 ~~~~~
 1. Initialize the ``Desktop`` class with the version of AEDT to use.
@@ -176,6 +177,7 @@ PyAEDT works both inside AEDT and as a standalone application.
 It automatically detects whether it is running in an IronPython or CPython
 environment and initializes the Desktop accordingly. PyAEDT also provides
 advanced error management. Usage examples follow.
+
 
 Explicit Desktop declaration and error management
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -193,11 +195,12 @@ Explicit Desktop declaration and error management
 
     # Desktop is automatically released here.
 
+
 Resources and Links
 ~~~~~~~~~~~~~~~~~~~
 For more details, see:
 
-  - `PyMAPDL Documentation <https://aedtdocs.pyansys.com/>`_
+  - `PyAEDT Documentation <https://aedtdocs.pyansys.com/>`_
   - `PyAEDT PyPi <https://pypi.org/project/pyaedt/>`_
   - `PyAEDT GitHub <https://github.com/pyansys/PyAEDT/>`_
 
