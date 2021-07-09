@@ -12,6 +12,7 @@ This project originally began as a single package, ``pyansys``, and
 has been expanded to four main packages:
 
 - `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL
+- `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT
 - `DPF-Core <https://dpfdocs.pyansys.com/>`__ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
 - `DPF-Post <https://postdocs.pyansys.com/>`__ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``DPF-Core``.
 - `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
@@ -41,10 +42,14 @@ best bet is to try to post issues on the applicable repository at
 
    - ``pip install ansys-mapdl-core``
 
+   AEDT:
+
+   - ``pip install pyaedt``
+
    MAPDL Post-Processing:
 
    - ``pip install ansys-dpf-core``
-   - ``pip install ansys-dpf-reader``
+   - ``pip install ansys-dpf-post``
    - ``pip install ansys-mapdl-reader``
 
 
@@ -113,6 +118,88 @@ For more details, see:
   - `PyMAPDL Documentation <https://mapdldocs.pyansys.com/>`_
   - `PyMAPDL PyPi <https://pypi.org/project/ansys-mapdl-core/>`_
   - `PyMAPDL GitHub <https://github.com/pyansys/pymapdl/>`_
+
+
+PyMAPDL
+-------
+PyAEDT is intended to consolidate and extend all existing
+functionalities around scripting for Ansys Electronics Dekstop (AEDT)
+to allow reuse of existing code, sharing of best practices, and increased
+collaboration. PyAEDT is licensed under the `MIT License
+<https://github.com/pyansys/PyAEDT/blob/main/LICENSE>`_.
+
+PyAEDT includes functionality for interacting with the following AEDT tools and Ansys products:
+
+- HFSS and HFSS 3D Layout
+- Icepak
+- Maxwell 2D/3D and RMxprt
+- Q3D/2DExtractor
+- Mechanical
+- Nexxim
+- Simplorer
+- EDB Database
+
+PyAEDT is a Python library that interacts directly with the AEDT API
+to make scripting simpler for the end user.  It uses an architecture
+that can be reused for all AEDT 3D products (HFSS, Icepak, Maxwell 3D,
+Q3D and Mechanical) as well as 2D tools and circuit tools like
+Nexxim and Simplorer. Finally it provides scripting capabilities in Ansys
+layout tools like HFSS 3D Layout and EDB. Its class and method structures simplify
+operation for the end user while reusing information as much as
+possible across the API.
+
+- All the features of the original module (e.g. pythonic commands,
+  interactive sessions).
+- Remote connections to MAPDL from anywhere via gRPC.
+- Direct access to MAPDL arrays, meshes, and geometry as Python
+  objects.
+- Low level access to the MAPDL solver through APDL math in a
+  ``scipy`` like interface.
+
+Installation
+~~~~~~~~~~~~
+Install this package with:
+
+.. code::
+
+   pip install pyaedt
+
+Usage
+~~~~~
+1. Initialize the ``Desktop`` class with the version of AEDT to use.
+2. Initialize the application to use within AEDT.
+
+
+Connect to Desktop from Python IDE
+----------------------------------
+PyAEDT works both inside AEDT and as a standalone application.
+It automatically detects whether it is running in an IronPython or CPython
+environment and initializes the Desktop accordingly. PyAEDT also provides
+advanced error management. Usage examples follow.
+
+Explicit Desktop declaration and error management
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+    Launch AEDT 2021 R1 in Non-Graphical mode
+
+    from pyaedt import Desktop, Circuit
+    with Desktop("2021.1", NG=True):
+        circuit = Circuit()
+        ...
+        # Any error here will be caught by Desktop.
+        ...
+
+    # Desktop is automatically released here.
+
+Resources and Links
+~~~~~~~~~~~~~~~~~~~
+For more details, see:
+
+  - `PyMAPDL Documentation <https://aedtdocs.pyansys.com/>`_
+  - `PyAEDT PyPi <https://pypi.org/project/pyaedt/>`_
+  - `PyAEDT GitHub <https://github.com/pyansys/PyAEDT/>`_
 
 
 DPF-Core
