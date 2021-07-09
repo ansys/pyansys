@@ -123,7 +123,7 @@ For more details, see:
 PyMAPDL
 -------
 PyAEDT is intended to consolidate and extend all existing
-functionalities around scripting for Ansys Electronics Dekstop (AEDT)
+functionalities around scripting for Ansys Electronics Desktop (AEDT)
 to allow reuse of existing code, sharing of best practices, and increased
 collaboration. PyAEDT is licensed under the `MIT License
 <https://github.com/pyansys/PyAEDT/blob/main/LICENSE>`_.
