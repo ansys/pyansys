@@ -172,7 +172,7 @@ Usage
 
 
 Connect to Desktop from Python IDE
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PyAEDT works both inside AEDT and as a standalone application.
 It automatically detects whether it is running in an IronPython or CPython
 environment and initializes the Desktop accordingly. PyAEDT also provides
