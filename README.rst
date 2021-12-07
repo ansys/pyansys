@@ -45,11 +45,7 @@ best bet is to try to post issues on the applicable repository at
    AEDT:
 
    - ``pip install pyaedt``
-
-   MAPDL Post-Processing:
-
-   - ``pip install ansys-dpf-core``
-   - ``pip install ansys-dpf-post``
+f-post``
    - ``pip install ansys-mapdl-reader``
 
 
