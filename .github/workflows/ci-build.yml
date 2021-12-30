@@ -24,14 +24,14 @@ jobs:
       - name: Build Documentation
         run: |
           pip install -r requirements_docs.txt
-          make -C docs html
-          touch docs/build/html/.nojekyll
+          make -C doc html
+          touch doc/build/html/.nojekyll
 
       - name: Upload Documentation
         uses: actions/upload-artifact@v2.2.1
         with:
           name: Documentation
-          path: docs/build/html
+          path: doc/build/html
           retention-days: 7
 
       - name: Deploy Docs
@@ -40,7 +40,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: docs/build/html
+          FOLDER: doc/build/html
           CLEAN: true
 
       - name: Lint package dist
