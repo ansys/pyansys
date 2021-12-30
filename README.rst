@@ -13,14 +13,14 @@ has been expanded to four main packages:
 
 - `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL
 - `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT
-- `DPF-Core <https://dpfdocs.pyansys.com/>`__ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
-- `DPF-Post <https://postdocs.pyansys.com/>`__ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``DPF-Core``.
+- `PyDPF-Core <https://dpfdocs.pyansys.com/>`__ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
+- `PyDPF-Post <https://postdocs.pyansys.com/>`__ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``ansys-dpf-core``.
 - `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
 
 This is an expanding and developing project.  Feel free to post issues
 on the various GitHub pages in this document.  For additional support,
-contact the maintainer of this project at `Alex Kaszynski
-<mailto:alexander.kaszynski@ansys.com>`_ and your requests will be
+contact the `PyAnsys Support
+<mailto:pyansys.support@ansys.com>`_ and your requests will be
 routed correctly.
 
 You can also chat on discord at:
@@ -205,10 +205,10 @@ For more details, see:
   - `PyAEDT GitHub <https://github.com/pyansys/PyAEDT/>`_
 
 
-DPF-Core
---------
+PyDPF-Core
+----------
 .. note::
-    DPF-Core is available for Ansys 2021R1 and newer.
+    PyDPF-Core is available for Ansys 2021R1 and newer.
 
 The Data Processing Framework (DPF) is designed to provide numerical
 simulation users/engineers with a toolbox for accessing and
@@ -278,10 +278,10 @@ For more details, see:
   - `DPF-Core GitHub <https://github.com/pyansys/DPF-Core>`__
 
 
-DPF-Post
+PyDPF-Post
 --------
 .. note::
-    DPF-Post is available for Ansys 2021R1 and newer.
+    PyDPF-Post is available for Ansys 2021R1 and newer.
 
 The Data Processing Framework (DPF) is designed to provide numerical
 simulation users/engineers with a toolbox for accessing and
@@ -381,7 +381,7 @@ Please see the `PyMAPDL-Reader Documentation
    interface using the same software used within ANSYS Workbench, but
    via a Python client.
 
-Loading and Plotting an ANSYS Archive File
+Loading and Plotting an Ansys Archive File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ANSYS archive files containing solid elements (both legacy and
 modern), can be loaded using Archive and then converted to a vtk
@@ -429,7 +429,7 @@ You can then load this vtk file using ``pyvista`` or another program that uses V
 Loading the Result File
 ~~~~~~~~~~~~~~~~~~~~~~~
 This example reads in binary results from a modal analysis of a beam
-from ANSYS.
+from MAPDL.
 
 .. code:: python
 
@@ -506,7 +506,7 @@ Then generate the plot:
                                window_size=[800, 600], interactive=False)
 
 Stress can be plotted as well using the below code.  The nodal stress
-is computed in the same manner that ANSYS uses by to determine the
+is computed in the same manner that Ansys uses by to determine the
 stress at each node by averaging the stress evaluated at that node for
 all attached elements.  For now, only component stresses can be
 displayed.
@@ -547,9 +547,9 @@ For more details, see:
 
 License and Acknowledgments
 ---------------------------
-All the PyAnsys modules are licensed under the MIT license.
+All the PyAnsys libraries are licensed under the MIT license.
 
-These aforementioned Python modules, make no commercial claim over Ansys
+These aforementioned Python libraries make no commercial claim over Ansys
 whatsoever.  These tools extend the functionality of Ansys products by
 adding a Python interfaces to legally obtained software products
 without changing the core behavior or license of the original
