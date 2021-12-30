@@ -1,5 +1,5 @@
 *~
 *.egg-info
 dist/*
-docs/build/*
+doc/build/*
 .mypy_cache/*
