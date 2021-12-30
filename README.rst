@@ -3,13 +3,10 @@ PyAnsys Project
 Welcome to the PyAnsys Project!
 
 The PyAnsys project is a collection of Python packages to enable the
-usage of Ansys products through Python.  As of now, these packages are
-focused on MAPDL and post processing of MAPDL related files, but will
-grow to encompass more products and features as the project develops
-and matures.
+usage of Ansys products through Python.
 
 This project originally began as a single package, ``pyansys``, and
-has been expanded to four main packages:
+has been expanded to five main packages:
 
 - `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL
 - `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT
@@ -184,16 +181,18 @@ Explicit Desktop declaration and error management
 
 .. code:: python
 
-    Launch AEDT 2021 R1 in Non-Graphical mode
+   Launch AEDT 2021 R1 in Non-Graphical mode
 
-    from pyaedt import Desktop, Circuit
-    with Desktop("2021.1", NG=True):
-        circuit = Circuit()
-        ...
-        # Any error here will be caught by Desktop.
-        ...
+   from pyaedt import Desktop, Circuit
+   with Desktop(specified_version="2021.1",
+                non_graphical=False, new_desktop_session=True,
+                close_on_exit=True, student_version=False):
+       circuit = Circuit()
+       ...
+       # Any error here will be caught by Desktop.
+       ...
 
-    # Desktop is automatically released here.
+   # Desktop is automatically released here.
 
 
 Resources and Links

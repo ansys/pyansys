@@ -28,6 +28,10 @@ MAPDL Post-Processing:
 - ``pip install ansys-dpf-core``
 - ``pip install ansys-dpf-reader``
 
+PyAEDT
+
+- ``pip install pyaedt``
+
 """
 
 # raise an error when installing but not building
@@ -39,7 +43,7 @@ setup(
     name='pyansys',
     packages=['pyansys'],
     author='Ansys',
-    maintainer_email='alexander.kaszynski@ansys.com',
+    maintainer_email='pyansys.maintainers@ansys.com',
     version=__version__,
     description='Pythonic interfaces to Ansys products',
     long_description=open('README.rst').read(),

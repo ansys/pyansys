@@ -1,0 +1,843 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyAnsys Project &#8212; pyansys 0.61.0 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
+    .navbar-light {
+        background-color: black !important;
+    }
+</style>
+
+<div class="container-xl">
+
+    <a class="navbar-brand" href="#">
+    
+      <img src="_static/pyansys-logo-black-cropped.png" class="logo" alt="logo" />
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" >
+        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+      </span>
+    </button>
+    
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="https://mapdldocs.pyansys.com/">PyMAPDL</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="https://dpfdocs.pyansys.com/">DPF-Core</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="https://postdocs.pyansys.com/">DPF-Post</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="https://readerdocs.pyansys.com/">Legacy PyMAPDL Reader</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/pyansys/" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square" style="font-size:24px"></i></span>
+            </a>
+          </li>
+        
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pymapdl">
+   PyMAPDL
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation">
+     Installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#usage">
+     Usage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resources-and-links">
+     Resources and Links
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   PyMAPDL
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Usage
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#connect-to-desktop-from-python-ide">
+   Connect to Desktop from Python IDE
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#explicit-desktop-declaration-and-error-management">
+     Explicit Desktop declaration and error management
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Resources and Links
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dpf-core">
+   DPF-Core
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Usage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Resources and Links
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dpf-post">
+   DPF-Post
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-usage">
+     Example Usage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Resources and Links
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#legacy-pymapdl-reader">
+   Legacy PyMAPDL Reader
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loading-and-plotting-an-ansys-archive-file">
+     Loading and Plotting an ANSYS Archive File
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loading-the-result-file">
+     Loading the Result File
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotting-nodal-results">
+     Plotting Nodal Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id11">
+   Installation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Resources and Links
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license-and-acknowledgments">
+   License and Acknowledgments
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="pyansys-project">
+<h1>PyAnsys Project<a class="headerlink" href="#pyansys-project" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the PyAnsys Project!</p>
+<p>The PyAnsys project is a collection of Python packages to enable the
+usage of Ansys products through Python.  As of now, these packages are
+focused on MAPDL and post processing of MAPDL related files, but will
+grow to encompass more products and features as the project develops
+and matures.</p>
+<p>This project originally began as a single package, <code class="docutils literal notranslate"><span class="pre">pyansys</span></code>, and
+has been expanded to four main packages:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mapdldocs.pyansys.com/">PyMAPDL</a> : Pythonic interface to MAPDL</p></li>
+<li><p><a class="reference external" href="https://aedtdocs.pyansys.com/">PyAEDT</a> : Pythonic interface to AEDT</p></li>
+<li><p><a class="reference external" href="https://dpfdocs.pyansys.com/">DPF-Core</a> : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.</p></li>
+<li><p><a class="reference external" href="https://postdocs.pyansys.com/">DPF-Post</a> : Streamlined and simplified DPF Post Processing.  Higher level package and uses <code class="docutils literal notranslate"><span class="pre">DPF-Core</span></code>.</p></li>
+<li><p><a class="reference external" href="https://readerdocs.pyansys.com/">Legacy PyMAPDL Reader</a>: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.</p></li>
+</ul>
+<p>This is an expanding and developing project.  Feel free to post issues
+on the various GitHub pages in this document.  For additional support,
+contact the maintainer of this project at <a class="reference external" href="mailto:alexander&#46;kaszynski&#37;&#52;&#48;ansys&#46;com">Alex Kaszynski</a> and your requests will be
+routed correctly.</p>
+<p>You can also chat on discord at:</p>
+<a class="reference external image-reference" href="https://discord.gg/QDaTdx3"><img alt="https://img.shields.io/discord/412182089279209474.svg?label=Discord&amp;logo=discord&amp;logoColor=ffffff&amp;color=7389D8&amp;labelColor=6A7EC2" src="https://img.shields.io/discord/412182089279209474.svg?label=Discord&amp;logo=discord&amp;logoColor=ffffff&amp;color=7389D8&amp;labelColor=6A7EC2" /></a>
+<p>Please note that this may or may not be monitored regularly by the
+PyAnsys maintainer(s).  We’ll do the best we can to respond, but your
+best bet is to try to post issues on the applicable repository at
+<a class="reference external" href="https://github.com/pyansys/">PyAnsys GitHub</a>.  Look for the
+<code class="docutils literal notranslate"><span class="pre">Issues</span></code> page within a project’s repository page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To use PyAnsys you need to install the applicable packages for your
+product:</p>
+<p>MAPDL:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ansys-mapdl-core</span></code></p></li>
+</ul>
+<p>AEDT:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pyaedt</span></code></p></li>
+</ul>
+<p>MAPDL Post-Processing:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ansys-dpf-core</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ansys-dpf-post</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ansys-mapdl-reader</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="pymapdl">
+<h2>PyMAPDL<a class="headerlink" href="#pymapdl" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">PyAnsys</span></code> project supports Pythonic access to MAPDL to be able
+to communicate with the MAPDL process directly from Python.  The
+original <code class="docutils literal notranslate"><span class="pre">PyAnsys</span></code> project was limited to either the console or
+CORBA interface, and the latest <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-core</span></code> package enables a
+more comprehensive interface with MAPDL and supports:</p>
+<ul class="simple">
+<li><p>All the features of the original module (e.g. pythonic commands,
+interactive sessions).</p></li>
+<li><p>Remote connections to MAPDL from anywhere via gRPC.</p></li>
+<li><p>Direct access to MAPDL arrays, meshes, and geometry as Python
+objects.</p></li>
+<li><p>Low level access to the MAPDL solver through APDL math in a
+<code class="docutils literal notranslate"><span class="pre">scipy</span></code> like interface.</p></li>
+</ul>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>Install this package with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">mapdl</span><span class="o">-</span><span class="n">core</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>Here’s a brief example of how PyMAPDL works:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl.core</span> <span class="kn">import</span> <span class="n">launch_mapdl</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span> <span class="o">=</span> <span class="n">launch_mapdl</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">mapdl</span><span class="p">)</span>
+
+<span class="go">Product:             ANSYS Mechanical Enterprise</span>
+<span class="go">MAPDL Version:       RELEASE  2021 R1           BUILD 21.0</span>
+<span class="go">PyMAPDL Version:     Version: 0.57.0</span>
+</pre></div>
+</div>
+<p>MAPDL functions can be called directly from an <code class="docutils literal notranslate"><span class="pre">Mapdl</span></code> instance in a
+pythonic manner.  This is to simplify calling MAPDL, especially when
+inputs are variables within Python.  For example, the following two
+commands are equivalent:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">mapdl</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">&#39;K, 1, 0, 0, 0&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This approach takes care of the string formatting for you.  For
+example, inputting points from a numpy array:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># make 10 random keypoints in ANSYS</span>
+<span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">points</span><span class="p">):</span>
+    <span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="resources-and-links">
+<h3>Resources and Links<a class="headerlink" href="#resources-and-links" title="Permalink to this headline">¶</a></h3>
+<p>For more details, see:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://mapdldocs.pyansys.com/">PyMAPDL Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-mapdl-core/">PyMAPDL PyPi</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pymapdl/">PyMAPDL GitHub</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>PyMAPDL<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>PyAEDT is intended to consolidate and extend all existing
+functionalities around scripting for Ansys Electronics Desktop (AEDT)
+to allow reuse of existing code, sharing of best practices, and increased
+collaboration. PyAEDT is licensed under the <a class="reference external" href="https://github.com/pyansys/PyAEDT/blob/main/LICENSE">MIT License</a>.</p>
+<p>PyAEDT includes functionality for interacting with the following AEDT tools and Ansys products:</p>
+<ul class="simple">
+<li><p>HFSS and HFSS 3D Layout</p></li>
+<li><p>Icepak</p></li>
+<li><p>Maxwell 2D/3D and RMxprt</p></li>
+<li><p>Q3D/2DExtractor</p></li>
+<li><p>Mechanical</p></li>
+<li><p>Nexxim</p></li>
+<li><p>Simplorer</p></li>
+<li><p>EDB Database</p></li>
+</ul>
+<p>PyAEDT is a Python library that interacts directly with the AEDT API
+to make scripting simpler for the end user.  It uses an architecture
+that can be reused for all AEDT 3D products (HFSS, Icepak, Maxwell 3D,
+Q3D and Mechanical) as well as 2D tools and circuit tools like
+Nexxim and Simplorer. Finally it provides scripting capabilities in Ansys
+layout tools like HFSS 3D Layout and EDB. Its class and method structures simplify
+operation for the end user while reusing information as much as
+possible across the API.</p>
+<ul class="simple">
+<li><p>All the features of the original module (e.g. pythonic commands,
+interactive sessions).</p></li>
+<li><p>Remote connections to MAPDL from anywhere via gRPC.</p></li>
+<li><p>Direct access to MAPDL arrays, meshes, and geometry as Python
+objects.</p></li>
+<li><p>Low level access to the MAPDL solver through APDL math in a
+<code class="docutils literal notranslate"><span class="pre">scipy</span></code> like interface.</p></li>
+</ul>
+<div class="section" id="id2">
+<h3>Installation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Install this package with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pyaedt</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Usage<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Initialize the <code class="docutils literal notranslate"><span class="pre">Desktop</span></code> class with the version of AEDT to use.</p></li>
+<li><p>Initialize the application to use within AEDT.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="connect-to-desktop-from-python-ide">
+<h2>Connect to Desktop from Python IDE<a class="headerlink" href="#connect-to-desktop-from-python-ide" title="Permalink to this headline">¶</a></h2>
+<p>PyAEDT works both inside AEDT and as a standalone application.
+It automatically detects whether it is running in an IronPython or CPython
+environment and initializes the Desktop accordingly. PyAEDT also provides
+advanced error management. Usage examples follow.</p>
+<div class="section" id="explicit-desktop-declaration-and-error-management">
+<h3>Explicit Desktop declaration and error management<a class="headerlink" href="#explicit-desktop-declaration-and-error-management" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Launch</span> <span class="n">AEDT</span> <span class="mi">2021</span> <span class="n">R1</span> <span class="ow">in</span> <span class="n">Non</span><span class="o">-</span><span class="n">Graphical</span> <span class="n">mode</span>
+
+<span class="kn">from</span> <span class="nn">pyaedt</span> <span class="kn">import</span> <span class="n">Desktop</span><span class="p">,</span> <span class="n">Circuit</span>
+<span class="k">with</span> <span class="n">Desktop</span><span class="p">(</span><span class="s2">&quot;2021.1&quot;</span><span class="p">,</span> <span class="n">NG</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">circuit</span> <span class="o">=</span> <span class="n">Circuit</span><span class="p">()</span>
+    <span class="o">...</span>
+    <span class="c1"># Any error here will be caught by Desktop.</span>
+    <span class="o">...</span>
+
+<span class="c1"># Desktop is automatically released here.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Resources and Links<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>For more details, see:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://aedtdocs.pyansys.com/">PyAEDT Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/pyaedt/">PyAEDT PyPi</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/PyAEDT/">PyAEDT GitHub</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="dpf-core">
+<h2>DPF-Core<a class="headerlink" href="#dpf-core" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>DPF-Core is available for Ansys 2021R1 and newer.</p>
+</div>
+<p>The Data Processing Framework (DPF) is designed to provide numerical
+simulation users/engineers with a toolbox for accessing and
+transforming simulation data. DPF can access data from solver result
+files as well as several neutral formats (csv, hdf5, vtk,
+etc.). Various operators are available allowing the manipulation and
+the transformation of this data.</p>
+<p>DPF is a workflow-based framework which allows simple and/or complex
+evaluations by chaining operators. The data in DPF is defined based on
+physics agnostic mathematical quantities described in a
+self-sufficient entity called field. This allows DPF to be a modular
+and easy to use tool with a large range of capabilities. It’s a
+product designed to handle large amount of data.</p>
+<p>The Python <code class="docutils literal notranslate"><span class="pre">ansys.dpf.core</span></code> module provides a Python interface to
+the powerful DPF framework enabling rapid post-processing of a variety
+of Ansys file formats and physics solutions without ever leaving a
+Python environment.</p>
+<div class="section" id="id5">
+<h3>Installation<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Install this repository with:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ansys-dpf-core</span>
+<span class="pre">`</span></code></p>
+</div>
+<div class="section" id="id6">
+<h3>Usage<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Provided you have Ansys 2021R1 installed, a DPF server will start
+automatically once you start using DPF from python.</p>
+<p>Opening a result file generated from Ansys workbench or MAPDL is as easy as:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.dpf.core</span> <span class="kn">import</span> <span class="n">Model</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+<span class="go">DPF Model</span>
+<span class="go">------------------------------</span>
+<span class="go">Static analysis</span>
+<span class="go">Unit system: Metric (m, kg, N, s, V, A)</span>
+<span class="go">Physics Type: Mecanic</span>
+<span class="go">Available results:</span>
+<span class="go">     -  displacement</span>
+<span class="go">     -  element_nodal_forces</span>
+<span class="go">     -  volume</span>
+<span class="go">     -  energy_stiffness_matrix</span>
+<span class="go">     -  hourglass_energy</span>
+<span class="go">     -  thermal_dissipation_energy</span>
+<span class="go">     -  kinetic_energy</span>
+<span class="go">     -  co_energy</span>
+<span class="go">     -  incremental_energy</span>
+<span class="go">     -  temperature</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Resources and Links<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>For more details, see:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://dpfdocs.pyansys.com/">DPF-Core Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-dpf-core/">DPF-Core PyPi</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/DPF-Core">DPF-Core GitHub</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="dpf-post">
+<h2>DPF-Post<a class="headerlink" href="#dpf-post" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>DPF-Post is available for Ansys 2021R1 and newer.</p>
+</div>
+<p>The Data Processing Framework (DPF) is designed to provide numerical
+simulation users/engineers with a toolbox for accessing and
+transforming simulation data. DPF can access data from solver result
+files as well as several neutral formats (csv, hdf5, vtk,
+etc.). Various operators are available allowing the manipulation and
+the transformation of this data.</p>
+<p>The Python <cite>ansys.dpf.post</cite> package provides an simplified Python
+interface to DPF, thus enabling rapid post-processing without
+leaving a Python environment.</p>
+<p>This module leverages the DPF-Core project’s <code class="docutils literal notranslate"><span class="pre">ansys.dpf.core</span></code>
+package, which can be used to build more advanced and customized
+workflows using Ansys’s DPF.</p>
+<div class="section" id="id8">
+<h3>Installation<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Install this repository with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">dpf</span><span class="o">-</span><span class="n">post</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<p>Provided you have ANSYS 2021R1 installed, a DPF server will start
+automatically once you start using DPF-Post.  Should you wish to use
+DPF-Post without 2020R1, see the <a class="reference external" href="https://dpfdocs.pyansys.com/getting_started/docker.html">DPF Docker Documentation</a>.</p>
+<p>Opening and plotting a result file generated from Ansys workbench or
+MAPDL is as easy as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.dpf</span> <span class="kn">import</span> <span class="n">post</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.dpf.post</span> <span class="kn">import</span> <span class="n">examples</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">solution</span> <span class="o">=</span> <span class="n">post</span><span class="o">.</span><span class="n">load_solution</span><span class="p">(</span><span class="n">examples</span><span class="o">.</span><span class="n">multishells_rst</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stress</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">stress</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stress</span><span class="o">.</span><span class="n">xx</span><span class="o">.</span><span class="n">plot_contour</span><span class="p">(</span><span class="n">show_edges</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-default" id="id13">
+<a class="reference internal image-reference" href="https://github.com/pyansys/dpf-post/raw/master/docs/source/images/main_example.png"><img alt="https://github.com/pyansys/dpf-post/raw/master/docs/source/images/main_example.png" src="https://github.com/pyansys/dpf-post/raw/master/docs/source/images/main_example.png" style="width: 400pt;" /></a>
+<p class="caption"><span class="caption-text">Example Stress Plot</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+<p>Or extract the raw data as a <cite>numpy</cite> array with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">stress</span><span class="o">.</span><span class="n">xx</span><span class="o">.</span><span class="n">get_data_at_field</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">array([-3.37871094e+10, -4.42471752e+10, -4.13249463e+10, ...,</span>
+<span class="go">        3.66408342e+10,  1.40736914e+11,  1.38633557e+11])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Resources and Links<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>For more details, see:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://dpfdocs.pyansys.com/">DPF-Post Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-dpf-core/">DPF-Post PyPi</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/DPF-Post">DPF-Post GitHub</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="legacy-pymapdl-reader">
+<h2>Legacy PyMAPDL Reader<a class="headerlink" href="#legacy-pymapdl-reader" title="Permalink to this headline">¶</a></h2>
+<p>This is the legacy module for reading in binary and ASCII files
+generated from MAPDL.</p>
+<p>This Python module allows you to extract data directly from binary
+ANSYS v14.5+ files and to display or animate them rapidly using a
+straightforward API coupled with C libraries based on header files
+provided by ANSYS.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-reader</span></code> module supports the following formats:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">*.rst</span></code> - Structural analysis result file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*.rth</span></code> - Thermal analysis result file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*.emat</span></code> - Element matrix data file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*.full</span></code> - Full stiffness-mass matrix file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*.cdb</span></code> or <code class="docutils literal notranslate"><span class="pre">*.dat</span></code> - MAPDL ASCII block archive and
+Mechanical Workbench input files</p></li>
+</ul>
+</div></blockquote>
+<p>Please see the <a class="reference external" href="https://readerdocs.pyansys.com">PyMAPDL-Reader Documentation</a> for the full documentation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This module will likely change or be depreciated in the future.</p>
+<p>You are encouraged to use the new Data Processing Framework (DPF)
+modules at <a class="reference external" href="https://github.com/pyansys/DPF-Core">DPF-Core</a> and
+<a class="reference external" href="https://github.com/pyansys/DPF-Post">DPF-Post</a> as they provide a
+modern interface to ANSYS result files using a client/server
+interface using the same software used within ANSYS Workbench, but
+via a Python client.</p>
+</div>
+<div class="section" id="loading-and-plotting-an-ansys-archive-file">
+<h3>Loading and Plotting an ANSYS Archive File<a class="headerlink" href="#loading-and-plotting-an-ansys-archive-file" title="Permalink to this headline">¶</a></h3>
+<p>ANSYS archive files containing solid elements (both legacy and
+modern), can be loaded using Archive and then converted to a vtk
+object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
+<span class="kn">from</span> <span class="nn">ansys.mapdl.reader</span> <span class="kn">import</span> <span class="n">examples</span>
+
+<span class="c1"># Sample *.cdb</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="n">examples</span><span class="o">.</span><span class="n">hexarchivefile</span>
+
+<span class="c1"># Read ansys archive file</span>
+<span class="n">archive</span> <span class="o">=</span> <span class="n">pyansys</span><span class="o">.</span><span class="n">Archive</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+<span class="c1"># Print raw data from cdb</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">archive</span><span class="o">.</span><span class="n">raw</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">archive</span><span class="o">.</span><span class="n">raw</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+
+<span class="c1"># Create a vtk unstructured grid from the raw data and plot it</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">archive</span><span class="o">.</span><span class="n">parse_vtk</span><span class="p">(</span><span class="n">force_linear</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># write this as a vtk xml file</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;hex.vtu&#39;</span><span class="p">)</span>
+
+<span class="c1"># or as a vtk binary</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;hex.vtk&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<img alt="Hexahedral beam" src="https://github.com/pyansys/pymapdl-reader/raw/master/docs/source/images/hexbeam_small.png" />
+</div>
+<p>You can then load this vtk file using <code class="docutils literal notranslate"><span class="pre">pyvista</span></code> or another program that uses VTK.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load this from vtk</span>
+<span class="kn">import</span> <span class="nn">pyvista</span> <span class="k">as</span> <span class="nn">pv</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">UnstructuredGrid</span><span class="p">(</span><span class="s1">&#39;hex.vtu&#39;</span><span class="p">)</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="loading-the-result-file">
+<h3>Loading the Result File<a class="headerlink" href="#loading-the-result-file" title="Permalink to this headline">¶</a></h3>
+<p>This example reads in binary results from a modal analysis of a beam
+from ANSYS.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the reader from pyansys</span>
+<span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
+<span class="kn">from</span> <span class="nn">ansys.mapdl.reader</span> <span class="kn">import</span> <span class="n">examples</span>
+
+<span class="c1"># Sample result file</span>
+<span class="n">rstfile</span> <span class="o">=</span> <span class="n">examples</span><span class="o">.</span><span class="n">rstfile</span>
+
+<span class="c1"># Create result object by loading the result file</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">pyansys</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="n">rstfile</span><span class="p">)</span>
+
+<span class="c1"># Beam natural frequencies</span>
+<span class="n">freqs</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">time_values</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
+<span class="go">[ 7366.49503969  7366.49503969 11504.89523664 17285.70459456</span>
+<span class="go">  17285.70459457 20137.19299035]</span>
+</pre></div>
+</div>
+<p>Get the 1st bending mode shape.  Results are ordered based on the
+sorted node numbering.  Note that results are zero indexed</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">disp</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">disp</span><span class="p">)</span>
+<span class="go">[[ 2.89623914e+01 -2.82480489e+01 -3.09226692e-01]</span>
+<span class="go"> [ 2.89489249e+01 -2.82342416e+01  2.47536161e+01]</span>
+<span class="go"> [ 2.89177130e+01 -2.82745126e+01  6.05151053e+00]</span>
+<span class="go"> [ 2.88715048e+01 -2.82764960e+01  1.22913304e+01]</span>
+<span class="go"> [ 2.89221536e+01 -2.82479511e+01  1.84965333e+01]</span>
+<span class="go"> [ 2.89623914e+01 -2.82480489e+01  3.09226692e-01]</span>
+<span class="go"> ...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plotting-nodal-results">
+<h3>Plotting Nodal Results<a class="headerlink" href="#plotting-nodal-results" title="Permalink to this headline">¶</a></h3>
+<p>As the geometry of the model is contained within the result file, you
+can plot the result without having to load any additional geometry.
+Below, displacement for the first mode of the modal analysis beam is
+plotted using <code class="docutils literal notranslate"><span class="pre">VTK</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot the displacement of Mode 0 in the x direction</span>
+<span class="n">result</span><span class="o">.</span><span class="n">plot_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Displacement&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<img alt="https://github.com/pyansys/pymapdl-reader/raw/master/docs/source/images/hexbeam_disp_small.png" src="https://github.com/pyansys/pymapdl-reader/raw/master/docs/source/images/hexbeam_disp_small.png" />
+</div>
+<p>Results can be plotted non-interactively and screenshots saved by
+setting up the camera and saving the result.  This can help with the
+visualization and post-processing of a batch result.</p>
+<p>First, get the camera position from an interactive plot:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cpos</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">plot_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">cpos</span><span class="p">)</span>
+<span class="go">[(5.2722879880979345, 4.308737919176047, 10.467694436036483),</span>
+<span class="go"> (0.5, 0.5, 2.5),</span>
+<span class="go"> (-0.2565529433509593, 0.9227952809887077, -0.28745339908049733)]</span>
+</pre></div>
+</div>
+<p>Then generate the plot:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">plot_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Displacement&#39;</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="n">cpos</span><span class="p">,</span>
+                           <span class="n">screenshot</span><span class="o">=</span><span class="s1">&#39;hexbeam_disp.png&#39;</span><span class="p">,</span>
+                           <span class="n">window_size</span><span class="o">=</span><span class="p">[</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">],</span> <span class="n">interactive</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Stress can be plotted as well using the below code.  The nodal stress
+is computed in the same manner that ANSYS uses by to determine the
+stress at each node by averaging the stress evaluated at that node for
+all attached elements.  For now, only component stresses can be
+displayed.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Display node averaged stress in x direction for result 6</span>
+<span class="n">result</span><span class="o">.</span><span class="n">plot_nodal_stress</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Sx&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-default">
+<img alt="https://github.com/pyansys/pymapdl-reader/raw/master/docs/source/images/beam_stress_small.png" src="https://github.com/pyansys/pymapdl-reader/raw/master/docs/source/images/beam_stress_small.png" />
+</div>
+<p>Nodal stress can also be generated non-interactively with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">plot_nodal_stress</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Sx&#39;</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="n">cpos</span><span class="p">,</span> <span class="n">screenshot</span><span class="o">=</span><span class="n">beam_stress</span><span class="o">.</span><span class="n">png</span><span class="p">,</span>
+                       <span class="n">window_size</span><span class="o">=</span><span class="p">[</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">],</span> <span class="n">interactive</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id11">
+<h2>Installation<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>Installation through pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">mapdl</span><span class="o">-</span><span class="n">reader</span>
+</pre></div>
+</div>
+<p>You can also visit <a class="reference external" href="https://github.com/pyansys/pymapdl-reader">pymapdl-reader</a>
+to download the source or releases from GitHub.</p>
+<div class="section" id="id12">
+<h3>Resources and Links<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>For more details, see:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://readerdocs.pyansys.com/">Legacy PyMAPDL Reader Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-mapdl-reader/">Legacy PyMAPDL Reader PyPi</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pymapdl-reader">Legacy PyMAPDL Reader GitHub</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="license-and-acknowledgments">
+<h2>License and Acknowledgments<a class="headerlink" href="#license-and-acknowledgments" title="Permalink to this headline">¶</a></h2>
+<p>All the PyAnsys modules are licensed under the MIT license.</p>
+<p>These aforementioned Python modules, make no commercial claim over Ansys
+whatsoever.  These tools extend the functionality of Ansys products by
+adding a Python interfaces to legally obtained software products
+without changing the core behavior or license of the original
+software.</p>
+<p>To get a copy of Ansys, please visit <a class="reference external" href="https://www.ansys.com/">Ansys</a>.</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
