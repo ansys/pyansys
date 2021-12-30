@@ -278,7 +278,7 @@ For more details, see:
 
 
 PyDPF-Post
---------
+----------
 .. note::
     PyDPF-Post is available for Ansys 2021R1 and newer.
 
