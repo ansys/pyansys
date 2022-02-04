@@ -7,7 +7,7 @@
    DPF-Core <https://dpfdocs.pyansys.com/>
    DPF-Post <https://postdocs.pyansys.com/>
    Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>
-
+   Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>
 
 ..
    Simply reuse the README.rst to avoid duplication
