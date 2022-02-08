@@ -6,7 +6,7 @@ The PyAnsys project is a collection of Python packages to enable the
 usage of Ansys products through Python.
 
 This project originally began as a single package, ``pyansys``, and
-has been expanded to five main packages:
+has been expanded to six main packages:
 
 - `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL
 - `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT
@@ -546,10 +546,10 @@ For more details, see:
 
 
 Granta MI BoM Analytics
-----------------------
-The Granta MI Restricted Substances solution includes BoM Analytic Services, 
-which providdes a REST API to allow external applications and tools to determine
- the compliance of materials and products against various legislations. This
+-----------------------
+The Granta MI Restricted Substances solution includes BoM Analytics Services, 
+which provides a REST API to allow external applications and tools to determine
+the compliance of materials and products against various legislations. This
 package provides a Pythonic interface to the BoM Analytic Services API.
 
 Installation
@@ -593,6 +593,14 @@ For more details, see:
   - `Granta MI BoM Analytics Documentation <https://grantami.docs.pyansys.com/>`_
   - `Granta MI BoM Analytics PyPi <https://pypi.org/project/ansys-grantami-bomanalytics/>`_
   - `Granta MI BoM Analytics GitHub <https://github.com/pyansys/grantami-bomanalytics/>`_
+  
+Shared Components
+-----------------
+The PyAnsys project publishes and consumes shared components which enable
+interoperability and minimise maintenance burden for our other packages.
+
+For more details and a list of the available shared components see the
+`Shared Components Documentation <https://shared.docs.pyansys.com>`_.
 
 
 License and Acknowledgments
