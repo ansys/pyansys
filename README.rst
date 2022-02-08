@@ -527,7 +527,7 @@ Nodal stress can also be generated non-interactively with:
                            window_size=[800, 600], interactive=False)
 
 Installation
-------------
+~~~~~~~~~~~~
 Installation through pip::
 
     pip install ansys-mapdl-reader
@@ -570,7 +570,8 @@ Here's a brief example of how this package works:
 
     >>> from pprint import pprint
     >>> from ansys.grantami.bomanalytics import Connection, queries
-    >>> cxn = Connection(servicelayer_url='http://localhost/mi_servicelayer').with_autologon().connect()
+    >>> cxn = Connection(servicelayer_url="http://localhost/mi_servicelayer") \
+    ...     .with_autologon().connect()
     >>> query = (
     ...     queries.MaterialImpactedSubstancesQuery()
     ...     .with_material_ids(['plastic-abs-pvc-flame'])
