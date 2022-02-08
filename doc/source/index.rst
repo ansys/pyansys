@@ -7,6 +7,8 @@
    DPF-Core <https://dpfdocs.pyansys.com/>
    DPF-Post <https://postdocs.pyansys.com/>
    Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>
+   Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>
+   Shared Components <https://shared.docs.pyansys.com/>
 
 
 ..
