@@ -6,14 +6,13 @@ The PyAnsys project is a collection of Python packages to enable the
 usage of Ansys products through Python.
 
 This project originally began as a single package, ``pyansys``, and
-has been expanded to six main packages:
+has been expanded to five main packages:
 
 - `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL
 - `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT
 - `PyDPF-Core <https://dpfdocs.pyansys.com/>`__ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
 - `PyDPF-Post <https://postdocs.pyansys.com/>`__ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``ansys-dpf-core``.
 - `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
-- `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`__: Pythonic interface to Granta MI BoM Analytic Services.
 
 This is an expanding and developing project.  Feel free to post issues
 on the various GitHub pages in this document.  For additional support,
@@ -545,56 +544,6 @@ For more details, see:
   - `Legacy PyMAPDL Reader GitHub <https://github.com/pyansys/pymapdl-reader>`_
 
 
-Granta MI BoM Analytics
------------------------
-The Granta MI Restricted Substances solution includes BoM Analytics Services, 
-which provides a REST API to allow external applications and tools to determine
-the compliance of materials and products against various legislations. This
-package provides a Pythonic interface to the BoM Analytic Services API.
-
-Installation
-~~~~~~~~~~~~
-Install this package with:
-
-.. code::
-
-   pip install ansys-grantami-bomanalytics
-
-Usage
-~~~~~
-Here's a brief example of how this package works:
-
-.. code:: python
-
-    # Connect and query the Granta service.
-
-    >>> from pprint import pprint
-    >>> from ansys.grantami.bomanalytics import Connection, queries
-    >>> cxn = Connection(servicelayer_url="http://localhost/mi_servicelayer") \
-    ...     .with_autologon().connect()
-    >>> query = (
-    ...     queries.MaterialImpactedSubstancesQuery()
-    ...     .with_material_ids(['plastic-abs-pvc-flame'])
-    ...     .with_legislations(['REACH - The Candidate List'])
-    ... )
-
-    # Print out the result from the query.
-
-    >>> result = cxn.run(query)
-    >>> pprint(result.impacted_substances)
-    [<ImpactedSubstance: {"cas_number": 10108-64-2, "percent_amount": 1.9}>,
-     <ImpactedSubstance: {"cas_number": 107-06-2, "percent_amount": None}>,
-     <ImpactedSubstance: {"cas_number": 115-96-8, "percent_amount": 15.0}>,
-    ...
-
-Resources and Links
-~~~~~~~~~~~~~~~~~~~
-For more details, see:
-
-  - `Granta MI BoM Analytics Documentation <https://grantami.docs.pyansys.com/>`_
-  - `Granta MI BoM Analytics PyPi <https://pypi.org/project/ansys-grantami-bomanalytics/>`_
-  - `Granta MI BoM Analytics GitHub <https://github.com/pyansys/grantami-bomanalytics/>`_
-  
 Shared Components
 -----------------
 The PyAnsys project publishes and consumes shared components which enable
