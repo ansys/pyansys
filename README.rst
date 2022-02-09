@@ -526,7 +526,7 @@ Nodal stress can also be generated non-interactively with:
                            window_size=[800, 600], interactive=False)
 
 Installation
-------------
+~~~~~~~~~~~~
 Installation through pip::
 
     pip install ansys-mapdl-reader
@@ -542,6 +542,15 @@ For more details, see:
   - `Legacy PyMAPDL Reader Documentation <https://readerdocs.pyansys.com/>`_
   - `Legacy PyMAPDL Reader PyPi <https://pypi.org/project/ansys-mapdl-reader/>`_
   - `Legacy PyMAPDL Reader GitHub <https://github.com/pyansys/pymapdl-reader>`_
+
+
+Shared Components
+-----------------
+The PyAnsys project publishes and consumes shared software components. These enable
+interoperability between PyAnsys packages and minimizes maintenance burden.
+
+For more details and a list of the available shared components see the
+`Shared Components Documentation <https://shared.docs.pyansys.com>`_.
 
 
 License and Acknowledgments
