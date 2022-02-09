@@ -546,8 +546,8 @@ For more details, see:
 
 Shared Components
 -----------------
-The PyAnsys project publishes and consumes shared components which enable
-interoperability and minimise maintenance burden for our other packages.
+The PyAnsys project publishes and consumes shared software components. These enable
+interoperability between PyAnsys packages and minimizes maintenance burden.
 
 For more details and a list of the available shared components see the
 `Shared Components Documentation <https://shared.docs.pyansys.com>`_.
