@@ -114,7 +114,7 @@ Resources and Links
 For more details, see:
 
   - `PyMAPDL Documentation <https://mapdldocs.pyansys.com/>`_
-  - `PyMAPDL PyPi <https://pypi.org/project/ansys-mapdl-core/>`_
+  - `PyMAPDL PyPI <https://pypi.org/project/ansys-mapdl-core/>`_
   - `PyMAPDL GitHub <https://github.com/pyansys/pymapdl/>`_
 
 
@@ -201,7 +201,7 @@ Resources and Links
 For more details, see:
 
   - `PyAEDT Documentation <https://aedtdocs.pyansys.com/>`_
-  - `PyAEDT PyPi <https://pypi.org/project/pyaedt/>`_
+  - `PyAEDT PyPI <https://pypi.org/project/pyaedt/>`_
   - `PyAEDT GitHub <https://github.com/pyansys/PyAEDT/>`_
 
 
@@ -274,7 +274,7 @@ Resources and Links
 For more details, see:
 
   - `DPF-Core Documentation <https://dpfdocs.pyansys.com/>`__
-  - `DPF-Core PyPi <https://pypi.org/project/ansys-dpf-core/>`__
+  - `DPF-Core PyPI <https://pypi.org/project/ansys-dpf-core/>`__
   - `DPF-Core GitHub <https://github.com/pyansys/DPF-Core>`__
 
 
@@ -344,7 +344,7 @@ Resources and Links
 For more details, see:
 
   - `DPF-Post Documentation <https://dpfdocs.pyansys.com/>`_
-  - `DPF-Post PyPi <https://pypi.org/project/ansys-dpf-core/>`_
+  - `DPF-Post PyPI <https://pypi.org/project/ansys-dpf-core/>`_
   - `DPF-Post GitHub <https://github.com/pyansys/DPF-Post>`_
 
 
@@ -541,7 +541,7 @@ Resources and Links
 For more details, see:
 
   - `Legacy PyMAPDL Reader Documentation <https://readerdocs.pyansys.com/>`_
-  - `Legacy PyMAPDL Reader PyPi <https://pypi.org/project/ansys-mapdl-reader/>`_
+  - `Legacy PyMAPDL Reader PyPI <https://pypi.org/project/ansys-mapdl-reader/>`_
   - `Legacy PyMAPDL Reader GitHub <https://github.com/pyansys/pymapdl-reader>`_
 
 
@@ -591,7 +591,7 @@ Resources and Links
 For more details, see:
 
   - `Granta MI BoM Analytics Documentation <https://grantami.docs.pyansys.com/>`_
-  - `Granta MI BoM Analytics PyPi <https://pypi.org/project/ansys-grantami-bomanalytics/>`_
+  - `Granta MI BoM Analytics PyPI <https://pypi.org/project/ansys-grantami-bomanalytics/>`_
   - `Granta MI BoM Analytics GitHub <https://github.com/pyansys/grantami-bomanalytics/>`_
 
 
