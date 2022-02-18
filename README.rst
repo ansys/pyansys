@@ -546,7 +546,7 @@ For more details, see:
 
 
 Granta MI BoM Analytics
-----------------------
+-----------------------
 The Granta MI Restricted Substances solution includes BoM Analytic Services, 
 which providdes a REST API to allow external applications and tools to determine
  the compliance of materials and products against various legislations. This
