@@ -527,7 +527,7 @@ Nodal stress can also be generated non-interactively with:
                            window_size=[800, 600], interactive=False)
 
 Installation
-------------
+~~~~~~~~~~~~
 Installation through pip::
 
     pip install ansys-mapdl-reader
@@ -593,6 +593,15 @@ For more details, see:
   - `Granta MI BoM Analytics Documentation <https://grantami.docs.pyansys.com/>`_
   - `Granta MI BoM Analytics PyPi <https://pypi.org/project/ansys-grantami-bomanalytics/>`_
   - `Granta MI BoM Analytics GitHub <https://github.com/pyansys/grantami-bomanalytics/>`_
+
+
+Shared Components
+-----------------
+The PyAnsys project publishes and consumes shared software components. These enable
+interoperability between PyAnsys packages and minimizes maintenance burden.
+
+For more details and a list of the available shared components see the
+`Shared Components Documentation <https://shared.docs.pyansys.com>`_.
 
 
 License and Acknowledgments
