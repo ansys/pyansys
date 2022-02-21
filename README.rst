@@ -13,6 +13,7 @@ has been expanded to five main packages:
 - `PyDPF-Core <https://dpfdocs.pyansys.com/>`__ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
 - `PyDPF-Post <https://postdocs.pyansys.com/>`__ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``ansys-dpf-core``.
 - `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
+- `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`__: Pythonic interface to Granta MI BoM Analytics Services.
 
 This is an expanding and developing project.  Feel free to post issues
 on the various GitHub pages in this document.  For additional support,
@@ -113,7 +114,7 @@ Resources and Links
 For more details, see:
 
   - `PyMAPDL Documentation <https://mapdldocs.pyansys.com/>`_
-  - `PyMAPDL PyPi <https://pypi.org/project/ansys-mapdl-core/>`_
+  - `PyMAPDL PyPI <https://pypi.org/project/ansys-mapdl-core/>`_
   - `PyMAPDL GitHub <https://github.com/pyansys/pymapdl/>`_
 
 
@@ -200,7 +201,7 @@ Resources and Links
 For more details, see:
 
   - `PyAEDT Documentation <https://aedtdocs.pyansys.com/>`_
-  - `PyAEDT PyPi <https://pypi.org/project/pyaedt/>`_
+  - `PyAEDT PyPI <https://pypi.org/project/pyaedt/>`_
   - `PyAEDT GitHub <https://github.com/pyansys/PyAEDT/>`_
 
 
@@ -273,7 +274,7 @@ Resources and Links
 For more details, see:
 
   - `DPF-Core Documentation <https://dpfdocs.pyansys.com/>`__
-  - `DPF-Core PyPi <https://pypi.org/project/ansys-dpf-core/>`__
+  - `DPF-Core PyPI <https://pypi.org/project/ansys-dpf-core/>`__
   - `DPF-Core GitHub <https://github.com/pyansys/DPF-Core>`__
 
 
@@ -343,7 +344,7 @@ Resources and Links
 For more details, see:
 
   - `DPF-Post Documentation <https://dpfdocs.pyansys.com/>`_
-  - `DPF-Post PyPi <https://pypi.org/project/ansys-dpf-core/>`_
+  - `DPF-Post PyPI <https://pypi.org/project/ansys-dpf-core/>`_
   - `DPF-Post GitHub <https://github.com/pyansys/DPF-Post>`_
 
 
@@ -540,8 +541,58 @@ Resources and Links
 For more details, see:
 
   - `Legacy PyMAPDL Reader Documentation <https://readerdocs.pyansys.com/>`_
-  - `Legacy PyMAPDL Reader PyPi <https://pypi.org/project/ansys-mapdl-reader/>`_
+  - `Legacy PyMAPDL Reader PyPI <https://pypi.org/project/ansys-mapdl-reader/>`_
   - `Legacy PyMAPDL Reader GitHub <https://github.com/pyansys/pymapdl-reader>`_
+
+
+Granta MI BoM Analytics
+-----------------------
+The Granta MI Restricted Substances solution includes BoM Analytics Services,
+which provides a REST API to allow external applications and tools to determine
+the compliance of materials and products against various legislations. This
+package provides a Pythonic interface to the BoM Analytics Services API.
+
+Installation
+~~~~~~~~~~~~
+Install this package with:
+
+.. code::
+
+   pip install ansys-grantami-bomanalytics
+
+Usage
+~~~~~
+Here's a brief example of how this package works:
+
+.. code:: python
+
+    # Connect and query the Granta service.
+
+    >>> from pprint import pprint
+    >>> from ansys.grantami.bomanalytics import Connection, queries
+    >>> cxn = Connection(servicelayer_url='http://my_grantami_server/mi_servicelayer').with_autologon().connect()
+    >>> query = (
+    ...     queries.MaterialImpactedSubstancesQuery()
+    ...     .with_material_ids(['plastic-abs-pvc-flame'])
+    ...     .with_legislations(['REACH - The Candidate List'])
+    ... )
+
+    # Print out the result from the query.
+
+    >>> result = cxn.run(query)
+    >>> pprint(result.impacted_substances)
+    [<ImpactedSubstance: {"cas_number": 10108-64-2, "percent_amount": 1.9}>,
+     <ImpactedSubstance: {"cas_number": 107-06-2, "percent_amount": None}>,
+     <ImpactedSubstance: {"cas_number": 115-96-8, "percent_amount": 15.0}>,
+    ...
+
+Resources and Links
+~~~~~~~~~~~~~~~~~~~
+For more details, see:
+
+  - `Granta MI BoM Analytics Documentation <https://grantami.docs.pyansys.com/>`_
+  - `Granta MI BoM Analytics PyPI <https://pypi.org/project/ansys-grantami-bomanalytics/>`_
+  - `Granta MI BoM Analytics GitHub <https://github.com/pyansys/grantami-bomanalytics/>`_
 
 
 Shared Components
