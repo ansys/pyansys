@@ -570,7 +570,7 @@ Here's a brief example of how this package works:
 
     >>> from pprint import pprint
     >>> from ansys.grantami.bomanalytics import Connection, queries
-    >>> cxn = Connection(servicelayer_url='http://localhost/mi_servicelayer').with_autologon().connect()
+    >>> cxn = Connection(servicelayer_url='http://my_grantami_server/mi_servicelayer').with_autologon().connect()
     >>> query = (
     ...     queries.MaterialImpactedSubstancesQuery()
     ...     .with_material_ids(['plastic-abs-pvc-flame'])
