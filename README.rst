@@ -148,11 +148,6 @@ possible across the API.
 
 - All the features of the original module (e.g. pythonic commands,
   interactive sessions).
-- Remote connections to MAPDL from anywhere via gRPC.
-- Direct access to MAPDL arrays, meshes, and geometry as Python
-  objects.
-- Low level access to the MAPDL solver through APDL math in a
-  ``scipy`` like interface.
 
 Installation
 ~~~~~~~~~~~~
@@ -182,7 +177,7 @@ Explicit Desktop declaration and error management
 
 .. code:: python
 
-   Launch AEDT 2021 R1 in Non-Graphical mode
+   # Launch AEDT 2021 R1 in Non-Graphical mode
 
    from pyaedt import Desktop, Circuit
    with Desktop(specified_version="2021.1",
@@ -234,9 +229,9 @@ Installation
 
 Install this repository with:
 
-```
-pip install ansys-dpf-core
-```
+.. code::
+
+   pip install ansys-dpf-core
 
 
 Usage
@@ -244,7 +239,7 @@ Usage
 Provided you have Ansys 2021R1 installed, a DPF server will start
 automatically once you start using DPF from python.
 
-Opening a result file generated from Ansys workbench or MAPDL is as easy as:
+Opening a result file generated from Ansys Workbench or MAPDL is as easy as:
 
 .. code:: python
 
