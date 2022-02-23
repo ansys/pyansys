@@ -1,5 +1,7 @@
 """Configuration file for docs.pyansys.com landing page."""
 from datetime import datetime
+from io import open as io_open
+import os
 
 from pyansys_sphinx_theme import pyansys_logo_black
 
@@ -7,7 +9,14 @@ project = 'pyansys'
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = 'ANSYS Inc.'
 
-release = version = '0.61.2'
+# Get version from version info: execute file from raw string
+__version__ = None
+this_file = os.path.dirname(__file__)
+version_file = os.path.join(this_file, '..', '..', 'pyansys', '_version.py')
+with io_open(version_file, mode='r') as fd:
+    exec(fd.read())
+
+release = version = __version__
 
 # use the default pyansys logo
 html_logo = pyansys_logo_black
