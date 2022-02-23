@@ -1,5 +1,5 @@
-PyAnsys Project
-===============
+PyAnsys
+=======
 Welcome to the PyAnsys Project!
 
 The PyAnsys project is a collection of Python packages to enable the
@@ -15,22 +15,12 @@ has been expanded to five main packages:
 - `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
 - `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`__: Pythonic interface to Granta MI BoM Analytics Services.
 
-This is an expanding and developing project.  Feel free to post issues
-on the various GitHub pages in this document.  For additional support,
-contact the `PyAnsys Support
-<mailto:pyansys.support@ansys.com>`_ and your requests will be
-routed correctly.
-
-You can also chat on discord at:
-
-.. image:: https://img.shields.io/discord/412182089279209474.svg?label=Discord&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2
-   :target: https://discord.gg/QDaTdx3
-
-Please note that this may or may not be monitored regularly by the
-PyAnsys maintainer(s).  We'll do the best we can to respond, but your
-best bet is to try to post issues on the applicable repository at
-`PyAnsys GitHub <https://github.com/pyansys/>`__.  Look for the
-``Issues`` page within a project's repository page.
+This is an expanding and developing project.  Feel free to post issues on the
+various GitHub pages in this document.  For additional support, contact the
+`PyAnsys Support <mailto:pyansys.support@ansys.com>`_ and your requests will be
+routed correctly. You can aldo to post issues on the applicable repository at
+`PyAnsys GitHub <https://github.com/pyansys/>`__.  Look for the ``Issues`` page
+within each project's repository page.
 
 .. note::
    To use PyAnsys you need to install the applicable packages for your
@@ -566,7 +556,7 @@ Here's a brief example of how this package works:
 
 .. code:: python
 
-    # Connect and query the Granta service.
+    Connect and query the Granta service.
 
     >>> from pprint import pprint
     >>> from ansys.grantami.bomanalytics import Connection, queries
@@ -577,7 +567,7 @@ Here's a brief example of how this package works:
     ...     .with_legislations(['REACH - The Candidate List'])
     ... )
 
-    # Print out the result from the query.
+    Print out the result from the query.
 
     >>> result = cxn.run(query)
     >>> pprint(result.impacted_substances)
