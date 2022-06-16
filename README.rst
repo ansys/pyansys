@@ -146,8 +146,8 @@ layout tools like HFSS 3D Layout and EDB. Its class and method structures simpli
 operation for the end user while reusing information as much as
 possible across the API.
 
-- All the features of the original module (e.g. pythonic commands,
-  interactive sessions).
+- All the features of the original module, including pythonic commands
+  and interactive sessions
 
 Installation
 ~~~~~~~~~~~~
