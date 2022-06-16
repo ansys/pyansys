@@ -8,11 +8,12 @@ usage of Ansys products through Python.
 This project originally began as a single package, ``pyansys``, and
 has been expanded to five main packages:
 
-- `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL
-- `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT
-- `PyDPF-Core <https://dpfdocs.pyansys.com/>`__ : Post-Processing using the Data Processing Framework (DPF).  More complex yet and more powerful post-processing APIs.
-- `PyDPF-Post <https://postdocs.pyansys.com/>`__ : Streamlined and simplified DPF Post Processing.  Higher level package and uses ``ansys-dpf-core``.
-- `Legacy PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Legacy result file reader.  Supports result files from MAPDL v14.5 to the current release.
+- `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT.
+- `PyDPF-Core <https://dpfdocs.pyansys.com/>`__ : Postprocessing using the Data Processing Framework (DPF).  More complex and powerful postprocessing APIs.
+- `PyDPF-Post <https://postdocs.pyansys.com/>`__ : Streamlined and simplified DPF Postprocessing.  Higher level package using ``ansys-dpf-core``.
+- `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL.
+- `PyMAPDL Legacy Reader <https://readerdocs.pyansys.com/>`__: Legacy MAPDL result file reader.  Supports result files from MAPDL v14.5 and later.
+- `PyPIM <https://pypim.docs.pyansys.com/>`__: Pythonic interface for communicating with the Product Instance Management (PIM) API.
 - `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`__: Pythonic interface to Granta MI BoM Analytics Services.
 
 This is an expanding and developing project.  Feel free to post issues on the
