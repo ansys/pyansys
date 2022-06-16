@@ -6,7 +6,7 @@ The PyAnsys project is a collection of Python packages to enable the
 usage of Ansys products through Python.
 
 This project originally began as a single package, ``pyansys``, and
-has been expanded to five main packages:
+has been expanded to several main packages:
 
 - `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT.
 - `PyDPF-Core <https://dpfdocs.pyansys.com/>`__ : Postprocessing using the Data Processing Framework (DPF).  More complex and powerful postprocessing APIs.
