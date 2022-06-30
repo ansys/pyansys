@@ -10,7 +10,7 @@ expanded to several main packages:
 
 - `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT (Ansys Electronic Desktop)
 - `PyDPF-Core <https://dpfdocs.pyansys.com/>`__ : Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows
-- `PyDPF-Post <https://postdocs.pyansys.com/>`__ : Pythonic inferface to DPF's postproccessing toolbox for maninuplating and transforming simulation data
+- `PyDPF-Post <https://postdocs.pyansys.com/>`__ : Pythonic interface to DPF's postproccessing toolbox for maninuplating and transforming simulation data
 - `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL.
 - `PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Pythnonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
 - `PyPIM <https://pypim.docs.pyansys.com/>`__: Pythonic interface to communicate with the PIM (Product Instance Management) API
@@ -86,7 +86,7 @@ links to comprehensive resources for these packages.
 The PyAnsys project publishes and consumes shared software components that enable
 interoperability between PyAnsys packages and minimize maintenance. For more
 information, see the `Shared Components documentation <https://shared.docs.pyansys.com/>`_.
-The OpenAPI Common libary is a shared component. Here is the command for installing it
+The OpenAPI Common library is a shared component. Here is the command for installing it
 and links for its comprehensive resources:
 
 ``pip install ansys-openapi-common``
