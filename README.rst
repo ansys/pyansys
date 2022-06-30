@@ -2,7 +2,7 @@ PyAnsys
 =======
 Welcome to the PyAnsys Project!
 
-The PyAnsys project is a collection of Python packages to enable using
+The PyAnsys project is a collection of Python packages to enable the use of
 Ansys products through Python.
 
 This project originated as a single package, ``pyansys``, and has been
