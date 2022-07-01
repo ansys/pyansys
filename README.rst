@@ -5,7 +5,7 @@ Welcome to the PyAnsys Project!
 The PyAnsys project is a collection of Python packages that enable the use of
 Ansys products through Python.
 
-This project originated as a single package, ``pyansys``, and has been
+This project originated as a single package, ``pyansys``, and has
 expanded to several main packages:
 
 - `PyAEDT <https://aedtdocs.pyansys.com/>`__ : Pythonic interface to AEDT (Ansys Electronic Desktop)
@@ -15,7 +15,7 @@ expanded to several main packages:
 - `PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Pythnonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
 - `PyPIM <https://pypim.docs.pyansys.com/>`__: Pythonic interface to communicate with the PIM (Product Instance Management) API
 - `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`__: Pythonic interface to Granta MI BoM Analytics services
-- `Shared Components <https://shared.docs.pyansys.com/>`_: Shared software components to enable package interoperability and minimize maintenance.
+- `Shared Components <https://shared.docs.pyansys.com/>`_: Shared software components to enable package interoperability and minimize maintenance
 
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/pyansys/>`__ account. On the ``Issues`` page
