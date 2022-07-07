@@ -3,9 +3,9 @@ from datetime import datetime
 from io import open as io_open
 import os
 
-from pyansys_sphinx_theme import pyansys_logo_black
+from ansys_sphinx_theme import pyansys_logo_black
 
-project = 'pyansys'
+project = 'pyansys-landing'
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = 'ANSYS Inc.'
 
@@ -20,11 +20,11 @@ release = version = __version__
 
 # use the default pyansys logo
 html_logo = pyansys_logo_black
-html_theme = 'pyansys_sphinx_theme'
+html_theme = 'ansys_sphinx_theme'
 
 # specify the location of your github repo
 html_theme_options = {
-    "github_url": "https://github.com/pyansys/pyansys-sphinx-theme",
+    "github_url": "https://github.com/pyansys",
     "show_prev_next": False,
     "show_breadcrumbs": True,
 }
