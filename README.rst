@@ -48,7 +48,7 @@ PyDPF-Core
 
 - `DPF-Core Documentation <https://dpfdocs.pyansys.com/>`__
 - `DPF-Core PyPI <https://pypi.org/project/ansys-dpf-core/>`__
-- `DPF-Core GitHub <https://github.com/pyansys/DPF-Core>`__
+- `DPF-Core GitHub <https://github.com/pyansys/pydpf-core>`__
 
 
 PyDPF-Post
