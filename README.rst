@@ -59,9 +59,9 @@ PyDPF-Post
    pip install ansys-dpf-post
 
 
-- `DPF-Post Documentation <https://dpfdocs.pyansys.com/>`_
-- `DPF-Post PyPI <https://pypi.org/project/ansys-dpf-core/>`_
-- `DPF-Post GitHub <https://github.com/pyansys/DPF-Post>`_
+- `DPF-Post Documentation <https://postdocs.pyansys.com/>`_
+- `DPF-Post PyPI <https://pypi.org/project/ansys-dpf-post/>`_
+- `DPF-Post GitHub <https://github.com/pyansys/pydpf-post>`_
 
 
 PyMAPDL
