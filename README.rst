@@ -8,6 +8,7 @@ it is now a collection of many Python packages for using Ansys products through 
 - `PyDPF-Post <https://postdocs.pyansys.com/>`__ : Pythonic interface to DPF's postprocessing toolbox for manipulating and transforming simulation data
 - `PyMAPDL <https://mapdldocs.pyansys.com/>`__ : Pythonic interface to MAPDL.
 - `PyMAPDL Reader <https://readerdocs.pyansys.com/>`__: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
+- `PyFluent <https://fluentdocs.pyansys.com/>`__ : Pythonic interface to Ansys Fluent
 - `PyPIM <https://pypim.docs.pyansys.com/>`__: Pythonic interface to communicate with the PIM (Product Instance Management) API
 - `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`__: Pythonic interface to Granta MI BoM Analytics services
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared software components to enable package interoperability and minimize maintenance
@@ -90,6 +91,18 @@ PyMAPDL Reader
 - `Legacy PyMAPDL Reader GitHub <https://github.com/pyansys/pymapdl-reader>`_
 
 
+PyFluent
+~~~~~~~~
+
+.. code::
+
+   pip install ansys-fluent-core
+
+- `PyFluent Documentation <https://fluentdocs.pyansys.com/>`_
+- `PyFluent PyPI <https://pypi.org/project/ansys-fluent-core>`_
+- `PyFluent GitHub <https://github.com/pyansys/pyfluent/>`_
+
+
 PyPIM
 ~~~~~
 
@@ -98,7 +111,7 @@ PyPIM
    pip install ansys-platform-instancemanagement
 
 
-- `PyPIML Documentation <https://pypim.docs.pyansys.com/>`_
+- `PyPIM Documentation <https://pypim.docs.pyansys.com/>`_
 - `PyPIM PyPI <https://pypi.org/project/ansys-platform-instancemanagement/>`_
 - `PyPIM GitHub <https://github.com/pyansys/pypim/>`_
 
