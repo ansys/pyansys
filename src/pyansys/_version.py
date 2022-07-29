@@ -1,11 +1,18 @@
-"""Version for pyansys landing package
+"""Version of pyansys module.
 
-This needs to be incremented to build new notes on the PyPi page.
+On the ``main`` branch, use 'dev0' to denote a development version.
+For example:
+
+__version__ = 0, 58, 'dev0'
 
 """
 
-# major, minor, patch
-version_info = 0, 63, 'dev0'
+try:
+    import importlib.metadata as importlib_metadata
+except ModuleNotFoundError:  # pragma: no cover
+    import importlib_metadata
 
-# Nice string for the version
-__version__ = '.'.join(map(str, version_info))
+# Read from the pyproject.toml
+# major, minor, patch
+__version__ = importlib_metadata.version("pyansys")
+
