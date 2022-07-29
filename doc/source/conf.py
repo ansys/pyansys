@@ -12,7 +12,7 @@ author = 'ANSYS Inc.'
 # Get version from version info: execute file from raw string
 __version__ = None
 this_file = os.path.dirname(__file__)
-version_file = os.path.join(this_file, '..', '..', 'pyansys', '_version.py')
+version_file = os.path.join(this_file, '..', '..', 'src', 'pyansys', '_version.py')
 with io_open(version_file, mode='r') as fd:
     exec(fd.read())
 
