@@ -1,2 +1,0 @@
-Sphinx==5.1.1
-ansys-sphinx-theme==0.4.2

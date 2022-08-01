@@ -15,4 +15,3 @@ except ModuleNotFoundError:  # pragma: no cover
 # Read from the pyproject.toml
 # major, minor, patch
 __version__ = importlib_metadata.version("pyansys")
-
