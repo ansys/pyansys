@@ -10,13 +10,12 @@ copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = "ANSYS Inc."
 
 # Get version from version info: execute file from raw string
-__version__ = None
-this_file = os.path.dirname(__file__)
-ver_file = os.path.join(this_file, "..", "..", "src", "pyansys", "_version.py")
-with io_open(ver_file, mode="r") as fd:
-    exec(fd.read())
+try:
+    import importlib.metadata as importlib_metadata
+except ModuleNotFoundError:  # pragma: no cover
+    import importlib_metadata
 
-release = version = __version__
+release = version = importlib_metadata.version("pyansys")
 
 # use the default pyansys logo
 html_logo = pyansys_logo_black
