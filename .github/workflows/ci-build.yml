@@ -159,6 +159,7 @@ jobs:
 
 
   docs-build:
+    name: Building Documentation
     runs-on: ubuntu-latest
     needs: [docs-style]
 
@@ -184,7 +185,7 @@ jobs:
           retention-days: 7
 
       - name: Deploy Docs
-        uses: JamesIves/github-pages-deploy-action@4.4.0
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
         if: startsWith(github.event.ref, 'refs/tags')
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
