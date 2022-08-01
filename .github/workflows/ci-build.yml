@@ -101,7 +101,6 @@ jobs:
 
       - name: Install core PyAnsys packages
         run: |
-          pip install --upgrade pip
           pip install .
 
       - name: Smoke test
@@ -179,7 +178,6 @@ jobs:
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
-          pip install --upgrade pip
           pip install .[${{ matrix.extras-version }}]
 
       - name: Smoke test
@@ -200,7 +198,6 @@ jobs:
 
       - name: Build Documentation
         run: |
-          pip install --upgrade pip
           pip install .[docs]
           make -C doc html
           touch doc/build/html/.nojekyll
