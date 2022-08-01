@@ -112,6 +112,7 @@ jobs:
 
       - name: Generate wheelhouse
         run: |
+          pip install wheel
           pip wheel . -w wheelhouse
 
       - name: Zip wheelhouse
