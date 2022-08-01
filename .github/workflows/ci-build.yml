@@ -187,7 +187,7 @@ jobs:
 
       - name: Generate wheelhouse
         run: |
-          pip wheel . -w wheelhouse
+          pip wheel .[${{ matrix.extras-version }}] -w wheelhouse
 
       - name: Zip wheelhouse
         uses: vimtor/action-zip@v1
