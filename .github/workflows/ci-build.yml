@@ -13,6 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  PACKAGE_NAME: pyansys
   MAIN_PYTHON_VERSION: '3.9'
 
 jobs:
@@ -104,6 +105,28 @@ jobs:
       - name: Smoke test
         run: python -c "from pyansys import __version__; print(__version__)"
 
+      - name: Store version
+        run: |
+          echo "::set-output name=PYANSYS_VERSION::$(python -c "from pyansys import __version__; print(__version__)")"
+        id: version
+
+      - name: Generate wheelhouse
+        run: |
+          pip wheel . -w wheelhouse
+
+      - name: Zip wheelhouse
+        uses: vimtor/action-zip@v1
+        with:
+          files: wheelhouse
+          dest: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}-core.zip
+
+      - name: Upload Wheelhouse
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}-core
+          path: '*.zip'
+          retention-days: 7
+
   extras-import:
     name: Build extras PyAnsys packages
     runs-on: ${{ matrix.os }}
@@ -157,6 +180,27 @@ jobs:
       - name: Smoke test
         run: python -c "from pyansys import __version__; print(__version__)"
 
+      - name: Store version
+        run: |
+          echo "::set-output name=PYANSYS_VERSION::$(python -c "from pyansys import __version__; print(__version__)")"
+        id: version
+
+      - name: Generate wheelhouse
+        run: |
+          pip wheel . -w wheelhouse
+
+      - name: Zip wheelhouse
+        uses: vimtor/action-zip@v1
+        with:
+          files: wheelhouse
+          dest: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}-${{ matrix.extras-version }}.zip
+
+      - name: Upload Wheelhouse
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}-${{ matrix.extras-version }}
+          path: '*.zip'
+          retention-days: 7
 
   docs-build:
     name: Building Documentation
@@ -259,5 +303,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
+            ./**/*.zip
             ./**/*.whl
             ./**/*.tar.gz
