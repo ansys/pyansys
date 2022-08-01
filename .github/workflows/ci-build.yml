@@ -180,28 +180,6 @@ jobs:
       - name: Smoke test
         run: python -c "from pyansys import __version__; print(__version__)"
 
-      - name: Store version
-        run: |
-          echo "::set-output name=PYANSYS_VERSION::$(python -c "from pyansys import __version__; print(__version__)")"
-        id: version
-
-      - name: Generate wheelhouse
-        run: |
-          pip wheel .[${{ matrix.extras-version }}] -w wheelhouse
-
-      - name: Zip wheelhouse
-        uses: vimtor/action-zip@v1
-        with:
-          files: wheelhouse
-          dest: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}-${{ matrix.extras-version }}.zip
-
-      - name: Upload Wheelhouse
-        uses: actions/upload-artifact@v3
-        with:
-          name: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}-${{ matrix.extras-version }}
-          path: '*.zip'
-          retention-days: 7
-
   docs-build:
     name: Building Documentation
     runs-on: ubuntu-latest
