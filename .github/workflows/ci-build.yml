@@ -53,7 +53,7 @@ jobs:
           vale_flags: "--config=doc/.vale.ini"
 
   core-import:
-    name: Import PyAnsys packages as a bundle
+    name: Build core PyAnsys packages
     runs-on: ${{ matrix.os }}
     needs: [style]
     strategy:
@@ -105,7 +105,7 @@ jobs:
         run: python -c "from pyansys import __version__; print(__version__)"
 
   extras-import:
-    name: Import PyAnsys packages as a bundle
+    name: Build extras PyAnsys packages
     runs-on: ${{ matrix.os }}
     needs: [style, core-import]
     strategy:
