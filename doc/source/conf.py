@@ -1,7 +1,5 @@
 """Configuration file for docs.pyansys.com landing page."""
 from datetime import datetime
-from io import open as io_open
-import os
 
 from ansys_sphinx_theme import pyansys_logo_black
 
