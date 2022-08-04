@@ -2,18 +2,14 @@
 from datetime import datetime
 
 from ansys_sphinx_theme import pyansys_logo_black
+from pyansys import __version__ as pyansys_version
 
 project = "pyansys-landing"
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = "ANSYS Inc."
 
-# Get version from version info: execute file from raw string
-try:
-    import importlib.metadata as importlib_metadata
-except ModuleNotFoundError:  # pragma: no cover
-    import importlib_metadata
-
-release = version = importlib_metadata.version("pyansys")
+# get the PyAnsys version
+release = version = pyansys_version
 
 # use the default pyansys logo
 html_logo = pyansys_logo_black
