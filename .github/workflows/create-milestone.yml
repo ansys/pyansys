@@ -45,6 +45,9 @@ jobs:
           pip install pygithub
 
       - name: Create the milestone
+        env:
+          REPOSITORY: ${{ matrix.pyansys-projects }}
+          TOKEN: ${{ secrets.CREATE_MILESTONE_TOKEN }}
         run: |
           python milestone.py
 
