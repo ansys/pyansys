@@ -1,0 +1,50 @@
+name: Create milestones for Ansys Release
+on:
+  workflow_dispatch:
+
+env:
+  MAIN_PYTHON_VERSION: '3.9'
+
+jobs:
+  create-milestone:
+    name: Create a milestone in ${{ matrix.pyansys-projects }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        pyansys-projects:
+          [
+            "pyansys/pymapdl",
+            "pyansys/pymapdl-reader",
+            "pyansys/pydpf-core",
+            "pyansys/pydpf-post",
+            "pyansys/pyfluent",
+            "pyansys/pyfluent-parametric",
+            "pyansys/pyfluent-visualization",
+            "pyansys/pyaedt",
+            "pyansys/pypim",
+            "pyansys/grantami-bomanalytics",
+            "pyansys/openapi-common",
+          ]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python ${{ env.MAIN_PYTHON_VERSION }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+
+      - name: Linux pip cache
+        uses: actions/cache@v3
+        if: ${{ runner.os == 'Linux' }}
+        with:
+          path: ~/.cache/pip
+          key: Python-${{ runner.os }}-create-milestone
+
+      - name: Install requirements
+        run: |
+          pip install pygithub
+
+      - name: Create the milestone
+        run: |
+          python milestone.py
+
