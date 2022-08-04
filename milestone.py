@@ -45,7 +45,7 @@ if REPOSITORY is None:
 if MY_PAT is None:
     raise ValueError("No PAT or value available. Consider adding it.")
 elif REPOSITORY is None:
-    raise ValueError("No REPOSTIORY or value available. Consider adding it.")
+    raise ValueError("No REPOSITORY or value available. Consider adding it.")
 
 # Create a connection to GitHub
 g = github.Github(MY_PAT)
