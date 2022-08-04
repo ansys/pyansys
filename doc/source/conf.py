@@ -2,6 +2,7 @@
 from datetime import datetime
 
 from ansys_sphinx_theme import pyansys_logo_black
+
 from pyansys import __version__ as pyansys_version
 
 project = "pyansys-landing"
