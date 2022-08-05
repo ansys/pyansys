@@ -1,20 +1,17 @@
 """Script for automatically creating a milestone in repositories.
 
 Only specified repositories (via environment variable) will be handled.
+
+The purpose of this code is to connect to a specific repository
+and create a milestone. This milestone will be associated to a certain date
+provided as an input argument.
+
 """
 
 import datetime
 import os
 
 import github
-
-# =============================================================================
-#
-# The purpose of this code is to connect to an org, connect to a repository
-# and create a milestone. This milestone will be associated to a certain date
-# provided as an input argument.
-#
-# =============================================================================
 
 # Insert your credentials... None by default
 MY_PAT = None
