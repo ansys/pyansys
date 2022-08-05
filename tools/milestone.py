@@ -62,7 +62,7 @@ if RELEASE_DATE is None:
             RELEASE_DATE = datetime.datetime.strptime(RELEASE_DATE, "%Y/%m/%d")
         except (TypeError, ValueError, IndexError, KeyError):
             raise RuntimeError(
-                """Problem parsing input date. It should be a string in format YYYY/MM/DD"""
+                """Problem parsing input date. It should be a string in format YYYY/MM/DD"""  # noqa: 501
             )
 
 
@@ -111,7 +111,7 @@ Please consider releasing by {RELEASE_DATE.strftime("%Y/%m/%d")}"""
         description=desc,
         due_on=RELEASE_DATE + datetime.timedelta(hours=12),
     )
-    
+
     print(f"Milestone was created at {REPOSITORY} with name {next_release}!")
 else:
-    print(f"Milestone was already available at {REPOSITORY}... Skipping creation!")
+    print(f"Milestone was already available at {REPOSITORY}... Skipping creation!")  # noqa: 501
