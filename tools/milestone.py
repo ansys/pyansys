@@ -14,10 +14,10 @@ import os
 import github
 
 # Insert your credentials... It should be a PAT. None by default
-TOKEN = "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"
+TOKEN = None
 
 # Provide the repository you want to create a milestone in... None by default
-REPOSITORY = "pyansys-testing/milestone-trial"
+REPOSITORY = None
 
 # Provide the release date to be considered... None by default
 # If you provide manual input it should be using:
@@ -25,7 +25,7 @@ REPOSITORY = "pyansys-testing/milestone-trial"
 #   RELEASE_DATE = datetime.datetime.strptime(date_str,"%Y/%m/%d")
 #
 # where "date_str" must be a string date of format YYYY/MM/DD
-RELEASE_DATE = datetime.datetime.strptime("2022/01/30", "%Y/%m/%d")
+RELEASE_DATE = None
 
 # =============================================================================
 # MODIFY WITH CAUTION FROM THIS POINT ONWARDS
