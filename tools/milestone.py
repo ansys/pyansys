@@ -14,10 +14,10 @@ import os
 import github
 
 # Insert your credentials... It should be a PAT. None by default
-TOKEN = None
+TOKEN = "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"
 
 # Provide the repository you want to create a milestone in... None by default
-REPOSITORY = None
+REPOSITORY = "pyansys-testing/milestone-trial"
 
 # Provide the release date to be considered... None by default
 # If you provide manual input it should be using:
@@ -25,7 +25,7 @@ REPOSITORY = None
 #   RELEASE_DATE = datetime.datetime.strptime(date_str,"%Y/%m/%d")
 #
 # where "date_str" must be a string date of format YYYY/MM/DD
-RELEASE_DATE = None
+RELEASE_DATE = datetime.datetime.strptime("2022/01/30", "%Y/%m/%d")
 
 # =============================================================================
 # MODIFY WITH CAUTION FROM THIS POINT ONWARDS
@@ -59,11 +59,11 @@ if RELEASE_DATE is None:
             RELEASE_DATE = datetime.datetime.strptime(RELEASE_DATE, "%Y/%m/%d")
         except (TypeError, ValueError, IndexError, KeyError):
             raise RuntimeError(
-                """Problem parsing input date. It should be a string in format YYYY/MM/DD"""  # noqa: 501
+                """Problem parsing input date. It should be a string in format YYYY/MM/DD"""  # noqa: E501
             )
 
 
-# If the value for TOKEN or REPOSITORY or RELEASE_DATE is still None... throw error!
+# If the value for TOKEN, REPOSITORY, RELEASE_DATE is None... throw error!
 if TOKEN is None:
     raise ValueError("No TOKEN value available. Consider adding it.")
 elif REPOSITORY is None:
@@ -78,11 +78,11 @@ g = github.Github(TOKEN)
 repo = g.get_repo(REPOSITORY)
 
 # Get its last release - assuming semantic versioning (i.e. v0.1.0)
-major, minor, _ = repo.get_latest_release().tag_name.replace("v", "").split(".")
+major, minor, _ = repo.get_latest_release().tag_name.replace("v", "").split(".")  # noqa: E501
 next_release = f"v{major}.{int(minor)+1}.0"
 
 # Get its available milestones
-milestones = repo.get_milestones()
+milestones = repo.get_milestones(state="all")
 
 # Check if there is already any milestone whose name matches "next_release"
 is_created = False
