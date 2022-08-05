@@ -63,7 +63,7 @@ if RELEASE_DATE is None:
             )
 
 
-# If the value for PAT or REPOSITORY is still None... throw error!
+# If the value for PAT or REPOSITORY or RELEASE_DATE is still None... throw error!
 if MY_PAT is None:
     raise ValueError("No PAT value available. Consider adding it.")
 elif REPOSITORY is None:
