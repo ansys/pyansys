@@ -51,8 +51,9 @@ jobs:
 
       - name: Create the milestone
         env:
-          REPOSITORY: ${{ matrix.pyansys-projects }}
           TOKEN: ${{ secrets.CREATE_MILESTONE_TOKEN }}
+          REPOSITORY: ${{ matrix.pyansys-projects }}
+          RELEASE_DATE: ${{ github.event.inputs.release-date }}
         run: |
           python tools/milestone.py
 
