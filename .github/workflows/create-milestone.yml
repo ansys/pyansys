@@ -1,6 +1,11 @@
 name: Create milestones for Ansys Release
 on:
   workflow_dispatch:
+    inputs:
+      release-date:
+        description: 'Milestone release date (format must be YYYY/MM/DD)'     
+        required: true
+        default: '2023/01/30'
 
 env:
   MAIN_PYTHON_VERSION: '3.9'
@@ -49,5 +54,5 @@ jobs:
           REPOSITORY: ${{ matrix.pyansys-projects }}
           TOKEN: ${{ secrets.CREATE_MILESTONE_TOKEN }}
         run: |
-          python milestone.py
+          python tools/milestone.py
 
