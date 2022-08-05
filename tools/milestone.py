@@ -13,8 +13,8 @@ import os
 
 import github
 
-# Insert your credentials... None by default
-MY_PAT = None
+# Insert your credentials... It should be a PAT. None by default
+TOKEN = None
 
 # Provide the repository you want to create a milestone in... None by default
 REPOSITORY = None
@@ -31,19 +31,19 @@ RELEASE_DATE = None
 # MODIFY WITH CAUTION FROM THIS POINT ONWARDS
 # =============================================================================
 
-# Check if a value for PAT was provided
-if MY_PAT is None:
+# Check if a value for TOKEN was provided
+if TOKEN is None:
     # This probably means that we are creating the milestone automatically
     # using our GitHub action: Create milestones for Ansys Release...
-    # Thus, let us read the GitHub Token.
+    # Thus, let us read the GitHub Token or PAT.
     print("Reading access token from 'TOKEN' environment variable...")
-    MY_PAT = os.environ.get("TOKEN", default=None)
+    TOKEN = os.environ.get("TOKEN", default=None)
 
 # Check if a value for REPOSITORY was provided
 if REPOSITORY is None:
     # This probably means that we are creating the milestone automatically
     # using our GitHub action: Create milestones for Ansys Release...
-    # Thus, let us read the repository.
+    # Thus, let us read the repository name.
     print("Reading target repo from 'REPOSITORY' environment variable...")
     REPOSITORY = os.environ.get("REPOSITORY", default=None)
 
@@ -63,16 +63,16 @@ if RELEASE_DATE is None:
             )
 
 
-# If the value for PAT or REPOSITORY or RELEASE_DATE is still None... throw error!
-if MY_PAT is None:
-    raise ValueError("No PAT value available. Consider adding it.")
+# If the value for TOKEN or REPOSITORY or RELEASE_DATE is still None... throw error!
+if TOKEN is None:
+    raise ValueError("No TOKEN value available. Consider adding it.")
 elif REPOSITORY is None:
     raise ValueError("No REPOSITORY value available. Consider adding it.")
 elif RELEASE_DATE is None:
     raise ValueError("No RELEASE_DATE value available. Consider adding it.")
 
 # Create a connection to GitHub
-g = github.Github(MY_PAT)
+g = github.Github(TOKEN)
 
 # Get the repository we want to create the milestone at
 repo = g.get_repo(REPOSITORY)
@@ -82,7 +82,7 @@ major, minor, _ = repo.get_latest_release().tag_name.replace("v", "").split(".")
 next_release = f"v{major}.{int(minor)+1}.0"
 
 # Get its available milestones
-milestones = repo.get_milestones(state="open")
+milestones = repo.get_milestones()
 
 # Check if there is already any milestone whose name matches "next_release"
 is_created = False
