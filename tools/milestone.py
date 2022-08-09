@@ -99,7 +99,10 @@ if not is_created:
     desc = f"""This repository is part of an Ansys Release in the Unified Install.
 
 Thus, it is necessary to create a release for the next Dev Complete date.
-Please consider releasing by {RELEASE_DATE.strftime("%Y/%m/%d")}"""
+Please consider releasing by {RELEASE_DATE.strftime("%Y/%m/%d")}.
+
+If your current release is the one expected to be used in the upcoming
+official Ansys Release, please close and delete this milestone."""
 
     # Create a new milestone
     repo.create_milestone(
