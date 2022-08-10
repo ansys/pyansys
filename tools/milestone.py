@@ -56,6 +56,7 @@ if RELEASE_DATE is None:
     env_var = os.environ.get("RELEASE_DATE", default=None)
     if env_var is not None:
         try:
+            print(f"Targeting date {env_var}.")
             RELEASE_DATE = datetime.datetime.strptime(RELEASE_DATE, "%Y/%m/%d")
         except (TypeError, ValueError, IndexError, KeyError):
             raise RuntimeError(
