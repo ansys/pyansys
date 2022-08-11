@@ -5,3 +5,8 @@ updates:
     insecure-external-code-execution: allow
     schedule:
       interval: "daily"
+
+  - package-ecosystem: "github-actions"
+    directory: "/.github"
+    schedule:
+      interval: "daily"
