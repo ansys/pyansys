@@ -14,8 +14,8 @@ PyAnsys metapackage
    :target: https://pypi.org/project/pyansys/
    :alt: PyPI
 
-.. |GH-CI| image:: https://github.com/pyansys/pydiscovery/actions/workflows/ci_cd.yml/badge.svg
-   :target: https://github.com/pyansys/pyansys/actions/workflows/ci_cd.yml
+.. |GH-CI| image:: https://github.com/pyansys/pyansys/actions/workflows/ci-build.yml/badge.svg
+   :target: https://github.com/pyansys/pyansys/actions/workflows/ci-build.yml
    :alt: GH-CI
 
 .. |MIT| image:: https://img.shields.io/badge/License-MIT-yellow.svg
