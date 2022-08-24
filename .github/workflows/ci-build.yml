@@ -110,21 +110,21 @@ jobs:
           echo "::set-output name=PYANSYS_VERSION::$(python -c "from pyansys import __version__; print(__version__)")"
         id: version
 
-      - name: Generate wheelhouse
+      - name: Generate wheelhouse (for all targets)
         run: |
           pip install wheel
-          pip wheel . -w wheelhouse
+          pip wheel .[all] -w wheelhouse
 
       - name: Zip wheelhouse
         uses: vimtor/action-zip@v1
         with:
           files: wheelhouse
-          dest: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}-core.zip
+          dest: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}.zip
 
       - name: Upload Wheelhouse
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}-core
+          name: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-${{ matrix.python-version }}
           path: '*.zip'
           retention-days: 7
 
