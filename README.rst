@@ -6,7 +6,7 @@ PyAnsys metapackage
    :target: https://docs.pyansys.com/
    :alt: PyAnsys
 
-.. |python| image:: https://img.shields.io/badge/Python-%3E%3D3.7-blue
+.. |python| image:: https://img.shields.io/pypi/pyversions/pyansys?logo=pypi
    :target: https://pypi.org/project/pyansys/
    :alt: Python
 
@@ -52,7 +52,83 @@ questions to `PyAnsys Support <mailto:pyansys.support@ansys.com>`_.
 Package installation
 --------------------
 
-WIP
+Two installation modes are provided: user and offline.
+
+User mode installation
+^^^^^^^^^^^^^^^^^^^^^^
+
+Before installing ``pyansys`` in user mode, ensure that you have the latest
+version of `pip`_ with:
+
+.. code:: bash
+   
+    python -m pip install -U pip
+
+Then, install ``pyansys`` with:
+
+.. code:: bash
+
+   python -m pip install pyansys
+
+Offline mode installation
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you lack an internet connection on your installation machine, the recommended way of installing
+the ``pyansys`` metapackage is downloading the wheelhouse archive from the
+`Releases Page <https://github.com/pyansys/pyansys/releases>`_ for your corresponding machine architecture.
+
+Each wheelhouse archive contains all the Python wheels necessary to install ``pyansys`` metapackage from
+scratch on Windows, Linux, and MacOS from Python 3.7 to 3.10. You can install this on an isolated system with
+a fresh Python installation or on a virtual environment.
+
+For example, on Linux with Python 3.7, unzip the wheelhouse archive and install it with the following:
+
+.. code:: bash
+
+    unzip pyansys-v2023.1.dev0-wheelhouse-Linux-3.7-core.zip wheelhouse
+    pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
+
+If you're on Windows with Python 3.9, unzip to a wheelhouse directory and install using the same command as above.
+
+Consider installing using a `virtual environment <https://docs.python.org/3/library/venv.html>`_.
+
+Versioning system
+-----------------
+
+The ``pyansys`` metapackage follows a semantic-like versioning system, though it has been adapted to the
+Ansys product release mechanism. In that sense, we have the following kind of versioning system:
+
+.. code:: bash
+
+   XXXX.Y.ZZ
+
+Where:
+
+- ``XXXX`` is the Ansys product release year (for example, 2022)
+- ``Y`` is the Ansys product release within the same year (for example, 1, which relates to R1)
+- ``ZZ`` is the patched versions to the ``pyansys`` metapackage, if any.
+
+Consequently, the first ``pyansys`` metapackage compatible with the 2024 R2 release would be:
+
+.. code:: bash
+
+   2024.2.0
+
+And any subsequent patched version of that package would be:
+
+.. code:: bash
+
+   2024.2.1
+   2024.2.2
+   2024.2.3
+   ...
+
+You can request for a specific version install when pip installing your package:
+
+.. code:: bash
+
+   python -m pip install pyansys==2024.2.0
+
 
 License and acknowledgments
 ---------------------------
