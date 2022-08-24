@@ -49,6 +49,24 @@ Much effort is underway to continue expanding and developing packages in the
 for each package, you can post issues and request new features. You can also email
 questions to `PyAnsys Support <mailto:pyansys.support@ansys.com>`_.
 
+By default, the PyAnsys package installs the core modules. The following PyAnsys packages are considered as core:
+
+- `PyAEDT`_
+- `PyDPF-Core`_
+- `PyDPF-Post`_
+- `PyMAPDL`_
+- `PyFluent`_
+- `PyPIM`_
+- `Granta MI BoM Analytics`_
+- `Shared Components`_
+
+However, the ``pyansys`` package also contains certain extra targets, which are installed upon request.
+These targets are:
+
+- **mapdl-all**: this target installs the core packages and `PyMAPDL Reader`_
+- **fluent-all**: this target installs the core packages and `PyFluent-Parametric`_ and `PyFluent-Visualization`_
+- **all**: this target install all the extra ``pyansys`` packages 
+
 Package installation
 --------------------
 
@@ -69,6 +87,18 @@ Then, install ``pyansys`` with:
 .. code:: bash
 
    python -m pip install pyansys
+
+If you are interested in **installing an extra target** (such as ``fluent-all``):
+
+.. code:: bash
+
+   python -m pip install pyansys[fluent-all]
+
+If you are interested in **installing a specific version** (such as ``2023.1.0``):
+
+.. code:: bash
+
+   python -m pip install pyansys==2023.1.0
 
 Offline mode installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
