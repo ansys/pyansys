@@ -96,7 +96,7 @@ Versioning system
 -----------------
 
 The ``pyansys`` metapackage follows a semantic-like versioning system, though it has been adapted to the
-Ansys product release mechanism. In that sense, we have the following kind of versioning system:
+Ansys product release mechanism. In that sense, the following kind of versioning system is followed:
 
 .. code:: bash
 
@@ -128,7 +128,6 @@ You can request for a specific version install when pip installing your package:
 .. code:: bash
 
    python -m pip install pyansys==2024.2.0
-
 
 License and acknowledgments
 ---------------------------
