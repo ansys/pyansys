@@ -93,7 +93,7 @@ If you are interested in **installing an extra target** such as ``fluent-all``:
 
    python -m pip install pyansys[fluent-all]
 
-If you are interested in **installing a specific version** (such as ``2023.1.0``):
+If you are interested in **installing a specific version** such as ``2023.1.0``:
 
 .. code:: bash
 
