@@ -87,7 +87,7 @@ Then, install ``pyansys`` with:
 
    python -m pip install pyansys
 
-If you are interested in **installing an extra target** (such as ``fluent-all``):
+If you are interested in **installing an extra target** such as ``fluent-all``:
 
 .. code:: bash
 
