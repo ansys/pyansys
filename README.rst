@@ -60,8 +60,7 @@ By default, the PyAnsys package installs these core modules:
 - `Granta MI BoM Analytics`_
 - `Shared Components`_
 
-However, the ``pyansys`` package also contains certain extra targets, which are installed upon request.
-These targets are:
+However, the ``pyansys`` package also contains certain extra targets, which can be installed upon request:
 
 - **mapdl-all**: this target installs the core packages and `PyMAPDL Reader`_
 - **fluent-all**: this target installs the core packages and `PyFluent-Parametric`_ and `PyFluent-Visualization`_
