@@ -49,7 +49,7 @@ Much effort is underway to continue expanding and developing packages in the
 for each package, you can post issues and request new features. You can also email
 questions to `PyAnsys Support <mailto:pyansys.support@ansys.com>`_.
 
-By default, the PyAnsys package installs the core modules. The following PyAnsys packages are considered as core:
+By default, the PyAnsys package installs these core modules:
 
 - `PyAEDT`_
 - `PyDPF-Core`_
