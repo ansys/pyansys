@@ -53,21 +53,10 @@ jobs:
           fail_on_error: true
           vale_flags: "--config=doc/.vale.ini"
 
-  dependency-review:
-    name: Dependency reviewer
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Dependency Review
-        uses: actions/dependency-review-action@v2
-        # with:
-          # allow-licenses: Apache 2.0, Python Software Foundation License , Historical Permission Notice and Disclaimer (HPND), BSD-3-Clause, MIT
-
   core-import:
     name: Build core PyAnsys packages
     runs-on: ${{ matrix.os }}
-    needs: [style, dependency-review]
+    needs: [style]
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
@@ -195,7 +184,7 @@ jobs:
   docs-build:
     name: Building Documentation
     runs-on: ubuntu-latest
-    needs: [docs-style, dependency-review]
+    needs: [docs-style]
 
     steps:
       - uses: actions/checkout@v3
