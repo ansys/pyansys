@@ -54,15 +54,15 @@ jobs:
           vale_flags: "--config=doc/.vale.ini"
 
   dependency-review:
+    name: Dependency reviewer
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
       - name: Dependency Review
         uses: actions/dependency-review-action@v2
-        with:
-          fail-on-severity: critical
-          allow-licenses: Apache, BSD-3-Clause, MIT
+        # with:
+          # allow-licenses: Apache 2.0, Python Software Foundation License , Historical Permission Notice and Disclaimer (HPND), BSD-3-Clause, MIT
 
   core-import:
     name: Build core PyAnsys packages
