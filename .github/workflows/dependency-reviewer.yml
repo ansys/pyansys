@@ -9,9 +9,9 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
-  checks: write
+# permissions:
+#   contents: read
+#   checks: write
 
 jobs:
   dependency-review:
