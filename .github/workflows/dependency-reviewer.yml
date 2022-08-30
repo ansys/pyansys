@@ -1,13 +1,6 @@
 name: Dependency Reviewer
 
-on:
-  pull_request:
-  workflow_dispatch:
-  push:
-    tags:
-      - "*"
-    branches:
-      - main
+on: [pull_request]
 
 permissions:
   contents: read
