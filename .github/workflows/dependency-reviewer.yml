@@ -26,7 +26,6 @@ jobs:
         with:
           # Possible values: "critical", "high", "moderate", "low"
           # fail-on-severity: low
-          
           # You can only include one of these two options: `allow-licenses` and `deny-licenses`. These options are not supported on GHES. 
           #
           # Possible values: Any `spdx_id` value(s) from https://docs.github.com/en/rest/licenses
