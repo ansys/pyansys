@@ -53,10 +53,21 @@ jobs:
           fail_on_error: true
           vale_flags: "--config=doc/.vale.ini"
 
+  dependency-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v2
+        with:
+          fail-on-severity: critical
+          allow-licenses: Apache, BSD-3-Clause, MIT
+
   core-import:
     name: Build core PyAnsys packages
     runs-on: ${{ matrix.os }}
-    needs: [style]
+    needs: [style, dependency-review]
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
@@ -131,7 +142,7 @@ jobs:
   extras-import:
     name: Build extras PyAnsys packages
     runs-on: ${{ matrix.os }}
-    needs: [style, core-import]
+    needs: [core-import]
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
@@ -184,7 +195,7 @@ jobs:
   docs-build:
     name: Building Documentation
     runs-on: ubuntu-latest
-    needs: [docs-style]
+    needs: [docs-style, dependency-review]
 
     steps:
       - uses: actions/checkout@v3
@@ -256,7 +267,7 @@ jobs:
   release:
     name: Release project
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags')
-    needs: [docs-build, core-import, package]
+    needs: [package]
     runs-on: ubuntu-latest
     steps:
       - name: Set up Python
