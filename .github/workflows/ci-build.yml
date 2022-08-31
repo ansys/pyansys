@@ -131,7 +131,7 @@ jobs:
   extras-import:
     name: Build extras PyAnsys packages
     runs-on: ${{ matrix.os }}
-    needs: [style, core-import]
+    needs: [core-import]
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
@@ -256,7 +256,7 @@ jobs:
   release:
     name: Release project
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags')
-    needs: [docs-build, core-import, package]
+    needs: [package]
     runs-on: ubuntu-latest
     steps:
       - name: Set up Python
