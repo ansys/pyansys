@@ -114,7 +114,7 @@ For example, on Linux with Python 3.7, unzip the wheelhouse archive and install 
 
 .. code:: bash
 
-    unzip pyansys-v2023.1.dev0-wheelhouse-Linux-3.7-core.zip wheelhouse
+    unzip pyansys-v2023.1.0-wheelhouse-Linux-3.7-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and install using the same command as above.
