@@ -54,7 +54,7 @@ ansys-mapdl-reader = {version = "==0.52.1", optional = true}
 ansys-fluent-visualization = {version = "==0.5.0", optional = true}
 ansys-fluent-parametric = {version = "==0.5.0", optional = true}
 Sphinx = {version = "==5.2.3", optional = true}
-ansys-sphinx-theme = {version = "==0.6.0", optional = true}
+ansys-sphinx-theme = {version = "==0.6.1", optional = true}
 
 [tool.poetry.extras]
 mapdl-all = ["ansys-mapdl-reader"]
