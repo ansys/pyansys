@@ -50,7 +50,7 @@ ansys-grantami-bomanalytics = "==1.0.1"
 ansys-openapi-common = "==1.1.1"
 
 # Optional dependencies
-ansys-mapdl-reader = {version = "==0.52.0", optional = true}
+ansys-mapdl-reader = {version = "==0.52.1", optional = true}
 ansys-fluent-visualization = {version = "==0.5.0", optional = true}
 ansys-fluent-parametric = {version = "==0.5.0", optional = true}
 Sphinx = {version = "==5.2.3", optional = true}
