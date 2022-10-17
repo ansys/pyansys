@@ -208,7 +208,7 @@ jobs:
           retention-days: 7
 
       - name: Deploy Docs
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: startsWith(github.event.ref, 'refs/tags')
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
