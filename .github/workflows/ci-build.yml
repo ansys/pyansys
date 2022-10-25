@@ -56,12 +56,17 @@ jobs:
   core-import:
     name: Build core PyAnsys packages
     runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
     needs: [style]
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
         python-version: ['3.7', '3.8', '3.9', '3.10']
-      fail-fast: false
+        experimental: [false]
+        include:
+            - python-version: '3.11'
+              experimental: true
 
     steps:
       - uses: actions/checkout@v3
@@ -131,13 +136,18 @@ jobs:
   extras-import:
     name: Build extras PyAnsys packages
     runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
     needs: [core-import]
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
         python-version: ['3.7', '3.8', '3.9', '3.10']
         extras-version: ['fluent-all', 'mapdl-all', 'all']
-      fail-fast: false
+        experimental: [false]
+        include:
+            - python-version: '3.11'
+              experimental: true
 
     steps:
       - uses: actions/checkout@v3
