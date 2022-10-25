@@ -66,6 +66,7 @@ jobs:
         experimental: [false]
         include:
             - python-version: '3.11'
+              os: [windows-latest, ubuntu-latest, macos-latest]
               experimental: true
 
     steps:
@@ -147,6 +148,8 @@ jobs:
         experimental: [false]
         include:
             - python-version: '3.11'
+              os: [windows-latest, ubuntu-latest, macos-latest]
+              extras-version: ['fluent-all', 'mapdl-all', 'all']
               experimental: true
 
     steps:
