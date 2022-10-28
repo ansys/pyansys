@@ -1,0 +1,63 @@
+name: Python 3.11 support
+on:
+  workflow_dispatch:
+  schedule: # UTC at 0200 on Sundays
+    - cron: "0 2 * * 0"
+
+env:
+  PACKAGE_NAME: pyansys
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  py311-smoke-tests:
+     name: Build core PyAnsys packages
+    runs-on: ${{ matrix.os }}
+    needs: [style]
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'pyproject.toml'
+
+      - name: Install core PyAnsys packages
+        run: |
+          pip install .
+
+      - name: Smoke test
+        run: python -c "from pyansys import __version__; print(__version__)"
+
+      - name: Store version
+        run: |
+          echo "::set-output name=PYANSYS_VERSION::$(python -c "from pyansys import __version__; print(__version__)")"
+        id: version
+
+      - name: Generate wheelhouse (for all targets)
+        run: |
+          pip install wheel
+          pip wheel .[all] -w wheelhouse
+
+      - name: Zip wheelhouse
+        uses: vimtor/action-zip@v1
+        with:
+          files: wheelhouse
+          dest: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-3.11.zip
+
+      - name: Upload Wheelhouse
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.PACKAGE_NAME }}-v${{ steps.version.outputs.PYANSYS_VERSION }}-wheelhouse-${{ runner.os }}-3.11
+          path: '*.zip'
+          retention-days: 7
