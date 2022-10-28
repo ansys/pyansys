@@ -58,10 +58,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     needs: [style]
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
         python-version: ['3.7', '3.8', '3.9', '3.10']
-      fail-fast: false
 
     steps:
       - uses: actions/checkout@v3
@@ -133,11 +133,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     needs: [core-import]
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
         python-version: ['3.7', '3.8', '3.9', '3.10']
         extras-version: ['fluent-all', 'mapdl-all', 'all']
-      fail-fast: false
 
     steps:
       - uses: actions/checkout@v3
