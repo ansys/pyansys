@@ -16,7 +16,6 @@ jobs:
   py311-smoke-tests:
     name: Build core PyAnsys packages
     runs-on: ${{ matrix.os }}
-    needs: [style]
     strategy:
       fail-fast: false
       matrix:
