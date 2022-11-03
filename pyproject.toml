@@ -43,6 +43,7 @@ importlib-metadata = {version = "^4.0", python = "<3.8"}
 ansys-mapdl-core = "==0.63.3"
 ansys-dpf-core = "==0.6.2"
 ansys-dpf-post = "==0.2.5"
+ansys-dpf-gate = "==0.2.3"
 ansys-fluent-core = "==0.11.0"
 pyaedt = "==0.6.21"
 ansys-platform-instancemanagement = "==1.0.2"
