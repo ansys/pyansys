@@ -38,7 +38,7 @@ packages = [
 
 [tool.poetry.dependencies]
 # Core dependencies
-python = ">=3.7,<3.12"
+python = ">=3.7,<3.11"
 importlib-metadata = {version = "^4.0", python = "<3.8"}
 ansys-mapdl-core = "==0.63.3"
 ansys-dpf-core = "==0.6.2"
