@@ -50,7 +50,7 @@ all = [
     "ansys-fluent-visualization==0.5.0",
     "ansys-fluent-parametric==0.5.0",
 ]
-docs = [
+doc = [
     "ansys-sphinx-theme==0.7.1",
     "Sphinx==5.3.0",
 ]
