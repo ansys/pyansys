@@ -63,7 +63,7 @@ jobs:
           pip install .
 
       - name: Smoke test
-        run: python -c "from pyansys import __version__; print(__version__)"
+        run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
 
   smoke-tests-extras:
     name: Build extras PyAnsys packages
@@ -91,7 +91,7 @@ jobs:
           pip install .[${{ matrix.extras-version }}]
 
       - name: Smoke test
-        run: python -c "from pyansys import __version__; print(__version__)"
+        run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
 
   wheelhouse-all:
     name: Build PyAnsys package wheelhouse
