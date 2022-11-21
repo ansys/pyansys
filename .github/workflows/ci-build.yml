@@ -45,7 +45,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, ubuntu-latest, macos-latest]
+        os: [windows-latest, ubuntu-latest]
         python-version: ['3.7', '3.8', '3.9', '3.10']
 
     steps:
@@ -72,7 +72,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, ubuntu-latest, macos-latest]
+        os: [windows-latest, ubuntu-latest]
         python-version: ['3.7', '3.8', '3.9', '3.10']
         extras-version: ['fluent-all', 'mapdl-all']
 
