@@ -149,12 +149,12 @@ jobs:
     needs: [package, smoke-tests-extras, wheelhouse-all]
     runs-on: ubuntu-latest
     steps:
-      - name: Release to the private PyPI repository
+      - name: Release to PyPI repository
         uses: pyansys/actions/release-pypi-public@v1
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           twine-username: __token__
-          twine-token: ${{ secrets.PYANSYS_PYPI_PRIVATE_PAT }}
+          twine-token: ${{ secrets.PYPI_TOKEN }}
 
       - name: Release to GitHub
         uses: pyansys/actions/release-github@v1
