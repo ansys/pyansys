@@ -2,10 +2,13 @@
 from datetime import datetime
 
 from ansys_sphinx_theme import pyansys_logo_black
+from sphinx.builders.latex import LaTeXBuilder
 
 from pyansys import __version__ as pyansys_version
 
-project = "pyansys-landing"
+LaTeXBuilder.supported_image_types = ["image/png", "image/pdf", "image/svg+xml"]  # noqa: E501
+
+project = "pyansys"
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = "ANSYS Inc."
 
