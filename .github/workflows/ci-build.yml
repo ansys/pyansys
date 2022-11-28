@@ -28,6 +28,7 @@ jobs:
         uses: pyansys/actions/check-licenses@feat/check-licenses
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          target: "all"
 
   docs-style:
     name: Documentation Style Check
