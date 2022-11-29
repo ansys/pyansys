@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys Licenses Check
-        uses: pyansys/actions/check-licenses@feat/check-licenses
+        uses: pyansys/actions/check-licenses@main
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
