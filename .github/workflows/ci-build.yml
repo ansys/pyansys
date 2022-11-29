@@ -20,6 +20,16 @@ env:
 
 jobs:
 
+  check-licenses:
+    name: Check depencencies' licenses
+    runs-on: ubuntu-latest
+    steps:
+      - name: PyAnsys Licenses Check
+        uses: pyansys/actions/check-licenses@main
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          target: "all"
+
   docs-style:
     name: Documentation Style Check
     runs-on: ubuntu-latest
@@ -92,7 +102,7 @@ jobs:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
         python-version: ['3.7', '3.8', '3.9', '3.10']
-        
+
     steps:
       - name: Build wheelhouse and perform smoke test
         uses: pyansys/actions/build-wheelhouse@v1
