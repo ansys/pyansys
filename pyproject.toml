@@ -51,7 +51,7 @@ all = [
     "ansys-fluent-parametric==0.5.0",
 ]
 doc = [
-    "ansys-sphinx-theme==0.7.1",
+    "ansys-sphinx-theme==0.7.2",
     "Sphinx==5.3.0",
 ]
 
