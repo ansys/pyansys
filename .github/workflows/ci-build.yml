@@ -16,7 +16,7 @@ env:
   PACKAGE_NAME: pyansys
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.9'
-  DOCUMENTATION_CNAME: "pyansys.github.io/pyansys"
+  DOCUMENTATION_CNAME: "docs.pyansys.com"
 
 jobs:
 
