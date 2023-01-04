@@ -34,7 +34,7 @@ dependencies = [
     "pyaedt==0.6.42",
     "ansys-platform-instancemanagement==1.0.2",
     "ansys-grantami-bomanalytics==1.1.1",
-    "ansys-openapi-common==1.1.1",
+    "ansys-openapi-common==1.2.0",
     "ansys-seascape==0.2.0",
 ]
 
