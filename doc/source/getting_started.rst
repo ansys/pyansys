@@ -6,11 +6,11 @@ PyAnsys libraries fall into two categories:
 - Wrappers over products like `MAPDL <https://www.ansys.com/training-center/course-catalog/structures/ansys-mechanical-advanced-use-of-mapdl-in-mechanical>`_, `Fluent <https://www.ansys.com/products/fluids/ansys-fluent>`_, or `AEDT <https://www.ansys.com/products/electronics/ansys-maxwell>`_
 - Supporting libraries like `DPF <dpf_core_gh>`_
 
-Most PyAnsys packages will require a local installation of Ansys. The version
+Most PyAnsys packages require a local installation of Ansys. The version
 of Ansys installed dictates the interface and features available to
 you. However, PyAnsys libraries use `grpc`_ to communicate to the
 products, you can have the product installed remotely and connect to that
-remote instance. This will still require you need a copy of Ansys installed on
+remote instance. This still requires that you need a copy of Ansys installed on
 the host machine.
 
 For more information on getting a licensed copy of Ansys, visit `Ansys
@@ -29,7 +29,7 @@ the easiest is simply to run:
 
    pip install pyansys
 
-This will install all the PyAnsys libraries for the latest released
+This installs all the PyAnsys libraries for the latest released
 version of Ansys, for example, v2023R1.
 
 You can always install libraries individually by visiting the install page for
