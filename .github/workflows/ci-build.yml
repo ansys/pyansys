@@ -127,7 +127,7 @@ jobs:
 
       - name: Deploy the latest documentation
         uses: pyansys/actions/doc-deploy-dev@v1
-        if: startsWith(github.event.ref, 'refs/tags')
+        if: github.ref == 'refs/heads/main'
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.GITHUB_TOKEN }}
