@@ -1,5 +1,6 @@
 Getting started
 ===============
+
 PyAnsys libraries fall into two categories:
 
 - Wrappers over products like `MAPDL <https://www.ansys.com/training-center/course-catalog/structures/ansys-mechanical-advanced-use-of-mapdl-in-mechanical>`_, `Fluent <https://www.ansys.com/products/fluids/ansys-fluent>`_, or `AEDT <https://www.ansys.com/products/electronics/ansys-maxwell>`_
@@ -20,6 +21,7 @@ visiting `Ansys for Students <https://www.ansys.com/academic/students>`_.
 ************
 Installation
 ************
+
 There are several ways of installing PyAnsys depending on your use case, but
 the easiest is simply to run:
 
@@ -96,6 +98,7 @@ Consider installing using a `virtual environment <https://docs.python.org/3/libr
 
 Versioning system
 -----------------
+
 The ``pyansys`` metapackage follows a semantic-like versioning system, though
 it has been adapted to the Ansys product release mechanism. In that sense, the
 following kind of versioning system is followed:
