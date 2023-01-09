@@ -16,7 +16,7 @@ env:
   PACKAGE_NAME: pyansys
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.9'
-  DOCUMENTATION_CNAME: "pyansys.github.io/pyansys"
+  DOCUMENTATION_CNAME: "docs.pyansys.com"
 
 jobs:
 
@@ -127,7 +127,7 @@ jobs:
 
       - name: Deploy the latest documentation
         uses: pyansys/actions/doc-deploy-dev@v1
-        if: startsWith(github.event.ref, 'refs/tags')
+        if: github.ref == 'refs/heads/main'
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.GITHUB_TOKEN }}
