@@ -80,3 +80,9 @@ PyAnsys packages examples
       :link: https://openapi.docs.pyansys.com/index.html#brief-example
       :text-align: center
       :class-title: pyansys-card-title
+
+    .. grid-item-card:: PyTwin
+      :img-top: _static/thumbnails/intro.png
+      :link: https://twin.docs.pyansys.com/dev/#examples
+      :text-align: center
+      :class-title: pyansys-card-title

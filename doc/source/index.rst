@@ -111,3 +111,12 @@ it is now a collection of many Python packages for using Ansys products through 
       :class-title: pyansys-card-title
 
       Shared software components to enable package interoperability and minimize maintenance
+
+
+    .. grid-item-card:: PyTwin
+      :img-top: _static/thumbnails/intro.png
+      :link: https://twin.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      PyTwin is a Python package that eases Ansys Digital Twins consumption workflows.

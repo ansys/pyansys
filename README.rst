@@ -48,6 +48,7 @@ At this moment, this package ensures the compatibility between the following PyA
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with RedHawkSC and TotemSC
 - `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`_: Pythonic interface to Granta MI BoM Analytics services
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared software components to enable package interoperability and minimize maintenance
+- `PyTwin <https://shared.docs.pyansys.com/>`_: PyTwin is a Python package that eases Ansys Digital Twins consumption workflows
 
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/pyansys/>`__ account. On the ``Issues`` page
@@ -65,6 +66,7 @@ By default, the PyAnsys package installs these core modules:
 - `PySeascape`_
 - `Granta MI BoM Analytics`_
 - `Shared Components`_
+- `PyTwin`_
 
 However, the ``pyansys`` package also contains certain extra targets, which can be installed upon request:
 

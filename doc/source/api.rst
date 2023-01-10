@@ -91,3 +91,9 @@ PyAnsys packages API reference
       :link: https://openapi.docs.pyansys.com/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
+
+    .. grid-item-card:: PyTwin
+      :img-top: _static/thumbnails/intro.png
+      :link: https://twin.docs.pyansys.com/dev/#usage
+      :text-align: center
+      :class-title: pyansys-card-title
