@@ -22,7 +22,7 @@ repos:
     args: ["--ignore-words=ignore_words.txt"]
 
 - repo: https://github.com/pycqa/pydocstyle
-  rev: 6.2.0
+  rev: 6.2.3
   hooks:
   - id: pydocstyle
     additional_dependencies: [toml]
@@ -36,6 +36,6 @@ repos:
 
 # this validates our github workflow files
 - repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 0.19.2
+  rev: 0.20.0
   hooks:
     - id: check-github-workflows
