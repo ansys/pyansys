@@ -112,7 +112,6 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Shared software components to enable package interoperability and minimize maintenance
 
-
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/intro.png
       :link: https://twin.docs.pyansys.com/
