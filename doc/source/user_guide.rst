@@ -72,6 +72,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyTwin
+      :img-top: _static/thumbnails/intro.png
+      :link: https://twin.docs.pyansys.com/dev/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
       :link: https://grantami.docs.pyansys.com/getting_started/index.html
@@ -81,11 +87,5 @@ PyAnsys packages user guides
     .. grid-item-card:: Shared Components - OpenAPI Common
       :img-top: _static/thumbnails/intro.png
       :link: https://openapi.docs.pyansys.com/index.html
-      :text-align: center
-      :class-title: pyansys-card-title
-
-    .. grid-item-card:: PyTwin
-      :img-top: _static/thumbnails/intro.png
-      :link: https://twin.docs.pyansys.com/dev/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
