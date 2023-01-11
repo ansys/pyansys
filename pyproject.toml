@@ -36,7 +36,7 @@ dependencies = [
     "ansys-grantami-bomanalytics==1.1.1",
     "ansys-openapi-common==1.2.0",
     "ansys-seascape==0.2.0",
-    "pytwin==0.1.2"
+    "pytwin==0.1.2; python_version>='3.8'"
 ]
 
 [project.optional-dependencies]
