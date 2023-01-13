@@ -3,6 +3,7 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     insecure-external-code-execution: allow
+    open-pull-requests-limit: 15
     schedule:
       interval: "daily"
 
