@@ -31,8 +31,8 @@ dependencies = [
     "ansys-dpf-core==0.7.2",
     "ansys-dpf-post==0.2.5",
     "ansys-dpf-gate==0.3.0",
-    "ansys-fluent-core==0.11.0",
-    "pyaedt==0.6.42",
+    "ansys-fluent-core==0.12.1",
+    "pyaedt==0.6.43",
     "ansys-platform-instancemanagement==1.0.2",
     "ansys-grantami-bomanalytics==1.1.1",
     "ansys-openapi-common==1.2.0",
@@ -41,16 +41,16 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = [
-    "ansys-mapdl-reader==0.52.6",
+    "ansys-mapdl-reader==0.52.7",
 ]
 fluent-all = [
     "ansys-fluent-visualization==0.5.0",
-    "ansys-fluent-parametric==0.5.0",
+    "ansys-fluent-parametric==0.6.0",
 ]
 all = [
-    "ansys-mapdl-reader==0.52.6",
+    "ansys-mapdl-reader==0.52.7",
     "ansys-fluent-visualization==0.5.0",
-    "ansys-fluent-parametric==0.5.0",
+    "ansys-fluent-parametric==0.6.0",
 ]
 doc = [
     "Sphinx==5.3.0",
