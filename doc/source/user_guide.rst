@@ -83,3 +83,9 @@ PyAnsys packages user guides
       :link: https://openapi.docs.pyansys.com/index.html
       :text-align: center
       :class-title: pyansys-card-title
+
+    .. grid-item-card:: PyPrimeMesh
+      :img-top: _static/thumbnails/intro.png
+      :link: https://prime.docs.pyansys.com/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
