@@ -111,3 +111,11 @@ it is now a collection of many Python packages for using Ansys products through 
       :class-title: pyansys-card-title
 
       Shared software components to enable package interoperability and minimize maintenance
+
+    .. grid-item-card:: PyPrimeMesh
+      :img-top: _static/thumbnails/intro.png
+      :link: https://prime.docs.pyansys.com
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      PyPrimeMesh provides a python client to Ansys Prime Server which delivers core Ansys meshing technology
