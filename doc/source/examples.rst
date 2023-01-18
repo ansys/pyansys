@@ -76,7 +76,7 @@ PyAnsys packages examples
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyTwin
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pytwin.png
       :link: https://twin.docs.pyansys.com/dev/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title

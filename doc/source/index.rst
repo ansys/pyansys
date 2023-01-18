@@ -105,7 +105,7 @@ it is now a collection of many Python packages for using Ansys products through 
       Pythonic interface to communicate with RedHawkSC and TotemSC.
 
     .. grid-item-card:: PyTwin
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pytwin.png
       :link: https://twin.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
