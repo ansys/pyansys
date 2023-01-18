@@ -66,6 +66,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyPrimeMesh
+      :img-top: _static/thumbnails/intro.png
+      :link: https://prime.docs.pyansys.com/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
       :link: https://seascape.docs.pyansys.com/dev/#usage
@@ -81,11 +87,5 @@ PyAnsys packages user guides
     .. grid-item-card:: Shared Components - OpenAPI Common
       :img-top: _static/thumbnails/intro.png
       :link: https://openapi.docs.pyansys.com/index.html
-      :text-align: center
-      :class-title: pyansys-card-title
-
-    .. grid-item-card:: PyPrimeMesh
-      :img-top: _static/thumbnails/intro.png
-      :link: https://prime.docs.pyansys.com/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
