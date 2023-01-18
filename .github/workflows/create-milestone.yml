@@ -29,6 +29,7 @@ jobs:
             "pyansys/pypim",
             "pyansys/grantami-bomanalytics",
             "pyansys/openapi-common",
+            "pyansys/pytwin",
           ]
     steps:
       - uses: actions/checkout@v3

@@ -46,7 +46,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Fluent
+      Pythonic interface to Ansys Fluent.
 
     .. grid-item-card:: PyFluent-Parametric
       :img-top: _static/thumbnails/pyfluent-parametric.png
@@ -54,7 +54,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Fluent parametric workflows
+      Pythonic interface to Ansys Fluent parametric workflows.
 
     .. grid-item-card:: PyFluent-Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
@@ -62,7 +62,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to visualize Ansys Fluent simulations
+      Pythonic interface to visualize Ansys Fluent simulations.
 
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
@@ -78,7 +78,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
+      Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
@@ -86,7 +86,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with the PIM (Product Instance Management) API
+      Pythonic interface to communicate with the PIM (Product Instance Management) API.
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/intro.png
@@ -94,7 +94,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Prime Server which delivers core Ansys meshing technology
+      Pythonic interface to Ansys Prime Server which delivers core Ansys meshing technology.
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
@@ -102,7 +102,15 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with RedHawkSC and TotemSC
+      Pythonic interface to communicate with RedHawkSC and TotemSC.
+
+    .. grid-item-card:: PyTwin
+      :img-top: _static/thumbnails/intro.png
+      :link: https://twin.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to communicate with Ansys Digital Twins consumption workflows.
 
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
@@ -110,7 +118,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Granta MI BoM Analytics services
+      Pythonic interface to Granta MI BoM Analytics services.
 
     .. grid-item-card:: Shared Components
       :img-top: _static/thumbnails/intro.png
@@ -118,5 +126,4 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Shared software components to enable package interoperability and minimize maintenance
-
+      Shared software components to enable package interoperability and minimize maintenance.

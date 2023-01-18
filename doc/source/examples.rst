@@ -75,6 +75,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyTwin
+      :img-top: _static/thumbnails/intro.png
+      :link: https://twin.docs.pyansys.com/dev/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
       :link: https://grantami.docs.pyansys.com/examples/index.html
