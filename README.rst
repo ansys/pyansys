@@ -45,6 +45,7 @@ At this moment, this package ensures the compatibility between the following PyA
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_ : Pythonic interface to MAPDL.
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the PIM (Product Instance Management) API.
+- `PyPrimeMesh <https://prime.docs.pyansys.com>`_: Pythonic interface to Ansys Prime Server which delivers core Ansys meshing technology.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with RedHawkSC and TotemSC.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Digital Twins consumption workflows.
 - `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`_: Pythonic interface to Granta MI BoM Analytics services.
@@ -63,6 +64,7 @@ By default, the PyAnsys package installs these core modules:
 - `PyFluent`_
 - `PyMAPDL`_
 - `PyPIM`_
+- `PyPrimeMesh`_
 - `PySeascape`_
 - `PyTwin`_
 - `Granta MI BoM Analytics`_
