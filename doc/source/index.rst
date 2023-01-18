@@ -22,7 +22,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Python library that interacts directly with the AEDT API to make scripting simpler.
+      Python library that interacts directly with the AEDT API to make scripting simpler
 
     .. grid-item-card:: PyDPF-Core
       :img-top: _static/thumbnails/pydpf-core.png
@@ -30,7 +30,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
              
-      Read and transform finite element data across simulation domains, with powerful, scalable operators.
+      Read and transform finite element data across simulation domains, with powerful, scalable operators
 
     .. grid-item-card:: PyDPF-Post
       :img-top: _static/thumbnails/pydpf-core.png
@@ -38,7 +38,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Extract actionable insights from finite element simulation with a streamlined post-processing API.
+      Extract actionable insights from finite element simulation with a streamlined post-processing API
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
@@ -70,7 +70,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Best-in-class multi-physics simulation and equation solver, now accessible in Python.
+      Best-in-class multi-physics simulation and equation solver, now accessible in Python
 
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
@@ -87,6 +87,14 @@ it is now a collection of many Python packages for using Ansys products through 
       :class-title: pyansys-card-title
 
       Pythonic interface to communicate with the PIM (Product Instance Management) API
+
+    .. grid-item-card:: PyPrimeMesh
+      :img-top: _static/thumbnails/intro.png
+      :link: https://prime.docs.pyansys.com
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Prime Server which delivers core Ansys meshing technology
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
@@ -111,3 +119,4 @@ it is now a collection of many Python packages for using Ansys products through 
       :class-title: pyansys-card-title
 
       Shared software components to enable package interoperability and minimize maintenance
+
