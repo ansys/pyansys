@@ -29,6 +29,8 @@ jobs:
             "pyansys/pypim",
             "pyansys/grantami-bomanalytics",
             "pyansys/openapi-common",
+            "pyansys/pyseascape",
+            "pyansys/pyprimemesh",
             "pyansys/pytwin",
           ]
     steps:
