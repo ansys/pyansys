@@ -207,14 +207,14 @@ jobs:
           path: doc/build/html
           retention-days: 7
 
-      - name: Deploy Docs
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
-        if: startsWith(github.event.ref, 'refs/tags')
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: doc/build/html
-          CLEAN: true
+      # - name: Deploy Docs
+      #   uses: JamesIves/github-pages-deploy-action@v4.4.0
+      #   if: startsWith(github.event.ref, 'refs/tags')
+      #   with:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     BRANCH: gh-pages
+      #     FOLDER: doc/build/html
+      #     CLEAN: true
 
   package:
     name: Package library
