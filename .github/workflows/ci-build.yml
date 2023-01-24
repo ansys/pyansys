@@ -6,7 +6,7 @@ on:
     tags:
       - "*"
     branches:
-      - main
+      - release/2023.1
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -60,7 +60,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
-        python-version: ['3.7', '3.8', '3.9', '3.10']
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.11']
       fail-fast: false
 
     steps:
@@ -135,7 +135,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
-        python-version: ['3.7', '3.8', '3.9', '3.10']
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.11']
         extras-version: ['fluent-all', 'mapdl-all', 'all']
       fail-fast: false
 
