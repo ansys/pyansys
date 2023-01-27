@@ -46,13 +46,13 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyFluent-Parametric
       :img-top: _static/thumbnails/pyfluent-parametric.png
-      :link: https://fluentparametric.docs.pyansys.com/api/index.html
+      :link: https://parametric.fluent.docs.pyansys.com/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyFluent-Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
-      :link: https://fluentvisualization.docs.pyansys.com/api/index.html
+      :link: https://visualization.fluent.docs.pyansys.com/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

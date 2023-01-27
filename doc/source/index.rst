@@ -50,7 +50,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent-Parametric
       :img-top: _static/thumbnails/pyfluent-parametric.png
-      :link: https://fluentparametric.docs.pyansys.com/
+      :link: https://parametric.fluent.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -58,7 +58,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent-Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
-      :link: https://fluentvisualization.docs.pyansys.com/
+      :link: https://visualization.fluent.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
 

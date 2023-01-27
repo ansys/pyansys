@@ -40,8 +40,8 @@ At this moment, this package ensures the compatibility between the following PyA
 - `PyDPF-Core <https://dpf.docs.pyansys.com/>`_ : Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows.
 - `PyDPF-Post <https://post.docs.pyansys.com/>`_ : Pythonic interface to DPF's postprocessing toolbox for manipulating and transforming simulation data.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_ : Pythonic interface to Ansys Fluent.
-- `PyFluent-Parametric <https://fluentparametric.docs.pyansys.com/>`_ : Pythonic interface to Ansys Fluent parametric workflows.
-- `PyFluent-Visualization <https://fluentvisualization.docs.pyansys.com/>`_ : Pythonic interface to visualize Ansys Fluent simulations using Python.
+- `PyFluent-Parametric <https://parametric.fluent.docs.pyansys.com/>`_ : Pythonic interface to Ansys Fluent parametric workflows.
+- `PyFluent-Visualization <https://visualization.fluent.docs.pyansys.com/>`_ : Pythonic interface to visualize Ansys Fluent simulations using Python.
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_ : Pythonic interface to MAPDL.
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the PIM (Product Instance Management) API.
