@@ -38,7 +38,7 @@ dependencies = [
     "ansys-openapi-common==1.2.0",
     "ansys-seascape==0.2.0",
     "ansys-meshing-prime==0.2.0",
-    "pytwin==0.1.2; python_version>='3.8'",
+    "pytwin==0.2.0; python_version>='3.8'",
 ]
 
 [project.optional-dependencies]
