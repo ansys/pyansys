@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 # Check https://flit.readthedocs.io/en/latest/pyproject_toml.html for all available sections
 name = "pyansys"
-version = "2023.1.2"
+version = "2023.1.3"
 description = "Pythonic interfaces to Ansys products"
 readme = "README.rst"
 license = "MIT"

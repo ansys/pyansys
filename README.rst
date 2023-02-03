@@ -93,11 +93,11 @@ If you are interested in **installing an extra target** such as ``fluent-all``:
 
    python -m pip install pyansys[fluent-all]
 
-If you are interested in **installing a specific version** such as ``2023.1.2``:
+If you are interested in **installing a specific version** such as ``2023.1.3``:
 
 .. code:: bash
 
-   python -m pip install pyansys==2023.1.2
+   python -m pip install pyansys==2023.1.3
 
 Offline mode installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -114,7 +114,7 @@ For example, on Linux with Python 3.7, unzip the wheelhouse archive and install 
 
 .. code:: bash
 
-    unzip pyansys-v2023.1.2-wheelhouse-Linux-3.7-core.zip wheelhouse
+    unzip pyansys-v2023.1.3-wheelhouse-Linux-3.7-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and install using the same command as above.
