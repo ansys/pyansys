@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       release-date:
-        description: 'Milestone release date (format must be YYYY/MM/DD)'     
+        description: 'Milestone release date (format must be YYYY/MM/DD)'
         required: true
         default: '2023/01/30'
 
@@ -22,6 +22,7 @@ jobs:
             "pyansys/pymapdl-reader",
             "pyansys/pydpf-core",
             "pyansys/pydpf-post",
+            "pyansys/pydpf-composites",
             "pyansys/pyfluent",
             "pyansys/pyfluent-parametric",
             "pyansys/pyfluent-visualization",
@@ -59,4 +60,3 @@ jobs:
           RELEASE_DATE: ${{ github.event.inputs.release-date }}
         run: |
           python tools/milestone.py
-

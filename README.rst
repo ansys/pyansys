@@ -39,6 +39,7 @@ At this moment, this package ensures the compatibility between the following PyA
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_ : Pythonic interface to AEDT (Ansys Electronic Desktop).
 - `PyDPF-Core <https://dpf.docs.pyansys.com/>`_ : Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows.
 - `PyDPF-Post <https://post.docs.pyansys.com/>`_ : Pythonic interface to DPF's postprocessing toolbox for manipulating and transforming simulation data.
+- `PyDPF Composites <https://composites.dpf.docs.pyansys.com/>`_ : Pythonic interface to post-process layered and short-fiber composite models.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_ : Pythonic interface to Ansys Fluent.
 - `PyFluent-Parametric <https://parametric.fluent.docs.pyansys.com/>`_ : Pythonic interface to Ansys Fluent parametric workflows.
 - `PyFluent-Visualization <https://visualization.fluent.docs.pyansys.com/>`_ : Pythonic interface to visualize Ansys Fluent simulations using Python.
@@ -61,6 +62,7 @@ By default, the PyAnsys package installs these core modules:
 - `PyAEDT`_
 - `PyDPF-Core`_
 - `PyDPF-Post`_
+- `PyDPF Composites`_
 - `PyFluent`_
 - `PyMAPDL`_
 - `PyPIM`_
@@ -88,7 +90,7 @@ Before installing ``pyansys`` in user mode, ensure that you have the latest
 version of `pip <https://pypi.org/project/pip/>`_ with:
 
 .. code:: bash
-   
+
     python -m pip install -U pip
 
 Then, install ``pyansys`` with:
@@ -172,10 +174,10 @@ License and acknowledgments
 ---------------------------
 All PyAnsys libraries are licensed under the MIT license.
 
-PyAnsys libraries make no commercial claim over Ansys whatsoever. 
+PyAnsys libraries make no commercial claim over Ansys whatsoever.
 These libraries extend the functionality of Ansys products by
 adding Python interfaces to legally obtained software products
 without changing the core behaviors or licenses of the original
-software.  
+software.
 
 For more information about Ansys products, visit the `Ansys web site <https://www.ansys.com/>`_.

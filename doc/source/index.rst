@@ -2,7 +2,7 @@
 PyAnsys
 =======
 
-Welcome to the PyAnsys project. While this project originated as a single ``pyansys`` package, 
+Welcome to the PyAnsys project. While this project originated as a single ``pyansys`` package,
 it is now a collection of many Python packages for using Ansys products through Python:
 
 .. toctree::
@@ -26,10 +26,10 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyDPF-Core
       :img-top: _static/thumbnails/pydpf-core.png
-      :link: https://dpf.docs.pyansys.com 
+      :link: https://dpf.docs.pyansys.com
       :text-align: center
       :class-title: pyansys-card-title
-             
+
       Read and transform finite element data across simulation domains, with powerful, scalable operators
 
     .. grid-item-card:: PyDPF-Post
@@ -39,6 +39,14 @@ it is now a collection of many Python packages for using Ansys products through 
       :class-title: pyansys-card-title
 
       Extract actionable insights from finite element simulation with a streamlined post-processing API
+
+    .. grid-item-card:: PyDPF Composites
+      :img-top: _static/thumbnails/pydpf-composites.png
+      :link: https://composites.dpf.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Post-process layered and short-fiber composite models, using pre-defined or custom failure criteria.
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
@@ -74,7 +82,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://reader.docs.pyansys.com/ 
+      :link: https://reader.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
 
