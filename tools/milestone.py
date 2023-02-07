@@ -94,7 +94,6 @@ for milestone in milestones:
 
 # If the milestone hasn't been created yet... go ahead!
 if not is_created:
-
     # Milestone information
     desc = f"""This repository is part of an Ansys Release (unified install).
 
