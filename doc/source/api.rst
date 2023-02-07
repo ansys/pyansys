@@ -6,7 +6,7 @@ to this package that can be provided is its version. This can be looked up as fo
 
 .. code-block:: pycon
 
-    >>> from pyansys import __version__ 
+    >>> from pyansys import __version__
     >>> __version__
 
     '2023.1.0'
@@ -35,6 +35,12 @@ PyAnsys packages API reference
     .. grid-item-card:: PyDPF-Post
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://post.docs.pyansys.com/dev/api/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
+    .. grid-item-card:: PyDPF Composites
+      :img-top: _static/thumbnails/pydpf-composites.png
+      :link: https://composites.dpf.docs.pyansys.com/dev/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

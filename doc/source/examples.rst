@@ -27,6 +27,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyDPF Composites
+      :img-top: _static/thumbnails/pydpf-composites.png
+      :link: https://composites.dpf.docs.pyansys.com/dev/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
       :link: https://fluent.docs.pyansys.com/examples/index.html

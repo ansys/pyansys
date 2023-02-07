@@ -30,6 +30,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyDPF Composites
+      :img-top: _static/thumbnails/pydpf-composites.png
+      :link: https://composites.pdf.docs.pyansys.com/dev/intro.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
       :link: https://fluent.docs.pyansys.com/user_guide/index.html
