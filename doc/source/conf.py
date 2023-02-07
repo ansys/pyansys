@@ -29,7 +29,7 @@ html_context = {
     "github_user": "pyansys",
     "github_repo": "pyansys",
     "github_version": "main",
-    "doc_path": "doc",
+    "doc_path": "doc/source",
 }
 
 html_theme_options = {
