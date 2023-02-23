@@ -30,7 +30,7 @@ dependencies = [
     "ansys-mapdl-core==0.64.0",
     "ansys-dpf-core==0.7.2",
     "ansys-dpf-post==0.2.5",
-    "ansys-dpf-gate==0.3.0",
+    "ansys-dpf-gate==0.3.1",
     "ansys-dpf-composites==0.1.0",
     "ansys-fluent-core==0.12.3",
     "pyaedt==0.6.47",
