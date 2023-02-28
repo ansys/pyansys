@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: pyansys/actions/doc-style@v3
+        uses: pyansys/actions/doc-style@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -105,7 +105,7 @@ jobs:
 
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: pyansys/actions/build-wheelhouse@v3
+        uses: pyansys/actions/build-wheelhouse@v4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           library-namespace: ${{ env.PACKAGE_NAMESPACE }}
@@ -120,13 +120,13 @@ jobs:
 
     steps:
       - name: Build documentation
-        uses: pyansys/actions/doc-build@v3
+        uses: pyansys/actions/doc-build@v4
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
 
       - name: Deploy the latest documentation
-        uses: pyansys/actions/doc-deploy-dev@v3
+        uses: pyansys/actions/doc-deploy-dev@v4
         if: github.ref == 'refs/heads/main'
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
@@ -138,7 +138,7 @@ jobs:
     needs: [docs-build, smoke-tests-core]
     steps:
       - name: Build library source and wheel artifacts
-        uses: pyansys/actions/build-library@v3
+        uses: pyansys/actions/build-library@v4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
@@ -150,13 +150,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Release to PyPI repository
-        uses: pyansys/actions/release-pypi-public@v3
+        uses: pyansys/actions/release-pypi-public@v4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           twine-username: __token__
           twine-token: ${{ secrets.PYPI_TOKEN }}
 
       - name: Release to GitHub
-        uses: pyansys/actions/release-github@v3
+        uses: pyansys/actions/release-github@v4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
