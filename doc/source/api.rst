@@ -100,7 +100,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
-      :link: https://grantami.docs.pyansys.com/api/index.html
+      :link: https://bomanalytics.grantami.docs.pyansys.com/version/stable/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

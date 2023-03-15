@@ -122,7 +122,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
-      :link: https://grantami.docs.pyansys.com/
+      :link: https://bomanalytics.grantami.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
 

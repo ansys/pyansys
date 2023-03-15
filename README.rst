@@ -49,7 +49,7 @@ At this moment, this package ensures the compatibility between the following PyA
 - `PyPrimeMesh <https://prime.docs.pyansys.com>`_: Pythonic interface to Ansys Prime Server which delivers core Ansys meshing technology.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with RedHawkSC and TotemSC.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Digital Twins consumption workflows.
-- `Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>`_: Pythonic interface to Granta MI BoM Analytics services.
+- `Granta MI BoM Analytics <https://bomanalytics.grantami.docs.pyansys.com/>`_: Pythonic interface to Granta MI BoM Analytics services.
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared software components to enable package interoperability and minimize maintenance.
 
 Much effort is underway to continue expanding and developing packages in the
