@@ -48,7 +48,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
 - `PyPrimeMesh <https://prime.docs.pyansys.com>`_: Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
-- _`PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
+- `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
 - `Granta MI BoM Analytics <https://bomanalytics.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI BoM Analytics services.
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared Ansys software components to enable package interoperability and minimize maintenance.
@@ -77,8 +77,8 @@ By default, the PyAnsys metapackage installs these core modules:
 Additionally, the ``pyansys`` metapackage contains certain extra targets that
 can be installed upon request:
 
-- **mapdl-all**: This target installs the core PyMAPDL package and `PyMAPDL Reader`_.
-- **fluent-all**: This target installs the core PyFluent package and `PyFluent-Parametric`_ and `PyFluent-Visualization`_.
+- **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
+- **fluent-all**: This target installs the core packages and `PyFluent-Parametric`_ and `PyFluent-Visualization`_.
 - **all**: This target install all extra ``pyansys`` packages.
 
 Package installation
