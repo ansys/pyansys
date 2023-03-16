@@ -79,7 +79,7 @@ can be installed upon request:
 
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
 - **fluent-all**: This target installs the core packages and `PyFluent-Parametric`_ and `PyFluent-Visualization`_.
-- **all**: This target install all extra ``pyansys`` packages.
+- **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation
 --------------------
