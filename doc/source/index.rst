@@ -120,6 +120,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to communicate with Ansys Digital Twins consumption workflows.
 
+    .. grid-item-card:: PySystem Coupling
+      :img-top: _static/thumbnails/intro.png
+      :link: https://systemcoupling.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to communicate with Ansys System Coupling.
+
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
       :link: https://bomanalytics.grantami.docs.pyansys.com/

@@ -98,6 +98,12 @@ PyAnsys packages API reference
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PySystem Coupling
+      :img-top: _static/thumbnails/intro.png
+      :link: https://systemcoupling.docs.pyansys.com/dev/api/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
       :link: https://bomanalytics.grantami.docs.pyansys.com/version/stable/index.html
