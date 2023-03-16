@@ -81,19 +81,19 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+.. grid-item-card:: PySystemCoupling
+      :img-top: _static/thumbnails/intro.png
+      :link: https://systemcoupling.docs.pyansys.com/dev/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
       :link: https://twin.docs.pyansys.com/dev/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
-    .. grid-item-card:: PySystem Coupling
-      :img-top: _static/thumbnails/intro.png
-      :link: https://systemcoupling.docs.pyansys.com/dev/examples/index.html
-      :text-align: center
-      :class-title: pyansys-card-title
-
-    .. grid-item-card:: Granta MI BoM Analytics
+        .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
       :link: https://bomanalytics.grantami.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center

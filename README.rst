@@ -36,14 +36,14 @@ of these packages amongst themselves and the Ansys product release that they are
 
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
-- `PyAEDT <https://aedt.docs.pyansys.com/>`_ : Pythonic interface to AEDT (Ansys Electronics Desktop).
-- `PyDPF-Core <https://dpf.docs.pyansys.com/>`_ : Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
-- `PyDPF-Post <https://post.docs.pyansys.com/>`_ : Pythonic interface to DPF's postprocessing toolbox for manipulating and transforming simulation data.
-- `PyDPF Composites <https://composites.dpf.docs.pyansys.com/>`_ : Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
-- `PyFluent <https://fluent.docs.pyansys.com/>`_ : Pythonic interface to Ansys Fluent.
-- `PyFluent-Parametric <https://parametric.fluent.docs.pyansys.com/>`_ : Pythonic interface to Ansys Fluent parametric workflows.
-- `PyFluent-Visualization <https://visualization.fluent.docs.pyansys.com/>`_ : Pythonic interface to visualize Ansys Fluent simulations using Python.
-- `PyMAPDL <https://mapdl.docs.pyansys.com/>`_ : Pythonic interface to Ansys MAPDL (Mechanical APLD).
+- `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
+- `PyDPF-Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
+- `PyDPF-Post <https://post.docs.pyansys.com/>`_: Pythonic interface to DPF's postprocessing toolbox for manipulating and transforming simulation data.
+- `PyDPF Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
+- `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
+- `PyFluent-Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
+- `PyFluent-Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
+- `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APLD).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
 - `PyPrimeMesh <https://prime.docs.pyansys.com>`_: Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology.
