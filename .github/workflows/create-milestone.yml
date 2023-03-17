@@ -33,6 +33,7 @@ jobs:
             "pyansys/pyseascape",
             "pyansys/pyprimemesh",
             "pyansys/pytwin",
+            "pyansys/pysystem-coupling",
           ]
     steps:
       - uses: actions/checkout@v3
