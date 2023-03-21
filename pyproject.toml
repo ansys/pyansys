@@ -41,6 +41,7 @@ dependencies = [
     "ansys-meshing-prime==0.3.0",
     "pytwin==0.2.0",
     "ansys-systemcoupling-core==0.1.1",
+    "ansys-motorcad-core==0.1.3",
 ]
 
 [project.optional-dependencies]
