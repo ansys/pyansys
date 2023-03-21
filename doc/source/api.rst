@@ -74,6 +74,12 @@ PyAnsys packages API reference
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyMotorCAD
+      :img-top: _static/thumbnails/pymotorcad.png
+      :link: https://motorcad.docs.pyansys.com/version/stable/methods/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
       :link: https://pypim.docs.pyansys.com/api/index.html

@@ -66,6 +66,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyMotorCAD
+      :img-top: _static/thumbnails/pymotorcad.png
+      :link: https://motorcad.docs.pyansys.com/version/stable/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
       :link: https://pypim.docs.pyansys.com/index.html#getting-started
