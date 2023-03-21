@@ -17,19 +17,19 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyDPF-Core
       :img-top: _static/thumbnails/pydpf-core.png
-      :link: https://dpf.docs.pyansys.com/examples/index.html
+      :link: https://dpf.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyDPF-Post
       :img-top: _static/thumbnails/pydpf-core.png
-      :link: https://post.docs.pyansys.com/dev/examples/index.html
+      :link: https://post.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyDPF Composites
       :img-top: _static/thumbnails/pydpf-composites.png
-      :link: https://composites.dpf.docs.pyansys.com/dev/examples/index.html
+      :link: https://composites.dpf.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -77,13 +77,13 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/intro.png
-      :link: https://prime.docs.pyansys.com/examples/index.html
+      :link: https://prime.docs.pyansys.com/dev/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
-      :link: https://seascape.docs.pyansys.com/dev/#examples
+      :link: https://seascape.docs.pyansys.com/version/dev/#examples
       :text-align: center
       :class-title: pyansys-card-title
 
