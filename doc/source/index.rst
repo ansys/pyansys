@@ -24,6 +24,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to AEDT (Ansys Electronic Desktop)
 
+    .. grid-item-card:: PyAnsys Math
+      :img-top: _static/thumbnails/pyansys-math.png
+      :link: https://math.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to PyAnsys Math libraries
+
     .. grid-item-card:: PyDPF-Core
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://dpf.docs.pyansys.com

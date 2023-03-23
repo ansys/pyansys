@@ -18,6 +18,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyAnsys Math
+      :img-top: _static/thumbnails/pyansys-math.png
+      :link: https://math.docs.pyansys.com/version/stable/getting_started/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyDPF-Core
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://dpf.docs.pyansys.com/version/stable/user_guide/index.html

@@ -37,6 +37,7 @@ of these packages amongst themselves and the Ansys product release that they are
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
+- `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
 - `PyDPF-Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
 - `PyDPF-Post <https://post.docs.pyansys.com/>`_: Pythonic interface to DPF's postprocessing toolbox for manipulating and transforming simulation data.
 - `PyDPF Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
@@ -62,11 +63,13 @@ free to post a question on the [Ansys Developer Forums](https://discuss.ansys.co
 By default, the PyAnsys metapackage installs these core modules:
 
 - `PyAEDT`_
+- `PyAnsys Math`_
 - `PyDPF-Core`_
 - `PyDPF-Post`_
 - `PyDPF Composites`_
 - `PyFluent`_
 - `PyMAPDL`_
+- `PyMotorCAD`_
 - `PyPIM`_
 - `PyPrimeMesh`_
 - `PySeascape`_
