@@ -75,6 +75,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyOptislang
+      :img-top: _static/thumbnails/intro.png
+      :link: https://optislang.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
       :link: https://pypim.docs.pyansys.com/integration.html
