@@ -47,6 +47,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APLD).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyMotorCAD <https://motorcad.docs.pyansys.com/>`_: Pythonic interface to Ansys Motor-CAD.
+- `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys Optislang.
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
 - `PyPrimeMesh <https://prime.docs.pyansys.com>`_: Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
@@ -70,6 +71,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyFluent`_
 - `PyMAPDL`_
 - `PyMotorCAD`_
+- `PyOptislang`_
 - `PyPIM`_
 - `PyPrimeMesh`_
 - `PySeascape`_

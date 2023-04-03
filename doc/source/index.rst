@@ -104,6 +104,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Motor-CAD.
 
+    .. grid-item-card:: PyOptislang
+      :img-top: _static/thumbnails/pyoptislang.png
+      :link: https://optislang.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Optislang.
+
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
       :link: https://pypim.docs.pyansys.com/
