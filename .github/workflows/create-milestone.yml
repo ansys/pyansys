@@ -36,6 +36,7 @@ jobs:
             "pyansys/pysystem-coupling",
             "pyansys/pymotorcad",
             "pyansys/pyansys-math",
+            "pyansys/pyoptislang",
           ]
     steps:
       - uses: actions/checkout@v3
