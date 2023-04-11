@@ -59,7 +59,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://mapdl.docs.pyansys.com/version/dev/examples/index.html
+      :link: https://mapdl.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -101,13 +101,13 @@ PyAnsys packages examples
 
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
-      :link: https://systemcoupling.docs.pyansys.com/version/dev/examples/index.html
+      :link: https://systemcoupling.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
-      :link: https://twin.docs.pyansys.com/version/dev/examples/index.html
+      :link: https://twin.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
