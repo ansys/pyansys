@@ -20,7 +20,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
-      :link: https://math.docs.pyansys.com/version/stable/getting_started/index.html
+      :link: https://math.docs.pyansys.com/version/stable/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

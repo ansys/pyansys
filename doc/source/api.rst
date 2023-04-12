@@ -28,7 +28,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
-      :link: https://math.docs.pyansys.com/version/stable/api_ref/index.html
+      :link: https://math.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
