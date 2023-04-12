@@ -86,7 +86,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys MAPDL (Mechanical APLD)
+      Pythonic interface to Ansys MAPDL (Mechanical APDL)
 
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
@@ -96,13 +96,21 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
 
+    .. grid-item-card:: PyMechanical
+      :img-top: _static/thumbnails/pymechanical.png
+      :link: https://mechanical.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Mechanical
+
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
       :link: https://motorcad.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Motor-CAD.
+      Pythonic interface to Ansys Motor-CAD
 
     .. grid-item-card:: PyOptislang
       :img-top: _static/thumbnails/pyoptislang.png
@@ -110,7 +118,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Optislang.
+      Pythonic interface to Ansys Optislang
 
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png

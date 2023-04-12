@@ -69,6 +69,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyMechanical
+      :img-top: _static/thumbnails/pymechanical.png
+      :link: https://mechanical.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
       :link: https://motorcad.docs.pyansys.com/version/stable/examples/index.html
