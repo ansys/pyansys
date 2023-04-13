@@ -173,5 +173,5 @@ jobs:
         uses: pyansys/actions/release-github@v4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
-          additional-artifacts: 'all-deps-*'
+          additional-artifacts: 'all-deps-Linux-3.8.txt all-deps-Linux-3.9.txt all-deps-Linux-3.10.txt all-deps-Linux-3.11.txt all-deps-Windows-3.8.txt all-deps-Windows-3.9.txt all-deps-Windows-3.10.txt all-deps-Windows-3.11.txt all-deps-macOS-3.8.txt all-deps-macOS-3.9.txt all-deps-macOS-3.10.txt all-deps-macOS-3.11.txt'
           dry-run: true
