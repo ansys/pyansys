@@ -88,7 +88,7 @@ it with the following:
 
 .. code:: bash
 
-    unzip pyansys-v2023.1.dev0-wheelhouse-Linux-3.9-core.zip wheelhouse
+    unzip pyansys-v2023.2rc2-wheelhouse-Linux-3.9-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and install using the same command as above.
