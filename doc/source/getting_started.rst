@@ -47,7 +47,7 @@ Before installing ``pyansys`` in user mode, ensure that you have the latest
 version of `pip <https://pypi.org/project/pip/>`_ with:
 
 .. code:: bash
-   
+
     python -m pip install -U pip
 
 Then, install ``pyansys`` with:
