@@ -20,7 +20,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
-      :link: https://math.docs.pyansys.com/version/stable/getting_started/index.html
+      :link: https://math.docs.pyansys.com/version/stable/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -69,6 +69,12 @@ PyAnsys packages user guides
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://reader.docs.pyansys.com/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
+    .. grid-item-card:: PyMechanical
+      :img-top: _static/thumbnails/pymechanical.png
+      :link: https://mechanical.docs.pyansys.com/version/stable/index.html#background
       :text-align: center
       :class-title: pyansys-card-title
 

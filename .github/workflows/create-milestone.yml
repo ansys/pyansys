@@ -37,6 +37,7 @@ jobs:
             "pyansys/pymotorcad",
             "pyansys/pyansys-math",
             "pyansys/pyoptislang",
+            "pyansys/pymechanical",
           ]
     steps:
       - uses: actions/checkout@v3

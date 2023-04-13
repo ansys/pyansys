@@ -44,7 +44,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
 - `PyFluent-Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
 - `PyFluent-Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
-- `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APLD).
+- `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APDL).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyMotorCAD <https://motorcad.docs.pyansys.com/>`_: Pythonic interface to Ansys Motor-CAD.
 - `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys Optislang.
@@ -130,15 +130,15 @@ the ``pyansys`` metapackage is downloading the wheelhouse archive from the
 `Releases Page <https://github.com/pyansys/pyansys/releases>`_ for your corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install the ``pyansys`` metapackage from
-scratch on Windows, Linux, and MacOS from Python 3.7 to 3.10. You can install this on an isolated system with
+scratch on Windows, Linux, and MacOS from Python 3.8 to 3.11. You can install this on an isolated system with
 a fresh Python installation or on a virtual environment.
 
-For example, on Linux with Python 3.7, unzip the wheelhouse archive and install it with the following
+For example, on Linux with Python 3.8, unzip the wheelhouse archive and install it with the following
 commands:
 
 .. code:: bash
 
-    unzip pyansys-v2023.1.dev0-wheelhouse-Linux-3.7-core.zip wheelhouse
+    unzip pyansys-v2023.1.dev0-wheelhouse-Linux-3.8-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and then install using

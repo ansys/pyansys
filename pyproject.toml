@@ -8,7 +8,7 @@ name = "pyansys"
 version = "2023.2rc1"
 description = "Pythonic interfaces to Ansys products"
 readme = "README.rst"
-requires-python = ">=3.7,<4"
+requires-python = ">=3.8,<4"
 license = {file = "LICENSE"}
 authors = [{name = "ANSYS, Inc.", email = "pyansys.support@ansys.com"}]
 maintainers = [{name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com"}]
@@ -18,7 +18,6 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Information Analysis",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -33,7 +32,7 @@ dependencies = [
     "ansys-dpf-gate==0.3.1",
     "ansys-dpf-composites==0.2b2",
     "ansys-fluent-core==0.12.5",
-    "pyaedt==0.6.61",
+    "pyaedt==0.6.70",
     "ansys-platform-instancemanagement==1.0.3",
     "ansys-grantami-bomanalytics==1.1.3",
     "ansys-openapi-common==1.2.1",
@@ -42,8 +41,9 @@ dependencies = [
     "pytwin==0.3.0",
     "ansys-systemcoupling-core==0.1.3",
     "ansys-motorcad-core==0.1.3",
-    "ansys-math-core==0.1.0",
+    "ansys-math-core==0.1.1",
     "ansys-optislang-core==0.2.0",
+    "ansys-mechanical-core==0.7.1",
 ]
 
 [project.optional-dependencies]
@@ -61,9 +61,9 @@ all = [
 ]
 doc = [
     "Sphinx==5.3.0",
-    "ansys-sphinx-theme==0.9.6",
+    "ansys-sphinx-theme==0.9.7",
     "sphinx-copybutton==0.5.1",
-    "sphinx-design==0.3.0",
+    "sphinx-design==0.4.1",
 ]
 
 [project.urls]

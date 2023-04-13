@@ -28,7 +28,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
-      :link: https://math.docs.pyansys.com/version/stable/api_ref/index.html
+      :link: https://math.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -77,6 +77,12 @@ PyAnsys packages API reference
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://reader.docs.pyansys.com/api/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
+    .. grid-item-card:: PyMechanical
+      :img-top: _static/thumbnails/pymechanical.png
+      :link: https://mechanical.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

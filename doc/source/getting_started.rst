@@ -47,7 +47,7 @@ Before installing ``pyansys`` in user mode, ensure that you have the latest
 version of `pip <https://pypi.org/project/pip/>`_ with:
 
 .. code:: bash
-   
+
     python -m pip install -U pip
 
 Then, install ``pyansys`` with:
@@ -80,7 +80,7 @@ architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install
 ``pyansys`` metapackage from scratch on Windows, Linux, and MacOS from Python
-3.7 to 3.10. You can install this on an isolated system with a fresh Python
+3.8 to 3.11. You can install this on an isolated system with a fresh Python
 installation or on a virtual environment.
 
 For example, on Linux with Python 3.9, unzip the wheelhouse archive and install
