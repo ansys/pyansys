@@ -121,7 +121,7 @@ jobs:
       - name: Upload dependencies list
         uses: actions/upload-artifact@v3
         with:
-          name: all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
+          name: all-deps-${{ runner.os }}-${{ matrix.python-version }}
           path: all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
           retention-days: 7
 
@@ -172,4 +172,4 @@ jobs:
         uses: pyansys/actions/release-github@v4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
-          additional-artifacts: 'all-deps-Linux-3.8.txt all-deps-Linux-3.9.txt all-deps-Linux-3.10.txt all-deps-Linux-3.11.txt all-deps-Windows-3.8.txt all-deps-Windows-3.9.txt all-deps-Windows-3.10.txt all-deps-Windows-3.11.txt all-deps-macOS-3.8.txt all-deps-macOS-3.9.txt all-deps-macOS-3.10.txt all-deps-macOS-3.11.txt'
+          additional-artifacts: 'all-deps-Linux-3.8 all-deps-Linux-3.9 all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Windows-3.8 all-deps-Windows-3.9 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-macOS-3.8 all-deps-macOS-3.9 all-deps-macOS-3.10 all-deps-macOS-3.11'
