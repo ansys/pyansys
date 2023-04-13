@@ -113,6 +113,18 @@ jobs:
           python-version: ${{ matrix.python-version }}
           target: "all"
 
+      - name: List dependencies (pip freeze)
+        run: |
+          pip freeze > all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
+          cat all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
+
+      - name: Upload dependencies list
+        uses: actions/upload-artifact@v3
+        with:
+          name: all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
+          path: all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
+          retention-days: 7
+
   docs-build:
     name: Building Documentation
     runs-on: ubuntu-latest
