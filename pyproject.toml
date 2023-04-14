@@ -27,7 +27,7 @@ classifiers = [
 dependencies = [
     "importlib-metadata>=4.0,<5; python_version<='3.8'",
     "ansys-mapdl-core==0.64.1",
-    "ansys-dpf-core==0.8.0",
+    "ansys-dpf-core==0.8.1",
     "ansys-dpf-post==0.4.0",
     "ansys-dpf-gate==0.3.1",
     "ansys-dpf-composites==0.2b2",
