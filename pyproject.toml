@@ -51,12 +51,12 @@ mapdl-all = [
     "ansys-mapdl-reader==0.52.11",
 ]
 fluent-all = [
-    "ansys-fluent-visualization==0.6.0",
+    "ansys-fluent-visualization==0.7.0",
     "ansys-fluent-parametric==0.6.1",
 ]
 all = [
     "ansys-mapdl-reader==0.52.11",
-    "ansys-fluent-visualization==0.6.0",
+    "ansys-fluent-visualization==0.7.0",
     "ansys-fluent-parametric==0.6.1",
 ]
 doc = [
