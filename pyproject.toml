@@ -60,7 +60,7 @@ all = [
     "ansys-fluent-parametric==0.7.1",
 ]
 doc = [
-    "Sphinx==6.1.3", # BLOCKED BY sphinx-design - Cannot upgrade to Sphinx 7 for now
+    "Sphinx==7.0.0", # BLOCKED BY sphinx-design - Cannot upgrade to Sphinx 7 for now
     "ansys-sphinx-theme==0.9.8",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.4.1",
