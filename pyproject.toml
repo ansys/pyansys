@@ -61,7 +61,7 @@ all = [
 ]
 doc = [
     "Sphinx==6.2.1", # BLOCKED BY sphinx-design - Cannot upgrade to Sphinx 7 for now
-    "ansys-sphinx-theme==0.9.8",
+    "ansys-sphinx-theme==0.9.9",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.4.1",
 ]
