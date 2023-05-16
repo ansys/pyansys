@@ -14,8 +14,8 @@ PyAnsys metapackage
    :target: https://pypi.org/project/pyansys/
    :alt: PyPI
 
-.. |GH-CI| image:: https://github.com/pyansys/pyansys/actions/workflows/ci-build.yml/badge.svg
-   :target: https://github.com/pyansys/pyansys/actions/workflows/ci-build.yml
+.. |GH-CI| image:: https://github.com/ansys/pyansys/actions/workflows/ci-build.yml/badge.svg
+   :target: https://github.com/ansys/pyansys/actions/workflows/ci-build.yml
    :alt: GH-CI
 
 .. |MIT| image:: https://img.shields.io/badge/License-MIT-yellow.svg
@@ -57,7 +57,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared Ansys software components to enable package interoperability and minimize maintenance.
 
 Much effort is underway to continue expanding and developing packages in the
-`PyAnsys GitHub <https://github.com/pyansys/>`__ account. On the ``Issues`` page
+`PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page
 for each package, you can post issues and request new features. You can also feel
 free to post a question on the [Ansys Developer Forums](https://discuss.ansys.com/).
 
@@ -127,7 +127,7 @@ Offline mode installation
 
 If you lack an internet connection on your installation machine, the recommended way of installing
 the ``pyansys`` metapackage is downloading the wheelhouse archive from the
-`Releases Page <https://github.com/pyansys/pyansys/releases>`_ for your corresponding machine architecture.
+`Releases Page <https://github.com/ansys/pyansys/releases>`_ for your corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install the ``pyansys`` metapackage from
 scratch on Windows, Linux, and MacOS from Python 3.8 to 3.11. You can install this on an isolated system with
