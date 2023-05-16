@@ -75,7 +75,7 @@ Offline mode installation
 If you lack an internet connection on your installation machine, the
 recommended way of installing the ``pyansys`` metapackage is downloading the
 wheelhouse archive from the `Releases Page
-<https://github.com/pyansys/pyansys/releases>`_ for your corresponding machine
+<https://github.com/ansys/pyansys/releases>`_ for your corresponding machine
 architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install
