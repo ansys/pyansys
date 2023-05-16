@@ -32,6 +32,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to PyAnsys Math libraries
 
+    .. grid-item-card:: PyDPF-Post
+      :img-top: _static/thumbnails/pydpf-core.png
+      :link: https://post.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to DPF (Data Processing Framework) for quick post-processing of simulation data
+
     .. grid-item-card:: PyDPF-Core
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://dpf.docs.pyansys.com
@@ -39,14 +47,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :class-title: pyansys-card-title
 
       Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows
-
-    .. grid-item-card:: PyDPF-Post
-      :img-top: _static/thumbnails/pydpf-core.png
-      :link: https://post.docs.pyansys.com/
-      :text-align: center
-      :class-title: pyansys-card-title
-
-      Pythonic interface to DPF's postprocessing toolbox for manipulating and transforming simulation data
 
     .. grid-item-card:: PyDPF Composites
       :img-top: _static/thumbnails/pydpf-composites.png
