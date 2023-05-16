@@ -67,7 +67,7 @@ doc = [
 ]
 
 [project.urls]
-Source = "https://github.com/pyansys/pyansys"
+Source = "https://github.com/ansys/pyansys"
 Documentation = "https://docs.pyansys.com"
 
 [tool.flit.module]
