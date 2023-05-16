@@ -33,7 +33,7 @@ it is now a collection of many Python packages for using Ansys products through 
       Pythonic interface to PyAnsys Math libraries
 
     .. grid-item-card:: PyDPF-Post
-      :img-top: _static/thumbnails/pydpf-core.png
+      :img-top: _static/thumbnails/pydpf-post.png
       :link: https://post.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
