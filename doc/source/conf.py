@@ -26,14 +26,14 @@ extensions = [
 ]
 
 html_context = {
-    "github_user": "pyansys",
+    "github_user": "ansys",
     "github_repo": "pyansys",
     "github_version": "main",
     "doc_path": "doc/source",
 }
 
 html_theme_options = {
-    "github_url": "https://github.com/pyansys",
+    "github_url": "https://github.com/ansys",
     "show_prev_next": False,
     "show_breadcrumbs": True,
     # "collapse_navigation": True,
@@ -41,7 +41,7 @@ html_theme_options = {
     "icon_links": [
         # {
         #     "name": "Support",
-        #     "url": "https://github.com/pyansys/pymapdl/discussions",
+        #     "url": "https://github.com/ansys/pyansys/discussions",
         #     "icon": "fa fa-comment fa-fw",
         # },
         {
