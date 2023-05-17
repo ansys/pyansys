@@ -46,6 +46,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyFluent-Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APDL).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
+- `PyMechanical <https://mechanical.docs.pyansys.com/>`_: Pythonic interface to Ansys Mechanical.
 - `PyMotorCAD <https://motorcad.docs.pyansys.com/>`_: Pythonic interface to Ansys Motor-CAD.
 - `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys Optislang.
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
@@ -70,6 +71,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyDPF Composites`_
 - `PyFluent`_
 - `PyMAPDL`_
+- `PyMechanical`_
 - `PyMotorCAD`_
 - `PyOptislang`_
 - `PyPIM`_
