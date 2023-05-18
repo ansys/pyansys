@@ -42,7 +42,7 @@ dependencies = [
     "ansys-systemcoupling-core==0.1.3",
     "ansys-motorcad-core==0.1.3",
     "ansys-math-core==0.1.1",
-    "ansys-optislang-core==0.2.0",
+    "ansys-optislang-core==0.2.1",
     "ansys-mechanical-core==0.8.0",
 ]
 
