@@ -46,7 +46,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to DPF (Data Processing Framework) for quick post-processing of simulation data
+      Pythonic interface to access and post process Ansys solver result files
 
     .. grid-item-card:: PyDPF Composites
       :img-top: _static/thumbnails/pydpf-composites.png
