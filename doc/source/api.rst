@@ -39,7 +39,7 @@ PyAnsys packages API reference
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyDPF-Post
-      :img-top: _static/thumbnails/pydpf-core.png
+      :img-top: _static/thumbnails/pydpf-post.png
       :link: https://post.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
