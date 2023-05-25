@@ -60,7 +60,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page
 for each package, you can post issues and request new features. You can also feel
-free to post a question on the [Ansys Developer Forums](https://discuss.ansys.com/).
+free to post a question on the `Ansys Developer Forums <https://discuss.ansys.com/>`_.
 
 By default, the PyAnsys metapackage installs these core modules:
 
