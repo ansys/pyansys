@@ -9,7 +9,7 @@ to this package that can be provided is its version. This can be looked up as fo
     >>> from pyansys import __version__
     >>> __version__
 
-    '2023.2.1'
+    '2023.2.2'
 
 However, each of the PyAnsys packages that shape the ``pyansys`` metapackage have their own specific API
 reference section. In order to navigate through them, please refer to their documentation.
