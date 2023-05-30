@@ -33,7 +33,7 @@ html_context = {
 }
 
 html_theme_options = {
-    "github_url": "https://github.com/ansys",
+    "github_url": "https://github.com/ansys/pyansys",
     "show_prev_next": False,
     "show_breadcrumbs": True,
     # "collapse_navigation": True,
@@ -46,7 +46,7 @@ html_theme_options = {
         # },
         {
             "name": "Contribute",
-            "url": "https://dev.docs.pyansys.com/dev/how-to/contributing.html",
+            "url": "https://dev.docs.pyansys.com/how-to/contributing.html",
             "icon": "fa fa-wrench",
         },
     ],
