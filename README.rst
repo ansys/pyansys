@@ -39,7 +39,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
 - `PyDPF-Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
-- `PyDPF-Post <https://post.docs.pyansys.com/>`_: Pythonic interface to DPF's postprocessing toolbox for manipulating and transforming simulation data.
+- `PyDPF-Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
 - `PyDPF Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
 - `PyFluent-Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
