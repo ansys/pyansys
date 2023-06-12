@@ -15,7 +15,7 @@ concurrency:
 env:
   PACKAGE_NAME: pyansys
   PACKAGE_NAMESPACE: pyansys
-  MAIN_PYTHON_VERSION: '3.9'
+  MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
 
 jobs:
@@ -173,3 +173,14 @@ jobs:
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           additional-artifacts: 'all-deps-Linux-3.8 all-deps-Linux-3.9 all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Windows-3.8 all-deps-Windows-3.9 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-macOS-3.8 all-deps-macOS-3.9 all-deps-macOS-3.10 all-deps-macOS-3.11'
+
+  docs-release:
+    name: Deploy release docs
+    runs-on: ubuntu-latest
+    needs: [release]
+    steps:
+      - name: Deploy the latest release documentation
+        uses: ansys/actions/doc-deploy-stable@v4
+        with:
+          cname: ${{ env.DOCUMENTATION_CNAME }}
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -22,7 +22,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
-      :link: https://aedt.docs.pyansys.com/dev/API/index.html
+      :link: https://aedt.docs.pyansys.com/version/stable/API/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -52,25 +52,25 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/api/index.html
+      :link: https://fluent.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyFluent-Parametric
       :img-top: _static/thumbnails/pyfluent-parametric.png
-      :link: https://parametric.fluent.docs.pyansys.com/api/index.html
+      :link: https://parametric.fluent.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyFluent-Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
-      :link: https://visualization.fluent.docs.pyansys.com/api/index.html
+      :link: https://visualization.fluent.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://mapdl.docs.pyansys.com/dev/api/index.html
+      :link: https://mapdl.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -106,7 +106,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/intro.png
-      :link: https://prime.docs.pyansys.com/dev/api/index.html
+      :link: https://prime.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -118,13 +118,13 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
-      :link: https://systemcoupling.docs.pyansys.com/dev/api/index.html
+      :link: https://systemcoupling.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
-      :link: https://twin.docs.pyansys.com/dev/api/index.html
+      :link: https://twin.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
