@@ -4,7 +4,7 @@ Getting started
 PyAnsys libraries fall into two categories:
 
 - Wrappers over products like `MAPDL <https://www.ansys.com/training-center/course-catalog/structures/ansys-mechanical-advanced-use-of-mapdl-in-mechanical>`_, `Fluent <https://www.ansys.com/products/fluids/ansys-fluent>`_, or `AEDT <https://www.ansys.com/products/electronics/ansys-maxwell>`_
-- Supporting libraries like `DPF <dpf_post_gh>`_
+- Supporting libraries like `DPF <dpf_post_gh_>`
 
 Most PyAnsys packages require a local installation of Ansys. The version
 of Ansys installed dictates the interface and features available to
