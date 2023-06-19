@@ -168,6 +168,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Granta MI BoM Analytics services
 
+    .. grid-item-card:: Granta MI RecordLists
+      :img-top: _static/thumbnails/intro.png
+      :link: https://recordlists.grantami.docs.pyansys.com/version/stable/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Granta MI Lists API
+
     .. grid-item-card:: Shared Components
       :img-top: _static/thumbnails/intro.png
       :link: https://shared.docs.pyansys.com/

@@ -123,6 +123,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: Granta MI RecordLists
+      :img-top: _static/thumbnails/intro.png
+      :link: https://recordlists.grantami.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: Shared Components - OpenAPI Common
       :img-top: _static/thumbnails/intro.png
       :link: https://openapi.docs.pyansys.com/index.html#brief-example
