@@ -55,6 +55,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
 - `Granta MI BoM Analytics <https://bomanalytics.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI BoM Analytics services.
+- `Granta MI RecordLists <https://recordlists.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI Lists API.
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared Ansys software components to enable package interoperability and minimize maintenance.
 
 Much effort is underway to continue expanding and developing packages in the
@@ -80,6 +81,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySystemCoupling`_
 - `PyTwin`_
 - `Granta MI BoM Analytics`_
+- `Granta MI RecordLists`_
 - `Shared Components`_
 
 Additionally, the ``pyansys`` metapackage contains certain extra targets that
