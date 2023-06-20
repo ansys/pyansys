@@ -116,6 +116,12 @@ PyAnsys packages API reference
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PySherlock
+      :img-top: _static/thumbnails/intro.png
+      :link: https://sherlock.docs.pyansys.com/version/stable/api/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
       :link: https://systemcoupling.docs.pyansys.com/version/stable/api/index.html
