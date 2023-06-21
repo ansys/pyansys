@@ -106,7 +106,7 @@ PyAnsys packages examples
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PySherlock
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pysherlock.png
       :link: https://sherlock.docs.pyansys.com/version/stable/getting_started/index.html
       :text-align: center
       :class-title: pyansys-card-title

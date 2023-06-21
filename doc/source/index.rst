@@ -145,7 +145,7 @@ it is now a collection of many Python packages for using Ansys products through 
       Pythonic interface to communicate with Ansys RedHawkSC and TotemSC
 
     .. grid-item-card:: PySherlock
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pysherlock.png
       :link: https://sherlock.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title

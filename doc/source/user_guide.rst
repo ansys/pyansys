@@ -109,7 +109,7 @@ PyAnsys packages user guides
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PySherlock
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pysherlock.png
       :link: https://sherlock.docs.pyansys.com/version/stable/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
