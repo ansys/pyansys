@@ -144,6 +144,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to communicate with Ansys RedHawkSC and TotemSC
 
+    .. grid-item-card:: PySherlock
+      :img-top: _static/thumbnails/pysherlock.png
+      :link: https://sherlock.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to communicate with Ansys Sherlock
+
     .. grid-item-card:: PySystem Coupling
       :img-top: _static/thumbnails/pysystem-coupling.png
       :link: https://systemcoupling.docs.pyansys.com/version/stable

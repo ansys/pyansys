@@ -108,6 +108,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PySherlock
+      :img-top: _static/thumbnails/pysherlock.png
+      :link: https://sherlock.docs.pyansys.com/version/stable/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
       :link: https://systemcoupling.docs.pyansys.com/version/stable/users_guide/index.html
