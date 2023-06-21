@@ -118,7 +118,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
-      :link: https://sherlock.docs.pyansys.com/version/stable/api/index.html
+      :link: https://sherlock.docs.pyansys.com/version/0.2/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -142,7 +142,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: Granta MI RecordLists
       :img-top: _static/thumbnails/intro.png
-      :link: https://recordlists.grantami.docs.pyansys.com/version/stable/api/index.html
+      :link: https://recordlists.grantami.docs.pyansys.com/version/1.0/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

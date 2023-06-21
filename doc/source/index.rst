@@ -146,7 +146,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
-      :link: https://sherlock.docs.pyansys.com/version/stable
+      :link: https://sherlock.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -178,7 +178,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: Granta MI RecordLists
       :img-top: _static/thumbnails/intro.png
-      :link: https://recordlists.grantami.docs.pyansys.com/version/stable/
+      :link: https://recordlists.grantami.docs.pyansys.com/version/1.0/
       :text-align: center
       :class-title: pyansys-card-title
 

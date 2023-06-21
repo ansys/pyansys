@@ -110,7 +110,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
-      :link: https://sherlock.docs.pyansys.com/version/stable/user_guide/index.html
+      :link: https://sherlock.docs.pyansys.com/version/0.2/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -134,7 +134,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: Granta MI RecordLists
       :img-top: _static/thumbnails/intro.png
-      :link: https://recordlists.grantami.docs.pyansys.com/version/stable/getting_started/index.html
+      :link: https://recordlists.grantami.docs.pyansys.com/version/1.0/getting_started/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
