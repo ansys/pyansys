@@ -32,7 +32,7 @@ dependencies = [
     "ansys-dpf-gate==0.3.1",
     "ansys-dpf-composites==0.2.0",
     "ansys-fluent-core==0.15.0",
-    "pyaedt==0.6.81",
+    "pyaedt==0.6.82",
     "ansys-platform-instancemanagement==1.1.1",
     "ansys-grantami-bomanalytics==1.1.3",
     "ansys-grantami-recordlists==1.0.0.post1",
