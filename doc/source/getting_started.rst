@@ -3,7 +3,7 @@ Getting started
 
 PyAnsys libraries fall into two categories:
 
-- Wrappers over products like `MAPDL <https://www.ansys.com/training-center/course-catalog/structures/ansys-mechanical-advanced-use-of-mapdl-in-mechanical>`_, `Fluent <https://www.ansys.com/products/fluids/ansys-fluent>`_, or `AEDT <https://www.ansys.com/products/electronics/ansys-maxwell>`_
+- Wrappers over products like `MAPDL <mapdl_course_>`_, `Fluent <ansys_fluent_page_>`_, or `AEDT <ansys_aedt_page_>`_
 - Supporting libraries like `DPF <dpf_post_gh_>`_
 
 Most PyAnsys packages require a local installation of Ansys. The version
@@ -15,7 +15,7 @@ the host machine.
 
 For more information on getting a licensed copy of Ansys, visit `Ansys
 <ansys_>`_. If you are a student, consider installing a student version by
-visiting `Ansys for Students <https://www.ansys.com/academic/students>`_.
+visiting `Ansys for Students <ansys_students_>`_.
 
 
 ************
@@ -44,7 +44,7 @@ User mode installation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Before installing ``pyansys`` in user mode, ensure that you have the latest
-version of `pip <https://pypi.org/project/pip/>`_ with:
+version of `pip`_ with:
 
 .. code:: bash
 
@@ -74,9 +74,8 @@ Offline mode installation
 
 If you lack an internet connection on your installation machine, the
 recommended way of installing the ``pyansys`` metapackage is downloading the
-wheelhouse archive from the `Releases Page
-<https://github.com/ansys/pyansys/releases>`_ for your corresponding machine
-architecture.
+wheelhouse archive from the `Releases Page <pyansys_releases_>`_ for your
+corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install
 ``pyansys`` metapackage from scratch on Windows, Linux, and MacOS from Python
@@ -93,7 +92,7 @@ it with the following:
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and install using the same command as above.
 
-Consider installing using a `virtual environment <https://docs.python.org/3/library/venv.html>`_.
+Consider installing using a `virtual environment <venv_docs_>`_.
 
 
 Versioning system
