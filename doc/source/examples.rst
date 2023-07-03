@@ -101,7 +101,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
-      :link: https://seascape.docs.pyansys.com/version/dev/#examples
+      :link: https://seascape.docs.pyansys.com/version/stable/#examples
       :text-align: center
       :class-title: pyansys-card-title
 
