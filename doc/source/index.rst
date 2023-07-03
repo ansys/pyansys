@@ -90,7 +90,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://reader.docs.pyansys.com/
+      :link: https://reader.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
 
