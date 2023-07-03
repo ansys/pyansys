@@ -104,7 +104,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
-      :link: https://seascape.docs.pyansys.com/version/dev/#usage
+      :link: https://seascape.docs.pyansys.com/version/stable/#usage
       :text-align: center
       :class-title: pyansys-card-title
 
