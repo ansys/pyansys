@@ -25,7 +25,7 @@ LINKS = {
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
     "ansys-platform-instancemanagement": None,
     "ansys-grantami-bomanalytics": "https://bomanalytics.grantami.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-grantami-recordlist": "https://recordlists.grantami.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-grantami-recordlists": "https://recordlists.grantami.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-openapi-common": None,
     "ansys-seascape": "https://seascape.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
