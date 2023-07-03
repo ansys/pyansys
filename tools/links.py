@@ -123,10 +123,10 @@ def released_docs():
 
         # Retrieve the major and minor versions of the package
         major, minor = retrieve_major_minor(key)
-        
+
         if major is None and minor is None:
             # No match found for the link... throw message
-            print(f"Error retrieving minor/major version of {key}... Skipping.")
+            print(f"Error retrieving minor/major version of {key}... Skipping.")  # noqa: E501
             continue
 
         # Define the new link
