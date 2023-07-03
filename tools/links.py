@@ -1,4 +1,12 @@
-"""Script for automatic replacement of released links."""
+"""
+Script for automatic replacement of released links.
+
+Usage is very simple. Just run the script.
+
+.. code:: python
+
+    python links.py
+"""
 
 import os
 import re
