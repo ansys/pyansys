@@ -65,7 +65,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://reader.docs.pyansys.com/version/stable/examples/index.html
+      :link: https://reader.docs.pyansys.com/version/0.52/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
