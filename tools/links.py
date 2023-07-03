@@ -33,7 +33,7 @@ LINKS = {
     "pytwin": "https://twin.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-motorcad-core": "https://motorcad.docs.pyansys.com/version/stable",
-    "ansys-math-core": "https://aedt.docs.pyansys.com/version/stable",
+    "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
     "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-mechanical-core": "https://mechanical.docs.pyansys.com/version/stable",  # noqa: E501
 }
