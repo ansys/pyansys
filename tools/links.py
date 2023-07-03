@@ -66,9 +66,9 @@ def retrieve_major_minor(package: str):
         if match:
             major_version = int(match.group(1))
             minor_version = int(match.group(2))
-            return major_version, minor_version
+            return (major_version, minor_version)
 
-    return None
+    return (None, None)
 
 
 def search_and_replace(link: str, new_link: str):
@@ -123,6 +123,11 @@ def released_docs():
 
         # Retrieve the major and minor versions of the package
         major, minor = retrieve_major_minor(key)
+        
+        if major is None and minor is None:
+            # No match found for the link... throw message
+            print(f"Error retrieving minor/major version of {key}... Skipping.")
+            continue
 
         # Define the new link
         link_root = value.split("/version/")[0]
