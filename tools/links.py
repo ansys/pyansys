@@ -53,18 +53,22 @@ def retrieve_major_minor(package: str):
 
     Notes
     -----
-    This function navigates to the packages pyproject.toml file
-    and processes it to retrieve the desired major, minor versions.
+    This function navigates to the package's pyproject.toml file
+
+    and processes it to retrieve the desired major, minor version.
+
 
     Parameters
     ----------
     package : str
-        The package to be searched for
+        The package to be searched for.
+
 
     Returns
     -------
     tuple of (int, int)
-        The major and minor versions of the package
+        The major and minor versions of the package.
+
     """
     with open(PYPROJECT_TOML_FILE, "r") as file:
         content = file.read()
