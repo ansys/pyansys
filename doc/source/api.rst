@@ -76,7 +76,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://reader.docs.pyansys.com/api/index.html
+      :link: https://reader.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

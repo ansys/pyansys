@@ -3,11 +3,18 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     insecure-external-code-execution: allow
-    open-pull-requests-limit: 15
     schedule:
       interval: "daily"
+    groups:
+       deps:
+          patterns:
+            - "*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+       actions:
+          patterns:
+            - "*"
