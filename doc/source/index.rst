@@ -48,7 +48,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to access and post process Ansys solver result files
 
-    .. grid-item-card:: PyDPF Composites
+    .. grid-item-card:: PyDPF - Composites
       :img-top: _static/thumbnails/pydpf-composites.png
       :link: https://composites.dpf.docs.pyansys.com/version/stable
       :text-align: center
