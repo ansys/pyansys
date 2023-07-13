@@ -24,19 +24,19 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
-    .. grid-item-card:: PyDPF-Core
+    .. grid-item-card:: PyDPF - Core
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://dpf.docs.pyansys.com/version/0.8/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
-    .. grid-item-card:: PyDPF-Post
+    .. grid-item-card:: PyDPF - Post
       :img-top: _static/thumbnails/pydpf-post.png
       :link: https://post.docs.pyansys.com/version/0.4/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
-    .. grid-item-card:: PyDPF Composites
+    .. grid-item-card:: PyDPF - Composites
       :img-top: _static/thumbnails/pydpf-composites.png
       :link: https://composites.dpf.docs.pyansys.com/version/0.2/intro.html
       :text-align: center
@@ -48,13 +48,13 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
-    .. grid-item-card:: PyFluent-Parametric
+    .. grid-item-card:: PyFluent - Parametric
       :img-top: _static/thumbnails/pyfluent-parametric.png
       :link: https://parametric.fluent.docs.pyansys.com/version/0.7/users_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
-    .. grid-item-card:: PyFluent-Visualization
+    .. grid-item-card:: PyFluent - Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
       :link: https://visualization.fluent.docs.pyansys.com/version/0.7/users_guide/index.html
       :text-align: center

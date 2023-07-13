@@ -8,9 +8,9 @@ PyAEDT
 DPF
 PyMAPDL
 PyMAPDL Reader
-PyDPF-Core
-PyDPF-Post
-PyDPF Composites
+PyDPF - Core
+PyDPF - Post
+PyDPF - Composites
 PyDPF
 PyFluent
 PyPIM
