@@ -32,7 +32,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to PyAnsys Math libraries
 
-    .. grid-item-card:: PyDPF-Core
+    .. grid-item-card:: PyDPF - Core
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://dpf.docs.pyansys.com/version/stable
       :text-align: center
@@ -40,7 +40,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows
 
-    .. grid-item-card:: PyDPF-Post
+    .. grid-item-card:: PyDPF - Post
       :img-top: _static/thumbnails/pydpf-post.png
       :link: https://post.docs.pyansys.com/version/stable
       :text-align: center
@@ -48,7 +48,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to access and post process Ansys solver result files
 
-    .. grid-item-card:: PyDPF Composites
+    .. grid-item-card:: PyDPF - Composites
       :img-top: _static/thumbnails/pydpf-composites.png
       :link: https://composites.dpf.docs.pyansys.com/version/stable
       :text-align: center
@@ -64,7 +64,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Fluent
 
-    .. grid-item-card:: PyFluent-Parametric
+    .. grid-item-card:: PyFluent - Parametric
       :img-top: _static/thumbnails/pyfluent-parametric.png
       :link: https://parametric.fluent.docs.pyansys.com/version/stable
       :text-align: center
@@ -72,7 +72,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Fluent parametric workflows
 
-    .. grid-item-card:: PyFluent-Visualization
+    .. grid-item-card:: PyFluent - Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
       :link: https://visualization.fluent.docs.pyansys.com/version/stable
       :text-align: center

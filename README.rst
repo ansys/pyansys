@@ -38,12 +38,12 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
-- `PyDPF-Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
-- `PyDPF-Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
-- `PyDPF Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
+- `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
+- `PyDPF - Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
+- `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
-- `PyFluent-Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
-- `PyFluent-Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
+- `PyFluent - Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
+- `PyFluent - Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APDL).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyMechanical <https://mechanical.docs.pyansys.com/>`_: Pythonic interface to Ansys Mechanical.
@@ -68,9 +68,9 @@ By default, the PyAnsys metapackage installs these core modules:
 
 - `PyAEDT`_
 - `PyAnsys Math`_
-- `PyDPF-Core`_
-- `PyDPF-Post`_
-- `PyDPF Composites`_
+- `PyDPF - Core`_
+- `PyDPF - Post`_
+- `PyDPF - Composites`_
 - `PyFluent`_
 - `PyMAPDL`_
 - `PyMechanical`_
@@ -90,7 +90,7 @@ Additionally, the ``pyansys`` metapackage contains certain extra targets that
 can be installed upon request:
 
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
-- **fluent-all**: This target installs the core packages and `PyFluent-Parametric`_ and `PyFluent-Visualization`_.
+- **fluent-all**: This target installs the core packages and `PyFluent - Parametric`_ and `PyFluent - Visualization`_.
 - **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation
