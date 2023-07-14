@@ -23,6 +23,7 @@ jobs:
             "ansys/pydpf-core",
             "ansys/pydpf-post",
             "ansys/pydpf-composites",
+            "ansys/pydynamicreporting",
             "ansys/pyfluent",
             "ansys/pyfluent-parametric",
             "ansys/pyfluent-visualization",

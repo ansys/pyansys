@@ -50,6 +50,12 @@ PyAnsys packages API reference
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyDynamicReporting
+      :img-top: _static/thumbnails/pydynamicreporting.png
+      :link: https://dynamicreporting.docs.pyansys.com/version/0.4/class_documentation.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
       :link: https://fluent.docs.pyansys.com/version/0.14/api/index.html
