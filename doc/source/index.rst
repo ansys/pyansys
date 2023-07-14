@@ -56,6 +56,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to post-process layered and short-fiber composite models
 
+    .. grid-item-card:: PyDynamicReporting
+      :img-top: _static/thumbnails/pydynamicreporting.png
+      :link: https://dynamicreporting.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
+
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
       :link: https://fluent.docs.pyansys.com/version/0.14
@@ -190,4 +198,4 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Shared Ansys software components to enable package interoperability and minimize maintenanceç
+      Shared Ansys software components to enable package interoperability and minimize maintenance
