@@ -42,6 +42,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyDynamicReporting
+      :img-top: _static/thumbnails/pydynamicreporting.png
+      :link: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
       :link: https://fluent.docs.pyansys.com/version/stable/user_guide/index.html

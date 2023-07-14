@@ -27,6 +27,7 @@ LINKS = {
     "ansys-dpf-post": "https://post.docs.pyansys.com/version/stable",
     "ansys-dpf-gate": None,
     "ansys-dpf-composites": "https://composites.dpf.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-dynamicreporting-core": "https://dynamicreporting.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
     "ansys-fluent-visualization": "https://visualization.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-fluent-parametric": "https://parametric.fluent.docs.pyansys.com/version/stable",  # noqa: E501
