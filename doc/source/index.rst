@@ -58,7 +58,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyDynamicReporting
       :img-top: _static/thumbnails/pydynamicreporting.png
-      :link: https://dynamicreporting.docs.pyansys.com/version/stable
+      :link: https://dynamicreporting.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
