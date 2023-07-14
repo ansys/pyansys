@@ -31,6 +31,7 @@ dependencies = [
     "ansys-dpf-post==0.4.0",
     "ansys-dpf-gate==0.3.1",
     "ansys-dpf-composites==0.2.0",
+    "ansys-dynamicreporting-core==0.4.0",
     "ansys-fluent-core==0.16.0",
     "pyaedt==0.6.82",
     "ansys-platform-instancemanagement==1.1.1",
