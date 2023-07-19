@@ -40,7 +40,7 @@ dependencies = [
     "ansys-openapi-common==1.2.1",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.2.0",
-    "ansys-meshing-prime==0.3.2",
+    "ansys-meshing-prime==0.4.0",
     "pytwin==0.3.0",
     "ansys-systemcoupling-core==0.1.3",
     "ansys-motorcad-core==0.1.3",

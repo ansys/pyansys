@@ -138,7 +138,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/intro.png
-      :link: https://prime.docs.pyansys.com/version/0.3
+      :link: https://prime.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 

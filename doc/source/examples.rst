@@ -101,7 +101,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/intro.png
-      :link: https://prime.docs.pyansys.com/version/0.3/examples/index.html
+      :link: https://prime.docs.pyansys.com/version/0.4/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
