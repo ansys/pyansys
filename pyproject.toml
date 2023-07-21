@@ -51,14 +51,14 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = [
-    "ansys-mapdl-reader==0.52.18",
+    "ansys-mapdl-reader==0.52.19",
 ]
 fluent-all = [
     "ansys-fluent-visualization==0.7.1",
     "ansys-fluent-parametric==0.7.1",
 ]
 all = [
-    "ansys-mapdl-reader==0.52.18",
+    "ansys-mapdl-reader==0.52.19",
     "ansys-fluent-visualization==0.7.1",
     "ansys-fluent-parametric==0.7.1",
 ]
