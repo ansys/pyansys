@@ -137,7 +137,7 @@ it is now a collection of many Python packages for using Ansys products through 
       Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API
 
     .. grid-item-card:: PyPrimeMesh
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pyprimemesh.png
       :link: https://prime.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
