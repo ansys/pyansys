@@ -103,7 +103,7 @@ PyAnsys packages user guides
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyPrimeMesh
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pyprimemesh.png
       :link: https://prime.docs.pyansys.com/version/0.4/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
