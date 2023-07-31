@@ -98,7 +98,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
-      :link: https://pypim.docs.pyansys.com/index.html#getting-started
+      :link: https://pypim.docs.pyansys.com/version/dev/index.html#getting-started
       :text-align: center
       :class-title: pyansys-card-title
 
