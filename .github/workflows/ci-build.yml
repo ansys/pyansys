@@ -117,7 +117,7 @@ jobs:
         if: ${{ failure() }}
         shell: bash
         run: |
-          pip-licenses --summary
+          pip-licenses
 
       - name: List dependencies (pip freeze)
         run: |
