@@ -45,6 +45,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyEnSight
+      :img-top: _static/thumbnails/pyensight.png
+      :link: https://ensight.docs.pyansys.com/version/stable/_examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
       :link: https://fluent.docs.pyansys.com/version/stable/examples/index.html

@@ -24,6 +24,7 @@ jobs:
             "ansys/pydpf-post",
             "ansys/pydpf-composites",
             "ansys/pydynamicreporting",
+            "ansys/pyensight",
             "ansys/pyfluent",
             "ansys/pyfluent-parametric",
             "ansys/pyfluent-visualization",

@@ -62,7 +62,15 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports.
+      Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
+
+    .. grid-item-card:: PyEnSight
+      :img-top: _static/thumbnails/pyensight.png
+      :link: https://ensight.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to EnSight, the Ansys simulation postprocessor
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
