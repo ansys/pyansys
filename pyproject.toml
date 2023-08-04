@@ -34,7 +34,7 @@ dependencies = [
     "ansys-dynamicreporting-core==0.4.0",
     "ansys-pyensight-core==0.5.4",
     "ansys-fluent-core==0.16.0",
-    "pyaedt==0.6.87",
+    "pyaedt==0.6.88",
     "ansys-platform-instancemanagement==1.1.1",
     "ansys-grantami-bomanalytics==1.1.3",
     "ansys-grantami-recordlists==1.0.0.post1",
@@ -65,7 +65,7 @@ all = [
 ]
 doc = [
     "Sphinx==7.1.1",
-    "ansys-sphinx-theme==0.10.0",
+    "ansys-sphinx-theme==0.10.2",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.5.0",
 ]
