@@ -47,7 +47,7 @@ dependencies = [
     "ansys-motorcad-core==0.2.0",
     "ansys-math-core==0.1.2",
     "ansys-optislang-core==0.3.0",
-    "ansys-mechanical-core==0.9.3",
+    "ansys-mechanical-core==0.10.0",
 ]
 
 [project.optional-dependencies]
