@@ -3,6 +3,7 @@ from datetime import datetime
 import os
 
 from ansys_sphinx_theme import (
+    ansys_favicon,
     convert_version_to_pymeilisearch,
     get_version_match,
     pyansys_logo_black,
@@ -27,6 +28,9 @@ release = version = pyansys_version
 html_logo = pyansys_logo_black
 html_theme = "ansys_sphinx_theme"
 html_short_title = html_title = "PyAnsys"
+
+# Favicon
+html_favicon = ansys_favicon
 
 extensions = [
     "sphinx_design",
