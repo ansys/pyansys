@@ -204,12 +204,12 @@ jobs:
       - name: "Install Git and clone project"
         uses: actions/checkout@v3
 
-      - name: "install the library to get the version"
+      - name: "Install the library to get the version"
         shell: bash
         run: |
           python -m pip install -e .
 
-      - name: "get version of library"
+      - name: "Get the version of the library"
         run: |
           VERSION=$(python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print('.'.join(__version__.split('.')[:2]))")
           VERSION_MEILI=$(python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print('-'.join(__version__.split('.')[:2]))")
