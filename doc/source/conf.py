@@ -2,7 +2,11 @@
 from datetime import datetime
 import os
 
-from ansys_sphinx_theme import get_version_match, pyansys_logo_black
+from ansys_sphinx_theme import (
+    convert_version_to_pymeilisearch,
+    get_version_match,
+    pyansys_logo_black,
+)
 from sphinx.builders.latex import LaTeXBuilder
 
 from pyansys import __version__ as pyansys_version
@@ -14,6 +18,7 @@ copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = "ANSYS Inc."
 cname = os.getenv("DOCUMENTATION_CNAME", default="nocname.com")
 switcher_version = get_version_match(pyansys_version)
+meilisearch_version = convert_version_to_pymeilisearch(pyansys_version)
 
 # get the PyAnsys version
 release = version = pyansys_version
@@ -58,6 +63,12 @@ html_theme_options = {
         "version_match": switcher_version,
     },
     "check_switcher": False,
+    "use_meilisearch": {
+        "api_key": os.getenv("MEILISEARCH_PUBLIC_API_KEY", ""),
+        "index_uids": {
+            f"pyansys-v{meilisearch_version}": "PyAnsys",
+        },
+    },
 }
 
 # Check all references work fine
