@@ -21,6 +21,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://aedt.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to AEDT (Ansys Electronic Desktop)
 
@@ -29,6 +30,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://math.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to PyAnsys Math libraries
 
@@ -37,6 +39,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://dpf.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows
 
@@ -45,6 +48,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://post.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to access and post process Ansys solver result files
 
@@ -53,6 +57,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://composites.dpf.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to post-process layered and short-fiber composite models
 
@@ -61,6 +66,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://dynamicreporting.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
 
@@ -69,6 +75,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://ensight.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to EnSight, the Ansys simulation postprocessor
 
@@ -77,6 +84,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://fluent.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Fluent
 
@@ -85,6 +93,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://parametric.fluent.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Fluent parametric workflows
 
@@ -93,6 +102,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://visualization.fluent.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to visualize Ansys Fluent simulations
 
@@ -101,6 +111,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://mapdl.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys MAPDL (Mechanical APDL)
 
@@ -109,6 +120,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://reader.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
 
@@ -117,6 +129,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://mechanical.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Mechanical
 
@@ -125,6 +138,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://motorcad.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Motor-CAD
 
@@ -133,6 +147,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://optislang.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Optislang
 
@@ -141,6 +156,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://pypim.docs.pyansys.com/version/dev/
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API
 
@@ -149,6 +165,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://prime.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology
 
@@ -157,6 +174,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://seascape.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to communicate with Ansys RedHawkSC and TotemSC
 
@@ -165,6 +183,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://sherlock.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to communicate with Ansys Sherlock
 
@@ -173,6 +192,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://systemcoupling.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to communicate with Ansys System Coupling
 
@@ -181,6 +201,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://twin.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to communicate with consumption workflows for Ansys digital twins
 
@@ -189,6 +210,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://bomanalytics.grantami.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Granta MI BoM Analytics services
 
@@ -197,6 +219,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://recordlists.grantami.docs.pyansys.com/version/stable/
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Pythonic interface to Ansys Granta MI Lists API
 
@@ -205,5 +228,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://shared.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
+      :margin: 2 2 0 0
 
       Shared Ansys software components to enable package interoperability and minimize maintenance
