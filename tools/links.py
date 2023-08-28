@@ -33,7 +33,7 @@ LINKS = {
     "ansys-fluent-visualization": "https://visualization.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-fluent-parametric": "https://parametric.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
-    "ansys-platform-instancemanagement": None,
+    "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",
     "ansys-grantami-bomanalytics": "https://bomanalytics.grantami.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-grantami-recordlists": "https://recordlists.grantami.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-openapi-common": None,
