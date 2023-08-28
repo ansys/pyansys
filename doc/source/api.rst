@@ -112,7 +112,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
-      :link: https://pypim.docs.pyansys.com/version/dev/api/index.html
+      :link: https://pypim.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

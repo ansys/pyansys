@@ -116,7 +116,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
-      :link: https://pypim.docs.pyansys.com/version/dev/integration.html
+      :link: https://pypim.docs.pyansys.com/version/stable/integration.html
       :text-align: center
       :class-title: pyansys-card-title
       :margin: 2 2 0 0
