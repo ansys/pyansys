@@ -33,10 +33,10 @@ dependencies = [
     "ansys-dpf-composites==0.3.0",
     "ansys-dynamicreporting-core==0.4.0",
     "ansys-pyensight-core==0.5.5",
-    "ansys-fluent-core==0.16.0",
+    "ansys-fluent-core==0.17.0",
     "pyaedt==0.6.89",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-grantami-bomanalytics==1.1.3",
+    "ansys-grantami-bomanalytics==1.2.0",
     "ansys-grantami-recordlists==1.0.0.post1",
     "ansys-openapi-common==1.2.2",
     "ansys-seascape==0.2.0",
@@ -65,7 +65,7 @@ all = [
 ]
 doc = [
     "Sphinx==7.2.2",
-    "ansys-sphinx-theme==0.10.4",
+    "ansys-sphinx-theme==0.10.5",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.5.0",
 ]
