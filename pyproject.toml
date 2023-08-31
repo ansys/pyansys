@@ -34,7 +34,7 @@ dependencies = [
     "ansys-dynamicreporting-core==0.4.0",
     "ansys-pyensight-core==0.5.5",
     "ansys-fluent-core==0.17.0",
-    "pyaedt==0.6.89",
+    "pyaedt==0.6.90",
     "ansys-platform-instancemanagement==1.1.2",
     "ansys-grantami-bomanalytics==1.2.0",
     "ansys-grantami-recordlists==1.0.0.post1",
@@ -56,12 +56,12 @@ mapdl-all = [
 ]
 fluent-all = [
     "ansys-fluent-visualization==0.7.1",
-    "ansys-fluent-parametric==0.7.1",
+    "ansys-fluent-parametric==0.8.0",
 ]
 all = [
     "ansys-mapdl-reader==0.52.20",
     "ansys-fluent-visualization==0.7.1",
-    "ansys-fluent-parametric==0.7.1",
+    "ansys-fluent-parametric==0.8.0",
 ]
 doc = [
     "Sphinx==7.2.2",
