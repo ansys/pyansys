@@ -47,6 +47,13 @@ PyAnsys packages user guides
       :class-title: pyansys-card-title
       :margin: 2 2 0 0
 
+    .. grid-item-card:: PyDyna
+      :img-top: _static/thumbnails/intro.png
+      :link: https://dyna.docs.pyansys.com/version/stable/user-guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
     .. grid-item-card:: PyDynamicReporting
       :img-top: _static/thumbnails/pydynamicreporting.png
       :link: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
