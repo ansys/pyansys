@@ -61,6 +61,15 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to post-process layered and short-fiber composite models
 
+    .. grid-item-card:: PyDyna
+      :img-top: _static/thumbnails/intro.png
+      :link: https://dyna.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
+      Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver and postprocess its results
+
     .. grid-item-card:: PyDynamicReporting
       :img-top: _static/thumbnails/pydynamicreporting.png
       :link: https://dynamicreporting.docs.pyansys.com/version/stable

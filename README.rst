@@ -41,6 +41,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
 - `PyDPF - Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
 - `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
+- `PyDyna <https://dyna.docs.pyansys.com/>`_: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver and postprocess its results.
 - `PyDynamicReporting <https://dynamicreporting.docs.pyansys.com/>`_: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports.
 - `PyEnSight <https://ensight.docs.pyansys.com/>`_: Pythonic interface to EnSight, the Ansys simulation postprocessor.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
@@ -73,6 +74,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyDPF - Core`_
 - `PyDPF - Post`_
 - `PyDPF - Composites`_
+- `PyDyna`_
 - `PyDynamicReporting`_
 - `PyEnSight`_
 - `PyFluent`_
