@@ -62,7 +62,7 @@ it is now a collection of many Python packages for using Ansys products through 
       Pythonic interface to post-process layered and short-fiber composite models
 
     .. grid-item-card:: PyDyna
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pydyna.png
       :link: https://dyna.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
