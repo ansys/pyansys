@@ -48,7 +48,7 @@ PyAnsys packages user guides
       :margin: 2 2 0 0
 
     .. grid-item-card:: PyDyna
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pydyna.png
       :link: https://dyna.docs.pyansys.com/version/stable/user-guide/index.html
       :text-align: center
       :class-title: pyansys-card-title

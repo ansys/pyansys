@@ -45,7 +45,7 @@ PyAnsys packages examples
       :margin: 2 2 0 0
 
     .. grid-item-card:: PyDyna
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pydyna.png
       :link: https://dyna.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
