@@ -15,6 +15,7 @@ jobs:
     name: Create a milestone in ${{ matrix.pyansys-projects }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         pyansys-projects:
           [
@@ -31,7 +32,7 @@ jobs:
             "ansys/pyaedt",
             "ansys/pypim",
             "ansys/grantami-bomanalytics",
-            "ansys/grantami-recordlist",
+            "ansys/grantami-recordlists",
             "ansys/openapi-common",
             "ansys/pyseascape",
             "ansys/pysherlock",
