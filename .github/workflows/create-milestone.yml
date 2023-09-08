@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        fail-fast: false
         pyansys-projects:
           [
             "ansys/pymapdl",
@@ -31,7 +32,7 @@ jobs:
             "ansys/pyaedt",
             "ansys/pypim",
             "ansys/grantami-bomanalytics",
-            "ansys/grantami-recordlist",
+            "ansys/grantami-recordlists",
             "ansys/openapi-common",
             "ansys/pyseascape",
             "ansys/pysherlock",
