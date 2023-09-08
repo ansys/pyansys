@@ -78,7 +78,7 @@ g = github.Github(TOKEN)
 repo = g.get_repo(REPOSITORY)
 
 # Get its last release - assuming semantic versioning (i.e. v0.1.0)
-major, minor, _ = repo.get_latest_release().tag_name.replace("v", "").split(".")  # noqa: E501
+major, minor, *_ = repo.get_latest_release().tag_name.replace("v", "").split(".")  # noqa: E501
 next_release = f"v{major}.{int(minor)+1}.0"
 
 # Get its available milestones
