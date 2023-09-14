@@ -1,6 +1,8 @@
 PyAnsys toolkits
 ================
 
+.. contents::
+
 PyAEDT toolkits
 ---------------
 

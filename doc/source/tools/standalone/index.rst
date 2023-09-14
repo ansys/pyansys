@@ -1,6 +1,11 @@
 Standalone projects
 ===================
 
+.. contents::
+
+General purpose
+---------------
+
 .. grid:: 3
 
     .. grid-item-card:: Ansys Python Manager
@@ -48,6 +53,27 @@ Standalone projects
 
       Ansys tool for creating new projects according to Ansys guidelines
 
+Artificial intelligence
+-----------------------
+
+.. grid:: 3
+
+    .. grid-item-card:: Reviewer Bot
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://review-bot.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
+      Python development tool for leveraging the power of OpenAI to automatically
+      generate suggestions for improving GitHub pull requests
+
+
+Documentation
+-------------
+
+.. grid:: 3
+
     .. grid-item-card:: Ansys Sphinx Theme
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://sphinxdocs.ansys.com/version/stable
@@ -68,12 +94,12 @@ Standalone projects
 
       Enhanced Python API to Meilisearch
 
-    .. grid-item-card:: Reviewer Bot
+    .. grid-item-card:: PyConverter-XML2Py
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://review-bot.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
       :margin: 2 2 0 0
 
-       Python development tool for leveraging the power of OpenAI to automatically
-       generate suggestions for improving GitHub pull requests
+      Python development tool for leveraging the power of OpenAI to automatically
+      generate suggestions for improving GitHub pull requests
