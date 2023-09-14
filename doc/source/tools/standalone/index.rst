@@ -55,7 +55,7 @@ Standalone projects
       :class-title: pyansys-card-title
       :margin: 2 2 0 0
 
-      Extension of the popular `PyData Sphinx theme <https://github.com/pydata/pydata-sphinx-theme>`_ 
+      Extension of the popular `PyData Sphinx theme <https://github.com/pydata/pydata-sphinx-theme>`_
       that is used by `numpy <https://numpy.org/doc/stable/>`_, `pandas <https://pandas.pydata.org/docs/>`_,
       `pyvista <https://docs.pyvista.org>`_, and many more scientific Python packages
 
