@@ -21,32 +21,40 @@ DOCS_DIRECTORY = os.path.join(ROOT_DIR, "doc", "source")
 """Path to the documentation source directory"""
 
 LINKS = {
-    "ansys-mapdl-core": "https://mapdl.docs.pyansys.com/version/stable",
-    "ansys-mapdl-reader": "https://reader.docs.pyansys.com/version/stable",
+    "ansys-dpf-composites": "https://composites.dpf.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-dpf-core": "https://dpf.docs.pyansys.com/version/stable",
     "ansys-dpf-post": "https://post.docs.pyansys.com/version/stable",
     "ansys-dpf-gate": None,
-    "ansys-dpf-composites": "https://composites.dpf.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-dyna-core": "https://dyna.docs.pyansys.com/version/stable",
     "ansys-dynamicreporting-core": "https://dynamicreporting.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
-    "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
-    "ansys-fluent-visualization": "https://visualization.fluent.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-fluent-parametric": "https://parametric.fluent.docs.pyansys.com/version/stable",  # noqa: E501
-    "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
-    "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-geometry-core": "https://geometry.docs.pyansys.com/version/stable",
     "ansys-grantami-bomanalytics": "https://bomanalytics.grantami.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-grantami-recordlists": "https://recordlists.grantami.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
+    "ansys-mapdl-core": "https://mapdl.docs.pyansys.com/version/stable",
+    "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
+    "ansys-mechanical-core": "https://mechanical.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-meshing-prime": "https://prime.docs.pyansys.com/version/stable",
+    "ansys-motorcad-core": "https://motorcad.docs.pyansys.com/version/stable",
+    "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
     "ansys-openapi-common": None,
+    "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-seascape": "https://seascape.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
-    "ansys-meshing-prime": "https://prime.docs.pyansys.com/version/stable",
-    "pytwin": "https://twin.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-motorcad-core": "https://motorcad.docs.pyansys.com/version/stable",
-    "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
-    "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-mechanical-core": "https://mechanical.docs.pyansys.com/version/stable",  # noqa: E501
+    "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
+    "pytwin": "https://twin.docs.pyansys.com/version/stable",
+    # MAPDL - ALL
+    "ansys-mapdl-reader": "https://reader.docs.pyansys.com/version/stable",
+    # FLUENT - ALL
+    "ansys-fluent-visualization": "https://visualization.fluent.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-fluent-parametric": "https://parametric.fluent.docs.pyansys.com/version/stable",  # noqa: E501
+    # TOOLS
+    "ansys-units": "https://units.docs.pyansys.com/version/stable",
+    "ansys-tools-path": "https://path.tools.docs.pyansys.com/version/stable",
+    "pyansys-tools-report": "https://report.tools.docs.pyansys.com/version/stable",  # noqa: E501
+    "pyansys-tools-versioning": "https://versioning.tools.docs.pyansys.com/version/stable",  # noqa: E501
 }
 """Dictionary with PyAnsys packages and their multi-version docs site."""
 
