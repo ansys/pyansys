@@ -13,7 +13,7 @@ it is now a collection of many Python packages for using Ansys products through 
    user_guide
    api
    examples
-   tools
+   tools/index
 
 .. grid:: 3
 
