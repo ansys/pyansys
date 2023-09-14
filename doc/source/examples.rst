@@ -16,6 +16,13 @@ PyAnsys packages examples
       :class-title: pyansys-card-title
       :margin: 2 2 0 0
 
+    .. grid-item-card:: PyAnsys Geometry
+      :img-top: _static/thumbnails/pyansys-geometry.png
+      :link: https://geometry.docs.pyansys.com/version/stable/examples.html
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
       :link: https://math.docs.pyansys.com/version/stable/examples/index.html

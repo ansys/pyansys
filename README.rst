@@ -37,6 +37,7 @@ of these packages amongst themselves and the Ansys product release that they are
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
+- `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
 - `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
 - `PyDPF - Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
@@ -62,6 +63,13 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `Granta MI RecordLists <https://recordlists.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI Lists API.
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared Ansys software components to enable package interoperability and minimize maintenance.
 
+Other tools delivered as part of the metapackage are:
+
+- `Ansys Tools Path <https://path.tools.docs.pyansys.com/>`_: Library to locate Ansys products in a local machine.
+- `PyAnsys Tools Report <https://report.tools.docs.pyansys.com/>`_:  Tool for reporting your Python environment's package versions and hardware resources in a standardized way.
+- `PyAnsys Tools Versioning <https://versioning.tools.docs.pyansys.com/>`_: Tool for backwards and forwards server support.
+- `PyAnsys Units <https://units.docs.pyansys.com/>`_: Pythonic interface for units, unit systems, and unit conversions.
+
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page
 for each package, you can post issues and request new features. You can also feel
@@ -70,6 +78,7 @@ free to post a question on the `Ansys Developer Forums <https://discuss.ansys.co
 By default, the PyAnsys metapackage installs these core modules:
 
 - `PyAEDT`_
+- `PyAnsys Geometry`_
 - `PyAnsys Math`_
 - `PyDPF - Core`_
 - `PyDPF - Post`_
@@ -96,7 +105,8 @@ Additionally, the ``pyansys`` metapackage contains certain extra targets that
 can be installed upon request:
 
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
-- **fluent-all**: This target installs the core packages and `PyFluent - Parametric`_ and `PyFluent - Visualization`_.
+- **fluent-all**: This target installs the core packages, `PyFluent - Parametric`_, and `PyFluent - Visualization`_.
+- **tools**: This target installs the core packages, `Ansys Tools Path`_, `PyAnsys Tools Versioning`_, `PyAnsys Tools Report`_, and `PyAnsys Units`_.
 - **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation

@@ -13,6 +13,7 @@ it is now a collection of many Python packages for using Ansys products through 
    user_guide
    api
    examples
+   tools
 
 .. grid:: 3
 
@@ -24,6 +25,15 @@ it is now a collection of many Python packages for using Ansys products through 
       :margin: 2 2 0 0
 
       Pythonic interface to AEDT (Ansys Electronic Desktop)
+
+    .. grid-item-card:: PyAnsys Geometry
+      :img-top: _static/thumbnails/pyansys-geometry.png
+      :link: https://geometry.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
+      Pythonic interface to the Ansys Geometry service
 
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
