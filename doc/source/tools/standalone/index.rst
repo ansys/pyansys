@@ -17,6 +17,38 @@ General purpose
 
       Simple cross-platform QT application to install Python and PyAnsys packages
 
+    .. grid-item-card:: PyAnsys Cheat Sheets
+      :img-top: ../../_static/thumbnails/pyansys-cheat-sheets.png
+      :link: https://cheatsheets.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
+      PyAnsys cheat sheets for different libraries as quick reference guides
+
+Repository management
+---------------------
+
+.. grid:: 3
+
+    .. grid-item-card:: Ansys Repository Templates
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://templates.ansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
+      Ansys tool for creating new projects according to Ansys guidelines
+
+    .. grid-item-card:: Ansys GitHub Actions
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://actions.docs.ansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
+      Collection of GitHub Workflows to be reused by projects in the Ansys ecosystem
+
     .. grid-item-card:: Ansys ``pre-commit`` Hooks
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://pre-commit-hooks.docs.ansys.com/version/stable
@@ -35,23 +67,6 @@ General purpose
 
       Ansys tool intended to synchronize the content of two different repositories
 
-    .. grid-item-card:: Ansys GitHub Actions
-      :img-top: ../../_static/thumbnails/intro.png
-      :link: https://actions.docs.ansys.com/version/stable
-      :text-align: center
-      :class-title: pyansys-card-title
-      :margin: 2 2 0 0
-
-      Collection of GitHub Workflows to be reused by projects in the Ansys ecosystem
-
-    .. grid-item-card:: Ansys Repository Templates
-      :img-top: ../../_static/thumbnails/intro.png
-      :link: https://templates.ansys.com/version/stable
-      :text-align: center
-      :class-title: pyansys-card-title
-      :margin: 2 2 0 0
-
-      Ansys tool for creating new projects according to Ansys guidelines
 
 Artificial intelligence
 -----------------------
