@@ -67,3 +67,13 @@ Standalone projects
       :margin: 2 2 0 0
 
       Enhanced Python API to Meilisearch
+
+    .. grid-item-card:: Reviewer Bot
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://review-bot.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
+       Python development tool for leveraging the power of OpenAI to automatically
+       generate suggestions for improving GitHub pull requests
