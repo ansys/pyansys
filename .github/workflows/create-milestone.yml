@@ -49,6 +49,7 @@ jobs:
             "ansys/pyfluent-visualization",
             # TOOLS
             "ansys/ansys-tools-path",
+            "ansys/ansys-tools-protoc-helper",
             "ansys/pyansys-tools-report",
             "ansys/pyansys-tools-versioning",
             "ansys/pyansys-units",
