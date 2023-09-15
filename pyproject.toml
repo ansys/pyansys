@@ -26,7 +26,7 @@ classifiers = [
 
 dependencies = [
     "importlib-metadata>=4.0,<5; python_version<='3.8'",
-    "ansys-dpf-composites==0.3.0",
+    "ansys-dpf-composites==0.3.1",
     "ansys-dpf-core==0.9.0",
     "ansys-dpf-post==0.5.0",
     "ansys-dpf-gate==0.4.1",
@@ -42,13 +42,13 @@ dependencies = [
     "ansys-meshing-prime==0.4.0",
     "ansys-motorcad-core==0.2.0",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.5.7",
+    "ansys-pyensight-core==0.5.8",
     "ansys-openapi-common==1.2.2",
     "ansys-optislang-core==0.4.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.3.0",
     "ansys-systemcoupling-core==0.2.0",
-    "pyaedt==0.6.92",
+    "pyaedt==0.6.93",
     "pytwin==0.4.0",
 ]
 
@@ -58,7 +58,7 @@ mapdl-all = [
 ]
 fluent-all = [
     "ansys-fluent-visualization==0.7.1",
-    "ansys-fluent-parametric==0.8.0",
+    "ansys-fluent-parametric==0.8.1",
 ]
 tools = [
     "ansys-units==0.1.0",
@@ -71,7 +71,7 @@ all =  [
     "ansys-mapdl-reader==0.52.20",
     # FLUENT - ALL
     "ansys-fluent-visualization==0.7.1",
-    "ansys-fluent-parametric==0.8.0",
+    "ansys-fluent-parametric==0.8.1",
     # TOOLS
     "ansys-units==0.1.0",
     "ansys-tools-path==0.3.1",
