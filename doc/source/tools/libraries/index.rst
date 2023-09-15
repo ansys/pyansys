@@ -12,6 +12,15 @@ Tooling libraries
 
       Library to locate Ansys products in a local machine
 
+    .. grid-item-card:: Ansys Tools Protobuf Compilation Helper
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://ansys.github.io/ansys-tools-protoc-helper/
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
+      Utility library to compile ``.proto`` files to Python source when building the package wheel
+
     .. grid-item-card:: PyAnsys Tools Report
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://report.tools.docs.pyansys.com/version/stable

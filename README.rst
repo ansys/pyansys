@@ -66,6 +66,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 Other tools delivered as part of the metapackage are:
 
 - `Ansys Tools Path <https://path.tools.docs.pyansys.com/>`_: Library to locate Ansys products in a local machine.
+- `Ansys Tools Protobuf Compilation Helper <https://ansys.github.io/ansys-tools-protoc-helper/>`_: Utility library to compile ``.proto`` files to Python source when building the package wheel.
 - `PyAnsys Tools Report <https://report.tools.docs.pyansys.com/>`_:  Tool for reporting your Python environment's package versions and hardware resources in a standardized way.
 - `PyAnsys Tools Versioning <https://versioning.tools.docs.pyansys.com/>`_: Tool for backwards and forwards server support.
 - `PyAnsys Units <https://units.docs.pyansys.com/>`_: Pythonic interface for units, unit systems, and unit conversions.
@@ -106,7 +107,7 @@ can be installed upon request:
 
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
 - **fluent-all**: This target installs the core packages, `PyFluent - Parametric`_, and `PyFluent - Visualization`_.
-- **tools**: This target installs the core packages, `Ansys Tools Path`_, `PyAnsys Tools Versioning`_, `PyAnsys Tools Report`_, and `PyAnsys Units`_.
+- **tools**: This target installs the core packages, `Ansys Tools Path`_, `Ansys Tools Protobuf Compilation Helper`_, `PyAnsys Tools Versioning`_, `PyAnsys Tools Report`_, and `PyAnsys Units`_.
 - **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation
