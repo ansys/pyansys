@@ -147,10 +147,10 @@ jobs:
 
       - name: "Deploy the dev documentation index"
         uses: ansys/actions/doc-deploy-index@v4
-        if: github.ref == 'refs/heads/main'
+        #if: github.ref == 'refs/heads/main'
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}/version/dev
-          index-name: "pyansys-vdev"
+          index-name: pyansys-vdev
           host-url: ${{ vars.MEILISEARCH_HOST_URL }}
           api-key: ${{ env.MEILISEARCH_API_KEY }}
 
