@@ -31,7 +31,7 @@ dependencies = [
     "ansys-dpf-post==0.5.0",
     "ansys-dpf-gate==0.4.1",
     "ansys-dyna-core==0.4.2",
-    "ansys-dynamicreporting-core==0.4.0",
+    "ansys-dynamicreporting-core==0.5.0",
     "ansys-geometry-core==0.4rc1",
     "ansys-grantami-bomanalytics==1.2.0",
     "ansys-grantami-recordlists==1.0.0.post1",
@@ -48,7 +48,7 @@ dependencies = [
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.4.0",
     "ansys-systemcoupling-core==0.3.0",
-    "pyaedt==0.6.93",
+    "pyaedt==0.6.94",
     "pytwin==0.5.0",
 ]
 
