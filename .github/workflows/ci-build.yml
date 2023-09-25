@@ -138,19 +138,29 @@ jobs:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
 
-      - name: Deploy the dev documentation
-        uses: ansys/actions/doc-deploy-dev@v4
-        if: github.ref == 'refs/heads/main'
-        with:
-          cname: ${{ env.DOCUMENTATION_CNAME }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+  doc-deploy-dev:
+      name: "Deploy development docs"
+      if: github.ref == 'refs/heads/main'
+      runs-on: ubuntu-latest
+      needs: [package]
+      steps:
+        - name: Deploy the latest documentation
+          uses: ansys/actions/doc-deploy-dev@v4
+          with:
+            cname: ${{ env.DOCUMENTATION_CNAME }}
+            token: ${{ secrets.GITHUB_TOKEN }}
 
+  doc-index-dev:
+    name: "Deploy dev docs index"
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: [doc-deploy-dev]
+    steps:
       - name: "Deploy the dev documentation index"
         uses: ansys/actions/doc-deploy-index@v4
-        if: github.ref == 'refs/heads/main'
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}/version/dev
-          index-name: "pyansys-vdev"
+          index-name: pyansys-vdev
           host-url: ${{ vars.MEILISEARCH_HOST_URL }}
           api-key: ${{ env.MEILISEARCH_API_KEY }}
 
