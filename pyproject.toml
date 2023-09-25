@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 # Check https://flit.readthedocs.io/en/latest/pyproject_toml.html for all available sections
 name = "pyansys"
-version = "2024.1.dev0"
+version = "2024.2.dev0"
 description = "Pythonic interfaces to Ansys products"
 readme = "README.rst"
 requires-python = ">=3.8,<4"
@@ -31,8 +31,8 @@ dependencies = [
     "ansys-dpf-post==0.5.0",
     "ansys-dpf-gate==0.4.1",
     "ansys-dyna-core==0.4.2",
-    "ansys-dynamicreporting-core==0.4.0",
-    "ansys-geometry-core==0.3.1",
+    "ansys-dynamicreporting-core==0.5.0",
+    "ansys-geometry-core==0.4rc1",
     "ansys-grantami-bomanalytics==1.2.0",
     "ansys-grantami-recordlists==1.0.0.post1",
     "ansys-fluent-core==0.17.1",
@@ -42,14 +42,14 @@ dependencies = [
     "ansys-meshing-prime==0.5.0.dev6",
     "ansys-motorcad-core==0.2.0",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.5.8",
+    "ansys-pyensight-core==0.6.0",
     "ansys-openapi-common==1.2.2",
     "ansys-optislang-core==0.4.0",
     "ansys-seascape==0.2.0",
-    "ansys-sherlock-core==0.3.0",
+    "ansys-sherlock-core==0.4.0",
     "ansys-systemcoupling-core==0.3.0",
-    "pyaedt==0.6.93",
-    "pytwin==0.4.0",
+    "pyaedt==0.6.94",
+    "pytwin==0.5.0",
 ]
 
 [project.optional-dependencies]
