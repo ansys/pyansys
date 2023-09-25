@@ -145,9 +145,15 @@ jobs:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
+
+  doc-index-dev:
+    name: "Deploy dev docs index"
+    #if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: docs-build
+    steps:
       - name: "Deploy the dev documentation index"
         uses: ansys/actions/doc-deploy-index@v4
-        #if: github.ref == 'refs/heads/main'
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}/version/dev
           index-name: pyansys-vdev
