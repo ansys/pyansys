@@ -163,6 +163,13 @@ PyAnsys packages examples
       :class-title: pyansys-card-title
       :margin: 2 2 0 0
 
+    .. grid-item-card:: PyTurboGrid
+      :img-top: _static/thumbnails/pyturbogrid.png
+      :link: https://turbogrid.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+      :margin: 2 2 0 0
+
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
       :link: https://twin.docs.pyansys.com/version/stable/examples/index.html
