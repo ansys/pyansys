@@ -24,7 +24,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to AEDT (Ansys Electronic Desktop)
 
     .. grid-item-card:: PyAnsys Geometry
@@ -32,7 +31,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://geometry.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to the Ansys Geometry service
 
@@ -42,7 +40,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to PyAnsys Math libraries
 
     .. grid-item-card:: PyDPF - Core
@@ -50,7 +47,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://dpf.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows
 
@@ -60,7 +56,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to access and post process Ansys solver result files
 
     .. grid-item-card:: PyDPF - Composites
@@ -68,7 +63,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://composites.dpf.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to post-process layered and short-fiber composite models
 
@@ -78,7 +72,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver and postprocess its results
 
     .. grid-item-card:: PyDynamicReporting
@@ -86,7 +79,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://dynamicreporting.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
 
@@ -96,7 +88,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to EnSight, the Ansys simulation postprocessor
 
     .. grid-item-card:: PyFluent
@@ -104,7 +95,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://fluent.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to Ansys Fluent
 
@@ -114,7 +104,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to Ansys Fluent parametric workflows
 
     .. grid-item-card:: PyFluent - Visualization
@@ -122,7 +111,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://visualization.fluent.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to visualize Ansys Fluent simulations
 
@@ -132,7 +120,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to Ansys MAPDL (Mechanical APDL)
 
     .. grid-item-card:: PyMAPDL Reader
@@ -140,7 +127,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://reader.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
 
@@ -150,7 +136,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to Ansys Mechanical
 
     .. grid-item-card:: PyMotorCAD
@@ -158,7 +143,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://motorcad.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to Ansys Motor-CAD
 
@@ -168,7 +152,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to Ansys Optislang
 
     .. grid-item-card:: PyPIM
@@ -176,7 +159,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://pypim.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API
 
@@ -186,7 +168,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology
 
     .. grid-item-card:: PySeascape
@@ -194,7 +175,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://seascape.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to communicate with Ansys RedHawkSC and TotemSC
 
@@ -204,7 +184,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to communicate with Ansys Sherlock
 
     .. grid-item-card:: PySystem Coupling
@@ -212,7 +191,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://systemcoupling.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to communicate with Ansys System Coupling
 
@@ -222,7 +200,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to communicate with consumption workflows for Ansys digital twins
 
     .. grid-item-card:: Granta MI BoM Analytics
@@ -230,7 +207,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://bomanalytics.grantami.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface to Ansys Granta MI BoM Analytics services
 
@@ -240,7 +216,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Pythonic interface to Ansys Granta MI Lists API
 
     .. grid-item-card:: Shared Components
@@ -248,6 +223,5 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://shared.docs.pyansys.com/
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Shared Ansys software components to enable package interoperability and minimize maintenance
