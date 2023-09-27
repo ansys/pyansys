@@ -75,7 +75,6 @@ Artificial intelligence
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Python development tool for leveraging the power of OpenAI to automatically
       generate suggestions for improving GitHub pull requests
 
@@ -91,7 +90,6 @@ Documentation
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Extension of the popular `PyData Sphinx theme <https://github.com/pydata/pydata-sphinx-theme>`_
       that is used by `numpy <https://numpy.org/doc/stable/>`_, `pandas <https://pandas.pydata.org/docs/>`_,
       `pyvista <https://docs.pyvista.org>`_, and many more scientific Python packages
@@ -102,7 +100,6 @@ Documentation
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Enhanced Python API to Meilisearch
 
     .. grid-item-card:: PyConverter-XML2Py
@@ -110,7 +107,6 @@ Documentation
       :link: https://review-bot.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Python development tool for leveraging the power of OpenAI to automatically
       generate suggestions for improving GitHub pull requests

@@ -26,7 +26,6 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Tool for reporting your Python environment's package versions and hardware resources in a standardized way
 
     .. grid-item-card:: PyAnsys Tools Versioning
@@ -35,7 +34,6 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-
       Tool for backwards and forwards server support
 
     .. grid-item-card:: PyAnsys Units
@@ -43,6 +41,5 @@ Tooling libraries
       :link: https://units.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-
 
       Pythonic interface for units, unit systems, and unit conversions
