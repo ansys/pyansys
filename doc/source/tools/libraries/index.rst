@@ -2,13 +2,13 @@ Tooling libraries
 =================
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: Ansys Tools Path
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://path.tools.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-      :margin: 2 2 0 0
 
       Library to locate Ansys products in a local machine
 
@@ -17,7 +17,6 @@ Tooling libraries
       :link: https://ansys.github.io/ansys-tools-protoc-helper/
       :text-align: center
       :class-title: pyansys-card-title
-      :margin: 2 2 0 0
 
       Utility library to compile ``.proto`` files to Python source when building the package wheel
 
@@ -26,7 +25,7 @@ Tooling libraries
       :link: https://report.tools.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-      :margin: 2 2 0 0
+
 
       Tool for reporting your Python environment's package versions and hardware resources in a standardized way
 
@@ -35,7 +34,7 @@ Tooling libraries
       :link: https://versioning.tools.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-      :margin: 2 2 0 0
+
 
       Tool for backwards and forwards server support
 
@@ -44,6 +43,6 @@ Tooling libraries
       :link: https://units.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-      :margin: 2 2 0 0
+
 
       Pythonic interface for units, unit systems, and unit conversions
