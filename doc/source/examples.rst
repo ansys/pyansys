@@ -16,13 +16,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyAnsys Geometry
       :img-top: _static/thumbnails/pyansys-geometry.png
       :link: https://geometry.docs.pyansys.com/version/stable/examples.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
@@ -30,13 +28,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyDPF - Core
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://dpf.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyDPF - Post
       :img-top: _static/thumbnails/pydpf-post.png
@@ -44,13 +40,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyDPF - Composites
       :img-top: _static/thumbnails/pydpf-composites.png
       :link: https://composites.dpf.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyDyna
       :img-top: _static/thumbnails/pydyna.png
@@ -58,13 +52,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyDynamicReporting
       :img-top: _static/thumbnails/pydynamicreporting.png
       :link: https://dynamicreporting.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyEnSight
       :img-top: _static/thumbnails/pyensight.png
@@ -72,13 +64,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
       :link: https://fluent.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyFluent - Parametric
       :img-top: _static/thumbnails/pyfluent-parametric.png
@@ -86,13 +76,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyFluent - Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
       :link: https://visualization.fluent.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
@@ -100,13 +88,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://reader.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyMechanical
       :img-top: _static/thumbnails/pymechanical.png
@@ -114,13 +100,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
       :link: https://motorcad.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyOptislang
       :img-top: _static/thumbnails/pyoptislang.png
@@ -128,13 +112,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
       :link: https://pypim.docs.pyansys.com/version/stable/integration.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
@@ -142,13 +124,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
       :link: https://seascape.docs.pyansys.com/version/stable/#examples
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
@@ -156,13 +136,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
       :link: https://systemcoupling.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
@@ -170,13 +148,11 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
       :link: https://bomanalytics.grantami.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
-
 
     .. grid-item-card:: Granta MI RecordLists
       :img-top: _static/thumbnails/intro.png
@@ -184,10 +160,8 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-
     .. grid-item-card:: Shared Components - OpenAPI Common
       :img-top: _static/thumbnails/intro.png
       :link: https://openapi.docs.pyansys.com/index.html#brief-example
       :text-align: center
       :class-title: pyansys-card-title
-
