@@ -199,7 +199,6 @@ it is now a collection of many Python packages for using Ansys products through 
       :link: https://turbogrid.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
-      :margin: 2 2 0 0
 
       Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app
 
