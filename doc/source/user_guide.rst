@@ -11,6 +11,7 @@ PyAnsys packages user guides
 ****************************
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
