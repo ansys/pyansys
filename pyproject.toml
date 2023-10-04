@@ -8,7 +8,7 @@ name = "pyansys"
 version = "2024.2.dev0"
 description = "Pythonic interfaces to Ansys products"
 readme = "README.rst"
-requires-python = ">=3.8,<4"
+requires-python = ">=3.9,<4"
 license = {file = "LICENSE"}
 authors = [{name = "ANSYS, Inc.", email = "pyansys.support@ansys.com"}]
 maintainers = [{name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com"}]
@@ -18,14 +18,12 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Information Analysis",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
 ]
 
 dependencies = [
-    "importlib-metadata>=4.0,<5; python_version<='3.8'",
     "ansys-dpf-composites==0.3.2",
     "ansys-dpf-core==0.9.0",
     "ansys-dpf-post==0.5.0",
