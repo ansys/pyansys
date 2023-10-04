@@ -63,8 +63,8 @@ fluent-all = [
 tools = [
     "ansys-units==0.1.0",
     "ansys-tools-path==0.3.1",
-    "pyansys-tools-report==0.6.0",
-    "pyansys-tools-versioning==0.4.0",
+    "pyansys-tools-report==0.7.0",
+    "pyansys-tools-versioning==0.5.0",
 ]
 all =  [
     # MAPDL - ALL
@@ -76,8 +76,8 @@ all =  [
     "ansys-units==0.1.0",
     "ansys-tools-path==0.3.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
-    "pyansys-tools-report==0.6.0",
-    "pyansys-tools-versioning==0.4.0",
+    "pyansys-tools-report==0.7.0",
+    "pyansys-tools-versioning==0.5.0",
 ]
 doc = [
     "Sphinx==7.2.6",
