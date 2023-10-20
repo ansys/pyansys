@@ -46,7 +46,7 @@ dependencies = [
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.4.0",
     "ansys-systemcoupling-core==0.3.0",
-    "pyaedt==0.7.0",
+    "pyaedt==0.7.1",
     "pytwin==0.5.0",
 ]
 
