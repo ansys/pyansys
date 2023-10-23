@@ -8,7 +8,7 @@ name = "pyansys"
 version = "2024.2.dev0"
 description = "Pythonic interfaces to Ansys products"
 readme = "README.rst"
-requires-python = ">=3.8,<4"
+requires-python = ">=3.9,<4"
 license = {file = "LICENSE"}
 authors = [{name = "ANSYS, Inc.", email = "pyansys.support@ansys.com"}]
 maintainers = [{name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com"}]
@@ -18,38 +18,36 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Information Analysis",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
 ]
 
 dependencies = [
-    "importlib-metadata>=4.0,<5; python_version<='3.8'",
     "ansys-dpf-composites==0.3.2",
-    "ansys-dpf-core==0.9.0",
-    "ansys-dpf-post==0.5.0",
+    "ansys-dpf-core==0.10.0",
+    "ansys-dpf-post==0.6.0",
     "ansys-dpf-gate==0.4.1",
     "ansys-dyna-core==0.4.2",
     "ansys-dynamicreporting-core==0.5.0",
-    "ansys-geometry-core==0.4rc1",
+    "ansys-geometry-core==0.4rc2",
     "ansys-grantami-bomanalytics==1.2.0",
     "ansys-grantami-recordlists==1.0.0.post1",
     "ansys-fluent-core==0.17.1",
-    "ansys-mapdl-core==0.66.0",
+    "ansys-mapdl-core==0.67.0",
     "ansys-math-core==0.1.3",
-    "ansys-mechanical-core==0.10.3",
-    "ansys-meshing-prime==0.5.0.dev6",
+    "ansys-mechanical-core==0.10.4",
+    "ansys-meshing-prime==0.5.0.dev7",
     "ansys-motorcad-core==0.2.0",
     "ansys-platform-instancemanagement==1.1.2",
     "ansys-pyensight-core==0.6.2",
     "ansys-openapi-common==1.2.2",
-    "ansys-optislang-core==0.4.0",
+    "ansys-optislang-core==0.4.2",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.4.0",
     "ansys-systemcoupling-core==0.3.0",
     "ansys-turbogrid-core==0.3.dev0",
-    "pyaedt==0.7.0",
+    "pyaedt==0.7.1",
     "pytwin==0.5.0",
 ]
 
@@ -64,8 +62,8 @@ fluent-all = [
 tools = [
     "ansys-units==0.1.0",
     "ansys-tools-path==0.3.1",
-    "pyansys-tools-report==0.6.0",
-    "pyansys-tools-versioning==0.4.0",
+    "pyansys-tools-report==0.7.0",
+    "pyansys-tools-versioning==0.5.0",
 ]
 all =  [
     # MAPDL - ALL
@@ -77,12 +75,12 @@ all =  [
     "ansys-units==0.1.0",
     "ansys-tools-path==0.3.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
-    "pyansys-tools-report==0.6.0",
-    "pyansys-tools-versioning==0.4.0",
+    "pyansys-tools-report==0.7.0",
+    "pyansys-tools-versioning==0.5.0",
 ]
 doc = [
     "Sphinx==7.2.6",
-    "ansys-sphinx-theme==0.12.0",
+    "ansys-sphinx-theme==0.12.3",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.5.0",
 ]
