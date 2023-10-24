@@ -58,6 +58,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
+- `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
 - `Granta MI BoM Analytics <https://bomanalytics.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI BoM Analytics services.
 - `Granta MI RecordLists <https://recordlists.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI Lists API.
@@ -97,6 +98,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySeascape`_
 - `PySherlock`_
 - `PySystemCoupling`_
+- `PyTurboGrid`_
 - `PyTwin`_
 - `Granta MI BoM Analytics`_
 - `Granta MI RecordLists`_

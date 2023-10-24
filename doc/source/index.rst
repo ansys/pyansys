@@ -194,6 +194,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to communicate with Ansys System Coupling
 
+    .. grid-item-card:: PyTurbogrid
+      :img-top: _static/thumbnails/pyturbogrid.png
+      :link: https://turbogrid.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app
+
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
       :link: https://twin.docs.pyansys.com/version/stable
