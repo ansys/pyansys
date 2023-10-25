@@ -80,7 +80,7 @@ all =  [
 ]
 doc = [
     "Sphinx==7.2.6",
-    "ansys-sphinx-theme==0.12.3",
+    "ansys-sphinx-theme==0.12.4",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.5.0",
 ]
