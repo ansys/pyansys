@@ -57,7 +57,7 @@ mapdl-all = [
 ]
 fluent-all = [
     "ansys-fluent-visualization==0.7.1",
-    "ansys-fluent-parametric==0.8.1",
+    "ansys-fluent-parametric==0.9.0",
 ]
 tools = [
     "ansys-units==0.1.0",
@@ -70,7 +70,7 @@ all =  [
     "ansys-mapdl-reader==0.52.20",
     # FLUENT - ALL
     "ansys-fluent-visualization==0.7.1",
-    "ansys-fluent-parametric==0.8.1",
+    "ansys-fluent-parametric==0.9.0",
     # TOOLS
     "ansys-units==0.1.0",
     "ansys-tools-path==0.3.2",
