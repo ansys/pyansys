@@ -19,6 +19,7 @@ jobs:
       matrix:
         pyansys-projects:
           [
+            "ansys/pyadditive",
             "ansys/pyaedt",
             "ansys/pyansys-geometry",
             "ansys/pyansys-math",

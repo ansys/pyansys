@@ -24,6 +24,7 @@ classifiers = [
 ]
 
 dependencies = [
+    "ansys-additive-core==0.16.0",
     "ansys-dpf-composites==0.3.2",
     "ansys-dpf-core==0.10.0",
     "ansys-dpf-post==0.6.0",

@@ -18,6 +18,14 @@ it is now a collection of many Python packages for using Ansys products through 
 .. grid:: 3
     :gutter: 3 3 4 4
 
+    .. grid-item-card:: PyAdditive
+      :img-top: _static/thumbnails/intro.png
+      :link: https://additive.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to the Ansys Additive service
+
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
       :link: https://aedt.docs.pyansys.com/version/stable
