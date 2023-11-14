@@ -42,7 +42,7 @@ dependencies = [
     "ansys-motorcad-core==0.3.0",
     "ansys-platform-instancemanagement==1.1.2",
     "ansys-pyensight-core==0.7.1",
-    "ansys-openapi-common==1.2.2",
+    "ansys-openapi-common==1.3.0",
     "ansys-optislang-core==0.4.3",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.4.0",
