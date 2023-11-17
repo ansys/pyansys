@@ -31,7 +31,7 @@ dependencies = [
     "ansys-dpf-gate==0.4.1",
     "ansys-dyna-core==0.4.2",
     "ansys-dynamicreporting-core==0.5.0",
-    "ansys-geometry-core==0.4rc2",
+    "ansys-geometry-core==0.4.1",
     "ansys-grantami-bomanalytics==1.2.0",
     "ansys-grantami-recordlists==1.0.0.post1",
     "ansys-fluent-core==0.18.2",
@@ -48,13 +48,13 @@ dependencies = [
     "ansys-sherlock-core==0.4.0",
     "ansys-systemcoupling-core==0.3.0",
     "ansys-turbogrid-core==0.3.dev0",
-    "pyaedt==0.7.4",
+    "pyaedt==0.7.5",
     "pytwin==0.5.0",
 ]
 
 [project.optional-dependencies]
 mapdl-all = [
-    "ansys-mapdl-reader==0.52.20",
+    "ansys-mapdl-reader==0.53.0",
 ]
 fluent-all = [
     "ansys-fluent-visualization==0.8.0",
@@ -68,7 +68,7 @@ tools = [
 ]
 all =  [
     # MAPDL - ALL
-    "ansys-mapdl-reader==0.52.20",
+    "ansys-mapdl-reader==0.53.0",
     # FLUENT - ALL
     "ansys-fluent-visualization==0.8.0",
     "ansys-fluent-parametric==0.9.0",
