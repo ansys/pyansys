@@ -150,6 +150,11 @@ jobs:
             cname: ${{ env.DOCUMENTATION_CNAME }}
             token: ${{ secrets.GITHUB_TOKEN }}
 
+  adapt-landing-page-dev:
+    uses: ./.github/workflows/update-gh-pages.yml
+    needs: [doc-deploy-dev]
+    secrets: inherit
+
   doc-index-dev:
     name: "Deploy dev docs index"
     if: github.ref == 'refs/heads/main'
@@ -204,6 +209,11 @@ jobs:
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.GITHUB_TOKEN }}
+
+  adapt-landing-page-release:
+    uses: ./.github/workflows/update-gh-pages.yml
+    needs: [docs-release]
+    secrets: inherit
 
   doc-index-release:
     name: "Deploy release docs index"
