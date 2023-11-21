@@ -192,7 +192,7 @@ jobs:
         uses: ansys/actions/release-github@v4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
-          additional-artifacts: 'all-deps-Linux-3.9 all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Windows-3.9 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-macOS-3.9 all-deps-macOS-3.10 all-deps-macOS-3.11'
+          additional-artifacts: 'all-deps-Linux-3.9 all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Windows-3.9 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-macOS-3.9 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12'
 
   docs-release:
     name: Deploy release docs
