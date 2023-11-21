@@ -1,0 +1,26 @@
+
+name: Update index.html in GH Pages
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  update-gh-pages:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+
+    - name: Replace 'version/stable' with 'version/dev' in index.html
+      run: |
+        sed -i 's/version\/stable/version\/dev/g' index.html
+
+    - name: "Commit changes"
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+        message: "update index.html"
