@@ -42,7 +42,7 @@ dependencies = [
     "ansys-meshing-prime==0.5.0.dev10",
     "ansys-motorcad-core==0.3.0",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.7.1",
+    "ansys-pyensight-core==0.7.2",
     "ansys-openapi-common==1.3.0",
     "ansys-optislang-core==0.4.3",
     "ansys-seascape==0.2.0",
