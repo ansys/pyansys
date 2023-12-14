@@ -50,7 +50,7 @@ dependencies = [
     "ansys-systemcoupling-core==0.3.0",
     "ansys-turbogrid-core==0.3.dev0",
     "pyaedt==0.7.7",
-    "pytwin==0.5.0",
+    "pytwin==0.6.0",
 ]
 
 [project.optional-dependencies]
