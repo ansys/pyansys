@@ -36,6 +36,7 @@ of these packages amongst themselves and the Ansys product release that they are
 
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
+- `PyAdditive <https://additive.docs.pyansys.com/>`_: Pythonic interface to the Ansys Additive service.
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
 - `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
@@ -58,6 +59,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
+- `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
 - `Granta MI BoM Analytics <https://bomanalytics.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI BoM Analytics services.
 - `Granta MI RecordLists <https://recordlists.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI Lists API.
@@ -78,6 +80,7 @@ free to post a question on the `Ansys Developer Forums <https://discuss.ansys.co
 
 By default, the PyAnsys metapackage installs these core modules:
 
+- `PyAdditive`_
 - `PyAEDT`_
 - `PyAnsys Geometry`_
 - `PyAnsys Math`_
@@ -97,6 +100,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySeascape`_
 - `PySherlock`_
 - `PySystemCoupling`_
+- `PyTurboGrid`_
 - `PyTwin`_
 - `Granta MI BoM Analytics`_
 - `Granta MI RecordLists`_
@@ -153,15 +157,15 @@ the ``pyansys`` metapackage is downloading the wheelhouse archive from the
 `Releases Page <https://github.com/ansys/pyansys/releases>`_ for your corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install the ``pyansys`` metapackage from
-scratch on Windows, Linux, and MacOS from Python 3.8 to 3.11. You can install this on an isolated system with
+scratch on Windows, Linux, and MacOS from Python 3.9 to 3.11. You can install this on an isolated system with
 a fresh Python installation or on a virtual environment.
 
-For example, on Linux with Python 3.8, unzip the wheelhouse archive and install it with the following
+For example, on Linux with Python 3.9, unzip the wheelhouse archive and install it with the following
 commands:
 
 .. code:: bash
 
-    unzip pyansys-v2024.1rc1-wheelhouse-Linux-3.8-core.zip wheelhouse
+    unzip pyansys-v2024.1rc1-wheelhouse-Linux-3.9-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and then install using

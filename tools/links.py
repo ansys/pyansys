@@ -21,6 +21,7 @@ DOCS_DIRECTORY = os.path.join(ROOT_DIR, "doc", "source")
 """Path to the documentation source directory"""
 
 LINKS = {
+    "ansys-additive-core": "https://additive.docs.pyansys.com/version/stable",
     "ansys-dpf-composites": "https://composites.dpf.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-dpf-core": "https://dpf.docs.pyansys.com/version/stable",
     "ansys-dpf-post": "https://post.docs.pyansys.com/version/stable",
@@ -43,6 +44,7 @@ LINKS = {
     "ansys-seascape": "https://seascape.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-turbogrid-core": "https://turbogrid.docs.pyansys.com/version/stable",  # noqa: E501
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
     "pytwin": "https://twin.docs.pyansys.com/version/stable",
     # MAPDL - ALL

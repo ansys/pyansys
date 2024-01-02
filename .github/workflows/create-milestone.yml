@@ -19,29 +19,31 @@ jobs:
       matrix:
         pyansys-projects:
           [
-            "ansys/pydpf-composites",
+            "ansys/pyadditive",
+            "ansys/pyaedt",
+            "ansys/pyansys-geometry",
+            "ansys/pyansys-math",
             "ansys/pydpf-core",
             "ansys/pydpf-post",
+            "ansys/pydpf-composites",
             "ansys/pydyna",
             "ansys/pydynamicreporting",
-            "ansys/pyansys-geometry",
-            "ansys/grantami-bomanalytics",
-            "ansys/grantami-recordlists",
+            "ansys/pyensight",
             "ansys/pyfluent",
             "ansys/pymapdl",
-            "ansys/pyansys-math",
             "ansys/pymechanical",
-            "ansys/pyprimemesh",
             "ansys/pymotorcad",
-            "ansys/pypim",
-            "ansys/pyensight",
-            "ansys/openapi-common",
             "ansys/pyoptislang",
+            "ansys/pypim",
+            "ansys/pyprimemesh",
             "ansys/pyseascape",
             "ansys/pysherlock",
             "ansys/pysystem-coupling",
-            "ansys/pyaedt",
+            "ansys/pyturbogrid",
             "ansys/pytwin",
+            "ansys/grantami-bomanalytics",
+            "ansys/grantami-recordlists",
+            "ansys/openapi-common",
             # MAPDL - ALL
             "ansys/pymapdl-reader",
             # FLUENT - ALL
@@ -58,7 +60,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up Python ${{ env.MAIN_PYTHON_VERSION }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
 
