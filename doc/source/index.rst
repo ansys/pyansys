@@ -20,7 +20,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
-      :link: https://additive.docs.pyansys.com/version/stable
+      :link: https://additive.docs.pyansys.com/version/0.17
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -28,7 +28,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
-      :link: https://aedt.docs.pyansys.com/version/stable
+      :link: https://aedt.docs.pyansys.com/version/0.7
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -36,7 +36,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAnsys Geometry
       :img-top: _static/thumbnails/pyansys-geometry.png
-      :link: https://geometry.docs.pyansys.com/version/stable
+      :link: https://geometry.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -44,7 +44,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
-      :link: https://math.docs.pyansys.com/version/stable
+      :link: https://math.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -52,7 +52,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyDPF - Core
       :img-top: _static/thumbnails/pydpf-core.png
-      :link: https://dpf.docs.pyansys.com/version/stable
+      :link: https://dpf.docs.pyansys.com/version/0.10
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -60,7 +60,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyDPF - Post
       :img-top: _static/thumbnails/pydpf-post.png
-      :link: https://post.docs.pyansys.com/version/stable
+      :link: https://post.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -68,7 +68,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyDPF - Composites
       :img-top: _static/thumbnails/pydpf-composites.png
-      :link: https://composites.dpf.docs.pyansys.com/version/stable
+      :link: https://composites.dpf.docs.pyansys.com/version/0.3
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -76,7 +76,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyDyna
       :img-top: _static/thumbnails/pydyna.png
-      :link: https://dyna.docs.pyansys.com/version/stable
+      :link: https://dyna.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -84,7 +84,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyDynamicReporting
       :img-top: _static/thumbnails/pydynamicreporting.png
-      :link: https://dynamicreporting.docs.pyansys.com/version/stable
+      :link: https://dynamicreporting.docs.pyansys.com/version/0.5
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -92,7 +92,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyEnSight
       :img-top: _static/thumbnails/pyensight.png
-      :link: https://ensight.docs.pyansys.com/version/stable
+      :link: https://ensight.docs.pyansys.com/version/0.7
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -100,7 +100,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/stable
+      :link: https://fluent.docs.pyansys.com/version/0.18
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -108,7 +108,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent - Parametric
       :img-top: _static/thumbnails/pyfluent-parametric.png
-      :link: https://parametric.fluent.docs.pyansys.com/version/stable
+      :link: https://parametric.fluent.docs.pyansys.com/version/0.9
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -116,7 +116,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent - Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
-      :link: https://visualization.fluent.docs.pyansys.com/version/stable
+      :link: https://visualization.fluent.docs.pyansys.com/version/0.8
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -124,7 +124,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://mapdl.docs.pyansys.com/version/stable
+      :link: https://mapdl.docs.pyansys.com/version/0.67
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -132,7 +132,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://reader.docs.pyansys.com/version/stable
+      :link: https://reader.docs.pyansys.com/version/0.53
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -140,7 +140,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMechanical
       :img-top: _static/thumbnails/pymechanical.png
-      :link: https://mechanical.docs.pyansys.com/version/stable
+      :link: https://mechanical.docs.pyansys.com/version/0.10
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -148,7 +148,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
-      :link: https://motorcad.docs.pyansys.com/version/stable
+      :link: https://motorcad.docs.pyansys.com/version/0.3
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -156,7 +156,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyOptislang
       :img-top: _static/thumbnails/pyoptislang.png
-      :link: https://optislang.docs.pyansys.com/version/stable
+      :link: https://optislang.docs.pyansys.com/version/0.5
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -164,7 +164,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
-      :link: https://pypim.docs.pyansys.com/version/stable
+      :link: https://pypim.docs.pyansys.com/version/1.1
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -172,7 +172,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
-      :link: https://prime.docs.pyansys.com/version/stable
+      :link: https://prime.docs.pyansys.com/version/0.5
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -180,7 +180,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
-      :link: https://seascape.docs.pyansys.com/version/stable
+      :link: https://seascape.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -188,7 +188,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
-      :link: https://sherlock.docs.pyansys.com/version/stable
+      :link: https://sherlock.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -196,7 +196,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PySystem Coupling
       :img-top: _static/thumbnails/pysystem-coupling.png
-      :link: https://systemcoupling.docs.pyansys.com/version/stable
+      :link: https://systemcoupling.docs.pyansys.com/version/0.3
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -204,7 +204,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyTurbogrid
       :img-top: _static/thumbnails/pyturbogrid.png
-      :link: https://turbogrid.docs.pyansys.com/version/stable
+      :link: https://turbogrid.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -212,7 +212,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
-      :link: https://twin.docs.pyansys.com/version/stable
+      :link: https://twin.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -220,7 +220,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: Granta MI BoM Analytics
       :img-top: _static/thumbnails/intro.png
-      :link: https://bomanalytics.grantami.docs.pyansys.com/version/stable
+      :link: https://bomanalytics.grantami.docs.pyansys.com/version/1.2
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -228,7 +228,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: Granta MI RecordLists
       :img-top: _static/thumbnails/intro.png
-      :link: https://recordlists.grantami.docs.pyansys.com/version/stable/
+      :link: https://recordlists.grantami.docs.pyansys.com/version/1.0/
       :text-align: center
       :class-title: pyansys-card-title
 

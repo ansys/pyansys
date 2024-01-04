@@ -6,7 +6,7 @@ Tooling libraries
 
     .. grid-item-card:: Ansys Tools Path
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://path.tools.docs.pyansys.com/version/stable
+      :link: https://path.tools.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -22,7 +22,7 @@ Tooling libraries
 
     .. grid-item-card:: PyAnsys Tools Report
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://report.tools.docs.pyansys.com/version/stable
+      :link: https://report.tools.docs.pyansys.com/version/0.7
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -30,7 +30,7 @@ Tooling libraries
 
     .. grid-item-card:: PyAnsys Tools Versioning
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://versioning.tools.docs.pyansys.com/version/stable
+      :link: https://versioning.tools.docs.pyansys.com/version/0.5
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -38,7 +38,7 @@ Tooling libraries
 
     .. grid-item-card:: PyAnsys Units
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://units.docs.pyansys.com/version/stable
+      :link: https://units.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
