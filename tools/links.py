@@ -54,7 +54,7 @@ LINKS = {
     "ansys-fluent-parametric": "https://parametric.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     # TOOLS
     "ansys-units": "https://units.docs.pyansys.com/version/stable",
-    "ansys-tools-path": None, # "https://path.tools.docs.pyansys.com/version/stable",
+    "ansys-tools-path": "https://path.tools.docs.pyansys.com/version/stable",
     "ansys-tools-protoc-helper": None,
     "pyansys-tools-report": "https://report.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "pyansys-tools-versioning": "https://versioning.tools.docs.pyansys.com/version/stable",  # noqa: E501
