@@ -6,7 +6,7 @@ Tooling libraries
 
     .. grid-item-card:: Ansys Tools Path
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://path.tools.docs.pyansys.com/version/0.4
+      :link: https://path.tools.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
 

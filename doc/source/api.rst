@@ -137,7 +137,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
-      :link: https://prime.docs.pyansys.com/version/0.5/api/index.html
+      :link: https://prime.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -161,7 +161,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyTurboGrid
       :img-top: _static/thumbnails/pyturbogrid.png
-      :link: https://turbogrid.docs.pyansys.com/version/0.4/api_reference/index.html
+      :link: https://turbogrid.docs.pyansys.com/version/stable/api_reference/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
