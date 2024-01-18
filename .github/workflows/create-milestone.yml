@@ -64,7 +64,7 @@ jobs:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
 
       - name: Linux pip cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         if: ${{ runner.os == 'Linux' }}
         with:
           path: ~/.cache/pip
