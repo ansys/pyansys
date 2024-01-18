@@ -102,8 +102,6 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySystemCoupling`_
 - `PyTurboGrid`_
 - `PyTwin`_
-- `Granta MI BoM Analytics`_
-- `Granta MI RecordLists`_
 - `Shared Components`_
 
 Additionally, the ``pyansys`` metapackage contains certain extra targets that
