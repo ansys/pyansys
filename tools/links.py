@@ -29,8 +29,6 @@ LINKS = {
     "ansys-dyna-core": "https://dyna.docs.pyansys.com/version/stable",
     "ansys-dynamicreporting-core": "https://dynamicreporting.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-geometry-core": "https://geometry.docs.pyansys.com/version/stable",
-    "ansys-grantami-bomanalytics": "https://bomanalytics.grantami.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-grantami-recordlists": "https://recordlists.grantami.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
     "ansys-mapdl-core": "https://mapdl.docs.pyansys.com/version/stable",
     "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
@@ -46,6 +44,7 @@ LINKS = {
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-turbogrid-core": "https://turbogrid.docs.pyansys.com/version/stable",  # noqa: E501
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
+    "pygranta": "https://grantami.docs.pyansys.com/version/stable",
     "pytwin": "https://twin.docs.pyansys.com/version/stable",
     # MAPDL - ALL
     "ansys-mapdl-reader": "https://reader.docs.pyansys.com/version/stable",

@@ -30,6 +30,7 @@ jobs:
             "ansys/pydynamicreporting",
             "ansys/pyensight",
             "ansys/pyfluent",
+            "ansys/pygranta",
             "ansys/pymapdl",
             "ansys/pymechanical",
             "ansys/pymotorcad",
@@ -41,8 +42,6 @@ jobs:
             "ansys/pysystem-coupling",
             "ansys/pyturbogrid",
             "ansys/pytwin",
-            "ansys/grantami-bomanalytics",
-            "ansys/grantami-recordlists",
             "ansys/openapi-common",
             # MAPDL - ALL
             "ansys/pymapdl-reader",
