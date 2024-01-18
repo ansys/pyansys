@@ -124,7 +124,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyGranta
       :img-top: _static/thumbnails/intro.png
-      :link: https://grantami.docs.pyansys.com/version/stable
+      :link: https://grantami.docs.pyansys.com/version/2024.1
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -180,7 +180,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
-      :link: https://prime.docs.pyansys.com/version/stable
+      :link: https://prime.docs.pyansys.com/version/0.5
       :text-align: center
       :class-title: pyansys-card-title
 

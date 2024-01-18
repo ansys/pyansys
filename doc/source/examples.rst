@@ -90,7 +90,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyGranta
       :img-top: _static/thumbnails/intro.png
-      :link: https://grantami.docs.pyansys.com/version/stable/examples.html
+      :link: https://grantami.docs.pyansys.com/version/2024.1/examples.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -132,7 +132,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
-      :link: https://prime.docs.pyansys.com/version/stable/examples/index.html
+      :link: https://prime.docs.pyansys.com/version/0.5/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

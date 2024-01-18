@@ -101,7 +101,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyGranta
       :img-top: _static/thumbnails/intro.png
-      :link: https://grantami.docs.pyansys.com/version/stable/api.html
+      :link: https://grantami.docs.pyansys.com/version/2024.1/api.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -143,7 +143,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
-      :link: https://prime.docs.pyansys.com/version/stable/api/index.html
+      :link: https://prime.docs.pyansys.com/version/0.5/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

@@ -93,7 +93,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyGranta
       :img-top: _static/thumbnails/intro.png
-      :link: https://grantami.docs.pyansys.com/version/stable/user_guide.html
+      :link: https://grantami.docs.pyansys.com/version/2024.1/user_guide.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -135,7 +135,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
-      :link: https://prime.docs.pyansys.com/version/stable/user_guide/index.html
+      :link: https://prime.docs.pyansys.com/version/0.5/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
