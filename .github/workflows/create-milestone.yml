@@ -28,6 +28,7 @@ jobs:
             "ansys/pydpf-composites",
             "ansys/pydyna",
             "ansys/pydynamicreporting",
+            "ansys/pyedb-core",
             "ansys/pyensight",
             "ansys/pyfluent",
             "ansys/pygranta",
