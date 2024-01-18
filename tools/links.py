@@ -42,7 +42,7 @@ LINKS = {
     "ansys-seascape": "https://seascape.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-turbogrid-core": None, # "https://turbogrid.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-turbogrid-core": None,  # "https://turbogrid.docs.pyansys.com/version/stable",  # noqa: E501
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
     "pygranta": "https://grantami.docs.pyansys.com/version/stable",
     "pytwin": "https://twin.docs.pyansys.com/version/stable",
