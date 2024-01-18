@@ -30,6 +30,7 @@ jobs:
             "ansys/pydynamicreporting",
             "ansys/pyensight",
             "ansys/pyfluent",
+            "ansys/pygranta",
             "ansys/pymapdl",
             "ansys/pymechanical",
             "ansys/pymotorcad",
@@ -41,8 +42,6 @@ jobs:
             "ansys/pysystem-coupling",
             "ansys/pyturbogrid",
             "ansys/pytwin",
-            "ansys/grantami-bomanalytics",
-            "ansys/grantami-recordlists",
             "ansys/openapi-common",
             # MAPDL - ALL
             "ansys/pymapdl-reader",
@@ -65,7 +64,7 @@ jobs:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
 
       - name: Linux pip cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         if: ${{ runner.os == 'Linux' }}
         with:
           path: ~/.cache/pip

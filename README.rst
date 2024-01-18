@@ -49,6 +49,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
 - `PyFluent - Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
 - `PyFluent - Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
+- `PyGranta <https://grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI services.
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APDL).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyMechanical <https://mechanical.docs.pyansys.com/>`_: Pythonic interface to Ansys Mechanical.
@@ -61,8 +62,6 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
-- `Granta MI BoM Analytics <https://bomanalytics.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI BoM Analytics services.
-- `Granta MI RecordLists <https://recordlists.grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI Lists API.
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared Ansys software components to enable package interoperability and minimize maintenance.
 
 Other tools delivered as part of the metapackage are:
@@ -91,6 +90,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyDynamicReporting`_
 - `PyEnSight`_
 - `PyFluent`_
+- `PyGranta`_
 - `PyMAPDL`_
 - `PyMechanical`_
 - `PyMotorCAD`_
@@ -102,8 +102,6 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySystemCoupling`_
 - `PyTurboGrid`_
 - `PyTwin`_
-- `Granta MI BoM Analytics`_
-- `Granta MI RecordLists`_
 - `Shared Components`_
 
 Additionally, the ``pyansys`` metapackage contains certain extra targets that

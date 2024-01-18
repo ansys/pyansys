@@ -88,6 +88,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyGranta
+      :img-top: _static/thumbnails/intro.png
+      :link: https://grantami.docs.pyansys.com/version/stable/examples.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://mapdl.docs.pyansys.com/version/0.67/examples/index.html
@@ -157,18 +163,6 @@ PyAnsys packages examples
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
       :link: https://twin.docs.pyansys.com/version/0.6/examples/index.html
-      :text-align: center
-      :class-title: pyansys-card-title
-
-    .. grid-item-card:: Granta MI BoM Analytics
-      :img-top: _static/thumbnails/intro.png
-      :link: https://bomanalytics.grantami.docs.pyansys.com/version/1.2/examples/index.html
-      :text-align: center
-      :class-title: pyansys-card-title
-
-    .. grid-item-card:: Granta MI RecordLists
-      :img-top: _static/thumbnails/intro.png
-      :link: https://recordlists.grantami.docs.pyansys.com/version/1.0/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

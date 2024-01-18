@@ -122,6 +122,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to visualize Ansys Fluent simulations
 
+    .. grid-item-card:: PyGranta
+      :img-top: _static/thumbnails/intro.png
+      :link: https://grantami.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Granta MI services
+
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://mapdl.docs.pyansys.com/version/0.67
@@ -218,25 +226,9 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to communicate with consumption workflows for Ansys digital twins
 
-    .. grid-item-card:: Granta MI BoM Analytics
-      :img-top: _static/thumbnails/intro.png
-      :link: https://bomanalytics.grantami.docs.pyansys.com/version/1.2
-      :text-align: center
-      :class-title: pyansys-card-title
-
-      Pythonic interface to Ansys Granta MI BoM Analytics services
-
-    .. grid-item-card:: Granta MI RecordLists
-      :img-top: _static/thumbnails/intro.png
-      :link: https://recordlists.grantami.docs.pyansys.com/version/1.0/
-      :text-align: center
-      :class-title: pyansys-card-title
-
-      Pythonic interface to Ansys Granta MI Lists API
-
     .. grid-item-card:: Shared Components
       :img-top: _static/thumbnails/intro.png
-      :link: https://shared.docs.pyansys.com/
+      :link: https://shared.docs.pyansys.com
       :text-align: center
       :class-title: pyansys-card-title
 
