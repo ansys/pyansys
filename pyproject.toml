@@ -32,7 +32,7 @@ dependencies = [
     "ansys-dpf-core==0.10.1",
     "ansys-dpf-post==0.6.0",
     "ansys-dpf-gate==0.4.1",
-    "ansys-dyna-core==0.4.5",
+    "ansys-dyna-core==0.4.6",
     "ansys-dynamicreporting-core==0.5.1",
     "ansys-geometry-core==0.4.6",
     "ansys-fluent-core==0.19.1",
