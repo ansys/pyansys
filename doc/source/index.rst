@@ -92,7 +92,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyaedt.png
-      :link: https://edb.core.docs.pyansys.com/version/stable
+      :link: https://edb.core.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 

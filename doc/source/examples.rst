@@ -66,7 +66,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyaedt.png
-      :link: https://edb.core.docs.pyansys.com/version/stable/examples/index.html
+      :link: https://edb.core.docs.pyansys.com/version/0.1/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
