@@ -34,12 +34,10 @@ Welcome to the PyAnsys metapackage repository. The ``pyansys`` metapackage
 provides a single package of collected PyAnsys packages that ensures compatibility
 of these packages amongst themselves and the Ansys product release that they are linked to.
 
-|pyansys-logo|
-
-.. |pyansys-logo| image:: https://raw.githubusercontent.com/ansys/pyansys/main/doc/source/_static/pyansys_dark.png
+.. image:: https://raw.githubusercontent.com/ansys/pyansys/main/doc/source/_static/pyansys_dark.png
+   :width: 400
    :target: https://docs.pyansys.com
    :alt: PyAnsys
-   :width: 600
 
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
