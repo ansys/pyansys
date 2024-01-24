@@ -30,7 +30,7 @@ PyAnsys metapackage
    :target: https://results.pre-commit.ci/latest/github/pyansys/pyansys/main
    :alt: pre-commit.ci status
 
-.. |pyansys-logo| image:: https://github.com/ansys/pyansys/raw/main/doc/source/_static/pyansys_dark.png
+.. |pyansys-logo| image:: https://raw.githubusercontent.com/ansys/pyansys/main/doc/source/_static/pyansys_dark.png
    :alt: PyAnsys
    :target: https://docs.pyansys.com/
    :align: center
