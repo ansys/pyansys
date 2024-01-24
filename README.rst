@@ -30,16 +30,17 @@ PyAnsys metapackage
    :target: https://results.pre-commit.ci/latest/github/pyansys/pyansys/main
    :alt: pre-commit.ci status
 
-.. |pyansys-logo| image:: https://raw.githubusercontent.com/ansys/pyansys/main/doc/source/_static/pyansys_dark.png
-   :alt: PyAnsys
-   :target: https://docs.pyansys.com/
-   :align: center
-
 Welcome to the PyAnsys metapackage repository. The ``pyansys`` metapackage
 provides a single package of collected PyAnsys packages that ensures compatibility
 of these packages amongst themselves and the Ansys product release that they are linked to.
 
 |pyansys-logo|
+
+.. |pyansys-logo| image:: https://raw.githubusercontent.com/ansys/pyansys/main/doc/source/_static/pyansys_dark.png
+   :alt: PyAnsys
+   :target: https://docs.pyansys.com/
+   :align: center
+   :width: 600
 
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
