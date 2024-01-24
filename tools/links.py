@@ -28,6 +28,7 @@ LINKS = {
     "ansys-dpf-gate": None,
     "ansys-dyna-core": "https://dyna.docs.pyansys.com/version/stable",
     "ansys-dynamicreporting-core": "https://dynamicreporting.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-edb-core": "https://edb.core.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-geometry-core": "https://geometry.docs.pyansys.com/version/stable",
     "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
     "ansys-mapdl-core": "https://mapdl.docs.pyansys.com/version/stable",

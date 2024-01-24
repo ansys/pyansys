@@ -67,6 +67,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyEDB - Core
+      :img-top: _static/thumbnails/pyaedt.png
+      :link: https://edb.core.docs.pyansys.com/version/stable/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyEnSight
       :img-top: _static/thumbnails/pyensight.png
       :link: https://ensight.docs.pyansys.com/version/0.7/user_guide/index.html

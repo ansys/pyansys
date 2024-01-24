@@ -34,6 +34,10 @@ Welcome to the PyAnsys metapackage repository. The ``pyansys`` metapackage
 provides a single package of collected PyAnsys packages that ensures compatibility
 of these packages amongst themselves and the Ansys product release that they are linked to.
 
+.. image:: https://raw.githubusercontent.com/ansys/pyansys/main/doc/source/_static/pyansys_dark.png
+   :target: https://docs.pyansys.com
+   :alt: PyAnsys
+
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
 - `PyAdditive <https://additive.docs.pyansys.com/>`_: Pythonic interface to the Ansys Additive service.
@@ -45,6 +49,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
 - `PyDyna <https://dyna.docs.pyansys.com/>`_: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver and postprocess its results.
 - `PyDynamicReporting <https://dynamicreporting.docs.pyansys.com/>`_: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports.
+- `PyEDB - Core <https://edb.core.docs.pyansys.com/>`_: Pythonic interface to the Electronics Database (EDB).
 - `PyEnSight <https://ensight.docs.pyansys.com/>`_: Pythonic interface to EnSight, the Ansys simulation postprocessor.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
 - `PyFluent - Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
@@ -88,6 +93,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyDPF - Composites`_
 - `PyDyna`_
 - `PyDynamicReporting`_
+- `PyEDB - Core`_
 - `PyEnSight`_
 - `PyFluent`_
 - `PyGranta`_
