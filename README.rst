@@ -37,9 +37,8 @@ of these packages amongst themselves and the Ansys product release that they are
 |pyansys-logo|
 
 .. |pyansys-logo| image:: https://raw.githubusercontent.com/ansys/pyansys/main/doc/source/_static/pyansys_dark.png
+   :target: https://docs.pyansys.com
    :alt: PyAnsys
-   :target: https://docs.pyansys.com/
-   :align: center
    :width: 600
 
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
