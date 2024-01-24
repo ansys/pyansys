@@ -34,6 +34,10 @@ Welcome to the PyAnsys metapackage repository. The ``pyansys`` metapackage
 provides a single package of collected PyAnsys packages that ensures compatibility
 of these packages amongst themselves and the Ansys product release that they are linked to.
 
+.. image:: https://raw.githubusercontent.com/ansys/pyansys/main/doc/source/_static/pyansys_dark.png
+   :target: https://docs.pyansys.com
+   :alt: PyAnsys
+
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
 - `PyAdditive <https://additive.docs.pyansys.com/>`_: Pythonic interface to the Ansys Additive service.
