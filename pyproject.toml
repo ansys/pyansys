@@ -34,7 +34,7 @@ dependencies = [
     "ansys-dpf-gate==0.4.1",
     "ansys-dyna-core==0.4.6",
     "ansys-dynamicreporting-core==0.5.1",
-    "ansys-geometry-core==0.4.6",
+    "ansys-geometry-core==0.4.8",
     "ansys-fluent-core==0.19.1",
     "ansys-mapdl-core==0.67.0",
     "ansys-math-core==0.1.3",
