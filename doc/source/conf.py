@@ -1,4 +1,5 @@
 """Configuration file for docs.pyansys.com landing page."""
+
 from datetime import datetime
 import os
 
