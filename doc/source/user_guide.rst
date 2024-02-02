@@ -123,7 +123,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
-      :link: https://motorcad.docs.pyansys.com/version/0.3/user_guide/index.html
+      :link: https://motorcad.docs.pyansys.com/version/0.4/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

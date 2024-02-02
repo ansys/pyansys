@@ -120,7 +120,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
-      :link: https://motorcad.docs.pyansys.com/version/0.3/examples/index.html
+      :link: https://motorcad.docs.pyansys.com/version/0.4/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

@@ -164,7 +164,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
-      :link: https://motorcad.docs.pyansys.com/version/0.3
+      :link: https://motorcad.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
