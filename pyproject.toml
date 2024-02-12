@@ -50,7 +50,7 @@ dependencies = [
     "ansys-sherlock-core==0.4.0",
     "ansys-systemcoupling-core==0.4.0",
     "ansys-turbogrid-core==0.4.0",
-    "pyaedt==0.7.11",
+    "pyaedt==0.7.12",
     "pygranta==2024.1.0",
     "pytwin==0.6.0",
 ]
