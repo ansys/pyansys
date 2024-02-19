@@ -43,7 +43,8 @@ jobs:
             "ansys/pysystem-coupling",
             "ansys/pyturbogrid",
             "ansys/pytwin",
-            "ansys/openapi-common",
+            "ansys/openapi-common",´
+            "ansys/pyrocky",
             # MAPDL - ALL
             "ansys/pymapdl-reader",
             # FLUENT - ALL

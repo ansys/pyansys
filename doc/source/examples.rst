@@ -142,6 +142,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyRocky
+      :img-top: _static/thumbnails/pyrocky.png
+      :link: https://rocky.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
       :link: https://seascape.docs.pyansys.com/version/stable/#examples
