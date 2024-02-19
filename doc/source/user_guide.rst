@@ -163,6 +163,13 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PySimAI
+      :img-top: _static/thumbnails/intro.png
+
+      :link: https://simai.docs.pyansys.com/version/stable/user_guide.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
       :link: https://systemcoupling.docs.pyansys.com/version/stable/users_guide/index.html

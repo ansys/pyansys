@@ -171,6 +171,13 @@ PyAnsys packages API reference
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PySimAI
+      :img-top: _static/thumbnails/intro.png
+
+      :link: https://simai.docs.pyansys.com/version/stable/api_reference.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
       :link: https://systemcoupling.docs.pyansys.com/version/stable/api/index.html

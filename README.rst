@@ -69,6 +69,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyRocky <https://rocky.docs.pyansys.com/>`_: PyRocky is a Python client library for remotely controlling Ansys Rocky.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
+- `PySimAI <https://simai.docs.pyansys.com/>`_: Pythonic interface to use SimAI.
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
@@ -111,6 +112,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyRocky`_
 - `PySeascape`_
 - `PySherlock`_
+- `PySimAI`_
 - `PySystemCoupling`_
 - `PyTurboGrid`_
 - `PyTwin`_
