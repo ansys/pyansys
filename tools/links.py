@@ -40,7 +40,7 @@ LINKS = {
     "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
     "ansys-openapi-common": None,
     "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-pyrocky-core": "https://rocky.docs.pyansys.com/version/stable",   
+    "ansys-pyrocky-core": "https://rocky.docs.pyansys.com/version/stable",
     "ansys-seascape": "https://seascape.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
