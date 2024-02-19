@@ -167,7 +167,6 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PySimAI
       :img-top: _static/thumbnails/intro.png
-
       :link: https://simai.docs.pyansys.com/version/stable/api_reference.html
       :text-align: center
       :class-title: pyansys-card-title
