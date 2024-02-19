@@ -66,6 +66,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys Optislang.
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
 - `PyPrimeMesh <https://prime.docs.pyansys.com/>`_: Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology.
+- `PyRocky <https://rocky.docs.pyansys.com/>`_: PyRocky is a Python client library for remotely controlling Ansys Rocky.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
 - `PySimAI <https://simai.docs.pyansys.com/>`_: Pythonic interface to use SimAI.
@@ -108,6 +109,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyOptislang`_
 - `PyPIM`_
 - `PyPrimeMesh`_
+- `PyRocky`_
 - `PySeascape`_
 - `PySherlock`_
 - `PySimAI`_

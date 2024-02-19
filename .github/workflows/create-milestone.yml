@@ -19,6 +19,7 @@ jobs:
       matrix:
         pyansys-projects:
           [
+            "ansys/openapi-common",
             "ansys/pyadditive",
             "ansys/pyaedt",
             "ansys/pyansys-geometry",
@@ -38,13 +39,13 @@ jobs:
             "ansys/pyoptislang",
             "ansys/pypim",
             "ansys/pyprimemesh",
+            "ansys/pyrocky",
             "ansys/pyseascape",
             "ansys/pysherlock",
             "ansys/pysimai",
             "ansys/pysystem-coupling",
             "ansys/pyturbogrid",
             "ansys/pytwin",
-            "ansys/openapi-common",
             # MAPDL - ALL
             "ansys/pymapdl-reader",
             # FLUENT - ALL
