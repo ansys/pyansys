@@ -222,7 +222,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-       Pythonic interface to communicate with SimAI
+      Pythonic interface to communicate with SimAI
 
     .. grid-item-card:: PySystem Coupling
       :img-top: _static/thumbnails/pysystem-coupling.png
