@@ -198,7 +198,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology
+      Python library to communicate with Ansys Rocky using Rocky PrePost API
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
