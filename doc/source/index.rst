@@ -138,6 +138,12 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Granta MI services
 
+    .. grid-item-card:: PyHPS
+      :img-top: _static/thumbnails/pyhps.png
+      :link: https://hps.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://mapdl.docs.pyansys.com/version/stable
