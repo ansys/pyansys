@@ -106,3 +106,111 @@ force_sort_within_sections = true
 line_length = 100
 default_section = "THIRDPARTY"
 src_paths = ["doc", "src"]
+=======
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+# Check https://flit.readthedocs.io/en/latest/pyproject_toml.html for all available sections
+name = "pyansys"
+version = "2024.2.dev0"
+description = "Pythonic interfaces to Ansys products"
+readme = "README.rst"
+requires-python = ">=3.9,<4"
+license = { file = "LICENSE" }
+authors = [{ name = "ANSYS, Inc.", email = "pyansys.support@ansys.com" }]
+maintainers = [
+    { name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "ansys-additive-core==0.17.2",
+    "ansys-dpf-composites==0.4.0",
+    "ansys-dpf-core==0.11.0",
+    "ansys-dpf-post==0.7.0",
+    "ansys-dpf-gate==0.4.1",
+    "ansys-dyna-core==0.4.8",
+    "ansys-dynamicreporting-core==0.5.1",
+    "ansys-edb-core==0.1.3",
+    "ansys-fluent-core==0.19.2",
+    "ansys-geometry-core==0.4.10",
+    "ansys-mapdl-core==0.67.0",
+    "ansys-math-core==0.1.3",
+    "ansys-mechanical-core==0.10.7",
+    "ansys-meshing-prime==0.5.1",
+    "ansys-motorcad-core==0.4.0",
+    "ansys-openapi-common==1.4.0",
+    "ansys-optislang-core==0.5.1",
+    "ansys-platform-instancemanagement==1.1.2",
+    "ansys-pyensight-core==0.7.5",
+    "ansys-rocky-core==0.1.0",
+    "ansys-seascape==0.2.0",
+    "ansys-sherlock-core==0.4.0",
+    "ansys-simai-core==0.1.3",
+    "ansys-systemcoupling-core==0.4.0",
+    "ansys-turbogrid-core==0.4.0",
+    "pyaedt==0.7.12",
+    "pygranta==2024.1.0",
+    "pytwin==0.6.0",
+]
+
+[project.optional-dependencies]
+mapdl-all = ["ansys-mapdl-reader==0.53.0"]
+fluent-all = [
+    "ansys-fluent-visualization==0.8.0",
+    "ansys-fluent-parametric==0.9.0",
+]
+tools = [
+    "ansys-units==0.3.1",
+    "ansys-tools-path==0.4.1",
+    "pyansys-tools-report==0.7.0",
+    "pyansys-tools-versioning==0.5.0",
+]
+all = [
+    # MAPDL - ALL
+    "ansys-mapdl-reader==0.53.0",
+    # FLUENT - ALL
+    "ansys-fluent-visualization==0.8.0",
+    "ansys-fluent-parametric==0.9.0",
+    # TOOLS
+    "ansys-units==0.3.1",
+    "ansys-tools-path==0.4.1",
+    # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
+    "pyansys-tools-report==0.7.0",
+    "pyansys-tools-versioning==0.5.0",
+]
+doc = [
+    "Sphinx==7.2.6",
+    "ansys-sphinx-theme==0.14.0",
+    "sphinx-copybutton==0.5.2",
+    "sphinx-design==0.5.0",
+]
+
+[project.urls]
+Source = "https://github.com/ansys/pyansys"
+Documentation = "https://docs.pyansys.com"
+
+[tool.flit.module]
+name = "pyansys"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+force_sort_within_sections = true
+line_length = 100
+default_section = "THIRDPARTY"
+src_paths = ["doc", "src"]
