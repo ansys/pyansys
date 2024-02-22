@@ -33,6 +33,7 @@ jobs:
             "ansys/pyensight",
             "ansys/pyfluent",
             "ansys/pygranta",
+            "ansys/pyhps",
             "ansys/pymapdl",
             "ansys/pymechanical",
             "ansys/pymotorcad",

@@ -103,6 +103,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyHPS
+      :img-top: _static/thumbnails/intro.png
+      :link: https://hps.docs.pyansys.com/version/stable/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://mapdl.docs.pyansys.com/version/stable/user_guide/index.html

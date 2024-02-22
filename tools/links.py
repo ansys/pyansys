@@ -31,6 +31,7 @@ LINKS = {
     "ansys-edb-core": "https://edb.core.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-geometry-core": "https://geometry.docs.pyansys.com/version/stable",
     "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
+    "ansys-hps-client": "https://hps.docs.pyansys.com/version/stable",
     "ansys-mapdl-core": "https://mapdl.docs.pyansys.com/version/stable",
     "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
     "ansys-mechanical-core": "https://mechanical.docs.pyansys.com/version/stable",  # noqa: E501
