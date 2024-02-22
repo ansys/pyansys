@@ -1,3 +1,1 @@
 * text=auto !eol
-*.sh         eol=lf
-*.bat        eol=crlf
