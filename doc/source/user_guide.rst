@@ -104,7 +104,7 @@ PyAnsys packages user guides
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyHPS
-      :img-top: _static/thumbnails/pyhps.png
+      :img-top: _static/thumbnails/intro.png
       :link: https://hps.docs.pyansys.com/version/stable/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
