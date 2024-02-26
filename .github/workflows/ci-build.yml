@@ -33,7 +33,7 @@ jobs:
           python-package-name: ${{ env.PACKAGE_NAME }}
           token: ${{ secrets.GITHUB_TOKEN }}
           dev-mode: true
-      
+
       - name: PyAnsys Vulnerability Check (any other case)
         if: github.event_name != 'pull_request'
         uses: ansys/actions/check-vulnerabilities@v5
