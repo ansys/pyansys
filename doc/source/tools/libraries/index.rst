@@ -38,7 +38,7 @@ Tooling libraries
 
     .. grid-item-card:: PyAnsys Units
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://units.docs.pyansys.com/version/0.1
+      :link: https://units.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 

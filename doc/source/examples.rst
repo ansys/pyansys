@@ -102,7 +102,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyHPS
       :img-top: _static/thumbnails/intro.png
-      :link: https://hps.docs.pyansys.com/version/stable/examples/index.html
+      :link: https://hps.docs.pyansys.com/version/0.7/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -150,7 +150,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyRocky
       :img-top: _static/thumbnails/pyrocky.png
-      :link: https://rocky.docs.pyansys.com/version/stable/examples/index.html
+      :link: https://rocky.docs.pyansys.com/version/0.1/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -168,7 +168,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PySimAI
       :img-top: _static/thumbnails/intro.png
-      :link: https://simai.docs.pyansys.com/version/stable/index.html#getting-started
+      :link: https://simai.docs.pyansys.com/version/0.1/index.html#getting-started
       :text-align: center
       :class-title: pyansys-card-title
 

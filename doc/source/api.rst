@@ -113,7 +113,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyHPS
       :img-top: _static/thumbnails/intro.png
-      :link: https://hps.docs.pyansys.com/version/stable/api/index.html
+      :link: https://hps.docs.pyansys.com/version/0.7/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -161,7 +161,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyRocky
       :img-top: _static/thumbnails/pyrocky.png
-      :link: https://rocky.docs.pyansys.com/version/stable/api/index.html
+      :link: https://rocky.docs.pyansys.com/version/0.1/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -179,7 +179,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PySimAI
       :img-top: _static/thumbnails/intro.png
-      :link: https://simai.docs.pyansys.com/version/stable/api_reference.html
+      :link: https://simai.docs.pyansys.com/version/0.1/api_reference.html
       :text-align: center
       :class-title: pyansys-card-title
 
