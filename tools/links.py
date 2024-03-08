@@ -31,17 +31,20 @@ LINKS = {
     "ansys-edb-core": "https://edb.core.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-geometry-core": "https://geometry.docs.pyansys.com/version/stable",
     "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
+    "ansys-hps-client": "https://hps.docs.pyansys.com/version/stable",
     "ansys-mapdl-core": "https://mapdl.docs.pyansys.com/version/stable",
     "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
     "ansys-mechanical-core": "https://mechanical.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-meshing-prime": "https://prime.docs.pyansys.com/version/stable",
     "ansys-motorcad-core": "https://motorcad.docs.pyansys.com/version/stable",
-    "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
     "ansys-openapi-common": None,
     "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
+    "ansys-rocky-core": "https://rocky.docs.pyansys.com/version/stable",
     "ansys-seascape": "https://seascape.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
+    "ansys-simai-core": "https://simai.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-turbogrid-core": None,  # "https://turbogrid.docs.pyansys.com/version/stable",  # noqa: E501
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",

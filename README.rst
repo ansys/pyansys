@@ -59,6 +59,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyFluent - Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
 - `PyFluent - Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
 - `PyGranta <https://grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI services.
+- `PyHPS <https://hps.docs.pyansys.com/version/dev/>`_: A Python client for Ansys HPC Platform Services (HPS).
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APDL).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyMechanical <https://mechanical.docs.pyansys.com/>`_: Pythonic interface to Ansys Mechanical.
@@ -66,8 +67,10 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys Optislang.
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
 - `PyPrimeMesh <https://prime.docs.pyansys.com/>`_: Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology.
+- `PyRocky <https://rocky.docs.pyansys.com/>`_: Python library to communicate with Ansys Rocky using Rocky PrePost API.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
+- `PySimAI <https://simai.docs.pyansys.com/>`_: Pythonic interface to use SimAI.
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
@@ -101,14 +104,17 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyEnSight`_
 - `PyFluent`_
 - `PyGranta`_
+- `PyHPS`_
 - `PyMAPDL`_
 - `PyMechanical`_
 - `PyMotorCAD`_
 - `PyOptislang`_
 - `PyPIM`_
 - `PyPrimeMesh`_
+- `PyRocky`_
 - `PySeascape`_
 - `PySherlock`_
+- `PySimAI`_
 - `PySystemCoupling`_
 - `PyTurboGrid`_
 - `PyTwin`_
@@ -173,7 +179,7 @@ commands:
 
 .. code:: bash
 
-    unzip pyansys-v2024.1.5-wheelhouse-Linux-3.9-core.zip wheelhouse
+    unzip pyansys-v2024.2.dev0-wheelhouse-Linux-3.9-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and then install using

@@ -100,6 +100,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyHPS
+      :img-top: _static/thumbnails/intro.png
+      :link: https://hps.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://mapdl.docs.pyansys.com/version/0.67/examples/index.html
@@ -142,6 +148,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyRocky
+      :img-top: _static/thumbnails/pyrocky.png
+      :link: https://rocky.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
       :link: https://seascape.docs.pyansys.com/version/0.2/#examples
@@ -151,6 +163,12 @@ PyAnsys packages examples
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
       :link: https://sherlock.docs.pyansys.com/version/0.4/getting_started/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
+    .. grid-item-card:: PySimAI
+      :img-top: _static/thumbnails/intro.png
+      :link: https://simai.docs.pyansys.com/version/stable/index.html#getting-started
       :text-align: center
       :class-title: pyansys-card-title
 

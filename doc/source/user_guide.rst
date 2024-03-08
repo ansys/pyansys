@@ -103,6 +103,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyHPS
+      :img-top: _static/thumbnails/intro.png
+      :link: https://hps.docs.pyansys.com/version/stable/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
       :link: https://mapdl.docs.pyansys.com/version/0.67/user_guide/index.html
@@ -145,6 +151,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyRocky
+      :img-top: _static/thumbnails/pyrocky.png
+      :link: https://rocky.docs.pyansys.com/version/stable/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
       :link: https://seascape.docs.pyansys.com/version/0.2/#usage
@@ -154,6 +166,12 @@ PyAnsys packages user guides
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
       :link: https://sherlock.docs.pyansys.com/version/0.4/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
+    .. grid-item-card:: PySimAI
+      :img-top: _static/thumbnails/intro.png
+      :link: https://simai.docs.pyansys.com/version/stable/user_guide.html
       :text-align: center
       :class-title: pyansys-card-title
 
