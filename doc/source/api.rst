@@ -75,6 +75,12 @@ PyAnsys packages API reference
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyEDB
+      :img-top: _static/thumbnails/pyedb.png
+      :link: https://edb.docs.pyansys.com/version/stable/api/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyaedt.png
       :link: https://edb.core.docs.pyansys.com/version/stable/api/index.html
