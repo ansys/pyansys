@@ -47,7 +47,7 @@ LINKS = {
     "ansys-simai-core": "https://simai.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-turbogrid-core": "https://turbogrid.docs.pyansys.com/version/stable",  # noqa: E501
-    "pyedb": "https://edb.docs.pyansys.com/version/stable",  # noqa: E501
+    "pyedb": "https://edb.docs.pyansys.com/version/stable",
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
     "pygranta": "https://grantami.docs.pyansys.com/version/stable",
     "pytwin": "https://twin.docs.pyansys.com/version/stable",
