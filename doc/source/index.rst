@@ -178,6 +178,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Mechanical
 
+    .. grid-item-card:: PyModelCenter
+      :img-top: _static/thumbnails/pymodelcenter.png
+      :link: https://modelcenter.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys ModelCenter
+
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
       :link: https://motorcad.docs.pyansys.com/version/stable

@@ -36,6 +36,7 @@ LINKS = {
     "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
     "ansys-mechanical-core": "https://mechanical.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-meshing-prime": "https://prime.docs.pyansys.com/version/stable",
+    "ansys-modelcenter-workflow": "https://modelcenter.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-motorcad-core": "https://motorcad.docs.pyansys.com/version/stable",
     "ansys-openapi-common": None,
     "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",  # noqa: E501
