@@ -42,6 +42,7 @@ dependencies = [
     "ansys-math-core==0.1.3",
     "ansys-mechanical-core==0.10.7",
     "ansys-meshing-prime==0.5.1",
+    "ansys-modelcenter-workflow==0.1.0",
     "ansys-motorcad-core==0.4.2",
     "ansys-openapi-common==1.5.1",
     "ansys-optislang-core==0.6.1",

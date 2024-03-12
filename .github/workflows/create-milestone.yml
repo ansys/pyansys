@@ -37,6 +37,7 @@ jobs:
             "ansys/pyhps",
             "ansys/pymapdl",
             "ansys/pymechanical",
+            "ansys/pymodelcenter",
             "ansys/pymotorcad",
             "ansys/pyoptislang",
             "ansys/pypim",
