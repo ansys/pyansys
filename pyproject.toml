@@ -47,7 +47,7 @@ dependencies = [
     "ansys-openapi-common==1.5.1",
     "ansys-optislang-core==0.6.2",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.7.6",
+    "ansys-pyensight-core==0.7.7",
     "ansys-rocky-core==0.1.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.5.0",
@@ -87,7 +87,7 @@ all = [
 ]
 doc = [
     "Sphinx==7.2.6",
-    "ansys-sphinx-theme==0.14.0",
+    "ansys-sphinx-theme==0.14.1",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.5.0",
 ]
