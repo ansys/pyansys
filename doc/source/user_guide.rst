@@ -81,7 +81,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/0.18/user_guide/index.html
+      :link: https://fluent.docs.pyansys.com/version/0.19/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

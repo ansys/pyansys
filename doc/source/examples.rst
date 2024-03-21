@@ -78,7 +78,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/0.18/examples/index.html
+      :link: https://fluent.docs.pyansys.com/version/0.19/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

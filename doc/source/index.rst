@@ -108,7 +108,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/0.18
+      :link: https://fluent.docs.pyansys.com/version/0.19
       :text-align: center
       :class-title: pyansys-card-title
 
