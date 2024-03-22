@@ -90,6 +90,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
 
+    .. grid-item-card:: PyEDB
+      :img-top: _static/thumbnails/pyedb.png
+      :link: https://edb.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to use the Electronics Database (EDB) client library
+
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyaedt.png
       :link: https://edb.core.docs.pyansys.com/version/stable
@@ -169,6 +177,14 @@ it is now a collection of many Python packages for using Ansys products through 
       :class-title: pyansys-card-title
 
       Pythonic interface to Ansys Mechanical
+
+    .. grid-item-card:: PyModelCenter
+      :img-top: _static/thumbnails/pymodelcenter.png
+      :link: https://modelcenter.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys ModelCenter
 
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png

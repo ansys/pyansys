@@ -75,6 +75,12 @@ PyAnsys packages API reference
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyEDB
+      :img-top: _static/thumbnails/pyedb.png
+      :link: https://edb.docs.pyansys.com/version/stable/api/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyaedt.png
       :link: https://edb.core.docs.pyansys.com/version/stable/api/index.html
@@ -132,6 +138,12 @@ PyAnsys packages API reference
     .. grid-item-card:: PyMechanical
       :img-top: _static/thumbnails/pymechanical.png
       :link: https://mechanical.docs.pyansys.com/version/stable/api/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
+    .. grid-item-card:: PyModelCenter
+      :img-top: _static/thumbnails/pymodelcenter.png
+      :link: https://modelcenter.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
