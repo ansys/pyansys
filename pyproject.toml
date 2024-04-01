@@ -32,7 +32,7 @@ dependencies = [
     "ansys-dpf-core==0.11.0",
     "ansys-dpf-post==0.7.0",
     "ansys-dpf-gate==0.4.1",
-    "ansys-dyna-core==0.4.14",
+    "ansys-dyna-core==0.4.15",
     "ansys-dynamicreporting-core==0.5.1",
     "ansys-edb-core==0.1.4",
     "ansys-fluent-core==0.20.0",
@@ -87,7 +87,7 @@ all = [
 ]
 doc = [
     "Sphinx==7.2.6",
-    "ansys-sphinx-theme==0.14.1",
+    "ansys-sphinx-theme==0.15.0",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.5.0",
 ]
