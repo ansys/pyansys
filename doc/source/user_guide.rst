@@ -182,7 +182,7 @@ PyAnsys packages user guides
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PySimAI
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pysimai.png
       :link: https://simai.docs.pyansys.com/version/stable/user_guide.html
       :text-align: center
       :class-title: pyansys-card-title
