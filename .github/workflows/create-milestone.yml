@@ -20,6 +20,7 @@ jobs:
         pyansys-projects:
           [
             "ansys/openapi-common",
+            "ansys/pyacp",
             "ansys/pyadditive",
             "ansys/pyaedt",
             "ansys/pyansys-geometry",

@@ -10,6 +10,12 @@ PyAnsys packages examples
 .. grid:: 3
     :gutter: 3 3 4 4
 
+    .. grid-item-card:: PyACP
+      :img-top: _static/thumbnails/intro.png
+      :link: https://acp.docs.pyansys.com/version/dev/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
       :link: https://additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
