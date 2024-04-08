@@ -44,6 +44,7 @@ of these packages amongst themselves and the Ansys product release that they are
 
 The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages:
 
+- `PyACP <https://acp.docs.pyansys.com/>`_: Pythonic interface to Ansys Composite PrepPost (ACP).
 - `PyAdditive <https://additive.docs.pyansys.com/>`_: Pythonic interface to the Ansys Additive service.
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
 - `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
@@ -93,6 +94,7 @@ free to post a question on the `Ansys Developer Forums <https://discuss.ansys.co
 
 By default, the PyAnsys metapackage installs these core modules:
 
+- `PyACP`_
 - `PyAdditive`_
 - `PyAEDT`_
 - `PyAnsys Geometry`_

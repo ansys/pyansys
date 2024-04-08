@@ -18,6 +18,14 @@ it is now a collection of many Python packages for using Ansys products through 
 .. grid:: 3
     :gutter: 3 3 4 4
 
+    .. grid-item-card:: PyACP
+      :img-top: _static/thumbnails/intro.png
+      :link: https://acp.docs.pyansys.com/version/dev
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Composite PrepPost (ACP)
+
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
       :link: https://additive.docs.pyansys.com/version/stable

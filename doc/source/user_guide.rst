@@ -13,6 +13,12 @@ PyAnsys packages user guides
 .. grid:: 3
     :gutter: 3 3 4 4
 
+    .. grid-item-card:: PyACP
+      :img-top: _static/thumbnails/intro.png
+      :link: https://acp.docs.pyansys.com/version/dev/user_guide/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
       :link: https://additive.docs.pyansys.com/version/stable/getting_started/index.html
