@@ -19,7 +19,7 @@ it is now a collection of many Python packages for using Ansys products through 
     :gutter: 3 3 4 4
 
     .. grid-item-card:: PyACP
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pyacp.png
       :link: https://acp.docs.pyansys.com/version/dev
       :text-align: center
       :class-title: pyansys-card-title

@@ -14,7 +14,7 @@ PyAnsys packages user guides
     :gutter: 3 3 4 4
 
     .. grid-item-card:: PyACP
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pyacp.png
       :link: https://acp.docs.pyansys.com/version/dev/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
