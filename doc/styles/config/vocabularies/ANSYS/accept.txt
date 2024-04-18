@@ -1,0 +1,20 @@
+ANSYS
+Ansys
+ansys
+API
+postprocessing
+PyAnsys
+Pythonic
+PyAEDT
+DPF
+PyMAPDL
+PyMAPDL Reader
+PyDPF - Core
+PyDPF - Post
+PyDPF - Composites
+PyDPF
+PyFluent
+PyPIM
+metapackage
+PyTwin
+toolkits
