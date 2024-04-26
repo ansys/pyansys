@@ -25,6 +25,14 @@ General purpose
 
       PyAnsys cheat sheets for different libraries as quick reference guides
 
+    .. grid-item-card:: Ansys 5G Wizard
+      :img-top: ../../_static/thumbnails/5gwizard.png
+      :link: https://github.com/ansys/5G-Wizard
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Ansys project used to calculate Power Density or Cumulative Distribution Function
+
 Demo purposes
 -------------
 
