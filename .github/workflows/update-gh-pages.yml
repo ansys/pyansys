@@ -17,7 +17,9 @@ jobs:
 
     - name: Replace 'version/stable' with 'version/dev' in index.html
       run: |
-        sed -i 's/version\/stable/version\/dev/g' index.html
+        cp version/dev/index.html index.html
+        sed -i 's/href="\([^:"]*\)"/href="version\/dev\/\1"/g' index.html
+        sed -i 's/src="\([^:"]*\)"/src="version\/dev\/\1"/g' index.html
 
     - name: "Commit changes"
       uses: EndBug/add-and-commit@v9
