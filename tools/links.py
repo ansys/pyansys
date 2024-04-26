@@ -67,7 +67,7 @@ LINKS = {
     "ansys-units": "https://units.docs.pyansys.com/version/stable",
     "pyansys-tools-report": "https://report.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "pyansys-tools-versioning": "https://versioning.tools.docs.pyansys.com/version/stable",  # noqa: E501
-    "pyansys-tools-variableinterop": "https://variableinterop.docs.pyansys.com/version/stable", # noqa: E501
+    "pyansys-tools-variableinterop": "https://variableinterop.docs.pyansys.com/version/stable",  # noqa: E501
 }
 """Dictionary with PyAnsys packages and their multi-version docs site."""
 

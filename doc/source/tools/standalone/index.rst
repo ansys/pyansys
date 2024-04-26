@@ -84,7 +84,7 @@ Repository management
       :class-title: pyansys-card-title
 
       Ansys tool intended to synchronize the content of two different repositories
-    
+
     .. grid-item-card:: Ansys ``all-members`` team
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://github.com/ansys/ansys-all-members
