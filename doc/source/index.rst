@@ -40,7 +40,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to AEDT (Ansys Electronic Desktop)
+      Pythonic interface to Ansys Electronics Desktop (AEDT)
 
     .. grid-item-card:: PyAnsys Geometry
       :img-top: _static/thumbnails/pyansys-geometry.png
@@ -64,7 +64,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows
+      Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows
 
     .. grid-item-card:: PyDPF - Post
       :img-top: _static/thumbnails/pydpf-post.png
@@ -72,7 +72,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to access and post process Ansys solver result files
+      Pythonic interface to access and postprocess Ansys solver result files
 
     .. grid-item-card:: PyDPF - Composites
       :img-top: _static/thumbnails/pydpf-composites.png
@@ -80,15 +80,15 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to post-process layered and short-fiber composite models
+      Pythonic interface to postprocess layered and short-fiber composite models
 
-    .. grid-item-card:: PyDyna
+    .. grid-item-card:: PyDYNA
       :img-top: _static/thumbnails/pydyna.png
       :link: https://dyna.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver and postprocess its results
+      Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results
 
     .. grid-item-card:: PyDynamicReporting
       :img-top: _static/thumbnails/pydynamicreporting.png
@@ -98,21 +98,13 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
 
-    .. grid-item-card:: PyEDB
+    .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyedb.png
       :link: https://edb.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to use the Electronics Database (EDB) client library
-
-    .. grid-item-card:: PyEDB - Core
-      :img-top: _static/thumbnails/pyaedt.png
-      :link: https://edb.core.docs.pyansys.com/version/stable
-      :text-align: center
-      :class-title: pyansys-card-title
-
-      Pythonic interface to the Electronics Database (EDB)
+      Pythonic interface to Ansys Electronics Database (EDB)
 
     .. grid-item-card:: PyEnSight
       :img-top: _static/thumbnails/pyensight.png
@@ -208,7 +200,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Optislang
+      Pythonic interface to Ansys optiSLang
 
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
@@ -216,7 +208,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API
+      Pythonic interface to the Ansys PIM (Product Instance Management) API
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
@@ -224,13 +216,15 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
+      Python library to acquire geometries and prepare surface and volume meshes for multiple solvers
+
     .. grid-item-card:: PyRocky
       :img-top: _static/thumbnails/pyrocky.png
       :link: https://rocky.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
 
-      Python library to communicate with Ansys Rocky using Rocky PrePost API
+      Python interface to Ansys Rocky using Rocky PrePost API
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
@@ -238,7 +232,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with Ansys RedHawkSC and TotemSC
+      Pythonic interface to Ansys RedHawkSC and TotemSC
 
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
@@ -246,7 +240,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with Ansys Sherlock
+      Pythonic interface to Ansys Sherlock
 
     .. grid-item-card:: PySimAI
       :img-top: _static/thumbnails/pysimai.png
@@ -254,7 +248,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with SimAI
+      Pythonic interface to SimAI
 
     .. grid-item-card:: PySystem Coupling
       :img-top: _static/thumbnails/pysystem-coupling.png
@@ -262,7 +256,7 @@ it is now a collection of many Python packages for using Ansys products through 
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with Ansys System Coupling
+      Pythonic interface to Ansys System Coupling
 
     .. grid-item-card:: PyTurbogrid
       :img-top: _static/thumbnails/pyturbogrid.png
