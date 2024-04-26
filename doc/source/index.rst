@@ -98,6 +98,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
 
+    .. grid-item-card:: PyEDB
+      :img-top: _static/thumbnails/pyedb.png
+      :link: https://edb.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to the Ansys Electronics Database (EDB) client library
+
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyedb.png
       :link: https://edb.docs.pyansys.com/version/stable

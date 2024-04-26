@@ -59,11 +59,15 @@ LINKS = {
     "ansys-fluent-visualization": "https://visualization.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-fluent-parametric": "https://parametric.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     # TOOLS
-    "ansys-units": "https://units.docs.pyansys.com/version/stable",
+    "ansys-materials-manager": "https://manager.materials.docs.pyansys.com/version/stable",
+    "ansys-tools-filetransfer": "https://filetransfer.tools.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-tools-local-product-launcher": "https://local-product-launcher.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-tools-path": "https://path.tools.docs.pyansys.com/version/stable",
     "ansys-tools-protoc-helper": None,
+    "ansys-units": "https://units.docs.pyansys.com/version/stable",
     "pyansys-tools-report": "https://report.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "pyansys-tools-versioning": "https://versioning.tools.docs.pyansys.com/version/stable",  # noqa: E501
+    "pyansys-tools-variableinterop": "https://variableinterop.docs.pyansys.com/version/stable",  # noqa: E501
 }
 """Dictionary with PyAnsys packages and their multi-version docs site."""
 

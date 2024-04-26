@@ -4,6 +4,22 @@ Tooling libraries
 .. grid:: 3
     :gutter: 3 3 4 4
 
+    .. grid-item-card:: Ansys FileTransfer Tool
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://filetransfer.tools.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Simple gRPC API tool for moving files between a client and a remote server
+
+    .. grid-item-card:: Ansys Local Product Launcher
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://local-product-launcher.tools.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Python utility for launching Ansys products on a local machine and configuring their launch settings.
+
     .. grid-item-card:: Ansys Tools Path
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://path.tools.docs.pyansys.com/version/stable
@@ -28,6 +44,14 @@ Tooling libraries
 
       Tool for reporting your Python environment's package versions and hardware resources in a standardized way
 
+    .. grid-item-card:: PyAnsys Tools Variable Interop
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://variableinterop.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Tool for defining basic variables, types, metadata, and values intended to provide interoperability between all products.
+
     .. grid-item-card:: PyAnsys Tools Versioning
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://versioning.tools.docs.pyansys.com/version/stable
@@ -43,3 +67,11 @@ Tooling libraries
       :class-title: pyansys-card-title
 
       Pythonic interface for units, unit systems, and unit conversions
+
+    .. grid-item-card:: PyMaterials Manager
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://manager.materials.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Python package for unifying material management across the Ansys portfolio
