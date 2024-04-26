@@ -25,6 +25,20 @@ General purpose
 
       PyAnsys cheat sheets for different libraries as quick reference guides
 
+Demo purposes
+-------------
+
+.. grid:: 3
+    :gutter: 3 3 4 4
+
+    .. grid-item-card:: API Eigen Example
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://apieigen.docs.ansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Demonstrating the REST and gRPC communication protocols via client-server interactions
+
 Repository management
 ---------------------
 
@@ -62,7 +76,14 @@ Repository management
       :class-title: pyansys-card-title
 
       Ansys tool intended to synchronize the content of two different repositories
+    
+    .. grid-item-card:: Ansys ``all-members`` team
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://github.com/ansys/ansys-all-members
+      :text-align: center
+      :class-title: pyansys-card-title
 
+      Repository for updating an organization's ``all-members`` team automatically
 
 Artificial intelligence
 -----------------------
