@@ -43,3 +43,11 @@ Tooling libraries
       :class-title: pyansys-card-title
 
       Pythonic interface for units, unit systems, and unit conversions
+
+    .. grid-item-card:: PyMaterials Manager
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://manager.materials.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Python package for unifying material management across the Ansys portfolio

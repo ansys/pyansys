@@ -86,6 +86,7 @@ Other tools delivered as part of the metapackage are:
 - `PyAnsys Tools Report <https://report.tools.docs.pyansys.com/>`_:  Tool for reporting your Python environment's package versions and hardware resources in a standardized way.
 - `PyAnsys Tools Versioning <https://versioning.tools.docs.pyansys.com/>`_: Tool for backwards and forwards server support.
 - `PyAnsys Units <https://units.docs.pyansys.com/>`_: Pythonic interface for units, unit systems, and unit conversions.
+- `PyMaterials Manager <https://manager.materials.docs.pyansys.com/>`_: Python package for unifying material management across the Ansys portfolio.
 
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page
@@ -130,7 +131,7 @@ can be installed upon request:
 
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
 - **fluent-all**: This target installs the core packages, `PyFluent - Parametric`_, and `PyFluent - Visualization`_.
-- **tools**: This target installs the core packages, `Ansys Tools Path`_, `Ansys Tools Protobuf Compilation Helper`_, `PyAnsys Tools Versioning`_, `PyAnsys Tools Report`_, and `PyAnsys Units`_.
+- **tools**: This target installs the core packages, `Ansys Tools Path`_, `Ansys Tools Protobuf Compilation Helper`_, `PyAnsys Tools Versioning`_, `PyAnsys Tools Report`_, `PyAnsys Units`_, and `PyMaterials Manager`_.
 - **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation

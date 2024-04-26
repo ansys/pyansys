@@ -61,6 +61,7 @@ jobs:
             "ansys/pyansys-tools-report",
             "ansys/pyansys-tools-versioning",
             "ansys/pyansys-units",
+            "ansys/pymaterials-manager",
           ]
     steps:
       - uses: actions/checkout@v4
