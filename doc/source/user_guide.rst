@@ -80,7 +80,7 @@ PyAnsys packages user guides
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyEDB - Core
-      :img-top: _static/thumbnails/pyaedt.png
+      :img-top: _static/thumbnails/pyedb.png
       :link: https://edb.core.docs.pyansys.com/version/stable/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title

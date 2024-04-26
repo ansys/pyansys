@@ -46,16 +46,16 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 
 - `PyACP <https://acp.docs.pyansys.com/>`_: Pythonic interface to Ansys Composite PrepPost (ACP).
 - `PyAdditive <https://additive.docs.pyansys.com/>`_: Pythonic interface to the Ansys Additive service.
-- `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
+- `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to Ansys Electronics Desktop (AEDT).
 - `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
-- `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
+- `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows.
 - `PyDPF - Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
-- `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
-- `PyDyna <https://dyna.docs.pyansys.com/>`_: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver and postprocess its results.
+- `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface to postprocess layered and short-fiber composite models.
+- `PyDyna <https://dyna.docs.pyansys.com/>`_: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results.
 - `PyDynamicReporting <https://dynamicreporting.docs.pyansys.com/>`_: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports.
-- `PyEDB <https://edb.docs.pyansys.com/>`_: Pythonic interface to use the Electronics Database (EDB) client library.
-- `PyEDB - Core <https://edb.core.docs.pyansys.com/>`_: Pythonic interface to the Electronics Database (EDB).
+- `PyEDB <https://edb.docs.pyansys.com/>`_: Pythonic interface to the Ansys Electronics Database (EDB) client library.
+- `PyEDB - Core <https://edb.core.docs.pyansys.com/>`_: Pythonic interface to Ansys Electronics Database (EDB).
 - `PyEnSight <https://ensight.docs.pyansys.com/>`_: Pythonic interface to EnSight, the Ansys simulation postprocessor.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
 - `PyFluent - Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
@@ -67,9 +67,9 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyMechanical <https://mechanical.docs.pyansys.com/>`_: Pythonic interface to Ansys Mechanical.
 - `PyModelCenter <https://modelcenter.docs.pyansys.com/version/stable/>`_: Pythonic interface for Ansys ModelCenter
 - `PyMotorCAD <https://motorcad.docs.pyansys.com/>`_: Pythonic interface to Ansys Motor-CAD.
-- `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys Optislang.
+- `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys optislang.
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
-- `PyPrimeMesh <https://prime.docs.pyansys.com/>`_: Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology.
+- `PyPrimeMesh <https://prime.docs.pyansys.com/>`_: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers.
 - `PyRocky <https://rocky.docs.pyansys.com/>`_: Python library to communicate with Ansys Rocky using Rocky PrePost API.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
