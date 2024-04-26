@@ -7,6 +7,7 @@ General purpose
 ---------------
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: Ansys Python Manager
       :img-top: ../../_static/thumbnails/ansys-python-manager.png
@@ -36,6 +37,7 @@ Demo purposes
 -------------
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: API Eigen Example
       :img-top: ../../_static/thumbnails/intro.png
@@ -49,6 +51,7 @@ Repository management
 ---------------------
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: Ansys Repository Templates
       :img-top: ../../_static/thumbnails/intro.png
@@ -94,6 +97,7 @@ Artificial intelligence
 -----------------------
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: Reviewer Bot
       :img-top: ../../_static/thumbnails/intro.png
@@ -109,6 +113,7 @@ Documentation
 -------------
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: Ansys Sphinx Theme
       :img-top: ../../_static/thumbnails/intro.png
