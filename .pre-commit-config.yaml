@@ -1,7 +1,7 @@
 repos:
 
 - repo: https://github.com/psf/black
-  rev: 24.4.0
+  rev: 24.4.2
   hooks:
   - id: black
 
@@ -43,7 +43,7 @@ repos:
     - id: check-github-workflows
 
 - repo: https://github.com/ansys/pre-commit-hooks
-  rev: v0.2.9
+  rev: v0.3.1
   hooks:
   - id: add-license-headers
     args:
