@@ -221,6 +221,6 @@ PyAnsys packages API reference
 
     .. grid-item-card:: Shared Components - OpenAPI Common
       :img-top: _static/thumbnails/intro.png
-      :link: https://openapi.docs.pyansys.com/api/index.html
+      :link: https://openapi.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
