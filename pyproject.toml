@@ -36,7 +36,7 @@ dependencies = [
     "ansys-dynamicreporting-core==0.6.0",
     "ansys-edb-core==0.1.4",
     "ansys-fluent-core==0.20.1",
-    "ansys-geometry-core==0.5.3",
+    "ansys-geometry-core==0.5.4",
     "ansys-hps-client==0.8.0",
     "ansys-mapdl-core==0.68.1",
     "ansys-math-core==0.1.5",
@@ -96,7 +96,7 @@ all = [
 ]
 doc = [
     "Sphinx==7.2.6",
-    "ansys-sphinx-theme==0.15.2",
+    "ansys-sphinx-theme==0.16.0",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.5.0",
 ]
