@@ -51,11 +51,11 @@ dependencies = [
     "ansys-rocky-core==0.1.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.6.0",
-    "ansys-simai-core==0.1.6",
+    "ansys-simai-core==0.1.7",
     "ansys-systemcoupling-core==0.5.0",
     "ansys-turbogrid-core==0.4.0",
     "pyaedt==0.9.2",
-    "pyedb==0.12.0",
+    "pyedb==0.12.1",
     "pygranta==2024.1.0",
     "pytwin==0.7.0",
 ]
