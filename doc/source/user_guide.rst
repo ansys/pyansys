@@ -110,7 +110,7 @@ PyAnsys packages user guides
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyGranta
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pygranta.png
       :link: https://grantami.docs.pyansys.com/version/stable/user_guide.html
       :text-align: center
       :class-title: pyansys-card-title

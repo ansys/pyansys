@@ -147,7 +147,7 @@ it is now a collection of many Python packages for using Ansys products through 
       Pythonic interface to visualize Ansys Fluent simulations
 
     .. grid-item-card:: PyGranta
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pygranta.png
       :link: https://grantami.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
