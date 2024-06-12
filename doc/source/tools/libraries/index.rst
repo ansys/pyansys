@@ -1,7 +1,7 @@
 Tooling libraries
 =================
 
-.. grid:: 3
+.. grid:: 2
     :gutter: 3 3 4 4
 
     .. grid-item-card:: Ansys FileTransfer Tool
