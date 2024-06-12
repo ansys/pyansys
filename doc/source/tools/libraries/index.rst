@@ -44,7 +44,6 @@ Tooling libraries
 
       Python interface between PyAnsys libraries and plotting backends
 
-
     .. grid-item-card:: PyAnsys Tools Report
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://report.tools.docs.pyansys.com/version/stable
