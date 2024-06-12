@@ -10,7 +10,7 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Simple gRPC API tool for moving files between a client and a remote server
+      Simple gRPC API tool for moving files between a client and a remote server.
 
     .. grid-item-card:: Ansys Local Product Launcher
       :img-top: ../../_static/thumbnails/intro.png
@@ -26,7 +26,7 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Library to locate Ansys products in a local machine
+      Library to locate Ansys products in a local machine.
 
     .. grid-item-card:: Ansys Tools Protobuf Compilation Helper
       :img-top: ../../_static/thumbnails/intro.png
@@ -34,7 +34,16 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Utility library to compile ``.proto`` files to Python source when building the package wheel
+      Utility library to compile ``.proto`` files to Python source when building the package wheel.
+
+    .. grid-item-card:: Ansys Tools Visualization interface
+      :img-top: ../../_static/thumbnails/intro.png
+      :link:https://visualization-interface.tools.docs.pyansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Python interface between PyAnsys libraries and plotting backends.
+
 
     .. grid-item-card:: PyAnsys Tools Report
       :img-top: ../../_static/thumbnails/intro.png
@@ -42,7 +51,7 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Tool for reporting your Python environment's package versions and hardware resources in a standardized way
+      Tool for reporting your Python environment's package versions and hardware resources in a standardized way.
 
     .. grid-item-card:: PyAnsys Tools Variable Interop
       :img-top: ../../_static/thumbnails/intro.png
@@ -58,7 +67,7 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Tool for backwards and forwards server support
+      Tool for backwards and forwards server support.
 
     .. grid-item-card:: PyAnsys Units
       :img-top: ../../_static/thumbnails/intro.png
@@ -66,7 +75,7 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface for units, unit systems, and unit conversions
+      Pythonic interface for units, unit systems, and unit conversions.
 
     .. grid-item-card:: PyMaterials Manager
       :img-top: ../../_static/thumbnails/intro.png
@@ -74,4 +83,4 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Python package for unifying material management across the Ansys portfolio
+      Python package for unifying material management across the Ansys portfolio.
