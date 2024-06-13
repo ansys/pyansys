@@ -44,8 +44,8 @@ PyAnsys packages user guides
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyConceptEV
-      :img-top: _static/thumbnails/intro.png
-      :link: https://conceptev.core.docs.pyansys.com/version/stable/user_guide.html
+      :img-top: _static/thumbnails/pyconceptev.png
+      :link: https://conceptev.docs.pyansys.com/version/stable/user_guide.html
       :text-align: center
       :class-title: pyansys-card-title
 

@@ -49,7 +49,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to Ansys Electronics Desktop (AEDT).
 - `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
-- `PyConceptEV <https://conceptev.core.docs.pyansys.com/>`_: Pythonic interface to Ansys ConceptEV library.
+- `PyConceptEV <https://conceptev.docs.pyansys.com/>`_: Pythonic interface to Ansys ConceptEV library.
 - `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows.
 - `PyDPF - Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
 - `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface to postprocess layered and short-fiber composite models.

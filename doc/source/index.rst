@@ -59,8 +59,8 @@ it is now a collection of many Python packages for using Ansys products through 
       Pythonic interface to PyAnsys Math libraries
 
     .. grid-item-card:: PyConceptEV
-      :img-top: _static/thumbnails/intro.png
-      :link: https://conceptev.core.docs.pyansys.com/version/stable
+      :img-top: _static/thumbnails/pyconceptev.png
+      :link: https://conceptev.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
 
