@@ -26,6 +26,7 @@ jobs:
             "ansys/pyaedt",
             "ansys/pyansys-geometry",
             "ansys/pyansys-math",
+            "ansys/pyconceptev",
             "ansys/pydpf-core",
             "ansys/pydpf-post",
             "ansys/pydpf-composites",
