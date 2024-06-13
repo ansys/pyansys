@@ -60,6 +60,7 @@ jobs:
             "ansys/ansys-tools-local-product-launcher",
             "ansys/ansys-tools-path",
             "ansys/ansys-tools-protoc-helper",
+            "ansys/ansys-tools-visualization-interface",
             "ansys/pyansys-tools-report",
             "ansys/pyansys-tools-versioning",
             "ansys/pyansys-units",
