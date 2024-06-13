@@ -58,6 +58,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to PyAnsys Math libraries
 
+    .. grid-item-card:: PyConceptEV
+      :img-top: _static/thumbnails/intro.png
+      :link: https://conceptev.core.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys ConceptEV library
+
     .. grid-item-card:: PyDPF - Core
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://dpf.docs.pyansys.com/version/stable

@@ -23,6 +23,7 @@ DOCS_DIRECTORY = os.path.join(ROOT_DIR, "doc", "source")
 LINKS = {
     "ansys-acp-core": None,  # Once stable release is out "https://acp.docs.pyansys.com/version/stable", # noqa: E501
     "ansys-additive-core": "https://additive.docs.pyansys.com/version/stable",
+    "ansys-conceptev-core": "https://conceptev.core.docs.pyansys.com/version/stable",
     "ansys-dpf-composites": "https://composites.dpf.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-dpf-core": "https://dpf.docs.pyansys.com/version/stable",
     "ansys-dpf-post": "https://post.docs.pyansys.com/version/stable",

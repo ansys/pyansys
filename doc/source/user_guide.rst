@@ -43,6 +43,12 @@ PyAnsys packages user guides
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyConceptEV
+      :img-top: _static/thumbnails/intro.png
+      :link: https://conceptev.core.docs.pyansys.com/version/stable/user_guide.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyDPF - Core
       :img-top: _static/thumbnails/pydpf-core.png
       :link: https://dpf.docs.pyansys.com/version/stable/user_guide/index.html
