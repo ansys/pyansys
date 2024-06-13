@@ -34,6 +34,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to the Ansys Additive service
 
+    .. grid-item-card:: PyAdditive Widgets
+      :img-top: _static/thumbnails/intro.png
+      :link: https://widgets.additive.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      PyAdditive widget toolkit to visualize additive parametric study results
+
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
       :link: https://aedt.docs.pyansys.com/version/stable

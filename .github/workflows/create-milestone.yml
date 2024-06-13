@@ -61,6 +61,7 @@ jobs:
             "ansys/ansys-tools-path",
             "ansys/ansys-tools-protoc-helper",
             "ansys/ansys-tools-visualization-interface",
+            "ansys/pyadditive-widgets",
             "ansys/pyansys-tools-report",
             "ansys/pyansys-tools-versioning",
             "ansys/pyansys-units",
