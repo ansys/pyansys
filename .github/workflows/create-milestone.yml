@@ -22,6 +22,7 @@ jobs:
             "ansys/openapi-common",
             "ansys/pyacp",
             "ansys/pyadditive",
+            "ansys/pyadditive-widgets",
             "ansys/pyaedt",
             "ansys/pyansys-geometry",
             "ansys/pyansys-math",

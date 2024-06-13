@@ -22,6 +22,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyAdditive Widgets
+      :img-top: _static/thumbnails/intro.png
+      :link: https://widgets.additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
       :link: https://aedt.docs.pyansys.com/version/stable/examples/index.html
