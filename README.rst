@@ -86,6 +86,7 @@ Other tools delivered as part of the metapackage are:
 - `Ansys Local Product Launcher <https://local-product-launcher.tools.docs.pyansys.com/>`_: Python utility for launching Ansys products on a local machine and configuring their launch settings.
 - `Ansys Tools Path <https://path.tools.docs.pyansys.com/>`_: Library to locate Ansys products in a local machine.
 - `Ansys Tools Protobuf Compilation Helper <https://ansys.github.io/ansys-tools-protoc-helper/>`_: Utility library to compile ``.proto`` files to Python source when building the package wheel.
+- `Ansys Tools Visualization Interface <https://visualization-interface.tools.docs.pyansys.com/>`_: Python interface between PyAnsys libraries and plotting backends
 - `PyAnsys Tools Report <https://report.tools.docs.pyansys.com/>`_:  Tool for reporting your Python environment's package versions and hardware resources in a standardized way.
 - `PyAnsys Tools Variable Interop <https://variableinterop.docs.pyansys.com/>`_: Tool for defining basic variables, types, metadata, and values intended to provide interoperability between all products.
 - `PyAnsys Tools Versioning <https://versioning.tools.docs.pyansys.com/>`_: Tool for backwards and forwards server support.

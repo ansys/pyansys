@@ -65,6 +65,7 @@ LINKS = {
     "ansys-tools-local-product-launcher": "https://local-product-launcher.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-tools-path": "https://path.tools.docs.pyansys.com/version/stable",
     "ansys-tools-protoc-helper": None,
+    "ansys-tools-visualization-interface": "https://visualization-interface.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-units": "https://units.docs.pyansys.com/version/stable",
     "pyansys-tools-report": "https://report.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "pyansys-tools-versioning": "https://versioning.tools.docs.pyansys.com/version/stable",  # noqa: E501
