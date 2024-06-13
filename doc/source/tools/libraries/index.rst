@@ -18,7 +18,7 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Python utility for launching Ansys products on a local machine and configuring their launch settings.
+      Python utility for launching Ansys products on a local machine and configuring their launch settings
 
     .. grid-item-card:: Ansys Tools Path
       :img-top: ../../_static/thumbnails/intro.png
@@ -36,6 +36,14 @@ Tooling libraries
 
       Utility library to compile ``.proto`` files to Python source when building the package wheel
 
+    .. grid-item-card:: Ansys Tools Visualization interface
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://visualization-interface.tools.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Python interface between PyAnsys libraries and plotting backends
+
     .. grid-item-card:: PyAnsys Tools Report
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://report.tools.docs.pyansys.com/version/stable
@@ -50,7 +58,7 @@ Tooling libraries
       :text-align: center
       :class-title: pyansys-card-title
 
-      Tool for defining basic variables, types, metadata, and values intended to provide interoperability between all products.
+      Tool for defining basic variables, types, metadata, and values intended to provide interoperability between all products
 
     .. grid-item-card:: PyAnsys Tools Versioning
       :img-top: ../../_static/thumbnails/intro.png
