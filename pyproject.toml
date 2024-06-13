@@ -46,7 +46,6 @@ dependencies = [
     "ansys-meshing-prime==0.6.0.dev9",
     "ansys-modelcenter-workflow==0.1.1",
     "ansys-motorcad-core==0.5.0",
-    "ansys-openapi-common==1.5.1",
     "ansys-optislang-core==0.7.1",
     "ansys-platform-instancemanagement==1.1.2",
     "ansys-pyensight-core==0.8.1",
@@ -58,7 +57,7 @@ dependencies = [
     "ansys-turbogrid-core==0.4.1",
     "pyaedt==0.9.3",
     "pyedb==0.13.0",
-    "pygranta==2024.1.0",
+    "pygranta==2024.2.0",
     "pytwin==0.7.0",
 ]
 
