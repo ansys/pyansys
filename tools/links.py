@@ -41,7 +41,7 @@ LINKS = {
     "ansys-meshing-prime": "https://prime.docs.pyansys.com/version/stable",
     "ansys-modelcenter-workflow": "https://modelcenter.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-motorcad-core": "https://motorcad.docs.pyansys.com/version/stable",
-    "ansys-openapi-common": "https://openapi.docs.pyansys.com/version/stable",
+    "ansys-openapi-common": None,
     "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",
     "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",

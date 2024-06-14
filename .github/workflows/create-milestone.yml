@@ -19,7 +19,6 @@ jobs:
       matrix:
         pyansys-projects:
           [
-            "ansys/openapi-common",
             "ansys/pyacp",
             "ansys/pyadditive",
             "ansys/pyadditive-widgets",
