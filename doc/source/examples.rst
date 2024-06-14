@@ -220,6 +220,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyWorkbench
+      :img-top: _static/thumbnails/intro.png
+      :link: https://workbench.docs.pyansys.com/version/stable/examples.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: Shared Components - OpenAPI Common
       :img-top: _static/thumbnails/intro.png
       :link: https://openapi.docs.pyansys.com/version/stable/index.html#brief-example
