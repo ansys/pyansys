@@ -55,6 +55,7 @@ LINKS = {
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
     "pygranta": "https://grantami.docs.pyansys.com/version/stable",
     "pytwin": "https://twin.docs.pyansys.com/version/stable",
+    "pyworkbench": "https://workbench.docs.pyansys.com/version/stable",
     # MAPDL - ALL
     "ansys-mapdl-reader": "https://reader.docs.pyansys.com/version/stable",
     # FLUENT - ALL
