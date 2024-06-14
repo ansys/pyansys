@@ -31,7 +31,7 @@ LINKS = {
     "ansys-dpf-gate": None,
     "ansys-dyna-core": "https://dyna.docs.pyansys.com/version/stable",
     "ansys-dynamicreporting-core": "https://dynamicreporting.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-edb-core": "https://edb.core.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-edb-core": "https://edb.core.docs.pyansys.com/version/stable",
     "ansys-geometry-core": "https://geometry.docs.pyansys.com/version/stable",
     "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
     "ansys-hps-client": "https://hps.docs.pyansys.com/version/stable",
@@ -42,7 +42,7 @@ LINKS = {
     "ansys-modelcenter-workflow": "https://modelcenter.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-motorcad-core": "https://motorcad.docs.pyansys.com/version/stable",
     "ansys-openapi-common": "https://openapi.docs.pyansys.com/version/stable",
-    "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",
     "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
     "ansys-rocky-core": "https://rocky.docs.pyansys.com/version/stable",
@@ -50,7 +50,8 @@ LINKS = {
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
     "ansys-simai-core": "https://simai.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-turbogrid-core": "https://turbogrid.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-turbogrid-core": "https://turbogrid.docs.pyansys.com/version/stable",
+    "ansys-workbench-core": "https://workbench.docs.pyansys.com/version/stable",
     "pyedb": "https://edb.docs.pyansys.com/version/stable",
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
     "pygranta": "https://grantami.docs.pyansys.com/version/stable",

@@ -298,6 +298,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
       Pythonic interface to communicate with consumption workflows for Ansys digital twins
 
+    .. grid-item-card:: PyWorkbench
+      :img-top: _static/thumbnails/intro.png
+      :link: https://workbench.docs.pyansys.com/version/stable
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Workbench
+
     .. grid-item-card:: Shared Components
       :img-top: _static/thumbnails/intro.png
       :link: https://shared.docs.pyansys.com

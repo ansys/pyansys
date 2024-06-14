@@ -56,6 +56,7 @@ dependencies = [
     "ansys-simai-core==0.1.7",
     "ansys-systemcoupling-core==0.5.0",
     "ansys-turbogrid-core==0.4.1",
+    "ansys-workbench-core==0.4.0",
     "pyaedt==0.9.3",
     "pyedb==0.13.0",
     "pygranta==2024.1.0",
