@@ -30,7 +30,7 @@ dependencies = [
     "ansys-acp-core==0.1b1",
     "ansys-additive-core==0.17.2",
     "ansys-additive-widgets==0.2.0",
-    "ansys-conceptev-core==0.1.3",
+    "ansys-conceptev-core==0.1.4",
     "ansys-dpf-composites==0.4.1",
     "ansys-dpf-core==0.12.2",
     "ansys-dpf-post==0.8.0",
@@ -59,7 +59,7 @@ dependencies = [
     "ansys-workbench-core==0.4.0",
     "pyaedt==0.9.3",
     "pyedb==0.13.0",
-    "pygranta==2024.1.0",
+    "pygranta==2024.2.0",
     "pytwin==0.7.0",
 ]
 
