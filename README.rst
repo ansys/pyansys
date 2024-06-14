@@ -79,6 +79,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
+- `PyWorkbench <https://workbench.docs.pyansys.com/>`_: Pythonic interface to Ansys Workbench.
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared Ansys software components to enable package interoperability and minimize maintenance.
 
 Other tools delivered as part of the metapackage are:
@@ -132,6 +133,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySystemCoupling`_
 - `PyTurboGrid`_
 - `PyTwin`_
+- `PyWorkbench`_
 - `Shared Components`_
 
 Additionally, the ``pyansys`` metapackage contains certain extra targets that

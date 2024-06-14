@@ -52,6 +52,7 @@ jobs:
             "ansys/pysystem-coupling",
             "ansys/pyturbogrid",
             "ansys/pytwin",
+            "ansys/pyworkbench",
             # MAPDL - ALL
             "ansys/pymapdl-reader",
             # FLUENT - ALL
