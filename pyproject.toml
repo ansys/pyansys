@@ -57,7 +57,7 @@ dependencies = [
     "ansys-turbogrid-core==0.4.1",
     "ansys-workbench-core==0.4.0",
     "pyaedt==0.9.4",
-    "pyedb==0.14.0",
+    "pyedb==0.14.1",
     "pygranta==2024.2.0",
     "pytwin==0.7.0",
 ]
@@ -100,7 +100,7 @@ all = [
 ]
 doc = [
     "Sphinx==7.2.6",
-    "ansys-sphinx-theme==0.16.5",
+    "ansys-sphinx-theme==0.16.6",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.6.0",
 ]
