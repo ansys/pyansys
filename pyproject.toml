@@ -11,9 +11,7 @@ readme = "README.rst"
 requires-python = ">=3.9,<4"
 license = { file = "LICENSE" }
 authors = [{ name = "ANSYS, Inc.", email = "pyansys.support@ansys.com" }]
-maintainers = [
-    { name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com" },
-]
+maintainers = [{ name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com" }]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
@@ -28,7 +26,7 @@ classifiers = [
 
 dependencies = [
     "ansys-acp-core==0.1b1",
-    "ansys-additive-core==0.17.2",
+    "ansys-additive-core==0.18.0b6",
     "ansys-additive-widgets==0.2.1",
     "ansys-conceptev-core==0.1.4",
     "ansys-dpf-composites==0.5.0",
@@ -64,10 +62,7 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.53.0"]
-fluent-all = [
-    "ansys-fluent-visualization==0.9.0",
-    "ansys-fluent-parametric==0.10.0",
-]
+fluent-all = ["ansys-fluent-visualization==0.9.0", "ansys-fluent-parametric==0.10.0"]
 tools = [
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.0",
@@ -98,12 +93,7 @@ all = [
     "pyansys-tools-versioning==0.5.0",
     "pyansys-tools-variableinterop==0.1.1",
 ]
-doc = [
-    "Sphinx==7.2.6",
-    "ansys-sphinx-theme==0.16.6",
-    "sphinx-copybutton==0.5.2",
-    "sphinx-design==0.6.0",
-]
+doc = ["Sphinx==7.2.6", "ansys-sphinx-theme==0.16.6", "sphinx-copybutton==0.5.2", "sphinx-design==0.6.0"]
 
 [project.urls]
 Source = "https://github.com/ansys/pyansys"
