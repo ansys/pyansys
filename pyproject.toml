@@ -27,7 +27,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "requests>2.32.2,<3",
+    "requests>=2.32.2,<3",
     "ansys-acp-core==0.1b1",
     "ansys-additive-core==0.17.2",
     "ansys-additive-widgets==0.2.1",
