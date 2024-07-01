@@ -25,13 +25,13 @@ differ from the SPEC-0 policy but is always aligned with it.
     gantt
         dateFormat YYYY-MM-DD
         axisFormat %Y-%m
-        Python 3.7  :done,   des1, 2018-06-27, 2021-06-27
-        Python 3.8  :done,   des2, 2019-10-14, 2022-10-14
-        Python 3.9  :active, des3, 2020-10-05, 2023-10-05
-        Python 3.10 :active, des4, 2021-10-04, 2024-10-03
-        Python 3.11 :active, des5, 2022-10-24, 2025-10-24
-        Python 3.12 :active, des6, 2023-10-02, 2026-10-02
-        Python 3.13 :des7, 2024-10-01, 2027-10-01
+        Python 3.7  :done,   des1, 2018-06-27, 3y
+        Python 3.8  :done,   des2, 2019-10-14, 3y
+        Python 3.9  :active, des3, 2020-10-05, 3y
+        Python 3.10 :active, des4, 2021-10-04, 3y
+        Python 3.11 :active, des5, 2022-10-24, 3y
+        Python 3.12 :active, des6, 2023-10-02, 3y
+        Python 3.13 :        des7, 2024-10-01, 3y
 
 Below you can find a list of the Python versions supported by each PyAnsys metapackage release:
 
