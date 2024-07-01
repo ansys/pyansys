@@ -36,6 +36,7 @@ html_favicon = ansys_favicon
 extensions = [
     "sphinx_design",
     "sphinx_copybutton",
+    "sphinxcontrib.mermaid",
 ]
 
 html_context = {

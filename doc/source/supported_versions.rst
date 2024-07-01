@@ -1,0 +1,50 @@
+.. _supported_versions:
+
+Python versions supported
+=========================
+
+The PyAnsys ecosystem follows `SPEC-0 <https://scientific-python.org/specs/spec-0000/>`_ for Python version support,
+which is also similar to `NEP 29 <https://numpy.org/neps/nep-0029-deprecation_policy.html>`_. This means:
+
+* PyAnsys packages are expected to drop support for Python versions **3 years** after their
+  initial release.
+
+You can find below the timeline for the end of support for each Python version according to the SPEC-0 policy
+as well as a table showing the Python versions supported by each PyAnsys metapackage, which might slightly
+differ from the SPEC-0 policy but is always aligned with it.
+
+* Grayed out Python versions are no longer supported by the current version of the PyAnsys metapackage.
+* Light blue Python versions are currently supported.
+* Dark blue Python versions are upcoming Python releases for which support will be enabled in the future.
+
+.. mermaid::
+   :caption: Python versions supported by SPEC-0 policy
+   :alt: Python versions supported by SPEC-0 policy
+   :align: center
+
+    gantt
+        dateFormat YYYY-MM-DD
+        axisFormat %Y-%m
+        Python 3.7  :done,   des1, 2018-06-27, 2021-06-27
+        Python 3.8  :done,   des2, 2019-10-14, 2022-10-14
+        Python 3.9  :active, des3, 2020-10-05, 2023-10-05
+        Python 3.10 :active, des4, 2021-10-04, 2024-10-03
+        Python 3.11 :active, des5, 2022-10-24, 2025-10-24
+        Python 3.12 :active, des6, 2023-10-02, 2026-10-02
+        Python 3.13 :des7, 2024-10-01, 2027-10-01
+
+Below you can find a list of the Python versions supported by each PyAnsys metapackage release:
+
++-----------------+----------------------------+
+| Package version | Python versions supported  |
++=================+============================+
+| 2023.1.X        | Python 3.7 - Python 3.10   |
++-----------------+----------------------------+
+| 2023.2.X        | Python 3.8 - Python 3.11   |
++-----------------+----------------------------+
+| 2024.1.X        | Python 3.9 - Python 3.12   |
++-----------------+----------------------------+
+| 2024.2.X        | Python 3.9 - Python 3.12   |
++-----------------+----------------------------+
+| dev             | Python 3.9 - Python 3.12   |
++-----------------+----------------------------+
