@@ -15,7 +15,7 @@ differ from the SPEC-0 policy but is always aligned with it.
 
 * Grayed out Python versions are no longer supported by the current version of the PyAnsys metapackage.
 * Light blue Python versions are currently supported.
-* Dark blue Python versions are upcoming Python releases for which support will be enabled in the future.
+* Dark blue Python versions are upcoming Python releases for which support is expected in the future.
 
 .. mermaid::
    :caption: Python versions supported by SPEC-0 policy
@@ -46,5 +46,5 @@ Below you can find a list of the Python versions supported by each PyAnsys metap
 +-----------------+----------------------------+
 | 2024.2.X        | Python 3.9 - Python 3.12   |
 +-----------------+----------------------------+
-| dev             | Python 3.9 - Python 3.12   |
+| development     | Python 3.9 - Python 3.12   |
 +-----------------+----------------------------+
