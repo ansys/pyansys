@@ -1,7 +1,7 @@
 .. _supported_versions:
 
-Python versions supported
-=========================
+Python versions
+===============
 
 The PyAnsys ecosystem follows `SPEC-0 <https://scientific-python.org/specs/spec-0000/>`_ for Python version support,
 which is also similar to `NEP 29 <https://numpy.org/neps/nep-0029-deprecation_policy.html>`_. This means:
