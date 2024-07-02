@@ -18,8 +18,8 @@ differ from the SPEC-0 policy but is always aligned with it.
 * Dark blue Python versions are upcoming Python releases for which support is expected in the future.
 
 .. mermaid::
-   :caption: Python versions supported by SPEC-0 policy
-   :alt: Python versions supported by SPEC-0 policy
+   :caption: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
+   :alt: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
    :align: center
 
     gantt
