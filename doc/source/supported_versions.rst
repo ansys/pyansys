@@ -3,8 +3,8 @@
 Python versions
 ===============
 
-The PyAnsys ecosystem follows `SPEC-0 <https://scientific-python.org/specs/spec-0000/>`_ for Python version support,
-which is also similar to `NEP 29 <https://numpy.org/neps/nep-0029-deprecation_policy.html>`_. This means:
+The PyAnsys ecosystem follows `SPEC-0`_ for Python version support,
+which is also similar to `NEP 29`_. This means:
 
 * PyAnsys packages are expected to drop support for Python versions **3 years** after their
   initial release.
@@ -38,13 +38,23 @@ Below you can find a list of the Python versions supported by each PyAnsys metap
 +-----------------+----------------------------+
 | Package version | Python versions supported  |
 +=================+============================+
-| 2023.1.X        | Python 3.7 - Python 3.10   |
+| `2023.1`_       | Python 3.7 - Python 3.10   |
 +-----------------+----------------------------+
-| 2023.2.X        | Python 3.8 - Python 3.11   |
+| `2023.2`_       | Python 3.8 - Python 3.11   |
 +-----------------+----------------------------+
-| 2024.1.X        | Python 3.9 - Python 3.12   |
+| `2024.1`_       | Python 3.9 - Python 3.12   |
 +-----------------+----------------------------+
-| 2024.2.X        | Python 3.9 - Python 3.12   |
+| `2024.2`_       | Python 3.9 - Python 3.12   |
 +-----------------+----------------------------+
-| development     | Python 3.9 - Python 3.12   |
+| `development`_  | Python 3.9 - Python 3.12   |
 +-----------------+----------------------------+
+
+
+.. LINKS
+.. _SPEC-0: https://scientific-python.org/specs/spec-0000/
+.. _NEP 29: https://numpy.org/neps/nep-0029-deprecation_policy.html
+.. _2023.1: https://pypi.org/project/pyansys/2023.1.3/
+.. _2023.2: https://pypi.org/project/pyansys/2023.2.11/
+.. _2024.1: https://pypi.org/project/pyansys/2024.1.8/
+.. _2024.2: https://pypi.org/project/pyansys/2024.2.0b2/
+.. _development: https://github.com/ansys/pyansys
