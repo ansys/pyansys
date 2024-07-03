@@ -6,7 +6,7 @@ Tooling libraries
 
     .. grid-item-card:: Ansys FileTransfer Tool
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://filetransfer.tools.docs.pyansys.com/version/stable
+      :link: https://filetransfer.tools.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -14,7 +14,7 @@ Tooling libraries
 
     .. grid-item-card:: Ansys Local Product Launcher
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://local-product-launcher.tools.docs.pyansys.com/version/stable
+      :link: https://local-product-launcher.tools.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -22,7 +22,7 @@ Tooling libraries
 
     .. grid-item-card:: Ansys Tools Path
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://path.tools.docs.pyansys.com/version/stable
+      :link: https://path.tools.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -38,7 +38,7 @@ Tooling libraries
 
     .. grid-item-card:: Ansys Tools Visualization interface
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://visualization-interface.tools.docs.pyansys.com/version/stable
+      :link: https://visualization-interface.tools.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -46,7 +46,7 @@ Tooling libraries
 
     .. grid-item-card:: PyAnsys Tools Report
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://report.tools.docs.pyansys.com/version/stable
+      :link: https://report.tools.docs.pyansys.com/version/0.7
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -54,7 +54,7 @@ Tooling libraries
 
     .. grid-item-card:: PyAnsys Tools Variable Interop
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://variableinterop.docs.pyansys.com/version/stable
+      :link: https://variableinterop.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -62,7 +62,7 @@ Tooling libraries
 
     .. grid-item-card:: PyAnsys Tools Versioning
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://versioning.tools.docs.pyansys.com/version/stable
+      :link: https://versioning.tools.docs.pyansys.com/version/0.5
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -70,7 +70,7 @@ Tooling libraries
 
     .. grid-item-card:: PyAnsys Units
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://units.docs.pyansys.com/version/stable
+      :link: https://units.docs.pyansys.com/version/0.3
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -78,7 +78,7 @@ Tooling libraries
 
     .. grid-item-card:: PyMaterials Manager
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://manager.materials.docs.pyansys.com/version/stable
+      :link: https://manager.materials.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
