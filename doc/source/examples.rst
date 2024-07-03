@@ -22,6 +22,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyAdditive Widgets
+      :img-top: _static/thumbnails/intro.png
+      :link: https://widgets.additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
       :link: https://aedt.docs.pyansys.com/version/stable/examples/index.html
@@ -37,6 +43,12 @@ PyAnsys packages examples
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
       :link: https://math.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
+    .. grid-item-card:: PyConceptEV
+      :img-top: _static/thumbnails/pyconceptev.png
+      :link: https://conceptev.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -70,8 +82,14 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyEDB
+      :img-top: _static/thumbnails/pyedb.png
+      :link: https://edb.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyEDB - Core
-      :img-top: _static/thumbnails/pyaedt.png
+      :img-top: _static/thumbnails/pyedb.png
       :link: https://edb.core.docs.pyansys.com/version/stable/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
@@ -101,7 +119,7 @@ PyAnsys packages examples
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyGranta
-      :img-top: _static/thumbnails/intro.png
+      :img-top: _static/thumbnails/pygranta.png
       :link: https://grantami.docs.pyansys.com/version/stable/examples.html
       :text-align: center
       :class-title: pyansys-card-title
@@ -202,8 +220,14 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyWorkbench
+      :img-top: _static/thumbnails/intro.png
+      :link: https://workbench.docs.pyansys.com/version/stable/examples.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: Shared Components - OpenAPI Common
       :img-top: _static/thumbnails/intro.png
-      :link: https://openapi.docs.pyansys.com/index.html#brief-example
+      :link: https://openapi.docs.pyansys.com/version/stable/index.html#brief-example
       :text-align: center
       :class-title: pyansys-card-title

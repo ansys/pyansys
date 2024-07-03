@@ -23,13 +23,15 @@ DOCS_DIRECTORY = os.path.join(ROOT_DIR, "doc", "source")
 LINKS = {
     "ansys-acp-core": None,  # Once stable release is out "https://acp.docs.pyansys.com/version/stable", # noqa: E501
     "ansys-additive-core": "https://additive.docs.pyansys.com/version/stable",
+    "ansys-additive-widgets": "https://widgets.additive.docs.pyansys.com/version/stable",
+    "ansys-conceptev-core": "https://conceptev.docs.pyansys.com/version/stable",
     "ansys-dpf-composites": "https://composites.dpf.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-dpf-core": "https://dpf.docs.pyansys.com/version/stable",
     "ansys-dpf-post": "https://post.docs.pyansys.com/version/stable",
     "ansys-dpf-gate": None,
     "ansys-dyna-core": "https://dyna.docs.pyansys.com/version/stable",
     "ansys-dynamicreporting-core": "https://dynamicreporting.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-edb-core": "https://edb.core.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-edb-core": "https://edb.core.docs.pyansys.com/version/stable",
     "ansys-geometry-core": "https://geometry.docs.pyansys.com/version/stable",
     "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
     "ansys-hps-client": "https://hps.docs.pyansys.com/version/stable",
@@ -40,7 +42,7 @@ LINKS = {
     "ansys-modelcenter-workflow": "https://modelcenter.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-motorcad-core": "https://motorcad.docs.pyansys.com/version/stable",
     "ansys-openapi-common": None,
-    "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",
     "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
     "ansys-rocky-core": "https://rocky.docs.pyansys.com/version/stable",
@@ -48,7 +50,8 @@ LINKS = {
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
     "ansys-simai-core": "https://simai.docs.pyansys.com/version/stable",
     "ansys-systemcoupling-core": "https://systemcoupling.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-turbogrid-core": "https://turbogrid.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-turbogrid-core": "https://turbogrid.docs.pyansys.com/version/stable",
+    "ansys-workbench-core": "https://workbench.docs.pyansys.com/version/stable",
     "pyedb": "https://edb.docs.pyansys.com/version/stable",
     "pyaedt": "https://aedt.docs.pyansys.com/version/stable",
     "pygranta": "https://grantami.docs.pyansys.com/version/stable",
@@ -59,11 +62,16 @@ LINKS = {
     "ansys-fluent-visualization": "https://visualization.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-fluent-parametric": "https://parametric.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     # TOOLS
-    "ansys-units": "https://units.docs.pyansys.com/version/stable",
+    "ansys-materials-manager": "https://manager.materials.docs.pyansys.com/version/stable",
+    "ansys-tools-filetransfer": "https://filetransfer.tools.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-tools-local-product-launcher": "https://local-product-launcher.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-tools-path": "https://path.tools.docs.pyansys.com/version/stable",
     "ansys-tools-protoc-helper": None,
+    "ansys-tools-visualization-interface": "https://visualization-interface.tools.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-units": "https://units.docs.pyansys.com/version/stable",
     "pyansys-tools-report": "https://report.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "pyansys-tools-versioning": "https://versioning.tools.docs.pyansys.com/version/stable",  # noqa: E501
+    "pyansys-tools-variableinterop": "https://variableinterop.docs.pyansys.com/version/stable",  # noqa: E501
 }
 """Dictionary with PyAnsys packages and their multi-version docs site."""
 

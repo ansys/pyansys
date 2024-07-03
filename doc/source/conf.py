@@ -36,6 +36,7 @@ html_favicon = ansys_favicon
 extensions = [
     "sphinx_design",
     "sphinx_copybutton",
+    "sphinxcontrib.mermaid",
 ]
 
 html_context = {
@@ -101,6 +102,7 @@ with open("links.rst") as f:
 # Ignore certain URLs
 linkcheck_ignore = [
     r"https://www.ansys.com/.*",
+    rf"https://pypi.org/project/pyansys/{switcher_version}.*",
 ]
 
 # User agent
