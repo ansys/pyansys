@@ -51,7 +51,7 @@ dependencies = [
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.6.0",
     "ansys-simai-core==0.2.1",
-    "ansys-systemcoupling-core==0.5.0",
+    "ansys-systemcoupling-core==0.6",
     "ansys-turbogrid-core==0.4.1",
     "ansys-workbench-core==0.4.0",
     "pyaedt==0.9.7",
@@ -62,7 +62,7 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.53.0"]
-fluent-all = ["ansys-fluent-visualization==0.9.0", "ansys-fluent-parametric==0.10.0"]
+fluent-all = ["ansys-fluent-visualization==0.10.0", "ansys-fluent-parametric==0.10.0"]
 tools = [
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.0",
@@ -79,7 +79,7 @@ all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.53.0",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.9.0",
+    "ansys-fluent-visualization==0.10.0",
     "ansys-fluent-parametric==0.10.0",
     # TOOLS
     "ansys-materials-manager==0.2.3",
