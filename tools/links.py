@@ -60,7 +60,6 @@ LINKS = {
     "ansys-mapdl-reader": "https://reader.docs.pyansys.com/version/stable",
     # FLUENT - ALL
     "ansys-fluent-visualization": "https://visualization.fluent.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-fluent-parametric": "https://parametric.fluent.docs.pyansys.com/version/stable",  # noqa: E501
     # TOOLS
     "ansys-materials-manager": "https://manager.materials.docs.pyansys.com/version/stable",
     "ansys-tools-filetransfer": "https://filetransfer.tools.docs.pyansys.com/version/stable",  # noqa: E501

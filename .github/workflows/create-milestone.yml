@@ -55,7 +55,6 @@ jobs:
             # MAPDL - ALL
             "ansys/pymapdl-reader",
             # FLUENT - ALL
-            "ansys/pyfluent-parametric",
             "ansys/pyfluent-visualization",
             # TOOLS
             "ansys/ansys-tools-filetransfer",
