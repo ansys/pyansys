@@ -209,7 +209,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
-      :link: https://systemcoupling.docs.pyansys.com/version/0.5/api/index.html
+      :link: https://systemcoupling.docs.pyansys.com/version/0.6/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

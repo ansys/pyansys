@@ -198,7 +198,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
-      :link: https://systemcoupling.docs.pyansys.com/version/0.5/examples/index.html
+      :link: https://systemcoupling.docs.pyansys.com/version/0.6/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

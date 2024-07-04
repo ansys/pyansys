@@ -201,7 +201,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PySystemCoupling
       :img-top: _static/thumbnails/pysystem-coupling.png
-      :link: https://systemcoupling.docs.pyansys.com/version/0.5/users_guide/index.html
+      :link: https://systemcoupling.docs.pyansys.com/version/0.6/users_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

@@ -269,7 +269,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PySystem Coupling
       :img-top: _static/thumbnails/pysystem-coupling.png
-      :link: https://systemcoupling.docs.pyansys.com/version/0.5
+      :link: https://systemcoupling.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 
