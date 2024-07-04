@@ -21,7 +21,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
-      :link: https://additive.docs.pyansys.com/version/0.18/getting_started/index.html
+      :link: https://additive.docs.pyansys.com/version/stable/getting_started/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

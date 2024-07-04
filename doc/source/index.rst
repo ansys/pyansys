@@ -29,7 +29,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
-      :link: https://additive.docs.pyansys.com/version/0.18
+      :link: https://additive.docs.pyansys.com/version/stable
       :text-align: center
       :class-title: pyansys-card-title
 

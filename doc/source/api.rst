@@ -29,7 +29,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
-      :link: https://additive.docs.pyansys.com/version/0.18/api/index.html
+      :link: https://additive.docs.pyansys.com/version/stable/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
