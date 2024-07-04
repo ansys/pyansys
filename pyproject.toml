@@ -62,7 +62,7 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.53.0"]
-fluent-all = ["ansys-fluent-visualization==0.9.0"]
+fluent-all = ["ansys-fluent-visualization==0.10.0"]
 tools = [
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.0",
@@ -79,7 +79,7 @@ all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.53.0",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.9.0",
+    "ansys-fluent-visualization==0.10.0",
     # TOOLS
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.0",
