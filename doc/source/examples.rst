@@ -106,12 +106,6 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
-    .. grid-item-card:: PyFluent - Parametric
-      :img-top: _static/thumbnails/pyfluent-parametric.png
-      :link: https://parametric.fluent.docs.pyansys.com/version/0.10/examples/index.html
-      :text-align: center
-      :class-title: pyansys-card-title
-
     .. grid-item-card:: PyFluent - Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
       :link: https://visualization.fluent.docs.pyansys.com/version/0.9/examples/index.html

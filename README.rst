@@ -60,14 +60,13 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyEDB - Core <https://edb.core.docs.pyansys.com/>`_: Pythonic interface to Ansys Electronics Database (EDB).
 - `PyEnSight <https://ensight.docs.pyansys.com/>`_: Pythonic interface to EnSight, the Ansys simulation postprocessor.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
-- `PyFluent - Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
 - `PyFluent - Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
 - `PyGranta <https://grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI services.
 - `PyHPS <https://hps.docs.pyansys.com/version/dev/>`_: A Python client for Ansys HPC Platform Services (HPS).
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APDL).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyMechanical <https://mechanical.docs.pyansys.com/>`_: Pythonic interface to Ansys Mechanical.
-- `PyModelCenter <https://modelcenter.docs.pyansys.com/version/stable/>`_: Pythonic interface for Ansys ModelCenter
+- `PyModelCenter <https://modelcenter.docs.pyansys.com/>`_: Pythonic interface for Ansys ModelCenter
 - `PyMotorCAD <https://motorcad.docs.pyansys.com/>`_: Pythonic interface to Ansys Motor-CAD.
 - `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys optislang.
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
@@ -140,7 +139,7 @@ Additionally, the ``pyansys`` metapackage contains certain extra targets that
 can be installed upon request:
 
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
-- **fluent-all**: This target installs the core packages, `PyFluent - Parametric`_, and `PyFluent - Visualization`_.
+- **fluent-all**: This target installs the core packages, and `PyFluent - Visualization`_.
 - **tools**: This target installs the core packages, `Ansys FileTransfer Tool`_, `Ansys Local Product Launcher`_, `Ansys Tools Path`_, `Ansys Tools Protobuf Compilation Helper`_, `PyAnsys Tools Report`_, `PyAnsys Tools Variable Interop`_, `PyAnsys Tools Versioning`_, `PyAnsys Units`_, and `PyMaterials Manager`_.
 - **all**: This target installs all extra ``pyansys`` packages.
 
