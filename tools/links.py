@@ -37,6 +37,7 @@ LINKS = {
     "ansys-hps-client": "https://hps.docs.pyansys.com/version/stable",
     "ansys-mapdl-core": "https://mapdl.docs.pyansys.com/version/stable",
     "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
+    "ansys-sound-core": "https://sound.docs.pyansys.com/version/stable",
     "ansys-mechanical-core": "https://mechanical.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-meshing-prime": "https://prime.docs.pyansys.com/version/stable",
     "ansys-modelcenter-workflow": "https://modelcenter.docs.pyansys.com/version/stable",  # noqa: E501
