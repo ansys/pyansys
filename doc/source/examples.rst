@@ -46,6 +46,12 @@ PyAnsys packages examples
       :text-align: center
       :class-title: pyansys-card-title
 
+    .. grid-item-card:: PyAnsys Sound
+      :img-top: _static/thumbnails/pyansys-sound.png
+      :link: https://sound.docs.pyansys.com/version/stable/examples/index.html
+      :text-align: center
+      :class-title: pyansys-card-title
+
     .. grid-item-card:: PyConceptEV
       :img-top: _static/thumbnails/pyconceptev.png
       :link: https://conceptev.docs.pyansys.com/version/stable/examples/index.html
