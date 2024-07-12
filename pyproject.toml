@@ -46,7 +46,7 @@ dependencies = [
     "ansys-motorcad-core==0.5.2",
     "ansys-optislang-core==0.7.1",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.8.5",
+    "ansys-pyensight-core==0.8.6",
     "ansys-rocky-core==0.2.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.6.0",
@@ -56,7 +56,7 @@ dependencies = [
     "ansys-turbogrid-core==0.4.1",
     "ansys-workbench-core==0.4.0",
     "pyaedt==0.9.8",
-    "pyedb==0.19.0",
+    "pyedb==0.20.0",
     "pygranta==2024.2.0",
     "pytwin==0.7.0",
 ]
