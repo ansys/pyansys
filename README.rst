@@ -196,7 +196,7 @@ commands:
 
 .. code:: bash
 
-    unzip pyansys-v2024.2.0-wheelhouse-Linux-3.9-core.zip wheelhouse
+    unzip pyansys-v2024.2.1-wheelhouse-Linux-3.9-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and then install using
