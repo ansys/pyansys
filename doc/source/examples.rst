@@ -18,7 +18,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
-      :link: https://additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
+      :link: https://additive.docs.pyansys.com/version/0.18/examples/gallery_examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -48,7 +48,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyAnsys Sound
       :img-top: _static/thumbnails/pyansys-sound.png
-      :link: https://sound.docs.pyansys.com/version/stable/examples/index.html
+      :link: https://sound.docs.pyansys.com/version/0.1/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -90,7 +90,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.18/examples/index.html
+      :link: https://edb.docs.pyansys.com/version/0.21/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -108,7 +108,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/0.20/examples/index.html
+      :link: https://fluent.docs.pyansys.com/version/0.21/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -180,7 +180,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyRocky
       :img-top: _static/thumbnails/pyrocky.png
-      :link: https://rocky.docs.pyansys.com/version/0.1/examples/index.html
+      :link: https://rocky.docs.pyansys.com/version/0.2/examples/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

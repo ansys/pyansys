@@ -29,7 +29,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
-      :link: https://additive.docs.pyansys.com/version/stable/api/index.html
+      :link: https://additive.docs.pyansys.com/version/0.18/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -59,7 +59,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyAnsys Sound
       :img-top: _static/thumbnails/pyansys-sound.png
-      :link: https://sound.docs.pyansys.com/version/stable/api/index.html
+      :link: https://sound.docs.pyansys.com/version/0.1/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -101,7 +101,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.18/api/index.html
+      :link: https://edb.docs.pyansys.com/version/0.21/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -119,7 +119,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/0.20/api/index.html
+      :link: https://fluent.docs.pyansys.com/version/0.21/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -191,7 +191,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyRocky
       :img-top: _static/thumbnails/pyrocky.png
-      :link: https://rocky.docs.pyansys.com/version/0.1/api/index.html
+      :link: https://rocky.docs.pyansys.com/version/0.2/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

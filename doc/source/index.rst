@@ -29,7 +29,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
-      :link: https://additive.docs.pyansys.com/version/stable
+      :link: https://additive.docs.pyansys.com/version/0.18
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -69,7 +69,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAnsys Sound
       :img-top: _static/thumbnails/pyansys-sound.png
-      :link: https://sound.docs.pyansys.com/version/stable
+      :link: https://sound.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -125,7 +125,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.18
+      :link: https://edb.docs.pyansys.com/version/0.21
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -133,7 +133,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.18
+      :link: https://edb.docs.pyansys.com/version/0.21
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -149,7 +149,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/0.20
+      :link: https://fluent.docs.pyansys.com/version/0.21
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -245,7 +245,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyRocky
       :img-top: _static/thumbnails/pyrocky.png
-      :link: https://rocky.docs.pyansys.com/version/0.1
+      :link: https://rocky.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
