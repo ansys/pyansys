@@ -17,6 +17,11 @@ differ from the SPEC-0 policy but is always aligned with it.
 * Light blue Python versions are currently supported.
 * Dark blue Python versions are upcoming Python releases for which support is expected in the future.
 
+Some extra remarks:
+
+* The length of the Python version boxes is indicative of the support duration according to the SPEC-0 policy.
+* The color of the Python version boxes is indicative of the PyAnsys metapackage current support.
+
 .. mermaid::
    :caption: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
    :alt: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
@@ -27,7 +32,7 @@ differ from the SPEC-0 policy but is always aligned with it.
         axisFormat %Y-%m
         Python 3.7  :done,   des1, 2018-06-27, 3y
         Python 3.8  :done,   des2, 2019-10-14, 3y
-        Python 3.9  :active, des3, 2020-10-05, 3y
+        Python 3.9  :done,   des3, 2020-10-05, 3y
         Python 3.10 :active, des4, 2021-10-04, 3y
         Python 3.11 :active, des5, 2022-10-24, 3y
         Python 3.12 :active, des6, 2023-10-02, 3y
@@ -46,7 +51,7 @@ Below you can find a list of the Python versions supported by each PyAnsys metap
 +-----------------+----------------------------+
 | `2024.2`_       | Python 3.9 - Python 3.12   |
 +-----------------+----------------------------+
-| `development`_  | Python 3.9 - Python 3.12   |
+| `development`_  | Python 3.10 - Python 3.12  |
 +-----------------+----------------------------+
 
 
@@ -56,5 +61,5 @@ Below you can find a list of the Python versions supported by each PyAnsys metap
 .. _2023.1: https://pypi.org/project/pyansys/2023.1.3/
 .. _2023.2: https://pypi.org/project/pyansys/2023.2.11/
 .. _2024.1: https://pypi.org/project/pyansys/2024.1.8/
-.. _2024.2: https://pypi.org/project/pyansys/2024.2.0b2/
+.. _2024.2: https://pypi.org/project/pyansys/2024.2.2/
 .. _development: https://github.com/ansys/pyansys
