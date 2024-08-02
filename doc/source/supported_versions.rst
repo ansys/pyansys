@@ -19,7 +19,7 @@ differ from the SPEC-0 policy but is always aligned with it.
 
 Some extra remarks:
 
-* The length of the Python version boxes is indicative of the support duration according to the SPEC-0 policy.
+* The length of the Python version boxes is indicative of the support duration according to the `SPEC-0`_ policy.
 * The color of the Python version boxes is indicative of the PyAnsys metapackage current support.
 
 .. mermaid::
