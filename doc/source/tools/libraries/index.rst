@@ -38,7 +38,7 @@ Tooling libraries
 
     .. grid-item-card:: Ansys Tools Visualization interface
       :img-top: ../../_static/thumbnails/intro.png
-      :link: https://visualization-interface.tools.docs.pyansys.com/version/0.2
+      :link: https://visualization-interface.tools.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 

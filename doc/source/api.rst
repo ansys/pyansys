@@ -101,7 +101,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.21/api/index.html
+      :link: https://edb.docs.pyansys.com/version/0.23/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -119,13 +119,13 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/0.21/api/index.html
+      :link: https://fluent.docs.pyansys.com/version/0.22/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyFluent - Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
-      :link: https://visualization.fluent.docs.pyansys.com/version/0.9/api/index.html
+      :link: https://visualization.fluent.docs.pyansys.com/version/0.11/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 

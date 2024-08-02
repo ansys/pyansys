@@ -125,7 +125,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.21
+      :link: https://edb.docs.pyansys.com/version/0.23
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -133,7 +133,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.21
+      :link: https://edb.docs.pyansys.com/version/0.23
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -149,7 +149,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/0.21
+      :link: https://fluent.docs.pyansys.com/version/0.22
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -157,7 +157,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent - Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
-      :link: https://visualization.fluent.docs.pyansys.com/version/0.9
+      :link: https://visualization.fluent.docs.pyansys.com/version/0.11
       :text-align: center
       :class-title: pyansys-card-title
 
