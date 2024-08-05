@@ -43,7 +43,7 @@ dependencies = [
     "ansys-meshing-prime==0.6.1",
     "ansys-modelcenter-workflow==0.1.1",
     "ansys-motorcad-core==0.5.5",
-    "ansys-optislang-core==0.7.1",
+    "ansys-optislang-core==0.8.0",
     "ansys-platform-instancemanagement==1.1.2",
     "ansys-pyensight-core==0.8.8",
     "ansys-rocky-core==0.2.0",
@@ -96,7 +96,7 @@ doc = [
     "Sphinx==7.4.7",
     "ansys-sphinx-theme==0.16.6",
     "sphinx-copybutton==0.5.2",
-    "sphinx-design==0.6.0",
+    "sphinx-design==0.6.1",
     "sphinxcontrib-mermaid==0.9.2",
 ]
 
