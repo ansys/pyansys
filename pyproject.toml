@@ -93,7 +93,7 @@ all = [
     "pyansys-tools-variableinterop==0.1.1",
 ]
 doc = [
-    "Sphinx==7.4.7",
+    "Sphinx==8.0.2",
     "ansys-sphinx-theme==0.16.6",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.6.1",
