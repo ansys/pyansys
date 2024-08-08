@@ -25,7 +25,6 @@ meilisearch_version = convert_version_to_pymeilisearch(pyansys_version)
 # get the PyAnsys version
 release = version = pyansys_version
 
-# use the default pyansys logo
 html_theme = "ansys_sphinx_theme"
 html_short_title = html_title = "PyAnsys"
 
