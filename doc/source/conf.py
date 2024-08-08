@@ -3,11 +3,7 @@
 from datetime import datetime
 import os
 
-from ansys_sphinx_theme import (
-    ansys_favicon,
-    convert_version_to_pymeilisearch,
-    get_version_match,
-)
+from ansys_sphinx_theme import ansys_favicon, convert_version_to_pymeilisearch, get_version_match
 from sphinx.builders.latex import LaTeXBuilder
 
 from pyansys import __version__ as pyansys_version
