@@ -7,7 +7,6 @@ from ansys_sphinx_theme import (
     ansys_favicon,
     convert_version_to_pymeilisearch,
     get_version_match,
-    pyansys_logo_black,
 )
 from sphinx.builders.latex import LaTeXBuilder
 
