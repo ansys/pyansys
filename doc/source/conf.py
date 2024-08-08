@@ -26,7 +26,6 @@ meilisearch_version = convert_version_to_pymeilisearch(pyansys_version)
 release = version = pyansys_version
 
 # use the default pyansys logo
-html_logo = pyansys_logo_black
 html_theme = "ansys_sphinx_theme"
 html_short_title = html_title = "PyAnsys"
 
@@ -47,6 +46,7 @@ html_context = {
 }
 
 html_theme_options = {
+    "logo": "pyansys",
     "github_url": "https://github.com/ansys/pyansys",
     "show_prev_next": False,
     "show_breadcrumbs": True,
