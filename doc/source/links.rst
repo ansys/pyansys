@@ -3,7 +3,7 @@
 .. _ansys_fluent_page: https://www.ansys.com/products/fluids/ansys-fluent
 .. _ansys_aedt_page: https://www.ansys.com/products/electronics/ansys-maxwell
 .. _dpf_post_gh: https://github.com/ansys/pydpf-post
-.. _grpc: https://grpc.io/
+.. _gRPC: https://grpc.io/
 .. _ansys: https://www.ansys.com/
 .. _ansys_students: https://www.ansys.com/academic/students
 .. _pip: https://pypi.org/project/pip/
