@@ -8,7 +8,7 @@ PyAnsys libraries fall into two categories:
 
 Most PyAnsys packages require a local installation of Ansys. The version
 of Ansys installed dictates the interface and features available to
-you. However, PyAnsys libraries use `grpc`_ to communicate to the
+you. However, PyAnsys libraries use `gRPC <grpc_>`_ to communicate to the
 products, you can have the product installed remotely and connect to that
 remote instance. This still requires that you need a copy of Ansys installed on
 the host machine.
