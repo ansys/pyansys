@@ -165,7 +165,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyOptislang
       :img-top: _static/thumbnails/pyoptislang.png
-      :link: https://optislang.docs.pyansys.com/version/0.7/user_guide/index.html
+      :link: https://optislang.docs.pyansys.com/version/0.8/user_guide/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -225,7 +225,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyWorkbench
       :img-top: _static/thumbnails/intro.png
-      :link: https://workbench.docs.pyansys.com/version/0.4/user-guide.html
+      :link: https://workbench.docs.pyansys.com/version/0.6/user-guide.html
       :text-align: center
       :class-title: pyansys-card-title
 

@@ -8,7 +8,7 @@ PyAnsys libraries fall into two categories:
 
 Most PyAnsys packages require a local installation of Ansys. The version
 of Ansys installed dictates the interface and features available to
-you. However, PyAnsys libraries use `grpc`_ to communicate to the
+you. However, PyAnsys libraries use `gRPC <grpc_>`_ to communicate to the
 products, you can have the product installed remotely and connect to that
 remote instance. This still requires that you need a copy of Ansys installed on
 the host machine.
@@ -79,7 +79,7 @@ corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install
 ``pyansys`` metapackage from scratch on Windows, Linux, and MacOS from Python
-3.9 to 3.11. You can install this on an isolated system with a fresh Python
+3.9 to 3.12. You can install this on an isolated system with a fresh Python
 installation or on a virtual environment.
 
 For example, on Linux with Python 3.9, unzip the wheelhouse archive and install

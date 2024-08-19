@@ -221,7 +221,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyOptislang
       :img-top: _static/thumbnails/pyoptislang.png
-      :link: https://optislang.docs.pyansys.com/version/0.7
+      :link: https://optislang.docs.pyansys.com/version/0.8
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -301,7 +301,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyWorkbench
       :img-top: _static/thumbnails/intro.png
-      :link: https://workbench.docs.pyansys.com/version/0.4
+      :link: https://workbench.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 

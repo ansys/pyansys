@@ -3,12 +3,7 @@
 from datetime import datetime
 import os
 
-from ansys_sphinx_theme import (
-    ansys_favicon,
-    convert_version_to_pymeilisearch,
-    get_version_match,
-    pyansys_logo_black,
-)
+from ansys_sphinx_theme import ansys_favicon, convert_version_to_pymeilisearch, get_version_match
 from sphinx.builders.latex import LaTeXBuilder
 
 from pyansys import __version__ as pyansys_version
@@ -25,8 +20,6 @@ meilisearch_version = convert_version_to_pymeilisearch(pyansys_version)
 # get the PyAnsys version
 release = version = pyansys_version
 
-# use the default pyansys logo
-html_logo = pyansys_logo_black
 html_theme = "ansys_sphinx_theme"
 html_short_title = html_title = "PyAnsys"
 
@@ -47,6 +40,7 @@ html_context = {
 }
 
 html_theme_options = {
+    "logo": "pyansys",
     "github_url": "https://github.com/ansys/pyansys",
     "show_prev_next": False,
     "show_breadcrumbs": True,

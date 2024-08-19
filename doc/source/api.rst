@@ -173,7 +173,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyOptislang
       :img-top: _static/thumbnails/pyoptislang.png
-      :link: https://optislang.docs.pyansys.com/version/0.7/api/index.html
+      :link: https://optislang.docs.pyansys.com/version/0.8/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -233,7 +233,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyWorkbench
       :img-top: _static/thumbnails/intro.png
-      :link: https://workbench.docs.pyansys.com/version/0.4/api/index.html
+      :link: https://workbench.docs.pyansys.com/version/0.6/api/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
