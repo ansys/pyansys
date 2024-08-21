@@ -34,7 +34,7 @@ dependencies = [
     "ansys-dyna-core==0.4.15",
     "ansys-dynamicreporting-core==0.6.0",
     "ansys-edb-core==0.1.6",
-    "ansys-fluent-core==0.22.0",
+    "ansys-fluent-core==0.24.2",
     "ansys-geometry-core==0.7.0",
     "ansys-hps-client==0.8.0",
     "ansys-mapdl-core==0.68.4",
@@ -54,7 +54,7 @@ dependencies = [
     "ansys-systemcoupling-core==0.6.0",
     "ansys-turbogrid-core==0.4.1",
     "ansys-workbench-core==0.6.0",
-    "pyaedt==0.9.11",
+    "pyaedt==0.10.0",
     "pyedb==0.24.0",
     "pygranta==2024.2.0",
     "pytwin==0.7.0",
@@ -62,7 +62,7 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.53.0"]
-fluent-all = ["ansys-fluent-visualization==0.11.0"]
+fluent-all = ["ansys-fluent-visualization==0.12.0"]
 tools = [
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.0",
@@ -79,7 +79,7 @@ all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.53.0",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.11.0",
+    "ansys-fluent-visualization==0.12.0",
     # TOOLS
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.0",
