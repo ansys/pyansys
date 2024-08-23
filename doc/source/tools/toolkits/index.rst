@@ -12,7 +12,6 @@ PyAEDT toolkits
     .. grid-item-card:: PyAEDT Common Toolkit
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://aedt.common.toolkit.docs.pyansys.com/version/stable
-      :text-align: center
       :class-title: pyansys-card-title
 
       Shared Ansys Electronics Desktop (AEDT) toolkit components to enable package
@@ -21,7 +20,6 @@ PyAEDT toolkits
     .. grid-item-card:: PyAEDT Antenna Toolkit
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://aedt.antenna.toolkit.docs.pyansys.com/version/stable
-      :text-align: center
       :class-title: pyansys-card-title
 
       Python wrapper for modeling antennas using Ansys Electronics Desktop (AEDT) via PyAEDT
@@ -29,7 +27,6 @@ PyAEDT toolkits
     .. grid-item-card:: Magnet Segmentation Toolkit
       :img-top: ../../_static/thumbnails/intro.png
       :link: https://magnet.segmentation.toolkit.docs.pyansys.com/version/stable
-      :text-align: center
       :class-title: pyansys-card-title
 
       Python wrapper for automating the segmentation and skew of interior permanent magnet (IPM)
