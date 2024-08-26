@@ -24,7 +24,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "ansys-acp-core==0.1b1",
+    "ansys-acp-core==0.1b2",
     "ansys-additive-core==0.18.1",
     "ansys-additive-widgets==0.2.1",
     "ansys-conceptev-core==0.3.0",
@@ -94,7 +94,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.0.2",
-    "ansys-sphinx-theme==1.0.6",
+    "ansys-sphinx-theme==1.0.7",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.6.1",
     "sphinxcontrib-mermaid==0.9.2",
