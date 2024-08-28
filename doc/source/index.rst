@@ -13,6 +13,7 @@ it is now a collection of many Python packages for using Ansys products through 
    user_guide
    api
    examples
+   supported_versions
    tools/index
 
 .. grid:: 3
@@ -28,23 +29,31 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAdditive
       :img-top: _static/thumbnails/intro.png
-      :link: https://additive.docs.pyansys.com/version/stable
+      :link: https://additive.docs.pyansys.com/version/0.18
       :text-align: center
       :class-title: pyansys-card-title
 
       Pythonic interface to the Ansys Additive service
 
-    .. grid-item-card:: PyAEDT
-      :img-top: _static/thumbnails/pyaedt.png
-      :link: https://aedt.docs.pyansys.com/version/stable
+    .. grid-item-card:: PyAdditive Widgets
+      :img-top: _static/thumbnails/intro.png
+      :link: https://widgets.additive.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to AEDT (Ansys Electronic Desktop)
+      PyAdditive widget toolkit to visualize additive parametric study results
+
+    .. grid-item-card:: PyAEDT
+      :img-top: _static/thumbnails/pyaedt.png
+      :link: https://aedt.docs.pyansys.com/version/0.9
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Electronics Desktop (AEDT)
 
     .. grid-item-card:: PyAnsys Geometry
       :img-top: _static/thumbnails/pyansys-geometry.png
-      :link: https://geometry.docs.pyansys.com/version/stable
+      :link: https://geometry.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -52,47 +61,63 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAnsys Math
       :img-top: _static/thumbnails/pyansys-math.png
-      :link: https://math.docs.pyansys.com/version/stable
+      :link: https://math.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
       Pythonic interface to PyAnsys Math libraries
 
-    .. grid-item-card:: PyDPF - Core
-      :img-top: _static/thumbnails/pydpf-core.png
-      :link: https://dpf.docs.pyansys.com/version/stable
+    .. grid-item-card:: PyAnsys Sound
+      :img-top: _static/thumbnails/pyansys-sound.png
+      :link: https://sound.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows
+      Pythonic interface to Ansys Sound
+
+    .. grid-item-card:: PyConceptEV
+      :img-top: _static/thumbnails/pyconceptev.png
+      :link: https://conceptev.docs.pyansys.com/version/0.1
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys ConceptEV library
+
+    .. grid-item-card:: PyDPF - Core
+      :img-top: _static/thumbnails/pydpf-core.png
+      :link: https://dpf.docs.pyansys.com/version/0.12
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows
 
     .. grid-item-card:: PyDPF - Post
       :img-top: _static/thumbnails/pydpf-post.png
-      :link: https://post.docs.pyansys.com/version/stable
+      :link: https://post.docs.pyansys.com/version/0.8
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to access and post process Ansys solver result files
+      Pythonic interface to access and postprocess Ansys solver result files
 
     .. grid-item-card:: PyDPF - Composites
       :img-top: _static/thumbnails/pydpf-composites.png
-      :link: https://composites.dpf.docs.pyansys.com/version/stable
+      :link: https://composites.dpf.docs.pyansys.com/version/0.5
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to post-process layered and short-fiber composite models
+      Pythonic interface to postprocess layered and short-fiber composite models
 
-    .. grid-item-card:: PyDyna
+    .. grid-item-card:: PyDYNA
       :img-top: _static/thumbnails/pydyna.png
-      :link: https://dyna.docs.pyansys.com/version/stable
+      :link: https://dyna.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver and postprocess its results
+      Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results
 
     .. grid-item-card:: PyDynamicReporting
       :img-top: _static/thumbnails/pydynamicreporting.png
-      :link: https://dynamicreporting.docs.pyansys.com/version/stable
+      :link: https://dynamicreporting.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -100,23 +125,23 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/stable
+      :link: https://edb.docs.pyansys.com/version/0.23
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to use the Electronics Database (EDB) client library
+      Pythonic interface to the Ansys Electronics Database (EDB) client library
 
     .. grid-item-card:: PyEDB - Core
-      :img-top: _static/thumbnails/pyaedt.png
-      :link: https://edb.core.docs.pyansys.com/version/stable
+      :img-top: _static/thumbnails/pyedb.png
+      :link: https://edb.docs.pyansys.com/version/0.23
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to the Electronics Database (EDB)
+      Pythonic interface to Ansys Electronics Database (EDB)
 
     .. grid-item-card:: PyEnSight
       :img-top: _static/thumbnails/pyensight.png
-      :link: https://ensight.docs.pyansys.com/version/stable
+      :link: https://ensight.docs.pyansys.com/version/0.8
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -124,31 +149,23 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyFluent
       :img-top: _static/thumbnails/pyfluent.png
-      :link: https://fluent.docs.pyansys.com/version/stable
+      :link: https://fluent.docs.pyansys.com/version/0.22
       :text-align: center
       :class-title: pyansys-card-title
 
       Pythonic interface to Ansys Fluent
 
-    .. grid-item-card:: PyFluent - Parametric
-      :img-top: _static/thumbnails/pyfluent-parametric.png
-      :link: https://parametric.fluent.docs.pyansys.com/version/stable
-      :text-align: center
-      :class-title: pyansys-card-title
-
-      Pythonic interface to Ansys Fluent parametric workflows
-
     .. grid-item-card:: PyFluent - Visualization
       :img-top: _static/thumbnails/pyfluent-visualization.png
-      :link: https://visualization.fluent.docs.pyansys.com/version/stable
+      :link: https://visualization.fluent.docs.pyansys.com/version/0.11
       :text-align: center
       :class-title: pyansys-card-title
 
       Pythonic interface to visualize Ansys Fluent simulations
 
     .. grid-item-card:: PyGranta
-      :img-top: _static/thumbnails/intro.png
-      :link: https://grantami.docs.pyansys.com/version/stable
+      :img-top: _static/thumbnails/pygranta.png
+      :link: https://grantami.docs.pyansys.com/version/2024.2
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -156,7 +173,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyHPS
       :img-top: _static/thumbnails/intro.png
-      :link: https://hps.docs.pyansys.com/version/stable
+      :link: https://hps.docs.pyansys.com/version/0.8
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -164,7 +181,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMAPDL
       :img-top: _static/thumbnails/pymapdl.png
-      :link: https://mapdl.docs.pyansys.com/version/stable
+      :link: https://mapdl.docs.pyansys.com/version/0.68
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -172,7 +189,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMAPDL Reader
       :img-top: _static/thumbnails/pymapdl_reader.png
-      :link: https://reader.docs.pyansys.com/version/stable
+      :link: https://reader.docs.pyansys.com/version/0.53
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -180,7 +197,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMechanical
       :img-top: _static/thumbnails/pymechanical.png
-      :link: https://mechanical.docs.pyansys.com/version/stable
+      :link: https://mechanical.docs.pyansys.com/version/0.11
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -188,7 +205,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyModelCenter
       :img-top: _static/thumbnails/pymodelcenter.png
-      :link: https://modelcenter.docs.pyansys.com/version/stable
+      :link: https://modelcenter.docs.pyansys.com/version/0.1
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -196,7 +213,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyMotorCAD
       :img-top: _static/thumbnails/pymotorcad.png
-      :link: https://motorcad.docs.pyansys.com/version/stable
+      :link: https://motorcad.docs.pyansys.com/version/0.5
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -204,69 +221,71 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyOptislang
       :img-top: _static/thumbnails/pyoptislang.png
-      :link: https://optislang.docs.pyansys.com/version/stable
+      :link: https://optislang.docs.pyansys.com/version/0.8
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to Ansys Optislang
+      Pythonic interface to Ansys optiSLang
 
     .. grid-item-card:: PyPIM
       :img-top: _static/thumbnails/intro.png
-      :link: https://pypim.docs.pyansys.com/version/stable
+      :link: https://pypim.docs.pyansys.com/version/1.1
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API
+      Pythonic interface to the Ansys PIM (Product Instance Management) API
 
     .. grid-item-card:: PyPrimeMesh
       :img-top: _static/thumbnails/pyprimemesh.png
-      :link: https://prime.docs.pyansys.com/version/stable
+      :link: https://prime.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
+
+      Python library to acquire geometries and prepare surface and volume meshes for multiple solvers
 
     .. grid-item-card:: PyRocky
       :img-top: _static/thumbnails/pyrocky.png
-      :link: https://rocky.docs.pyansys.com/version/stable
+      :link: https://rocky.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
-      Python library to communicate with Ansys Rocky using Rocky PrePost API
+      Python interface to Ansys Rocky using Rocky PrePost API
 
     .. grid-item-card:: PySeascape
       :img-top: _static/thumbnails/intro.png
-      :link: https://seascape.docs.pyansys.com/version/stable
+      :link: https://seascape.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with Ansys RedHawkSC and TotemSC
+      Pythonic interface to Ansys RedHawkSC and TotemSC
 
     .. grid-item-card:: PySherlock
       :img-top: _static/thumbnails/pysherlock.png
-      :link: https://sherlock.docs.pyansys.com/version/stable
+      :link: https://sherlock.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with Ansys Sherlock
+      Pythonic interface to Ansys Sherlock
 
     .. grid-item-card:: PySimAI
       :img-top: _static/thumbnails/pysimai.png
-      :link: https://simai.docs.pyansys.com/version/stable
+      :link: https://simai.docs.pyansys.com/version/0.2
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with SimAI
+      Pythonic interface to SimAI
 
     .. grid-item-card:: PySystem Coupling
       :img-top: _static/thumbnails/pysystem-coupling.png
-      :link: https://systemcoupling.docs.pyansys.com/version/stable
+      :link: https://systemcoupling.docs.pyansys.com/version/0.6
       :text-align: center
       :class-title: pyansys-card-title
 
-      Pythonic interface to communicate with Ansys System Coupling
+      Pythonic interface to Ansys System Coupling
 
     .. grid-item-card:: PyTurbogrid
       :img-top: _static/thumbnails/pyturbogrid.png
-      :link: https://turbogrid.docs.pyansys.com/version/stable
+      :link: https://turbogrid.docs.pyansys.com/version/0.4
       :text-align: center
       :class-title: pyansys-card-title
 
@@ -274,11 +293,19 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyTwin
       :img-top: _static/thumbnails/pytwin.png
-      :link: https://twin.docs.pyansys.com/version/stable
+      :link: https://twin.docs.pyansys.com/version/0.7
       :text-align: center
       :class-title: pyansys-card-title
 
       Pythonic interface to communicate with consumption workflows for Ansys digital twins
+
+    .. grid-item-card:: PyWorkbench
+      :img-top: _static/thumbnails/intro.png
+      :link: https://workbench.docs.pyansys.com/version/0.6
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Pythonic interface to Ansys Workbench
 
     .. grid-item-card:: Shared Components
       :img-top: _static/thumbnails/intro.png

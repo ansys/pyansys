@@ -5,15 +5,13 @@ build-backend = "flit_core.buildapi"
 [project]
 # Check https://flit.readthedocs.io/en/latest/pyproject_toml.html for all available sections
 name = "pyansys"
-version = "2024.2.0b2"
+version = "2024.2.3"
 description = "Pythonic interfaces to Ansys products"
 readme = "README.rst"
 requires-python = ">=3.9,<4"
 license = { file = "LICENSE" }
 authors = [{ name = "ANSYS, Inc.", email = "pyansys.support@ansys.com" }]
-maintainers = [
-    { name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com" },
-]
+maintainers = [{ name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com" }]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
@@ -28,68 +26,79 @@ classifiers = [
 
 dependencies = [
     "ansys-acp-core==0.1b2",
-    "ansys-additive-core==0.17.2",
-    "ansys-dpf-composites==0.4.1",
-    "ansys-dpf-core==0.12.0",
+    "ansys-additive-core==0.18.1",
+    "ansys-additive-widgets==0.2.1",
+    "ansys-conceptev-core==0.1.4",
+    "ansys-dpf-composites==0.5.0",
+    "ansys-dpf-core==0.12.2",
     "ansys-dpf-post==0.8.0",
     "ansys-dyna-core==0.4.15",
     "ansys-dynamicreporting-core==0.6.0",
-    "ansys-edb-core==0.1.4",
-    "ansys-fluent-core==0.20.0",
-    "ansys-geometry-core==0.5.0",
+    "ansys-edb-core==0.1.6",
+    "ansys-fluent-core==0.22.0",
+    "ansys-geometry-core==0.6.6",
     "ansys-hps-client==0.8.0",
-    "ansys-mapdl-core==0.68.1",
+    "ansys-mapdl-core==0.68.4",
     "ansys-math-core==0.1.5",
-    "ansys-mechanical-core==0.10.9",
-    "ansys-meshing-prime==0.5.1",
+    "ansys-mechanical-core==0.11.5",
+    "ansys-meshing-prime==0.6.2",
     "ansys-modelcenter-workflow==0.1.1",
-    "ansys-motorcad-core==0.4.3",
-    "ansys-openapi-common==1.5.1",
-    "ansys-optislang-core==0.6.3",
+    "ansys-motorcad-core==0.5.5",
+    "ansys-optislang-core==0.8.0",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.8.0",
-    "ansys-rocky-core==0.1.0",
+    "ansys-pyensight-core==0.8.8",
+    "ansys-rocky-core==0.2.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.6.0",
-    "ansys-simai-core==0.1.5",
-    "ansys-systemcoupling-core==0.4.1",
-    "ansys-turbogrid-core==0.4.0",
-    "pyaedt==0.8.9",
-    "pyedb==0.8.0",
-    "pygranta==2024.1.0",
-    "pytwin==0.6.0",
+    "ansys-simai-core==0.2.2",
+    "ansys-sound-core==0.1.3",
+    "ansys-systemcoupling-core==0.6.0",
+    "ansys-turbogrid-core==0.4.1",
+    "ansys-workbench-core==0.6.0",
+    "pyaedt==0.9.11",
+    "pyedb==0.23.0",
+    "pygranta==2024.2.0",
+    "pytwin==0.7.0",
 ]
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.53.0"]
-fluent-all = [
-    "ansys-fluent-visualization==0.9.0",
-    "ansys-fluent-parametric==0.10.0",
-]
+fluent-all = ["ansys-fluent-visualization==0.11.0"]
 tools = [
+    "ansys-materials-manager==0.2.3",
+    "ansys-tools-filetransfer==0.1.0",
+    "ansys-tools-local-product-launcher==0.1.0",
+    "ansys-tools-path==0.6.0",
+    # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
+    "ansys-tools-visualization-interface==0.4.0",
     "ansys-units==0.3.2",
-    "ansys-tools-path==0.5.2",
-    "pyansys-tools-report==0.7.0",
+    "pyansys-tools-report==0.7.3",
     "pyansys-tools-versioning==0.5.0",
+    "pyansys-tools-variableinterop==0.1.1",
 ]
 all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.53.0",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.9.0",
-    "ansys-fluent-parametric==0.10.0",
+    "ansys-fluent-visualization==0.11.0",
     # TOOLS
-    "ansys-units==0.3.2",
-    "ansys-tools-path==0.5.2",
+    "ansys-materials-manager==0.2.3",
+    "ansys-tools-filetransfer==0.1.0",
+    "ansys-tools-local-product-launcher==0.1.0",
+    "ansys-tools-path==0.6.0",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
-    "pyansys-tools-report==0.7.0",
+    "ansys-tools-visualization-interface==0.4.0",
+    "ansys-units==0.3.2",
+    "pyansys-tools-report==0.7.3",
     "pyansys-tools-versioning==0.5.0",
+    "pyansys-tools-variableinterop==0.1.1",
 ]
 doc = [
-    "Sphinx==7.2.6",
-    "ansys-sphinx-theme==0.15.2",
+    "Sphinx==8.0.2",
+    "ansys-sphinx-theme==1.0.5",
     "sphinx-copybutton==0.5.2",
-    "sphinx-design==0.5.0",
+    "sphinx-design==0.6.1",
+    "sphinxcontrib-mermaid==0.9.2",
 ]
 
 [project.urls]
@@ -106,5 +115,4 @@ line-length = 100
 profile = "black"
 force_sort_within_sections = true
 line_length = 100
-default_section = "THIRDPARTY"
 src_paths = ["doc", "src"]

@@ -46,30 +46,32 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 
 - `PyACP <https://acp.docs.pyansys.com/>`_: Pythonic interface to Ansys Composite PrepPost (ACP).
 - `PyAdditive <https://additive.docs.pyansys.com/>`_: Pythonic interface to the Ansys Additive service.
-- `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to AEDT (Ansys Electronics Desktop).
+- `PyAdditive Widgets <https://widgets.additive.docs.pyansys.com/>`_: PyAdditive widget toolkit to visualize additive parametric study results.
+- `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to Ansys Electronics Desktop (AEDT).
 - `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
-- `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to Ansys DPF (Data Processing Framework) for building more advanced and customized workflows.
+- `PyAnsys Sound <https://sound.docs.pyansys.com/>`_: Pythonic interface to Ansys Sound.
+- `PyConceptEV <https://conceptev.docs.pyansys.com/>`_: Pythonic interface to Ansys ConceptEV library.
+- `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows.
 - `PyDPF - Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
-- `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface for DPF's postprocessing of layered and short-fiber composite models.
-- `PyDyna <https://dyna.docs.pyansys.com/>`_: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver and postprocess its results.
+- `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface to postprocess layered and short-fiber composite models.
+- `PyDyna <https://dyna.docs.pyansys.com/>`_: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results.
 - `PyDynamicReporting <https://dynamicreporting.docs.pyansys.com/>`_: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports.
-- `PyEDB <https://edb.docs.pyansys.com/>`_: Pythonic interface to use the Electronics Database (EDB) client library.
-- `PyEDB - Core <https://edb.core.docs.pyansys.com/>`_: Pythonic interface to the Electronics Database (EDB).
+- `PyEDB <https://edb.docs.pyansys.com/>`_: Pythonic interface to the Ansys Electronics Database (EDB) client library.
+- `PyEDB - Core <https://edb.core.docs.pyansys.com/>`_: Pythonic interface to Ansys Electronics Database (EDB).
 - `PyEnSight <https://ensight.docs.pyansys.com/>`_: Pythonic interface to EnSight, the Ansys simulation postprocessor.
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
-- `PyFluent - Parametric <https://parametric.fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent parametric workflows.
 - `PyFluent - Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
 - `PyGranta <https://grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI services.
 - `PyHPS <https://hps.docs.pyansys.com/version/dev/>`_: A Python client for Ansys HPC Platform Services (HPS).
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APDL).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyMechanical <https://mechanical.docs.pyansys.com/>`_: Pythonic interface to Ansys Mechanical.
-- `PyModelCenter <https://modelcenter.docs.pyansys.com/version/stable/>`_: Pythonic interface for Ansys ModelCenter
+- `PyModelCenter <https://modelcenter.docs.pyansys.com/>`_: Pythonic interface for Ansys ModelCenter
 - `PyMotorCAD <https://motorcad.docs.pyansys.com/>`_: Pythonic interface to Ansys Motor-CAD.
-- `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys Optislang.
+- `PyOptislang <https://optislang.docs.pyansys.com/>`_: Pythonic interface to Ansys optislang.
 - `PyPIM <https://pypim.docs.pyansys.com/>`_: Pythonic interface to communicate with the Ansys PIM (Product Instance Management) API.
-- `PyPrimeMesh <https://prime.docs.pyansys.com/>`_: Pythonic interface to Ansys Prime Server, which delivers core Ansys meshing technology.
+- `PyPrimeMesh <https://prime.docs.pyansys.com/>`_: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers.
 - `PyRocky <https://rocky.docs.pyansys.com/>`_: Python library to communicate with Ansys Rocky using Rocky PrePost API.
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
@@ -77,15 +79,21 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
+- `PyWorkbench <https://workbench.docs.pyansys.com/>`_: Pythonic interface to Ansys Workbench.
 - `Shared Components <https://shared.docs.pyansys.com/>`_: Shared Ansys software components to enable package interoperability and minimize maintenance.
 
 Other tools delivered as part of the metapackage are:
 
+- `Ansys FileTransfer Tool <https://filetransfer.tools.docs.pyansys.com/>`_: Simple gRPC API tool for moving files between a client and a remote server.
+- `Ansys Local Product Launcher <https://local-product-launcher.tools.docs.pyansys.com/>`_: Python utility for launching Ansys products on a local machine and configuring their launch settings.
 - `Ansys Tools Path <https://path.tools.docs.pyansys.com/>`_: Library to locate Ansys products in a local machine.
 - `Ansys Tools Protobuf Compilation Helper <https://ansys.github.io/ansys-tools-protoc-helper/>`_: Utility library to compile ``.proto`` files to Python source when building the package wheel.
+- `Ansys Tools Visualization Interface <https://visualization-interface.tools.docs.pyansys.com/>`_: Python interface between PyAnsys libraries and plotting backends
 - `PyAnsys Tools Report <https://report.tools.docs.pyansys.com/>`_:  Tool for reporting your Python environment's package versions and hardware resources in a standardized way.
+- `PyAnsys Tools Variable Interop <https://variableinterop.docs.pyansys.com/>`_: Tool for defining basic variables, types, metadata, and values intended to provide interoperability between all products.
 - `PyAnsys Tools Versioning <https://versioning.tools.docs.pyansys.com/>`_: Tool for backwards and forwards server support.
 - `PyAnsys Units <https://units.docs.pyansys.com/>`_: Pythonic interface for units, unit systems, and unit conversions.
+- `PyMaterials Manager <https://manager.materials.docs.pyansys.com/>`_: Python package for unifying material management across the Ansys portfolio.
 
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page
@@ -96,9 +104,12 @@ By default, the PyAnsys metapackage installs these core modules:
 
 - `PyACP`_
 - `PyAdditive`_
+- `PyAdditive Widgets`_
 - `PyAEDT`_
 - `PyAnsys Geometry`_
 - `PyAnsys Math`_
+- `PyAnsys Sound`_
+- `PyConceptEV`_
 - `PyDPF - Core`_
 - `PyDPF - Post`_
 - `PyDPF - Composites`_
@@ -123,14 +134,15 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySystemCoupling`_
 - `PyTurboGrid`_
 - `PyTwin`_
+- `PyWorkbench`_
 - `Shared Components`_
 
 Additionally, the ``pyansys`` metapackage contains certain extra targets that
 can be installed upon request:
 
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
-- **fluent-all**: This target installs the core packages, `PyFluent - Parametric`_, and `PyFluent - Visualization`_.
-- **tools**: This target installs the core packages, `Ansys Tools Path`_, `Ansys Tools Protobuf Compilation Helper`_, `PyAnsys Tools Versioning`_, `PyAnsys Tools Report`_, and `PyAnsys Units`_.
+- **fluent-all**: This target installs the core packages, and `PyFluent - Visualization`_.
+- **tools**: This target installs the core packages, `Ansys FileTransfer Tool`_, `Ansys Local Product Launcher`_, `Ansys Tools Path`_, `Ansys Tools Protobuf Compilation Helper`_, `PyAnsys Tools Report`_, `PyAnsys Tools Variable Interop`_, `PyAnsys Tools Versioning`_, `PyAnsys Units`_, and `PyMaterials Manager`_.
 - **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation
@@ -176,7 +188,7 @@ the ``pyansys`` metapackage is downloading the wheelhouse archive from the
 `Releases Page <https://github.com/ansys/pyansys/releases>`_ for your corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install the ``pyansys`` metapackage from
-scratch on Windows, Linux, and MacOS from Python 3.9 to 3.11. You can install this on an isolated system with
+scratch on Windows, Linux, and MacOS from Python 3.9 to 3.12. You can install this on an isolated system with
 a fresh Python installation or on a virtual environment.
 
 For example, on Linux with Python 3.9, unzip the wheelhouse archive and install it with the following
@@ -184,7 +196,7 @@ commands:
 
 .. code:: bash
 
-    unzip pyansys-v2024.2.0b2-wheelhouse-Linux-3.9-core.zip wheelhouse
+    unzip pyansys-v2024.2.3-wheelhouse-Linux-3.9-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.9, unzip to a wheelhouse directory and then install using

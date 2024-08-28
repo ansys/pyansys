@@ -19,12 +19,14 @@ jobs:
       matrix:
         pyansys-projects:
           [
-            "ansys/openapi-common",
             "ansys/pyacp",
             "ansys/pyadditive",
+            "ansys/pyadditive-widgets",
             "ansys/pyaedt",
             "ansys/pyansys-geometry",
             "ansys/pyansys-math",
+            "ansys/pyansys-sound",
+            "ansys/pyconceptev",
             "ansys/pydpf-core",
             "ansys/pydpf-post",
             "ansys/pydpf-composites",
@@ -50,17 +52,22 @@ jobs:
             "ansys/pysystem-coupling",
             "ansys/pyturbogrid",
             "ansys/pytwin",
+            "ansys/pyworkbench",
             # MAPDL - ALL
             "ansys/pymapdl-reader",
             # FLUENT - ALL
-            "ansys/pyfluent-parametric",
             "ansys/pyfluent-visualization",
             # TOOLS
+            "ansys/ansys-tools-filetransfer",
+            "ansys/ansys-tools-local-product-launcher",
             "ansys/ansys-tools-path",
             "ansys/ansys-tools-protoc-helper",
+            "ansys/ansys-tools-visualization-interface",
             "ansys/pyansys-tools-report",
             "ansys/pyansys-tools-versioning",
             "ansys/pyansys-units",
+            "ansys/pyansys-tools-variableinterop",
+            "ansys/pymaterials-manager",
           ]
     steps:
       - uses: actions/checkout@v4

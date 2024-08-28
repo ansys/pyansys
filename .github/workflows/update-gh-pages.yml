@@ -17,7 +17,12 @@ jobs:
 
     - name: Replace 'version/stable' with 'version/dev' in index.html
       run: |
-        sed -i 's/version\/stable/version\/dev/g' index.html
+        # Replace landing page with the dev version
+        cp version/dev/index.html index.html
+        sed -i 's/href="\([^:"]*\)"/href="version\/dev\/\1"/g' index.html
+        sed -i 's/src="\([^:"]*\)"/src="version\/dev\/\1"/g' index.html
+        # Replace "version/stable" with "version/dev" in the sitemap.xml
+        sed -i 's/version\/stable/version\/dev/g' sitemap.xml
 
     - name: "Commit changes"
       uses: EndBug/add-and-commit@v9

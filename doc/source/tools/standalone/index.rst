@@ -25,6 +25,28 @@ General purpose
 
       PyAnsys cheat sheets for different libraries as quick reference guides
 
+    .. grid-item-card:: Ansys 5G Wizard
+      :img-top: ../../_static/thumbnails/5gwizard.png
+      :link: https://github.com/ansys/5G-Wizard
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Ansys project used to calculate Power Density or Cumulative Distribution Function
+
+Demo purposes
+-------------
+
+.. grid:: 3
+    :gutter: 3 3 4 4
+
+    .. grid-item-card:: API Eigen Example
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://apieigen.docs.ansys.com/
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Demonstrating the REST and gRPC communication protocols via client-server interactions
+
 Repository management
 ---------------------
 
@@ -63,11 +85,19 @@ Repository management
 
       Ansys tool intended to synchronize the content of two different repositories
 
+    .. grid-item-card:: Ansys ``all-members`` team
+      :img-top: ../../_static/thumbnails/intro.png
+      :link: https://github.com/ansys/ansys-all-members
+      :text-align: center
+      :class-title: pyansys-card-title
+
+      Repository for updating an organization's ``all-members`` team automatically
 
 Artificial intelligence
 -----------------------
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: Reviewer Bot
       :img-top: ../../_static/thumbnails/intro.png
@@ -83,6 +113,7 @@ Documentation
 -------------
 
 .. grid:: 3
+    :gutter: 3 3 4 4
 
     .. grid-item-card:: Ansys Sphinx Theme
       :img-top: ../../_static/thumbnails/intro.png
