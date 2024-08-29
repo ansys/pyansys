@@ -147,7 +147,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyMechanical
       :img-top: _static/thumbnails/pymechanical.png
-      :link: https://mechanical.docs.pyansys.com/version/0.11/index.html#background
+      :link: https://mechanical.docs.pyansys.com/version/0.11/index.html
       :text-align: center
       :class-title: pyansys-card-title
 
