@@ -78,6 +78,7 @@ instance/
 doc/_build/
 doc/**/_autosummary
 doc/source/examples/*
+doc/source/tmp_pyproject.toml
 
 # PyBuilder
 .pybuilder/
