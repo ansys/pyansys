@@ -14,6 +14,7 @@ it is now a collection of many Python packages for using Ansys products through 
    api
    examples
    supported_versions
+   package_versions/index
    tools/index
 
 .. grid:: 3
