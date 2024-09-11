@@ -122,7 +122,7 @@ def generate_rst_files(versions: list[str], tables: dict[str, list[str]]):
 
     GENERATED_DIR = Path(__file__).parent / "package_versions"
 
-    TEMPLATE_VERSIONS = """
+    VERSIONS_TEMPLATE = """
 Package versions in PyAnsys {{ version }}
 ============================{{ "=" * version|length }}
 
@@ -153,14 +153,14 @@ metapackage release.
     jinja_env = jinja2.Environment(loader=jinja2.BaseLoader())
 
     # Compile the template
-    template = jinja_env.from_string(TEMPLATE_VERSIONS)
+    template = jinja_env.from_string(VERSIONS_TEMPLATE)
 
     # Generate an .rst file for each version entry
-    for version, table_key in zip(versions, tables):
+    for version in versions:
         # Generate the content of the .rst file using the Jinja template
         rendered_content = template.render(
             version=version,
-            table=tables[table_key],
+            table=tables[version],
         )
 
         # Define the output path for the generated file
@@ -172,9 +172,7 @@ metapackage release.
 
     # Generate the index.rst file
     index_template = jinja_env.from_string(INDEX_TEMPLATE)
-    rendered_index = index_template.render(
-        versions=versions,
-    )
+    rendered_index = index_template.render(versions=versions)
 
     # Write the rendered content to the file
     output_filename = GENERATED_DIR / "index.rst"
@@ -182,7 +180,7 @@ metapackage release.
         f.write(rendered_index)
 
 
-def build_versions_table(branch: str = "main") -> list[str]:
+def build_versions_table(branch: str) -> list[str]:
     """Build the versions table for the PyAnsys libraries."""
     import requests
     import toml
@@ -275,13 +273,12 @@ def get_release_branches_in_metapackage():
             release_branches.append(branch.name)
             versions.append(branch.name.split("/")[-1])
 
-    # Sort the release branches and versions: main + from newest to oldest
+    # Sort the release branches and versions: from newest to oldest
     release_branches.reverse()
     versions.reverse()
-    release_branches = ["main"] + release_branches
-    versions = ["dev"] + versions
 
-    return release_branches, versions
+    # Return the dev/main branch and the release branches (and versions)
+    return ["main"] + release_branches, ["dev"] + versions
 
 
 # -------------------------------------------------------------------------
