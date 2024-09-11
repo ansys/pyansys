@@ -180,6 +180,33 @@ metapackage release.
         f.write(rendered_index)
 
 
+def get_documentation_link_from_pypi(library: str, version: str) -> str:
+    """Get the documentation link from PyPI for a specific library and version."""
+    import requests
+
+    # Get the PyPI metadata for the library
+    resp = requests.get(f"https://pypi.org/pypi/{library}/{version}/json")
+    metadata = resp.json()
+
+    # Get the documentation URL
+    default_url = f"https://pypi.org/project/{library}/{version}"
+    try:
+        project_urls = metadata["info"]["project_urls"]
+        url = None
+        for tag in [
+            "Documentation",
+            "Homepage",
+            "Source",
+        ]:  # Prefer Documentation, then Homepage, then Source...
+            url = project_urls.get(tag)
+            if url:
+                break
+
+        return url if url else default_url
+    except (KeyError, AttributeError):
+        return default_url
+
+
 def build_versions_table(branch: str) -> list[str]:
     """Build the versions table for the PyAnsys libraries."""
     import requests
@@ -235,20 +262,24 @@ def build_versions_table(branch: str) -> list[str]:
     for entry in list_pyansys_libraries:
         library, version = entry.split("==")
         pypi_link = f"https://pypi.org/project/{library}/{version}"
-        dict_table_entries[library] = f"`{version} <{pypi_link}>`__"
+        docs_link = get_documentation_link_from_pypi(library, version)
+        dict_table_entries[library] = (
+            f"`{library} <{docs_link}>`__",
+            f"`{version} <{pypi_link}>`__",
+        )
 
-    # Get the max length of the library names and links
-    max_length_key = max(len(library) for library in dict_table_entries.keys())
-    max_length_value = max(len(link) for link in dict_table_entries.values())
+    # Get the max length of the library and versions columns
+    libcol_size = max(len(entry[0]) for entry in dict_table_entries.values())
+    vercol_size = max(len(entry[1]) for entry in dict_table_entries.values())
 
     # Format the table entries and headers
     table = []
-    separator = f"+-{'-' * max_length_key}-+-{'-' * max_length_value}-+"
+    separator = f"+-{'-' * libcol_size}-+-{'-' * vercol_size}-+"
     table.append(separator)
-    table.append(f"| {'Library'.ljust(max_length_key)} | {'Version'.ljust(max_length_value)} |")
-    table.append(f"+={'=' * max_length_key}=+={'=' * max_length_value}=+")
-    for library, link in dict_table_entries.items():
-        table.append(f"| {library.ljust(max_length_key)} | {link.ljust(max_length_value)} |")
+    table.append(f"| {'Library'.ljust(libcol_size)} | {'Version'.ljust(vercol_size)} |")
+    table.append(f"+={'=' * libcol_size}=+={'=' * vercol_size}=+")
+    for library, entry in dict_table_entries.items():
+        table.append(f"| {entry[0].ljust(libcol_size)} | {entry[1].ljust(vercol_size)} |")
         table.append(separator)
 
     return table
