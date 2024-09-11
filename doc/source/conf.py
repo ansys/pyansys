@@ -97,7 +97,7 @@ with open("links.rst") as f:
 linkcheck_ignore = [
     r"https://www.ansys.com/.*",
     rf"https://pypi.org/project/pyansys/{switcher_version}.*",
-    r"https://ansunits.docs./*",
+    r"https://ansunits.docs.*",
 ]
 
 # User agent
