@@ -380,7 +380,7 @@ def resize_with_background(input_image_path, output_image_path, target_size):
         The target size of the output image as a tuple (width, height) in pixels.
     """
     from PIL import Image
-    
+
     # Open the input image
     img = Image.open(input_image_path).convert("RGBA")  # Ensure the image has an alpha channel
 
@@ -406,11 +406,13 @@ def resize_with_background(input_image_path, output_image_path, target_size):
     # Save the result to the output path
     background.save(output_image_path)
 
+
 ###########################################################################
 
-#--------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 # Sphinx build hooks
-#--------------------------------------------------------------------------
+# --------------------------------------------------------------------------
+
 
 def resize_thumbnails(app: sphinx.application.Sphinx):
     """Resize all images in the current directory to 640x480 pixels."""
@@ -423,6 +425,7 @@ def resize_thumbnails(app: sphinx.application.Sphinx):
         target_size = (640, 480)
         resize_with_background(image, image, target_size)
 
+
 def revert_thumbnails(app: sphinx.application.Sphinx, exception):
     """Resize all images in the current directory to 640x480 pixels."""
     from pathlib import Path
@@ -431,6 +434,7 @@ def revert_thumbnails(app: sphinx.application.Sphinx, exception):
 
     subprocess.run(["git", "checkout", "--", thumbnail_dir])
 
+
 def package_versions_table(app: sphinx.application.Sphinx):
     """Generate the package_versions directory."""
     branches, versions = get_release_branches_in_metapackage()
@@ -438,6 +442,7 @@ def package_versions_table(app: sphinx.application.Sphinx):
         versions,
         {version: build_versions_table(branch) for version, branch in zip(versions, branches)},
     )
+
 
 def setup(app: sphinx.application.Sphinx):
     """Run different hook functions during the documentation build.
