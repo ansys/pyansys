@@ -7,7 +7,7 @@ and tools.
 ## Resizing
 
 All thumbnails should be 640x480 pixels. This is the size that the documentation
-expects and will be resized to this size if it is not already. Resize takes place
+expects and is resized to this size if it is not already. Resize takes place
 through the execution of the ``resize.py`` script in this same folder.
 
 It is necessary to have the ``Pillow`` library installed to run the script. If
