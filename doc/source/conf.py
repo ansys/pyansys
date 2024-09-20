@@ -2,8 +2,10 @@
 
 from datetime import datetime
 import os
+import subprocess
 
 from ansys_sphinx_theme import ansys_favicon, convert_version_to_pymeilisearch, get_version_match
+import sphinx
 from sphinx.builders.latex import LaTeXBuilder
 
 from pyansys import __version__ as pyansys_version
@@ -359,3 +361,77 @@ generate_rst_files(
 )
 
 ###########################################################################
+
+
+def resize_with_background(input_image_path, output_image_path, target_size):
+    """Resize an image while maintaining aspect ratio and centering it on a white background.
+
+    Parameters
+    ----------
+    input_image_path : Path
+        The path to the input image.
+    output_image_path : Path
+        The path to save the output image.
+    target_size : tuple[int, int]
+        The target size of the output image as a tuple (width, height) in pixels.
+    """
+    from PIL import Image
+    
+    # Open the input image
+    img = Image.open(input_image_path).convert("RGBA")  # Ensure the image has an alpha channel
+
+    # Resize the image while maintaining aspect ratio
+    img.thumbnail(target_size, Image.LANCZOS)
+
+    # Create a white background of the target size
+    background = Image.new(
+        "RGBA", target_size, (255, 255, 255, 255)
+    )  # White background with no transparency
+
+    # Calculate the position to center the resized image on the background
+    img_w, img_h = img.size
+    bg_w, bg_h = background.size
+    offset = ((bg_w - img_w) // 2, (bg_h - img_h) // 2)
+
+    # Paste the resized image onto the white background
+    background.paste(img, offset, mask=img)  # Use the image's transparency as a mask
+
+    # Convert the image to RGB to remove the alpha channel (no transparency)
+    background = background.convert("RGB")
+
+    # Save the result to the output path
+    background.save(output_image_path)
+
+
+def resize_thumbnails(app: sphinx.application.Sphinx):
+    """Resize all images in the current directory to 640x480 pixels."""
+    # Process all images
+    from pathlib import Path
+
+    thumbnail_dir = Path(__file__).parent.absolute() / "_static" / "thumbnails"
+
+    for image in thumbnail_dir.glob("*.png"):
+        target_size = (640, 480)
+        resize_with_background(image, image, target_size)
+
+def revert_thumbnails(app: sphinx.application.Sphinx, exception):
+    """Resize all images in the current directory to 640x480 pixels."""
+    from pathlib import Path
+
+    thumbnail_dir = Path(__file__).parent.absolute() / "_static" / "thumbnails"
+
+    subprocess.run(["git", "checkout", "--", thumbnail_dir])
+
+def setup(app: sphinx.application.Sphinx):
+    """Run different hook functions during the documentation build.
+
+    Parameters
+    ----------
+    app : sphinx.application.Sphinx
+        Sphinx instance containing all the configuration for the documentation build.
+    """
+    # At the beginning of the build process - update the version in cheatsheet
+    app.connect("builder-inited", resize_thumbnails)
+
+    # Reverting the thumbnails - no local changes
+    app.connect("build-finished", revert_thumbnails)
