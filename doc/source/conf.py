@@ -208,6 +208,37 @@ def get_documentation_link_from_pypi(library: str, version: str) -> str:
         return default_url
 
 
+def pyansys_multiversion_docs_link(docs_link: str, version: str) -> str:
+    """Verify if the documentation link is a multi-version link.
+
+    Notes
+    -----
+    Checks if the documentation link is a multi-version link. If it is, it
+    tries to access the documentation for the specific version. In case of
+    failure, it returns the default link. This is done on a best effort basis.
+
+    """
+    import requests
+
+    # First, let's check it is an official PyAnsys documentation link
+    if "docs.pyansys.com" in docs_link:
+        # Clean the link
+        tmp_link = docs_link.split("docs.pyansys.com")[0] + "docs.pyansys.com"
+        # Get the major.minor version
+        major_minor_version = ".".join(version.split(".")[:2])
+
+        # Attempt to access the documentation for the specific version
+        try:
+            resp = requests.get(f"{tmp_link}/version/{major_minor_version}/index.html")
+            if resp.status_code == 200:
+                return f"{tmp_link}/version/{major_minor_version}"
+        except requests.exceptions.RequestException:
+            pass
+
+    # Fall back to the default link
+    return docs_link
+
+
 def build_versions_table(branch: str) -> list[str]:
     """Build the versions table for the PyAnsys libraries."""
     import requests
@@ -264,6 +295,10 @@ def build_versions_table(branch: str) -> list[str]:
         library, version = entry.split("==")
         pypi_link = f"https://pypi.org/project/{library}/{version}"
         docs_link = get_documentation_link_from_pypi(library, version)
+
+        # EXPERIMENTAL: Let's see if we can point to the actual version documentation...
+        docs_link = pyansys_multiversion_docs_link(docs_link, version)
+
         dict_table_entries[library] = (
             f"`{library} <{docs_link}>`__",
             f"`{version} <{pypi_link}>`__",
