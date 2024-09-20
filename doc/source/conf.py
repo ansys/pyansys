@@ -107,6 +107,12 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 
 ###########################################################################
+
+# -------------------------------------------------------------------------
+# Defining Sphinx build hooks
+# -------------------------------------------------------------------------
+
+###########################################################################
 # Generate the package_versions directory
 ###########################################################################
 # This section generates the package_versions directory in the doc/source
@@ -350,17 +356,15 @@ def get_release_branches_in_metapackage():
     return ["main"] + release_branches, ["dev"] + versions
 
 
-# -------------------------------------------------------------------------
-# Execute the previous functions to generate the package_versions directory
-# -------------------------------------------------------------------------
-
-branches, versions = get_release_branches_in_metapackage()
-generate_rst_files(
-    versions,
-    {version: build_versions_table(branch) for version, branch in zip(versions, branches)},
-)
-
 ###########################################################################
+# Adapting thumbnails to the documentation
+###########################################################################
+# This section adapts the thumbnails to the documentation. The thumbnails
+# are resized to 640x480 pixels and centered on a white background.
+#
+# The script resizes all images in the _static/thumbnails directory to 640x480
+# pixels and saves the resized images in the same directory. After the
+# documentation build, the script reverts the changes to the thumbnails.
 
 
 def resize_with_background(input_image_path, output_image_path, target_size):
@@ -402,6 +406,11 @@ def resize_with_background(input_image_path, output_image_path, target_size):
     # Save the result to the output path
     background.save(output_image_path)
 
+###########################################################################
+
+#--------------------------------------------------------------------------
+# Sphinx build hooks
+#--------------------------------------------------------------------------
 
 def resize_thumbnails(app: sphinx.application.Sphinx):
     """Resize all images in the current directory to 640x480 pixels."""
@@ -422,6 +431,14 @@ def revert_thumbnails(app: sphinx.application.Sphinx, exception):
 
     subprocess.run(["git", "checkout", "--", thumbnail_dir])
 
+def package_versions_table(app: sphinx.application.Sphinx):
+    """Generate the package_versions directory."""
+    branches, versions = get_release_branches_in_metapackage()
+    generate_rst_files(
+        versions,
+        {version: build_versions_table(branch) for version, branch in zip(versions, branches)},
+    )
+
 def setup(app: sphinx.application.Sphinx):
     """Run different hook functions during the documentation build.
 
@@ -432,6 +449,7 @@ def setup(app: sphinx.application.Sphinx):
     """
     # At the beginning of the build process - update the version in cheatsheet
     app.connect("builder-inited", resize_thumbnails)
+    app.connect("builder-inited", package_versions_table)
 
     # Reverting the thumbnails - no local changes
     app.connect("build-finished", revert_thumbnails)
