@@ -45,7 +45,7 @@ dependencies = [
     "ansys-motorcad-core==0.5.5",
     "ansys-optislang-core==0.8.0",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.8.10",
+    "ansys-pyensight-core==0.8.11",
     "ansys-rocky-core==0.2.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.7.1",
@@ -94,7 +94,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.0.2",
-    "ansys-sphinx-theme==1.0.10",
+    "ansys-sphinx-theme==1.0.11",
     "Jinja2 ==3.1.4",
     "PyGithub==2.4.0",
     "sphinx-copybutton==0.5.2",
