@@ -65,11 +65,10 @@ html_theme_options = {
         "version_match": switcher_version,
     },
     "check_switcher": False,
-    "use_meilisearch": {
-        "api_key": os.getenv("MEILISEARCH_PUBLIC_API_KEY", ""),
-        "index_uids": {
-            f"pyansys-v{meilisearch_version}": "PyAnsys",
-        },
+    "static_search": {
+        "threshold": 0.5,
+        "min_chars_for_search": 2,
+        "ignoreLocation": True,
     },
 }
 
