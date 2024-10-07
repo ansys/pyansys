@@ -54,7 +54,7 @@ dependencies = [
     "ansys-systemcoupling-core==0.8.0",
     "ansys-turbogrid-core==0.4.1",
     "ansys-workbench-core==0.6.0",
-    "pyaedt==0.10.3",
+    "pyaedt==0.11.0",
     "pyedb==0.29.0",
     "pygranta==2024.2.0",
     "pytwin==0.7.0",
