@@ -7,6 +7,13 @@ Examples for the different ``pyansys`` packages can be found in their specific d
 PyAnsys packages examples
 *************************
 
+.. note:: Combining PyAnsys libraries?
+
+    If you are using multiple PyAnsys libraries, you can find examples on how to combine them
+    in the `PyAnsys Workflows <https://workflows.docs.pyansys.com/>`_ page. This page contains
+    practical examples on how to chain different PyAnsys libraries together.
+
+
 .. grid:: 3
     :gutter: 3 3 4 4
 
