@@ -33,7 +33,7 @@ dependencies = [
     "ansys-dpf-post==0.9.0",
     "ansys-dyna-core==0.5.0",
     "ansys-dynamicreporting-core==0.7.0",
-    "ansys-edb-core==0.1.7",
+    "ansys-edb-core==0.1.8",
     "ansys-fluent-core==0.26.1",
     "ansys-geometry-core==0.7.4",
     "ansys-hps-client==0.9.0",
@@ -94,7 +94,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.1.3",
-    "ansys-sphinx-theme==1.1.3",
+    "ansys-sphinx-theme==1.1.5",
     "Jinja2 ==3.1.4",
     "Pillow==10.4.0",
     "PyGithub==2.4.0",
