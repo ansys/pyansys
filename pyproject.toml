@@ -33,7 +33,7 @@ dependencies = [
     "ansys-dpf-post==0.9.0",
     "ansys-dyna-core==0.5.0",
     "ansys-dynamicreporting-core==0.7.0",
-    "ansys-edb-core==0.1.8",
+    "ansys-edb-core==0.1.9",
     "ansys-fluent-core==0.26.1",
     "ansys-geometry-core==0.7.4",
     "ansys-hps-client==0.9.0",
@@ -71,7 +71,7 @@ tools = [
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.4.7",
     "ansys-units==0.3.2",
-    "pyansys-tools-report==0.8.0",
+    "pyansys-tools-report==0.8.1",
     "pyansys-tools-versioning==0.6.0",
     "pyansys-tools-variableinterop==0.1.1",
 ]
@@ -88,7 +88,7 @@ all = [
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.4.7",
     "ansys-units==0.3.2",
-    "pyansys-tools-report==0.8.0",
+    "pyansys-tools-report==0.8.1",
     "pyansys-tools-versioning==0.6.0",
     "pyansys-tools-variableinterop==0.1.1",
 ]
