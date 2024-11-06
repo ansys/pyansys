@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /version/2024.1
+Disallow: /version/2023.2
+
+Sitemap: https://docs.pyansys.com/sitemap.xml
