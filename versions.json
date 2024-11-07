@@ -1,0 +1,27 @@
+[
+  {
+    "name": "dev",
+    "version": "dev",
+    "url": "https://docs.pyansys.com/version/dev/"
+  },
+  {
+    "name": "2024.2 (stable)",
+    "version": "2024.2",
+    "url": "https://docs.pyansys.com/version/stable/"
+  },
+  {
+    "name": "2024.1",
+    "version": "2024.1",
+    "url": "https://docs.pyansys.com/version/2024.1/"
+  },
+  {
+    "name": "2023.2",
+    "version": "2023.2",
+    "url": "https://docs.pyansys.com/version/2023.2/"
+  },
+  {
+    "name": "Older versions",
+    "version": "N/A",
+    "url": "https://docs.pyansys.com/version/"
+  }
+]
