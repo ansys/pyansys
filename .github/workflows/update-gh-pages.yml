@@ -1,9 +1,11 @@
-
-name: Update index.html in GH Pages and generate global sitemap
+name: Custom GH Pages Post-processing
 
 on:
   workflow_dispatch:
   workflow_call:
+
+env:
+  MAIN_PYTHON_VERSION: '3.12'
 
 jobs:
   update-gh-pages:
@@ -13,145 +15,27 @@ jobs:
     - name: Install Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.13'
+        python-version: ${{ env.MAIN_PYTHON_VERSION }}
 
-    - name: Install dependencies
+    - name: Install Python dependencies
       shell: bash
       run: |
-
         python -m pip install --upgrade pip
-        pip install requests
+        python -m pip install requests
 
-    - name: Write script
-      shell: bash
-      run: |
+    - name: Checkout repository main branch
+      uses: actions/checkout@v4
+      with:
+        ref: main        
 
-        cat > /tmp/catsitemap.py << "EOF"
-        import re
-        import os
-        import xml.etree.ElementTree as ET
-        import requests
-        from xml.dom import minidom
-
-        def download_file(url: str, folder_path: str, file_name: str) -> None:
-            """_summary_
-
-            Args:
-                url (str): _description_
-                folder_path (str): _description_
-                file_name (str): _description_.
-            """
-
-            # Full path for the downloaded file
-            file_path = os.path.join(folder_path, file_name)
-
-            # Send the request
-            try:
-                response = requests.get(url, stream=True, timeout=10)
-            except:
-                print("Timed out while trying to get request")
-                raise
-
-            # Write the file content to the specified location
-            with open(file_path, mode='wb') as file:
-                for chunk in response.iter_content(chunk_size=8192):
-                    file.write(chunk)
-
-        def extract_urls_and_headers(url: str) -> tuple:
-            """This function extracts projects names and sitemap.xml urls for each project
-
-            Args:
-                url (str): link to the .rst file of the PyAnsys documentation landing page
-
-            Returns:
-                tuple: returns a tuple of list of project names and list of urls to projects' sitemap.xml files
-            """
-            try:
-                response = requests.get(url, timeout=10)
-            except requests.exceptions.Timeout:
-                print("Timed out while trying to get request")
-                raise
-
-            content = response.text
-
-            # Extract section headers and URLs (modify regex based on your needs)
-            project_names = [project_name.strip() for project_name in re.findall(r'\.\. grid-item-card:: ([\w\s-]+)', content)]
-            urls = re.findall(r':link: (https://[\w./-]+)', content)
-
-            # Modify URLs
-            updated_urls = [re.match(r"^(https:\/\/[^\/]+)", url).group(1) + "/sitemap.xml" for url in urls]
-
-            # Filter none existent URLS
-            valid_project_names = []
-            valid_urls = []
-            for index, url in enumerate(updated_urls):
-                if requests.get(url).status_code == 404:
-                    continue
-                else:
-                    valid_project_names.append(project_names[index])
-                    valid_urls.append(url)
-
-            return valid_project_names, valid_urls
-
-
-        def generate_sitemap_index(project_names: list, folder_path: str, file_name: str) -> None:
-            """This function generates a sitemap_index.xml file indexing other sitemap.xml files
-
-            Args:
-                url (list): list of the urls pointing to the location of the sitemaps
-                folder_path (str): _description_
-                file_name (str): _description_.
-            """
-
-            # Create the root element with namespace
-            sitemap_index = ET.Element("sitemapindex", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-
-
-            # Create sitemap elements for each URL
-            for project in project_names:
-                # Modify the url to point to the correct gh-pages directory
-                modified_url = f"https://docs.pyansys.com/sitemap/{project.lower().replace(" ", "")}_sitemap.xml"
-
-                sitemap = ET.SubElement(sitemap_index, "sitemap")
-                loc = ET.SubElement(sitemap, "loc")
-                loc.text = modified_url
-
-            # Format XML with indentation
-            rough_string = ET.tostring(sitemap_index, 'utf-8')
-            reparsed = minidom.parseString(rough_string)
-            pretty_xml = reparsed.toprettyxml(indent="  ")    
-
-            # Create the tree and write to XML file
-            file_path = os.path.join(folder_path, file_name)
-            with open(file_path, "w") as f:
-                f.write(pretty_xml)
-
-        # Inputs
-        folder_path = './sitemaps'
-        URL = "https://docs.pyansys.com/version/dev/_sources/index.rst.txt"
-
-        # Create folder
-        os.makedirs(folder_path, exist_ok=True)
-
-        # Get actual valid URLS and corresponding project names
-        project_names, project_urls = extract_urls_and_headers(URL)
-
-        # Generate global sitemaps
-        file_name = "globalsitemap.xml"
-        generate_sitemap_index(project_names, folder_path, file_name)
-
-        for index, url in enumerate(project_urls):
-            file_name = project_names[index].lower().replace(" ", "") + '_sitemap.xml'
-            download_file(url, folder_path, file_name)
-        EOF
-
-    - name: Run above script
+    - name: Copy tools folder to /tmp and run sitemap script
       working-directory: /tmp
       shell: bash
       run: |
-        python catsitemap.py
+        cp -r /home/runner/work/pyansys/pyansys/tools/ .
+        python ./tools/catsitemap.py
 
-    - name: Checkout repository
+    - name: Checkout repository gh-pages branch
       uses: actions/checkout@v4
       with:
         ref: gh-pages
@@ -168,6 +52,7 @@ jobs:
     - name: Move sitemaps/ to gh-pages root
       shell: bash
       run: |
+        rm -r /home/runner/work/pyansys/pyansys/sitemaps/
         mv /tmp/sitemaps/ /home/runner/work/pyansys/pyansys/
 
     - name: "Commit changes"
