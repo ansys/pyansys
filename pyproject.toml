@@ -42,7 +42,7 @@ dependencies = [
     "ansys-mechanical-core==0.11.9",
     "ansys-meshing-prime==0.6.2",
     "ansys-modelcenter-workflow==0.1.1",
-    "ansys-motorcad-core==0.6.1",
+    "ansys-motorcad-core==0.6.3",
     "ansys-optislang-core==0.9.0",
     "ansys-platform-instancemanagement==1.1.2",
     "ansys-pyensight-core==0.9.0",
