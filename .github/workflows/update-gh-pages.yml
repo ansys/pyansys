@@ -1,8 +1,10 @@
-name: Custom GH Pages Post-processing
+name: Custom Github pages post-processing
 
 on:
   workflow_dispatch:
-  workflow_call:
+  push:
+    tags:
+      - "*"
 
 env:
   MAIN_PYTHON_VERSION: '3.12'
@@ -18,19 +20,15 @@ jobs:
         python-version: ${{ env.MAIN_PYTHON_VERSION }}
 
     - name: Install Python dependencies
-      shell: bash
       run: |
         python -m pip install --upgrade pip
         python -m pip install requests
 
-    - name: Checkout repository main branch
+    - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        ref: main
 
     - name: Copy tools folder to /tmp and run sitemap script
       working-directory: /tmp
-      shell: bash
       run: |
         cp -r /home/runner/work/pyansys/pyansys/tools/ .
         python ./tools/catsitemap.py
@@ -50,10 +48,8 @@ jobs:
         sed -i 's/version\/stable/version\/dev/g' sitemap.xml
 
     - name: Move sitemaps/ to gh-pages root
-      shell: bash
       run: |
-        rm -r /home/runner/work/pyansys/pyansys/sitemaps/
-        mv /tmp/sitemaps/ /home/runner/work/pyansys/pyansys/
+        rm -rf sitemaps/ && mv /tmp/sitemaps/ .
 
     - name: "Commit changes"
       uses: EndBug/add-and-commit@v9
