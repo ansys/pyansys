@@ -26,7 +26,7 @@ jobs:
     - name: Checkout repository main branch
       uses: actions/checkout@v4
       with:
-        ref: main        
+        ref: main
 
     - name: Copy tools folder to /tmp and run sitemap script
       working-directory: /tmp

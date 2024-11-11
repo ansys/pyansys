@@ -1,8 +1,10 @@
 from pathlib import Path
-import xml.etree.ElementTree as ET
-import requests
 from xml.dom import minidom
+import xml.etree.ElementTree as ET
+
 from links import LINKS
+import requests
+
 
 def download_file(url: str, dest_path: Path) -> None:
     """Given the url of a sitemap file, this function downloads the file into destination
@@ -29,12 +31,13 @@ def download_file(url: str, dest_path: Path) -> None:
         raise e
 
     # Write the file content to the specified location
-    with open(dest_path, mode='wb') as file:
+    with open(dest_path, mode="wb") as file:
         for chunk in response.iter_content(chunk_size=8192):
             file.write(chunk)
 
+
 def extract_urls_and_headers(links_dict: dict) -> tuple:
-    """Processes the dictionary of project metadata, validates downloadable sitemaps, 
+    """Processes the dictionary of project metadata, validates downloadable sitemaps,
        returns valid lists of project names and sitemap urls in a tuple
 
     Parameters
@@ -77,7 +80,6 @@ def generate_sitemap_index(project_names: list, dest_path: Path) -> None:
     # Create the root element with namespace
     sitemap_index = ET.Element("sitemapindex", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
 
-
     # Create sitemap elements for each URL
     for project in project_names:
         # Modify the url to point to the correct gh-pages directory
@@ -88,7 +90,7 @@ def generate_sitemap_index(project_names: list, dest_path: Path) -> None:
         loc.text = modified_url
 
     # Format XML with indentation
-    rough_string = ET.tostring(sitemap_index, 'utf-8')
+    rough_string = ET.tostring(sitemap_index, "utf-8")
     reparsed = minidom.parseString(rough_string)
     pretty_xml = reparsed.toprettyxml(indent="  ")
 
@@ -100,7 +102,7 @@ def generate_sitemap_index(project_names: list, dest_path: Path) -> None:
 # Run the script
 if __name__ == "__main__":
     # Create path
-    folder_path = Path('.') / 'sitemaps'
+    folder_path = Path(".") / "sitemaps"
     folder_path.mkdir()
 
     # Get actual valid URLS and corresponding project names
@@ -111,5 +113,5 @@ if __name__ == "__main__":
     generate_sitemap_index(project_names, file_path)
 
     for index, url in enumerate(project_urls):
-        file_path = folder_path / (project_names[index] + '_sitemap.xml')
+        file_path = folder_path / (project_names[index] + "_sitemap.xml")
         download_file(url, file_path)
