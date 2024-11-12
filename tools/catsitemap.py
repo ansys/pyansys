@@ -52,12 +52,12 @@ def extract_urls_and_headers(links_dict: dict) -> tuple:
     valid_project_names = []
     valid_urls = []
     for project_name, url in links_dict.items():
-        # The form of url is "https://<before_docs>.docs.pyansys.com/version/stable
-        # where <before_docs> takes several forms depending on the pyansys project
+        # The form of url is "https://subdomain.docs.pyansys.com/version/stable
+        # where subdomain may contain nested subdomains depending on the project
         # see links.py from which LINKS was imported for examples
         if url is None:
             continue
-        # url is changed to "https://<before_docs>.docs.pyansys.com/sitemap.xml
+        # url is changed to "https://subdomain.docs.pyansys.com/sitemap.xml
         # this is general form of the link to the sitemap file of each project
         updated_url = url.split("docs.pyansys.com")[0] + "docs.pyansys.com/sitemap.xml"
         if requests.get(url).status_code == 404:
