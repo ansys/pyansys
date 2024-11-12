@@ -10,7 +10,11 @@ from sphinx.builders.latex import LaTeXBuilder
 
 from pyansys import __version__ as pyansys_version
 
-LaTeXBuilder.supported_image_types = ["image/png", "image/pdf", "image/svg+xml"]  # noqa: E501
+LaTeXBuilder.supported_image_types = [
+    "image/png",
+    "image/pdf",
+    "image/svg+xml",
+]  # noqa: E501
 
 project = "pyansys"
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
@@ -235,7 +239,9 @@ def pyansys_multiversion_docs_link(docs_link: str, version: str) -> str:
 
         # Attempt to access the documentation for the specific version
         try:
-            resp = requests.get(f"{tmp_link}/version/{major_minor_version}/index.html")
+            resp = requests.get(
+                f"{tmp_link}/version/{major_minor_version}/index.html"
+            )
             if resp.status_code == 200:
                 return f"{tmp_link}/version/{major_minor_version}"
         except requests.exceptions.RequestException:
@@ -253,7 +259,9 @@ def build_versions_table(branch: str) -> list[str]:
     TMP_FILE = "tmp_pyproject.toml"
 
     # Download the pyproject.toml file
-    resp = requests.get(f"https://raw.githubusercontent.com/ansys/pyansys/{branch}/pyproject.toml")
+    resp = requests.get(
+        f"https://raw.githubusercontent.com/ansys/pyansys/{branch}/pyproject.toml"
+    )
     with open("tmp_pyproject.toml", "wb") as f:
         f.write(resp.content)
 
@@ -264,7 +272,9 @@ def build_versions_table(branch: str) -> list[str]:
     # load the PyAnsys library versions
     list_pyansys_libraries: list[str] = []
     if "poetry" in pyproject_toml["tool"]:  # Assume poetry
-        for key, val in pyproject_toml["tool"]["poetry"]["dependencies"].items():
+        for key, val in pyproject_toml["tool"]["poetry"][
+            "dependencies"
+        ].items():
             # Ignore some libraries
             if key in ["python", "importlib-metadata", "Sphinx"]:
                 continue
@@ -282,11 +292,15 @@ def build_versions_table(branch: str) -> list[str]:
                 continue
     else:  # Assume flit
         list_pyansys_libraries += pyproject_toml["project"]["dependencies"]
-        list_pyansys_libraries += pyproject_toml["project"]["optional-dependencies"]["all"]
+        list_pyansys_libraries += pyproject_toml["project"][
+            "optional-dependencies"
+        ]["all"]
 
         # Ignore some libraries: in this case, only importlib-metadata
         list_pyansys_libraries = [
-            entry for entry in list_pyansys_libraries if not entry.startswith("importlib-metadata")
+            entry
+            for entry in list_pyansys_libraries
+            if not entry.startswith("importlib-metadata")
         ]
 
     # Delete the temporary file
@@ -318,10 +332,14 @@ def build_versions_table(branch: str) -> list[str]:
     table = []
     separator = f"+-{'-' * libcol_size}-+-{'-' * vercol_size}-+"
     table.append(separator)
-    table.append(f"| {'Library'.ljust(libcol_size)} | {'Version'.ljust(vercol_size)} |")
+    table.append(
+        f"| {'Library'.ljust(libcol_size)} | {'Version'.ljust(vercol_size)} |"
+    )
     table.append(f"+={'=' * libcol_size}=+={'=' * vercol_size}=+")
     for library, entry in dict_table_entries.items():
-        table.append(f"| {entry[0].ljust(libcol_size)} | {entry[1].ljust(vercol_size)} |")
+        table.append(
+            f"| {entry[0].ljust(libcol_size)} | {entry[1].ljust(vercol_size)} |"
+        )
         table.append(separator)
 
     return table
@@ -380,7 +398,9 @@ def resize_with_background(input_image_path, output_image_path, target_size):
     from PIL import Image
 
     # Open the input image
-    img = Image.open(input_image_path).convert("RGBA")  # Ensure the image has an alpha channel
+    img = Image.open(input_image_path).convert(
+        "RGBA"
+    )  # Ensure the image has an alpha channel
 
     # Resize the image while maintaining aspect ratio
     img.thumbnail(target_size, Image.LANCZOS)
@@ -396,7 +416,9 @@ def resize_with_background(input_image_path, output_image_path, target_size):
     offset = ((bg_w - img_w) // 2, (bg_h - img_h) // 2)
 
     # Paste the resized image onto the white background
-    background.paste(img, offset, mask=img)  # Use the image's transparency as a mask
+    background.paste(
+        img, offset, mask=img
+    )  # Use the image's transparency as a mask
 
     # Convert the image to RGB to remove the alpha channel (no transparency)
     background = background.convert("RGB")
@@ -438,7 +460,10 @@ def package_versions_table(app: sphinx.application.Sphinx):
     branches, versions = get_release_branches_in_metapackage()
     generate_rst_files(
         versions,
-        {version: build_versions_table(branch) for version, branch in zip(versions, branches)},
+        {
+            version: build_versions_table(branch)
+            for version, branch in zip(versions, branches)
+        },
     )
 
 

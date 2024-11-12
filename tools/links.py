@@ -140,7 +140,9 @@ def search_and_replace(link: str, new_link: str):
                 with open(file_path, "w") as f:
                     f.write(new_content)
 
-                print(f"Replaced '{link}' with '{new_link}' in file: {file_path}")  # noqa: E501
+                print(
+                    f"Replaced '{link}' with '{new_link}' in file: {file_path}"
+                )  # noqa: E501
 
 
 def released_docs():
@@ -166,7 +168,9 @@ def released_docs():
 
         if major is None and minor is None:
             # No match found for the link... throw message
-            print(f"Error retrieving minor/major version of {key}... Skipping.")  # noqa: E501
+            print(
+                f"Error retrieving minor/major version of {key}... Skipping."
+            )  # noqa: E501
             continue
 
         # Define the new link
