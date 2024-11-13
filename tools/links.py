@@ -8,16 +8,16 @@ Usage is very simple. Just run the script.
     python links.py
 """
 
-import os
+from pathlib import Path
 import re
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT_DIR = Path(Path(Path.resolve(Path(__file__)).parent).parent)
 """Root directory of the project relative to this file."""
 
-PYPROJECT_TOML_FILE = os.path.join(ROOT_DIR, "pyproject.toml")
+PYPROJECT_TOML_FILE = ROOT_DIR / "pyproject.toml"
 """Path to pyproject.toml file."""
 
-DOCS_DIRECTORY = os.path.join(ROOT_DIR, "doc", "source")
+DOCS_DIRECTORY = ROOT_DIR / "doc" / "source"
 """Path to the documentation source directory"""
 
 LINKS = {
@@ -98,7 +98,7 @@ def retrieve_major_minor(package: str):
         The major and minor versions of the package.
 
     """
-    with open(PYPROJECT_TOML_FILE, "r") as file:
+    with Path.open(PYPROJECT_TOML_FILE, "r") as file:
         content = file.read()
         pattern = r"\b" + re.escape(package) + r"==(\d+)\.(\d+)"
         match = re.search(pattern, content)
@@ -122,27 +122,25 @@ def search_and_replace(link: str, new_link: str):
         The link to replace the existing one.
     """
     # Traverse the docs directory
-    for root, _, files in os.walk(DOCS_DIRECTORY):
+    for root, _, files in Path.walk(DOCS_DIRECTORY):
         # Skip the _static subdirectory
-        if "_static" in root.split(os.sep):
+        if "_static" in root.parts:
             continue
 
         # Process the files
         for file in files:
-            file_path = os.path.join(root, file)
-            with open(file_path, "r") as f:
-                content = f.read()
+            file_path = root / file
+            with Path.open(file_path, "r") as file:
+                content = file.read()
 
             # Search for the link in the content, replace and save
             if link in content:
                 new_content = content.replace(link, new_link)
 
-                with open(file_path, "w") as f:
-                    f.write(new_content)
+                with Path.open(file_path, "w") as file:
+                    file.write(new_content)
 
-                print(
-                    f"Replaced '{link}' with '{new_link}' in file: {file_path}"
-                )  # noqa: E501
+                print(f"Replaced '{link}' with '{new_link}' in file: {file_path}")  # noqa: E501
 
 
 def released_docs():
@@ -168,9 +166,7 @@ def released_docs():
 
         if major is None and minor is None:
             # No match found for the link... throw message
-            print(
-                f"Error retrieving minor/major version of {key}... Skipping."
-            )  # noqa: E501
+            print(f"Error retrieving minor/major version of {key}... Skipping.")  # noqa: E501
             continue
 
         # Define the new link

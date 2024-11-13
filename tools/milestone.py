@@ -78,9 +78,7 @@ g = github.Github(TOKEN)
 repo = g.get_repo(REPOSITORY)
 
 # Get its last release - assuming semantic versioning (i.e. v0.1.0)
-major, minor, *_ = (
-    repo.get_latest_release().tag_name.replace("v", "").split(".")
-)  # noqa: E501
+major, minor, *_ = repo.get_latest_release().tag_name.replace("v", "").split(".")  # noqa: E501
 next_release = f"v{major}.{int(minor)+1}.0"
 
 # Get its available milestones
@@ -115,6 +113,4 @@ official Ansys Release, please close and delete this milestone."""
 
     print(f"Milestone was created at {REPOSITORY} with name {next_release}!")
 else:
-    print(
-        f"Milestone was already available at {REPOSITORY}... Skipping creation!"
-    )  # noqa: 501
+    print(f"Milestone was already available at {REPOSITORY}... Skipping creation!")  # noqa: 501
