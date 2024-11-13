@@ -6,6 +6,8 @@ on:
   push:
     tags:
       - "*"
+  schedule:
+    - cron: "* * */14 * *"
 
 env:
   MAIN_PYTHON_VERSION: '3.12'
