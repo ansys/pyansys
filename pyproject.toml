@@ -42,7 +42,7 @@ dependencies = [
     "ansys-mechanical-core==0.11.9",
     "ansys-meshing-prime==0.6.2",
     "ansys-modelcenter-workflow==0.1.1",
-    "ansys-motorcad-core==0.6.3",
+    "ansys-motorcad-core==0.6.4",
     "ansys-optislang-core==0.9.0",
     "ansys-platform-instancemanagement==1.1.2",
     "ansys-pyensight-core==0.9.0",
@@ -54,7 +54,7 @@ dependencies = [
     "ansys-systemcoupling-core==0.8.0",
     "ansys-turbogrid-core==0.4.1",
     "ansys-workbench-core==0.7.0",
-    "pyaedt==0.11.3",
+    "pyaedt==0.11.4",
     "pyedb==0.31.0",
     "pygranta==2024.2.0",
     "pytwin==0.7.0",
@@ -94,7 +94,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.1.3",
-    "ansys-sphinx-theme==1.2.0",
+    "ansys-sphinx-theme==1.2.1",
     "Jinja2 ==3.1.4",
     "Pillow==11.0.0",
     "PyGithub==2.5.0",
