@@ -103,7 +103,7 @@ def generate_sitemap_index(project_names: list, dest_path: Path) -> None:
 
 if __name__ == "__main__":
     # Create path
-    folder_path = Path(".") / "sitemaps"
+    folder_path = Path() / "sitemaps"
     folder_path.mkdir(parents=True, exist_ok=True)
 
     # Get actual valid URLS and corresponding project names
