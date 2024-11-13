@@ -7,7 +7,7 @@ on:
     tags:
       - "*"
   schedule:
-    - cron: "* * */14 * *"
+    - cron: "* 3 * * 5"
 
 env:
   MAIN_PYTHON_VERSION: '3.12'
