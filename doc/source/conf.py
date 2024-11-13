@@ -132,8 +132,8 @@ exclude_patterns = [
 # make rst_epilog a variable, so you can add other epilog parts to it
 rst_epilog = ""
 # Read link all targets from file
-with Path.open("links.rst") as f:
-    rst_epilog += f.read()
+with Path.open("links.rst") as file:
+    rst_epilog += file.read()
 
 # Ignore certain URLs
 linkcheck_ignore = [
@@ -183,8 +183,8 @@ def generate_rst_files(versions: list[str], tables: dict[str, list[str]]):
         output_filename = GENERATED_DIR / f"version_{version}.rst"
 
         # Write the rendered content to the file
-        with Path.open(output_filename, "w") as f:
-            f.write(rendered_content)
+        with Path.open(output_filename, "w") as file:
+            file.write(rendered_content)
 
     # Generate the index.rst file
     index_template = jinja_env.from_string(INDEX_TEMPLATE)
@@ -192,8 +192,8 @@ def generate_rst_files(versions: list[str], tables: dict[str, list[str]]):
 
     # Write the rendered content to the file
     output_filename = GENERATED_DIR / "index.rst"
-    with Path.open(output_filename, "w") as f:
-        f.write(rendered_index)
+    with Path.open(output_filename, "w") as file:
+        file.write(rendered_index)
 
 
 def get_documentation_link_from_pypi(library: str, version: str) -> str:
@@ -254,8 +254,8 @@ def build_versions_table(branch: str) -> list[str]:
     """Build the versions table for the PyAnsys libraries."""
     # Download the pyproject.toml file
     resp = requests.get(f"https://raw.githubusercontent.com/ansys/pyansys/{branch}/pyproject.toml")
-    with Path.open("tmp_pyproject.toml", "wb") as f:
-        f.write(resp.content)
+    with Path.open("tmp_pyproject.toml", "wb") as file:
+        file.write(resp.content)
 
     # Load the pyproject.toml file using TOML parser
     pyproject_toml = toml.load(TMP_FILE)

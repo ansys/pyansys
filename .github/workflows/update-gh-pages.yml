@@ -1,16 +1,40 @@
-
-name: Update index.html in GH Pages
+name: Custom Github pages post-processing
 
 on:
   workflow_dispatch:
   workflow_call:
+  push:
+    tags:
+      - "*"
+
+env:
+  MAIN_PYTHON_VERSION: '3.12'
 
 jobs:
   update-gh-pages:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.MAIN_PYTHON_VERSION }}
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install requests
+
     - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Copy tools folder to /tmp and run sitemap script
+      working-directory: /tmp
+      run: |
+        cp -r /home/runner/work/pyansys/pyansys/tools/ .
+        python ./tools/catsitemap.py
+
+    - name: Checkout repository gh-pages branch
       uses: actions/checkout@v4
       with:
         ref: gh-pages
@@ -24,8 +48,12 @@ jobs:
         # Replace "version/stable" with "version/dev" in the sitemap.xml
         sed -i 's/version\/stable/version\/dev/g' sitemap.xml
 
+    - name: Move sitemaps/ to gh-pages root
+      run: |
+        rm -rf sitemaps/ && mv /tmp/sitemaps/ .
+
     - name: "Commit changes"
       uses: EndBug/add-and-commit@v9
       with:
         default_author: github_actions
-        message: "update index.html"
+        message: "update index.html and sitemaps folder"
