@@ -46,7 +46,7 @@ metapackage release.
    {%- endfor %}
 """
 
-TMP_FILE = "tmp_pyproject.toml"
+TMP_FILE = Path("tmp_pyproject.toml")
 
 LaTeXBuilder.supported_image_types = [
     "image/png",
@@ -183,8 +183,7 @@ def generate_rst_files(versions: list[str], tables: dict[str, list[str]]):
         output_filename = GENERATED_DIR / f"version_{version}.rst"
 
         # Write the rendered content to the file
-        with Path.open(output_filename, "w") as file:
-            file.write(rendered_content)
+        output_filename.write_text(rendered_content, encoding="utf-8")
 
     # Generate the index.rst file
     index_template = jinja_env.from_string(INDEX_TEMPLATE)
@@ -192,8 +191,7 @@ def generate_rst_files(versions: list[str], tables: dict[str, list[str]]):
 
     # Write the rendered content to the file
     output_filename = GENERATED_DIR / "index.rst"
-    with Path.open(output_filename, "w") as file:
-        file.write(rendered_index)
+    output_filename.write_text(rendered_index, encoding="utf-8")
 
 
 def get_documentation_link_from_pypi(library: str, version: str) -> str:
@@ -254,7 +252,7 @@ def build_versions_table(branch: str) -> list[str]:
     """Build the versions table for the PyAnsys libraries."""
     # Download the pyproject.toml file
     resp = requests.get(f"https://raw.githubusercontent.com/ansys/pyansys/{branch}/pyproject.toml")
-    with Path.open("tmp_pyproject.toml", "wb") as file:
+    with TMP_FILE.open("wb") as file:
         file.write(resp.content)
 
     # Load the pyproject.toml file using TOML parser
@@ -290,7 +288,7 @@ def build_versions_table(branch: str) -> list[str]:
         ]
 
     # Delete the temporary file
-    Path.unlink(TMP_FILE)
+    TMP_FILE.unlink()
 
     # Build the table
     table = []

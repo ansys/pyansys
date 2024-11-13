@@ -123,7 +123,6 @@ docstring-code-line-length = "dynamic"
 [tool.ruff.lint]
 select = [
     "E",    # pycodestyle, see https://docs.astral.sh/ruff/rules/#pycodestyle-e-w
-    "D",    # pydocstyle, see https://docs.astral.sh/ruff/rules/#pydocstyle-d
     "F",    # pyflakes, see https://docs.astral.sh/ruff/rules/#pyflakes-f
     "I",    # isort, see https://docs.astral.sh/ruff/rules/#isort-i
     "N",    # pep8-naming, see https://docs.astral.sh/ruff/rules/#pep8-naming-n
@@ -136,10 +135,6 @@ ignore = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
-
-[tool.ruff.lint.per-file-ignores]
-# Ignore `F401` (import violations) in all `__init__.py` files.
-"__init__.py" = ["F401"]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true

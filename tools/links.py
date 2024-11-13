@@ -11,7 +11,7 @@ Usage is very simple. Just run the script.
 from pathlib import Path
 import re
 
-ROOT_DIR = Path(Path(Path.resolve(Path(__file__)).parent).parent)
+ROOT_DIR = Path(__file__).parent.parent
 """Root directory of the project relative to this file."""
 
 PYPROJECT_TOML_FILE = ROOT_DIR / "pyproject.toml"
@@ -98,7 +98,7 @@ def retrieve_major_minor(package: str):
         The major and minor versions of the package.
 
     """
-    with Path.open(PYPROJECT_TOML_FILE, "r") as file:
+    with PYPROJECT_TOML_FILE.open("r") as file:
         content = file.read()
         pattern = r"\b" + re.escape(package) + r"==(\d+)\.(\d+)"
         match = re.search(pattern, content)
@@ -122,7 +122,7 @@ def search_and_replace(link: str, new_link: str):
         The link to replace the existing one.
     """
     # Traverse the docs directory
-    for root, _, files in Path.walk(DOCS_DIRECTORY):
+    for root, _, files in DOCS_DIRECTORY.walk():
         # Skip the _static subdirectory
         if "_static" in root.parts:
             continue
@@ -130,15 +130,12 @@ def search_and_replace(link: str, new_link: str):
         # Process the files
         for file in files:
             file_path = root / file
-            with Path.open(file_path, "r") as file:
-                content = file.read()
+            content = file_path.read_text(encoding="utf-8")
 
             # Search for the link in the content, replace and save
             if link in content:
                 new_content = content.replace(link, new_link)
-
-                with Path.open(file_path, "w") as file:
-                    file.write(new_content)
+                file_path.write_text(new_content, "utf-8")
 
                 print(f"Replaced '{link}' with '{new_link}' in file: {file_path}")  # noqa: E501
 
