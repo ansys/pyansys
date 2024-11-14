@@ -21,6 +21,7 @@
 # SOFTWARE.
 
 """PyAnsys general package __init__ file."""
+
 import importlib.metadata as importlib_metadata
 
 # Read from the pyproject.toml
