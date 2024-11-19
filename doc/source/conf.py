@@ -133,11 +133,9 @@ exclude_patterns = [
 
 # make rst_epilog a variable, so you can add other epilog parts to it
 rst_epilog = ""
-cwd = Path.cwd()
 # Read link all targets from file
-with Path.open(
-    "/home/moe/code/directrepos/pyansys/doc/source/links.rst"
-) as file:  # Path.open("links.rst") as file:
+path_to_links_rst = Path(__file__).parent / "links.rst"
+with path_to_links_rst.open() as file:
     rst_epilog += file.read()
 
 # Ignore certain URLs
