@@ -13,6 +13,7 @@ import requests
 import sphinx
 from sphinx.builders.latex import LaTeXBuilder
 import toml
+import yaml
 
 from pyansys import __version__ as pyansys_version
 
@@ -69,11 +70,12 @@ html_short_title = html_title = "PyAnsys"
 # Favicon
 html_favicon = ansys_favicon
 
-extensions = [
-    "sphinx_design",
-    "sphinx_copybutton",
-    "sphinxcontrib.mermaid",
-]
+extensions = ["sphinx_design", "sphinx_copybutton", "sphinxcontrib.mermaid", "sphinx_jinja"]
+
+metadata_path = Path(__file__).parent.parent.parent / "projects-metadata.yaml"
+
+with metadata_path.open() as file:
+    jinja_contexts = {"project_context": {"projects": yaml.safe_load(file)}}
 
 html_context = {
     "github_user": "ansys",
@@ -131,8 +133,11 @@ exclude_patterns = [
 
 # make rst_epilog a variable, so you can add other epilog parts to it
 rst_epilog = ""
+cwd = Path.cwd()
 # Read link all targets from file
-with Path.open("links.rst") as file:
+with Path.open(
+    "/home/moe/code/directrepos/pyansys/doc/source/links.rst"
+) as file:  # Path.open("links.rst") as file:
     rst_epilog += file.read()
 
 # Ignore certain URLs
