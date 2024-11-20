@@ -21,7 +21,7 @@ PyAnsys packages examples
         {% for project, metadata in projects['projects'].items() %}
         .. grid-item-card:: {{ metadata['name'] }}
           :img-top: {{ metadata['thumbnail'] }}
-          :link: {{ metadata['examples'] }}
+          :link: {{ metadata['documentation']['examples'] }}
           :class-title: pyansys-card-title
 
         {% endfor %}

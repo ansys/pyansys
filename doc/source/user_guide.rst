@@ -18,7 +18,7 @@ PyAnsys packages user guides
         {% for project, metadata in projects['projects'].items() %}
         .. grid-item-card:: {{ metadata['name'] }}
           :img-top: {{ metadata['thumbnail'] }}
-          :link: {{ metadata['userguide'] }}
+          :link: {{ metadata['documentation']['user_guide'] }}
           :class-title: pyansys-card-title
 
         {% endfor %}

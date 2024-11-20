@@ -26,7 +26,7 @@ PyAnsys packages API reference
         {% for project, metadata in projects['projects'].items() %}
         .. grid-item-card:: {{ metadata['name'] }}
           :img-top: {{ metadata['thumbnail'] }}
-          :link: {{ metadata['api'] }}
+          :link: {{ metadata['documentation']['api'] }}
           :class-title: pyansys-card-title
 
         {% endfor %}

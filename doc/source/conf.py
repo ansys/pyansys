@@ -70,7 +70,12 @@ html_short_title = html_title = "PyAnsys"
 # Favicon
 html_favicon = ansys_favicon
 
-extensions = ["sphinx_design", "sphinx_copybutton", "sphinxcontrib.mermaid", "sphinx_jinja"]
+extensions = [
+    "sphinx_design",
+    "sphinx_copybutton",
+    "sphinxcontrib.mermaid",
+    "sphinx_jinja",
+]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 

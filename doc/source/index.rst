@@ -25,9 +25,9 @@ it is now a collection of many Python packages for using Ansys products through 
         {% for project, metadata in projects['projects'].items() %}
         .. grid-item-card:: {{ metadata['name'] }}
           :img-top: {{ metadata['thumbnail'] }}
-          :link: {{ metadata['documentation'] }}
+          :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
 
-          {{ metadata['intro'] }}
+          {{ metadata['documentation']['base_intro'] }}
 
         {% endfor %}
