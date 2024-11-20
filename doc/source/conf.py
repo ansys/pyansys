@@ -72,10 +72,11 @@ html_favicon = ansys_favicon
 
 extensions = ["sphinx_design", "sphinx_copybutton", "sphinxcontrib.mermaid", "sphinx_jinja"]
 
-metadata_path = Path(__file__).parent.parent.parent / "projects-metadata.yaml"
+metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
-with metadata_path.open() as file:
-    jinja_contexts = {"project_context": {"projects": yaml.safe_load(file)}}
+jinja_contexts = {
+    "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))}
+}
 
 html_context = {
     "github_user": "ansys",
@@ -131,12 +132,9 @@ exclude_patterns = [
     "links.rst",
 ]
 
-# make rst_epilog a variable, so you can add other epilog parts to it
-rst_epilog = ""
 # Read link all targets from file
 path_to_links_rst = Path(__file__).parent / "links.rst"
-with path_to_links_rst.open() as file:
-    rst_epilog += file.read()
+rst_epilog = path_to_links_rst.read_text(encoding="utf-8")
 
 # Ignore certain URLs
 linkcheck_ignore = [
