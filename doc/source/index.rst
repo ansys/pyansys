@@ -28,6 +28,6 @@ it is now a collection of many Python packages for using Ansys products through 
           :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
 
-          {{ metadata['documentation']['base_intro'] }}
+          {{ metadata['description'] }}
 
         {% endfor %}
