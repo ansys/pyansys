@@ -34,7 +34,7 @@ dependencies = [
     "ansys-dyna-core==0.6.1",
     "ansys-dynamicreporting-core==0.8.0",
     "ansys-edb-core==0.1.9",
-    "ansys-fluent-core==0.26.1",
+    "ansys-fluent-core==0.27.0",
     "ansys-geometry-core==0.7.6",
     "ansys-hps-client==0.9.1",
     "ansys-mapdl-core==0.68.6",
@@ -42,7 +42,7 @@ dependencies = [
     "ansys-mechanical-core==0.11.10",
     "ansys-meshing-prime==0.6.2",
     "ansys-modelcenter-workflow==0.1.1",
-    "ansys-motorcad-core==0.6.5",
+    "ansys-motorcad-core==0.7.0",
     "ansys-optislang-core==0.9.0",
     "ansys-platform-instancemanagement==1.1.2",
     "ansys-pyensight-core==0.9.2",
@@ -62,7 +62,7 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.54.2"]
-fluent-all = ["ansys-fluent-visualization==0.14.0"]
+fluent-all = ["ansys-fluent-visualization==0.15.0"]
 tools = [
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.0",
@@ -70,7 +70,7 @@ tools = [
     "ansys-tools-path==0.7.0",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.6.0",
-    "ansys-units==0.3.3",
+    "ansys-units==0.3.4",
     "pyansys-tools-report==0.8.1",
     "pyansys-tools-versioning==0.6.0",
     "pyansys-tools-variableinterop==0.1.1",
@@ -79,7 +79,7 @@ all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.54.2",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.14.0",
+    "ansys-fluent-visualization==0.15.0",
     # TOOLS
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.0",
@@ -87,7 +87,7 @@ all = [
     "ansys-tools-path==0.7.0",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.6.0",
-    "ansys-units==0.3.3",
+    "ansys-units==0.3.4",
     "pyansys-tools-report==0.8.1",
     "pyansys-tools-versioning==0.6.0",
     "pyansys-tools-variableinterop==0.1.1",
