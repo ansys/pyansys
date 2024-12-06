@@ -2,73 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://filetransfer.tools.docs.pyansys.com</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/contribute</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/_static/webpack-macros.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/_static/webpack-macros</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/index.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/usage</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/index.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/search</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.upload_file.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/index</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.download_file.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.download_file</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.from_server_address.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.from_server_address</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/contribute.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.upload_file</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/index</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/genindex</loc>
-    <lastmod>2024-02-29T12:21:40+00:00</lastmod>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/usage.html</loc>
+    <lastmod>2024-12-04T15:50:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
