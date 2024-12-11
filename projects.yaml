@@ -122,7 +122,7 @@ projects:
       api: https://composites.dpf.docs.pyansys.com/version/stable/api/index.html
 
   pydyna:
-    name: PyDyna
+    name: PyDYNA
     repository: https://github.com/ansys/pydyna
     description: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results
     thumbnail: _static/thumbnails/pydyna.png
