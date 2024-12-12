@@ -55,7 +55,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows.
 - `PyDPF - Post <https://post.docs.pyansys.com/>`_: Pythonic interface to access and post process Ansys solver result files.
 - `PyDPF - Composites <https://composites.dpf.docs.pyansys.com/>`_: Pythonic interface to postprocess layered and short-fiber composite models.
-- `PyDyna <https://dyna.docs.pyansys.com/>`_: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results.
+- `PyDYNA <https://dyna.docs.pyansys.com/>`_: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results.
 - `PyDynamicReporting <https://dynamicreporting.docs.pyansys.com/>`_: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports.
 - `PyEDB <https://edb.docs.pyansys.com/>`_: Pythonic interface to the Ansys Electronics Database (EDB) client library.
 - `PyEDB - Core <https://edb.core.docs.pyansys.com/>`_: Pythonic interface to Ansys Electronics Database (EDB).
@@ -113,7 +113,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyDPF - Core`_
 - `PyDPF - Post`_
 - `PyDPF - Composites`_
-- `PyDyna`_
+- `PyDYNA`_
 - `PyDynamicReporting`_
 - `PyEDB`_
 - `PyEDB - Core`_
