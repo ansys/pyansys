@@ -51,13 +51,14 @@ jobs:
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
+          whitelist-license-check: "attrs" # This has MIT license but fails the check
 
   docs-style:
     name: Documentation Style Check
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@v7
+        uses: ansys/actions/doc-style@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -127,12 +128,13 @@ jobs:
 
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@v7
+        uses: ansys/actions/build-wheelhouse@v8
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           operating-system: ${{ runner.os }}
           python-version: ${{ matrix.python-version }}
           target: "all"
+          whitelist-license-check: "attrs" # This has MIT license but fails the check
 
       - name: List dependencies (pip freeze)
         run: |

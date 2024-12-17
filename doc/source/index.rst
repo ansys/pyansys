@@ -42,7 +42,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
-      :link: https://aedt.docs.pyansys.com/version/0.9
+      :link: https://aedt.docs.pyansys.com/version/0.12
       :class-title: pyansys-card-title
 
       Pythonic interface to Ansys Electronics Desktop (AEDT)
@@ -112,14 +112,14 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.23
+      :link: https://edb.docs.pyansys.com/version/0.34
       :class-title: pyansys-card-title
 
       Pythonic interface to the Ansys Electronics Database (EDB) client library
 
     .. grid-item-card:: PyEDB - Core
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.23
+      :link: https://edb.docs.pyansys.com/version/0.34
       :class-title: pyansys-card-title
 
       Pythonic interface to Ansys Electronics Database (EDB)

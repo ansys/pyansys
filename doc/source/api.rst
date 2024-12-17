@@ -38,7 +38,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
-      :link: https://aedt.docs.pyansys.com/version/0.9/API/index.html
+      :link: https://aedt.docs.pyansys.com/version/0.12/API/index.html
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyAnsys Geometry
@@ -88,7 +88,7 @@ PyAnsys packages API reference
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.23/api/index.html
+      :link: https://edb.docs.pyansys.com/version/0.34/api/index.html
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyEDB - Core
