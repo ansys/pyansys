@@ -77,7 +77,7 @@ PyAnsys packages examples
 
     .. grid-item-card:: PyEDB
       :img-top: _static/thumbnails/pyedb.png
-      :link: https://edb.docs.pyansys.com/version/0.23/examples/index.html
+      :link: https://edb.docs.pyansys.com/version/0.34/examples/index.html
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyEDB - Core
