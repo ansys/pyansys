@@ -30,7 +30,7 @@ PyAnsys packages user guides
 
     .. grid-item-card:: PyAEDT
       :img-top: _static/thumbnails/pyaedt.png
-      :link: https://aedt.docs.pyansys.com/version/0.9/User_guide/index.html
+      :link: https://aedt.docs.pyansys.com/version/0.12/User_guide/index.html
       :class-title: pyansys-card-title
 
     .. grid-item-card:: PyAnsys Geometry
