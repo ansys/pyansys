@@ -25,4 +25,4 @@ pdf:
 	(test -f $(BUILDDIR)/latex/pyansys.pdf && echo pdf exists) || exit 1
 
 clean:
-	rm -rf build
+	rm -rf $(BUILDDIR)

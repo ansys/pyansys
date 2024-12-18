@@ -2,22 +2,64 @@
 
 from datetime import datetime
 import os
+from pathlib import Path
 import subprocess
 
-from ansys_sphinx_theme import ansys_favicon, convert_version_to_pymeilisearch, get_version_match
+from ansys_sphinx_theme import ansys_favicon, get_version_match
+import github
+import jinja2
+from PIL import Image
+import requests
 import sphinx
 from sphinx.builders.latex import LaTeXBuilder
+import toml
+import yaml
 
 from pyansys import __version__ as pyansys_version
 
-LaTeXBuilder.supported_image_types = ["image/png", "image/pdf", "image/svg+xml"]  # noqa: E501
+# Declare constants
+GENERATED_DIR = Path(__file__).parent / "package_versions"
+
+VERSIONS_TEMPLATE = """
+Package versions in PyAnsys {{ version }}
+============================{{ "=" * version|length }}
+
+The PyAnsys packages delivered in version {{ version }} are:
+{{ ' ' }}
+{%- for entry in table %}
+{{ entry }}
+{%- endfor %}
+"""
+
+INDEX_TEMPLATE = """
+Package versions
+================
+
+Users can find below the list of PyAnsys packages available in the various
+PyAnsys metapackages. The tables shows the package versions available in each
+metapackage release.
+
+.. toctree::
+   :maxdepth: 3
+   {{ ' ' }}
+   {%- for version in versions %}
+   version_{{ version }}
+   {%- endfor %}
+"""
+
+TMP_FILE = Path("tmp_pyproject.toml")
+
+LaTeXBuilder.supported_image_types = [
+    "image/png",
+    "image/pdf",
+    "image/svg+xml",
+]  # noqa: E501
 
 project = "pyansys"
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = "ANSYS Inc."
 cname = os.getenv("DOCUMENTATION_CNAME", default="nocname.com")
 switcher_version = get_version_match(pyansys_version)
-meilisearch_version = convert_version_to_pymeilisearch(pyansys_version)
 
 # get the PyAnsys version
 release = version = pyansys_version
@@ -32,7 +74,14 @@ extensions = [
     "sphinx_design",
     "sphinx_copybutton",
     "sphinxcontrib.mermaid",
+    "sphinx_jinja",
 ]
+
+metadata = Path(__file__).parent.parent.parent / "projects.yaml"
+
+jinja_contexts = {
+    "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))}
+}
 
 html_context = {
     "github_user": "ansys",
@@ -65,11 +114,10 @@ html_theme_options = {
         "version_match": switcher_version,
     },
     "check_switcher": False,
-    "use_meilisearch": {
-        "api_key": os.getenv("MEILISEARCH_PUBLIC_API_KEY", ""),
-        "index_uids": {
-            f"pyansys-v{meilisearch_version}": "PyAnsys",
-        },
+    "static_search": {
+        "threshold": 0.5,
+        "min_chars_for_search": 2,
+        "ignoreLocation": True,
     },
 }
 
@@ -89,11 +137,9 @@ exclude_patterns = [
     "links.rst",
 ]
 
-# make rst_epilog a variable, so you can add other epilog parts to it
-rst_epilog = ""
 # Read link all targets from file
-with open("links.rst") as f:
-    rst_epilog += f.read()
+path_to_links_rst = Path(__file__).parent / "links.rst"
+rst_epilog = path_to_links_rst.read_text(encoding="utf-8")
 
 # Ignore certain URLs
 linkcheck_ignore = [
@@ -125,39 +171,6 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 def generate_rst_files(versions: list[str], tables: dict[str, list[str]]):
     """Generate the .rst files for the package versions."""
-    from pathlib import Path
-
-    import jinja2
-
-    GENERATED_DIR = Path(__file__).parent / "package_versions"
-
-    VERSIONS_TEMPLATE = """
-Package versions in PyAnsys {{ version }}
-============================{{ "=" * version|length }}
-
-The PyAnsys packages delivered in version {{ version }} are:
-{{ ' ' }}
-{%- for entry in table %}
-{{ entry }}
-{%- endfor %}
-"""
-
-    INDEX_TEMPLATE = """
-Package versions
-================
-
-Users can find below the list of PyAnsys packages available in the various
-PyAnsys metapackages. The tables shows the package versions available in each
-metapackage release.
-
-.. toctree::
-   :maxdepth: 3
-   {{ ' ' }}
-   {%- for version in versions %}
-   version_{{ version }}
-   {%- endfor %}
-"""
-
     # Create Jinja2 environment
     jinja_env = jinja2.Environment(loader=jinja2.BaseLoader())
 
@@ -176,8 +189,7 @@ metapackage release.
         output_filename = GENERATED_DIR / f"version_{version}.rst"
 
         # Write the rendered content to the file
-        with open(output_filename, "w") as f:
-            f.write(rendered_content)
+        output_filename.write_text(rendered_content, encoding="utf-8")
 
     # Generate the index.rst file
     index_template = jinja_env.from_string(INDEX_TEMPLATE)
@@ -185,14 +197,11 @@ metapackage release.
 
     # Write the rendered content to the file
     output_filename = GENERATED_DIR / "index.rst"
-    with open(output_filename, "w") as f:
-        f.write(rendered_index)
+    output_filename.write_text(rendered_index, encoding="utf-8")
 
 
 def get_documentation_link_from_pypi(library: str, version: str) -> str:
     """Get the documentation link from PyPI for a specific library and version."""
-    import requests
-
     # Get the PyPI metadata for the library
     resp = requests.get(f"https://pypi.org/pypi/{library}/{version}/json")
     metadata = resp.json()
@@ -226,8 +235,6 @@ def pyansys_multiversion_docs_link(docs_link: str, version: str) -> str:
     failure, it returns the default link. This is done on a best effort basis.
 
     """
-    import requests
-
     # First, let's check it is an official PyAnsys documentation link
     if "docs.pyansys.com" in docs_link:
         # Clean the link
@@ -249,15 +256,10 @@ def pyansys_multiversion_docs_link(docs_link: str, version: str) -> str:
 
 def build_versions_table(branch: str) -> list[str]:
     """Build the versions table for the PyAnsys libraries."""
-    import requests
-    import toml
-
-    TMP_FILE = "tmp_pyproject.toml"
-
     # Download the pyproject.toml file
     resp = requests.get(f"https://raw.githubusercontent.com/ansys/pyansys/{branch}/pyproject.toml")
-    with open("tmp_pyproject.toml", "wb") as f:
-        f.write(resp.content)
+    with TMP_FILE.open("wb") as file:
+        file.write(resp.content)
 
     # Load the pyproject.toml file using TOML parser
     pyproject_toml = toml.load(TMP_FILE)
@@ -292,7 +294,7 @@ def build_versions_table(branch: str) -> list[str]:
         ]
 
     # Delete the temporary file
-    os.remove(TMP_FILE)
+    TMP_FILE.unlink()
 
     # Build the table
     table = []
@@ -331,8 +333,6 @@ def build_versions_table(branch: str) -> list[str]:
 
 def get_release_branches_in_metapackage():
     """Retrieve the release branches in the PyAnsys metapackage."""
-    import github
-
     # Get the PyAnsys metapackage repository
     g = github.Github(os.getenv("GITHUB_TOKEN", None))
     github_repo = g.get_repo("ansys/pyansys")
@@ -379,8 +379,6 @@ def resize_with_background(input_image_path, output_image_path, target_size):
     target_size : tuple[int, int]
         The target size of the output image as a tuple (width, height) in pixels.
     """
-    from PIL import Image
-
     # Open the input image
     img = Image.open(input_image_path).convert("RGBA")  # Ensure the image has an alpha channel
 
@@ -417,7 +415,6 @@ def resize_with_background(input_image_path, output_image_path, target_size):
 def resize_thumbnails(app: sphinx.application.Sphinx):
     """Resize all images in the current directory to 640x480 pixels."""
     # Process all images
-    from pathlib import Path
 
     thumbnail_dir = Path(__file__).parent.absolute() / "_static" / "thumbnails"
 
@@ -428,8 +425,6 @@ def resize_thumbnails(app: sphinx.application.Sphinx):
 
 def revert_thumbnails(app: sphinx.application.Sphinx, exception):
     """Resize all images in the current directory to 640x480 pixels."""
-    from pathlib import Path
-
     thumbnail_dir = Path(__file__).parent.absolute() / "_static" / "thumbnails"
 
     subprocess.run(["git", "checkout", "--", thumbnail_dir])

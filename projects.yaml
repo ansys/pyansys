@@ -1,0 +1,408 @@
+projects:
+
+  pyacp:
+    name: PyACP
+    repository: https://github.com/ansys/pyacp
+    description: Pythonic interface to Ansys Composite PrepPost (ACP)
+    thumbnail: _static/thumbnails/pyacp.png
+    documentation:
+      base: https://acp.docs.pyansys.com/version/dev
+      user_guide: https://acp.docs.pyansys.com/version/dev/user_guide/index.html
+      examples: https://acp.docs.pyansys.com/version/dev/examples/index.html
+      api: https://acp.docs.pyansys.com/version/dev/api/index.html
+
+  pyadditive:
+    name: PyAdditive
+    repository: https://github.com/ansys/pyadditive
+    description: Pythonic interface to the Ansys Additive service
+    thumbnail: _static/thumbnails/intro.png
+    documentation:
+      base: https://additive.docs.pyansys.com/version/stable
+      user_guide: https://additive.docs.pyansys.com/version/stable/getting_started/index.html
+      examples: https://additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
+      api: https://additive.docs.pyansys.com/version/stable/api/index.html
+
+  pyadditive-widgets:
+    name: PyAdditive Widgets
+    repository: https://github.com/ansys/pyadditive-widgets
+    description: PyAdditive widget toolkit to visualize additive parametric study results
+    thumbnail: _static/thumbnails/intro.png
+    documentation:
+      base: https://widgets.additive.docs.pyansys.com/version/stable
+      user_guide: https://widgets.additive.docs.pyansys.com/version/stable/getting_started/index.html
+      examples: https://widgets.additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
+      api: https://widgets.additive.docs.pyansys.com/version/stable/api/index.html
+
+  pyaedt:
+    name: PyAEDT
+    repository: https://github.com/ansys/pyaedt
+    description: Pythonic interface to Ansys Electronics Desktop (AEDT)
+    thumbnail: _static/thumbnails/pyaedt.png
+    documentation:
+      base: https://aedt.docs.pyansys.com/version/stable
+      user_guide: https://aedt.docs.pyansys.com/version/stable/User_guide/index.html
+      examples: https://examples.aedt.docs.pyansys.com/version/dev/index.html
+      api: https://aedt.docs.pyansys.com/version/stable/API/index.html
+
+  pyansys-geometry:
+    name: PyAnsys Geometry
+    repository: https://github.com/ansys/pyansys-geometry
+    description: Pythonic interface to the Ansys Geometry service
+    thumbnail: _static/thumbnails/pyansys-geometry.png
+    documentation:
+      base: https://geometry.docs.pyansys.com/version/stable
+      user_guide: https://geometry.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://geometry.docs.pyansys.com/version/stable/examples.html
+      api: https://geometry.docs.pyansys.com/version/stable/api/index.html
+
+  pyansys-math:
+    name: PyAnsys Math
+    repository: https://github.com/ansys/pyansys-math
+    description: Pythonic interface to PyAnsys Math libraries
+    thumbnail: _static/thumbnails/pyansys-math.png
+    documentation:
+      base: https://math.docs.pyansys.com/version/stable
+      user_guide: https://math.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://math.docs.pyansys.com/version/stable/examples/index.html
+      api: https://math.docs.pyansys.com/version/stable/api/index.html
+
+  pyansys-sound:
+    name: PyAnsys Sound
+    repository: https://github.com/ansys/pyansys-sound
+    description: Pythonic interface to Ansys Sound
+    thumbnail: _static/thumbnails/pyansys-sound.png
+    documentation:
+      base: https://sound.docs.pyansys.com/version/stable
+      user_guide: https://sound.docs.pyansys.com/version/stable/user_guide.html
+      examples: https://sound.docs.pyansys.com/version/stable/examples/index.html
+      api: https://sound.docs.pyansys.com/version/stable/api/index.html
+
+  pyconceptev:
+    name: PyConceptEV
+    repository: https://github.com/ansys/pyconceptev
+    description: Pythonic interface to Ansys ConceptEV library
+    thumbnail: _static/thumbnails/pyconceptev.png
+    documentation:
+      base: https://conceptev.docs.pyansys.com/version/stable
+      user_guide: https://conceptev.docs.pyansys.com/version/stable/user_guide.html
+      examples: https://conceptev.docs.pyansys.com/version/stable/examples/index.html
+      api: https://conceptev.docs.pyansys.com/version/stable/api_ref.html
+
+  pydpf-core:
+    name: PyDPF - Core
+    repository: https://github.com/ansys/pydpf-core
+    description: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows
+    thumbnail: _static/thumbnails/pydpf-core.png
+    documentation:
+      base: https://dpf.docs.pyansys.com/version/stable
+      user_guide: https://dpf.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://dpf.docs.pyansys.com/version/stable/examples/index.html
+      api: https://dpf.docs.pyansys.com/version/stable/api/index.html
+
+  pydpf-post:
+    name: PyDPF - Post
+    repository: https://github.com/ansys/pydpf-post
+    description: Pythonic interface to access and postprocess Ansys solver result files
+    thumbnail: _static/thumbnails/pydpf-post.png
+    documentation:
+      base: https://post.docs.pyansys.com/version/stable
+      user_guide: https://post.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://post.docs.pyansys.com/version/stable/examples/index.html
+      api: https://post.docs.pyansys.com/version/stable/api/index.html
+
+  pydpf-composites:
+    name: PyDPF - Composites
+    repository: https://github.com/ansys/pydpf-composites
+    description: Pythonic interface to postprocess layered and short-fiber composite models
+    thumbnail: _static/thumbnails/pydpf-composites.png
+    documentation:
+      base: https://composites.dpf.docs.pyansys.com/version/stable
+      user_guide: https://composites.dpf.docs.pyansys.com/version/stable/intro.html
+      examples: https://composites.dpf.docs.pyansys.com/version/stable/examples/index.html
+      api: https://composites.dpf.docs.pyansys.com/version/stable/api/index.html
+
+  pydyna:
+    name: PyDYNA
+    repository: https://github.com/ansys/pydyna
+    description: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results
+    thumbnail: _static/thumbnails/pydyna.png
+    documentation:
+      base: https://dyna.docs.pyansys.com/version/stable
+      user_guide: https://dyna.docs.pyansys.com/version/stable/user-guide/index.html
+      examples: https://dyna.docs.pyansys.com/version/stable/examples/index.html
+      api: https://dyna.docs.pyansys.com/version/stable/autoapi/index.html
+
+  pydynamicreporting:
+    name: PyDynamicReporting
+    repository: https://github.com/ansys/pydynamicreporting
+    description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
+    thumbnail: _static/thumbnails/pydynamicreporting.png
+    documentation:
+      base: https://dynamicreporting.docs.pyansys.com/version/stable
+      user_guide: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
+      examples: https://dynamicreporting.docs.pyansys.com/version/stable/examples/index.html
+      api: https://dynamicreporting.docs.pyansys.com/version/stable/class_documentation.html
+
+  pyedb:
+    name: PyEDB
+    repository: https://github.com/ansys/pyedb
+    description: Pythonic interface to the Ansys Electronics Database (EDB) client library
+    thumbnail: _static/thumbnails/pyedb.png
+    documentation:
+      base: https://edb.docs.pyansys.com/version/stable
+      user_guide: https://edb.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://edb.docs.pyansys.com/version/stable/examples/index.html
+      api: https://edb.docs.pyansys.com/version/stable/api/index.html
+
+  pyedb-core:
+    name: PyEDB - Core
+    repository: https://github.com/ansys/pyedb-core
+    description: Pythonic interface to Ansys Electronics Database (EDB)
+    thumbnail: _static/thumbnails/pyedb.png
+    documentation:
+      base: https://edb.docs.pyansys.com/version/stable
+      user_guide: https://edb.core.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://edb.core.docs.pyansys.com/version/stable/examples/index.html
+      api: https://edb.core.docs.pyansys.com/version/stable/api/index.html
+
+  pyensight:
+    name: PyEnSight
+    repository: https://github.com/ansys/pyensight
+    description: Pythonic interface to EnSight, the Ansys simulation postprocessor
+    thumbnail: _static/thumbnails/pyensight.png
+    documentation:
+      base: https://ensight.docs.pyansys.com/version/stable
+      user_guide: https://ensight.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://ensight.docs.pyansys.com/version/stable/_examples/index.html
+      api: https://ensight.docs.pyansys.com/version/stable/class_documentation.html
+
+  pyfluent:
+    name: PyFluent
+    repository: https://github.com/ansys/pyfluent
+    description:  Pythonic interface to Ansys Fluent
+    thumbnail: _static/thumbnails/pyfluent.png
+    documentation:
+      base: https://fluent.docs.pyansys.com/version/stable
+      user_guide: https://fluent.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://fluent.docs.pyansys.com/version/stable/examples/index.html
+      api: https://fluent.docs.pyansys.com/version/stable/api/index.html
+
+  pyfluent-visualization:
+    name: PyFluent - Visualization
+    repository: https://github.com/ansys/pyfluent-visualization
+    description: Pythonic interface to visualize Ansys Fluent simulations
+    thumbnail: _static/thumbnails/pyfluent-visualization.png
+    documentation:
+      base:  https://visualization.fluent.docs.pyansys.com/version/stable
+      user_guide: https://visualization.fluent.docs.pyansys.com/version/stable/users_guide/index.html
+      examples: https://visualization.fluent.docs.pyansys.com/version/stable/examples/index.html
+      api: https://visualization.fluent.docs.pyansys.com/version/stable/api/index.html
+
+  pygranta:
+    name: PyGranta
+    repository: https://github.com/ansys/pygranta
+    description: Pythonic interface to Ansys Granta MI services
+    thumbnail: _static/thumbnails/pygranta.png
+    documentation:
+      base: https://grantami.docs.pyansys.com/version/stable
+      user_guide: https://grantami.docs.pyansys.com/version/stable/user_guide.html
+      examples: https://grantami.docs.pyansys.com/version/stable/examples.html
+      api: https://grantami.docs.pyansys.com/version/stable/api.html
+
+  pyhps:
+    name: PyHPS
+    repository: https://github.com/ansys/pyhps
+    description: Pythonic interface to Ansys HPC Platform Services (HPS)
+    thumbnail: _static/thumbnails/intro.png
+    documentation:
+      base: https://hps.docs.pyansys.com/version/stable
+      user_guide: https://hps.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://hps.docs.pyansys.com/version/stable/examples/index.html
+      api: https://hps.docs.pyansys.com/version/stable/api/index.html
+
+  pymapdl:
+    name: PyMAPDL
+    repository: https://github.com/ansys/pymapdl
+    description: Pythonic interface to Ansys MAPDL (Mechanical APDL)
+    thumbnail: _static/thumbnails/pymapdl.png
+    documentation:
+      base: https://mapdl.docs.pyansys.com/version/stable
+      user_guide: https://mapdl.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://mapdl.docs.pyansys.com/version/stable/examples/index.html
+      api: https://mapdl.docs.pyansys.com/version/stable/api/index.html
+
+  pymapdl-reader:
+    name: PyMAPDL Reader
+    repository: https://github.com/ansys/pymapdl-reader
+    description: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
+    thumbnail: _static/thumbnails/pymapdl.png
+    documentation:
+      base: https://reader.docs.pyansys.com/version/stable
+      user_guide: https://reader.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://reader.docs.pyansys.com/version/stable/examples/index.html
+      api: https://reader.docs.pyansys.com/version/stable/api/index.html
+
+  pymechanical:
+    name: PyMechanical
+    repository: https://github.com/ansys/pymechanical
+    description: Pythonic interface to Ansys Mechanical
+    thumbnail: _static/thumbnails/pymechanical.png
+    documentation:
+      base: https://mechanical.docs.pyansys.com/version/stable
+      user_guide: https://mechanical.docs.pyansys.com/version/stable/index.html
+      examples: https://mechanical.docs.pyansys.com/version/stable/examples/index.html
+      api: https://mechanical.docs.pyansys.com/version/stable/api/index.html
+
+  pymodelcenter:
+    name: PyModelCenter
+    repository: https://github.com/ansys/pymodelcenter
+    description: Pythonic interface to Ansys ModelCenter
+    thumbnail: _static/thumbnails/pymodelcenter.png
+    documentation:
+      base: https://modelcenter.docs.pyansys.com/version/stable
+      user_guide: https://modelcenter.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://modelcenter.docs.pyansys.com/version/stable/getting_started/index.html
+      api: https://modelcenter.docs.pyansys.com/version/stable/api/index.html
+
+  pymotorcad:
+    name: PyMotorCAD
+    repository: https://github.com/ansys/pymotorcad
+    description: Pythonic interface to Ansys Motor-CAD
+    thumbnail: _static/thumbnails/pymotorcad.png
+    documentation:
+      base: https://motorcad.docs.pyansys.com/version/stable
+      user_guide: https://motorcad.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://motorcad.docs.pyansys.com/version/stable/examples/index.html
+      api: https://motorcad.docs.pyansys.com/version/stable/methods/index.html
+
+  pyoptislang:
+    name: PyOptislang
+    repository: https://github.com/ansys/pyoptislang
+    description: Pythonic interface to Ansys optiSLang
+    thumbnail: _static/thumbnails/pyoptislang.png
+    documentation:
+      base: https://optislang.docs.pyansys.com/version/stable
+      user_guide: https://optislang.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://optislang.docs.pyansys.com/version/stable/examples/index.html
+      api: https://optislang.docs.pyansys.com/version/stable/api/index.html
+
+  pypim:
+    name: PyPIM
+    repository: https://github.com/ansys/pypim
+    description: Pythonic interface to the Ansys PIM (Product Instance Management) API
+    thumbnail: _static/thumbnails/intro.png
+    documentation:
+      base: https://pypim.docs.pyansys.com/version/stable
+      user_guide: https://pypim.docs.pyansys.com/version/stable/index.html#getting-started
+      examples: https://pypim.docs.pyansys.com/version/stable/integration.html
+      api: https://pypim.docs.pyansys.com/version/stable/api/index.html
+
+  pyprimemesh:
+    name: PyPrimeMesh
+    repository: https://github.com/ansys/pyprimemesh
+    description: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers
+    thumbnail: _static/thumbnails/pyprimemesh.png
+    documentation:
+      base: https://prime.docs.pyansys.com/version/stable
+      user_guide: https://prime.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://prime.docs.pyansys.com/version/stable/examples/index.html
+      api: https://prime.docs.pyansys.com/version/stable/api/index.html
+
+  pyrocky:
+    name: PyRocky
+    repository: https://github.com/ansys/pyrocky
+    description: Python interface to Ansys Rocky using Rocky PrePost API
+    thumbnail: _static/thumbnails/pyrocky.png
+    documentation:
+      base: https://rocky.docs.pyansys.com/version/stable
+      user_guide: https://rocky.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://rocky.docs.pyansys.com/version/stable/examples/index.html
+      api: https://rocky.docs.pyansys.com/version/stable/api/index.html
+
+  pyseascape:
+    name: PySeascape
+    repository: https://github.com/ansys/pyseascape
+    description: Pythonic interface to Ansys RedHawkSC and TotemSC
+    thumbnail: _static/thumbnails/intro.png
+    documentation:
+      base: https://seascape.docs.pyansys.com/version/stable
+      user_guide: https://seascape.docs.pyansys.com/version/stable/#usage
+      examples: https://seascape.docs.pyansys.com/version/stable/#examples
+      api: https://seascape.docs.pyansys.com/version/stable/#usage
+
+  pysherlock:
+    name: PySherlock
+    repository: https://github.com/ansys/pysherlock
+    description: Pythonic interface to Ansys Sherlock
+    thumbnail: _static/thumbnails/pysherlock.png
+    documentation:
+      base: https://sherlock.docs.pyansys.com/version/stable
+      user_guide: https://sherlock.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://sherlock.docs.pyansys.com/version/stable/getting_started/index.html
+      api: https://sherlock.docs.pyansys.com/version/stable/api/index.html
+
+  pysimai:
+    name: PySimAI
+    repository: https://github.com/ansys/pysimai
+    description: Pythonic interface to SimAI
+    thumbnail: _static/thumbnails/pysimai.png
+    documentation:
+      base: https://simai.docs.pyansys.com/version/stable
+      user_guide: https://simai.docs.pyansys.com/version/stable/user_guide.html
+      examples: https://simai.docs.pyansys.com/version/stable/index.html#getting-started
+      api: https://simai.docs.pyansys.com/version/stable/api_reference.html
+
+  pysystemcoupling:
+    name: PySystemCoupling
+    repository: https://github.com/ansys/pysystemcoupling
+    description: Pythonic interface to Ansys System Coupling
+    thumbnail: _static/thumbnails/pysystem-coupling.png
+    documentation:
+      base: https://systemcoupling.docs.pyansys.com/version/stable
+      user_guide: https://systemcoupling.docs.pyansys.com/version/stable/users_guide/index.html
+      examples: https://systemcoupling.docs.pyansys.com/version/stable/examples/index.html
+      api: https://systemcoupling.docs.pyansys.com/version/stable/api/index.html
+
+  pyturbogrid:
+    name: PyTurboGrid
+    repository: https://github.com/ansys/pyturbogrid
+    description: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app
+    thumbnail: _static/thumbnails/pyturbogrid.png
+    documentation:
+      base: https://turbogrid.docs.pyansys.com/version/stable
+      user_guide: https://turbogrid.docs.pyansys.com/version/stable/getting_started/index.html
+      examples: https://turbogrid.docs.pyansys.com/version/stable/examples/index.html
+      api: https://turbogrid.docs.pyansys.com/version/stable/api_reference/index.html
+
+  pytwin:
+    name: PyTwin
+    repository: https://github.com/ansys/pytwin
+    description: Pythonic interface to communicate with consumption workflows for Ansys digital twins
+    thumbnail: _static/thumbnails/pytwin.png
+    documentation:
+      base: https://twin.docs.pyansys.com/version/stable
+      user_guide: https://twin.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://twin.docs.pyansys.com/version/stable/examples/index.html
+      api: https://twin.docs.pyansys.com/version/stable/api/index.html
+
+  pyworkbench:
+    name: PyWorkbench
+    repository: https://github.com/ansys/pyworkbench
+    description: Pythonic interface to Ansys Workbench
+    thumbnail: _static/thumbnails/intro.png
+    documentation:
+      base: https://workbench.docs.pyansys.com/version/stable
+      user_guide: https://workbench.docs.pyansys.com/version/stable/user-guide.html
+      examples: https://workbench.docs.pyansys.com/version/stable/examples.html
+      api: https://workbench.docs.pyansys.com/version/stable/api/index.html
+
+  shared-components-openapi-common:
+    name: Shared Components - OpenAPI Common
+    repository: https://github.com/ansys/shared-components-openapi-common
+    description: Shared Ansys software components to enable package interoperability and minimize maintenance
+    thumbnail: _static/thumbnails/intro.png
+    documentation:
+      base: https://shared.docs.pyansys.com
+      user_guide: https://openapi.docs.pyansys.com/version/stable/index.html
+      examples: https://openapi.docs.pyansys.com/version/stable/index.html#brief-example
+      api: https://openapi.docs.pyansys.com/version/stable/api/index.html

@@ -17,8 +17,6 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
-  MEILISEARCH_API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
-  MEILISEARCH_PUBLIC_API_KEY: ${{ secrets.MEILISEARCH_PUBLIC_API_KEY }}
 
 jobs:
   check-vulnerabilities:
@@ -27,7 +25,7 @@ jobs:
     steps:
       - name: PyAnsys Vulnerability Check (on PRs)
         if: github.event_name == 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v7
+        uses: ansys/actions/check-vulnerabilities@v8
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -36,7 +34,7 @@ jobs:
 
       - name: PyAnsys Vulnerability Check (any other case)
         if: github.event_name != 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v7
+        uses: ansys/actions/check-vulnerabilities@v8
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -51,13 +49,14 @@ jobs:
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
+          whitelist-license-check: "attrs" # This has MIT license but fails the check
 
   docs-style:
     name: Documentation Style Check
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@v7
+        uses: ansys/actions/doc-style@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -127,12 +126,13 @@ jobs:
 
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@v7
+        uses: ansys/actions/build-wheelhouse@v8
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           operating-system: ${{ runner.os }}
           python-version: ${{ matrix.python-version }}
           target: "all"
+          whitelist-license-check: "attrs" # This has MIT license but fails the check
 
       - name: List dependencies (pip freeze)
         run: |
@@ -153,7 +153,7 @@ jobs:
 
     steps:
       - name: Build documentation
-        uses: ansys/actions/doc-build@v7
+        uses: ansys/actions/doc-build@v8
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
@@ -165,29 +165,17 @@ jobs:
       needs: [package]
       steps:
         - name: Deploy the latest documentation
-          uses: ansys/actions/doc-deploy-dev@v7
+          uses: ansys/actions/doc-deploy-dev@v8
           with:
             cname: ${{ env.DOCUMENTATION_CNAME }}
-            token: ${{ secrets.GITHUB_TOKEN }}
+            token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+            bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+            bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
 
   adapt-landing-page-dev:
     uses: ./.github/workflows/update-gh-pages.yml
     needs: [doc-deploy-dev]
     secrets: inherit
-
-  doc-index-dev:
-    name: "Deploy dev docs index"
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    needs: [doc-deploy-dev]
-    steps:
-      - name: "Deploy the dev documentation index"
-        uses: ansys/actions/doc-deploy-index@v7
-        with:
-          cname: ${{ env.DOCUMENTATION_CNAME }}/version/dev
-          index-name: pyansys-vdev
-          host-url: ${{ vars.MEILISEARCH_HOST_URL }}
-          api-key: ${{ env.MEILISEARCH_API_KEY }}
 
   package:
     name: Package library
@@ -195,7 +183,7 @@ jobs:
     needs: [docs-build, smoke-tests-core]
     steps:
       - name: Build library source and wheel artifacts
-        uses: ansys/actions/build-library@v7
+        uses: ansys/actions/build-library@v8
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
@@ -207,14 +195,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Release to PyPI repository
-        uses: ansys/actions/release-pypi-public@v7
+        uses: ansys/actions/release-pypi-public@v8
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           twine-username: __token__
           twine-token: ${{ secrets.PYPI_TOKEN }}
 
       - name: Release to GitHub
-        uses: ansys/actions/release-github@v7
+        uses: ansys/actions/release-github@v8
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12'
@@ -225,42 +213,14 @@ jobs:
     needs: [release]
     steps:
       - name: Deploy the latest release documentation
-        uses: ansys/actions/doc-deploy-stable@v7
+        uses: ansys/actions/doc-deploy-stable@v8
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+          bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+          bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
 
   adapt-landing-page-release:
     uses: ./.github/workflows/update-gh-pages.yml
     needs: [docs-release]
     secrets: inherit
-
-  doc-index-release:
-    name: "Deploy release docs index"
-    runs-on: ubuntu-latest
-    needs: docs-release
-    steps:
-      - name: "Install Git and clone project"
-        uses: actions/checkout@v4
-
-      - name: "Install the library to get the version"
-        shell: bash
-        run: |
-          python -m pip install -e .
-
-      - name: "Get the version of the library"
-        run: |
-          VERSION=$(python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print('.'.join(__version__.split('.')[:2]))")
-          VERSION_MEILI=$(python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print('-'.join(__version__.split('.')[:2]))")
-          echo "Calculated VERSION: $VERSION"
-          echo "Calculated VERSION_MEILI: $VERSION_MEILI"
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-          echo "VERSION_MEILI=$VERSION_MEILI" >> $GITHUB_ENV
-
-      - name: "Deploy the latest documentation index"
-        uses: ansys/actions/doc-deploy-index@v7
-        with:
-          cname: ${{ env.DOCUMENTATION_CNAME }}/version/${{ env.VERSION }}
-          index-name: pyansys-v${{ env.VERSION_MEILI }}
-          host-url: ${{ vars.MEILISEARCH_HOST_URL }}
-          api-key: ${{ env.MEILISEARCH_API_KEY }}

@@ -27,80 +27,81 @@ dependencies = [
     "ansys-acp-core==0.1rc1",
     "ansys-additive-core==0.18.1",
     "ansys-additive-widgets==0.2.1",
-    "ansys-conceptev-core==0.5",
-    "ansys-dpf-composites==0.6.1",
-    "ansys-dpf-core==0.13.0",
-    "ansys-dpf-post==0.9.0",
-    "ansys-dyna-core==0.5.0",
-    "ansys-dynamicreporting-core==0.7.0",
-    "ansys-edb-core==0.1.7",
-    "ansys-fluent-core==0.26.0",
-    "ansys-geometry-core==0.7.2",
-    "ansys-hps-client==0.9.0",
-    "ansys-mapdl-core==0.68.4",
-    "ansys-math-core==0.1.5",
-    "ansys-mechanical-core==0.11.7",
+    "ansys-conceptev-core==0.8",
+    "ansys-dpf-composites==0.6.2",
+    "ansys-dpf-core==0.13.3",
+    "ansys-dpf-post==0.9.2",
+    "ansys-dyna-core==0.6.1",
+    "ansys-dynamicreporting-core==0.8.0",
+    "ansys-edb-core==0.1.9",
+    "ansys-fluent-core==0.27.0",
+    "ansys-geometry-core==0.7.6",
+    "ansys-hps-client==0.9.1",
+    "ansys-mapdl-core==0.68.6",
+    "ansys-math-core==0.2.0",
+    "ansys-mechanical-core==0.11.10",
     "ansys-meshing-prime==0.6.2",
     "ansys-modelcenter-workflow==0.1.1",
-    "ansys-motorcad-core==0.5.5",
-    "ansys-optislang-core==0.8.0",
+    "ansys-motorcad-core==0.7.0",
+    "ansys-optislang-core==0.9.2",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.8.11",
-    "ansys-rocky-core==0.2.0",
+    "ansys-pyensight-core==0.9.2",
+    "ansys-rocky-core==0.3.1",
     "ansys-seascape==0.2.0",
-    "ansys-sherlock-core==0.7.1",
-    "ansys-simai-core==0.2.4",
+    "ansys-sherlock-core==0.8.1",
+    "ansys-simai-core==0.2.5",
     "ansys-sound-core==0.1.3",
     "ansys-systemcoupling-core==0.8.0",
     "ansys-turbogrid-core==0.4.1",
-    "ansys-workbench-core==0.6.0",
-    "pyaedt==0.10.3",
-    "pyedb==0.29.0",
+    "ansys-workbench-core==0.7.0",
+    "pyaedt==0.12.0",
+    "pyedb==0.34.3",
     "pygranta==2024.2.0",
     "pytwin==0.7.0",
 ]
 
 [project.optional-dependencies]
-mapdl-all = ["ansys-mapdl-reader==0.54.1"]
-fluent-all = ["ansys-fluent-visualization==0.14.0"]
+mapdl-all = ["ansys-mapdl-reader==0.54.2"]
+fluent-all = ["ansys-fluent-visualization==0.15.0"]
 tools = [
     "ansys-materials-manager==0.2.3",
-    "ansys-tools-filetransfer==0.1.0",
-    "ansys-tools-local-product-launcher==0.1.0",
-    "ansys-tools-path==0.6.0",
+    "ansys-tools-filetransfer==0.1.1",
+    "ansys-tools-local-product-launcher==0.1.1",
+    "ansys-tools-path==0.7.0",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
-    "ansys-tools-visualization-interface==0.4.4",
-    "ansys-units==0.3.2",
-    "pyansys-tools-report==0.8.0",
+    "ansys-tools-visualization-interface==0.6.2",
+    "ansys-units==0.3.4",
+    "pyansys-tools-report==0.8.1",
     "pyansys-tools-versioning==0.6.0",
     "pyansys-tools-variableinterop==0.1.1",
 ]
 all = [
     # MAPDL - ALL
-    "ansys-mapdl-reader==0.54.1",
+    "ansys-mapdl-reader==0.54.2",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.14.0",
+    "ansys-fluent-visualization==0.15.0",
     # TOOLS
     "ansys-materials-manager==0.2.3",
-    "ansys-tools-filetransfer==0.1.0",
-    "ansys-tools-local-product-launcher==0.1.0",
-    "ansys-tools-path==0.6.0",
+    "ansys-tools-filetransfer==0.1.1",
+    "ansys-tools-local-product-launcher==0.1.1",
+    "ansys-tools-path==0.7.0",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
-    "ansys-tools-visualization-interface==0.4.4",
-    "ansys-units==0.3.2",
-    "pyansys-tools-report==0.8.0",
+    "ansys-tools-visualization-interface==0.6.2",
+    "ansys-units==0.3.4",
+    "pyansys-tools-report==0.8.1",
     "pyansys-tools-versioning==0.6.0",
     "pyansys-tools-variableinterop==0.1.1",
 ]
 doc = [
-    "Sphinx==8.0.2",
-    "ansys-sphinx-theme==1.0.11",
+    "Sphinx==8.1.3",
+    "ansys-sphinx-theme==1.2.3",
     "Jinja2 ==3.1.4",
-    "Pillow==10.4.0",
-    "PyGithub==2.4.0",
+    "Pillow==11.0.0",
+    "PyGithub==2.5.0",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.6.1",
-    "sphinxcontrib-mermaid==0.9.2",
+    "sphinxcontrib-mermaid==1.0.0",
+    "sphinx-jinja==2.0.2",
 ]
 
 [project.urls]
@@ -110,11 +111,32 @@ Documentation = "https://docs.pyansys.com"
 [tool.flit.module]
 name = "pyansys"
 
-[tool.black]
+[tool.ruff]
 line-length = 100
+fix = true
 
-[tool.isort]
-profile = "black"
-force_sort_within_sections = true
-line_length = 100
-src_paths = ["doc", "src"]
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle, see https://docs.astral.sh/ruff/rules/#pycodestyle-e-w
+    "F",    # pyflakes, see https://docs.astral.sh/ruff/rules/#pyflakes-f
+    "I",    # isort, see https://docs.astral.sh/ruff/rules/#isort-i
+    "N",    # pep8-naming, see https://docs.astral.sh/ruff/rules/#pep8-naming-n
+    "PTH",  # flake8-use-pathlib, https://docs.astral.sh/ruff/rules/#flake8-use-pathlib-pth
+    "TD",   # flake8-todos, https://docs.astral.sh/ruff/rules/#flake8-todos-td
+]
+ignore = [
+    "TD002", # Missing author in TODOs comment
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-sort-within-sections = true
