@@ -56,7 +56,7 @@ dependencies = [
     "ansys-workbench-core==0.7.0",
     "pyaedt==0.12.0",
     "pyedb==0.34.3",
-    "pygranta==2024.2.0",
+    "pygranta==2025.1.0",
     "pytwin==0.7.0",
 ]
 
