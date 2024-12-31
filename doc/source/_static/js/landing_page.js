@@ -22,7 +22,11 @@ function collectFamilies(data) {
 function displayFamilies(familyCounts) {
     const familiesContainer = document.getElementById('product-families-list');
 
-    for (const family in familyCounts) {
+    // Sort families alphabetically
+    const sortedFamilies = Object.keys(familyCounts).sort();
+
+    // Iterate over sorted families and create rows
+    sortedFamilies.forEach(family => {
         const familyCount = familyCounts[family];
 
         // Create a row for each family
@@ -49,7 +53,8 @@ function displayFamilies(familyCounts) {
 
         // Append the row to the container
         familiesContainer.appendChild(familyRow);
-    }
+    });
+    
 }
 
 // Fetch the JSON data from the 'projects.json' file
