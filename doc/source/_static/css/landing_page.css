@@ -26,6 +26,12 @@
 .family-name {
     margin-right: 10px;
 }
+.family-count {
+    margin-left: auto; 
+    background-color: lightgrey;
+    border-radius: 50%;
+    padding: 0.25rem 0.75rem;
+}
 .selected-families {
     display: flex;
     flex-direction: row;

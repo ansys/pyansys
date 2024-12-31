@@ -50,7 +50,8 @@ function displayFamilies(familyCounts) {
 
         // Create family count
         const familyCountElem = document.createElement('span');
-        familyCountElem.textContent = `(${familyCount})`;
+        familyCountElem.className = 'family-count';
+        familyCountElem.textContent = `${familyCount}`;
 
         // Append elements to the row
         familyRow.appendChild(checkbox);
