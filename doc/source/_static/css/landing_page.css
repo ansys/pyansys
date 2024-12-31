@@ -26,3 +26,19 @@
 .family-name {
     margin-right: 10px;
 }
+.selected-families {
+    margin-bottom: 20px;
+}
+.selected-family {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.selected-family span {
+    margin-right: 10px;
+}
+.remove-family {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
