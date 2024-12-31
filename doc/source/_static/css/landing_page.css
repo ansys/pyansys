@@ -1,9 +1,28 @@
-.landing-page-sidebar > * > span {
+.landing-page-sidebar {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    padding: 0rem 2rem;
+}
+.landing-page-sidebar-section {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.landing-page-sidebar-section span {
+    font-size: 18px;
     font-weight: bold;
 }
-
-.landing-page-sidebar-section {
-    font-weight: bold;
+.family-row {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.family-row input {
+    margin-right: 10px;
+}
+.family-name {
+    margin-right: 10px;
 }
