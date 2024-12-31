@@ -1,6 +1,7 @@
 """Configuration file for docs.pyansys.com landing page."""
 
 from datetime import datetime
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -14,7 +15,6 @@ import sphinx
 from sphinx.builders.latex import LaTeXBuilder
 import toml
 import yaml
-import json
 
 from pyansys import __version__ as pyansys_version
 
@@ -451,6 +451,7 @@ def package_versions_table(app: sphinx.application.Sphinx):
         {version: build_versions_table(branch) for version, branch in zip(versions, branches)},
     )
 
+
 def convert_yaml_to_json(app: sphinx.application.Sphinx):
     """
     Convert a YAML file to a JSON file.
@@ -464,13 +465,13 @@ def convert_yaml_to_json(app: sphinx.application.Sphinx):
     """
     if not metadata.exists() or not metadata.is_file():
         raise FileNotFoundError(f"The file {metadata} does not exist or is not a file.")
-    
+
     with metadata.open("r", encoding="utf-8") as yaml_file:
         try:
             yaml_content = yaml.safe_load(yaml_file)
         except yaml.YAMLError as e:
             raise ValueError(f"Error parsing YAML file: {e}")
-    
+
     json_path = Path(__file__).parent / "_static" / "projects.json"
     with json_path.open("w", encoding="utf-8") as json_file:
         json.dump(yaml_content, json_file, indent=4)
