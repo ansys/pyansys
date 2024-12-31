@@ -54,7 +54,7 @@ function displayFamilies(familyCounts) {
         // Append the row to the container
         familiesContainer.appendChild(familyRow);
     });
-    
+
 }
 
 // Fetch the JSON data from the 'projects.json' file
