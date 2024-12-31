@@ -71,7 +71,7 @@ html_short_title = html_title = "PyAnsys"
 html_favicon = ansys_favicon
 
 html_sidebars = {
-    "index": ['landing_page_sidebar.html'],
+    "index": ["landing_page_sidebar.html"],
 }
 
 extensions = [
