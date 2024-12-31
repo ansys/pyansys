@@ -27,18 +27,21 @@
     margin-right: 10px;
 }
 .selected-families {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .selected-family {
     display: flex;
     align-items: center;
-    margin: 5px 0;
 }
 .selected-family span {
-    margin-right: 10px;
+    padding: 0.25rem 5rem;
+    border-radius: 5px;
+    background-color: lightgrey;
 }
 .remove-family {
     cursor: pointer;
-    color: red;
+    color: black;
     font-weight: bold;
 }
