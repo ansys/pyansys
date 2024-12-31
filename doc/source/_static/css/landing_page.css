@@ -1,0 +1,9 @@
+.landing-page-sidebar > * > span {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.landing-page-sidebar-section {
+    font-weight: bold;
+}

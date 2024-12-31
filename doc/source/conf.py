@@ -61,7 +61,7 @@ author = "ANSYS Inc."
 cname = os.getenv("DOCUMENTATION_CNAME", default="nocname.com")
 switcher_version = get_version_match(pyansys_version)
 
-# get the PyAnsys version
+# Get the PyAnsys version
 release = version = pyansys_version
 
 html_theme = "ansys_sphinx_theme"
@@ -70,12 +70,22 @@ html_short_title = html_title = "PyAnsys"
 # Favicon
 html_favicon = ansys_favicon
 
+html_sidebars = {
+    "index": ['landing_page_sidebar.html'],
+}
+
 extensions = [
     "sphinx_design",
     "sphinx_copybutton",
     "sphinxcontrib.mermaid",
     "sphinx_jinja",
 ]
+
+# Static files
+templates_path = ["_templates"]
+html_static_path = ["_static"]
+html_css_files = ["css/landing_page.css"]
+html_js_files = ["js/custom.js"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
