@@ -5,7 +5,7 @@ projects:
     repository: https://github.com/ansys/pyacp
     description: Pythonic interface to Ansys Composite PrepPost (ACP)
     thumbnail: _static/thumbnails/pyacp.png
-    family: Unkown
+    family: Structures
     tags: [Flagship]
     documentation:
       base: https://acp.docs.pyansys.com/version/dev
@@ -18,7 +18,7 @@ projects:
     repository: https://github.com/ansys/pyadditive
     description: Pythonic interface to the Ansys Additive service
     thumbnail: _static/thumbnails/intro.png
-    family: Additive
+    family: Structures
     tags: [Flagship]
     documentation:
       base: https://additive.docs.pyansys.com/version/stable
@@ -31,7 +31,7 @@ projects:
     repository: https://github.com/ansys/pyadditive-widgets
     description: PyAdditive widget toolkit to visualize additive parametric study results
     thumbnail: _static/thumbnails/intro.png
-    family: Additive
+    family: Structures
     tags: [Tools]
     documentation:
       base: https://widgets.additive.docs.pyansys.com/version/stable
@@ -70,8 +70,8 @@ projects:
     repository: https://github.com/ansys/pyansys-math
     description: Pythonic interface to PyAnsys Math libraries
     thumbnail: _static/thumbnails/pyansys-math.png
-    family: [Other]
-    tags: [Other]
+    family: Structures
+    tags: [Tools]
     documentation:
       base: https://math.docs.pyansys.com/version/stable
       user_guide: https://math.docs.pyansys.com/version/stable/user_guide/index.html
@@ -109,6 +109,8 @@ projects:
     repository: https://github.com/ansys/pydpf-core
     description: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows
     thumbnail: _static/thumbnails/pydpf-core.png
+    family: Structures
+    tags: [Flagship]
     documentation:
       base: https://dpf.docs.pyansys.com/version/stable
       user_guide: https://dpf.docs.pyansys.com/version/stable/user_guide/index.html
@@ -120,6 +122,8 @@ projects:
     repository: https://github.com/ansys/pydpf-post
     description: Pythonic interface to access and postprocess Ansys solver result files
     thumbnail: _static/thumbnails/pydpf-post.png
+    family: Structures
+    tags: [Flagship]
     documentation:
       base: https://post.docs.pyansys.com/version/stable
       user_guide: https://post.docs.pyansys.com/version/stable/user_guide/index.html
@@ -131,6 +135,8 @@ projects:
     repository: https://github.com/ansys/pydpf-composites
     description: Pythonic interface to postprocess layered and short-fiber composite models
     thumbnail: _static/thumbnails/pydpf-composites.png
+    family: Structures
+    tags: [Post-processing, Composites]
     documentation:
       base: https://composites.dpf.docs.pyansys.com/version/stable
       user_guide: https://composites.dpf.docs.pyansys.com/version/stable/intro.html
@@ -142,6 +148,8 @@ projects:
     repository: https://github.com/ansys/pydyna
     description: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results
     thumbnail: _static/thumbnails/pydyna.png
+    family: Structures
+    tags: [Flagship]
     documentation:
       base: https://dyna.docs.pyansys.com/version/stable
       user_guide: https://dyna.docs.pyansys.com/version/stable/user-guide/index.html
@@ -153,6 +161,8 @@ projects:
     repository: https://github.com/ansys/pydynamicreporting
     description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
     thumbnail: _static/thumbnails/pydynamicreporting.png
+    family: Materials
+    tags: [Tools]
     documentation:
       base: https://dynamicreporting.docs.pyansys.com/version/stable
       user_guide: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
@@ -164,6 +174,8 @@ projects:
     repository: https://github.com/ansys/pyedb
     description: Pythonic interface to the Ansys Electronics Database (EDB) client library
     thumbnail: _static/thumbnails/pyedb.png
+    family: Electronics
+    tags: [Falgship]
     documentation:
       base: https://edb.docs.pyansys.com/version/stable
       user_guide: https://edb.docs.pyansys.com/version/stable/user_guide/index.html
@@ -175,6 +187,8 @@ projects:
     repository: https://github.com/ansys/pyedb-core
     description: Pythonic interface to Ansys Electronics Database (EDB)
     thumbnail: _static/thumbnails/pyedb.png
+    family: Electronics
+    tags: [Flagship]
     documentation:
       base: https://edb.docs.pyansys.com/version/stable
       user_guide: https://edb.core.docs.pyansys.com/version/stable/user_guide/index.html
@@ -186,6 +200,8 @@ projects:
     repository: https://github.com/ansys/pyensight
     description: Pythonic interface to EnSight, the Ansys simulation postprocessor
     thumbnail: _static/thumbnails/pyensight.png
+    family: Fluids
+    tags: [Flagship]
     documentation:
       base: https://ensight.docs.pyansys.com/version/stable
       user_guide: https://ensight.docs.pyansys.com/version/stable/user_guide/index.html
@@ -197,6 +213,8 @@ projects:
     repository: https://github.com/ansys/pyfluent
     description:  Pythonic interface to Ansys Fluent
     thumbnail: _static/thumbnails/pyfluent.png
+    family: Fluids
+    tags: [Flagship]
     documentation:
       base: https://fluent.docs.pyansys.com/version/stable
       user_guide: https://fluent.docs.pyansys.com/version/stable/user_guide/index.html
@@ -208,6 +226,8 @@ projects:
     repository: https://github.com/ansys/pyfluent-visualization
     description: Pythonic interface to visualize Ansys Fluent simulations
     thumbnail: _static/thumbnails/pyfluent-visualization.png
+    family: Fluids
+    tags: [Tools, Visualization]
     documentation:
       base:  https://visualization.fluent.docs.pyansys.com/version/stable
       user_guide: https://visualization.fluent.docs.pyansys.com/version/stable/users_guide/index.html
@@ -219,6 +239,8 @@ projects:
     repository: https://github.com/ansys/pygranta
     description: Pythonic interface to Ansys Granta MI services
     thumbnail: _static/thumbnails/pygranta.png
+    family: Materials
+    tags: [Flagship]
     documentation:
       base: https://grantami.docs.pyansys.com/version/stable
       user_guide: https://grantami.docs.pyansys.com/version/stable/user_guide.html
@@ -230,6 +252,8 @@ projects:
     repository: https://github.com/ansys/pyhps
     description: Pythonic interface to Ansys HPC Platform Services (HPS)
     thumbnail: _static/thumbnails/intro.png
+    family: Platform
+    tags: [Tools]
     documentation:
       base: https://hps.docs.pyansys.com/version/stable
       user_guide: https://hps.docs.pyansys.com/version/stable/user_guide/index.html
@@ -241,6 +265,8 @@ projects:
     repository: https://github.com/ansys/pymapdl
     description: Pythonic interface to Ansys MAPDL (Mechanical APDL)
     thumbnail: _static/thumbnails/pymapdl.png
+    family: Structures
+    tags: [Flagship]
     documentation:
       base: https://mapdl.docs.pyansys.com/version/stable
       user_guide: https://mapdl.docs.pyansys.com/version/stable/user_guide/index.html
@@ -252,6 +278,8 @@ projects:
     repository: https://github.com/ansys/pymapdl-reader
     description: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
     thumbnail: _static/thumbnails/pymapdl.png
+    family: Structures
+    tags: [Tools]
     documentation:
       base: https://reader.docs.pyansys.com/version/stable
       user_guide: https://reader.docs.pyansys.com/version/stable/user_guide/index.html
@@ -263,6 +291,8 @@ projects:
     repository: https://github.com/ansys/pymechanical
     description: Pythonic interface to Ansys Mechanical
     thumbnail: _static/thumbnails/pymechanical.png
+    family: Structures
+    tags: [Flagship]
     documentation:
       base: https://mechanical.docs.pyansys.com/version/stable
       user_guide: https://mechanical.docs.pyansys.com/version/stable/index.html
@@ -274,6 +304,8 @@ projects:
     repository: https://github.com/ansys/pymodelcenter
     description: Pythonic interface to Ansys ModelCenter
     thumbnail: _static/thumbnails/pymodelcenter.png
+    family: Connect
+    tags: [Flagship]
     documentation:
       base: https://modelcenter.docs.pyansys.com/version/stable
       user_guide: https://modelcenter.docs.pyansys.com/version/stable/user_guide/index.html
@@ -285,6 +317,8 @@ projects:
     repository: https://github.com/ansys/pymotorcad
     description: Pythonic interface to Ansys Motor-CAD
     thumbnail: _static/thumbnails/pymotorcad.png
+    family: Electronics
+    tags: [Flagship]
     documentation:
       base: https://motorcad.docs.pyansys.com/version/stable
       user_guide: https://motorcad.docs.pyansys.com/version/stable/user_guide/index.html
@@ -296,6 +330,8 @@ projects:
     repository: https://github.com/ansys/pyoptislang
     description: Pythonic interface to Ansys optiSLang
     thumbnail: _static/thumbnails/pyoptislang.png
+    family: Platform
+    tags: [Flagship]
     documentation:
       base: https://optislang.docs.pyansys.com/version/stable
       user_guide: https://optislang.docs.pyansys.com/version/stable/user_guide/index.html
@@ -307,6 +343,8 @@ projects:
     repository: https://github.com/ansys/pypim
     description: Pythonic interface to the Ansys PIM (Product Instance Management) API
     thumbnail: _static/thumbnails/intro.png
+    family: Platform
+    tags: [Flagship]
     documentation:
       base: https://pypim.docs.pyansys.com/version/stable
       user_guide: https://pypim.docs.pyansys.com/version/stable/index.html#getting-started
@@ -318,6 +356,8 @@ projects:
     repository: https://github.com/ansys/pyprimemesh
     description: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers
     thumbnail: _static/thumbnails/pyprimemesh.png
+    family: Platform
+    tags: [Flagship]
     documentation:
       base: https://prime.docs.pyansys.com/version/stable
       user_guide: https://prime.docs.pyansys.com/version/stable/user_guide/index.html
@@ -329,6 +369,8 @@ projects:
     repository: https://github.com/ansys/pyrocky
     description: Python interface to Ansys Rocky using Rocky PrePost API
     thumbnail: _static/thumbnails/pyrocky.png
+    family: Fluids
+    tags: [Flagship]
     documentation:
       base: https://rocky.docs.pyansys.com/version/stable
       user_guide: https://rocky.docs.pyansys.com/version/stable/user_guide/index.html
@@ -340,6 +382,8 @@ projects:
     repository: https://github.com/ansys/pyseascape
     description: Pythonic interface to Ansys RedHawkSC and TotemSC
     thumbnail: _static/thumbnails/intro.png
+    family: Semiconductors
+    tags: [Flagship]
     documentation:
       base: https://seascape.docs.pyansys.com/version/stable
       user_guide: https://seascape.docs.pyansys.com/version/stable/#usage
