@@ -1,17 +1,24 @@
-// Function to collect families and their counts
 function collectFamilies(data) {
     const familyCounts = {};
 
+    // Ensure `data.projects` exists and is an object
+    if (!data.projects || typeof data.projects !== 'object') {
+        console.error('Invalid projects data structure:', data.projects);
+        return familyCounts;
+    }
+
+    // Extract projects as an array
+    const projects = Object.values(data.projects);
+
     // Iterate over each project and collect family info
-    for (const projectId in data.projects) {
-        const project = data.projects[projectId];
+    for (const project of projects) {
+        if (!project || typeof project !== 'object') continue; // Skip invalid projects
+
         const family = project.family;
 
-        // Increment the family count
-        if (familyCounts[family]) {
-            familyCounts[family]++;
-        } else {
-            familyCounts[family] = 1;
+        if (family) {
+            // Increment the family count
+            familyCounts[family] = (familyCounts[family] || 0) + 1;
         }
     }
 
@@ -21,6 +28,9 @@ function collectFamilies(data) {
 // Function to display families in the HTML in alphabetical order
 function displayFamilies(familyCounts) {
     const familiesContainer = document.getElementById('product-families-list');
+
+    // Clear previous content
+    familiesContainer.innerHTML = '';
 
     // Sort families alphabetically
     const sortedFamilies = Object.keys(familyCounts).sort();
@@ -36,7 +46,7 @@ function displayFamilies(familyCounts) {
         // Create a checkbox
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.id = family; // Use family name as the checkbox id
+        checkbox.id = `family-${CSS.escape(family)}`; // Escape family name for valid id
 
         // Add event listener to handle family selection/deselection
         checkbox.addEventListener('change', (event) => {
@@ -61,7 +71,6 @@ function displayFamilies(familyCounts) {
         // Append the row to the container
         familiesContainer.appendChild(familyRow);
     });
-
 }
 
 // Function to update the selected families section
@@ -106,7 +115,12 @@ function handleFamilySelection(checkbox, family, familyCount) {
 
 // Fetch the JSON data from the 'projects.json' file
 fetch('_static/projects.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         // Collect families and display them
         const familyCounts = collectFamilies(data);
@@ -115,3 +129,4 @@ fetch('_static/projects.json')
     .catch(error => {
         console.error('Error fetching the projects data:', error);
     });
+
