@@ -27,6 +27,7 @@ it is now a collection of many Python packages for using Ansys products through 
           :img-top: {{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
+          :class-card: {{ metadata.get('family', 'unknown') }}
 
           {{ metadata['description'] }}
 
