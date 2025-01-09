@@ -49,8 +49,8 @@ function displayFamilies(familyCounts) {
         checkbox.id = `family-${CSS.escape(family)}`; // Escape family name for valid id
 
         // Add event listener to handle family selection/deselection
-        checkbox.addEventListener('change', (event) => {
-            handleFamilySelection(event.target, family, familyCount);
+        checkbox.addEventListener('change', () => {
+            handleFamilySelection();
         });
 
         // Create family name
@@ -73,43 +73,27 @@ function displayFamilies(familyCounts) {
     });
 }
 
-// Function to update the selected families section
-function handleFamilySelection(checkbox, family, familyCount) {
-    const selectedFamiliesContainer = document.getElementById('selected-families');
+// Function to update the visibility of cards based on selected families
+function handleFamilySelection() {
+    const articleElement = document.querySelector('article');
+    const sdCards = articleElement.querySelectorAll('.sd-card');
+    const selectedCheckboxes = document.querySelectorAll('#product-families-list input[type="checkbox"]:checked');
 
-    if (checkbox.checked) {
-        // Create a label for the selected family
-        const familyLabel = document.createElement('div');
-        familyLabel.className = 'selected-family';
-
-        const familyText = document.createElement('span');
-        familyText.textContent = family;
-
-        const removeButton = document.createElement('span');
-        removeButton.textContent = 'x';
-        removeButton.className = 'remove-family';
-        removeButton.addEventListener('click', () => {
-            // Deselect the checkbox
-            checkbox.checked = false;
-            // Remove the family label
-            familyLabel.remove();
+    if (selectedCheckboxes.length === 0) {
+        // If no family is selected, show all cards
+        sdCards.forEach(card => {
+            card.style.display = 'block';
         });
-
-        // Append text and remove button to the family label
-        familyLabel.appendChild(familyText);
-        familyLabel.appendChild(removeButton);
-
-        // Add the label to the selected families container
-        selectedFamiliesContainer.appendChild(familyLabel);
     } else {
-        // Find and remove the label if the checkbox is unchecked
-        const familyLabels = selectedFamiliesContainer.getElementsByClassName('selected-family');
-        for (let label of familyLabels) {
-            if (label.querySelector('span').textContent === family) {
-                label.remove();
-                break;
-            }
-        }
+        const selectedFamilies = Array.from(selectedCheckboxes).map(checkbox => checkbox.id.replace('family-', '').toLowerCase());
+
+        sdCards.forEach(card => {
+            // Check if the card has a class matching any selected family
+            const cardClasses = Array.from(card.classList).map(cls => cls.toLowerCase());
+            const isVisible = selectedFamilies.some(family => cardClasses.includes(family));
+
+            card.style.display = isVisible ? 'block' : 'none';
+        });
     }
 }
 
@@ -125,6 +109,13 @@ fetch('_static/projects.json')
         // Collect families and display them
         const familyCounts = collectFamilies(data);
         displayFamilies(familyCounts);
+
+        // Initially show all "sd-card" divs
+        const articleElement = document.querySelector('article');
+        const sdCards = articleElement.querySelectorAll('.sd-card');
+        sdCards.forEach(card => {
+            card.style.display = 'block';
+        });
     })
     .catch(error => {
         console.error('Error fetching the projects data:', error);
