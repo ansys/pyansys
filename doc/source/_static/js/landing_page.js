@@ -137,8 +137,26 @@ function handleTagSelection() {
     const projectCards = document.querySelectorAll('.project-card');
 
     projectCards.forEach(card => {
-        const cardTags = card.getAttribute('data-tags').split(',').map(tag => tag.toLowerCase());
-        const hasMatchingTag = selectedTags.some(tag => cardTags.includes(tag));
+        const rawTags = card.getAttribute('data-tags');
+
+        if (!rawTags) {
+            card.style.display = 'none';
+            return;
+        }
+
+        // Parse the data-tags string
+        let cardTags = [];
+        try {
+            cardTags = JSON.parse(rawTags.replace(/'/g, '"'));
+        } catch (error) {
+            console.error('Error parsing data-tags:', rawTags, error);
+            card.style.display = 'none';
+            return;
+        }
+
+        const cardTagsLower = cardTags.map(tag => tag.toLowerCase());
+        const hasMatchingTag = selectedTags.some(tag => cardTagsLower.includes(tag));
+
         card.style.display = selectedTags.length === 0 || hasMatchingTag ? 'flex' : 'none';
     });
 }

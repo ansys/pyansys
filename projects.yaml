@@ -227,7 +227,7 @@ projects:
     description: Pythonic interface to visualize Ansys Fluent simulations
     thumbnail: _static/thumbnails/pyfluent-visualization.png
     family: Fluids
-    tags: [Tools, Visualization]
+    tags: ["Tools", "Visualization"]
     documentation:
       base:  https://visualization.fluent.docs.pyansys.com/version/stable
       user_guide: https://visualization.fluent.docs.pyansys.com/version/stable/users_guide/index.html
