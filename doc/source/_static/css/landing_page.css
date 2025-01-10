@@ -61,15 +61,21 @@
 .project-card {
     display: flex;
     flex-direction: column;
-    border: thin solid black;
-    padding: 1rem;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.project-thumbnail {
+    padding: 0;
 }
 
 .project-title {
     font-weight: bold;
-    background-color: lightgrey;
+    margin-bottom: 0rem;
+    padding: 0.5rem;
 }
 
 .project-description {
     margin-top: 1rem;
+    padding: 0.5rem;
 }
