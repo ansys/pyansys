@@ -21,9 +21,33 @@ function collectFamilies(data) {
     return familyCounts;
 }
 
+function collectTags(data) {
+    const tagCounts = {};
+
+    if (!data.projects || typeof data.projects !== 'object') {
+        console.error('Invalid projects data structure:', data.projects);
+        return tagCounts;
+    }
+
+    const projects = Object.values(data.projects);
+
+    for (const project of projects) {
+        if (!project || typeof project !== 'object') continue;
+
+        const tags = project.tags;
+
+        if (Array.isArray(tags)) {
+            tags.forEach(tag => {
+                tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+            });
+        }
+    }
+
+    return tagCounts;
+}
+
 function displayFamilies(familyCounts) {
     const familiesContainer = document.getElementById('product-families-list');
-
     familiesContainer.innerHTML = '';
 
     const sortedFamilies = Object.keys(familyCounts).sort();
@@ -55,6 +79,39 @@ function displayFamilies(familyCounts) {
     });
 }
 
+function displayTags(tagCounts) {
+    const tagsContainer = document.getElementById('product-tags-list');
+    tagsContainer.innerHTML = '';
+
+    const sortedTags = Object.keys(tagCounts).sort();
+
+    sortedTags.forEach(tag => {
+        const tagCount = tagCounts[tag];
+
+        const tagRow = document.createElement('div');
+        tagRow.className = 'tag-row';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `tag-${CSS.escape(tag)}`;
+        checkbox.addEventListener('change', handleTagSelection);
+
+        const tagName = document.createElement('span');
+        tagName.className = 'tag-name';
+        tagName.textContent = tag;
+
+        const tagCountElem = document.createElement('span');
+        tagCountElem.className = 'tag-count';
+        tagCountElem.textContent = `(${tagCount})`;
+
+        tagRow.appendChild(checkbox);
+        tagRow.appendChild(tagName);
+        //tagRow.appendChild(tagCountElem);
+
+        tagsContainer.appendChild(tagRow);
+    });
+}
+
 function handleFamilySelection() {
     const selectedFamilies = Array.from(
         document.querySelectorAll('#product-families-list input[type="checkbox"]:checked')
@@ -67,6 +124,22 @@ function handleFamilySelection() {
     projectCards.forEach(card => {
         const family = card.getAttribute('data-family').toLowerCase();
         card.style.display = selectedFamilies.length === 0 || selectedFamilies.includes(family) ? 'flex' : 'none';
+    });
+}
+
+function handleTagSelection() {
+    const selectedTags = Array.from(
+        document.querySelectorAll('#product-tags-list input[type="checkbox"]:checked')
+    ).map(checkbox => checkbox.id.replace('tag-', '').toLowerCase());
+
+    console.log('Selected tags:', selectedTags);
+
+    const projectCards = document.querySelectorAll('.project-card');
+
+    projectCards.forEach(card => {
+        const cardTags = card.getAttribute('data-tags').split(',').map(tag => tag.toLowerCase());
+        const hasMatchingTag = selectedTags.some(tag => cardTags.includes(tag));
+        card.style.display = selectedTags.length === 0 || hasMatchingTag ? 'flex' : 'none';
     });
 }
 
@@ -86,8 +159,15 @@ fetch('_static/projects.json')
         return response.json();
     })
     .then(data => {
+        // Display families
         const familyCounts = collectFamilies(data);
         displayFamilies(familyCounts);
+
+        // Display tags
+        const tagCounts = collectTags(data);
+        displayTags(tagCounts);
+
+        // Render all cards
         initializeAllCards();
     })
     .catch(error => {

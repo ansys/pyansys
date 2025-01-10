@@ -19,12 +19,12 @@ html {
     font-size: 18px;
     font-weight: bold;
 }
-.family-row {
+.family-row, .tag-row {
     display: flex;
     align-items: center;
     margin: 5px 0;
 }
-.family-row input {
+.family-row input, .tag-row input {
     margin-right: 10px;
 }
 .family-name {

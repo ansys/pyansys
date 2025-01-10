@@ -175,7 +175,7 @@ projects:
     description: Pythonic interface to the Ansys Electronics Database (EDB) client library
     thumbnail: _static/thumbnails/pyedb.png
     family: Electronics
-    tags: [Falgship]
+    tags: [Flagship]
     documentation:
       base: https://edb.docs.pyansys.com/version/stable
       user_guide: https://edb.docs.pyansys.com/version/stable/user_guide/index.html
