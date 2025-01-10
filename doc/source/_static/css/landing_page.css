@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll !important;
+}
+
 .landing-page-sidebar {
     margin-top: 2rem;
     display: flex;
