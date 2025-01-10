@@ -56,6 +56,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .project-card {
@@ -67,15 +68,20 @@
 
 .project-thumbnail {
     padding: 0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .project-title {
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0rem;
     padding: 0.5rem;
+    padding-left: 1rem;
 }
 
 .project-description {
     margin-top: 1rem;
     padding: 0.5rem;
+    padding-left: 1rem;
 }
