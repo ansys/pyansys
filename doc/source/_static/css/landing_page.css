@@ -51,3 +51,25 @@
     color: black;
     font-weight: bold;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: thin solid black;
+    padding: 1rem;
+}
+
+.project-title {
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+.project-description {
+    margin-top: 1rem;
+}
