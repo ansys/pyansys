@@ -57,7 +57,7 @@ projects:
     repository: https://github.com/ansys/pyansys-geometry
     description: Pythonic interface to the Ansys Geometry service
     thumbnail: _static/thumbnails/pyansys-geometry.png
-    family: 3D Design
+    family: CAD
     tags: [Flagship]
     documentation:
       base: https://geometry.docs.pyansys.com/version/stable
@@ -83,7 +83,7 @@ projects:
     repository: https://github.com/ansys/pyansys-sound
     description: Pythonic interface to Ansys Sound
     thumbnail: _static/thumbnails/pyansys-sound.png
-    family: [Accoustics]
+    family: Accoustics
     tags: [Flagship]
     documentation:
       base: https://sound.docs.pyansys.com/version/stable

@@ -23,7 +23,7 @@ it is now a collection of many Python packages for using Ansys products through 
 
         <div class="projects" style="">
             {% for project, metadata in projects['projects'].items() %}
-            <div class="project-card sd-shadow-sm sd-card-hover" data-family="{{ metadata.get('family', 'other') | lower }}">
+            <div class="project-card sd-shadow-sm sd-card-hover" data-family="{{ metadata.get('family', 'other') | lower | replace(' ', '-') }}">
                 <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
                 <p class="project-title"> {{ metadata['name'] }} </p>
                 <p class="project-description"> {{ metadata['description'] }} </p>

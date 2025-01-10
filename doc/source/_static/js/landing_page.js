@@ -60,6 +60,8 @@ function handleFamilySelection() {
         document.querySelectorAll('#product-families-list input[type="checkbox"]:checked')
     ).map(checkbox => checkbox.id.replace('family-', '').toLowerCase());
 
+    console.log('Selected families:', selectedFamilies);
+
     const projectCards = document.querySelectorAll('.project-card');
 
     projectCards.forEach(card => {
