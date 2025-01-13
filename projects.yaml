@@ -83,7 +83,7 @@ projects:
     repository: https://github.com/ansys/pyansys-sound
     description: Pythonic interface to Ansys Sound
     thumbnail: _static/thumbnails/pyansys-sound.png
-    family: Accoustics
+    family: Acoustics
     tags: [Flagship]
     documentation:
       base: https://sound.docs.pyansys.com/version/stable
