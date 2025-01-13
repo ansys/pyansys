@@ -6,7 +6,7 @@ projects:
     description: Pythonic interface to Ansys Composite PrepPost (ACP)
     thumbnail: _static/thumbnails/pyacp.png
     family: Structures
-    tags: [Flagship]
+    tags: [Flagship, Composites]
     documentation:
       base: https://acp.docs.pyansys.com/version/dev
       user_guide: https://acp.docs.pyansys.com/version/dev/user_guide/index.html
@@ -19,7 +19,7 @@ projects:
     description: Pythonic interface to the Ansys Additive service
     thumbnail: _static/thumbnails/intro.png
     family: Structures
-    tags: [Flagship]
+    tags: [Flagship, Composites]
     documentation:
       base: https://additive.docs.pyansys.com/version/stable
       user_guide: https://additive.docs.pyansys.com/version/stable/getting_started/index.html
@@ -32,7 +32,7 @@ projects:
     description: PyAdditive widget toolkit to visualize additive parametric study results
     thumbnail: _static/thumbnails/intro.png
     family: Structures
-    tags: [Tools]
+    tags: [Tools, Composites]
     documentation:
       base: https://widgets.additive.docs.pyansys.com/version/stable
       user_guide: https://widgets.additive.docs.pyansys.com/version/stable/getting_started/index.html
@@ -84,7 +84,7 @@ projects:
     description: Pythonic interface to Ansys Sound
     thumbnail: _static/thumbnails/pyansys-sound.png
     family: Acoustics
-    tags: [Flagship]
+    tags: [Post-processing, Flagship]
     documentation:
       base: https://sound.docs.pyansys.com/version/stable
       user_guide: https://sound.docs.pyansys.com/version/stable/user_guide.html
@@ -110,7 +110,7 @@ projects:
     description: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows
     thumbnail: _static/thumbnails/pydpf-core.png
     family: Structures
-    tags: [Flagship]
+    tags: [Post-processing, Flagship]
     documentation:
       base: https://dpf.docs.pyansys.com/version/stable
       user_guide: https://dpf.docs.pyansys.com/version/stable/user_guide/index.html
@@ -123,7 +123,7 @@ projects:
     description: Pythonic interface to access and postprocess Ansys solver result files
     thumbnail: _static/thumbnails/pydpf-post.png
     family: Structures
-    tags: [Flagship]
+    tags: [Post-processing, Flagship]
     documentation:
       base: https://post.docs.pyansys.com/version/stable
       user_guide: https://post.docs.pyansys.com/version/stable/user_guide/index.html
@@ -161,7 +161,7 @@ projects:
     repository: https://github.com/ansys/pydynamicreporting
     description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
     thumbnail: _static/thumbnails/pydynamicreporting.png
-    family: Materials
+    family: Platform
     tags: [Tools]
     documentation:
       base: https://dynamicreporting.docs.pyansys.com/version/stable
@@ -214,7 +214,7 @@ projects:
     description:  Pythonic interface to Ansys Fluent
     thumbnail: _static/thumbnails/pyfluent.png
     family: Fluids
-    tags: [Flagship]
+    tags: [Flagship, Visualization]
     documentation:
       base: https://fluent.docs.pyansys.com/version/stable
       user_guide: https://fluent.docs.pyansys.com/version/stable/user_guide/index.html
@@ -344,7 +344,7 @@ projects:
     description: Pythonic interface to the Ansys PIM (Product Instance Management) API
     thumbnail: _static/thumbnails/intro.png
     family: Platform
-    tags: [Flagship]
+    tags: [Tools]
     documentation:
       base: https://pypim.docs.pyansys.com/version/stable
       user_guide: https://pypim.docs.pyansys.com/version/stable/index.html#getting-started
@@ -356,7 +356,7 @@ projects:
     repository: https://github.com/ansys/pyprimemesh
     description: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers
     thumbnail: _static/thumbnails/pyprimemesh.png
-    family: Platform
+    family: Meshing
     tags: [Flagship]
     documentation:
       base: https://prime.docs.pyansys.com/version/stable
@@ -473,7 +473,7 @@ projects:
     repository: https://github.com/ansys/shared-components-openapi-common
     description: Shared Ansys software components to enable package interoperability and minimize maintenance
     thumbnail: _static/thumbnails/intro.png
-    family: Materials
+    family: Other
     tags: [Tools]
     documentation:
       base: https://shared.docs.pyansys.com
