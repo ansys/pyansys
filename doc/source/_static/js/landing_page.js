@@ -117,7 +117,7 @@ function handleFamilySelection() {
     document.querySelectorAll(
       '#product-families-list input[type="checkbox"]:checked',
     ),
-  ).map((checkbox) => checkbox.id.replace("family-", "").toLowerCase());
+  ).map((checkbox) => checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase());
 
   console.log("Selected families:", selectedFamilies);
 
@@ -125,6 +125,7 @@ function handleFamilySelection() {
 
   projectCards.forEach((card) => {
     const family = card.getAttribute("data-family").toLowerCase();
+    console.log("Family:", family);
     card.style.display =
       selectedFamilies.length === 0 || selectedFamilies.includes(family)
         ? "flex"
@@ -137,7 +138,7 @@ function handleTagSelection() {
     document.querySelectorAll(
       '#product-tags-list input[type="checkbox"]:checked',
     ),
-  ).map((checkbox) => checkbox.id.replace("tag-", "").toLowerCase());
+  ).map((checkbox) => checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase());
 
   console.log("Selected tags:", selectedTags);
 
