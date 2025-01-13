@@ -1,6 +1,7 @@
 """Configuration file for docs.pyansys.com landing page."""
 
 from datetime import datetime
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -61,7 +62,7 @@ author = "ANSYS Inc."
 cname = os.getenv("DOCUMENTATION_CNAME", default="nocname.com")
 switcher_version = get_version_match(pyansys_version)
 
-# get the PyAnsys version
+# Get the PyAnsys version
 release = version = pyansys_version
 
 html_theme = "ansys_sphinx_theme"
@@ -70,12 +71,22 @@ html_short_title = html_title = "PyAnsys"
 # Favicon
 html_favicon = ansys_favicon
 
+html_sidebars = {
+    "index": ["landing_page_sidebar.html"],
+}
+
 extensions = [
     "sphinx_design",
     "sphinx_copybutton",
     "sphinxcontrib.mermaid",
     "sphinx_jinja",
 ]
+
+# Static files
+templates_path = ["_templates"]
+html_static_path = ["_static"]
+html_css_files = ["css/landing_page.css"]
+html_js_files = ["js/landing_page.js"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
@@ -439,6 +450,32 @@ def package_versions_table(app: sphinx.application.Sphinx):
     )
 
 
+def convert_yaml_to_json(app: sphinx.application.Sphinx):
+    """
+    Convert a YAML file to a JSON file.
+
+    Parameters:
+    yaml_path (Path): Path to the YAML file.
+    json_path (Path): Path to save the JSON file.
+
+    Returns:
+    None
+    """
+    if not metadata.exists() or not metadata.is_file():
+        raise FileNotFoundError(f"The file {metadata} does not exist or is not a file.")
+
+    with metadata.open("r", encoding="utf-8") as yaml_file:
+        try:
+            yaml_content = yaml.safe_load(yaml_file)
+        except yaml.YAMLError as e:
+            raise ValueError(f"Error parsing YAML file: {e}")
+
+    json_path = Path(__file__).parent / "_static" / "projects.json"
+    with json_path.open("w", encoding="utf-8") as json_file:
+        json.dump(yaml_content, json_file, indent=4)
+        print(f"JSON file successfully written to {json_path}")
+
+
 def setup(app: sphinx.application.Sphinx):
     """Run different hook functions during the documentation build.
 
@@ -448,6 +485,7 @@ def setup(app: sphinx.application.Sphinx):
         Sphinx instance containing all the configuration for the documentation build.
     """
     # At the beginning of the build process - update the version in cheatsheet
+    app.connect("builder-inited", convert_yaml_to_json)
     app.connect("builder-inited", resize_thumbnails)
     app.connect("builder-inited", package_versions_table)
 
