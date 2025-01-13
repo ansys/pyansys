@@ -19,15 +19,19 @@ it is now a collection of many Python packages for using Ansys products through 
 
 .. jinja:: project_context
 
-    .. grid:: 3
-        :gutter: 3 3 4 4
+    .. raw:: html
 
-        {% for project, metadata in projects['projects'].items() %}
-        .. grid-item-card:: {{ metadata['name'] }}
-          :img-top: {{ metadata['thumbnail'] }}
-          :link: {{ metadata['documentation']['base'] }}
-          :class-title: pyansys-card-title
+        <div class="projects" style="">
+            {% for project, metadata in projects['projects'].items() %}
 
-          {{ metadata['description'] }}
+            {% set family = metadata.get('family', 'other') | lower | replace(' ', '-') %}
+            {% set tags = metadata.get('tags', 'other') | lower %}
 
-        {% endfor %}
+            <div class="project-card sd-shadow-sm sd-card-hover" data-family="{{ family }}" data-tags="{{ tags }}">
+                <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
+                <p class="project-title"> {{ metadata['name'] }} </p>
+                <p class="project-description"> {{ metadata['description'] }} </p>
+            </div>
+
+            {% endfor %}
+        </div>
