@@ -1,107 +1,108 @@
 html {
-    overflow-y: scroll !important;
+  overflow-y: scroll !important;
 }
 
 .landing-page-sidebar {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0rem 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
 }
 .landing-page-sidebar-section {
-    margin-bottom: 2rem;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .landing-page-sidebar-section span {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
-.family-row, .tag-row {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
+.family-row,
+.tag-row {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
 }
-.family-row input, .tag-row input {
-    margin-right: 10px;
+.family-row input,
+.tag-row input {
+  margin-right: 10px;
 }
 .family-name {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .family-count {
-    margin-left: auto;
-    background-color: lightgrey;
-    border-radius: 50%;
-    padding: 0.25rem 0.75rem;
+  margin-left: auto;
+  background-color: lightgrey;
+  border-radius: 50%;
+  padding: 0.25rem 0.75rem;
 }
 .selected-families {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .selected-family {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-    background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  background-color: lightgrey;
 }
 .remove-family {
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: white;
 }
 
 .project-thumbnail {
-    padding: 0;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+  padding: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .project-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0rem;
-    padding: 0.5rem;
-    padding-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
 }
 
 .project-description {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    padding-left: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
 }
 
-
 @media screen and (max-width: 768px) {
-    .projects {
-        grid-template-columns: 1fr; /* One column grid for small screens */
-    }
+  .projects {
+    grid-template-columns: 1fr;
+  }
 
-    .landing-page-sidebar {
-        padding: 1rem; /* Reduce padding for smaller screens */
-    }
+  .landing-page-sidebar {
+    padding: 1rem;
+  }
 
-    .project-card {
-        margin: 0 auto; /* Center the project cards */
-        width: 90%; /* Make cards take most of the screen width */
-    }
+  .project-card {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
