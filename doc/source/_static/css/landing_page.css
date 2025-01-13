@@ -89,3 +89,19 @@ html {
     padding: 0.5rem;
     padding-left: 1rem;
 }
+
+
+@media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr; /* One column grid for small screens */
+    }
+
+    .landing-page-sidebar {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .project-card {
+        margin: 0 auto; /* Center the project cards */
+        width: 90%; /* Make cards take most of the screen width */
+    }
+}
