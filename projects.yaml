@@ -227,7 +227,7 @@ projects:
     description: Pythonic interface to visualize Ansys Fluent simulations
     thumbnail: _static/thumbnails/pyfluent-visualization.png
     family: Fluids
-    tags: ["Tools", "Visualization"]
+    tags: [Tools, Visualization]
     documentation:
       base:  https://visualization.fluent.docs.pyansys.com/version/stable
       user_guide: https://visualization.fluent.docs.pyansys.com/version/stable/users_guide/index.html
@@ -395,6 +395,8 @@ projects:
     repository: https://github.com/ansys/pysherlock
     description: Pythonic interface to Ansys Sherlock
     thumbnail: _static/thumbnails/pysherlock.png
+    family: Electronics
+    tags: [Flagship, Thermal]
     documentation:
       base: https://sherlock.docs.pyansys.com/version/stable
       user_guide: https://sherlock.docs.pyansys.com/version/stable/user_guide/index.html
@@ -406,6 +408,8 @@ projects:
     repository: https://github.com/ansys/pysimai
     description: Pythonic interface to SimAI
     thumbnail: _static/thumbnails/pysimai.png
+    family: AI
+    tags: [Flagship]
     documentation:
       base: https://simai.docs.pyansys.com/version/stable
       user_guide: https://simai.docs.pyansys.com/version/stable/user_guide.html
@@ -417,6 +421,8 @@ projects:
     repository: https://github.com/ansys/pysystemcoupling
     description: Pythonic interface to Ansys System Coupling
     thumbnail: _static/thumbnails/pysystem-coupling.png
+    family: Other
+    tags: [Flagship]
     documentation:
       base: https://systemcoupling.docs.pyansys.com/version/stable
       user_guide: https://systemcoupling.docs.pyansys.com/version/stable/users_guide/index.html
@@ -428,6 +434,8 @@ projects:
     repository: https://github.com/ansys/pyturbogrid
     description: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app
     thumbnail: _static/thumbnails/pyturbogrid.png
+    family: Fluids
+    tags: [Flagship]
     documentation:
       base: https://turbogrid.docs.pyansys.com/version/stable
       user_guide: https://turbogrid.docs.pyansys.com/version/stable/getting_started/index.html
@@ -439,6 +447,8 @@ projects:
     repository: https://github.com/ansys/pytwin
     description: Pythonic interface to communicate with consumption workflows for Ansys digital twins
     thumbnail: _static/thumbnails/pytwin.png
+    family: Digital Twin
+    tags: [Flagship]
     documentation:
       base: https://twin.docs.pyansys.com/version/stable
       user_guide: https://twin.docs.pyansys.com/version/stable/user_guide/index.html
@@ -450,6 +460,8 @@ projects:
     repository: https://github.com/ansys/pyworkbench
     description: Pythonic interface to Ansys Workbench
     thumbnail: _static/thumbnails/intro.png
+    family: Other
+    tags: [Flagship]
     documentation:
       base: https://workbench.docs.pyansys.com/version/stable
       user_guide: https://workbench.docs.pyansys.com/version/stable/user-guide.html
@@ -461,6 +473,8 @@ projects:
     repository: https://github.com/ansys/shared-components-openapi-common
     description: Shared Ansys software components to enable package interoperability and minimize maintenance
     thumbnail: _static/thumbnails/intro.png
+    family: Materials
+    tags: [Tools]
     documentation:
       base: https://shared.docs.pyansys.com
       user_guide: https://openapi.docs.pyansys.com/version/stable/index.html
