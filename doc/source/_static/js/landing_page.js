@@ -117,7 +117,9 @@ function handleFamilySelection() {
     document.querySelectorAll(
       '#product-families-list input[type="checkbox"]:checked',
     ),
-  ).map((checkbox) => checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase());
+  ).map((checkbox) =>
+    checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase(),
+  );
 
   console.log("Selected families:", selectedFamilies);
 
@@ -138,7 +140,9 @@ function handleTagSelection() {
     document.querySelectorAll(
       '#product-tags-list input[type="checkbox"]:checked',
     ),
-  ).map((checkbox) => checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase());
+  ).map((checkbox) =>
+    checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase(),
+  );
 
   console.log("Selected tags:", selectedTags);
 
