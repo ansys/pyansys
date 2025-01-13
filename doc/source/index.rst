@@ -27,10 +27,12 @@ it is now a collection of many Python packages for using Ansys products through 
             {% set family = metadata.get('family', 'other') | lower | replace(' ', '-') %}
             {% set tags = metadata.get('tags', 'other') | lower %}
 
-            <div class="project-card sd-shadow-sm sd-card-hover" data-family="{{ family }}" data-tags="{{ tags }}">
+            <div class="project-card sd-card sd-shadow-sm sd-card-hover" data-family="{{ family }}" data-tags="{{ tags }}">
                 <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
-                <p class="project-title"> {{ metadata['name'] }} </p>
-                <p class="project-description"> {{ metadata['description'] }} </p>
+                <div class="sd-card-body">
+                    <p class="sd-card-title sd-font-weight-bold"> {{ metadata['name'] }} </p>
+                    <p class="sd-card-body-text"> {{ metadata['description'] }} </p>
+                </div>
             </div>
 
             {% endfor %}
