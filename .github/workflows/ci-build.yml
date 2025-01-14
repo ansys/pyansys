@@ -72,16 +72,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+      - name: Install the latest version of uv and set the python version
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: ${{ matrix.python-version }}
-          cache: 'pip'
-          cache-dependency-path: 'pyproject.toml'
+          cache-dependency-glob: '**/pyproject.toml'
 
       - name: Install core PyAnsys packages
         run: |
-          pip install .
+          uv pip install .
 
       - name: Smoke test
         run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
@@ -100,16 +99,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+      - name: Install the latest version of uv and set the python version
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: ${{ matrix.python-version }}
-          cache: 'pip'
-          cache-dependency-path: 'pyproject.toml'
+          cache-dependency-glob: '**/pyproject.toml'
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
-          pip install .[${{ matrix.extras-version }}]
+          uv pip install .[${{ matrix.extras-version }}]
 
       - name: Smoke test
         run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
