@@ -184,25 +184,28 @@ function initializeAllCards() {
   });
 }
 
-fetch("_static/projects.json")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then((data) => {
-    // Display families
-    const familyCounts = collectFamilies(data);
-    displayFamilies(familyCounts);
 
-    // Display tags
-    const tagCounts = collectTags(data);
-    displayTags(tagCounts);
-
-    // Render all cards
-    initializeAllCards();
-  })
-  .catch((error) => {
-    console.error("Error fetching the projects data:", error);
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  fetch(PROJECTS_FILE)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      // Display families
+      const familyCounts = collectFamilies(data);
+      displayFamilies(familyCounts);
+  
+      // Display tags
+      const tagCounts = collectTags(data);
+      displayTags(tagCounts);
+  
+      // Render all cards
+      initializeAllCards();
+    })
+    .catch((error) => {
+      console.error("Error fetching the projects data:", error);
+    });
+})
