@@ -22,7 +22,7 @@ projects:
     tags: [Flagship, Composites]
     documentation:
       base: https://additive.docs.pyansys.com/version/stable
-      user_guide: https://additive.docs.pyansys.com/version/stable/getting_started/index.html
+      user_guide: https://additive.docs.pyansys.com/version/stable/getting-started/index.html
       examples: https://additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
       api: https://additive.docs.pyansys.com/version/stable/api/index.html
 
