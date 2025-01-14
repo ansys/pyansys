@@ -27,9 +27,9 @@ it is now a collection of many Python packages for using Ansys products through 
             {% set family = metadata.get('family', 'other') | lower | replace(' ', '-') %}
             {% set tags = metadata.get('tags', 'other') | lower %}
 
-            <div 
-                class="project-card sd-card sd-shadow-sm sd-card-hover" 
-                data-family="{{ family }}" 
+            <div
+                class="project-card sd-card sd-shadow-sm sd-card-hover"
+                data-family="{{ family }}"
                 data-tags="{{ tags }}"
                 onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
             >
