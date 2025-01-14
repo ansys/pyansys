@@ -21,13 +21,18 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. raw:: html
 
-        <div class="projects" style="">
+        <div class="projects">
             {% for project, metadata in projects['projects'].items() %}
 
             {% set family = metadata.get('family', 'other') | lower | replace(' ', '-') %}
             {% set tags = metadata.get('tags', 'other') | lower %}
 
-            <div class="project-card sd-card sd-shadow-sm sd-card-hover" data-family="{{ family }}" data-tags="{{ tags }}">
+            <div 
+                class="project-card sd-card sd-shadow-sm sd-card-hover" 
+                data-family="{{ family }}" 
+                data-tags="{{ tags }}"
+                onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
+            >
                 <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
                 <div class="sd-card-body">
                     <p class="sd-card-title sd-font-weight-bold"> {{ metadata['name'] }} </p>
