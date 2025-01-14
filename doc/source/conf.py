@@ -86,7 +86,6 @@ extensions = [
 templates_path = ["_templates"]
 html_static_path = ["_static"]
 html_css_files = ["css/landing_page.css"]
-html_js_files = ["js/landing_page.js"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 

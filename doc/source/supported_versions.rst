@@ -51,6 +51,8 @@ Below you can find a list of the Python versions supported by each PyAnsys metap
 +-----------------+----------------------------+
 | `2024.2`_       | Python 3.9 - Python 3.12   |
 +-----------------+----------------------------+
+| `2025.1`_       | Python 3.10 - Python 3.12  |
++-----------------+----------------------------+
 | `development`_  | Python 3.10 - Python 3.12  |
 +-----------------+----------------------------+
 
@@ -62,4 +64,5 @@ Below you can find a list of the Python versions supported by each PyAnsys metap
 .. _2023.2: https://pypi.org/project/pyansys/2023.2.11/
 .. _2024.1: https://pypi.org/project/pyansys/2024.1.8/
 .. _2024.2: https://pypi.org/project/pyansys/2024.2.2/
+.. _2025.1: https://pypi.org/project/pyansys/2025.1.0/
 .. _development: https://github.com/ansys/pyansys
