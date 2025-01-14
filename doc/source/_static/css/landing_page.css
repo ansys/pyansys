@@ -71,6 +71,9 @@ html {
   border-radius: 8px;
   background-color: white;
 }
+.project-card:hover {
+  cursor: pointer;
+}
 
 .project-thumbnail {
   padding: 0;
