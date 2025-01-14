@@ -184,7 +184,6 @@ function initializeAllCards() {
   });
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
   fetch(PROJECTS_FILE)
     .then((response) => {
@@ -197,15 +196,15 @@ document.addEventListener("DOMContentLoaded", () => {
       // Display families
       const familyCounts = collectFamilies(data);
       displayFamilies(familyCounts);
-  
+
       // Display tags
       const tagCounts = collectTags(data);
       displayTags(tagCounts);
-  
+
       // Render all cards
       initializeAllCards();
     })
     .catch((error) => {
       console.error("Error fetching the projects data:", error);
     });
-})
+});
