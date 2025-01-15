@@ -8,10 +8,10 @@ projects:
     family: Structures
     tags: [Flagship, Composites]
     documentation:
-      base: https://acp.docs.pyansys.com/version/dev
-      user_guide: https://acp.docs.pyansys.com/version/dev/user_guide/index.html
-      examples: https://acp.docs.pyansys.com/version/dev/examples/index.html
-      api: https://acp.docs.pyansys.com/version/dev/api/index.html
+      base: https://acp.docs.pyansys.com/version/stable
+      user_guide: https://acp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://acp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://acp.docs.pyansys.com/version/stable/api/index.html
 
   pyadditive:
     name: PyAdditive
