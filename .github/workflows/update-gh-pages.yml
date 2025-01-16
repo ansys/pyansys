@@ -49,7 +49,7 @@ jobs:
         sed -i 's/src="\([^:"]*\)"/src="version\/dev\/\1"/g' index.html
         # Update JS variables pointing to static values
         sed -i 's|const SEARCH_FILE = ".*_static/search.json";|const SEARCH_FILE = "version/dev/_static/search.json";|g' index.html
-        sed -i 's|const PROJECTS_FILE = ".*_static/projects.json";|const PROJECTS_FILE = "version/dev/_static/projects.json";|g' index.html
+        sed -i 's|const PROJECTS_FILE = "_static/projects.json"|const PROJECTS_FILE = "version/dev/_static/projects.json"|' index.html
         # Replace "version/stable" with "version/dev" in the sitemap.xml
         sed -i 's/version\/stable/version\/dev/g' sitemap.xml
 
