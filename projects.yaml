@@ -96,8 +96,8 @@ projects:
     repository: https://github.com/ansys/pyconceptev
     description: Pythonic interface to Ansys ConceptEV library
     thumbnail: _static/thumbnails/pyconceptev.png
-    family: [Electronics]
-    tags: [Flagship]
+    family: Electronics
+    tags: [Tools]
     documentation:
       base: https://conceptev.docs.pyansys.com/version/stable
       user_guide: https://conceptev.docs.pyansys.com/version/stable/user_guide.html
