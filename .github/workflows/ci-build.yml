@@ -49,7 +49,7 @@ jobs:
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
-          whitelist-license-check: "attrs" # This has MIT license but fails the check
+          whitelist-license-check: "attrs,referencing" # This has MIT license but fails the check
 
   docs-style:
     name: Documentation Style Check
@@ -130,7 +130,7 @@ jobs:
           operating-system: ${{ runner.os }}
           python-version: ${{ matrix.python-version }}
           target: "all"
-          whitelist-license-check: "attrs" # This has MIT license but fails the check
+          whitelist-license-check: "attrs,referencing" # This has MIT license but fails the check
 
       - name: List dependencies (pip freeze)
         run: |
