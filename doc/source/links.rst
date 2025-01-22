@@ -13,6 +13,7 @@
 .. ANSYS and products
 .. _ANSYS, Inc.: https://ansys.com
 .. _Ansys products: https://ansys.com/products
+.. _Ansys Customer Portal: https://download.ansys.com
 
 .. Python libraries
 .. _Numpy: https://numpy.org/
