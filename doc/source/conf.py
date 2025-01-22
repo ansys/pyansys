@@ -1,6 +1,5 @@
 """Configuration file for docs.pyansys.com landing page."""
 
-
 from datetime import datetime
 import json
 import os
@@ -91,21 +90,69 @@ html_css_files = ["css/landing_page.css"]
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
 supported_python_versions_for_metapackage = [
-    {"version": "2023.1", "python_versions": "Python 3.7 - Python 3.10", "link": "https://pypi.org/project/pyansys/2023.1.3/"},
-    {"version": "2023.2", "python_versions": "Python 3.8 - Python 3.11", "link": "https://pypi.org/project/pyansys/2023.2.11/"},
-    {"version": "2024.1", "python_versions": "Python 3.9 - Python 3.12", "link": "https://pypi.org/project/pyansys/2024.1.8/"},
-    {"version": "2024.2", "python_versions": "Python 3.9 - Python 3.12", "link": "https://pypi.org/project/pyansys/2024.2.2/"},
-    {"version": "2025.1", "python_versions": "Python 3.10 - Python 3.12", "link": "https://pypi.org/project/pyansys/2025.1.0/"},
-    {"version": "development", "python_versions": "Python 3.10 - Python 3.12", "link": "https://github.com/ansys/pyansys"},
+    {
+        "version": "2023.1",
+        "python_versions": "Python 3.7 - Python 3.10",
+        "link": "https://pypi.org/project/pyansys/2023.1.3/",
+    },
+    {
+        "version": "2023.2",
+        "python_versions": "Python 3.8 - Python 3.11",
+        "link": "https://pypi.org/project/pyansys/2023.2.11/",
+    },
+    {
+        "version": "2024.1",
+        "python_versions": "Python 3.9 - Python 3.12",
+        "link": "https://pypi.org/project/pyansys/2024.1.8/",
+    },
+    {
+        "version": "2024.2",
+        "python_versions": "Python 3.9 - Python 3.12",
+        "link": "https://pypi.org/project/pyansys/2024.2.2/",
+    },
+    {
+        "version": "2025.1",
+        "python_versions": "Python 3.10 - Python 3.12",
+        "link": "https://pypi.org/project/pyansys/2025.1.0/",
+    },
+    {
+        "version": "development",
+        "python_versions": "Python 3.10 - Python 3.12",
+        "link": "https://github.com/ansys/pyansys",
+    },
 ]
 
 supported_python_versions_by_metapackage_version = [
-    {"version": "2023.1", "python": ("3.7", "3.10"), "pypi": "https://pypi.org/project/pyansys/2023.1.3/"},
-    {"version": "2023.2", "python": ("3.8", "3.11"), "pypi": "https://pypi.org/project/pyansys/2023.2.11/"},
-    {"version": "2024.1", "python": ("3.9", "3.12"), "pypi": "https://pypi.org/project/pyansys/2024.1.8/"},
-    {"version": "2024.2", "python": ("3.9", "3.12"), "pypi": "https://pypi.org/project/pyansys/2024.2.2/"},
-    {"version": "2025.1", "python": ("3.10", "3.12"), "pypi": "https://pypi.org/project/pyansys/2025.1.0/"},
-    {"version": "development", "python": ("3.10", "3.12"), "pypi": "https://github.com/ansys/pyansys"},
+    {
+        "version": "2023.1",
+        "python": ("3.7", "3.10"),
+        "pypi": "https://pypi.org/project/pyansys/2023.1.3/",
+    },
+    {
+        "version": "2023.2",
+        "python": ("3.8", "3.11"),
+        "pypi": "https://pypi.org/project/pyansys/2023.2.11/",
+    },
+    {
+        "version": "2024.1",
+        "python": ("3.9", "3.12"),
+        "pypi": "https://pypi.org/project/pyansys/2024.1.8/",
+    },
+    {
+        "version": "2024.2",
+        "python": ("3.9", "3.12"),
+        "pypi": "https://pypi.org/project/pyansys/2024.2.2/",
+    },
+    {
+        "version": "2025.1",
+        "python": ("3.10", "3.12"),
+        "pypi": "https://pypi.org/project/pyansys/2025.1.0/",
+    },
+    {
+        "version": "development",
+        "python": ("3.10", "3.12"),
+        "pypi": "https://github.com/ansys/pyansys",
+    },
 ]
 
 jinja_contexts = {
