@@ -9,7 +9,7 @@ it is now a collection of many Python packages for using Ansys products through 
    :hidden:
    :maxdepth: 3
 
-   getting_started
+   getting-started
    user_guide
    api
    examples
