@@ -37,7 +37,7 @@ Download and install PyAnsys from `PyPI`_:
 
             python -m pip install pyansys
 
-The PyAnsys |version| metapackage installs the following projects:
+The PyAnsys |version| metapackage includes the following projects:
 
 .. jinja:: dependencies
 
@@ -71,7 +71,54 @@ The PyAnsys |version| metapackage installs the following projects:
 Additional targets
 ------------------
 
+The PyAnsys metapackage contains various targets for installing additional
+libraries and tools.
 
+.. jinja:: optional_dependencies
+
+    .. tab-set::
+
+        {% for target, dependencies in optional_dependencies.items() %}
+
+        .. tab-item:: {{ target }}
+
+            Install by running:
+
+            .. code-block:: bash
+
+                python -m pip install pyansys[{{ target }}]
+                
+            .. raw:: html
+             
+                <!-- Initialize DataTables -->
+                <script>
+                    $(document).ready(function() {
+                        $('#target-{{ target }}').DataTable();
+                    });
+                </script>
+    
+                <!-- Populate and render the table -->
+                <table id="target-{{ target }}" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>PyAnsys project</th>
+                            <th>Version</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for project, version in dependencies.items() %}
+                        <tr>
+                            <td>{{ project }}</td>
+                            <td>{{ version }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+
+
+   
+         {% endfor %}
 
 
 Offline installation

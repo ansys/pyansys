@@ -139,11 +139,13 @@ def read_optional_dependencies_from_pyproject():
         raise ValueError(f"The file {pyproject} does not exist.")
 
     pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
-    optional_dependencies = pyproject_content["project"]["optional-dependencies"]
+    exclude_targets = ["doc"]
+    optional_dependencies = {
+            target: {pkg.split("==")[0]: pkg.split("==")[1] for pkg in deps}
+            for target, deps in pyproject_content["project"]["optional-dependencies"].items()
+            if target not in exclude_targets
+    }
     return optional_dependencies
-
-
-read_optional_dependencies_from_pyproject()
 
 jinja_contexts = {
     "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
