@@ -147,6 +147,7 @@ def read_optional_dependencies_from_pyproject():
     }
     return optional_dependencies
 
+
 jinja_globals = {
     "VERSION": version,
     "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12"],
@@ -159,9 +160,10 @@ jinja_contexts = {
     "optional_dependencies": {"optional_dependencies": read_optional_dependencies_from_pyproject()},
     "wheelhouse": {
         "wheelhouse": {
-            platform: icon 
-            for platform, icon in zip(["Windows", "macOS", "Linux"], ["windows", "apple", "linux"])}
-    }
+            platform: icon
+            for platform, icon in zip(["Windows", "macOS", "Linux"], ["windows", "apple", "linux"])
+        }
+    },
 }
 
 html_context = {
