@@ -42,14 +42,14 @@ The PyAnsys |version| metapackage installs the following projects:
 .. jinja:: dependencies
 
     .. raw:: html
-    
+
         <!-- Initialize DataTables -->
         <script>
             $(document).ready(function() {
                 $('#pyansys-projects').DataTable();
             });
         </script>
-    
+
         <!-- Populate and render the table -->
         <table id="pyansys-projects" class="display" style="width:100%">
             <thead>

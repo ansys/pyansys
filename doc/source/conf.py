@@ -122,6 +122,7 @@ supported_python_versions_by_metapackage_version = [
     },
 ]
 
+
 def read_dependencies_from_pyproject():
     pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
     if not pyproject.exists():
@@ -131,6 +132,7 @@ def read_dependencies_from_pyproject():
     dependencies = pyproject_content["project"]["dependencies"]
     return {pkg.split("==")[0]: pkg.split("==")[1] for pkg in dependencies}
 
+
 def read_optional_dependencies_from_pyproject():
     pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
     if not pyproject.exists():
@@ -139,6 +141,7 @@ def read_optional_dependencies_from_pyproject():
     pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
     optional_dependencies = pyproject_content["project"]["optional-dependencies"]
     return optional_dependencies
+
 
 read_optional_dependencies_from_pyproject()
 
