@@ -67,12 +67,12 @@ metapackage release:
         <!-- Initialize DataTables -->
         <script>
             $(document).ready(function() {
-                $('#example').DataTable();
+                $('#supported-python-versions').DataTable();
             });
         </script>
 
         <!-- Populate and render the table -->
-        <table id="example" class="display" style="width:100%">
+        <table id="supported-python-versions" class="display" style="width:100%">
             <thead>
                 <tr>
                     <th>PyAnsys version</th>

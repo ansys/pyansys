@@ -16,6 +16,7 @@
 .. _Ansys Customer Portal: https://download.ansys.com
 
 .. Python libraries
+.. _PyPI: https://pypi.org/
 .. _Numpy: https://numpy.org/
 .. _SciPy: https://www.scipy.org/
 .. _Pandas: https://pandas.pydata.org/

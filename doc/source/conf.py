@@ -122,9 +122,31 @@ supported_python_versions_by_metapackage_version = [
     },
 ]
 
+def read_dependencies_from_pyproject():
+    pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
+    if not pyproject.exists():
+        raise ValueError(f"The file {pyproject} does not exist.")
+
+    pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
+    dependencies = pyproject_content["project"]["dependencies"]
+    return {pkg.split("==")[0]: pkg.split("==")[1] for pkg in dependencies}
+
+def read_optional_dependencies_from_pyproject():
+    pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
+    if not pyproject.exists():
+        raise ValueError(f"The file {pyproject} does not exist.")
+
+    pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
+    optional_dependencies = pyproject_content["project"]["optional-dependencies"]
+    return optional_dependencies
+
+read_optional_dependencies_from_pyproject()
+
 jinja_contexts = {
     "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
     "releases": {"table_data": supported_python_versions_by_metapackage_version},
+    "dependencies": {"dependencies": read_dependencies_from_pyproject()},
+    "optional_dependencies": {"optional_dependencies": read_optional_dependencies_from_pyproject()},
 }
 
 html_context = {
