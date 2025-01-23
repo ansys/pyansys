@@ -27,7 +27,7 @@ after their initial release:
 
 .. mermaid::
    :caption: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
-   :alt: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
+   :alt: Current Python versions supported by the PyAnsys metapackage
    :align: center
 
     gantt
@@ -43,8 +43,8 @@ after their initial release:
 
 In previous diagram:
 
-* Python versions in gray are no not supported
-* Python versions in light blue are supported
+* Python versions in gray are no longer supported
+* Python versions in light blue are currently supported
 * Python versions in dark blue will be supported in the future
 
 .. note::
@@ -57,12 +57,38 @@ metapackage release:
 
 .. jinja:: releases
 
-    .. list-table:: Supported Package Versions
-        :header-rows: 1
-
-        * - PyAnsys metapackage version
-          - Supported Python versions
-        {% for release in table_data %}
-        * - `{{ release.version }} <https://pypi.org/project/pyansys/{{ release.pypi}}>`_
-          - From Python {{ release.python[0] }} up to Python {{ release.python[1] }}
-        {% endfor %}
+    .. raw:: html
+    
+        <!-- Include DataTables CSS, jQuery, and JS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    
+        <!-- Initialize DataTables -->
+        <script>
+            $(document).ready(function() {
+                $('#example').DataTable();
+            });
+        </script>
+    
+        <!-- Populate and render the table -->
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>PyAnsys version</th>
+                    <th>Min. Python version</th>
+                    <th>Max. Python version</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for release in table_data %}
+                <tr>
+                    <td>{{ release.version }}</td>
+                    <td>{{ release.python.lower }}</td>
+                    <td>{{ release.python.upper }}</td>
+                    <td><a href={{ release.link}}>{{ release.link }}</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>

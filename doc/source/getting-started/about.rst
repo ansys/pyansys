@@ -6,9 +6,8 @@ Inc.`_ It provides access to `Ansys products`_ by using a Python interface,
 enabling users to perform engineering simulations, data processing, and
 automation tasks.
 
-To ease the installation of the libraries and tools, PyAnsys provides a
-metapackage. Its goal is to simplify the installation process of the PyAnsys
-ecosystem and ensure compatibility between its projects.
+To ease the installation of the libraries and tools, PyAnsys provides a Python
+metapackage. This ensures compatibility between its projects.
 
 Key features of PyAnsys
 =======================
