@@ -153,6 +153,6 @@ Next, decompress the artifacts:
 
 Finally, install the PyAnsys metapackage using previously downloaded wheelhouse:
 
-.. code-block:: bash 
+.. code-block:: bash
 
     python -m pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
