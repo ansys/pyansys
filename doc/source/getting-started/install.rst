@@ -87,16 +87,16 @@ libraries and tools.
             .. code-block:: bash
 
                 python -m pip install pyansys[{{ target }}]
-                
+
             .. raw:: html
-             
+
                 <!-- Initialize DataTables -->
                 <script>
                     $(document).ready(function() {
                         $('#target-{{ target }}').DataTable();
                     });
                 </script>
-    
+
                 <!-- Populate and render the table -->
                 <table id="target-{{ target }}" class="display" style="width:100%">
                     <thead>
@@ -117,7 +117,7 @@ libraries and tools.
 
 
 
-   
+
          {% endfor %}
 
 

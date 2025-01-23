@@ -141,11 +141,12 @@ def read_optional_dependencies_from_pyproject():
     pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
     exclude_targets = ["doc"]
     optional_dependencies = {
-            target: {pkg.split("==")[0]: pkg.split("==")[1] for pkg in deps}
-            for target, deps in pyproject_content["project"]["optional-dependencies"].items()
-            if target not in exclude_targets
+        target: {pkg.split("==")[0]: pkg.split("==")[1] for pkg in deps}
+        for target, deps in pyproject_content["project"]["optional-dependencies"].items()
+        if target not in exclude_targets
     }
     return optional_dependencies
+
 
 jinja_contexts = {
     "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
