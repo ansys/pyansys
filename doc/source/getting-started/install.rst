@@ -144,3 +144,15 @@ Start by downloading the wheelhouse artifact for your platform:
        {%- if not loop.last -%},{%- endif -%}
        {% endfor %}
        {% endfor %}
+
+Next, decompress the artifacts:
+
+.. code-block:: bash
+
+    unzip <path/to/wheelhouse.zip> wheelhouse
+
+Finally, install the PyAnsys metapackage using previously downloaded wheelhouse:
+
+.. code-block:: bash 
+
+    python -m pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
