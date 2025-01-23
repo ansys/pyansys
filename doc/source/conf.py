@@ -147,12 +147,21 @@ def read_optional_dependencies_from_pyproject():
     }
     return optional_dependencies
 
-
+jinja_globals = {
+    "VERSION": version,
+    "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12"],
+    "SUPPORTED_PLATFORMS": ["Windows", "macOS", "Linux"],
+}
 jinja_contexts = {
     "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
     "releases": {"table_data": supported_python_versions_by_metapackage_version},
     "dependencies": {"dependencies": read_dependencies_from_pyproject()},
     "optional_dependencies": {"optional_dependencies": read_optional_dependencies_from_pyproject()},
+    "wheelhouse": {
+        "wheelhouse": {
+            platform: icon 
+            for platform, icon in zip(["Windows", "macOS", "Linux"], ["windows", "apple", "linux"])}
+    }
 }
 
 html_context = {

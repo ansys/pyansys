@@ -124,26 +124,23 @@ libraries and tools.
 Offline installation
 ====================
 
-Download the artifacts for your platform:
+Start by downloading the wheelhouse artifact for your platform:
 
-.. tab-set::
+.. jinja:: wheelhouse
 
-    .. tab-item:: :fab:`windows` **Windows**
-
-        .. code-block:: bash
-
-            python -m pip install pyansys
-
-    .. tab-item:: :fab:`apple` **MacOS**
-
-        .. code-block:: bash
-
-            python -m pip install pyansys
-
-    .. tab-item:: :fab:`linux` **Linux**
-
-        .. code-block:: bash
-
-            python -m pip install pyansys
-
-
+    .. csv-table::
+       :header-rows: 1
+       :widths: 16, 28, 28, 28
+    
+       :fas:`laptop` Platform,
+       {%- for python in SUPPORTED_PYTHON_VERSIONS -%}
+       :fab:`python` Python {{ python }}
+       {%- if not loop.last -%},{%- endif -%}
+       {% endfor %}
+       {% for platform, icon in wheelhouse.items() -%}
+       :fab:`{{ icon }}` {{ platform }},
+       {%- for python in SUPPORTED_PYTHON_VERSIONS -%}
+       `Download wheelhouse <https://github.com/ansys/pyansys/releases/download/v{{ VERSION }}/pyansys-v{{ VERSION }}-all-wheelhouse-{{ platform }}-{{ python }}.zip>`__
+       {%- if not loop.last -%},{%- endif -%}
+       {% endfor %}
+       {% endfor %}
