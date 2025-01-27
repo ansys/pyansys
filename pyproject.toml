@@ -49,7 +49,7 @@ dependencies = [
     "ansys-rocky-core==0.3.2",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.8.2",
-    "ansys-simai-core==0.2.5",
+    "ansys-simai-core==0.2.6",
     "ansys-sound-core==0.1.3",
     "ansys-systemcoupling-core==0.8.0",
     "ansys-turbogrid-core==0.4.1",
