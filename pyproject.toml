@@ -25,7 +25,7 @@ classifiers = [
 
 dependencies = [
     "ansys-acp-core==0.1.0",
-    "ansys-additive-core==0.19.0",
+    "ansys-additive-core==0.19.1",
     "ansys-additive-widgets==0.2.1",
     "ansys-conceptev-core==0.8",
     "ansys-dpf-composites==0.6.2",
@@ -45,7 +45,7 @@ dependencies = [
     "ansys-motorcad-core==0.7.0",
     "ansys-optislang-core==0.9.2",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.9.6",
+    "ansys-pyensight-core==0.9.7",
     "ansys-rocky-core==0.3.2",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.8.2",
