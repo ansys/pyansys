@@ -89,8 +89,81 @@ html_css_files = ["css/landing_page.css"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
+supported_python_versions_by_metapackage_version = [
+    {
+        "version": "2023.1",
+        "python": {"lower": "3.7", "upper": "3.10"},
+        "link": "https://pypi.org/project/pyansys/2023.1.3/",
+    },
+    {
+        "version": "2023.2",
+        "python": {"lower": "3.8", "upper": "3.11"},
+        "link": "https://pypi.org/project/pyansys/2023.2.11/",
+    },
+    {
+        "version": "2024.1",
+        "python": {"lower": "3.9", "upper": "3.12"},
+        "link": "https://pypi.org/project/pyansys/2024.1.8/",
+    },
+    {
+        "version": "2024.2",
+        "python": {"lower": "3.9", "upper": "3.12"},
+        "link": "https://pypi.org/project/pyansys/2024.2.2/",
+    },
+    {
+        "version": "2025.1",
+        "python": {"lower": "3.10", "upper": "3.12"},
+        "link": "https://pypi.org/project/pyansys/2025.1.0/",
+    },
+    {
+        "version": "development",
+        "python": {"lower": "3.10", "upper": "3.12"},
+        "link": "https://github.com/ansys/pyansys",
+    },
+]
+
+
+def read_dependencies_from_pyproject():
+    pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
+    if not pyproject.exists():
+        raise ValueError(f"The file {pyproject} does not exist.")
+
+    pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
+    dependencies = pyproject_content["project"]["dependencies"]
+    return {pkg.split("==")[0]: pkg.split("==")[1] for pkg in dependencies}
+
+
+def read_optional_dependencies_from_pyproject():
+    pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
+    if not pyproject.exists():
+        raise ValueError(f"The file {pyproject} does not exist.")
+
+    pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
+    exclude_targets = ["doc"]
+    optional_dependencies = {
+        target: {pkg.split("==")[0]: pkg.split("==")[1] for pkg in deps}
+        for target, deps in pyproject_content["project"]["optional-dependencies"].items()
+        if target not in exclude_targets
+    }
+    return optional_dependencies
+
+
+jinja_globals = {
+    "VERSION": version,
+    "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12"],
+    "SUPPORTED_PLATFORMS": ["Windows", "macOS", "Linux"],
+}
 jinja_contexts = {
-    "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))}
+    "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
+    "releases": {"table_data": supported_python_versions_by_metapackage_version},
+    "dependencies": {"dependencies": read_dependencies_from_pyproject()},
+    "optional_dependencies": {"optional_dependencies": read_optional_dependencies_from_pyproject()},
+    "wheelhouse": {
+        "wheelhouse": {
+            platform: icon
+            for platform, icon in zip(["Windows", "macOS", "Linux"], ["windows", "apple", "linux"])
+        }
+    },
 }
 
 html_context = {
