@@ -1,0 +1,17 @@
+
+Package versions
+================
+
+Users can find below the list of PyAnsys packages available in the various
+PyAnsys metapackages. The tables shows the package versions available in each
+metapackage release.
+
+.. toctree::
+   :maxdepth: 3
+    
+   version_dev
+   version_2025.1
+   version_2024.2
+   version_2024.1
+   version_2023.2
+   version_2023.1
