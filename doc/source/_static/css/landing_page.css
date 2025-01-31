@@ -94,6 +94,16 @@ html {
   padding: 0.5rem;
   padding-left: 1rem;
 }
+.sd-bg-muted {
+  background-color: #ececec !important;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+[data-theme="dark"] .sd-bg-muted {
+  background-color: #3d3d3d !important;
+}
 
 @media screen and (max-width: 768px) {
   .projects {
