@@ -120,36 +120,49 @@ function handleTagSelection() {
 
 function applyFilters() {
   const selectedFamilies = Array.from(
-    document.querySelectorAll('#product-families-list input[type="checkbox"]:checked')
-  ).map(checkbox => checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase());
+    document.querySelectorAll(
+      '#product-families-list input[type="checkbox"]:checked',
+    ),
+  ).map((checkbox) =>
+    checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase(),
+  );
 
   const selectedTags = Array.from(
-    document.querySelectorAll('#product-tags-list input[type="checkbox"]:checked')
-  ).map(checkbox => checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase());
+    document.querySelectorAll(
+      '#product-tags-list input[type="checkbox"]:checked',
+    ),
+  ).map((checkbox) =>
+    checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase(),
+  );
 
   console.log("Selected families:", selectedFamilies);
   console.log("Selected tags:", selectedTags);
 
   const projectCards = document.querySelectorAll(".project-card");
 
-  projectCards.forEach(card => {
+  projectCards.forEach((card) => {
     const family = card.getAttribute("data-family").toLowerCase();
     const rawTags = card.getAttribute("data-tags");
 
     let cardTags = [];
     if (rawTags) {
       try {
-        cardTags = JSON.parse(rawTags.replace(/'/g, '"')).map(tag => tag.toLowerCase());
+        cardTags = JSON.parse(rawTags.replace(/'/g, '"')).map((tag) =>
+          tag.toLowerCase(),
+        );
       } catch (error) {
         console.error("Error parsing data-tags:", rawTags, error);
       }
     }
 
     // Check if the card matches the selected families
-    const matchesFamily = selectedFamilies.length === 0 || selectedFamilies.includes(family);
+    const matchesFamily =
+      selectedFamilies.length === 0 || selectedFamilies.includes(family);
 
     // Check if the card matches the selected tags
-    const matchesTag = selectedTags.length === 0 || selectedTags.some(tag => cardTags.includes(tag));
+    const matchesTag =
+      selectedTags.length === 0 ||
+      selectedTags.some((tag) => cardTags.includes(tag));
 
     // Show only if both family & tag filters match (or if no filter is applied)
     card.style.display = matchesFamily && matchesTag ? "flex" : "none";
