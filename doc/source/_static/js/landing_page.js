@@ -80,7 +80,9 @@ function displayFamilies(familyCounts) {
   const showMoreButton = document.querySelector(".product-families .show-more");
   showMoreButton.addEventListener("click", () => {
     if (!showMoreClicked) {
-      document.querySelectorAll(".family-row").forEach(row => row.style.display = "flex");
+      document
+        .querySelectorAll(".family-row")
+        .forEach((row) => (row.style.display = "flex"));
       showMoreButton.style.display = "none"; // Hide "Show more" after clicking
       showMoreClicked = true;
     }
@@ -121,7 +123,9 @@ function displayTags(tagCounts) {
   const showMoreButton = document.querySelector(".product-tags .show-more");
   showMoreButton.addEventListener("click", () => {
     if (!showMoreClicked) {
-      document.querySelectorAll(".tag-row").forEach(row => row.style.display = "flex");
+      document
+        .querySelectorAll(".tag-row")
+        .forEach((row) => (row.style.display = "flex"));
       showMoreButton.style.display = "none"; // Hide "Show more" after clicking
       showMoreClicked = true;
     }
