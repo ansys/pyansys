@@ -51,12 +51,15 @@ function displayFamilies(familyCounts) {
   familiesContainer.innerHTML = "";
 
   const sortedFamilies = Object.keys(familyCounts).sort();
+  const maxVisible = 5; // Show only first 5 initially
+  let showMoreClicked = false;
 
-  sortedFamilies.forEach((family) => {
+  sortedFamilies.forEach((family, index) => {
     const familyCount = familyCounts[family];
 
     const familyRow = document.createElement("div");
     familyRow.className = "family-row";
+    if (index >= maxVisible) familyRow.style.display = "none"; // Hide extra items initially
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -67,14 +70,20 @@ function displayFamilies(familyCounts) {
     familyName.className = "family-name";
     familyName.textContent = family;
 
-    const familyCountElem = document.createElement("span");
-    familyCountElem.className = "family-count";
-    familyCountElem.textContent = `(${familyCount})`;
-
     familyRow.appendChild(checkbox);
     familyRow.appendChild(familyName);
 
     familiesContainer.appendChild(familyRow);
+  });
+
+  // Handle "Show more" click
+  const showMoreButton = document.querySelector(".product-families .show-more");
+  showMoreButton.addEventListener("click", () => {
+    if (!showMoreClicked) {
+      document.querySelectorAll(".family-row").forEach(row => row.style.display = "flex");
+      showMoreButton.style.display = "none"; // Hide "Show more" after clicking
+      showMoreClicked = true;
+    }
   });
 }
 
@@ -83,12 +92,15 @@ function displayTags(tagCounts) {
   tagsContainer.innerHTML = "";
 
   const sortedTags = Object.keys(tagCounts).sort();
+  const maxVisible = 5; // Show only first 5 initially
+  let showMoreClicked = false;
 
-  sortedTags.forEach((tag) => {
+  sortedTags.forEach((tag, index) => {
     const tagCount = tagCounts[tag];
 
     const tagRow = document.createElement("div");
     tagRow.className = "tag-row";
+    if (index >= maxVisible) tagRow.style.display = "none"; // Hide extra items initially
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -99,14 +111,20 @@ function displayTags(tagCounts) {
     tagName.className = "tag-name";
     tagName.textContent = tag;
 
-    const tagCountElem = document.createElement("span");
-    tagCountElem.className = "tag-count";
-    tagCountElem.textContent = `(${tagCount})`;
-
     tagRow.appendChild(checkbox);
     tagRow.appendChild(tagName);
 
     tagsContainer.appendChild(tagRow);
+  });
+
+  // Handle "Show more" click
+  const showMoreButton = document.querySelector(".product-tags .show-more");
+  showMoreButton.addEventListener("click", () => {
+    if (!showMoreClicked) {
+      document.querySelectorAll(".tag-row").forEach(row => row.style.display = "flex");
+      showMoreButton.style.display = "none"; // Hide "Show more" after clicking
+      showMoreClicked = true;
+    }
   });
 }
 
