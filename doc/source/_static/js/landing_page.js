@@ -78,7 +78,7 @@ function displayFamilies(familyCounts) {
 
   // Handle "Show more" click
   const showMoreButton = document.querySelector(".product-families .show-more");
-  const Familyrows = document.querySelectorAll(".family-row");
+  const FamilyRows = document.querySelectorAll(".family-row");
   showMoreButton.addEventListener("click", () => {
     if (showMoreClicked) {
       Familyrows.forEach((row, index) => {
