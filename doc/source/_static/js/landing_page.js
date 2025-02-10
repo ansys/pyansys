@@ -78,12 +78,21 @@ function displayFamilies(familyCounts) {
 
   // Handle "Show more" click
   const showMoreButton = document.querySelector(".product-families .show-more");
+  const Familyrows = document.querySelectorAll(".family-row");
   showMoreButton.addEventListener("click", () => {
-    if (!showMoreClicked) {
-      document
-        .querySelectorAll(".family-row")
-        .forEach((row) => (row.style.display = "flex"));
-      showMoreButton.style.display = "none"; // Hide "Show more" after clicking
+    if (showMoreClicked) {
+      Familyrows.forEach((row, index) => {
+        if (index >= maxVisible) {
+          row.style.display = "none";
+        }
+      });
+      showMoreButton.textContent = "Show more";
+      showMoreClicked = false;
+    } else {
+      Familyrows.forEach((row) => {
+        row.style.display = "flex";
+      });
+      showMoreButton.textContent = "Show less";
       showMoreClicked = true;
     }
   });
@@ -121,12 +130,21 @@ function displayTags(tagCounts) {
 
   // Handle "Show more" click
   const showMoreButton = document.querySelector(".product-tags .show-more");
+  const Tagrows = document.querySelectorAll(".tag-row");
   showMoreButton.addEventListener("click", () => {
-    if (!showMoreClicked) {
-      document
-        .querySelectorAll(".tag-row")
-        .forEach((row) => (row.style.display = "flex"));
-      showMoreButton.style.display = "none"; // Hide "Show more" after clicking
+    if (showMoreClicked) {
+      Tagrows.forEach((row, index) => {
+        if (index >= maxVisible) {
+          row.style.display = "none";
+        }
+      });
+      showMoreButton.textContent = "Show more";
+      showMoreClicked = false;
+    } else {
+      Tagrows.forEach((row) => {
+        row.style.display = "flex";
+      });
+      showMoreButton.textContent = "Show less";
       showMoreClicked = true;
     }
   });
@@ -178,16 +196,16 @@ function applyFilters() {
     }
 
     // Check if the card matches the selected families
-    const matchesFamily =
+    const matchesAllFamilies =
       selectedFamilies.length === 0 || selectedFamilies.includes(family);
 
     // Check if the card matches the selected tags
-    const matchesTag =
+    const matchesAllTags =
       selectedTags.length === 0 ||
-      selectedTags.some((tag) => cardTags.includes(tag));
+      selectedTags.every((tag) => cardTags.includes(tag));
 
     // Show only if both family & tag filters match (or if no filter is applied)
-    card.style.display = matchesFamily && matchesTag ? "flex" : "none";
+    card.style.display = matchesAllFamilies && matchesAllTags ? "flex" : "none";
   });
 }
 
