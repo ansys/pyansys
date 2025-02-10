@@ -81,7 +81,7 @@ function displayFamilies(familyCounts) {
   const FamilyRows = document.querySelectorAll(".family-row");
   showMoreButton.addEventListener("click", () => {
     if (showMoreClicked) {
-      Familyrows.forEach((row, index) => {
+      FamilyRows.forEach((row, index) => {
         if (index >= maxVisible) {
           row.style.display = "none";
         }
@@ -89,7 +89,7 @@ function displayFamilies(familyCounts) {
       showMoreButton.textContent = "Show more";
       showMoreClicked = false;
     } else {
-      Familyrows.forEach((row) => {
+      FamilyRows.forEach((row) => {
         row.style.display = "flex";
       });
       showMoreButton.textContent = "Show less";
@@ -130,10 +130,10 @@ function displayTags(tagCounts) {
 
   // Handle "Show more" click
   const showMoreButton = document.querySelector(".product-tags .show-more");
-  const Tagrows = document.querySelectorAll(".tag-row");
+  const TagRows = document.querySelectorAll(".tag-row");
   showMoreButton.addEventListener("click", () => {
     if (showMoreClicked) {
-      Tagrows.forEach((row, index) => {
+      TagRows.forEach((row, index) => {
         if (index >= maxVisible) {
           row.style.display = "none";
         }
@@ -141,7 +141,7 @@ function displayTags(tagCounts) {
       showMoreButton.textContent = "Show more";
       showMoreClicked = false;
     } else {
-      Tagrows.forEach((row) => {
+      TagRows.forEach((row) => {
         row.style.display = "flex";
       });
       showMoreButton.textContent = "Show less";
