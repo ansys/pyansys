@@ -34,12 +34,12 @@ dependencies = [
     "ansys-dyna-core==0.7.0",
     "ansys-dynamicreporting-core==0.9.0",
     "ansys-edb-core==0.1.9",
-    "ansys-fluent-core==0.28.2",
+    "ansys-fluent-core==0.29.0",
     "ansys-geometry-core==0.8.2",
     "ansys-hps-client==0.9.1",
     "ansys-mapdl-core==0.68.6",
     "ansys-math-core==0.2.2",
-    "ansys-mechanical-core==0.11.12",
+    "ansys-mechanical-core==0.11.13",
     "ansys-meshing-prime==0.7.0",
     "ansys-modelcenter-workflow==0.1.1",
     "ansys-motorcad-core==0.7.0",
@@ -62,7 +62,7 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.54.2"]
-fluent-all = ["ansys-fluent-visualization==0.16.0"]
+fluent-all = ["ansys-fluent-visualization==0.17.0"]
 tools = [
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.1",
@@ -79,7 +79,7 @@ all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.54.2",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.16.0",
+    "ansys-fluent-visualization==0.17.0",
     # TOOLS
     "ansys-materials-manager==0.2.3",
     "ansys-tools-filetransfer==0.1.1",
