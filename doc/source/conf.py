@@ -7,8 +7,6 @@ from pathlib import Path
 import subprocess
 
 from ansys_sphinx_theme import ansys_favicon, get_version_match
-import github
-import jinja2
 from PIL import Image
 import requests
 import sphinx
@@ -382,6 +380,7 @@ def build_versions_table(branch: str) -> list[str]:
 
     return table
 
+
 ###########################################################################
 # Adapting thumbnails to the documentation
 ###########################################################################
@@ -454,6 +453,7 @@ def revert_thumbnails(app: sphinx.application.Sphinx, exception):
     thumbnail_dir = Path(__file__).parent.absolute() / "_static" / "thumbnails"
 
     subprocess.run(["git", "checkout", "--", thumbnail_dir])
+
 
 def convert_yaml_to_json(app: sphinx.application.Sphinx):
     """
