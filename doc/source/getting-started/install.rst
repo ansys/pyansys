@@ -62,7 +62,7 @@ The PyAnsys |version| metapackage includes the following projects:
                 {% for project, version in dependencies.items() %}
                 <tr>
                     <td>{{ project }}</td>
-                    <td>{{ version }}</td>
+                    <td><a href="https://pypi.org/project/{{ project }}/{{ version }}">{{ version }}</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -109,7 +109,7 @@ libraries and tools.
                         {% for project, version in dependencies.items() %}
                         <tr>
                             <td>{{ project }}</td>
-                            <td>{{ version }}</td>
+                            <td><a href="https://pypi.org/project/{{ project }}/{{ version }}">{{ version }}</a></td>
                         </tr>
                         {% endfor %}
                     </tbody>
