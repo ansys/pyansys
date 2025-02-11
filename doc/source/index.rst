@@ -13,8 +13,6 @@ it is now a collection of many Python packages for using Ansys products through 
    user_guide
    api
    examples
-   supported_versions
-   package_versions/index
    tools/index
 
 .. jinja:: project_context
