@@ -252,37 +252,6 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # file for the minor versions of the PyAnsys metapackage release branches.
 
 
-def generate_rst_files(versions: list[str], tables: dict[str, list[str]]):
-    """Generate the .rst files for the package versions."""
-    # Create Jinja2 environment
-    jinja_env = jinja2.Environment(loader=jinja2.BaseLoader())
-
-    # Compile the template
-    template = jinja_env.from_string(VERSIONS_TEMPLATE)
-
-    # Generate an .rst file for each version entry
-    for version in versions:
-        # Generate the content of the .rst file using the Jinja template
-        rendered_content = template.render(
-            version=version,
-            table=tables[version],
-        )
-
-        # Define the output path for the generated file
-        output_filename = GENERATED_DIR / f"version_{version}.rst"
-
-        # Write the rendered content to the file
-        output_filename.write_text(rendered_content, encoding="utf-8")
-
-    # Generate the index.rst file
-    index_template = jinja_env.from_string(INDEX_TEMPLATE)
-    rendered_index = index_template.render(versions=versions)
-
-    # Write the rendered content to the file
-    output_filename = GENERATED_DIR / "index.rst"
-    output_filename.write_text(rendered_index, encoding="utf-8")
-
-
 def get_documentation_link_from_pypi(library: str, version: str) -> str:
     """Get the documentation link from PyPI for a specific library and version."""
     # Get the PyPI metadata for the library
@@ -413,32 +382,6 @@ def build_versions_table(branch: str) -> list[str]:
 
     return table
 
-
-def get_release_branches_in_metapackage():
-    """Retrieve the release branches in the PyAnsys metapackage."""
-    # Get the PyAnsys metapackage repository
-    g = github.Github(os.getenv("GITHUB_TOKEN", None))
-    github_repo = g.get_repo("ansys/pyansys")
-
-    # Get the branches
-    branches = github_repo.get_branches()
-
-    # Get the branches that are release branches + main
-    release_branches = []
-    versions = []
-    for branch in branches:
-        if branch.name.startswith("release"):
-            release_branches.append(branch.name)
-            versions.append(branch.name.split("/")[-1])
-
-    # Sort the release branches and versions: from newest to oldest
-    release_branches.reverse()
-    versions.reverse()
-
-    # Return the dev/main branch and the release branches (and versions)
-    return ["main"] + release_branches, ["dev"] + versions
-
-
 ###########################################################################
 # Adapting thumbnails to the documentation
 ###########################################################################
@@ -512,16 +455,6 @@ def revert_thumbnails(app: sphinx.application.Sphinx, exception):
 
     subprocess.run(["git", "checkout", "--", thumbnail_dir])
 
-
-def package_versions_table(app: sphinx.application.Sphinx):
-    """Generate the package_versions directory."""
-    branches, versions = get_release_branches_in_metapackage()
-    generate_rst_files(
-        versions,
-        {version: build_versions_table(branch) for version, branch in zip(versions, branches)},
-    )
-
-
 def convert_yaml_to_json(app: sphinx.application.Sphinx):
     """
     Convert a YAML file to a JSON file.
@@ -559,7 +492,6 @@ def setup(app: sphinx.application.Sphinx):
     # At the beginning of the build process - update the version in cheatsheet
     app.connect("builder-inited", convert_yaml_to_json)
     app.connect("builder-inited", resize_thumbnails)
-    app.connect("builder-inited", package_versions_table)
 
     # Reverting the thumbnails - no local changes
     app.connect("build-finished", revert_thumbnails)

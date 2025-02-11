@@ -21,6 +21,8 @@
 .. _SciPy: https://www.scipy.org/
 .. _Pandas: https://pandas.pydata.org/
 .. _Matplotlib: https://matplotlib.org/
+.. _PyVista: https://docs.pyvista.org/
+.. _Pydata Sphinx Theme: https://pydata-sphinx-theme.readthedocs.io/en/stable/
 
 .. PEPs, NEPs, and SPECs
 .. _NEP 29: https://numpy.org/neps/nep-0029-deprecation_policy.html
