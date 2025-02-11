@@ -377,6 +377,19 @@ projects:
       examples: https://rocky.docs.pyansys.com/version/stable/examples/index.html
       api: https://rocky.docs.pyansys.com/version/stable/api/index.html
 
+  pyscadeone:
+    name: PyScadeOne
+    repository: https://github.com/ansys/pyscadeone
+    description: Pythonic interface to Ansys Scade One
+    thumbnail: _static/thumbnails/pyscadeone.png
+    family: Embedded Software
+    tags: [Software]
+    documentation:
+      base: https://scadeone.docs.pyansys.com/version/stable
+      user_guide: https://scadeone.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://scadeone.docs.pyansys.com/version/stable/examples/index.html
+      api: https://scadeone.docs.pyansys.com/version/stable/api/index.html
+
   pyseascape:
     name: PySeascape
     repository: https://github.com/ansys/pyseascape
