@@ -169,8 +169,12 @@ function handleTagSelection() {
 }
 
 function applyFilters() {
-  const SelectedTagsContainer = document.getElementById("selected-product-tags-list");
-  const SelectedFamiliesContainer = document.getElementById("selected-product-families-list");
+  const SelectedTagsContainer = document.getElementById(
+    "selected-product-tags-list",
+  );
+  const SelectedFamiliesContainer = document.getElementById(
+    "selected-product-families-list",
+  );
   SelectedTagsContainer.innerHTML = "";
   SelectedFamiliesContainer.innerHTML = "";
   const selectedFamilies = Array.from(
@@ -201,7 +205,6 @@ function applyFilters() {
     selectedFamily.textContent = family;
     SelectedFamiliesContainer.appendChild(selectedFamily);
   }
-
 
   console.log("Selected families:", selectedFamilies);
   console.log("Selected tags:", selectedTags);

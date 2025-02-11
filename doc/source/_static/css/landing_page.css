@@ -121,7 +121,8 @@ html {
   }
 }
 
-.selected-tag, .selected-family {
+.selected-tag,
+.selected-family {
   display: inline-block;
   background-color: var(--ast-sidebar-hover-background);
   padding: 0px 8px;
