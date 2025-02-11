@@ -32,7 +32,8 @@ html {
 .family-name {
   margin-right: 10px;
 }
-.family-count, .tag-count {
+.family-count,
+.tag-count {
   margin-left: auto;
   background-color: var(--ast-sidebar-hover-background);
   border-radius: 50%;
