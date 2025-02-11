@@ -70,8 +70,13 @@ function displayFamilies(familyCounts) {
     familyName.className = "family-name";
     familyName.textContent = family;
 
+    const familyCountElement = document.createElement("span");
+    familyCountElement.className = "family-count";
+    familyCountElement.textContent = `(${familyCount})`;
+
     familyRow.appendChild(checkbox);
     familyRow.appendChild(familyName);
+    familyRow.appendChild(familyCountElement);
 
     familiesContainer.appendChild(familyRow);
   });
