@@ -32,9 +32,9 @@ html {
 .family-name {
   margin-right: 10px;
 }
-.family-count {
+.family-count, .tag-count {
   margin-left: auto;
-  background-color: lightgrey;
+  background-color: var(--ast-sidebar-hover-background);
   border-radius: 50%;
   padding: 0.25rem 0.75rem;
 }
@@ -50,7 +50,7 @@ html {
   gap: 1rem;
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
-  background-color: lightgrey;
+  background-color: var(--ast-sidebar-hover-background);
 }
 .remove-family {
   cursor: pointer;
@@ -95,7 +95,7 @@ html {
   padding-left: 1rem;
 }
 .sd-bg-muted {
-  background-color: #ececec !important;
+  background-color: var(--ast-sidebar-hover-background) !important;
   border-radius: 999px;
   font-size: 12px;
   line-height: 16px;
