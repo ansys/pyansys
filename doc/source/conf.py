@@ -122,6 +122,7 @@ supported_python_versions_by_metapackage_version = [
 
 
 def read_dependencies_from_pyproject():
+    """Read the dependencies declared in the project file."""
     pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
     if not pyproject.exists():
         raise ValueError(f"The file {pyproject} does not exist.")
@@ -132,6 +133,7 @@ def read_dependencies_from_pyproject():
 
 
 def read_optional_dependencies_from_pyproject():
+    """Read the extra dependencies declared in the project file."""
     pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
     if not pyproject.exists():
         raise ValueError(f"The file {pyproject} does not exist.")
