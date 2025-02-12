@@ -18,8 +18,8 @@ Download and install Python
 Download and install the latest stable version of Python from the
 `https://www.python.org/downloads <https://www.python.org/downloads>`_.
 
-Suported Python versions
-------------------------
+Supported Python versions
+-------------------------
 
 The PyAnsys ecosystem follows `SPEC-0`_ for Python version support. This
 implies that PyAnsys packages drop support for a Python version three years
