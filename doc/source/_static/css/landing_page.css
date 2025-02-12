@@ -16,6 +16,10 @@ html {
   gap: 0.25rem;
 }
 
+.show-more {
+  margin-top: 1rem;
+}
+
 .landing-page-sidebar-section span {
   font-size: 0.85rem;
 }
