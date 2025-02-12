@@ -171,6 +171,14 @@ html_context = {
     "github_repo": "pyansys",
     "github_version": "main",
     "doc_path": "doc/source",
+    "page_assets": {
+        "getting-started/prerequisites": {
+            "needs_datatables": True,
+        },
+        "getting-started/install": {
+            "needs_datatables": True,
+        },
+    },
 }
 
 html_theme_options = {

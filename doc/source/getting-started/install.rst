@@ -1,13 +1,6 @@
 Install PyAnsys
 ###############
 
-.. raw:: html
-
-    <!-- Include DataTables CSS, jQuery, and JS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
 Installing the PyAnsys metapackage is as simple as installing any Python
 library. However, you must have a licensed copy of `Ansys <Ansys Customer
 Portal>`_ to use it.

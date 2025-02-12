@@ -59,20 +59,15 @@ metapackage release:
 
     .. raw:: html
 
-        <!-- Include DataTables CSS, jQuery, and JS -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
         <!-- Initialize DataTables -->
         <script>
             $(document).ready(function() {
-                $('#supported-python-versions').DataTable();
+                $('#supported-python-versions-datatable').DataTable();
             });
         </script>
 
         <!-- Populate and render the table -->
-        <table id="supported-python-versions" class="display" style="width:100%">
+        <table id="supported-python-versions-datatable" class="display" style="width:100%">
             <thead>
                 <tr>
                     <th>PyAnsys version</th>
