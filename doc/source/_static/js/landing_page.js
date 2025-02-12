@@ -70,8 +70,13 @@ function displayFamilies(familyCounts) {
     familyName.className = "family-name";
     familyName.textContent = family;
 
+    const familyCountElement = document.createElement("span");
+    familyCountElement.className = "family-count";
+    familyCountElement.textContent = `${familyCount}`;
+
     familyRow.appendChild(checkbox);
     familyRow.appendChild(familyName);
+    familyRow.appendChild(familyCountElement);
 
     familiesContainer.appendChild(familyRow);
   });
@@ -122,8 +127,13 @@ function displayTags(tagCounts) {
     tagName.className = "tag-name";
     tagName.textContent = tag;
 
+    const tagCountElement = document.createElement("span");
+    tagCountElement.className = "tag-count";
+    tagCountElement.textContent = `${tagCount}`;
+
     tagRow.appendChild(checkbox);
     tagRow.appendChild(tagName);
+    tagRow.appendChild(tagCountElement);
 
     tagsContainer.appendChild(tagRow);
   });
@@ -159,6 +169,14 @@ function handleTagSelection() {
 }
 
 function applyFilters() {
+  const SelectedTagsContainer = document.getElementById(
+    "selected-product-tags-list",
+  );
+  const SelectedFamiliesContainer = document.getElementById(
+    "selected-product-families-list",
+  );
+  SelectedTagsContainer.innerHTML = "";
+  SelectedFamiliesContainer.innerHTML = "";
   const selectedFamilies = Array.from(
     document.querySelectorAll(
       '#product-families-list input[type="checkbox"]:checked',
@@ -174,6 +192,19 @@ function applyFilters() {
   ).map((checkbox) =>
     checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase(),
   );
+  for (const tag of selectedTags) {
+    const selectedTag = document.createElement("span");
+    selectedTag.className = "selected-tag";
+    selectedTag.textContent = tag;
+    SelectedTagsContainer.appendChild(selectedTag);
+  }
+
+  for (const family of selectedFamilies) {
+    const selectedFamily = document.createElement("span");
+    selectedFamily.className = "selected-family";
+    selectedFamily.textContent = family;
+    SelectedFamiliesContainer.appendChild(selectedFamily);
+  }
 
   console.log("Selected families:", selectedFamilies);
   console.log("Selected tags:", selectedTags);
