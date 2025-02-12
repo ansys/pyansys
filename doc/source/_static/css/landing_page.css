@@ -126,7 +126,8 @@ html {
 .selected-family {
   display: inline-block;
   background-color: var(--ast-sidebar-hover-background);
-  padding: 0.25rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   margin: 0.25em;
+  font-weight: 600;
 }
