@@ -457,6 +457,7 @@ def convert_yaml_to_json(app: sphinx.application.Sphinx):
         json.dump(yaml_content, json_file, indent=4)
         print(f"JSON file successfully written to {json_path}")
 
+
 def fetch_release_branches_and_python_limits(app: sphinx.application.Sphinx):
     """Retrieve the release branches in the PyAnsys metapackage."""
     # Get the PyAnsys metapackage repository
@@ -471,11 +472,11 @@ def fetch_release_branches_and_python_limits(app: sphinx.application.Sphinx):
         if not branch.name.startswith("release") and not branch.name.startswith("main"):
             continue
 
-        # Inspect the pyproject.toml file to get the Python limits
+        # Inspect the pyproject.toml file to get the Python limits
         pyproject = repository.get_contents("pyproject.toml", ref=branch.name)
         content = toml.loads(pyproject.decoded_content.decode("utf-8"))
 
-        # Extract the latest version and the Python limits
+        # Extract the latest version and the Python limits
         branch_name = branch.name
         metapackage_version = branch_name.split("/")[-1]
         try:
@@ -485,23 +486,22 @@ def fetch_release_branches_and_python_limits(app: sphinx.application.Sphinx):
             pypi_version = content["tool"]["poetry"]["version"]
             python_limits = content["tool"]["poetry"]["dependencies"]["python"].split(",")
 
-
         if pypi_version.split(".")[-1].startswith("dev"):
             link = repository.html_url
         else:
             link = f"https://pypi.org/project/pyansys/{pypi_version}"
 
-        supported_python_versions_by_metapackage_version.append ({
-            "version": metapackage_version,
-            "python": {"lower": python_limits[0], "upper": python_limits[1]},
-            "link": link,
-        })
+        supported_python_versions_by_metapackage_version.append(
+            {
+                "version": metapackage_version,
+                "python": {"lower": python_limits[0], "upper": python_limits[1]},
+                "link": link,
+            }
+        )
 
     print(supported_python_versions_by_metapackage_version)
 
-    jinja_contexts["releases"] = {
-        "table_data": supported_python_versions_by_metapackage_version
-    }
+    jinja_contexts["releases"] = {"table_data": supported_python_versions_by_metapackage_version}
 
 
 def setup(app: sphinx.application.Sphinx):
