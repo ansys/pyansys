@@ -1,9 +1,8 @@
 Install PyAnsys
 ###############
 
-Installing the PyAnsys metapackage is as simple as installing any Python
-library. However, you must have a licensed copy of `Ansys <Ansys Customer
-Portal>`_ to use it.
+The PyAnsys metapackage is distributed as a Python library. Its installation
+follows the standard Python package installation process.
 
 Online installation
 ===================
