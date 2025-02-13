@@ -7,6 +7,7 @@ from pathlib import Path
 import subprocess
 
 from ansys_sphinx_theme import ansys_favicon, get_version_match
+import github
 from PIL import Image
 import requests
 import sphinx
@@ -87,39 +88,6 @@ html_css_files = ["css/landing_page.css"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
-supported_python_versions_by_metapackage_version = [
-    {
-        "version": "2023.1",
-        "python": {"lower": "3.7", "upper": "3.10"},
-        "link": "https://pypi.org/project/pyansys/2023.1.3/",
-    },
-    {
-        "version": "2023.2",
-        "python": {"lower": "3.8", "upper": "3.11"},
-        "link": "https://pypi.org/project/pyansys/2023.2.11/",
-    },
-    {
-        "version": "2024.1",
-        "python": {"lower": "3.9", "upper": "3.12"},
-        "link": "https://pypi.org/project/pyansys/2024.1.8/",
-    },
-    {
-        "version": "2024.2",
-        "python": {"lower": "3.9", "upper": "3.12"},
-        "link": "https://pypi.org/project/pyansys/2024.2.2/",
-    },
-    {
-        "version": "2025.1",
-        "python": {"lower": "3.10", "upper": "3.12"},
-        "link": "https://pypi.org/project/pyansys/2025.1.0/",
-    },
-    {
-        "version": "development",
-        "python": {"lower": "3.10", "upper": "3.12"},
-        "link": "https://github.com/ansys/pyansys",
-    },
-]
-
 
 def read_dependencies_from_pyproject():
     """Read the dependencies declared in the project file."""
@@ -155,7 +123,6 @@ jinja_globals = {
 }
 jinja_contexts = {
     "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
-    "releases": {"table_data": supported_python_versions_by_metapackage_version},
     "dependencies": {"dependencies": read_dependencies_from_pyproject()},
     "optional_dependencies": {"optional_dependencies": read_optional_dependencies_from_pyproject()},
     "wheelhouse": {
@@ -490,6 +457,52 @@ def convert_yaml_to_json(app: sphinx.application.Sphinx):
         json.dump(yaml_content, json_file, indent=4)
         print(f"JSON file successfully written to {json_path}")
 
+def fetch_release_branches_and_python_limits(app: sphinx.application.Sphinx):
+    """Retrieve the release branches in the PyAnsys metapackage."""
+    # Get the PyAnsys metapackage repository
+    g = github.Github(os.getenv("GITHUB_TOKEN", None))
+    repository = g.get_repo("ansys/pyansys")
+
+    # Get the branches
+    branches = repository.get_branches()
+
+    supported_python_versions_by_metapackage_version = []
+    for branch in branches:
+        if not branch.name.startswith("release") and not branch.name.startswith("main"):
+            continue
+
+        # Inspect the pyproject.toml file to get the Python limits
+        pyproject = repository.get_contents("pyproject.toml", ref=branch.name)
+        content = toml.loads(pyproject.decoded_content.decode("utf-8"))
+
+        # Extract the latest version and the Python limits
+        branch_name = branch.name
+        metapackage_version = branch_name.split("/")[-1]
+        try:
+            pypi_version = content["project"]["version"]
+            python_limits = content["project"]["requires-python"].split(",")
+        except KeyError:
+            pypi_version = content["tool"]["poetry"]["version"]
+            python_limits = content["tool"]["poetry"]["dependencies"]["python"].split(",")
+
+
+        if pypi_version.split(".")[-1].startswith("dev"):
+            link = repository.html_url
+        else:
+            link = f"https://pypi.org/project/pyansys/{pypi_version}"
+
+        supported_python_versions_by_metapackage_version.append ({
+            "version": metapackage_version,
+            "python": {"lower": python_limits[0], "upper": python_limits[1]},
+            "link": link,
+        })
+
+    print(supported_python_versions_by_metapackage_version)
+
+    jinja_contexts["releases"] = {
+        "table_data": supported_python_versions_by_metapackage_version
+    }
+
 
 def setup(app: sphinx.application.Sphinx):
     """Run different hook functions during the documentation build.
@@ -502,6 +515,7 @@ def setup(app: sphinx.application.Sphinx):
     # At the beginning of the build process - update the version in cheatsheet
     app.connect("builder-inited", convert_yaml_to_json)
     app.connect("builder-inited", resize_thumbnails)
+    app.connect("builder-inited", fetch_release_branches_and_python_limits)
 
     # Reverting the thumbnails - no local changes
     app.connect("build-finished", revert_thumbnails)
