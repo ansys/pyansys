@@ -10,8 +10,8 @@
 .. _venv_docs: https://docs.python.org/3/library/venv.html
 
 .. ANSYS and products
-.. _ANSYS, Inc.: https://ansys.com
-.. _Ansys products: https://ansys.com/products
+.. _ANSYS, Inc.: https://www.ansys.com
+.. _Ansys products: https://www.ansys.com/products
 .. _Ansys Customer Portal: https://download.ansys.com
 
 .. Python libraries

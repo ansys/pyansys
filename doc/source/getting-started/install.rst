@@ -132,7 +132,11 @@ Start by downloading the wheelhouse artifact for your platform:
        {% for platform, icon in wheelhouse.items() -%}
        :fab:`{{ icon }}` {{ platform }},
        {%- for python in SUPPORTED_PYTHON_VERSIONS -%}
+       {%- if "dev" in VERSION -%}
+       `Download wheelhouse <https://github.com/ansys/pyansys/releases/download/{{ LAST_RELEASE }}/pyansys-{{ LAST_RELEASE }}-all-wheelhouse-{{ platform }}-{{ python }}.zip>`__
+       {%- else -%}
        `Download wheelhouse <https://github.com/ansys/pyansys/releases/download/v{{ VERSION }}/pyansys-v{{ VERSION }}-all-wheelhouse-{{ platform }}-{{ python }}.zip>`__
+       {%- endif -%}
        {%- if not loop.last -%},{%- endif -%}
        {% endfor %}
        {% endfor %}

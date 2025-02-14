@@ -116,7 +116,20 @@ def read_optional_dependencies_from_pyproject():
     return optional_dependencies
 
 
+def get_last_metapackage_release():
+    """Retrieve the last release of the metapackage."""
+    # Get the PyAnsys metapackage repository
+    g = github.Github(os.getenv("GITHUB_TOKEN", None))
+    repository = g.get_repo("ansys/pyansys")
+
+    # Get the last release
+    last_release = repository.get_latest_release()
+
+    return last_release.tag_name
+
+
 jinja_globals = {
+    "LAST_RELEASE": get_last_metapackage_release(),
     "VERSION": version,
     "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12"],
     "SUPPORTED_PLATFORMS": ["Windows", "macOS", "Linux"],
@@ -201,7 +214,7 @@ rst_epilog = path_to_links_rst.read_text(encoding="utf-8")
 
 # Ignore certain URLs
 linkcheck_ignore = [
-    r"https://www.ansys.com/.*",
+    r"https://www.ansys.com.*",
     rf"https://pypi.org/project/pyansys/{switcher_version}.*",
     r"https://ansunits.docs.*",
     r"https://download.ansys.com/.*",
