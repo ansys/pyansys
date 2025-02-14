@@ -8,7 +8,6 @@ import subprocess
 
 from ansys_sphinx_theme import ansys_favicon, get_version_match
 import github
-import jinja2
 from PIL import Image
 import requests
 import sphinx
@@ -89,8 +88,62 @@ html_css_files = ["css/landing_page.css"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
+
+def read_dependencies_from_pyproject():
+    """Read the dependencies declared in the project file."""
+    pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
+    if not pyproject.exists():
+        raise ValueError(f"The file {pyproject} does not exist.")
+
+    pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
+    dependencies = pyproject_content["project"]["dependencies"]
+    return {pkg.split("==")[0]: pkg.split("==")[1] for pkg in dependencies}
+
+
+def read_optional_dependencies_from_pyproject():
+    """Read the extra dependencies declared in the project file."""
+    pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
+    if not pyproject.exists():
+        raise ValueError(f"The file {pyproject} does not exist.")
+
+    pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
+    exclude_targets = ["doc"]
+    optional_dependencies = {
+        target: {pkg.split("==")[0]: pkg.split("==")[1] for pkg in deps}
+        for target, deps in pyproject_content["project"]["optional-dependencies"].items()
+        if target not in exclude_targets
+    }
+    return optional_dependencies
+
+
+def get_last_metapackage_release():
+    """Retrieve the last release of the metapackage."""
+    # Get the PyAnsys metapackage repository
+    g = github.Github(os.getenv("GITHUB_TOKEN", None))
+    repository = g.get_repo("ansys/pyansys")
+
+    # Get the last release
+    last_release = repository.get_latest_release()
+
+    return last_release.tag_name
+
+
+jinja_globals = {
+    "LAST_RELEASE": get_last_metapackage_release(),
+    "VERSION": version,
+    "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12"],
+    "SUPPORTED_PLATFORMS": ["Windows", "macOS", "Linux"],
+}
 jinja_contexts = {
-    "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))}
+    "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
+    "dependencies": {"dependencies": read_dependencies_from_pyproject()},
+    "optional_dependencies": {"optional_dependencies": read_optional_dependencies_from_pyproject()},
+    "wheelhouse": {
+        "wheelhouse": {
+            platform: icon
+            for platform, icon in zip(["Windows", "macOS", "Linux"], ["windows", "apple", "linux"])
+        }
+    },
 }
 
 html_context = {
@@ -98,6 +151,14 @@ html_context = {
     "github_repo": "pyansys",
     "github_version": "main",
     "doc_path": "doc/source",
+    "page_assets": {
+        "getting-started/prerequisites": {
+            "needs_datatables": True,
+        },
+        "getting-started/install": {
+            "needs_datatables": True,
+        },
+    },
 }
 
 html_theme_options = {
@@ -153,9 +214,11 @@ rst_epilog = path_to_links_rst.read_text(encoding="utf-8")
 
 # Ignore certain URLs
 linkcheck_ignore = [
-    r"https://www.ansys.com/.*",
+    r"https://www.ansys.com.*",
     rf"https://pypi.org/project/pyansys/{switcher_version}.*",
     r"https://ansunits.docs.*",
+    r"https://download.ansys.com/.*",
+    r"https://github.com/ansys/pyansys/releases/download/*",
 ]
 
 # User agent
@@ -177,37 +240,6 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 #
 # The script retrieves the PyAnsys package versions from the pyproject.toml
 # file for the minor versions of the PyAnsys metapackage release branches.
-
-
-def generate_rst_files(versions: list[str], tables: dict[str, list[str]]):
-    """Generate the .rst files for the package versions."""
-    # Create Jinja2 environment
-    jinja_env = jinja2.Environment(loader=jinja2.BaseLoader())
-
-    # Compile the template
-    template = jinja_env.from_string(VERSIONS_TEMPLATE)
-
-    # Generate an .rst file for each version entry
-    for version in versions:
-        # Generate the content of the .rst file using the Jinja template
-        rendered_content = template.render(
-            version=version,
-            table=tables[version],
-        )
-
-        # Define the output path for the generated file
-        output_filename = GENERATED_DIR / f"version_{version}.rst"
-
-        # Write the rendered content to the file
-        output_filename.write_text(rendered_content, encoding="utf-8")
-
-    # Generate the index.rst file
-    index_template = jinja_env.from_string(INDEX_TEMPLATE)
-    rendered_index = index_template.render(versions=versions)
-
-    # Write the rendered content to the file
-    output_filename = GENERATED_DIR / "index.rst"
-    output_filename.write_text(rendered_index, encoding="utf-8")
 
 
 def get_documentation_link_from_pypi(library: str, version: str) -> str:
@@ -341,31 +373,6 @@ def build_versions_table(branch: str) -> list[str]:
     return table
 
 
-def get_release_branches_in_metapackage():
-    """Retrieve the release branches in the PyAnsys metapackage."""
-    # Get the PyAnsys metapackage repository
-    g = github.Github(os.getenv("GITHUB_TOKEN", None))
-    github_repo = g.get_repo("ansys/pyansys")
-
-    # Get the branches
-    branches = github_repo.get_branches()
-
-    # Get the branches that are release branches + main
-    release_branches = []
-    versions = []
-    for branch in branches:
-        if branch.name.startswith("release"):
-            release_branches.append(branch.name)
-            versions.append(branch.name.split("/")[-1])
-
-    # Sort the release branches and versions: from newest to oldest
-    release_branches.reverse()
-    versions.reverse()
-
-    # Return the dev/main branch and the release branches (and versions)
-    return ["main"] + release_branches, ["dev"] + versions
-
-
 ###########################################################################
 # Adapting thumbnails to the documentation
 ###########################################################################
@@ -440,15 +447,6 @@ def revert_thumbnails(app: sphinx.application.Sphinx, exception):
     subprocess.run(["git", "checkout", "--", thumbnail_dir])
 
 
-def package_versions_table(app: sphinx.application.Sphinx):
-    """Generate the package_versions directory."""
-    branches, versions = get_release_branches_in_metapackage()
-    generate_rst_files(
-        versions,
-        {version: build_versions_table(branch) for version, branch in zip(versions, branches)},
-    )
-
-
 def convert_yaml_to_json(app: sphinx.application.Sphinx):
     """
     Convert a YAML file to a JSON file.
@@ -475,6 +473,52 @@ def convert_yaml_to_json(app: sphinx.application.Sphinx):
         print(f"JSON file successfully written to {json_path}")
 
 
+def fetch_release_branches_and_python_limits(app: sphinx.application.Sphinx):
+    """Retrieve the release branches in the PyAnsys metapackage."""
+    # Get the PyAnsys metapackage repository
+    g = github.Github(os.getenv("GITHUB_TOKEN", None))
+    repository = g.get_repo("ansys/pyansys")
+
+    # Get the branches
+    branches = repository.get_branches()
+
+    supported_python_versions_by_metapackage_version = []
+    for branch in branches:
+        if not branch.name.startswith("release") and not branch.name.startswith("main"):
+            continue
+
+        # Inspect the pyproject.toml file to get the Python limits
+        pyproject = repository.get_contents("pyproject.toml", ref=branch.name)
+        content = toml.loads(pyproject.decoded_content.decode("utf-8"))
+
+        # Extract the latest version and the Python limits
+        branch_name = branch.name
+        metapackage_version = branch_name.split("/")[-1]
+        try:
+            pypi_version = content["project"]["version"]
+            python_limits = content["project"]["requires-python"].split(",")
+        except KeyError:
+            pypi_version = content["tool"]["poetry"]["version"]
+            python_limits = content["tool"]["poetry"]["dependencies"]["python"].split(",")
+
+        if pypi_version.split(".")[-1].startswith("dev"):
+            link = repository.html_url
+        else:
+            link = f"https://pypi.org/project/pyansys/{pypi_version}"
+
+        supported_python_versions_by_metapackage_version.append(
+            {
+                "version": metapackage_version,
+                "python": {"lower": python_limits[0], "upper": python_limits[1]},
+                "link": link,
+            }
+        )
+
+    print(supported_python_versions_by_metapackage_version)
+
+    jinja_contexts["releases"] = {"table_data": supported_python_versions_by_metapackage_version}
+
+
 def setup(app: sphinx.application.Sphinx):
     """Run different hook functions during the documentation build.
 
@@ -486,7 +530,7 @@ def setup(app: sphinx.application.Sphinx):
     # At the beginning of the build process - update the version in cheatsheet
     app.connect("builder-inited", convert_yaml_to_json)
     app.connect("builder-inited", resize_thumbnails)
-    app.connect("builder-inited", package_versions_table)
+    app.connect("builder-inited", fetch_release_branches_and_python_limits)
 
     # Reverting the thumbnails - no local changes
     app.connect("build-finished", revert_thumbnails)
