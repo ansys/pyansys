@@ -46,6 +46,7 @@ jobs:
             "ansys/pypim",
             "ansys/pyprimemesh",
             "ansys/pyrocky",
+            "ansys/pyscadeone",
             "ansys/pyseascape",
             "ansys/pysherlock",
             "ansys/pysimai",
