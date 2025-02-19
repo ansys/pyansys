@@ -35,7 +35,7 @@ dependencies = [
     "ansys-dynamicreporting-core==0.9.0",
     "ansys-edb-core==0.1.9",
     "ansys-fluent-core==0.29.0",
-    "ansys-geometry-core==0.8.2",
+    "ansys-geometry-core==0.9.0",
     "ansys-hps-client==0.9.1",
     "ansys-mapdl-core==0.68.6",
     "ansys-math-core==0.2.2",
@@ -54,7 +54,7 @@ dependencies = [
     "ansys-systemcoupling-core==0.8.0",
     "ansys-turbogrid-core==0.4.1",
     "ansys-workbench-core==0.8.0",
-    "pyaedt==0.14.0",
+    "pyaedt==0.14.1",
     "pyedb==0.37.0",
     "pygranta==2025.1.0",
     "pytwin==0.7.0",
@@ -93,7 +93,7 @@ all = [
     "pyansys-tools-variableinterop==0.1.1",
 ]
 doc = [
-    "Sphinx==8.1.3",
+    "Sphinx==8.2.0",
     "ansys-sphinx-theme==1.3.1",
     "Jinja2 ==3.1.5",
     "Pillow==11.1.0",
