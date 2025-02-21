@@ -480,3 +480,14 @@ projects:
       user_guide: https://openapi.docs.pyansys.com/version/stable/index.html
       examples: https://openapi.docs.pyansys.com/version/stable/index.html#brief-example
       api: https://openapi.docs.pyansys.com/version/stable/api/index.html
+
+  PyAEDT Common Toolkit:
+    name: PyAEDT Common Toolkit
+    description: Shared Ansys Electronics Desktop (AEDT) toolkit components to enable package interoperability and minimize maintenance
+    thumbnail: _static/thumbnails/intro.png
+    repository: https://github.com/ansys/pyaedt-toolkits-common
+    other_tools: True
+    family: Other
+    tags: [Tools]
+    documentation:
+      base: https://aedt.common.toolkit.docs.pyansys.com/version/stable/index.html
