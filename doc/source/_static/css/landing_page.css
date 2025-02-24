@@ -147,5 +147,5 @@ html {
 
 /* Dark mode icon */
 html[data-theme="dark"] .ansys-icon {
-      content: url("../icons/icon-dark.svg");
-  }
+  content: url("../icons/icon-dark.svg");
+}

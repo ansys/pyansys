@@ -72,7 +72,7 @@ function displayFamilies(familyCounts) {
 
     // Add icon after checkbox, before family name
     //<img src="icon.svg" alt="SVG Icon">
-    const icon = document.createElement("img"); 
+    const icon = document.createElement("img");
     icon.alt = "SVG Icon";
     icon.className = "ansys-icon";
 
