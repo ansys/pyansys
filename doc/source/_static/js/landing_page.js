@@ -70,11 +70,18 @@ function displayFamilies(familyCounts) {
     familyName.className = "family-name";
     familyName.textContent = family;
 
+    // Add icon after checkbox, before family name
+    //<img src="icon.svg" alt="SVG Icon">
+    const icon = document.createElement("img"); 
+    icon.alt = "SVG Icon";
+    icon.className = "ansys-icon";
+
     const familyCountElement = document.createElement("span");
     familyCountElement.className = "family-count";
     familyCountElement.textContent = `${familyCount}`;
 
     familyRow.appendChild(checkbox);
+    familyRow.appendChild(icon);
     familyRow.appendChild(familyName);
     familyRow.appendChild(familyCountElement);
 

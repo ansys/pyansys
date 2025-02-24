@@ -131,3 +131,21 @@ html {
   margin: 0.25em;
   font-weight: 600;
 }
+
+.ansys-icon {
+  width: 16px; /* Adjust as needed */
+  height: 16px;
+  margin-right: 5px; /* Space between icon and family name */
+  vertical-align: middle;
+  padding: 0rem;
+}
+
+/* icon src dark and light mode */
+.ansys-icon {
+  content: url("../icon.svg");
+}
+
+/* Dark mode icon */
+html[data-theme="dark"] .ansys-icon {
+      content: url("../icon-dark.svg");
+  }
