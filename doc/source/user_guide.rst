@@ -16,7 +16,7 @@ PyAnsys packages user guides
         :gutter: 3 3 4 4
 
         {% for project, metadata in projects['projects'].items() %}
-          {% if 'other_tools' not in metadata or metadata['other_tools'] != True %}
+          {% if 'Tools' not in metadata['family'] %}
         .. grid-item-card:: {{ metadata['name'] }}
           :img-top: {{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['user_guide'] }}
