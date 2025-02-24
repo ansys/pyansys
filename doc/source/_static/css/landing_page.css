@@ -142,10 +142,10 @@ html {
 
 /* icon src dark and light mode */
 .ansys-icon {
-  content: url("../icon.svg");
+  content: url("../icons/icon-light.svg");
 }
 
 /* Dark mode icon */
 html[data-theme="dark"] .ansys-icon {
-      content: url("../icon-dark.svg");
+      content: url("../icons/icon-dark.svg");
   }
