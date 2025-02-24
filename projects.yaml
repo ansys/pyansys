@@ -17,7 +17,7 @@ projects:
     name: PyAdditive
     repository: https://github.com/ansys/pyadditive
     description: Pythonic interface to the Ansys Additive service
-    thumbnail: _static/thumbnails/pyansys_light.png
+    thumbnail: _static/thumbnails/intro.png
     family: Structures
     tags: [Flagship, Composites]
     documentation:
@@ -30,7 +30,7 @@ projects:
     name: PyAdditive Widgets
     repository: https://github.com/ansys/pyadditive-widgets
     description: PyAdditive widget toolkit to visualize additive parametric study results
-    thumbnail: _static/thumbnails/pyansys_light.png
+    thumbnail: _static/thumbnails/intro.png
     family: Structures
     tags: [Tools, Composites]
     documentation:
@@ -139,7 +139,7 @@ projects:
     tags: [Post-processing, Composites]
     documentation:
       base: https://composites.dpf.docs.pyansys.com/version/stable
-      user_guide: https://composites.dpf.docs.pyansys.com/version/stable/pyansys_light.html
+      user_guide: https://composites.dpf.docs.pyansys.com/version/stable/intro.html
       examples: https://composites.dpf.docs.pyansys.com/version/stable/examples/index.html
       api: https://composites.dpf.docs.pyansys.com/version/stable/api/index.html
 
