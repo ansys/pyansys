@@ -110,9 +110,8 @@ Documentation
       :link: https://sphinxdocs.ansys.com/version/stable
       :class-title: pyansys-card-title
 
-      Extension of the popular `PyData Sphinx theme <https://github.com/pydata/pydata-sphinx-theme>`_
-      that is used by `numpy <https://numpy.org/doc/stable/>`_, `pandas <https://pandas.pydata.org/docs/>`_,
-      `pyvista <https://docs.pyvista.org>`_, and many more scientific Python packages
+      Extension of the popular `PyData Sphinx Theme`_ that is used by `Numpy`_,
+      `Pandas`_, `PyVista`_, and many more scientific Python packages
 
     .. grid-item-card:: PyMeilisearch
       :img-top: ../../_static/thumbnails/intro.png
