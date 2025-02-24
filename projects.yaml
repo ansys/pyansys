@@ -17,7 +17,7 @@ projects:
     name: PyAdditive
     repository: https://github.com/ansys/pyadditive
     description: Pythonic interface to the Ansys Additive service
-    thumbnail: _static/thumbnails/intro.png
+    thumbnail: _static/thumbnails/pyansys_light.png
     family: Structures
     tags: [Flagship, Composites]
     documentation:
@@ -30,7 +30,7 @@ projects:
     name: PyAdditive Widgets
     repository: https://github.com/ansys/pyadditive-widgets
     description: PyAdditive widget toolkit to visualize additive parametric study results
-    thumbnail: _static/thumbnails/intro.png
+    thumbnail: _static/thumbnails/pyansys_light.png
     family: Structures
     tags: [Tools, Composites]
     documentation:
@@ -139,7 +139,7 @@ projects:
     tags: [Post-processing, Composites]
     documentation:
       base: https://composites.dpf.docs.pyansys.com/version/stable
-      user_guide: https://composites.dpf.docs.pyansys.com/version/stable/intro.html
+      user_guide: https://composites.dpf.docs.pyansys.com/version/stable/pyansys_light.html
       examples: https://composites.dpf.docs.pyansys.com/version/stable/examples/index.html
       api: https://composites.dpf.docs.pyansys.com/version/stable/api/index.html
 
@@ -544,7 +544,7 @@ projects:
   api-eigen-example:
     name: API Eigen Example
     description: Demonstrating the REST and gRPC communication protocols via client-server interactions
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository:
     family: Tools
     tags: [Demo]
@@ -554,7 +554,7 @@ projects:
   ansys-repository-templates:
     name: Ansys Repository Templates
     description: Ansys tool for creating new projects according to Ansys guidelines
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://templates.ansys.com/version/stable
     family: Tools
     tags: [Repository management]
@@ -564,7 +564,7 @@ projects:
   ansys-github-actions:
     name: Ansys GitHub Actions
     description: Collection of GitHub Workflows to be reused by projects in the Ansys ecosystem
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://actions.docs.ansys.com/version/stable
     family: Tools
     tags: [Repository management]
@@ -574,7 +574,7 @@ projects:
   ansys-pre-commit-hooks:
     name: Ansys pre-commit Hooks
     description: Ansys repository containing customized pre-commit hooks
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://pre-commit-hooks.docs.ansys.com/version/stable
     family: Tools
     tags: [Repository management]
@@ -584,7 +584,7 @@ projects:
   ansys-tools-repo-sync:
     name: Ansys Tools Repository Sync
     description: Ansys tool intended to synchronize the content of two different repositories
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://ansys.github.io/ansys-tools-repo-sync/version/stable
     family: Tools
     tags: [Repository management]
@@ -594,7 +594,7 @@ projects:
   ansys-all-members:
     name: Ansys ``all-members`` team
     description: Repository for updating an organization's ``all-members`` team automatically
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://github.com/ansys/ansys-all-members
     family: Tools
     tags: [Repository management]
@@ -604,7 +604,7 @@ projects:
   ansys-sphinx-theme:
     name: Ansys Sphinx Theme
     description: Extension of the popular PyData Sphinx Theme that is used by Numpy, Pandas, PyVista, and many more scientific Python packages
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://sphinxdocs.ansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
@@ -614,7 +614,7 @@ projects:
   review-bot:
     name: Reviewer Bot
     description: Python development tool for leveraging the power of OpenAI to automatically generate suggestions for improving GitHub pull requests
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://review-bot.docs.pyansys.com/version/stable/index.html
     family: Tools
     tags: [Artificial intelligence]
@@ -624,7 +624,7 @@ projects:
   pymeilisearch:
     name: PyMeilisearch
     description: Enhanced Python API to Meilisearch
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://pymeilisearch.docs.ansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
@@ -634,7 +634,7 @@ projects:
   pyconverter-xml2py:
     name: PyConverter-XML2Py
     description: Python development tool for leveraging the power of OpenAI to automatically generate suggestions for improving GitHub pull requests
-    thumbnail: ../../_static/thumbnails/intro.png
+    thumbnail: ../../_static/thumbnails/pyansys_light.png
     repository: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
