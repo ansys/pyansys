@@ -14,7 +14,7 @@ General purpose
         {% for project, metadata in projects['projects'].items() %}
           {% if 'General purpose' in metadata['tags'] %}
         .. grid-item-card:: {{ metadata['name'] }}
-          :img-top: {{ metadata['thumbnail'] }}
+          :img-top: ../../{{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
 
@@ -33,7 +33,7 @@ Demo purposes
         {% for project, metadata in projects['projects'].items() %}
           {% if 'Demo' in metadata['tags'] %}
         .. grid-item-card:: {{ metadata['name'] }}
-          :img-top: {{ metadata['thumbnail'] }}
+          :img-top: ../../{{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
 
@@ -52,7 +52,7 @@ Repository management
         {% for project, metadata in projects['projects'].items() %}
           {% if 'Repository management' in metadata['tags'] %}
         .. grid-item-card:: {{ metadata['name'] }}
-          :img-top: {{ metadata['thumbnail'] }}
+          :img-top: ../../{{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
 
@@ -71,7 +71,7 @@ Artificial intelligence
         {% for project, metadata in projects['projects'].items() %}
           {% if 'Artificial intelligence' in metadata['tags'] %}
         .. grid-item-card:: {{ metadata['name'] }}
-          :img-top: {{ metadata['thumbnail'] }}
+          :img-top: ../../{{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
 
@@ -90,7 +90,7 @@ Documentation
         {% for project, metadata in projects['projects'].items() %}
           {% if 'Documentation' in metadata['tags'] %}
         .. grid-item-card:: {{ metadata['name'] }}
-          :img-top: {{ metadata['thumbnail'] }}
+          :img-top: ../../{{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
 
