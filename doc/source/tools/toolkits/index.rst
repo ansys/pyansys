@@ -13,7 +13,7 @@ PyAEDT toolkits
         {% for project, metadata in projects['projects'].items() %}
           {% if 'PyAEDT toolkits' in metadata['tags'] %}
         .. grid-item-card:: {{ metadata['name'] }}
-          :img-top: {{ metadata['thumbnail'] }}
+          :img-top: ../../{{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['base'] }}
           :class-title: pyansys-card-title
 
