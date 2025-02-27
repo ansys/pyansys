@@ -75,7 +75,7 @@ function displayFamilies(familyCounts) {
     const IconImage = document.createElement("img");
     IconImage.alt = "Ansys icon";
     IconImage.className = "ansys-icon";
-    IconImage.src = "_static/icons/" + icon
+    IconImage.src = "_static/icons/" + icon;
 
     const familyCountElement = document.createElement("span");
     familyCountElement.className = "family-count";
