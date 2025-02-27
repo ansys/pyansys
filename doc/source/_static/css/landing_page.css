@@ -133,9 +133,9 @@ html {
 }
 
 .ansys-icon {
-  width: 16px; /* Adjust as needed */
-  height: 16px;
-  margin-right: 5px; /* Space between icon and family name */
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3125rem;
   vertical-align: middle;
   padding: 0rem;
 }
