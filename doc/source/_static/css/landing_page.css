@@ -141,11 +141,11 @@ html {
 }
 
 /* icon src dark and light mode */
-.ansys-icon {
+/* .ansys-icon {
   content: url("../icons/icon-light.svg");
 }
 
 /* Dark mode icon */
-html[data-theme="dark"] .ansys-icon {
+/* html[data-theme="dark"] .ansys-icon {
   content: url("../icons/icon-dark.svg");
-}
+}  */

@@ -1,9 +1,9 @@
 function collectFamilies(data) {
-  const familyCounts = {};
+  const familyData = {};
 
   if (!data.projects || typeof data.projects !== "object") {
     console.error("Invalid projects data structure:", data.projects);
-    return familyCounts;
+    return familyData;
   }
 
   const projects = Object.values(data.projects);
@@ -12,15 +12,17 @@ function collectFamilies(data) {
     if (!project || typeof project !== "object") continue;
 
     const family = project.family;
-    const icon = project.icon;
+    const icon = project.icon || "default-icon.png"; // Fallback icon
 
     if (family) {
-      familyCounts[family] = (familyCounts[family] || 0) + 1;
-      familyCounts[icon] = (familyCounts[icon] || 0) + 1;
+      if (!familyData[family]) {
+        familyData[family] = { count: 0, icon: icon };
+      }
+      familyData[family].count += 1;
     }
   }
 
-  return familyCounts;
+  return familyData;
 }
 
 function collectTags(data) {
@@ -48,16 +50,16 @@ function collectTags(data) {
   return tagCounts;
 }
 
-function displayFamilies(familyCounts) {
+function displayFamilies(familyData) {
   const familiesContainer = document.getElementById("product-families-list");
   familiesContainer.innerHTML = "";
 
-  const sortedFamilies = Object.keys(familyCounts).sort();
-  const maxVisible = 5; // Show only first 5 initially
+  const sortedFamilies = Object.keys(familyData).sort();
+  const maxVisible = 5;
   let showMoreClicked = false;
 
-  sortedFamilies.forEach((family, index, icon) => {
-    const familyCount = familyCounts[family];
+  sortedFamilies.forEach((family, index) => {
+    const { count, icon } = familyData[family];
 
     const familyRow = document.createElement("div");
     familyRow.className = "family-row";
@@ -72,17 +74,17 @@ function displayFamilies(familyCounts) {
     familyName.className = "family-name";
     familyName.textContent = family;
 
-    const IconImage = document.createElement("img");
-    IconImage.alt = "Ansys icon";
-    IconImage.className = "ansys-icon";
-    IconImage.src = "_static/icons/" + icon
+    const iconImage = document.createElement("img");
+    iconImage.alt = `${family} icon`;
+    iconImage.className = "ansys-icon";
+    iconImage.src = `_static/icons/${icon}`;
 
     const familyCountElement = document.createElement("span");
     familyCountElement.className = "family-count";
-    familyCountElement.textContent = `${familyCount}`;
+    familyCountElement.textContent = `${count}`;
 
     familyRow.appendChild(checkbox);
-    familyRow.appendChild(IconImage);
+    familyRow.appendChild(iconImage);
     familyRow.appendChild(familyName);
     familyRow.appendChild(familyCountElement);
 
@@ -266,8 +268,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((data) => {
       // Display families
-      const familyCounts = collectFamilies(data);
-      displayFamilies(familyCounts);
+      const familyData = collectFamilies(data);
+      displayFamilies(familyData);
 
       // Display tags
       const tagCounts = collectTags(data);
