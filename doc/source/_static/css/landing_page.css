@@ -133,11 +133,12 @@ html {
 }
 
 .ansys-icon {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.3125rem;
   vertical-align: middle;
   padding: 0rem;
+  /* filter: saturate(10) contrast(1); */
 }
 
 /* icon src dark and light mode */

@@ -119,7 +119,7 @@ projects:
     thumbnail: _static/thumbnails/pydpf-core.png
     family: Structures
     tags: [Post-processing, Flagship]
-    icon: structures.svg
+    icon: platform.svg
     documentation:
       base: https://dpf.docs.pyansys.com/version/stable
       user_guide: https://dpf.docs.pyansys.com/version/stable/user_guide/index.html
@@ -133,7 +133,7 @@ projects:
     thumbnail: _static/thumbnails/pydpf-post.png
     family: Structures
     tags: [Post-processing, Flagship]
-    icon: structures.svg
+    icon: platform.svg
     documentation:
       base: https://post.docs.pyansys.com/version/stable
       user_guide: https://post.docs.pyansys.com/version/stable/user_guide/index.html
@@ -385,7 +385,7 @@ projects:
     thumbnail: _static/thumbnails/pyprimemesh.png
     family: Meshing
     tags: [Flagship]
-    icon: ansys_logo.svg
+    icon: platform.svg
     documentation:
       base: https://prime.docs.pyansys.com/version/stable
       user_guide: https://prime.docs.pyansys.com/version/stable/user_guide/index.html
@@ -441,7 +441,7 @@ projects:
     thumbnail: _static/thumbnails/pysherlock.png
     family: Electronics
     tags: [Flagship, Thermal]
-    icon: electromagnetics.svg
+    icon: structures.svg
     documentation:
       base: https://sherlock.docs.pyansys.com/version/stable
       user_guide: https://sherlock.docs.pyansys.com/version/stable/user_guide/index.html
@@ -511,7 +511,7 @@ projects:
     thumbnail: _static/thumbnails/intro.png
     family: Other
     tags: [Flagship]
-    icon: ansys_logo.svg
+    icon: platform.svg
     documentation:
       base: https://workbench.docs.pyansys.com/version/stable
       user_guide: https://workbench.docs.pyansys.com/version/stable/user-guide.html
@@ -520,7 +520,7 @@ projects:
 
   shared-components-openapi-common:
     name: Shared Components - OpenAPI Common
-    repository: https://github.com/ansys/shared-components-openapi-common
+    repository: https://github.com/ansys/openapi-common
     description: Shared Ansys software components to enable package interoperability and minimize maintenance
     thumbnail: _static/thumbnails/intro.png
     family: Other
@@ -649,6 +649,7 @@ projects:
     repository: https://ansys.github.io/ansys-tools-repo-sync/version/stable
     family: Tools
     tags: [Repository management]
+    icon: ansys_logo.svg
     documentation:
       base: https://ansys.github.io/ansys-tools-repo-sync/version/stable
 
@@ -670,6 +671,7 @@ projects:
     repository: https://sphinxdocs.ansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
+    icon: ansys_logo.svg
     documentation:
       base: https://sphinxdocs.ansys.com/version/stable/index.html
 
@@ -680,6 +682,7 @@ projects:
     repository: https://review-bot.docs.pyansys.com/version/stable/index.html
     family: Tools
     tags: [Artificial intelligence]
+    icon: ansys_logo.svg
     documentation:
       base: https://review-bot.docs.pyansys.com/version/stable/index.html
 
@@ -690,6 +693,7 @@ projects:
     repository: https://pymeilisearch.docs.ansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
+    icon: ansys_logo.svg
     documentation:
       base: https://pymeilisearch.docs.ansys.com/version/stable/index.html
 
@@ -700,6 +704,7 @@ projects:
     repository: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
+    icon: ansys_logo.svg
     documentation:
       base: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
 
