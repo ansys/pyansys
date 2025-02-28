@@ -1,5 +1,6 @@
 projects:
 
+  # Projects icons from https://github.com/ansys-internal/pyansys-marketing/blob/main/doc/source/conf.py#L15
   pyacp:
     name: PyACP
     repository: https://github.com/ansys/pyacp
@@ -413,7 +414,7 @@ projects:
     thumbnail: _static/thumbnails/pyscadeone.png
     family: Embedded Software
     tags: [Software]
-    icon: ansys_logo.svg
+    icon: embedded-software.svg
     documentation:
       base: https://scadeone.docs.pyansys.com/version/stable
       user_guide: https://scadeone.docs.pyansys.com/version/stable/user_guide/index.html
