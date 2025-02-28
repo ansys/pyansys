@@ -17,7 +17,6 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
-  PYANSYS_BOT_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
 
 jobs:
   check-vulnerabilities:
