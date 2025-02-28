@@ -695,7 +695,7 @@ projects:
 
   pyconverter-xml2py:
     name: PyConverter-XML2Py
-    description: Python development tool for leveraging the power of OpenAI to automatically generate suggestions for improving GitHub pull requests
+    description: A Python wrapper to convert XML documentation into Python source code with its Sphinx documentation.
     thumbnail: _static/thumbnails/pyansys-common.png
     repository: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
     family: Tools
