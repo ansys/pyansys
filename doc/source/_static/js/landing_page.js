@@ -57,6 +57,7 @@ function displayFamilies(familyData) {
   const sortedFamilies = Object.keys(familyData).sort();
   const maxVisible = 5;
   let showMoreClicked = false;
+  const theme = document.documentElement.dataset.theme || "light";
 
   sortedFamilies.forEach((family, index) => {
     const { count, icon } = familyData[family];
@@ -77,7 +78,8 @@ function displayFamilies(familyData) {
     const iconImage = document.createElement("img");
     iconImage.alt = `${family} icon`;
     iconImage.className = "ansys-icon";
-    iconImage.src = `_static/icons/${icon}`;
+    const iconName = theme === "dark" && icon === "ansys-icon-light.svg" ? "ansys-icon-dark.svg" : `${icon}`;
+    iconImage.src = `${iconName}`;
 
     const familyCountElement = document.createElement("span");
     familyCountElement.className = "family-count";
@@ -282,3 +284,26 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error fetching the projects data:", error);
     });
 });
+
+
+function updateIcon() {
+  theme = document.documentElement.dataset.theme || "light";
+  let icons = document.querySelectorAll(".ansys-icon");
+
+  if (icons) {
+    icons.forEach((iconImage) => {
+      if (theme === "dark" && iconImage.src.includes("ansys-icon-light.svg")) {
+      iconImage.src = iconImage.src.replace("ansys-icon-light.svg", "ansys-icon-dark.svg");
+    }
+    if (theme === "light" && iconImage.src.includes("ansys-icon-dark.svg")) {
+      iconImage.src = iconImage.src.replace("ansys-icon-dark.svg", "ansys-icon-light.svg");
+    }
+  });
+}
+}
+
+const observer = new MutationObserver(updateIcon);
+observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+// Initial call to set the icon on page load
+updateIcon();

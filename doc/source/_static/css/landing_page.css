@@ -138,15 +138,4 @@ html {
   margin-right: 0.3125rem;
   vertical-align: middle;
   padding: 0rem;
-  /* filter: saturate(10) contrast(1); */
 }
-
-/* icon src dark and light mode */
-/* .ansys-icon {
-  content: url("../icons/icon-light.svg");
-}
-
-/* Dark mode icon */
-/* html[data-theme="dark"] .ansys-icon {
-  content: url("../icons/icon-dark.svg");
-}  */
