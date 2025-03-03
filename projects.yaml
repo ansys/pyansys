@@ -1,5 +1,6 @@
 projects:
 
+  # Projects icons from https://github.com/ansys-internal/pyansys-marketing/blob/main/doc/source/conf.py#L15
   pyacp:
     name: PyACP
     repository: https://github.com/ansys/pyacp
@@ -7,6 +8,7 @@ projects:
     thumbnail: _static/thumbnails/pyacp.png
     family: Structures
     tags: [Flagship, Composites]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://acp.docs.pyansys.com/version/stable
       user_guide: https://acp.docs.pyansys.com/version/stable/user_guide/index.html
@@ -20,6 +22,7 @@ projects:
     thumbnail: _static/thumbnails/intro.png
     family: Structures
     tags: [Flagship, Composites]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://additive.docs.pyansys.com/version/stable
       user_guide: https://additive.docs.pyansys.com/version/stable/getting-started/index.html
@@ -33,6 +36,7 @@ projects:
     thumbnail: _static/thumbnails/intro.png
     family: Structures
     tags: [Tools, Composites]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://widgets.additive.docs.pyansys.com/version/stable
       user_guide: https://widgets.additive.docs.pyansys.com/version/stable/getting_started/index.html
@@ -46,6 +50,7 @@ projects:
     thumbnail: _static/thumbnails/pyaedt.png
     family: Electronics
     tags: [Flagship]
+    icon: _static/icons/electromagnetics.svg
     documentation:
       base: https://aedt.docs.pyansys.com/version/stable
       user_guide: https://aedt.docs.pyansys.com/version/stable/User_guide/index.html
@@ -59,6 +64,7 @@ projects:
     thumbnail: _static/thumbnails/pyansys-geometry.png
     family: CAD
     tags: [Flagship]
+    icon: _static/icons/design.svg
     documentation:
       base: https://geometry.docs.pyansys.com/version/stable
       user_guide: https://geometry.docs.pyansys.com/version/stable/user_guide/index.html
@@ -72,6 +78,7 @@ projects:
     thumbnail: _static/thumbnails/pyansys-math.png
     family: Structures
     tags: [Tools]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://math.docs.pyansys.com/version/stable
       user_guide: https://math.docs.pyansys.com/version/stable/user_guide/index.html
@@ -85,6 +92,7 @@ projects:
     thumbnail: _static/thumbnails/pyansys-sound.png
     family: Acoustics
     tags: [Post-processing, Flagship]
+    icon: _static/icons/sound.svg
     documentation:
       base: https://sound.docs.pyansys.com/version/stable
       user_guide: https://sound.docs.pyansys.com/version/stable/user_guide.html
@@ -98,6 +106,7 @@ projects:
     thumbnail: _static/thumbnails/pyconceptev.png
     family: Electronics
     tags: [Tools]
+    icon: _static/icons/electromagnetics.svg
     documentation:
       base: https://conceptev.docs.pyansys.com/version/stable
       user_guide: https://conceptev.docs.pyansys.com/version/stable/user_guide.html
@@ -111,6 +120,7 @@ projects:
     thumbnail: _static/thumbnails/pydpf-core.png
     family: Structures
     tags: [Post-processing, Flagship]
+    icon: _static/icons/platform.svg
     documentation:
       base: https://dpf.docs.pyansys.com/version/stable
       user_guide: https://dpf.docs.pyansys.com/version/stable/user_guide/index.html
@@ -124,6 +134,7 @@ projects:
     thumbnail: _static/thumbnails/pydpf-post.png
     family: Structures
     tags: [Post-processing, Flagship]
+    icon: _static/icons/platform.svg
     documentation:
       base: https://post.docs.pyansys.com/version/stable
       user_guide: https://post.docs.pyansys.com/version/stable/user_guide/index.html
@@ -137,6 +148,7 @@ projects:
     thumbnail: _static/thumbnails/pydpf-composites.png
     family: Structures
     tags: [Post-processing, Composites]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://composites.dpf.docs.pyansys.com/version/stable
       user_guide: https://composites.dpf.docs.pyansys.com/version/stable/intro.html
@@ -150,6 +162,7 @@ projects:
     thumbnail: _static/thumbnails/pydyna.png
     family: Structures
     tags: [Flagship]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://dyna.docs.pyansys.com/version/stable
       user_guide: https://dyna.docs.pyansys.com/version/stable/user-guide/index.html
@@ -163,6 +176,7 @@ projects:
     thumbnail: _static/thumbnails/pydynamicreporting.png
     family: Platform
     tags: [Tools]
+    icon: _static/icons/platform.svg
     documentation:
       base: https://dynamicreporting.docs.pyansys.com/version/stable
       user_guide: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
@@ -176,6 +190,7 @@ projects:
     thumbnail: _static/thumbnails/pyedb.png
     family: Electronics
     tags: [Flagship]
+    icon: _static/icons/electromagnetics.svg
     documentation:
       base: https://edb.docs.pyansys.com/version/stable
       user_guide: https://edb.docs.pyansys.com/version/stable/user_guide/index.html
@@ -189,6 +204,7 @@ projects:
     thumbnail: _static/thumbnails/pyedb.png
     family: Electronics
     tags: [Flagship]
+    icon: _static/icons/electromagnetics.svg
     documentation:
       base: https://edb.docs.pyansys.com/version/stable
       user_guide: https://edb.core.docs.pyansys.com/version/stable/user_guide/index.html
@@ -202,6 +218,7 @@ projects:
     thumbnail: _static/thumbnails/pyensight.png
     family: Fluids
     tags: [Flagship]
+    icon: _static/icons/fluids.svg
     documentation:
       base: https://ensight.docs.pyansys.com/version/stable
       user_guide: https://ensight.docs.pyansys.com/version/stable/user_guide/index.html
@@ -215,6 +232,7 @@ projects:
     thumbnail: _static/thumbnails/pyfluent.png
     family: Fluids
     tags: [Flagship, Visualization]
+    icon: _static/icons/fluids.svg
     documentation:
       base: https://fluent.docs.pyansys.com/version/stable
       user_guide: https://fluent.docs.pyansys.com/version/stable/user_guide/index.html
@@ -228,6 +246,7 @@ projects:
     thumbnail: _static/thumbnails/pyfluent-visualization.png
     family: Fluids
     tags: [Tools, Visualization]
+    icon: _static/icons/fluids.svg
     documentation:
       base:  https://visualization.fluent.docs.pyansys.com/version/stable
       user_guide: https://visualization.fluent.docs.pyansys.com/version/stable/users_guide/index.html
@@ -241,6 +260,7 @@ projects:
     thumbnail: _static/thumbnails/pygranta.png
     family: Materials
     tags: [Flagship]
+    icon: _static/icons/materials.svg
     documentation:
       base: https://grantami.docs.pyansys.com/version/stable
       user_guide: https://grantami.docs.pyansys.com/version/stable/user_guide.html
@@ -254,6 +274,7 @@ projects:
     thumbnail: _static/thumbnails/intro.png
     family: Platform
     tags: [Tools]
+    icon: _static/icons/platform.svg
     documentation:
       base: https://hps.docs.pyansys.com/version/stable
       user_guide: https://hps.docs.pyansys.com/version/stable/user_guide/index.html
@@ -267,6 +288,7 @@ projects:
     thumbnail: _static/thumbnails/pymapdl.png
     family: Structures
     tags: [Flagship]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://mapdl.docs.pyansys.com/version/stable
       user_guide: https://mapdl.docs.pyansys.com/version/stable/user_guide/index.html
@@ -280,6 +302,7 @@ projects:
     thumbnail: _static/thumbnails/pymapdl.png
     family: Structures
     tags: [Tools]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://reader.docs.pyansys.com/version/stable
       user_guide: https://reader.docs.pyansys.com/version/stable/user_guide/index.html
@@ -293,6 +316,7 @@ projects:
     thumbnail: _static/thumbnails/pymechanical.png
     family: Structures
     tags: [Flagship]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://mechanical.docs.pyansys.com/version/stable
       user_guide: https://mechanical.docs.pyansys.com/version/stable/index.html
@@ -306,6 +330,7 @@ projects:
     thumbnail: _static/thumbnails/pymodelcenter.png
     family: Connect
     tags: [Flagship]
+    icon: _static/icons/connect.svg
     documentation:
       base: https://modelcenter.docs.pyansys.com/version/stable
       user_guide: https://modelcenter.docs.pyansys.com/version/stable/user_guide/index.html
@@ -319,6 +344,7 @@ projects:
     thumbnail: _static/thumbnails/pymotorcad.png
     family: Electronics
     tags: [Flagship]
+    icon: _static/icons/electromagnetics.svg
     documentation:
       base: https://motorcad.docs.pyansys.com/version/stable
       user_guide: https://motorcad.docs.pyansys.com/version/stable/user_guide/index.html
@@ -332,6 +358,7 @@ projects:
     thumbnail: _static/thumbnails/pyoptislang.png
     family: Platform
     tags: [Flagship]
+    icon: _static/icons/platform.svg
     documentation:
       base: https://optislang.docs.pyansys.com/version/stable
       user_guide: https://optislang.docs.pyansys.com/version/stable/user_guide/index.html
@@ -345,6 +372,7 @@ projects:
     thumbnail: _static/thumbnails/intro.png
     family: Platform
     tags: [Tools]
+    icon: _static/icons/platform.svg
     documentation:
       base: https://pypim.docs.pyansys.com/version/stable
       user_guide: https://pypim.docs.pyansys.com/version/stable/index.html#getting-started
@@ -358,6 +386,7 @@ projects:
     thumbnail: _static/thumbnails/pyprimemesh.png
     family: Meshing
     tags: [Flagship]
+    icon: _static/icons/platform.svg
     documentation:
       base: https://prime.docs.pyansys.com/version/stable
       user_guide: https://prime.docs.pyansys.com/version/stable/user_guide/index.html
@@ -371,6 +400,7 @@ projects:
     thumbnail: _static/thumbnails/pyrocky.png
     family: Fluids
     tags: [Flagship]
+    icon: _static/icons/fluids.svg
     documentation:
       base: https://rocky.docs.pyansys.com/version/stable
       user_guide: https://rocky.docs.pyansys.com/version/stable/user_guide/index.html
@@ -384,6 +414,7 @@ projects:
     thumbnail: _static/thumbnails/pyscadeone.png
     family: Embedded Software
     tags: [Software]
+    icon: _static/icons/embedded-software.svg
     documentation:
       base: https://scadeone.docs.pyansys.com/version/stable
       user_guide: https://scadeone.docs.pyansys.com/version/stable/user_guide/index.html
@@ -397,6 +428,7 @@ projects:
     thumbnail: _static/thumbnails/intro.png
     family: Semiconductors
     tags: [Flagship]
+    icon: _static/icons/semiconductors.svg
     documentation:
       base: https://seascape.docs.pyansys.com/version/stable
       user_guide: https://seascape.docs.pyansys.com/version/stable/#usage
@@ -410,6 +442,7 @@ projects:
     thumbnail: _static/thumbnails/pysherlock.png
     family: Electronics
     tags: [Flagship, Thermal]
+    icon: _static/icons/structures.svg
     documentation:
       base: https://sherlock.docs.pyansys.com/version/stable
       user_guide: https://sherlock.docs.pyansys.com/version/stable/user_guide/index.html
@@ -423,6 +456,7 @@ projects:
     thumbnail: _static/thumbnails/pysimai.png
     family: AI
     tags: [Flagship]
+    icon: _static/icons/ai-ml.svg
     documentation:
       base: https://simai.docs.pyansys.com/version/stable
       user_guide: https://simai.docs.pyansys.com/version/stable/user_guide.html
@@ -436,6 +470,7 @@ projects:
     thumbnail: _static/thumbnails/pysystem-coupling.png
     family: Other
     tags: [Flagship]
+    icon: _static/icons/design.svg
     documentation:
       base: https://systemcoupling.docs.pyansys.com/version/stable
       user_guide: https://systemcoupling.docs.pyansys.com/version/stable/users_guide/index.html
@@ -449,6 +484,7 @@ projects:
     thumbnail: _static/thumbnails/pyturbogrid.png
     family: Fluids
     tags: [Flagship]
+    icon: _static/icons/fluids.svg
     documentation:
       base: https://turbogrid.docs.pyansys.com/version/stable
       user_guide: https://turbogrid.docs.pyansys.com/version/stable/getting_started/index.html
@@ -462,6 +498,7 @@ projects:
     thumbnail: _static/thumbnails/pytwin.png
     family: Digital Twin
     tags: [Flagship]
+    icon: _static/icons/digital-twins.svg
     documentation:
       base: https://twin.docs.pyansys.com/version/stable
       user_guide: https://twin.docs.pyansys.com/version/stable/user_guide/index.html
@@ -475,6 +512,7 @@ projects:
     thumbnail: _static/thumbnails/intro.png
     family: Other
     tags: [Flagship]
+    icon: _static/icons/platform.svg
     documentation:
       base: https://workbench.docs.pyansys.com/version/stable
       user_guide: https://workbench.docs.pyansys.com/version/stable/user-guide.html
@@ -483,11 +521,12 @@ projects:
 
   shared-components-openapi-common:
     name: Shared Components - OpenAPI Common
-    repository: https://github.com/ansys/shared-components-openapi-common
+    repository: https://github.com/ansys/openapi-common
     description: Shared Ansys software components to enable package interoperability and minimize maintenance
     thumbnail: _static/thumbnails/intro.png
     family: Other
     tags: [Tools]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://shared.docs.pyansys.com
       user_guide: https://openapi.docs.pyansys.com/version/stable/index.html
@@ -501,6 +540,7 @@ projects:
     repository: https://github.com/ansys/pyaedt-toolkits-common
     family: Tools
     tags: [PyAEDT toolkits]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://aedt.common.toolkit.docs.pyansys.com/version/stable/index.html
 
@@ -511,6 +551,7 @@ projects:
     repository:
     family: Tools
     tags: [PyAEDT toolkits]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://aedt.antenna.toolkit.docs.pyansys.com/version/stable/index.html
 
@@ -521,6 +562,7 @@ projects:
     repository:
     family: Tools
     tags: [PyAEDT toolkits]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://magnet.segmentation.toolkit.docs.pyansys.com/version/stable/index.html
 
@@ -531,6 +573,7 @@ projects:
     repository:
     family: Tools
     tags: [General purpose]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://installer.docs.pyansys.com/version/stable/index.html
 
@@ -541,6 +584,7 @@ projects:
     repository:
     family: Tools
     tags: [General purpose]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://cheatsheets.docs.pyansys.com/index.html
 
@@ -551,6 +595,7 @@ projects:
     repository: https://github.com/ansys/5G-Wizard
     family: Tools
     tags: [General purpose]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://github.com/ansys/5G-Wizard
 
@@ -561,6 +606,7 @@ projects:
     repository:
     family: Tools
     tags: [Demo]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://apieigen.docs.ansys.com/index.html
 
@@ -571,6 +617,7 @@ projects:
     repository: https://templates.ansys.com/version/stable
     family: Tools
     tags: [Repository management]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://templates.ansys.com/version/stable
 
@@ -581,6 +628,7 @@ projects:
     repository: https://actions.docs.ansys.com/version/stable
     family: Tools
     tags: [Repository management]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://actions.docs.ansys.com/version/stable
 
@@ -591,6 +639,7 @@ projects:
     repository: https://pre-commit-hooks.docs.ansys.com/version/stable
     family: Tools
     tags: [Repository management]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://pre-commit-hooks.docs.ansys.com/version/stable
 
@@ -601,6 +650,7 @@ projects:
     repository: https://ansys.github.io/ansys-tools-repo-sync/version/stable
     family: Tools
     tags: [Repository management]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://ansys.github.io/ansys-tools-repo-sync/version/stable
 
@@ -611,6 +661,7 @@ projects:
     repository: https://github.com/ansys/ansys-all-members
     family: Tools
     tags: [Repository management]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://github.com/ansys/ansys-all-members
 
@@ -621,6 +672,7 @@ projects:
     repository: https://sphinxdocs.ansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://sphinxdocs.ansys.com/version/stable/index.html
 
@@ -631,6 +683,7 @@ projects:
     repository: https://review-bot.docs.pyansys.com/version/stable/index.html
     family: Tools
     tags: [Artificial intelligence]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://review-bot.docs.pyansys.com/version/stable/index.html
 
@@ -641,16 +694,18 @@ projects:
     repository: https://pymeilisearch.docs.ansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://pymeilisearch.docs.ansys.com/version/stable/index.html
 
   pyconverter-xml2py:
     name: PyConverter-XML2Py
-    description: Python development tool for leveraging the power of OpenAI to automatically generate suggestions for improving GitHub pull requests
+    description: A Python wrapper to convert XML documentation into Python source code with its Sphinx documentation.
     thumbnail: _static/thumbnails/pyansys-common.png
     repository: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
     family: Tools
     tags: [Documentation]
+    icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
 

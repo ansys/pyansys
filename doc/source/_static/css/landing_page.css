@@ -131,3 +131,11 @@ html {
   margin: 0.25em;
   font-weight: 600;
 }
+
+.ansys-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.3125rem;
+  vertical-align: middle;
+  padding: 0rem;
+}

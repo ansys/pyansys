@@ -1,9 +1,9 @@
 function collectFamilies(data) {
-  const familyCounts = {};
+  const familyData = {};
 
   if (!data.projects || typeof data.projects !== "object") {
     console.error("Invalid projects data structure:", data.projects);
-    return familyCounts;
+    return familyData;
   }
 
   const projects = Object.values(data.projects);
@@ -12,13 +12,17 @@ function collectFamilies(data) {
     if (!project || typeof project !== "object") continue;
 
     const family = project.family;
+    const icon = project.icon || "ansys-icon-light.svg"; // Fallback icon
 
     if (family) {
-      familyCounts[family] = (familyCounts[family] || 0) + 1;
+      if (!familyData[family]) {
+        familyData[family] = { count: 0, icon: icon };
+      }
+      familyData[family].count += 1;
     }
   }
 
-  return familyCounts;
+  return familyData;
 }
 
 function collectTags(data) {
@@ -46,16 +50,17 @@ function collectTags(data) {
   return tagCounts;
 }
 
-function displayFamilies(familyCounts) {
+function displayFamilies(familyData) {
   const familiesContainer = document.getElementById("product-families-list");
   familiesContainer.innerHTML = "";
 
-  const sortedFamilies = Object.keys(familyCounts).sort();
-  const maxVisible = 5; // Show only first 5 initially
+  const sortedFamilies = Object.keys(familyData).sort();
+  const maxVisible = 5;
   let showMoreClicked = false;
+  const theme = document.documentElement.dataset.theme || "light";
 
   sortedFamilies.forEach((family, index) => {
-    const familyCount = familyCounts[family];
+    const { count, icon } = familyData[family];
 
     const familyRow = document.createElement("div");
     familyRow.className = "family-row";
@@ -70,11 +75,21 @@ function displayFamilies(familyCounts) {
     familyName.className = "family-name";
     familyName.textContent = family;
 
+    const iconImage = document.createElement("img");
+    iconImage.alt = `${family} icon`;
+    iconImage.className = "ansys-icon";
+    const iconName =
+      theme === "dark" && icon === "ansys-icon-light.svg"
+        ? "ansys-icon-dark.svg"
+        : `${icon}`;
+    iconImage.src = `${iconName}`;
+
     const familyCountElement = document.createElement("span");
     familyCountElement.className = "family-count";
-    familyCountElement.textContent = `${familyCount}`;
+    familyCountElement.textContent = `${count}`;
 
     familyRow.appendChild(checkbox);
+    familyRow.appendChild(iconImage);
     familyRow.appendChild(familyName);
     familyRow.appendChild(familyCountElement);
 
@@ -258,8 +273,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((data) => {
       // Display families
-      const familyCounts = collectFamilies(data);
-      displayFamilies(familyCounts);
+      const familyData = collectFamilies(data);
+      displayFamilies(familyData);
 
       // Display tags
       const tagCounts = collectTags(data);
@@ -272,3 +287,34 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error fetching the projects data:", error);
     });
 });
+
+function updateIcon() {
+  theme = document.documentElement.dataset.theme || "light";
+  let icons = document.querySelectorAll(".ansys-icon");
+
+  if (icons) {
+    icons.forEach((iconImage) => {
+      if (theme === "dark" && iconImage.src.includes("ansys-icon-light.svg")) {
+        iconImage.src = iconImage.src.replace(
+          "ansys-icon-light.svg",
+          "ansys-icon-dark.svg",
+        );
+      }
+      if (theme === "light" && iconImage.src.includes("ansys-icon-dark.svg")) {
+        iconImage.src = iconImage.src.replace(
+          "ansys-icon-dark.svg",
+          "ansys-icon-light.svg",
+        );
+      }
+    });
+  }
+}
+
+const observer = new MutationObserver(updateIcon);
+observer.observe(document.documentElement, {
+  attributes: true,
+  attributeFilter: ["data-theme"],
+});
+
+// Initial call to set the icon on page load
+updateIcon();
