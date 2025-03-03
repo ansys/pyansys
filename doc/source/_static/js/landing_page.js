@@ -12,7 +12,7 @@ function collectFamilies(data) {
     if (!project || typeof project !== "object") continue;
 
     const family = project.family;
-    const icon = project.icon || "default-icon.png"; // Fallback icon
+    const icon = project.icon || "ansys-icon-light.svg"; // Fallback icon
 
     if (family) {
       if (!familyData[family]) {
