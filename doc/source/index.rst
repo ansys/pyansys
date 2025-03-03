@@ -9,12 +9,10 @@ it is now a collection of many Python packages for using Ansys products through 
    :hidden:
    :maxdepth: 3
 
-   getting_started
+   getting-started
    user_guide
    api
    examples
-   supported_versions
-   package_versions/index
    tools/index
 
 .. jinja:: project_context
@@ -37,6 +35,12 @@ it is now a collection of many Python packages for using Ansys products through 
                 <div class="sd-card-body">
                     <p class="sd-card-title sd-font-weight-bold"> {{ metadata['name'] }} </p>
                     <p class="sd-card-body-text"> {{ metadata['description'] }} </p>
+                    <p class="sd-card-text">
+                        <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ family.capitalize() }}</span>
+                        {% for tag in metadata['tags'] %}
+                        <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ tag }}</span>
+                        {% endfor %}
+                        </p>
                 </div>
             </div>
 

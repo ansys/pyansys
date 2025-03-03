@@ -51,12 +51,15 @@ function displayFamilies(familyCounts) {
   familiesContainer.innerHTML = "";
 
   const sortedFamilies = Object.keys(familyCounts).sort();
+  const maxVisible = 5; // Show only first 5 initially
+  let showMoreClicked = false;
 
-  sortedFamilies.forEach((family) => {
+  sortedFamilies.forEach((family, index) => {
     const familyCount = familyCounts[family];
 
     const familyRow = document.createElement("div");
     familyRow.className = "family-row";
+    if (index >= maxVisible) familyRow.style.display = "none"; // Hide extra items initially
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -67,15 +70,36 @@ function displayFamilies(familyCounts) {
     familyName.className = "family-name";
     familyName.textContent = family;
 
-    const familyCountElem = document.createElement("span");
-    familyCountElem.className = "family-count";
-    familyCountElem.textContent = `(${familyCount})`;
+    const familyCountElement = document.createElement("span");
+    familyCountElement.className = "family-count";
+    familyCountElement.textContent = `${familyCount}`;
 
     familyRow.appendChild(checkbox);
     familyRow.appendChild(familyName);
-    //familyRow.appendChild(familyCountElem);
+    familyRow.appendChild(familyCountElement);
 
     familiesContainer.appendChild(familyRow);
+  });
+
+  // Handle "Show more" click
+  const showMoreButton = document.querySelector(".product-families .show-more");
+  const FamilyRows = document.querySelectorAll(".family-row");
+  showMoreButton.addEventListener("click", () => {
+    if (showMoreClicked) {
+      FamilyRows.forEach((row, index) => {
+        if (index >= maxVisible) {
+          row.style.display = "none";
+        }
+      });
+      showMoreButton.textContent = "Show more";
+      showMoreClicked = false;
+    } else {
+      FamilyRows.forEach((row) => {
+        row.style.display = "flex";
+      });
+      showMoreButton.textContent = "Show less";
+      showMoreClicked = true;
+    }
   });
 }
 
@@ -84,12 +108,15 @@ function displayTags(tagCounts) {
   tagsContainer.innerHTML = "";
 
   const sortedTags = Object.keys(tagCounts).sort();
+  const maxVisible = 5; // Show only first 5 initially
+  let showMoreClicked = false;
 
-  sortedTags.forEach((tag) => {
+  sortedTags.forEach((tag, index) => {
     const tagCount = tagCounts[tag];
 
     const tagRow = document.createElement("div");
     tagRow.className = "tag-row";
+    if (index >= maxVisible) tagRow.style.display = "none"; // Hide extra items initially
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -100,19 +127,56 @@ function displayTags(tagCounts) {
     tagName.className = "tag-name";
     tagName.textContent = tag;
 
-    const tagCountElem = document.createElement("span");
-    tagCountElem.className = "tag-count";
-    tagCountElem.textContent = `(${tagCount})`;
+    const tagCountElement = document.createElement("span");
+    tagCountElement.className = "tag-count";
+    tagCountElement.textContent = `${tagCount}`;
 
     tagRow.appendChild(checkbox);
     tagRow.appendChild(tagName);
-    //tagRow.appendChild(tagCountElem);
+    tagRow.appendChild(tagCountElement);
 
     tagsContainer.appendChild(tagRow);
+  });
+
+  // Handle "Show more" click
+  const showMoreButton = document.querySelector(".product-tags .show-more");
+  const TagRows = document.querySelectorAll(".tag-row");
+  showMoreButton.addEventListener("click", () => {
+    if (showMoreClicked) {
+      TagRows.forEach((row, index) => {
+        if (index >= maxVisible) {
+          row.style.display = "none";
+        }
+      });
+      showMoreButton.textContent = "Show more";
+      showMoreClicked = false;
+    } else {
+      TagRows.forEach((row) => {
+        row.style.display = "flex";
+      });
+      showMoreButton.textContent = "Show less";
+      showMoreClicked = true;
+    }
   });
 }
 
 function handleFamilySelection() {
+  applyFilters();
+}
+
+function handleTagSelection() {
+  applyFilters();
+}
+
+function applyFilters() {
+  const SelectedTagsContainer = document.getElementById(
+    "selected-product-tags-list",
+  );
+  const SelectedFamiliesContainer = document.getElementById(
+    "selected-product-families-list",
+  );
+  SelectedTagsContainer.innerHTML = "";
+  SelectedFamiliesContainer.innerHTML = "";
   const selectedFamilies = Array.from(
     document.querySelectorAll(
       '#product-families-list input[type="checkbox"]:checked',
@@ -121,21 +185,6 @@ function handleFamilySelection() {
     checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase(),
   );
 
-  console.log("Selected families:", selectedFamilies);
-
-  const projectCards = document.querySelectorAll(".project-card");
-
-  projectCards.forEach((card) => {
-    const family = card.getAttribute("data-family").toLowerCase();
-    console.log("Family:", family);
-    card.style.display =
-      selectedFamilies.length === 0 || selectedFamilies.includes(family)
-        ? "flex"
-        : "none";
-  });
-}
-
-function handleTagSelection() {
   const selectedTags = Array.from(
     document.querySelectorAll(
       '#product-tags-list input[type="checkbox"]:checked',
@@ -143,36 +192,51 @@ function handleTagSelection() {
   ).map((checkbox) =>
     checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase(),
   );
+  for (const tag of selectedTags) {
+    const selectedTag = document.createElement("span");
+    selectedTag.className = "selected-tag";
+    selectedTag.textContent = tag;
+    SelectedTagsContainer.appendChild(selectedTag);
+  }
 
+  for (const family of selectedFamilies) {
+    const selectedFamily = document.createElement("span");
+    selectedFamily.className = "selected-family";
+    selectedFamily.textContent = family;
+    SelectedFamiliesContainer.appendChild(selectedFamily);
+  }
+
+  console.log("Selected families:", selectedFamilies);
   console.log("Selected tags:", selectedTags);
 
   const projectCards = document.querySelectorAll(".project-card");
 
   projectCards.forEach((card) => {
+    const family = card.getAttribute("data-family").toLowerCase();
     const rawTags = card.getAttribute("data-tags");
 
-    if (!rawTags) {
-      card.style.display = "none";
-      return;
-    }
-
-    // Parse the data-tags string
     let cardTags = [];
-    try {
-      cardTags = JSON.parse(rawTags.replace(/'/g, '"'));
-    } catch (error) {
-      console.error("Error parsing data-tags:", rawTags, error);
-      card.style.display = "none";
-      return;
+    if (rawTags) {
+      try {
+        cardTags = JSON.parse(rawTags.replace(/'/g, '"')).map((tag) =>
+          tag.toLowerCase(),
+        );
+      } catch (error) {
+        console.error("Error parsing data-tags:", rawTags, error);
+      }
     }
 
-    const cardTagsLower = cardTags.map((tag) => tag.toLowerCase());
-    const hasMatchingTag = selectedTags.some((tag) =>
-      cardTagsLower.includes(tag),
-    );
+    // Check if the card matches the selected families
+    const matchesAllFamilies =
+      selectedFamilies.length === 0 || selectedFamilies.includes(family);
 
-    card.style.display =
-      selectedTags.length === 0 || hasMatchingTag ? "flex" : "none";
+    // Check if the card matches the selected tags
+    const matchesAllTags =
+      selectedTags.length === 0 ||
+      selectedTags.every((tag) => cardTags.includes(tag));
+
+    // Show only if both family & tag filters match (or if no filter is applied)
+    card.style.display = matchesAllFamilies && matchesAllTags ? "flex" : "none";
   });
 }
 

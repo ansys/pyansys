@@ -4,6 +4,7 @@ ansys
 API
 postprocessing
 PyAnsys
+(?i)Python
 Pythonic
 PyAEDT
 DPF
