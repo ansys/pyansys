@@ -80,18 +80,19 @@ function displayFamilies(familyData) {
     iconImage.className = "ansys-icon";
     let basePath = "version/dev/";
     if (window.location.pathname.includes("version/dev")) {
-      basePath = ""
+      basePath = "";
     } else if (window.location.pathname.includes("version/stable")) {
       // If the path is versioned, default to current page
-      basePath = ""
+      basePath = "";
     } else {
       // If the path is not versioned, default to dev
       basePath = "version/dev/";
     }
 
-    const iconName = theme === "dark" && icon === "ansys-icon-light.svg"
-      ? "ansys-icon-dark.svg"
-    : `${icon}`;
+    const iconName =
+      theme === "dark" && icon === "ansys-icon-light.svg"
+        ? "ansys-icon-dark.svg"
+        : `${icon}`;
 
     iconImage.src = `${basePath}${iconName}`;
 
