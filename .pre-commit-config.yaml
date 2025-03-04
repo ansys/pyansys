@@ -1,7 +1,7 @@
 repos:
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.9.7
+  rev: v0.9.9
   hooks:
     - id: ruff
     - id: ruff-format
@@ -34,7 +34,7 @@ repos:
     - id: check-github-workflows
 
 - repo: https://github.com/ansys/pre-commit-hooks
-  rev: v0.5.1
+  rev: v0.5.2
   hooks:
   - id: add-license-headers
     args:
