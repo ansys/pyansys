@@ -78,11 +78,23 @@ function displayFamilies(familyData) {
     const iconImage = document.createElement("img");
     iconImage.alt = `${family} icon`;
     iconImage.className = "ansys-icon";
+    let basePath = "version/dev/";
+    if (window.location.pathname.includes("version/dev")) {
+      basePath = "";
+    } else if (window.location.pathname.includes("version/stable")) {
+      // If the path is versioned, default to current page
+      basePath = "";
+    } else {
+      // If the path is not versioned, default to dev
+      basePath = "version/dev/";
+    }
+
     const iconName =
       theme === "dark" && icon === "ansys-icon-light.svg"
         ? "ansys-icon-dark.svg"
         : `${icon}`;
-    iconImage.src = `${iconName}`;
+
+    iconImage.src = `${basePath}${iconName}`;
 
     const familyCountElement = document.createElement("span");
     familyCountElement.className = "family-count";

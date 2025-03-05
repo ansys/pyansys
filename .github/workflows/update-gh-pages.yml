@@ -52,7 +52,6 @@ jobs:
         sed -i 's|const PROJECTS_FILE = "_static/projects.json"|const PROJECTS_FILE = "version/dev/_static/projects.json"|' index.html
         # Replace "version/stable" with "version/dev" in the sitemap.xml
         sed -i 's/version\/stable/version\/dev/g' sitemap.xml
-        sed -i 's|const SEARCH_ICON = ".*_static/icons";|const SEARCH_FILE = "version/dev/_static/icons";|g' index.html
 
     - name: Move sitemaps/ to gh-pages root
       run: |
