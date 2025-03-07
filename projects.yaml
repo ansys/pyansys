@@ -718,6 +718,7 @@ projects:
     tags: [Flagship]
     icon: _static/icons/optics.svg
     documentation:
-      base: https://speos.docs.pyansys.com/version/stable
+      base: https://speos.docs.pyansys.com/version/stable/index.html
+      user_guide: https://speos.docs.pyansys.com/version/stable/getting_started/index.html
       examples: https://speos.docs.pyansys.com/version/stable/examples.html
       api: https://speos.docs.pyansys.com/version/stable/api/index.html
