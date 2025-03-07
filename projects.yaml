@@ -712,7 +712,7 @@ projects:
   pyspeos:
     name: PySpeos
     description: A Python wrapper for Ansys Speos
-    thumbnail: _static/thumbnails/pyansys-common.png
+    thumbnail: _static/thumbnails/pyspeos.png
     repository: https://speos.docs.pyansys.com/version/stable/index.html
     family: Optics
     tags: [Documentation]
