@@ -715,7 +715,7 @@ projects:
     thumbnail: _static/thumbnails/pyspeos.png
     repository: https://speos.docs.pyansys.com/version/stable/index.html
     family: Optics
-    tags: [Documentation]
+    tags: [Flagship]
     icon: _static/icons/optics.svg
     documentation:
       base: https://speos.docs.pyansys.com/version/stable
