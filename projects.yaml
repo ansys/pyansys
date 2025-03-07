@@ -709,3 +709,15 @@ projects:
     documentation:
       base: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
 
+  pyspeos:
+    name: PySpeos
+    description: A Python wrapper for Ansys Speos
+    thumbnail: _static/thumbnails/pyspeos.png
+    repository: https://speos.docs.pyansys.com/version/stable/index.html
+    family: Optics
+    tags: [Documentation]
+    icon: _static/icons/optics.svg
+    documentation:
+      base: https://speos.docs.pyansys.com/version/stable
+      examples: https://speos.docs.pyansys.com/version/stable/examples.html
+      api: https://speos.docs.pyansys.com/version/stable/api/index.html
