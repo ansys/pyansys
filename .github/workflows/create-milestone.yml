@@ -50,6 +50,7 @@ jobs:
             "ansys/pyseascape",
             "ansys/pysherlock",
             "ansys/pysimai",
+            "ansys/pyspeos",
             "ansys/pysystem-coupling",
             "ansys/pyturbogrid",
             "ansys/pytwin",
