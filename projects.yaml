@@ -110,7 +110,7 @@ projects:
     documentation:
       base: https://conceptev.docs.pyansys.com/version/stable
       user_guide: https://conceptev.docs.pyansys.com/version/stable/user_guide.html
-      examples: https://conceptev.docs.pyansys.com/version/stable/examples/index.html
+      examples: https://conceptev.docs.pyansys.com/version/stable/auto_examples/index.html
       api: https://conceptev.docs.pyansys.com/version/stable/api_ref.html
 
   pydpf-core:
