@@ -27,7 +27,7 @@ dependencies = [
     "ansys-acp-core==0.1.0",
     "ansys-additive-core==0.19.1",
     "ansys-additive-widgets==0.2.1",
-    "ansys-conceptev-core==0.8",
+    "ansys-conceptev-core==0.9.1",
     "ansys-dpf-composites==0.6.2",
     "ansys-dpf-core==0.13.6",
     "ansys-dpf-post==0.9.2",
