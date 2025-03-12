@@ -284,7 +284,7 @@ projects:
   pymapdl:
     name: PyMAPDL
     repository: https://github.com/ansys/pymapdl
-    description: Pythonic interface to Ansys MAPDL (Mechanical APDL)
+    description: A Python client library for Ansys MAPDL (Mechanical APDL)
     thumbnail: _static/thumbnails/pymapdl.png
     family: Structures
     tags: [Flagship]
@@ -298,7 +298,7 @@ projects:
   pymapdl-reader:
     name: PyMAPDL Reader
     repository: https://github.com/ansys/pymapdl-reader
-    description: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
+    description: A legacy Python library to read MAPDL result files (MAPDL 14.5 and later)
     thumbnail: _static/thumbnails/pymapdl.png
     family: Structures
     tags: [Tools]
