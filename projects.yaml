@@ -235,9 +235,9 @@ projects:
     icon: _static/icons/fluids.svg
     documentation:
       base: https://fluent.docs.pyansys.com/version/stable
-      user_guide: https://fluent.docs.pyansys.com/version/stable/user_guide/index.html
+      user_guide: https://fluent.docs.pyansys.com/version/stable/user_guide/user_guide_contents.html
       examples: https://fluent.docs.pyansys.com/version/stable/examples/index.html
-      api: https://fluent.docs.pyansys.com/version/stable/api/index.html
+      api: https://fluent.docs.pyansys.com/version/stable/api/api_contents.html
 
   pyfluent-visualization:
     name: PyFluent - Visualization
