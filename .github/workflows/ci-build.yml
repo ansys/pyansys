@@ -191,6 +191,8 @@ jobs:
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags')
     needs: [package, smoke-tests-extras, wheelhouse-all]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Release to PyPI repository
         uses: ansys/actions/release-pypi-public@v8
@@ -204,6 +206,7 @@ jobs:
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   docs-release:
     name: Deploy release docs
