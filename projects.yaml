@@ -281,6 +281,20 @@ projects:
       examples: https://hps.docs.pyansys.com/version/stable/examples/index.html
       api: https://hps.docs.pyansys.com/version/stable/api/index.html
 
+  pyhps-data-transfer:
+    name: PyHPS Data Transfer
+    repository: https://github.com/ansys/pyhps-data-transfer
+    description: A Python client for Data Transfer in Ansys HPC Platform Services
+    thumbnail: _static/thumbnails/intro.png
+    family: Platform
+    tags: [Tools]
+    icon: _static/icons/platform.svg
+    documentation:
+      base: https://data-transfer.hps.docs.pyansys.com/version/stable
+      user_guide: https://data-transfer.hps.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://data-transfer.hps.docs.pyansys.com/version/stable/examples/index.html
+      api: https://data-transfer.hps.docs.pyansys.com/version/stable/api/index.html
+
   pymapdl:
     name: PyMAPDL
     repository: https://github.com/ansys/pymapdl
@@ -462,6 +476,21 @@ projects:
       user_guide: https://simai.docs.pyansys.com/version/stable/user_guide.html
       examples: https://simai.docs.pyansys.com/version/stable/index.html#getting-started
       api: https://simai.docs.pyansys.com/version/stable/api_reference.html
+
+  pyspeos:
+    name: PySpeos
+    description: A Python wrapper for Ansys Speos
+    thumbnail: _static/thumbnails/pyspeos.png
+    repository: https://speos.docs.pyansys.com/version/stable/index.html
+    family: Optics
+    tags: [Flagship]
+    icon: _static/icons/optics.svg
+    documentation:
+      base: https://speos.docs.pyansys.com/version/stable/index.html
+      user_guide: https://speos.docs.pyansys.com/version/stable/getting_started/index.html
+      examples: https://speos.docs.pyansys.com/version/stable/examples.html
+      api: https://speos.docs.pyansys.com/version/stable/api/index.html
+
 
   pysystemcoupling:
     name: PySystemCoupling
@@ -708,17 +737,3 @@ projects:
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
-
-  pyspeos:
-    name: PySpeos
-    description: A Python wrapper for Ansys Speos
-    thumbnail: _static/thumbnails/pyspeos.png
-    repository: https://speos.docs.pyansys.com/version/stable/index.html
-    family: Optics
-    tags: [Flagship]
-    icon: _static/icons/optics.svg
-    documentation:
-      base: https://speos.docs.pyansys.com/version/stable/index.html
-      user_guide: https://speos.docs.pyansys.com/version/stable/getting_started/index.html
-      examples: https://speos.docs.pyansys.com/version/stable/examples.html
-      api: https://speos.docs.pyansys.com/version/stable/api/index.html
