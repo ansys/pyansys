@@ -38,6 +38,7 @@ jobs:
             "ansys/pyfluent",
             "ansys/pygranta",
             "ansys/pyhps",
+            "ansys/pyhps-data-transfer",
             "ansys/pymapdl",
             "ansys/pymechanical",
             "ansys/pymodelcenter",
