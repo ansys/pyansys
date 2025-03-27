@@ -196,6 +196,7 @@ function handleTagSelection() {
 }
 
 function applyFilters() {
+  const projectsContainer = document.querySelector(".projects"); 
   const SelectedTagsContainer = document.getElementById(
     "selected-product-tags-list",
   );
@@ -261,9 +262,17 @@ function applyFilters() {
     const matchesAllTags =
       selectedTags.length === 0 ||
       selectedTags.every((tag) => cardTags.includes(tag));
+      card.style.display = "none"; // Hide all cards initially
 
-    // Show only if both family & tag filters match (or if no filter is applied)
-    card.style.display = matchesAllFamilies && matchesAllTags ? "flex" : "none";
+      if (selectedFamilies.length === 0 && selectedTags.length === 0) {
+        card.style.display = "flex"; // Show all cards
+      } else if (selectedFamilies.length === 0) {
+        card.style.display = matchesAllTags ? "flex" : "none"; // Show all cards with matching tags
+      } else if (selectedTags.length === 0) {
+        card.style.display = matchesAllFamilies ? "flex" : "none"; // Show all cards with matching families
+      } else if (selectedFamilies.length > 0 && selectedTags.length > 0) {
+        card.style.display = matchesAllFamilies && matchesAllTags ? "flex" : "none"; // Show only matching cards
+      }
   });
 }
 
