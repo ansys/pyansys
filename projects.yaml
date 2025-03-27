@@ -251,7 +251,7 @@ projects:
       base:  https://visualization.fluent.docs.pyansys.com/version/stable
       user_guide: https://visualization.fluent.docs.pyansys.com/version/stable/users_guide/index.html
       examples: https://visualization.fluent.docs.pyansys.com/version/stable/examples/index.html
-      api: https://visualization.fluent.docs.pyansys.com/version/stable/api/index.html
+      api: https://visualization.fluent.docs.pyansys.com/version/stable/visualization/visualization_contents.html
 
   pygranta:
     name: PyGranta
