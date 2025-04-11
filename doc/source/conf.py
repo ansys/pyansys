@@ -71,7 +71,7 @@ html_short_title = html_title = "PyAnsys"
 html_favicon = ansys_favicon
 
 html_sidebars = {
-    "projects": ["landing_page_sidebar.html"],
+    "projects": ["projects_sidebar.html"],
 }
 
 extensions = [
@@ -84,7 +84,7 @@ extensions = [
 # Static files
 templates_path = ["_templates"]
 html_static_path = ["_static"]
-html_css_files = ["css/landing_page.css"]
+html_css_files = ["css/projects_sidebar.css"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
