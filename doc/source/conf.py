@@ -71,7 +71,7 @@ html_short_title = html_title = "PyAnsys"
 html_favicon = ansys_favicon
 
 html_sidebars = {
-    "index": ["landing_page_sidebar.html"],
+    "projects": ["projects_sidebar.html"],
 }
 
 extensions = [
@@ -84,7 +84,7 @@ extensions = [
 # Static files
 templates_path = ["_templates"]
 html_static_path = ["_static"]
-html_css_files = ["css/landing_page.css"]
+html_css_files = ["css/projects_sidebar.css"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
@@ -159,6 +159,7 @@ html_context = {
             "needs_datatables": True,
         },
     },
+    "default_mode": "light",
 }
 
 html_theme_options = {
@@ -168,6 +169,10 @@ html_theme_options = {
     "show_breadcrumbs": True,
     "collapse_navigation": True,
     "use_edit_page_button": True,
+    "navbar_end": [
+        "navbar-icon-links",
+        "version-switcher",
+    ],
     "icon_links": [
         {
             "name": "Support",
@@ -184,7 +189,6 @@ html_theme_options = {
         "json_url": f"https://{cname}/versions.json",
         "version_match": switcher_version,
     },
-    "check_switcher": False,
     "static_search": {
         "threshold": 0.5,
         "min_chars_for_search": 2,
