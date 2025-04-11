@@ -170,7 +170,8 @@ html_theme_options = {
     "collapse_navigation": True,
     "use_edit_page_button": True,
     "navbar_end": [
-        "navbar-icon-links", "version-switcher",
+        "navbar-icon-links",
+        "version-switcher",
     ],
     "icon_links": [
         {

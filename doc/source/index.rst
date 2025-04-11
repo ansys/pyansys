@@ -8,7 +8,7 @@ Ansys products through Python:
 .. toctree::
     :hidden:
     :maxdepth: 3
-    
+
     getting-started
     projects
     blog
