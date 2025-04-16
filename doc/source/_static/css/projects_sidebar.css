@@ -2,13 +2,13 @@ html {
   overflow-y: scroll !important;
 }
 
-.landing-page-sidebar {
+.projects-page-sidebar {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   padding: 0rem 2rem;
 }
-.landing-page-sidebar-section {
+.projects-page-sidebar-section {
   margin-bottom: 2rem;
   font-weight: 700;
   display: flex;
@@ -20,7 +20,7 @@ html {
   margin-top: 1rem;
 }
 
-.landing-page-sidebar-section span {
+.projects-page-sidebar-section span {
   font-size: 0.85rem;
 }
 
@@ -112,7 +112,7 @@ html {
     grid-template-columns: 1fr;
   }
 
-  .landing-page-sidebar {
+  .projects-page-sidebar {
     padding: 1rem;
   }
 
