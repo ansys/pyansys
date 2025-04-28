@@ -80,7 +80,7 @@ jobs:
 
       - name: Install core PyAnsys packages
         run: |
-          uv pip install .
+          uv --system pip install .
 
       - name: Smoke test
         run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
@@ -107,7 +107,7 @@ jobs:
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
-          uv pip install .[${{ matrix.extras-version }}]
+          uv --system pip install .[${{ matrix.extras-version }}]
 
       - name: Smoke test
         run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
