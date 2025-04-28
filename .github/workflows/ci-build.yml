@@ -77,10 +77,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install core PyAnsys packages
         run: |
-          uv pip install . --system
+          uv pip install .
 
       - name: Smoke test
         run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
@@ -104,10 +105,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
-          uv pip install .[${{ matrix.extras-version }}] --system
+          uv pip install .[${{ matrix.extras-version }}]
 
       - name: Smoke test
         run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
