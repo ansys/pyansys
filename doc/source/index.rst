@@ -1,3 +1,5 @@
+.. title:: PyAnsys
+
 .. raw:: html
 
     <div align="center">
