@@ -171,8 +171,8 @@ html_theme_options = {
     "collapse_navigation": True,
     "use_edit_page_button": True,
     "secondary_sidebar_items": {
-      "**": ["page-toc", "sourcelink"],
-      "index": ["page-toc"],
+        "**": ["page-toc", "sourcelink"],
+        "index": ["page-toc"],
     },
     "navbar_end": [
         "navbar-icon-links",
