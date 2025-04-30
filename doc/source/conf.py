@@ -71,6 +71,7 @@ html_short_title = html_title = "PyAnsys"
 html_favicon = ansys_favicon
 
 html_sidebars = {
+    "index": [],
     "projects": ["projects_sidebar.html"],
 }
 
@@ -84,7 +85,7 @@ extensions = [
 # Static files
 templates_path = ["_templates"]
 html_static_path = ["_static"]
-html_css_files = ["css/projects_sidebar.css"]
+html_css_files = ["css/projects_sidebar.css", "css/style.css"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
@@ -169,21 +170,13 @@ html_theme_options = {
     "show_breadcrumbs": True,
     "collapse_navigation": True,
     "use_edit_page_button": True,
+    "secondary_sidebar_items": {
+      "**": ["page-toc", "sourcelink"],
+      "index": ["page-toc"],
+    },
     "navbar_end": [
         "navbar-icon-links",
         "version-switcher",
-    ],
-    "icon_links": [
-        {
-            "name": "Support",
-            "url": "https://github.com/ansys/pyansys/discussions",
-            "icon": "fa fa-comment fa-fw",
-        },
-        {
-            "name": "Contribute",
-            "url": "https://dev.docs.pyansys.com/how-to/contributing.html",
-            "icon": "fa fa-wrench",
-        },
     ],
     "switcher": {
         "json_url": f"https://{cname}/versions.json",
