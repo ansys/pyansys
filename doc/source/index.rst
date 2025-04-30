@@ -3,18 +3,41 @@
 .. raw:: html
 
     <div align="center">
-        <img src="_static/banner.png" widht="800">
+        <div style="text-align: center; max-width: 800px;">
+            <h1>PyAnsys</h1>
+            <p>
+            PyAnsys brings the full power of PyAnsys brings the full power of 
+            <a href="https://www.ansys.com/" target="_blank" style="color: #0078D7; text-decoration: none;">Ansys</a>  engineering simulations into the
+            <a href="https://www.python.org/" target="_blank" style="color: #0078D7; text-decoration: none;">Python</a> ecosystem, enabling faster, more flexible, and automated workflows
+            for businesses of any scale.
+            </p>
+        </div>
     </div>
 
+.. button-ref:: getting-started/install
+    :ref-type: doc
+    :color: primary
+    :align: center
 
-PyAnsys brings the full power of `Ansys`_ engineering simulations into the
-`Python`_ ecosystem, enabling faster, more flexible, and automated workflows for
-businesses of any scale.
+    Get started now →
 
 .. raw:: html
 
     <div align="center">
-        <p style="font-size: 2rem; font-weight: bold;">Why PyAnsys?</p>
+        <img src="_static/banner.png" widht="600">
+    </div>
+    
+
+.. PyAnsys brings the full power of `Ansys`_ engineering simulations into the
+.. `Python`_ ecosystem, enabling faster, more flexible, and automated workflows for
+.. businesses of any scale.
+
+
+
+.. raw:: html
+
+    <div align="center">
+        <h2>Why PyAnsys?</h2>
     </div>
 
 PyAnsys is the gateway to integrating the world-class simulation power of Ansys
@@ -23,6 +46,9 @@ eliminate repetitive tasks, and turn simulation into a competitive business
 advantage.
 
 .. grid:: 2 3 3 4
+    :margin: 2
+    :gutter: 2
+
 
     .. grid-item-card:: End-to-End automation
         :img-bottom: _static/landing-page/pydpf.jpeg
