@@ -73,10 +73,11 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install the latest version of uv and set the python version
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install core PyAnsys packages
         run: |
@@ -100,10 +101,11 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install the latest version of uv and set the python version
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |

@@ -559,7 +559,7 @@ projects:
     documentation:
       base: https://shared.docs.pyansys.com
       user_guide: https://openapi.docs.pyansys.com/version/stable/index.html
-      examples: https://openapi.docs.pyansys.com/version/stable/index.html#brief-example
+      examples: https://openapi.docs.pyansys.com/version/stable/index.html
       api: https://openapi.docs.pyansys.com/version/stable/api/index.html
 
   pyaedt-common-toolkit:
