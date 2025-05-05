@@ -34,16 +34,65 @@
 
 
 
+.. .. raw:: html
+
+..     <div align="center">
+..         <h2>Why PyAnsys?</h2>
+..     </div>
+
+.. PyAnsys is the gateway to integrating the world-class simulation power of Ansys
+.. into scalable, Python-based workflows. Build robust engineering pipelines,
+.. eliminate repetitive tasks, and turn simulation into a competitive business
+.. advantage.
+
+
 .. raw:: html
 
-    <div align="center">
-        <h2>Why PyAnsys?</h2>
-    </div>
 
-PyAnsys is the gateway to integrating the world-class simulation power of Ansys
-into scalable, Python-based workflows. Build robust engineering pipelines,
-eliminate repetitive tasks, and turn simulation into a competitive business
-advantage.
+  <style>
+    .feature-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+    .image-side {
+      width: 50%;
+    }
+
+    .text-side {
+      width: 50%;
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+
+  </style>
+
+  <div class="feature-container justify-between">
+  <h2>Why PyAnsys?</h2>
+    <div class="image-side">
+      <img src="_static/landing-page/pydpf.jpeg" alt="Descriptive alt text">
+    </div>
+    <div class="text-side">
+      <p>
+        PyAnsys is the gateway to integrating the world-class simulation power of Ansys
+        into scalable, Python-based workflows. Build robust engineering pipelines,
+        eliminate repetitive tasks, and turn simulation into a competitive business
+        advantage.
+      </p>
+      <ul>
+        <li>Control meshing, solving, and post-processing using Python scripts to cut time and reduce manual errors.</li>
+        <li> Leverage real-time access to field data, results, and metadata across Ansys tools using PyAnsys DPF.</li>
+        <li>Run PyAnsys workflows in scalable environments, from on-premise HPC to hybrid cloud deployments.</li>
+      </ul>
+    </div>
+  </div>
+
 
 .. grid:: 2 3 3 4
     :margin: 2
