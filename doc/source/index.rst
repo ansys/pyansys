@@ -3,7 +3,7 @@
 .. raw:: html
 
     <div align="center">
-        <div style="text-align: center; max-width: 800px;">
+        <div style="text-align: center; max-width: 800px; justify-content: center; margin: 0 auto;">
             <h1>PyAnsys</h1>
             <p>
             PyAnsys brings the full power of PyAnsys brings the full power of
@@ -24,7 +24,7 @@
 .. raw:: html
 
     <div align="center">
-        <img src="_static/banner.png" widht="600">
+        <img src="_static/banner.png" width="600">
     </div>
 
 
@@ -54,31 +54,31 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      max-width: 900px;
-      margin: 40px auto;
-    }
-
-    .image-side {
-      width: 50%;
-    }
-
-    .text-side {
-      width: 50%;
     }
 
     .justify-between {
       justify-content: space-between;
     }
 
-
+    .left-container {
+    flex: 0 0 auto;
+    width: 41.66666666666667%;      
+    }
+    .right-container {
+    flex: 0 0 auto;
+    width: 58.33333333333333%;
+    }
   </style>
 
   <div class="feature-container justify-between">
-  <h2>Why PyAnsys?</h2>
+    <div class="left-container">
     <div class="image-side">
       <img src="_static/landing-page/pydpf.jpeg" alt="Descriptive alt text">
     </div>
+    </div>
+    <div class="right-container">
     <div class="text-side">
+    <h2>Why PyAnsys?</h2>
       <p>
         PyAnsys is the gateway to integrating the world-class simulation power of Ansys
         into scalable, Python-based workflows. Build robust engineering pipelines,
@@ -89,7 +89,11 @@
         <li>Control meshing, solving, and post-processing using Python scripts to cut time and reduce manual errors.</li>
         <li> Leverage real-time access to field data, results, and metadata across Ansys tools using PyAnsys DPF.</li>
         <li>Run PyAnsys workflows in scalable environments, from on-premise HPC to hybrid cloud deployments.</li>
+        <li>Integrate with the Ansys ecosystem, including Ansys Cloud, Ansys Gateway powered by AWS, and Ansys Minerva.</li>
+        <li>Access a wide range of Ansys tools, including Mechanical, Fluent, Electronics, and more.</li>
+        <li>Utilize the power of Python libraries, such as NumPy, SciPy, and Pandas, to enhance your simulation workflows.</li>
       </ul>
+      </div>
     </div>
   </div>
 
