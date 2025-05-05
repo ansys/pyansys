@@ -1,0 +1,18 @@
+.feature-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.left-container {
+  flex: 0 0 auto;
+  width: 41.66666666666667%;      
+}
+.right-container {
+  flex: 0 0 auto;
+  width: 58.33333333333333%;
+}

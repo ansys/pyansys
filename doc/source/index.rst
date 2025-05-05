@@ -2,17 +2,17 @@
 
 .. raw:: html
 
-    <div align="center">
-        <div style="text-align: center; max-width: 800px; justify-content: center; margin: 0 auto;">
-            <h1>PyAnsys</h1>
-            <p>
-            PyAnsys brings the full power of PyAnsys brings the full power of
-            <a href="https://www.ansys.com/" target="_blank" style="color: #0078D7; text-decoration: none;">Ansys</a>  engineering simulations into the
-            <a href="https://www.python.org/" target="_blank" style="color: #0078D7; text-decoration: none;">Python</a> ecosystem, enabling faster, more flexible, and automated workflows
-            for businesses of any scale.
-            </p>
-        </div>
-    </div>
+  <div align="center">
+      <div style="text-align: center; max-width: 800px; justify-content: center; margin: 0 auto;">
+          <h1>PyAnsys</h1>
+          <p>
+          PyAnsys brings the full power of PyAnsys brings the full power of
+          <a href="https://www.ansys.com/" target="_blank" style="color: #0078D7; text-decoration: none;">Ansys</a>  engineering simulations into the
+          <a href="https://www.python.org/" target="_blank" style="color: #0078D7; text-decoration: none;">Python</a> ecosystem, enabling faster, more flexible, and automated workflows
+          for businesses of any scale.
+          </p>
+      </div>
+  </div>
 
 .. button-ref:: getting-started/install
     :ref-type: doc
@@ -23,9 +23,9 @@
 
 .. raw:: html
 
-    <div align="center">
-        <img src="_static/banner.png" width="600">
-    </div>
+  <div align="center">
+    <img src="_static/banner.png" width="800">
+  </div>
 
 
 .. PyAnsys brings the full power of `Ansys`_ engineering simulations into the
@@ -47,28 +47,6 @@
 
 
 .. raw:: html
-
-
-  <style>
-    .feature-container {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .justify-between {
-      justify-content: space-between;
-    }
-
-    .left-container {
-    flex: 0 0 auto;
-    width: 41.66666666666667%;      
-    }
-    .right-container {
-    flex: 0 0 auto;
-    width: 58.33333333333333%;
-    }
-  </style>
 
   <div class="feature-container justify-between">
     <div class="left-container">
