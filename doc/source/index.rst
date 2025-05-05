@@ -62,7 +62,7 @@
 
     .left-container {
     flex: 0 0 auto;
-    width: 41.66666666666667%;      
+    width: 41.66666666666667%;
     }
     .right-container {
     flex: 0 0 auto;
