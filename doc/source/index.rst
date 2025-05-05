@@ -125,6 +125,7 @@
     :hidden:
     :maxdepth: 3
 
+    Home<self>
     getting-started
     projects
     blog
