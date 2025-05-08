@@ -97,12 +97,9 @@ if not is_created:
     # Milestone information
     desc = f"""This repository is part of an Ansys Release (unified install).
 
-Thus, it is necessary to create a release for the next Ansys release.
-that is compatible with it. Please consider releasing
-by {RELEASE_DATE.strftime("%Y/%m/%d")}.
+Thus, it is necessary to create a release for the next Ansys release that is compatible with it. Please consider releasing by {RELEASE_DATE.strftime("%Y/%m/%d")}.
 
-If your current release is the one expected to be used in the upcoming
-official Ansys Release, please close and delete this milestone."""
+If your current release is the one expected to be used in the upcoming official Ansys Release, please close and delete this milestone."""  # noqa: E501
 
     # Create a new milestone
     repo.create_milestone(
