@@ -161,7 +161,7 @@ Finally, install the PyAnsys metapackage using previously downloaded wheelhouse:
 
 .. raw:: html
 
-    <!-- For landing page tabset to work -->    
+    <!-- For landing page tabset to work -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
         const hash = window.location.hash; // e.g., "#online-installation?tab=sd-tab-item-0"
