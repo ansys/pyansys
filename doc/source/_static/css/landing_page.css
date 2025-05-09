@@ -1,18 +1,14 @@
-.feature-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.testimonial-card {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 0.5rem;
+  height: 100%;
 }
 
-.justify-between {
-  justify-content: space-between;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: black;
 }
 
-.left-container {
-  flex: 0 0 auto;
-  width: 41.66666666666667%;
-}
-.right-container {
-  flex: 0 0 auto;
-  width: 58.33333333333333%;
+.carousel-control-prev, .carousel-control-next {
+  filter: invert(1); 
 }

@@ -85,7 +85,7 @@ extensions = [
 # Static files
 templates_path = ["_templates"]
 html_static_path = ["_static"]
-html_css_files = ["css/projects_sidebar.css", "css/style.css"]
+html_css_files = ["css/projects_sidebar.css", "css/style.css", "css/landing_page.css"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 

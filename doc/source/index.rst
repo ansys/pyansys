@@ -123,33 +123,30 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Users Say</h2>
+        <div id="testimonialMultiCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" id="testimonialCarouselContent">
+            <!-- Slides will be inserted here -->
+          </div>
 
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialMultiCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialMultiCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
     <!-- Bootstrap JS (may not be necessary since PyData already declares this) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="_static/js/landing-page.js"></script>
-
-.. grid:: 2 3 3 4
-    :margin: 2
-    :gutter: 2
-
-
-    .. grid-item-card:: End-to-End automation
-        :img-bottom: _static/landing-page/pydpf.jpeg
-        :img-alt:
-
-        Control meshing, solving, and post-processing using Python scripts to cut time and reduce manual errors.
-
-    .. grid-item-card:: Live data access
-        :img-bottom: _static/landing-page/pydpf.jpeg
-        :img-alt:
-
-        Leverage real-time access to field data, results, and metadata across Ansys tools using PyAnsys DPF.
-
-    .. grid-item-card:: Built for cloud & HPC
-        :img-bottom: _static/landing-page/pydpf.jpeg
-        :img-alt:
-
-        Run PyAnsys workflows in scalable environments, from on-premise HPC to hybrid cloud deployments.
+    <script src="_static/js/landing_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 .. toctree::
     :hidden:
