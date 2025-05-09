@@ -43,7 +43,7 @@
     </section>
 
     <hr class="mt-6 mb-2">
-  
+
     <!-- Key Features -->
     <section class="bg-light">
       <div class="container">
@@ -122,7 +122,7 @@
         </div>
       </div>
     </section>
-  
+
 
     <!-- Bootstrap JS (may not be necessary since PyData already declares this) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
