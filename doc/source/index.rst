@@ -22,19 +22,19 @@
           <div class="text-center">
             <h5 id="install" class="fw-semibold mb-3">Install</h5>
             <div class="d-flex justify-content-center gap-2 flex-wrap">
-              <a href="#windows" class="btn btn-dark btn-lg">
+              <a href="getting-started/install.html#online-installation?tab=sd-tab-item-0" class="btn btn-dark btn-lg tab-link">
                 <i class="fab fa-windows me-2"></i>Windows
               </a>
-              <a href="#macos" class="btn btn-dark btn-lg">
+              <a href="getting-started/install.html#online-installation?tab=sd-tab-item-1" class="btn btn-dark btn-lg tab-link">
                 <i class="fab fa-apple me-2"></i>macOS
               </a>
-              <a href="#linux" class="btn btn-dark btn-lg">
+              <a href="getting-started/install.html#online-installation?tab=sd-tab-item-2" class="btn btn-dark btn-lg tab-link">
                 <i class="fab fa-linux me-2"></i>Linux
               </a>
             </div>
           </div>
-        </div>
 
+        </div>
         <div class="col-md-6 text-center">
           <img id="hero-image" style="padding-top: 0rem;" src="_static/landing-page/geometry-banner.png" class="img-fluid rounded" alt="PyAnsys" />
         </div>
@@ -126,7 +126,7 @@
 
     <!-- Bootstrap JS (may not be necessary since PyData already declares this) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="_static/js/landing-page.js"></script
+    <script src="_static/js/landing-page.js"></script>
 
 .. grid:: 2 3 3 4
     :margin: 2
