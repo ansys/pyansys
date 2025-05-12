@@ -36,3 +36,21 @@ fetch('_static/testimonials.json')
     }
 })
 .catch(err => console.error('Failed to load testimonials:', err));
+
+$(document).ready(function(){
+    // Initialize main carousel
+    $('#pyansysCarousel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true, // You can change this as needed
+      asNavFor: '.slick-dots' // Link the dots to the carousel
+    });
+  
+    // Initialize navigation dots
+    $('.slick-dots').slick({
+      slidesToShow: 5, // Display 5 dots
+      slidesToScroll: 1,
+      asNavFor: '#mainCarousel', // Link the dots to the main carousel
+      focusOnSelect: true // Allow clicking dots to change slide
+    });
+  });

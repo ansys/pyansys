@@ -86,42 +86,68 @@
 
 
     <!-- Carousel Section -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">What You Can Do with PyAnsys</h2>
-        <div id="pyansysCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://picsum.photos/800/400?random=1" class="d-block w-100 rounded" alt="...">
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                <h5>Automate FEA Analysis</h5>
-                <p>Run full finite element workflows through Python scripts.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/800/400?random=2" class="d-block w-100 rounded" alt="...">
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                <h5>Post-Processing</h5>
-                <p>Extract and visualize simulation results programmatically.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/800/400?random=3" class="d-block w-100 rounded" alt="...">
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                <h5>Integration with ML</h5>
-                <p>Combine simulation with machine learning to build smart systems.</p>
-              </div>
-            </div>
+    <!-- Bootstrap 5 JS (Popper + Bootstrap Bundle) -->
+    <section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">What You Can Do with PyAnsys</h2>
+
+    <!-- Carousel -->
+    <div id="pyansysCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/800/400?random=1" class="d-block w-100" alt="Automate FEA Analysis">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+            <h5>Automate FEA Analysis</h5>
+            <p>Run full finite element workflows through Python scripts.</p>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#pyansysCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#pyansysCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="Post-Processing">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+            <h5>Post-Processing</h5>
+            <p>Extract and visualize simulation results programmatically.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="Integration with ML">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+            <h5>Integration with ML</h5>
+            <p>Combine simulation with machine learning to build smart systems.</p>
+          </div>
         </div>
       </div>
-    </section>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#pyansysCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#pyansysCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Slide Selectors Below -->
+    <div class="row mt-4 text-center">
+      <div class="col-md-4 mb-2">
+        <button class="btn btn-outline-dark w-100" data-bs-target="#pyansysCarousel" data-bs-slide-to="0">
+          <strong>Automate FEA</strong><br>Finite element scripting
+        </button>
+      </div>
+      <div class="col-md-4 mb-2">
+        <button class="btn btn-outline-dark w-100" data-bs-target="#pyansysCarousel" data-bs-slide-to="1">
+          <strong>Post-Processing</strong><br>Extract and visualize data
+        </button>
+      </div>
+      <div class="col-md-4 mb-2">
+        <button class="btn btn-outline-dark w-100" data-bs-target="#pyansysCarousel" data-bs-slide-to="2">
+          <strong>ML Integration</strong><br>Combine simulation + AI
+        </button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
 
     <!-- Testimonials Section -->
     <section class="bg-light py-5">
@@ -146,7 +172,6 @@
     <!-- Bootstrap JS (may not be necessary since PyData already declares this) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="_static/js/landing_page.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 .. toctree::
     :hidden:
