@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys Licenses Check
-        uses: ansys/actions/check-licenses@main
+        uses: ansys/actions/check-licenses@v9
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
