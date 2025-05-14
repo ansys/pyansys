@@ -182,6 +182,7 @@ html_theme_options = {
         "json_url": f"https://{cname}/versions.json",
         "version_match": switcher_version,
     },
+    "check_switcher": False,
     "static_search": {
         "threshold": 0.5,
         "min_chars_for_search": 2,
@@ -531,3 +532,36 @@ def setup(app: sphinx.application.Sphinx):
 
     # Reverting the thumbnails - no local changes
     app.connect("build-finished", revert_thumbnails)
+    app.connect("doctree-resolved", collect_blog_metadata)
+    app.connect("html-page-context", inject_blog_context)
+
+
+
+from docutils import nodes
+from sphinx.util.docutils import SphinxDirective
+
+def collect_blog_metadata(app, doctree, docname):
+    meta = {}
+    print(f"Processing: {docname}")
+    if docname == "blog/blog1":
+        for node in doctree.traverse(nodes.meta):
+            print(node)
+            meta[node['name']] = node['content']
+        if not hasattr(app.env, 'blog_posts'):
+            app.env.blog_posts = {}
+        app.env.blog_posts[docname] = meta
+    print(f"Collected metadata for {docname}: {meta}")
+
+def inject_blog_context(app, pagename, templatename, context, doctree):
+    if hasattr(app.env, 'blog_posts'):
+        posts = []
+        for docname, meta in app.env.blog_posts.items():
+            meta['docname'] = docname
+            posts.append(meta)
+        context['blog_posts'] = posts
+        print(f"Injected blog posts into context: {posts}")
+   
+   
+html_additional_pages = {
+    'blog': 'blog.html',
+}
