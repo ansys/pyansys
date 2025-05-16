@@ -4,7 +4,7 @@
    :categories: Development, CI/CD
    :tags: Sphinx, Docs
    :image: thumbnails/5gwizard.png
-   :title: Blog Title One
+   :title: Blog Title two
 
 Blog Title One
 ==============
@@ -14,4 +14,3 @@ Blog Title One
    :class: blog-banner
 
 Content goes here.
-
