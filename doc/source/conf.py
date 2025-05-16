@@ -71,7 +71,8 @@ html_short_title = html_title = "PyAnsys"
 html_favicon = ansys_favicon
 
 html_sidebars = {
-    "index": ["landing_page_sidebar.html"],
+    "index": [],
+    "projects": ["projects_sidebar.html"],
 }
 
 extensions = [
@@ -84,7 +85,7 @@ extensions = [
 # Static files
 templates_path = ["_templates"]
 html_static_path = ["_static"]
-html_css_files = ["css/landing_page.css"]
+html_css_files = ["css/projects_sidebar.css", "css/style.css", "css/landing_page.css"]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
@@ -159,6 +160,7 @@ html_context = {
             "needs_datatables": True,
         },
     },
+    "default_mode": "light",
 }
 
 html_theme_options = {
@@ -168,23 +170,18 @@ html_theme_options = {
     "show_breadcrumbs": True,
     "collapse_navigation": True,
     "use_edit_page_button": True,
-    "icon_links": [
-        {
-            "name": "Support",
-            "url": "https://github.com/ansys/pyansys/discussions",
-            "icon": "fa fa-comment fa-fw",
-        },
-        {
-            "name": "Contribute",
-            "url": "https://dev.docs.pyansys.com/how-to/contributing.html",
-            "icon": "fa fa-wrench",
-        },
+    "secondary_sidebar_items": {
+        "**": ["page-toc", "sourcelink"],
+        "index": ["page-toc"],
+    },
+    "navbar_end": [
+        "navbar-icon-links",
+        "version-switcher",
     ],
     "switcher": {
         "json_url": f"https://{cname}/versions.json",
         "version_match": switcher_version,
     },
-    "check_switcher": False,
     "static_search": {
         "threshold": 0.5,
         "min_chars_for_search": 2,
