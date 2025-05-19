@@ -29,7 +29,7 @@ dependencies = [
     "ansys-additive-widgets==0.2.1",
     "ansys-conceptev-core==0.9.4",
     "ansys-dpf-composites==0.6.2",
-    "ansys-dpf-core==0.13.6",
+    "ansys-dpf-core==0.13.7",
     "ansys-dpf-post==0.9.2",
     "ansys-dyna-core==0.8.0",
     "ansys-dynamicreporting-core==0.10.1",
@@ -38,10 +38,10 @@ dependencies = [
     "ansys-geometry-core==0.10.7",
     "ansys-hps-client==0.10.1",
     "ansys-hps-data-transfer-client==0.2.0",
-    "ansys-mapdl-core==0.69.3",
+    "ansys-mapdl-core==0.70.1",
     "ansys-math-core==0.2.2",
-    "ansys-mechanical-core==0.11.14",
-    "ansys-meshing-prime==0.7.0",
+    "ansys-mechanical-core==0.11.16",
+    "ansys-meshing-prime==0.8.1",
     "ansys-modelcenter-workflow==0.1.1",
     "ansys-motorcad-core==0.7.0",
     "ansys-optislang-core==1.0.0",
@@ -57,13 +57,13 @@ dependencies = [
     "ansys-turbogrid-core==0.4.3",
     "ansys-workbench-core==0.8.0",
     "pyaedt==0.16.1",
-    "pyedb==0.44.0",
+    "pyedb==0.45.0",
     "pygranta==2025.1.0",
     "pytwin==0.8.0",
 ]
 
 [project.optional-dependencies]
-mapdl-all = ["ansys-mapdl-reader==0.55.0"]
+mapdl-all = ["ansys-mapdl-reader==0.55.1"]
 fluent-all = ["ansys-fluent-visualization==0.19.2"]
 tools = [
     "ansys-materials-manager==0.2.3",
@@ -79,7 +79,7 @@ tools = [
 ]
 all = [
     # MAPDL - ALL
-    "ansys-mapdl-reader==0.55.0",
+    "ansys-mapdl-reader==0.55.1",
     # FLUENT - ALL
     "ansys-fluent-visualization==0.19.2",
     # TOOLS
