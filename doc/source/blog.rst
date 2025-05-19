@@ -29,8 +29,8 @@ and provides insights into how to use the various PyAnsys packages effectively.
       })
       .then(data => {
         const blogContainer = document.getElementById("blog-container");
-        const categoryFilter = document.getElementById("categoryFilter");
-        const productFilter = document.getElementById("productFilter");
+        const categoryFilter = document.getElementById("product-families-list");
+        const productFilter = document.getElementById("product-tags-list");
 
         const categoriesSet = new Set();
         const productsSet = new Set();
@@ -74,39 +74,43 @@ and provides insights into how to use the various PyAnsys packages effectively.
           blogContainer.appendChild(postCard);
         }
 
-        // Populate dropdowns
-        categoriesSet.forEach(category => {
-          const option = document.createElement("option");
-          option.value = category.toLowerCase().replace(/ /g, "-");
-          option.textContent = category;
-          categoryFilter.appendChild(option);
-        });
 
-        productsSet.forEach(product => {
-          const option = document.createElement("option");
-          option.value = product.toLowerCase().replace(/ /g, "-");
-          option.textContent = product;
-          productFilter.appendChild(option);
-        });
+        </script>
+
+         function createCheckbox(container, value, type) {
+          const id = `${type}-${value}`;
+          const label = document.createElement("label");
+          label.style.display = "block";
+          label.innerHTML = `
+            <input type="checkbox" value="${value}" data-type="${type}" id="${id}"> ${value.replace(/-/g, " ")}
+          `;
+          container.appendChild(label);
+        }
+
+        categoriesSet.forEach(cat => createCheckbox(categoryFilter, cat.toLowerCase().replace(/ /g, "-"), "category"));
+        productsSet.forEach(tag => createCheckbox(productFilter, tag.toLowerCase().replace(/ /g, "-"), "product"));
 
         function filterCards() {
-          const selectedCategory = categoryFilter.value;
-          const selectedProduct = productFilter.value;
+          const selectedCategories = Array.from(document.querySelectorAll('input[data-type="category"]:checked')).map(cb => cb.value);
+          const selectedProducts = Array.from(document.querySelectorAll('input[data-type="product"]:checked')).map(cb => cb.value);
 
           const cards = document.querySelectorAll(".project-card");
           cards.forEach(card => {
-            const matchesCategory = !selectedCategory || card.dataset.family === selectedCategory;
-            const matchesProduct = !selectedProduct || card.dataset.tags.includes(selectedProduct);
-            card.style.display = (matchesCategory && matchesProduct) ? "" : "none";
+            const cardFamily = card.getAttribute("data-family");
+            const cardTags = card.getAttribute("data-tags");
+
+            const matchCategory = selectedCategories.length === 0 || selectedCategories.includes(cardFamily);
+            const matchProduct = selectedProducts.length === 0 || selectedProducts.some(tag => cardTags.includes(tag));
+
+            card.style.display = (matchCategory && matchProduct) ? "" : "none";
           });
         }
 
-        categoryFilter.addEventListener("change", filterCards);
-        productFilter.addEventListener("change", filterCards);
+        // Listen to filter changes
+        document.getElementById("blog-page-sidebar").addEventListener("change", filterCards);
       })
       .catch(error => console.error("Error loading blog metadata:", error));
   </script>
-
 
   <style>
     #blog-container {
