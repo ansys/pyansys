@@ -536,26 +536,25 @@ def setup(app: sphinx.application.Sphinx):
     app.connect("doctree-resolved", collect_blog_metadata)
 
 
-
 from docutils import nodes
-from sphinx.util.docutils import SphinxDirective
+
 
 def collect_blog_metadata(app, doctree, docname):
     meta = {}
     if docname.startswith("blog/"):  # Check if it's a blog post
         for node in doctree.traverse(nodes.meta):
-            meta[node['name']] = node['content']
-        if not hasattr(app.env, 'blog_posts'):
+            meta[node["name"]] = node["content"]
+        if not hasattr(app.env, "blog_posts"):
             app.env.blog_posts = {}
         app.env.blog_posts[docname] = meta
 
     # Save metadata to a JSON file in the build directory
-    if hasattr(app.env, 'blog_posts'):
+    if hasattr(app.env, "blog_posts"):
         blog_data = app.env.blog_posts
-        with open(app.builder.outdir + '/_static/blog_metadata.json', 'w') as json_file:
+        with open(app.builder.outdir + "/_static/blog_metadata.json", "w") as json_file:
             json.dump(blog_data, json_file, indent=4)
-   
-   
+
+
 # html_additional_pages = {
 #     'blog': 'blog.html',
 # }
