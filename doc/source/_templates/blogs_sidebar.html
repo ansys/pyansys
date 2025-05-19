@@ -1,23 +1,44 @@
-<div class="blog-page-sidebar">
+<div class="blog-page-sidebar" id="blog-page-sidebar">
     <!-- Product families -->
      <h2>Filters</h2>
-    <div class="blog-page-sidebar-section product-families">
+
+    <div class="filter-section">
+    <button class="collapsible">Product</button>
+    <div class="content" id="product-filters"></div>
+  </div>
+
+    <div class="filter-section">
+    <button class="collapsible">Industry</button>
+    <div class="content" id="industry-filters"></div>
+  </div>
+
+  <div class="filter-section">
+    <button class="collapsible">Tags</button>
+    <div class="content" id="tag-filters"></div>
+  </div>
+</div>
+
+
+    <!-- <div class="blog-page-sidebar-section product-families">
         <h3>By catagory</h3>
         <div id="selected-product-families-list"></div>
         <div id="product-families-list"></div>
         <a class="show-more">Show more</a>
     </div>
 
-    <hr>
+    <hr> -->
 
     <!-- Tags -->
-    <div class="blog-page-sidebar-section product-tags">
+    <!-- <div class="blog-page-sidebar-section product-tags">
         <h3>By Product</h3>
         <div id="selected-product-tags-list"></div>
         <div id="product-tags-list"></div>
         <a class="show-more">Show more</a>
     </div>
-    <hr>
+    <hr> -->
 
 
-</div>
+<script>
+const BLOG_FILE = "{{ pathto('/_static/blog_metadata.json', 1) }}";
+</script>
+<script src="{{ pathto('_static/js/blogs_sidebar.js', 1) }}"></script>
