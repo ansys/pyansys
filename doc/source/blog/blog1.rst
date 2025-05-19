@@ -1,10 +1,11 @@
 .. meta::
    :author: Revathy
    :date: 2025-05-14
-   :categories: Development, CI/CD
-   :tags: Sphinx, Docs
+   :categories: Development
+   :tags: Sphinx
    :image: thumbnails/5gwizard.png
    :title: Blog Title One
+   :description: This is a sample blog post description.
 
 Blog Title One
 ==============

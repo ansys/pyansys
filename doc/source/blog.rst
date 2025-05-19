@@ -7,52 +7,116 @@ and provides insights into how to use the various PyAnsys packages effectively.
 
 .. raw:: html
 
-   <div id="blog-container">
-     <!-- Blog posts will be dynamically injected here -->
-   </div>
+  <div style="text-align: center; margin: 20px;">
+    <select id="categoryFilter" class="sd-btn sd-btn-outline-primary" style="margin-right: 10px;">
+      <option value="">All Categories</option>
+    </select>
 
-   <script>
-   fetch("/_static/blog_metadata.json")
-     .then(response => {
-       if (!response.ok) {
-         throw new Error("Network response was not ok");
-       }
-       return response.json();
-     })
-     .then(data => {
-       const blogContainer = document.getElementById("blog-container");
+    <select id="productFilter" class="sd-btn sd-btn-outline-primary">
+      <option value="">All Products</option>
+    </select>
+  </div>
 
-       for (const postKey in data) {
-         if (data.hasOwnProperty(postKey)) {
-           const postData = data[postKey];
+  <div class="projects" id="blog-container">
+    <!-- Blog cards will be dynamically injected here -->
+  </div>
 
-           const postCard = document.createElement("div");
-           postCard.classList.add("blog-card");
+  <script>
+    fetch("/_static/blog_metadata.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.json();
+      })
+      .then(data => {
+        const blogContainer = document.getElementById("blog-container");
+        const categoryFilter = document.getElementById("categoryFilter");
+        const productFilter = document.getElementById("productFilter");
 
-           postCard.innerHTML = `
-             <a href="${postKey}.html" class="block">
-               ${
-                 postData["image"]
-                   ? `<img src="/_static/${postData["image"]}" class="blog-image" alt="${postData["title"] || ""}">`
-                   : ""
-               }
-               <h2 class="blog-title">${postData["title"] || postKey}</h2>
-             </a>
-             <ul class="blog-meta">
-               <li><i class="fa fa-user mr-1"></i>${postData["author"] || ""}</li>
-               <li><i class="fa fa-calendar mr-1"></i>${postData["date"] || ""}</li>
-               <li><i class="fa fa-tags mr-1"></i>${postData["tags"] || ""}</li>
-               <li><i class="fa fa-folder mr-1"></i>${postData["categories"] || ""}</li>
-             </ul>
-             <a href="${postKey}.html" class="read-more">Read more →</a>
-           `;
+        const categoriesSet = new Set();
+        const productsSet = new Set();
 
-           blogContainer.appendChild(postCard);
-         }
-       }
-     })
-     .catch(error => console.error("Error loading blog metadata:", error));
-   </script>
+        for (const postKey in data) {
+          if (!data.hasOwnProperty(postKey)) continue;
+
+          const postData = data[postKey];
+
+          const family = (postData.categories || "Other").toLowerCase().replace(/ /g, "-");
+          const tags = Array.isArray(postData.tags) ? postData.tags : [postData.tags || "Other"];
+          const tagsClass = tags.map(tag => tag.toLowerCase().replace(/ /g, "-")).join(" ");
+
+          categoriesSet.add(postData.categories || "Other");
+          tags.forEach(tag => productsSet.add(tag));
+
+          const description = postData.description || "";
+          const shortDescription = description.length > 100 ? description.substring(0, 100) + "..." : description;
+
+          const postCard = document.createElement("div");
+          postCard.className = `project-card sd-card sd-shadow-sm sd-card-hover`;
+          postCard.setAttribute("data-family", family);
+          postCard.setAttribute("data-tags", tagsClass);
+          postCard.onclick = () => window.location.href = `${postKey}.html`;
+
+          postCard.innerHTML = `
+            ${postData.image ? `<img class="project-thumbnail" src="/_static/${postData.image}" alt="${postData.title || postKey}">` : ""}
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">${postData.title || postKey}</p>
+              <p class="sd-card-body-text">${shortDescription}</p>
+              <div class="sd-card-text">
+                <div><i class="fa fa-user" style="margin-right: 0.5rem;"></i>${postData.author || "PyAnsys Team"}</div>
+                <div><i class="fa fa-calendar" style="margin-right: 0.5rem;"></i>${postData.date || "Unknown Date"}</div>
+              </div>
+              <div class="sd-d-grid" style="margin-top: 0.5rem;">
+                <a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-primary reference external" href="${postKey}.html"><span>Read More</span></a>
+              </div>
+            </div>
+          `;
+
+          blogContainer.appendChild(postCard);
+        }
+
+        // Populate dropdowns
+        categoriesSet.forEach(category => {
+          const option = document.createElement("option");
+          option.value = category.toLowerCase().replace(/ /g, "-");
+          option.textContent = category;
+          categoryFilter.appendChild(option);
+        });
+
+        productsSet.forEach(product => {
+          const option = document.createElement("option");
+          option.value = product.toLowerCase().replace(/ /g, "-");
+          option.textContent = product;
+          productFilter.appendChild(option);
+        });
+
+        function filterCards() {
+          const selectedCategory = categoryFilter.value;
+          const selectedProduct = productFilter.value;
+
+          const cards = document.querySelectorAll(".project-card");
+          cards.forEach(card => {
+            const matchesCategory = !selectedCategory || card.dataset.family === selectedCategory;
+            const matchesProduct = !selectedProduct || card.dataset.tags.includes(selectedProduct);
+            card.style.display = (matchesCategory && matchesProduct) ? "" : "none";
+          });
+        }
+
+        categoryFilter.addEventListener("change", filterCards);
+        productFilter.addEventListener("change", filterCards);
+      })
+      .catch(error => console.error("Error loading blog metadata:", error));
+  </script>
+
+
+  <style>
+    #blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
    <style>
    #blog-container {

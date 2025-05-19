@@ -73,6 +73,7 @@ html_favicon = ansys_favicon
 html_sidebars = {
     "index": [],
     "projects": ["projects_sidebar.html"],
+    "blog": ["blogs_sidebar.html"],
 }
 
 extensions = [
