@@ -74,9 +74,6 @@ and provides insights into how to use the various PyAnsys packages effectively.
           blogContainer.appendChild(postCard);
         }
 
-
-        </script>
-
          function createCheckbox(container, value, type) {
           const id = `${type}-${value}`;
           const label = document.createElement("label");
@@ -107,7 +104,7 @@ and provides insights into how to use the various PyAnsys packages effectively.
         }
 
         // Listen to filter changes
-        document.getElementById("blog-page-sidebar").addEventListener("change", filterCards);
+        document.getElementById("filter-sidebar").addEventListener("change", filterCards);
       })
       .catch(error => console.error("Error loading blog metadata:", error));
   </script>
