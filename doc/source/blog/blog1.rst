@@ -2,7 +2,7 @@
    :author: Revathy
    :date: 2025-05-14
    :categories: Development, CI/CD
-   :tags: Sphinx, Python
+   :tags: mapdl, python
    :industries: Aerospace, Automotive
    :products: PyMAPDL
    :image: thumbnails/5gwizard.png

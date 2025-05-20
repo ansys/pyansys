@@ -2,20 +2,21 @@
     <!-- Product families -->
      <h2>Filters</h2>
 
-    <div class="filter-section">
-    <button class="collapsible">Product</button>
-    <div class="content" id="product-filters"></div>
-  </div>
+  <div id="product-filters">
+  <button class="collapsible">Products</button>
+  <div class="collapsible-content" style="display: none;"></div>
+</div>
 
-    <div class="filter-section">
-    <button class="collapsible">Industry</button>
-    <div class="content" id="industry-filters"></div>
-  </div>
+<div id="industry-filters">
+  <button class="collapsible">Industries</button>
+  <div class="collapsible-content" style="display: none;"></div>
+</div>
 
-  <div class="filter-section">
-    <button class="collapsible">Tags</button>
-    <div class="content" id="tag-filters"></div>
-  </div>
+<div id="tag-filters">
+  <button class="collapsible">Tags</button>
+  <div class="collapsible-content" style="display: none;"></div>
+</div>
+
 </div>
 
 
@@ -36,6 +37,33 @@
         <a class="show-more">Show more</a>
     </div>
     <hr> -->
+    <style>
+.collapsible {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.collapsible.active {
+  background-color: #ccc;
+}
+
+.collapsible-content {
+  padding: 5px 15px;
+  display: none;
+}
+
+.checkbox-wrapper {
+  margin-bottom: 5px;
+}
+
+    </style>
 
 
 <script>
