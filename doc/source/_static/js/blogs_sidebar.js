@@ -17,14 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
     input.type = "checkbox";
     input.id = id;
     input.value = name;
+    input.style.margin = "5px";
     input.addEventListener("change", () => {
       if (input.checked) {
-        state[type + "s"].add(name);
+        state[type].add(name);
       } else {
-        state[type + "s"].delete(name);
+        state[type].delete(name);
       }
       updateVisiblePosts();
       updateTagFilter();
+      updateProductFilter();
+      updateIndustryFilter();
     });
 
     label.appendChild(input);
@@ -60,9 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .forEach(tag => tags.add(tag));
     }
 
-    [...products].sort().forEach(p => createCheckbox(p, "product-filters", "product"));
-    [...industries].sort().forEach(i => createCheckbox(i, "industry-filters", "industry"));
-    [...tags].sort().forEach(t => createCheckbox(t, "tag-filters", "tag"));
+    [...products].sort().forEach(p => createCheckbox(p, "product-filters", "products"));
+    [...industries].sort().forEach(i => createCheckbox(i, "industry-filters", "industries"));
+    [...tags].sort().forEach(t => createCheckbox(t, "tag-filters", "tags"));
   }
 
   function updateTagFilter() {
@@ -92,8 +95,57 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!tagContainer) return;
 
     tagContainer.innerHTML = "";
-    [...tagSet].sort().forEach(t => createCheckbox(t, "tag-filters", "tag"));
+    [...tagSet].sort().forEach(t => createCheckbox(t, "tag-filters", "tags"));
   }
+
+function updateProductFilter() {
+    const selectedTags = [...state.tags];
+    const selectedIndustries = [...state.industries];
+    const productSet = new Set();
+    for (const key in allPosts) {
+      const post = allPosts[key];
+      const postProducts = (post.products || "").split(",").map(p => p.trim());
+      const postIndustries = (post.industries || "").split(",").map(c => c.trim());
+      const matchTag = selectedTags.length === 0 || (post.tags || "").split(",").map(t => t.trim()).some(t => selectedTags.includes(t));
+      const matchIndustry = selectedIndustries.length === 0 || postIndustries.some(c => selectedIndustries.includes(c));
+      if (matchTag && matchIndustry) {
+        (post.products || "")
+          .split(",")
+          .map(p => p.trim())
+          .filter(Boolean)
+          .forEach(product => productSet.add(product));
+      }
+    }
+    const productContainer = document.getElementById("product-filters");
+    if (!productContainer) return;
+    productContainer.innerHTML = "";
+    [...productSet].sort().forEach(p => createCheckbox(p, "product-filters", "products"));
+  }
+
+  function updateIndustryFilter() {
+    const selectedTags = [...state.tags];
+    const selectedProducts = [...state.products];
+    const industrySet = new Set();
+    for (const key in allPosts) {
+      const post = allPosts[key];
+      const postIndustries = (post.industries || "").split(",").map(c => c.trim());
+      const postProducts = (post.products || "").split(",").map(p => p.trim());
+      const matchTag = selectedTags.length === 0 || (post.tags || "").split(",").map(t => t.trim()).some(t => selectedTags.includes(t));
+      const matchProduct = selectedProducts.length === 0 || postProducts.some(p => selectedProducts.includes(p));
+      if (matchTag && matchProduct) {
+        (post.industries || "")
+          .split(",")
+          .map(c => c.trim())
+          .filter(Boolean)
+          .forEach(industry => industrySet.add(industry));
+      }
+    }
+    const industryContainer = document.getElementById("industry-filters");
+    if (!industryContainer) return;
+    industryContainer.innerHTML = "";
+    [...industrySet].sort().forEach(i => createCheckbox(i, "industry-filters", "industries"));
+  }
+
 
   function updateVisiblePosts() {
     if (!blogContainer) return;
