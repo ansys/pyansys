@@ -56,9 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
       (post.tags || "").split(",").map(t => t.trim()).filter(Boolean).forEach(t => tags.add(t));
     }
 
-    [...products].sort().forEach(p => createCheckbox(p, "product-filters", "products"));
-    [...industries].sort().forEach(i => createCheckbox(i, "industry-filters", "industries"));
-    [...tags].sort().forEach(t => createCheckbox(t, "tag-filters", "tags"));
+    [...products]
+      .sort()
+      .forEach((p) => createCheckbox(p, "product-filters", "products"));
+    [...industries]
+      .sort()
+      .forEach((i) => createCheckbox(i, "industry-filters", "industries"));
+    [...tags].sort().forEach((t) => createCheckbox(t, "tag-filters", "tags"));
   }
 
   function updateTagFilter() {
