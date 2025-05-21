@@ -2,45 +2,62 @@
 
 .. raw:: html
 
-    <!-- Hero Section -->
-    <section class="container py-1 d-flex align-items-center">
-      <div class="row">
+    <!-- Carousel: slides + indicators -->
+    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
 
-        <div class="col-md-6 mb-1">
-          <h1 class="display-5 fw-bold pt-2">Automate your simulation using Python</h1>
-          <p class="lead">
-            PyAnsys provides Pythonic access to Ansys simulation tools, making automation,
-            scripting, and integration easier for engineers and developers.
-          </p>
-          <p>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-check-circle text-success"></i> Easy to use Python API</li>
-              <li><i class="fas fa-check-circle text-success"></i> Seamless integration with Ansys products</li>
-              <li><i class="fas fa-check-circle text-success"></i> Extensive documentation and community support</li>
-            </ul>
-          </p>
-          <div class="text-center">
-            <h5 id="install" class="fw-semibold mb-3">Install</h5>
-            <div class="d-flex justify-content-center gap-2 flex-wrap">
-              <a href="getting-started/install.html#online-installation?tab=sd-tab-item-0" class="btn btn-dark btn-lg tab-link">
-                <i class="fab fa-windows me-2"></i>Windows
-              </a>
-              <a href="getting-started/install.html#online-installation?tab=sd-tab-item-1" class="btn btn-dark btn-lg tab-link">
-                <i class="fab fa-apple me-2"></i>macOS
-              </a>
-              <a href="getting-started/install.html#online-installation?tab=sd-tab-item-2" class="btn btn-dark btn-lg tab-link">
-                <i class="fab fa-linux me-2"></i>Linux
-              </a>
-            </div>
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- First slide -->
+        <div class="carousel-item active" style="background-image: url('_static/landing-page/antenna.png'); background-size: cover; background-position: center;">
+          <div class="carousel-content">
+            <h2>Automate your simulations using Python</h2>
+            <p>
+                PyAnsys provides Pythonic access to Ansys simulation tools, making automation,
+                scripting, and integration easier for engineers and developers.
+            </p>
+            <a href="#" class="btn btn-custom">Getting started</a>
           </div>
-
         </div>
-        <div class="col-md-6 text-center">
-          <img id="hero-image" style="padding-top: 0rem;" src="_static/landing-page/geometry-banner.png" class="img-fluid rounded" alt="PyAnsys" />
+
+        <!-- Second slide -->
+        <div class="carousel-item" style="background-image: url('https://picsum.photos/id/1025/1200/500'); background-size: cover; background-position: center;">
+          <div class="carousel-content">
+            <h2>Discover the project that best suits your needs</h2>
+            <p>The PyAnsys ecosystem contains a rich set of multi-physics Python APIs designed to empower engineers, researchers, and developers to interact seamlessly with Ansys simulation tools.</p>
+            <a href="#" class="btn btn-custom">Explore</a>
+          </div>
+        </div>
+
+        <!-- Third slide -->
+        <div class="carousel-item" style="background-image: url('https://picsum.photos/id/1039/1200/500'); background-size: cover; background-position: center;">
+          <div class="carousel-content">
+            <h2>Read about the latest news of PyAnsys</h2>
+            <p>Stay tuned for updates on new features, releases, community contributions, and how PyAnsys is transforming simulation workflows across industries.</p>
+            <a href="#" class="btn btn-custom">Discover</a>
+          </div>
+        </div>
+
+        <!-- Fourth slide -->
+        <div class="carousel-item" style="background-image: url('https://picsum.photos/id/1043/1200/500'); background-size: cover; background-position: center;">
+          <div class="carousel-content">
+            <h2>Ocean Breeze</h2>
+            <p>Breathe in the salty air and feel the calm of the sea.</p>
+            <a href="#" class="btn btn-custom">Relax</a>
+          </div>
         </div>
 
       </div>
-    </section>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="discover-pyansys">Automate your simulations using Python</button>
+        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="pyansys-projects">Discover the projects</button>
+        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="City Lights">Latest news about PyAnsys</button>
+        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Ocean Breeze">Contact us</button>
+      </div>
+
+    </div>
 
     <hr class="mt-6 mb-2">
 
@@ -85,47 +102,6 @@
     </section>
 
 
-    <!-- Carousel Section -->
-    <!-- Bootstrap 5 JS (Popper + Bootstrap Bundle) -->
-    <section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">What You Can Do with PyAnsys</h2>
-
-    <!-- Carousel -->
-    <div id="pyansysCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner rounded">
-        <div class="carousel-item active">
-          <img src="https://picsum.photos/800/400?random=1" class="d-block w-100" alt="Automate FEA Analysis">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-            <h5>Automate FEA Analysis</h5>
-            <p>Run full finite element workflows through Python scripts.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="Post-Processing">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-            <h5>Post-Processing</h5>
-            <p>Extract and visualize simulation results programmatically.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="Integration with ML">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-            <h5>Integration with ML</h5>
-            <p>Combine simulation with machine learning to build smart systems.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#pyansysCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#pyansysCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-
     <!-- Slide Selectors Below -->
     <div class="row mt-4 text-center">
       <div class="col-md-4 mb-2">
@@ -146,8 +122,6 @@
     </div>
   </div>
   </section>
-
-
 
     <!-- Testimonials Section -->
     <section class="bg-light py-5">
