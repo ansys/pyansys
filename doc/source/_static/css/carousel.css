@@ -12,7 +12,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to right, rgba(0,0,0,1.0), rgba(0,0,0,0.1));
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
 }
 
 .carousel-content {
@@ -24,7 +24,7 @@
 }
 
 .carousel-content h2 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   color: white;
 }
 
@@ -35,56 +35,56 @@
 }
 
 .carousel-content .btn-custom {
-    background-color: #ffb71b;
-    color: black;
-    border: none;
-    border-radius: 0.25rem;
-    font-size: 0.75rem;
-    font-weight: bold;
-    padding: 0.75rem 1.25rem;
-    text-transform: uppercase;
+  background-color: #ffb71b;
+  color: black;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
 }
 
 .carousel-indicators {
-    width: 100%;
-    height: 4rem;
-    margin: 0 auto;
-    padding: 0;
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+  padding: 0;
 
-    background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
 
-    position: absolute;
-    bottom: -4rem;
+  position: absolute;
+  bottom: -4rem;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
 }
 
 .carousel-indicators .active {
-    border-style: none none none solid;
-    border-left: 0.20rem solid #ffb71b !important;
-    border-radius: 0;
+  border-style: none none none solid;
+  border-left: 0.2rem solid #ffb71b !important;
+  border-radius: 0;
 }
 
 .carousel-indicators [data-bs-target] {
-    color: white;
-    background: transparent;
+  color: white;
+  background: transparent;
 
-    text-indent: 0rem;
-    font-weight: bold;
-    padding: 0.5rem 1.5rem;
-    height: 50%;
-    width: 75%;
-    text-align: left;
+  text-indent: 0rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  height: 50%;
+  width: 75%;
+  text-align: left;
 
-    border-style: none none none solid;
-    border-left: 0.20rem solid gray;
-    border-radius: 0;
+  border-style: none none none solid;
+  border-left: 0.2rem solid gray;
+  border-radius: 0;
 }
 
 .carousel-indicators [data-bs-target]:first-child {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
