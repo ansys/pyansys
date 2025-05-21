@@ -7,16 +7,6 @@ and provides insights into how to use the various PyAnsys packages effectively.
 
 .. raw:: html
 
-  <div style="text-align: center; margin: 20px;">
-    <select id="categoryFilter" class="sd-btn sd-btn-outline-primary" style="margin-right: 10px;">
-      <option value="">All Categories</option>
-    </select>
-
-    <select id="productFilter" class="sd-btn sd-btn-outline-primary">
-      <option value="">All Products</option>
-    </select>
-  </div>
-
   <div class="projects" id="blog-container">
     <!-- Blog cards will be dynamically injected here -->
   </div>
