@@ -24,7 +24,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "ansys-acp-core==0.1.0",
+    "ansys-acp-core==0.2.0",
     "ansys-additive-core==0.19.1",
     "ansys-additive-widgets==0.2.1",
     "ansys-conceptev-core==0.9.4",
@@ -43,13 +43,13 @@ dependencies = [
     "ansys-mechanical-core==0.11.16",
     "ansys-meshing-prime==0.8.1",
     "ansys-modelcenter-workflow==0.1.1",
-    "ansys-motorcad-core==0.7.1",
+    "ansys-motorcad-core==0.7.2",
     "ansys-optislang-core==1.0.0",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.10.1",
+    "ansys-pyensight-core==0.10.2",
     "ansys-rocky-core==0.3.2",
     "ansys-seascape==0.2.0",
-    "ansys-sherlock-core==0.8.2",
+    "ansys-sherlock-core==0.9.0",
     "ansys-simai-core==0.3.0",
     "ansys-sound-core==0.1.3",
     "ansys-speos-core==0.4.0",
@@ -57,7 +57,7 @@ dependencies = [
     "ansys-turbogrid-core==0.4.5",
     "ansys-workbench-core==0.9.0",
     "pyaedt==0.16.2",
-    "pyedb==0.48.0",
+    "pyedb==0.49.0",
     "pygranta==2025.1.0",
     "pytwin==0.9.1",
 ]
