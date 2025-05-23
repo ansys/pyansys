@@ -1,0 +1,20 @@
+.bd-main .bd-content {
+  display: flex !important;
+  height: 100% !important;
+  justify-content: center !important;
+}
+
+/* Maximize the width of the content area */
+.bd-main .bd-content {
+  display: flex !important;
+  height: 100% !important;
+  justify-content: center !important;
+}
+
+.bd-main .bd-content .bd-article-container {
+  width: 100% !important;
+}
+
+.center {
+  margin: 0 auto !important;
+}
