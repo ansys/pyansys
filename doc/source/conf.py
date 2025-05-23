@@ -190,6 +190,12 @@ html_theme_options = {
         "min_chars_for_search": 2,
         "ignoreLocation": True,
     },
+    "search_extra_sources": {
+        "PyDPF Core": "https:/dpf.docs.pyansys.com/version/stable/",
+        "PyMAPDL": "https://mapdl.docs.pyansys.com/version/stable/",
+        "PyAEDT": "https://aedt.docs.pyansys.com/version/stable/",
+        "PyAnsys Geometry": "https://geometry.docs.pyansys.com/version/stable/",
+    },
 }
 
 # Check all references work fine

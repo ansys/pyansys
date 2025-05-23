@@ -96,7 +96,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.2.3",
-    "ansys-sphinx-theme==1.4.4",
+    "ansys-sphinx-theme @ git+https://github.com/ansys/ansys-sphinx-theme.git@feat/search-weight",
     "Jinja2 ==3.1.6",
     "Pillow==11.2.1",
     "PyGithub==2.6.1",
