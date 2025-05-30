@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: PyAnsys Vulnerability Check (on PRs)
         if: github.event_name == 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v9
+        uses: ansys/actions/check-vulnerabilities@main
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys Licenses Check
-        uses: ansys/actions/check-licenses@v9
+        uses: ansys/actions/check-licenses@main
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@v9
+        uses: ansys/actions/doc-style@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -126,7 +126,7 @@ jobs:
 
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@v9
+        uses: ansys/actions/build-wheelhouse@main
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           operating-system: ${{ runner.os }}
@@ -153,7 +153,7 @@ jobs:
 
     steps:
       - name: Build documentation
-        uses: ansys/actions/doc-build@v9
+        uses: ansys/actions/doc-build@main
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
@@ -183,7 +183,7 @@ jobs:
     needs: [docs-build, smoke-tests-core]
     steps:
       - name: Build library source and wheel artifacts
-        uses: ansys/actions/build-library@v9
+        uses: ansys/actions/build-library@main
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
