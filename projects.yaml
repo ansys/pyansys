@@ -29,20 +29,6 @@ projects:
       examples: https://additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
       api: https://additive.docs.pyansys.com/version/stable/api/index.html
 
-  pyadditive-widgets:
-    name: PyAdditive Widgets
-    repository: https://github.com/ansys/pyadditive-widgets
-    description: PyAdditive widget toolkit to visualize additive parametric study results
-    thumbnail: _static/thumbnails/intro.png
-    family: Structures
-    tags: [Tools, Composites]
-    icon: _static/icons/structures.svg
-    documentation:
-      base: https://widgets.additive.docs.pyansys.com/version/stable
-      user_guide: https://widgets.additive.docs.pyansys.com/version/stable/getting_started/index.html
-      examples: https://widgets.additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
-      api: https://widgets.additive.docs.pyansys.com/version/stable/api/index.html
-
   pyaedt:
     name: PyAEDT
     repository: https://github.com/ansys/pyaedt

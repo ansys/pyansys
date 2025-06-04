@@ -27,7 +27,6 @@ classifiers = [
 dependencies = [
     "ansys-acp-core==0.2.0",
     "ansys-additive-core==0.20.0",
-    "ansys-additive-widgets==0.2.1",
     "ansys-conceptev-core==0.9.4",
     "ansys-dpf-composites==0.7.0",
     "ansys-dpf-core==0.13.8",
