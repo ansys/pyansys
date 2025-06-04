@@ -92,6 +92,7 @@ html_css_files = [
     # Landing page specific CSS files
     "landing-page/css/carousel.css",
     "landing-page/css/style.css",
+    "landing-page/css/testimonials.css",
 ]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"

@@ -1,0 +1,7 @@
+/* Custom Styles for Testimonials */
+.testimonial {
+  transition: transform 0.3s ease;
+}
+.testimonial:hover {
+  transform: translateY(-5px);
+}
