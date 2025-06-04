@@ -110,48 +110,7 @@
 
     <section class="bg-light py-2">
       <div class="container">
-        <div class="row">
-
-          <div class="col-md-4 mb-4">
-            <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
-              <div>
-                <h2 class="text-left">Actemium</h2>
-                <p class="mb-0">PyAnsys played a pivotal role in optimization of our industrial cooling applications recognized with the Environmental Award for Technological Breakthrough 2024.</p>
-              </div>
-              <img src="https://www.actemium.es/app/uploads/sites/203/2022/10/logo-actemium@3x.png"
-                   class="rounded-circle mt-auto align-self-end"
-                   style="height: 80px; width: auto;"
-                   alt="Client 1">
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
-              <div>
-                <h2 class="text-left">NVIDIA</h2>
-                <p class="mb-0">PyAnsys leverages NVIDIA Omniverse to seamlessly integrate with solvers, delivering visualizations that customers need.</p>
-              </div>
-              <img src="https://nvidianews.nvidia.com/_gallery/get_file/?file_id=544a6120f6091d588d000048"
-                   class="rounded-circle mt-auto align-self-end"
-                   style="height: 80px; width: auto;"
-                   alt="Client 2">
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
-              <div>
-                <h2 class="text-left">STMicroelectronics</h2>
-                <p class="mb-0">PyAnsys is a game-changing tool for anyone in simulation and design, offering significant reductions in design time, enhanced consistency, and streamlined operations. It reinforces STMicroelectronics commitment to quality.</p>
-              </div>
-              <img src="https://www.st.com/content/dam/st-crew/st-logo-blue.svg"
-                   class="rounded-circle mt-auto align-self-end"
-                   style="height: 80px; width: auto;"
-                   alt="Client 3">
-            </div>
-          </div>
-
-        </div>
+        <div id="testimonials-container" class="row"></div>
       </div>
     </section>
 
@@ -159,7 +118,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="_static/js/landing-page.js"></script
+    <script src="_static/landing-page/js/testimonials.js"></script
 
 
 .. toctree::

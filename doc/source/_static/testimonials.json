@@ -1,32 +1,17 @@
-{
-  "testimonials": [
-    {
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet, sem at porttitor iaculis, urna magna commodo erat, in finibus justo erat nec odio. Morbi vel bibendum lorem. Nulla facilisi.",
-      "author": "A"
-    },
-    {
-      "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "author": "B"
-    },
-    {
-      "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-      "author": "C"
-    },
-    {
-      "content": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-      "author": "D"
-    },
-    {
-      "content": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
-      "author": "E"
-    },
-    {
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at magna et velit scelerisque ultricies. Integer semper, mi non varius euismod, nulla dolor pretium nisi, ac vulputate nisi risus at erat.",
-      "author": "F"
-    },
-    {
-      "content": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.",
-      "author": "G"
-    }
-  ]
-}
+[
+  {
+    "author": "Actemium",
+    "content": "PyAnsys played a pivotal role in optimization of our industrial cooling applications recognized with the Environmental Award for Technological Breakthrough 2024.",
+    "logo": "https://www.actemium.es/app/uploads/sites/203/2022/10/logo-actemium@3x.png"
+  },
+  {
+    "author": "NVIDIA",
+    "content": "PyAnsys leverages NVIDIA Omniverse to seamlessly integrate with solvers, delivering visualizations that customers need.",
+    "logo": "https://nvidianews.nvidia.com/_gallery/get_file/?file_id=544a6120f6091d588d000048"
+  },
+  {
+    "author": "STMicroelectronics",
+    "content": "PyAnsys is a game-changing tool for anyone in simulation and design, offering significant reductions in design time, enhanced consistency, and streamlined operations. It reinforces STMicroelectronics commitment to quality.",
+    "logo": "https://www.st.com/content/dam/st-crew/st-logo-blue.svg"
+  }
+]
