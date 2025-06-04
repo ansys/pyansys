@@ -36,7 +36,8 @@ fetch("_static/landing-page/js/testimonials.json")
       topDiv.appendChild(content);
 
       const testimonialDiv = document.createElement("div");
-      testimonialDiv.className = "testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column";
+      testimonialDiv.className =
+        "testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column";
       testimonialDiv.appendChild(topDiv);
       testimonialDiv.appendChild(logo);
 
