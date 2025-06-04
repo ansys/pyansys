@@ -9,7 +9,7 @@
       <div class="carousel-inner">
 
         <!-- First slide -->
-        <div class="carousel-item active" style="background-image: url('_static/landing-page/antenna.png'); background-size: cover; background-position: center;">
+        <div class="carousel-item active" style="background-image: url('https://picsum.photos/id/1025/1200/500'); background-size: contain; background-position: center;">
           <div class="carousel-content">
             <h2>Automate your simulations using Python</h2>
             <p>
@@ -59,93 +59,108 @@
 
     </div>
 
-    <hr class="mt-6 mb-2">
+    <div class="section-divider">
+      <span class="section-title">Explore PyAnsys possibilities</span>
+    </div>
 
-    <!-- Key Features -->
-    <section class="bg-light">
-      <div class="container">
-        <h2 class="text-center">Key features of PyAnsys</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="d-flex align-items-center mb-2">
-              <h5 class="mb-0"><i class="fas fa-robot text-dark me-2"></i>Automation</h5>
+    <!-- Workflow cards -->
+    <div class="container py-2">
+      <div class="row g-4">
+    
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <iframe src='_static/static_viewer.html?fileURL=landing-page/vtksz/geometry.vtksz' width='100%%' height='400px' frameborder='0'></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Pre-process your simulation</h5>
+              <p class="card-text">Define your simulation setup by specifying the geometry in a flexible, parametric format. Clearly establish boundary and initial conditions to ensure accurate modeling of physical behaviors. This foundational step enables precise control over your simulation environment and sets the stage for meaningful analysis.</p>
             </div>
-            <p>
-              Automate your simulation workflows to eliminate repetitive tasks,
-              reduce human error, and accelerate your development cycle.
-            </p>
-            <img style="padding-top: 0rem;" src="_static/landing-page/pipe.png" class="img-fluid rounded" alt="PyAnsys" />
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="d-flex align-items-center mb-2">
-              <h5 class="mb-0"><i class="fas fa-code text-dark me-2"></i>Python API</h5>
-            </div>
-            <p>
-              Access a robust and intuitive Python API that enables powerful
-              scripting capabilities, customization, and extensibility.
-            </p>
-            <img style="padding-top: 0rem;" src="_static/landing-page/camera.png" class="img-fluid rounded" alt="PyAnsys" />
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="d-flex align-items-center mb-2">
-              <h5 class="mb-0"><i class="fas fa-cubes text-dark me-2"></i>Integration</h5>
-            </div>
-            <p>
-              Seamlessly integrate Ansys tools with other Python-based
-              frameworks, allowing for a unified and scalable simulation
-              ecosystem.
-            </p>
-            <img style="padding-top: 0rem;" src="_static/landing-page/porkchop.png" class="img-fluid rounded" alt="PyAnsys" />
           </div>
         </div>
-      </div>
-    </section>
-
-
-    <!-- Slide Selectors Below -->
-    <div class="row mt-4 text-center">
-      <div class="col-md-4 mb-2">
-        <button class="btn btn-outline-dark w-100" data-bs-target="#pyansysCarousel" data-bs-slide-to="0">
-          <strong>Automate FEA</strong><br>Finite element scripting
-        </button>
-      </div>
-      <div class="col-md-4 mb-2">
-        <button class="btn btn-outline-dark w-100" data-bs-target="#pyansysCarousel" data-bs-slide-to="1">
-          <strong>Post-Processing</strong><br>Extract and visualize data
-        </button>
-      </div>
-      <div class="col-md-4 mb-2">
-        <button class="btn btn-outline-dark w-100" data-bs-target="#pyansysCarousel" data-bs-slide-to="2">
-          <strong>ML Integration</strong><br>Combine simulation + AI
-        </button>
+    
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <iframe src='_static/static_viewer.html?fileURL=landing-page/vtksz/mesh.vtksz' width='100%%' height='400px' frameborder='0'></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Simulate and collect results</h5>
+              <p class="card-text">Run high-fidelity simulations and gather comprehensive results that reflect the dynamics of your system. Leverage powerful computational tools to model complex scenarios, validate designs, and explore different configurations. These insights help you make informed decisions based on real-time simulation outputs.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <iframe src='_static/static_viewer.html?fileURL=landing-page/vtksz/results.vtksz' width='100%%' height='400px' frameborder='0'></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Post-process your results</h5>
+              <p class="card-text">Extract, visualize, and interpret key data from your simulation to drive the next phase of your project. Post-processing tools help identify trends, highlight performance metrics, and transform raw output into actionable information. This step ensures your workflow remains efficient and results-oriented.</p>
+            </div>
+          </div>
+        </div>
+    
       </div>
     </div>
-  </div>
-  </section>
 
     <!-- Testimonials Section -->
-    <section class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">What Our Users Say</h2>
-        <div id="testimonialMultiCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner" id="testimonialCarouselContent">
-            <!-- Slides will be inserted here -->
-          </div>
+    <div class="section-divider">
+      <span class="section-title">Testimonials</span>
+    </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialMultiCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#testimonialMultiCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    <section class="bg-light py-2">
+      <div class="container">
+        <div class="row">
+    
+          <div class="col-md-4 mb-4">
+            <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+              <div>
+                <h2 class="text-left">Actemium</h2>
+                <p class="mb-0">PyAnsys played a pivotal role in optimization of our industrial cooling applications recognized with the Environmental Award for Technological Breakthrough 2024.</p>
+              </div>
+              <img src="https://www.actemium.es/app/uploads/sites/203/2022/10/logo-actemium@3x.png"
+                   class="rounded-circle mt-auto align-self-end"
+                   style="height: 80px; width: auto;"
+                   alt="Client 1">
+            </div>
+          </div>
+    
+          <div class="col-md-4 mb-4">
+            <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+              <div>
+                <h2 class="text-left">NVIDIA</h2>
+                <p class="mb-0">PyAnsys leverages NVIDIA Omniverse to seamlessly integrate with solvers, delivering visualizations that customers need.</p>
+              </div>
+              <img src="https://nvidianews.nvidia.com/_gallery/get_file/?file_id=544a6120f6091d588d000048"
+                   class="rounded-circle mt-auto align-self-end"
+                   style="height: 80px; width: auto;"
+                   alt="Client 2">
+            </div>
+          </div>
+    
+          <div class="col-md-4 mb-4">
+            <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+              <div>
+                <h2 class="text-left">STMicroelectronics</h2>
+                <p class="mb-0">PyAnsys is a game-changing tool for anyone in simulation and design, offering significant reductions in design time, enhanced consistency, and streamlined operations. It reinforces STMicroelectronics commitment to quality.</p>
+              </div>
+              <img src="https://www.st.com/content/dam/st-crew/st-logo-blue.svg"
+                   class="rounded-circle mt-auto align-self-end"
+                   style="height: 80px; width: auto;"
+                   alt="Client 3">
+            </div>
+          </div>
+    
         </div>
       </div>
     </section>
-    <!-- Bootstrap JS (may not be necessary since PyData already declares this) -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="_static/js/landing_page.js"></script>
+
+    <!-- Custom JS -->
+    <script src="_static/js/landing-page.js"></script
+
 
 .. toctree::
     :hidden:
