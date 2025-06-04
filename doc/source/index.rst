@@ -66,7 +66,7 @@
     <!-- Workflow cards -->
     <div class="container py-2">
       <div class="row g-4">
-    
+
         <!-- Card 1 -->
         <div class="col-md-4">
           <div class="card">
@@ -77,7 +77,7 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Card 2 -->
         <div class="col-md-4">
           <div class="card">
@@ -88,7 +88,7 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Card 3 -->
         <div class="col-md-4">
           <div class="card">
@@ -99,7 +99,7 @@
             </div>
           </div>
         </div>
-    
+
       </div>
     </div>
 
@@ -111,7 +111,7 @@
     <section class="bg-light py-2">
       <div class="container">
         <div class="row">
-    
+
           <div class="col-md-4 mb-4">
             <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
               <div>
@@ -124,7 +124,7 @@
                    alt="Client 1">
             </div>
           </div>
-    
+
           <div class="col-md-4 mb-4">
             <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
               <div>
@@ -137,7 +137,7 @@
                    alt="Client 2">
             </div>
           </div>
-    
+
           <div class="col-md-4 mb-4">
             <div class="testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
               <div>
@@ -150,7 +150,7 @@
                    alt="Client 3">
             </div>
           </div>
-    
+
         </div>
       </div>
     </section>
