@@ -87,10 +87,11 @@ extensions = [
 templates_path = ["_templates"]
 html_static_path = ["_static"]
 html_css_files = [
-    "css/carousel.css",
-    "css/projects_sidebar.css",
     "css/style.css",
-    "css/landing_page.css",
+    "css/projects_sidebar.css",
+    # Landing page specific CSS files
+    "landing-page/css/carousel.css",
+    "landing-page/css/style.css",
 ]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
