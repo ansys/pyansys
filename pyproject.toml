@@ -59,6 +59,7 @@ dependencies = [
     "pyaedt==0.17.0",
     "pyedb==0.50.0",
     "pygranta==2025.2.0rc0",
+    "ansys-grantami-bomanalytics==2.3.0rc0", # TEMP - remove once PyGranta's full 2025R2 release is out
     "pytwin==0.9.2",
 ]
 
