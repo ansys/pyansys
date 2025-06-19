@@ -131,6 +131,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySeascape`_
 - `PySherlock`_
 - `PySimAI`_
+- `PySpeos`_
 - `PySystemCoupling`_
 - `PyTurboGrid`_
 - `PyTwin`_
