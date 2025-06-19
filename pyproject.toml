@@ -67,7 +67,8 @@ dependencies = [
 mapdl-all = ["ansys-mapdl-reader==0.55.1"]
 fluent-all = ["ansys-fluent-visualization==0.20.0"]
 tools = [
-    "ansys-materials-manager==0.2.3",
+    # TODO: To be reverted once ansys-materials-manager releases support for numpy>2
+    # "ansys-materials-manager==0.2.3; python_version<='3.13'",
     "ansys-tools-filetransfer==0.1.1",
     "ansys-tools-local-product-launcher==0.1.1",
     "ansys-tools-path==0.7.3",
