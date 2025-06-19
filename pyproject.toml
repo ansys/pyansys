@@ -25,6 +25,7 @@ classifiers = [
 ]
 
 dependencies = [
+    "numpy>2",
     "ansys-acp-core==0.2.0",
     "ansys-additive-core==0.20.0",
     "ansys-conceptev-core==0.9.4",
