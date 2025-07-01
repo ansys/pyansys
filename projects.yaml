@@ -460,7 +460,7 @@ projects:
     documentation:
       base: https://simai.docs.pyansys.com/version/stable
       user_guide: https://simai.docs.pyansys.com/version/stable/user_guide.html
-      examples: https://simai.docs.pyansys.com/version/stable/index.html#getting-started
+      examples: https://simai.docs.pyansys.com/version/stable/index.html
       api: https://simai.docs.pyansys.com/version/stable/api_reference.html
 
   pyspeos:
