@@ -181,7 +181,7 @@ projects:
       base: https://edb.docs.pyansys.com/version/stable
       user_guide: https://edb.docs.pyansys.com/version/stable/user_guide/index.html
       examples: https://examples.aedt.docs.pyansys.com/version/dev/index.html
-      api: https://edb.docs.pyansys.com/version/stable/api/index.html
+      api: https://edb.docs.pyansys.com/version/stable/dotnet_api/index.html
 
   pyedb-core:
     name: PyEDB - Core
