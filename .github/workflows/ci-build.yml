@@ -17,6 +17,7 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
+  UV_PRERELEASE: "allow"  # TEMP - remove once PyGranta's full 2025R2 release is out
 
 jobs:
   check-vulnerabilities:
@@ -25,7 +26,7 @@ jobs:
     steps:
       - name: PyAnsys Vulnerability Check (on PRs)
         if: github.event_name == 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v9
+        uses: ansys/actions/check-vulnerabilities@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -34,7 +35,7 @@ jobs:
 
       - name: PyAnsys Vulnerability Check (any other case)
         if: github.event_name != 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v9
+        uses: ansys/actions/check-vulnerabilities@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -45,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys Licenses Check
-        uses: ansys/actions/check-licenses@v9
+        uses: ansys/actions/check-licenses@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
@@ -56,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@v9
+        uses: ansys/actions/doc-style@v10
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -126,7 +127,7 @@ jobs:
 
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@v9
+        uses: ansys/actions/build-wheelhouse@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           operating-system: ${{ runner.os }}
@@ -153,7 +154,7 @@ jobs:
 
     steps:
       - name: Build documentation
-        uses: ansys/actions/doc-build@v9
+        uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
@@ -165,7 +166,7 @@ jobs:
       needs: [package]
       steps:
         - name: Deploy the latest documentation
-          uses: ansys/actions/doc-deploy-dev@v9
+          uses: ansys/actions/doc-deploy-dev@v10
           with:
             cname: ${{ env.DOCUMENTATION_CNAME }}
             token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -183,7 +184,7 @@ jobs:
     needs: [docs-build, smoke-tests-core]
     steps:
       - name: Build library source and wheel artifacts
-        uses: ansys/actions/build-library@v9
+        uses: ansys/actions/build-library@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
@@ -197,14 +198,14 @@ jobs:
       contents: write
     steps:
       - name: Release to PyPI repository
-        uses: ansys/actions/release-pypi-public@v9
+        uses: ansys/actions/release-pypi-public@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           twine-username: __token__
           twine-token: ${{ secrets.PYPI_TOKEN }}
 
       - name: Release to GitHub
-        uses: ansys/actions/release-github@v9
+        uses: ansys/actions/release-github@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Linux-3.13 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-Windows-3.13 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12 all-deps-macOS-3.13'
@@ -216,7 +217,7 @@ jobs:
     needs: [release]
     steps:
       - name: Deploy the latest release documentation
-        uses: ansys/actions/doc-deploy-stable@v9
+        uses: ansys/actions/doc-deploy-stable@v10
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -238,7 +239,7 @@ jobs:
        pull-requests: write
      steps:
        - name: Automerge PRs
-         uses: ansys/actions/hk-automerge-prs@v9
+         uses: ansys/actions/hk-automerge-prs@v10
          with:
            approver: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
            approver-token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}

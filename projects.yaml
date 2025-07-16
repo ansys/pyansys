@@ -29,20 +29,6 @@ projects:
       examples: https://additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
       api: https://additive.docs.pyansys.com/version/stable/api/index.html
 
-  pyadditive-widgets:
-    name: PyAdditive Widgets
-    repository: https://github.com/ansys/pyadditive-widgets
-    description: PyAdditive widget toolkit to visualize additive parametric study results
-    thumbnail: _static/thumbnails/intro.png
-    family: Structures
-    tags: [Tools, Composites]
-    icon: _static/icons/structures.svg
-    documentation:
-      base: https://widgets.additive.docs.pyansys.com/version/stable
-      user_guide: https://widgets.additive.docs.pyansys.com/version/stable/getting_started/index.html
-      examples: https://widgets.additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html
-      api: https://widgets.additive.docs.pyansys.com/version/stable/api/index.html
-
   pyaedt:
     name: PyAEDT
     repository: https://github.com/ansys/pyaedt
@@ -195,7 +181,7 @@ projects:
       base: https://edb.docs.pyansys.com/version/stable
       user_guide: https://edb.docs.pyansys.com/version/stable/user_guide/index.html
       examples: https://examples.aedt.docs.pyansys.com/version/dev/index.html
-      api: https://edb.docs.pyansys.com/version/stable/api/index.html
+      api: https://edb.docs.pyansys.com/version/stable/dotnet_api/index.html
 
   pyedb-core:
     name: PyEDB - Core
@@ -474,7 +460,7 @@ projects:
     documentation:
       base: https://simai.docs.pyansys.com/version/stable
       user_guide: https://simai.docs.pyansys.com/version/stable/user_guide.html
-      examples: https://simai.docs.pyansys.com/version/stable/index.html#getting-started
+      examples: https://simai.docs.pyansys.com/version/stable/index.html
       api: https://simai.docs.pyansys.com/version/stable/api_reference.html
 
   pyspeos:
