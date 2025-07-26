@@ -440,7 +440,7 @@ projects:
     repository: https://github.com/ansys/pysherlock
     description: Pythonic interface to Ansys Sherlock
     thumbnail: _static/thumbnails/pysherlock.png
-    family: Electronics
+    family: Structures
     tags: [Flagship, Thermal]
     icon: _static/icons/structures.svg
     documentation:
