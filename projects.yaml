@@ -356,7 +356,7 @@ projects:
     repository: https://github.com/ansys/pyoptislang
     description: Pythonic interface to Ansys optiSLang
     thumbnail: _static/thumbnails/pyoptislang.png
-    family: Platform
+    family: Connect
     tags: [Flagship]
     icon: _static/icons/platform.svg
     documentation:
@@ -483,7 +483,7 @@ projects:
     repository: https://github.com/ansys/pysystemcoupling
     description: Pythonic interface to Ansys System Coupling
     thumbnail: _static/thumbnails/pysystem-coupling.png
-    family: Other
+    family: Structures
     tags: [Flagship]
     icon: _static/icons/design.svg
     documentation:
@@ -525,7 +525,7 @@ projects:
     repository: https://github.com/ansys/pyworkbench
     description: Pythonic interface to Ansys Workbench
     thumbnail: _static/thumbnails/intro.png
-    family: Other
+    family: Platform
     tags: [Flagship]
     icon: _static/icons/platform.svg
     documentation:
