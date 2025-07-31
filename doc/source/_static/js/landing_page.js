@@ -21,7 +21,7 @@ function collectFamilies(data) {
 
     const icon = project.icon || "ansys-icon-light.svg"; // Fallback icon
 
-    projectFamilies.forEach(family => {
+    projectFamilies.forEach((family) => {
       if (family) {
         if (!familyData[family]) {
           familyData[family] = { count: 0, icon: icon };
@@ -249,15 +249,16 @@ function applyFilters() {
 
   projectCards.forEach((card) => {
     // Handle both single family and multiple families from data attributes
-    const rawFamilies = card.getAttribute("data-families") || card.getAttribute("data-family");
+    const rawFamilies =
+      card.getAttribute("data-families") || card.getAttribute("data-family");
     let cardFamilies = [];
-    
+
     if (rawFamilies) {
       try {
         // Try to parse as JSON array first (for multiple families)
-        if (rawFamilies.startsWith('[')) {
-          cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"')).map((family) =>
-            family.toLowerCase(),
+        if (rawFamilies.startsWith("[")) {
+          cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"')).map(
+            (family) => family.toLowerCase(),
           );
         } else {
           // Single family as string
@@ -283,8 +284,10 @@ function applyFilters() {
 
     // Check if the card matches the selected families
     const matchesAllFamilies =
-      selectedFamilies.length === 0 || 
-      selectedFamilies.some(selectedFamily => cardFamilies.includes(selectedFamily));
+      selectedFamilies.length === 0 ||
+      selectedFamilies.some((selectedFamily) =>
+        cardFamilies.includes(selectedFamily),
+      );
 
     // Check if the card matches the selected tags
     const matchesAllTags =
