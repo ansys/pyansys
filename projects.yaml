@@ -160,7 +160,7 @@ projects:
     repository: https://github.com/ansys/pydynamicreporting
     description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
     thumbnail: _static/thumbnails/pydynamicreporting.png
-    family: Platform
+    families: [Fluids, Electronics]
     tags: [Tools]
     icon: _static/icons/platform.svg
     documentation:
@@ -202,7 +202,7 @@ projects:
     repository: https://github.com/ansys/pyensight
     description: Pythonic interface to EnSight, the Ansys simulation postprocessor
     thumbnail: _static/thumbnails/pyensight.png
-    family: Fluids
+    families: [Fluids]
     tags: [Flagship]
     icon: _static/icons/fluids.svg
     documentation:
@@ -384,7 +384,7 @@ projects:
     repository: https://github.com/ansys/pyprimemesh
     description: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers
     thumbnail: _static/thumbnails/pyprimemesh.png
-    family: Meshing
+    families: [Meshing, CAD]
     tags: [Flagship]
     icon: _static/icons/platform.svg
     documentation:
@@ -440,7 +440,7 @@ projects:
     repository: https://github.com/ansys/pysherlock
     description: Pythonic interface to Ansys Sherlock
     thumbnail: _static/thumbnails/pysherlock.png
-    family: Electronics
+    families: [Electronics, Multiphysics, Structures]
     tags: [Flagship, Thermal]
     icon: _static/icons/structures.svg
     documentation:
@@ -525,7 +525,7 @@ projects:
     repository: https://github.com/ansys/pyworkbench
     description: Pythonic interface to Ansys Workbench
     thumbnail: _static/thumbnails/intro.png
-    family: Platform
+    families: [Platform, Multiphysics]
     tags: [Flagship]
     icon: _static/icons/platform.svg
     documentation:
