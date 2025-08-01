@@ -11,13 +11,8 @@ function collectFamilies(data) {
   for (const project of projects) {
     if (!project || typeof project !== "object") continue;
 
-    // Handle both single family and multiple families
-    let projectFamilies = [];
-    if (project.families && Array.isArray(project.families)) {
-      projectFamilies = project.families;
-    } else if (project.family) {
-      projectFamilies = [project.family];
-    }
+    // Handle families array
+    const projectFamilies = project.families || ["Other"];
 
     const icon = project.icon || "ansys-icon-light.svg"; // Fallback icon
 
@@ -248,22 +243,16 @@ function applyFilters() {
   const projectCards = document.querySelectorAll(".project-card");
 
   projectCards.forEach((card) => {
-    // Handle both single family and multiple families from data attributes
-    const rawFamilies =
-      card.getAttribute("data-families") || card.getAttribute("data-family");
+    // Handle families from data attributes
+    const rawFamilies = card.getAttribute("data-families");
     let cardFamilies = [];
 
     if (rawFamilies) {
       try {
-        // Try to parse as JSON array first (for multiple families)
-        if (rawFamilies.startsWith("[")) {
-          cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"')).map(
-            (family) => family.toLowerCase(),
-          );
-        } else {
-          // Single family as string
-          cardFamilies = [rawFamilies.toLowerCase()];
-        }
+        // Parse as JSON array
+        cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"')).map(
+          (family) => family.toLowerCase(),
+        );
       } catch (error) {
         // Fallback to treating as single family string
         cardFamilies = [rawFamilies.toLowerCase()];

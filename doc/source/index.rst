@@ -22,15 +22,9 @@ it is now a collection of many Python packages for using Ansys products through 
         <div class="projects">
             {% for project, metadata in projects['projects'].items() %}
 
-            {% if metadata.get('families') %}
-                {% set families = metadata.get('families', []) %}
-                {% set family_attr = families | join(',') | lower | replace(' ', '-') %}
-                {% set family_display = families[0] | lower | replace(' ', '-') %}
-            {% else %}
-                {% set families = [metadata.get('family', 'other')] %}
-                {% set family_attr = metadata.get('family', 'other') | lower | replace(' ', '-') %}
-                {% set family_display = metadata.get('family', 'other') | lower | replace(' ', '-') %}
-            {% endif %}
+            {% set families = metadata.get('families', ['Other']) %}
+            {% set family_attr = families | join(',') | lower | replace(' ', '-') %}
+            {% set family_display = families[0] | lower | replace(' ', '-') %}
             {% set tags = metadata.get('tags', []) %}
 
             <div
