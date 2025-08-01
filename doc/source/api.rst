@@ -24,7 +24,7 @@ PyAnsys packages API reference
         :gutter: 3 3 4 4
 
         {% for project, metadata in projects['projects'].items() %}
-          {% if 'Tools' not in metadata['family'] %}
+          {% if 'Tools' not in metadata.get('families', []) %}
         .. grid-item-card:: {{ metadata['name'] }}
           :img-top: {{ metadata['thumbnail'] }}
           :link: {{ metadata['documentation']['api'] }}

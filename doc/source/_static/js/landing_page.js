@@ -11,15 +11,19 @@ function collectFamilies(data) {
   for (const project of projects) {
     if (!project || typeof project !== "object") continue;
 
-    const family = project.family;
+    // Handle families array
+    const projectFamilies = project.families || ["Other"];
+
     const icon = project.icon || "ansys-icon-light.svg"; // Fallback icon
 
-    if (family) {
-      if (!familyData[family]) {
-        familyData[family] = { count: 0, icon: icon };
+    projectFamilies.forEach((family) => {
+      if (family) {
+        if (!familyData[family]) {
+          familyData[family] = { count: 0, icon: icon };
+        }
+        familyData[family].count += 1;
       }
-      familyData[family].count += 1;
-    }
+    });
   }
 
   return familyData;
@@ -239,9 +243,23 @@ function applyFilters() {
   const projectCards = document.querySelectorAll(".project-card");
 
   projectCards.forEach((card) => {
-    const family = card.getAttribute("data-family").toLowerCase();
-    const rawTags = card.getAttribute("data-tags");
+    // Handle families from data attributes
+    const rawFamilies = card.getAttribute("data-families");
+    let cardFamilies = [];
 
+    if (rawFamilies) {
+      try {
+        // Parse as JSON array
+        cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"')).map(
+          (family) => family.toLowerCase(),
+        );
+      } catch (error) {
+        // Fallback to treating as single family string
+        cardFamilies = [rawFamilies.toLowerCase()];
+      }
+    }
+
+    const rawTags = card.getAttribute("data-tags");
     let cardTags = [];
     if (rawTags) {
       try {
@@ -255,7 +273,10 @@ function applyFilters() {
 
     // Check if the card matches the selected families
     const matchesAllFamilies =
-      selectedFamilies.length === 0 || selectedFamilies.includes(family);
+      selectedFamilies.length === 0 ||
+      selectedFamilies.some((selectedFamily) =>
+        cardFamilies.includes(selectedFamily),
+      );
 
     // Check if the card matches the selected tags
     const matchesAllTags =
