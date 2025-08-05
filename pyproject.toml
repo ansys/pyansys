@@ -34,7 +34,7 @@ dependencies = [
     "ansys-dyna-core==0.9.0",
     "ansys-dynamicreporting-core==0.10.1",
     "ansys-edb-core==0.2.1",
-    "ansys-fluent-core==0.34.0",
+    "ansys-fluent-core==0.34.1",
     "ansys-geometry-core==0.11.0",
     "ansys-hps-client==0.10.1",
     "ansys-hps-data-transfer-client==0.2.1",
