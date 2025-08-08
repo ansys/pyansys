@@ -53,6 +53,7 @@ dependencies = [
     "ansys-simai-core==0.3.3",
     "ansys-sound-core==0.2.0",
     "ansys-speos-core==0.6.0",
+    "ansys-stk==0.1.1",
     "ansys-systemcoupling-core==0.10.1",
     "ansys-turbogrid-core==0.4.6",
     "ansys-workbench-core==0.9.0",
