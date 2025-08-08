@@ -477,6 +477,19 @@ projects:
       examples: https://speos.docs.pyansys.com/version/stable/examples.html
       api: https://speos.docs.pyansys.com/version/stable/api/index.html
 
+  pystk:
+    name: PySTK
+    repository: https://github.com/ansys/pystk
+    description: Next generation Python API for STK
+    thumbnail: _static/thumbnails/pystk.png
+    families: ["Digital Mission Engineering"]
+    tags: [Flagship]
+    icon: _static/icons/dme.svg
+    documentation:
+      base: https://stk.docs.pyansys.com/version/stable
+      user_guide: https://stk.docs.pyansys.com/version/stable/user-guide/index.html
+      examples: https://stk.docs.pyansys.com/version/stable/examples.html
+      api: https://stk.docs.pyansys.com/version/stable/api.html
 
   pysystemcoupling:
     name: PySystemCoupling
@@ -723,3 +736,4 @@ projects:
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
+
