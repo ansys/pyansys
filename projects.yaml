@@ -482,7 +482,7 @@ projects:
     repository: https://github.com/ansys/pystk
     description: Next generation Python API for STK
     thumbnail: _static/thumbnails/pystk.png
-    families: ["Digital Mission Engineering"]
+    families: [Digital Mission Engineering]
     tags: [Flagship]
     icon: _static/icons/dme.svg
     documentation:
