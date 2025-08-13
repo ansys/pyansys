@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 # Check https://flit.readthedocs.io/en/latest/pyproject_toml.html for all available sections
 name = "pyansys"
-version = "2025.2.0"
+version = "2025.2.1"
 description = "Pythonic interfaces to Ansys products"
 readme = "README.rst"
 requires-python = ">=3.10,<4"
