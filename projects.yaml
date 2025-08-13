@@ -487,7 +487,7 @@ projects:
     icon: _static/icons/dme.svg
     documentation:
       base: https://stk.docs.pyansys.com/version/stable
-      user_guide: https://stk.docs.pyansys.com/version/stable/user-guide/index.html
+      user_guide: https://stk.docs.pyansys.com/version/stable/user-guide.html
       examples: https://stk.docs.pyansys.com/version/stable/examples.html
       api: https://stk.docs.pyansys.com/version/stable/api.html
 
