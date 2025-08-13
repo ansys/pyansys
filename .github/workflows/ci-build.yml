@@ -50,7 +50,7 @@ jobs:
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
-          whitelist-license-check: "attrs,referencing,jeepney" # This has MIT license but fails the check
+          whitelist-license-check: "attrs,referencing,jeepney,paramiko,ansys-dpf-post" # This has MIT license but fails the check, paramiko and ansys-dpf-post need to be removed eventually from the whitelist
 
   docs-style:
     name: Documentation Style Check
