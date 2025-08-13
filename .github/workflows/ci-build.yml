@@ -50,7 +50,7 @@ jobs:
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
-          whitelist-license-check: "attrs,referencing,jeepney" # This has MIT license but fails the check
+          whitelist-license-check: "attrs,referencing,jeepney,paramiko,ansys-dpf-post" # This has MIT license but fails the check, paramiko and ansys-dpf-post need to be removed eventually from the whitelist
 
   docs-style:
     name: Documentation Style Check
@@ -71,7 +71,7 @@ jobs:
         python-version: ['3.10', '3.11', '3.12', '3.13']
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install the latest version of uv and set the python version
         uses: astral-sh/setup-uv@v6
@@ -99,7 +99,7 @@ jobs:
         extras-version: ['fluent-all', 'mapdl-all', 'tools']
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install the latest version of uv and set the python version
         uses: astral-sh/setup-uv@v6
