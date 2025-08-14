@@ -199,17 +199,25 @@ function handleTagSelection() {
 }
 
 function applyFilters() {
-  const SelectedTagsContainer = document.getElementById("selected-product-tags-list");
-  const SelectedFamiliesContainer = document.getElementById("selected-product-families-list");
+  const SelectedTagsContainer = document.getElementById(
+    "selected-product-tags-list",
+  );
+  const SelectedFamiliesContainer = document.getElementById(
+    "selected-product-families-list",
+  );
   SelectedTagsContainer.innerHTML = "";
   SelectedFamiliesContainer.innerHTML = "";
 
   const selectedFamilies = Array.from(
-    document.querySelectorAll('#product-families-list input[type="checkbox"]:checked')
+    document.querySelectorAll(
+      '#product-families-list input[type="checkbox"]:checked',
+    ),
   ).map((checkbox) => checkbox.dataset.family);
 
   const selectedTags = Array.from(
-    document.querySelectorAll('#product-tags-list input[type="checkbox"]:checked')
+    document.querySelectorAll(
+      '#product-tags-list input[type="checkbox"]:checked',
+    ),
   ).map((checkbox) => checkbox.dataset.tag);
 
   for (const tag of selectedTags) {
@@ -255,7 +263,9 @@ function applyFilters() {
 
     const matchesAllFamilies =
       selectedFamilies.length === 0 ||
-      selectedFamilies.some((selectedFamily) => cardFamilies.includes(selectedFamily));
+      selectedFamilies.some((selectedFamily) =>
+        cardFamilies.includes(selectedFamily),
+      );
 
     const matchesAllTags =
       selectedTags.length === 0 ||
@@ -300,10 +310,16 @@ function updateIcon() {
   if (icons) {
     icons.forEach((iconImage) => {
       if (theme === "dark" && iconImage.src.includes("ansys-icon-light.svg")) {
-        iconImage.src = iconImage.src.replace("ansys-icon-light.svg", "ansys-icon-dark.svg");
+        iconImage.src = iconImage.src.replace(
+          "ansys-icon-light.svg",
+          "ansys-icon-dark.svg",
+        );
       }
       if (theme === "light" && iconImage.src.includes("ansys-icon-dark.svg")) {
-        iconImage.src = iconImage.src.replace("ansys-icon-dark.svg", "ansys-icon-light.svg");
+        iconImage.src = iconImage.src.replace(
+          "ansys-icon-dark.svg",
+          "ansys-icon-light.svg",
+        );
       }
     });
   }
