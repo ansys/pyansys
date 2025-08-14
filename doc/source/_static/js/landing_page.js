@@ -73,6 +73,7 @@ function displayFamilies(familyData) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `family-${CSS.escape(family)}`;
+    checkbox.dataset.family = family; // Store exact JSON value
     checkbox.addEventListener("change", handleFamilySelection);
 
     const familyName = document.createElement("span");
@@ -86,10 +87,8 @@ function displayFamilies(familyData) {
     if (window.location.pathname.includes("version/dev")) {
       basePath = "";
     } else if (window.location.pathname.includes("version/stable")) {
-      // If the path is versioned, default to current page
       basePath = "";
     } else {
-      // If the path is not versioned, default to dev
       basePath = "version/dev/";
     }
 
@@ -139,7 +138,7 @@ function displayTags(tagCounts) {
   tagsContainer.innerHTML = "";
 
   const sortedTags = Object.keys(tagCounts).sort();
-  const maxVisible = 5; // Show only first 5 initially
+  const maxVisible = 5;
   let showMoreClicked = false;
 
   sortedTags.forEach((tag, index) => {
@@ -147,11 +146,12 @@ function displayTags(tagCounts) {
 
     const tagRow = document.createElement("div");
     tagRow.className = "tag-row";
-    if (index >= maxVisible) tagRow.style.display = "none"; // Hide extra items initially
+    if (index >= maxVisible) tagRow.style.display = "none";
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `tag-${CSS.escape(tag)}`;
+    checkbox.dataset.tag = tag; // store exact tag name
     checkbox.addEventListener("change", handleTagSelection);
 
     const tagName = document.createElement("span");
@@ -169,7 +169,6 @@ function displayTags(tagCounts) {
     tagsContainer.appendChild(tagRow);
   });
 
-  // Handle "Show more" click
   const showMoreButton = document.querySelector(".product-tags .show-more");
   const TagRows = document.querySelectorAll(".tag-row");
   showMoreButton.addEventListener("click", () => {
@@ -200,29 +199,19 @@ function handleTagSelection() {
 }
 
 function applyFilters() {
-  const SelectedTagsContainer = document.getElementById(
-    "selected-product-tags-list",
-  );
-  const SelectedFamiliesContainer = document.getElementById(
-    "selected-product-families-list",
-  );
+  const SelectedTagsContainer = document.getElementById("selected-product-tags-list");
+  const SelectedFamiliesContainer = document.getElementById("selected-product-families-list");
   SelectedTagsContainer.innerHTML = "";
   SelectedFamiliesContainer.innerHTML = "";
+
   const selectedFamilies = Array.from(
-    document.querySelectorAll(
-      '#product-families-list input[type="checkbox"]:checked',
-    ),
-  ).map((checkbox) =>
-    checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase(),
-  );
+    document.querySelectorAll('#product-families-list input[type="checkbox"]:checked')
+  ).map((checkbox) => checkbox.dataset.family);
 
   const selectedTags = Array.from(
-    document.querySelectorAll(
-      '#product-tags-list input[type="checkbox"]:checked',
-    ),
-  ).map((checkbox) =>
-    checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase(),
-  );
+    document.querySelectorAll('#product-tags-list input[type="checkbox"]:checked')
+  ).map((checkbox) => checkbox.dataset.tag);
+
   for (const tag of selectedTags) {
     const selectedTag = document.createElement("span");
     selectedTag.className = "selected-tag";
@@ -243,19 +232,14 @@ function applyFilters() {
   const projectCards = document.querySelectorAll(".project-card");
 
   projectCards.forEach((card) => {
-    // Handle families from data attributes
     const rawFamilies = card.getAttribute("data-families");
     let cardFamilies = [];
 
     if (rawFamilies) {
       try {
-        // Parse as JSON array
-        cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"')).map(
-          (family) => family.toLowerCase(),
-        );
-      } catch (error) {
-        // Fallback to treating as single family string
-        cardFamilies = [rawFamilies.toLowerCase()];
+        cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"'));
+      } catch {
+        cardFamilies = [rawFamilies];
       }
     }
 
@@ -263,27 +247,20 @@ function applyFilters() {
     let cardTags = [];
     if (rawTags) {
       try {
-        cardTags = JSON.parse(rawTags.replace(/'/g, '"')).map((tag) =>
-          tag.toLowerCase(),
-        );
+        cardTags = JSON.parse(rawTags.replace(/'/g, '"'));
       } catch (error) {
         console.error("Error parsing data-tags:", rawTags, error);
       }
     }
 
-    // Check if the card matches the selected families
     const matchesAllFamilies =
       selectedFamilies.length === 0 ||
-      selectedFamilies.some((selectedFamily) =>
-        cardFamilies.includes(selectedFamily),
-      );
+      selectedFamilies.some((selectedFamily) => cardFamilies.includes(selectedFamily));
 
-    // Check if the card matches the selected tags
     const matchesAllTags =
       selectedTags.length === 0 ||
       selectedTags.every((tag) => cardTags.includes(tag));
 
-    // Show only if both family & tag filters match (or if no filter is applied)
     card.style.display = matchesAllFamilies && matchesAllTags ? "flex" : "none";
   });
 }
@@ -305,15 +282,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((data) => {
-      // Display families
       const familyData = collectFamilies(data);
       displayFamilies(familyData);
-
-      // Display tags
       const tagCounts = collectTags(data);
       displayTags(tagCounts);
-
-      // Render all cards
       initializeAllCards();
     })
     .catch((error) => {
@@ -328,16 +300,10 @@ function updateIcon() {
   if (icons) {
     icons.forEach((iconImage) => {
       if (theme === "dark" && iconImage.src.includes("ansys-icon-light.svg")) {
-        iconImage.src = iconImage.src.replace(
-          "ansys-icon-light.svg",
-          "ansys-icon-dark.svg",
-        );
+        iconImage.src = iconImage.src.replace("ansys-icon-light.svg", "ansys-icon-dark.svg");
       }
       if (theme === "light" && iconImage.src.includes("ansys-icon-dark.svg")) {
-        iconImage.src = iconImage.src.replace(
-          "ansys-icon-dark.svg",
-          "ansys-icon-light.svg",
-        );
+        iconImage.src = iconImage.src.replace("ansys-icon-dark.svg", "ansys-icon-light.svg");
       }
     });
   }
@@ -349,5 +315,4 @@ observer.observe(document.documentElement, {
   attributeFilter: ["data-theme"],
 });
 
-// Initial call to set the icon on page load
 updateIcon();
