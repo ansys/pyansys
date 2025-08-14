@@ -87,8 +87,10 @@ function displayFamilies(familyData) {
     if (window.location.pathname.includes("version/dev")) {
       basePath = "";
     } else if (window.location.pathname.includes("version/stable")) {
+      // If the path is versioned, default to current page
       basePath = "";
     } else {
+      // If the path is not versioned, default to dev
       basePath = "version/dev/";
     }
 
@@ -138,7 +140,7 @@ function displayTags(tagCounts) {
   tagsContainer.innerHTML = "";
 
   const sortedTags = Object.keys(tagCounts).sort();
-  const maxVisible = 5;
+  const maxVisible = 5;  // Show only first 5 initially
   let showMoreClicked = false;
 
   sortedTags.forEach((tag, index) => {
@@ -146,7 +148,7 @@ function displayTags(tagCounts) {
 
     const tagRow = document.createElement("div");
     tagRow.className = "tag-row";
-    if (index >= maxVisible) tagRow.style.display = "none";
+    if (index >= maxVisible) tagRow.style.display = "none"; // Hide extra items initially
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -261,16 +263,19 @@ function applyFilters() {
       }
     }
 
+    // Check if the card matches the selected families
     const matchesAllFamilies =
       selectedFamilies.length === 0 ||
       selectedFamilies.some((selectedFamily) =>
         cardFamilies.includes(selectedFamily),
       );
 
+    // Check if the card matches the selected tags
     const matchesAllTags =
       selectedTags.length === 0 ||
       selectedTags.every((tag) => cardTags.includes(tag));
 
+    // Show only if both family & tag filters match (or if no filter is applied)
     card.style.display = matchesAllFamilies && matchesAllTags ? "flex" : "none";
   });
 }
@@ -292,10 +297,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((data) => {
+      // Display families
       const familyData = collectFamilies(data);
       displayFamilies(familyData);
+
+      // Display tags
       const tagCounts = collectTags(data);
       displayTags(tagCounts);
+
+      // Render all cards
       initializeAllCards();
     })
     .catch((error) => {
@@ -331,4 +341,5 @@ observer.observe(document.documentElement, {
   attributeFilter: ["data-theme"],
 });
 
+// Initial call to set the icon on page load
 updateIcon();
