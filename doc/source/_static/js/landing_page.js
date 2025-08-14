@@ -73,6 +73,7 @@ function displayFamilies(familyData) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `family-${CSS.escape(family)}`;
+    checkbox.dataset.family = family; // Store exact JSON value
     checkbox.addEventListener("change", handleFamilySelection);
 
     const familyName = document.createElement("span");
@@ -152,6 +153,7 @@ function displayTags(tagCounts) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `tag-${CSS.escape(tag)}`;
+    checkbox.dataset.tag = tag; // store exact tag name
     checkbox.addEventListener("change", handleTagSelection);
 
     const tagName = document.createElement("span");
@@ -169,7 +171,6 @@ function displayTags(tagCounts) {
     tagsContainer.appendChild(tagRow);
   });
 
-  // Handle "Show more" click
   const showMoreButton = document.querySelector(".product-tags .show-more");
   const TagRows = document.querySelectorAll(".tag-row");
   showMoreButton.addEventListener("click", () => {
@@ -208,21 +209,19 @@ function applyFilters() {
   );
   SelectedTagsContainer.innerHTML = "";
   SelectedFamiliesContainer.innerHTML = "";
+
   const selectedFamilies = Array.from(
     document.querySelectorAll(
       '#product-families-list input[type="checkbox"]:checked',
     ),
-  ).map((checkbox) =>
-    checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase(),
-  );
+  ).map((checkbox) => checkbox.dataset.family);
 
   const selectedTags = Array.from(
     document.querySelectorAll(
       '#product-tags-list input[type="checkbox"]:checked',
     ),
-  ).map((checkbox) =>
-    checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase(),
-  );
+  ).map((checkbox) => checkbox.dataset.tag);
+
   for (const tag of selectedTags) {
     const selectedTag = document.createElement("span");
     selectedTag.className = "selected-tag";
@@ -243,19 +242,14 @@ function applyFilters() {
   const projectCards = document.querySelectorAll(".project-card");
 
   projectCards.forEach((card) => {
-    // Handle families from data attributes
     const rawFamilies = card.getAttribute("data-families");
     let cardFamilies = [];
 
     if (rawFamilies) {
       try {
-        // Parse as JSON array
-        cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"')).map(
-          (family) => family.toLowerCase(),
-        );
-      } catch (error) {
-        // Fallback to treating as single family string
-        cardFamilies = [rawFamilies.toLowerCase()];
+        cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"'));
+      } catch {
+        cardFamilies = [rawFamilies];
       }
     }
 
@@ -263,9 +257,7 @@ function applyFilters() {
     let cardTags = [];
     if (rawTags) {
       try {
-        cardTags = JSON.parse(rawTags.replace(/'/g, '"')).map((tag) =>
-          tag.toLowerCase(),
-        );
+        cardTags = JSON.parse(rawTags.replace(/'/g, '"'));
       } catch (error) {
         console.error("Error parsing data-tags:", rawTags, error);
       }
