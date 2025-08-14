@@ -140,7 +140,7 @@ function displayTags(tagCounts) {
   tagsContainer.innerHTML = "";
 
   const sortedTags = Object.keys(tagCounts).sort();
-  const maxVisible = 5;  // Show only first 5 initially
+  const maxVisible = 5; // Show only first 5 initially
   let showMoreClicked = false;
 
   sortedTags.forEach((tag, index) => {
