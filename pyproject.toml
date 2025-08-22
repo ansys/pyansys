@@ -36,7 +36,7 @@ dependencies = [
     "ansys-edb-core==0.2.1",
     "ansys-fluent-core==0.34.2",
     "ansys-geometry-core==0.11.1",
-    "ansys-hps-client==0.11.0",
+    "ansys-hps-client==0.11.1",
     "ansys-hps-data-transfer-client==0.3.0",
     "ansys-mapdl-core==0.70.2",
     "ansys-math-core==0.2.4",
