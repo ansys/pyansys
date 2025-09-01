@@ -1,0 +1,16 @@
+.testimonial-card {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1);
+}
