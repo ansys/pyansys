@@ -16,7 +16,7 @@
                 PyAnsys provides Pythonic access to Ansys simulation tools, making automation,
                 scripting, and integration easier for engineers and developers.
             </p>
-            <a href="#" class="btn btn-custom">Getting started</a>
+            <a href="getting-started" class="btn btn-custom">Getting started</a>
           </div>
         </div>
 
@@ -121,53 +121,3 @@
     <script src="_static/landing-page/js/testimonials.js"></script>
 
 
-.. toctree::
-    :hidden:
-    :maxdepth: 3
-
-   getting-started
-   user_guide
-   api
-   examples
-   tools/index
-
-.. jinja:: project_context
-
-    .. raw:: html
-
-        <div class="projects">
-            {% for project, metadata in projects['projects'].items() %}
-
-            {% set families = metadata.get('families', ['Other']) %}
-            {% set family_attr = families | join(',') | lower | replace(' ', '-') %}
-            {% set family_display = families[0] | lower | replace(' ', '-') %}
-            {% set tags = metadata.get('tags', []) %}
-
-            <div
-                class="project-card sd-card sd-shadow-sm sd-card-hover"
-                data-families="{{ families }}"
-                data-family="{{ family_display }}"
-                data-tags="{{ tags }}"
-                onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
-            >
-                <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
-                <div class="sd-card-body">
-                    <p class="sd-card-title sd-font-weight-bold"> {{ metadata['name'] }} </p>
-                    <p class="sd-card-body-text"> {{ metadata['description'] }} </p>
-                    <p class="sd-card-text">
-                        {% for family in families %}
-                        <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ family }}</span>
-                        {% endfor %}
-                        {% for tag in metadata['tags'] %}
-                        <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ tag }}</span>
-                        {% endfor %}
-                        </p>
-                </div>
-            </div>
-
-            {% endfor %}
-        </div>
-    Home<self>
-    getting-started
-    projects
-    blog
