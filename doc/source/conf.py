@@ -7,6 +7,7 @@ from pathlib import Path
 import subprocess
 
 from ansys_sphinx_theme import ansys_favicon, get_version_match
+from docutils import nodes
 import github
 from PIL import Image
 import requests
@@ -543,10 +544,8 @@ def setup(app: sphinx.application.Sphinx):
     app.connect("doctree-resolved", collect_blog_metadata)
 
 
-from docutils import nodes
-
-
 def collect_blog_metadata(app, doctree, docname):
+    """Collect metadata from blog posts and save to a JSON file."""
     meta = {}
     if docname.startswith("blog/"):  # Check if it's a blog post
         for node in doctree.traverse(nodes.meta):
@@ -558,7 +557,7 @@ def collect_blog_metadata(app, doctree, docname):
     # Save metadata to a JSON file in the build directory
     if hasattr(app.env, "blog_posts"):
         blog_data = app.env.blog_posts
-        with open(app.builder.outdir + "/_static/blog_metadata.json", "w") as json_file:
+        with Path(app.builder.outdir + "/_static/blog_metadata.json").open("w") as json_file:
             json.dump(blog_data, json_file, indent=4)
 
 
