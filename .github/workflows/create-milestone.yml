@@ -21,7 +21,6 @@ jobs:
           [
             "ansys/pyacp",
             "ansys/pyadditive",
-            "ansys/pyadditive-widgets",
             "ansys/pyaedt",
             "ansys/pyansys-geometry",
             "ansys/pyansys-math",
@@ -73,7 +72,7 @@ jobs:
             "ansys/pymaterials-manager",
           ]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python ${{ env.MAIN_PYTHON_VERSION }}
         uses: actions/setup-python@v5

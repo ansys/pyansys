@@ -133,7 +133,7 @@ def get_last_metapackage_release():
 jinja_globals = {
     "LAST_RELEASE": get_last_metapackage_release(),
     "VERSION": version,
-    "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12"],
+    "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12", "3.13"],
     "SUPPORTED_PLATFORMS": ["Windows", "macOS", "Linux"],
 }
 jinja_contexts = {

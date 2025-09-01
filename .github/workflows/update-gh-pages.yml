@@ -10,7 +10,7 @@ on:
     - cron: "* 3 * * 5"
 
 env:
-  MAIN_PYTHON_VERSION: '3.12'
+  MAIN_PYTHON_VERSION: '3.13'
 
 jobs:
   update-gh-pages:
@@ -28,7 +28,7 @@ jobs:
         python -m pip install requests
 
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Copy tools folder to /tmp and run sitemap script
       working-directory: /tmp
@@ -37,7 +37,7 @@ jobs:
         python ./tools/catsitemap.py
 
     - name: Checkout repository gh-pages branch
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         ref: gh-pages
 
@@ -48,6 +48,8 @@ jobs:
         sed -i 's/href="\([^:"]*\)"/href="version\/dev\/\1"/g' index.html
         sed -i 's/src="\([^:"]*\)"/src="version\/dev\/\1"/g' index.html
         sed -i 's/action="search.html"/action="version\/dev\/\search.html"/g' index.html
+        sed -i 's|<html lang="en" data-content_root="./" >|<html lang="en" data-content_root="./version/dev/" >|g' index.html
+        sed -i '/const ADVANCE_SEARCH_PATH = "search.html";/s|search.html|version/dev/search.html|' index.html
         # Update JS variables pointing to static values
         sed -i 's|const SEARCH_FILE = ".*_static/search.json";|const SEARCH_FILE = "version/dev/_static/search.json";|g' index.html
         sed -i 's|const PROJECTS_FILE = "_static/projects.json"|const PROJECTS_FILE = "version/dev/_static/projects.json"|' index.html
