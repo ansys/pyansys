@@ -1,3 +1,4 @@
+<style src="{{ pathto('_static/css/blogs_sidebar.css', 1) }}"></style>
 <div class="blog-page-sidebar" id="blog-page-sidebar">
   <h2>Filters</h2>
 
@@ -22,74 +23,6 @@
     <div class="collapsible-content"></div>
   </div>
 </div>
-
-    <!-- <div class="blog-page-sidebar-section product-families">
-        <h3>By category</h3>
-        <div id="selected-product-families-list"></div>
-        <div id="product-families-list"></div>
-        <a class="show-more">Show more</a>
-    </div>
-
-    <hr> -->
-
-    <!-- Tags -->
-    <!-- <div class="blog-page-sidebar-section product-tags">
-        <h3>By Product</h3>
-        <div id="selected-product-tags-list"></div>
-        <div id="product-tags-list"></div>
-        <a class="show-more">Show more</a>
-    </div>
-    <hr> -->
-    <style>
-.collapsible {
-  background-color: #f8f9fa;
-  cursor: pointer;
-  padding: 10px;
-  font-weight: bold;
-  border: none;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  transition: background-color 0.3s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.collapsible.active {
-  background-color: #e9ecef;
-}
-
-.arrow {
-  transition: transform 0.3s ease;
-}
-
-.collapsible.active .arrow {
-  transform: rotate(180deg);
-}
-
-.collapsible-content {
-  padding: 5px 15px;
-  display: block; /* OPEN by default */
-}
-
-.checkbox-wrapper {
-  margin-bottom: 5px;
-}
-
-.show-more-btn {
-  display: block;
-  color: #007bff;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  font-size: 0.9em;
-}
-
-
-    </style>
-
 
 <script>
 const BLOG_FILE = "{{ pathto('/_static/blog_metadata.json', 1) }}";
