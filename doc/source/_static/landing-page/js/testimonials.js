@@ -16,12 +16,13 @@ fetch("_static/landing-page/js/testimonials.json")
     const cardsPerPage = 3;
     let currentPage = 0;
     const totalPages = Math.ceil(data.length / cardsPerPage);
+    let autoSlideInterval;
 
     function renderPage(pageIndex) {
-      container.innerHTML = ""; // Clear old testimonials
+      container.innerHTML = "";
       const start = pageIndex * cardsPerPage;
       const end = start + cardsPerPage;
-      const pageData = data.slice(start, end); // <-- only 3 items
+      const pageData = data.slice(start, end);
 
       pageData.forEach((testimonial) => {
         const col = document.createElement("div");
@@ -73,13 +74,27 @@ fetch("_static/landing-page/js/testimonials.json")
         dot.addEventListener("click", () => {
           currentPage = i;
           renderPage(currentPage);
+          resetAutoSlide(); // reset timer on manual click
         });
         dotsContainer.appendChild(dot);
       }
     }
 
-    // Initial render: show only 3
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(() => {
+        currentPage = (currentPage + 1) % totalPages; // loop back
+        renderPage(currentPage);
+      }, 5000); // change every 5 seconds
+    }
+
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      startAutoSlide();
+    }
+
+    // Initial render and start slideshow
     renderPage(currentPage);
+    startAutoSlide();
   })
   .catch((error) => {
     console.error("Error loading testimonials:", error);
