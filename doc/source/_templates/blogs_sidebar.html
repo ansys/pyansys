@@ -1,24 +1,27 @@
 <div class="blog-page-sidebar" id="blog-page-sidebar">
-    <!-- Product families -->
-     <h2>Filters</h2>
+  <h2>Filters</h2>
 
-  <div id="product-filters">
-  <button class="collapsible">Products</button>
-  <div class="collapsible-content" style="display: none;"></div>
+  <div id="product-filters" class="filter-section">
+    <button class="collapsible">
+      Products <span class="arrow">&#9662;</span>
+    </button>
+    <div class="collapsible-content"></div>
+  </div>
+
+  <div id="industry-filters" class="filter-section">
+    <button class="collapsible">
+      Industries <span class="arrow">&#9662;</span>
+    </button>
+    <div class="collapsible-content"></div>
+  </div>
+
+  <div id="tag-filters" class="filter-section">
+    <button class="collapsible">
+      Tags <span class="arrow">&#9662;</span>
+    </button>
+    <div class="collapsible-content"></div>
+  </div>
 </div>
-
-<div id="industry-filters">
-  <button class="collapsible">Industries</button>
-  <div class="collapsible-content" style="display: none;"></div>
-</div>
-
-<div id="tag-filters">
-  <button class="collapsible">Tags</button>
-  <div class="collapsible-content" style="display: none;"></div>
-</div>
-
-</div>
-
 
     <!-- <div class="blog-page-sidebar-section product-families">
         <h3>By category</h3>
@@ -39,7 +42,7 @@
     <hr> -->
     <style>
 .collapsible {
-  background-color: #eee;
+  background-color: #f8f9fa;
   cursor: pointer;
   padding: 10px;
   font-weight: bold;
@@ -48,20 +51,42 @@
   text-align: left;
   outline: none;
   transition: background-color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .collapsible.active {
-  background-color: #ccc;
+  background-color: #e9ecef;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.collapsible.active .arrow {
+  transform: rotate(180deg);
 }
 
 .collapsible-content {
   padding: 5px 15px;
-  display: none;
+  display: block; /* OPEN by default */
 }
 
 .checkbox-wrapper {
   margin-bottom: 5px;
 }
+
+.show-more-btn {
+  display: block;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
 
     </style>
 
