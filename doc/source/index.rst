@@ -126,3 +126,4 @@
 
    getting-started
    projects
+   blog

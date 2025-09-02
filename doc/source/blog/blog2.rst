@@ -12,7 +12,7 @@
 Blog Title One
 ==============
 
-.. image:: /_static/blog/image1.jpg
+.. image:: /_static/thumbnails/intro.png
    :alt: Blog image
    :class: blog-banner
 
