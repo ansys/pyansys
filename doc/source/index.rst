@@ -25,7 +25,7 @@
           <div class="carousel-content">
             <h2>Discover the project that best suits your needs</h2>
             <p>The PyAnsys ecosystem contains a rich set of multi-physics Python APIs designed to empower engineers, researchers, and developers to interact seamlessly with Ansys simulation tools.</p>
-            <a href="#" class="btn btn-custom">Explore</a>
+            <a href="projects.html" class="btn btn-custom">Explore</a>
           </div>
         </div>
 
@@ -109,9 +109,8 @@
     </div>
 
     <section class="bg-light py-2">
-      <div class="container">
-        <div id="testimonials-container" class="row"></div>
-      </div>
+      <div id="testimonials-container" class="row"></div>
+      <div id="testimonials-dots" class="d-flex justify-content-center mt-3"></div>
     </section>
 
     <!-- Bootstrap JS -->
@@ -121,3 +120,9 @@
     <script src="_static/landing-page/js/testimonials.js"></script>
 
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   getting-started
+   projects
