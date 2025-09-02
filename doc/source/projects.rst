@@ -8,12 +8,15 @@ Projects
         <div class="projects">
             {% for project, metadata in projects['projects'].items() %}
 
-            {% set family = metadata.get('family', 'other') | lower | replace(' ', '-') %}
-            {% set tags = metadata.get('tags', 'other') | lower %}
+            {% set families = metadata.get('families', ['Other']) %}
+            {% set family_attr = families | join(',') | lower | replace(' ', '-') %}
+            {% set family_display = families[0] | lower | replace(' ', '-') %}
+            {% set tags = metadata.get('tags', []) %}
 
             <div
                 class="project-card sd-card sd-shadow-sm sd-card-hover"
-                data-family="{{ family }}"
+                data-families="{{ families }}"
+                data-family="{{ family_display }}"
                 data-tags="{{ tags }}"
                 onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
             >
@@ -22,7 +25,9 @@ Projects
                     <p class="sd-card-title sd-font-weight-bold"> {{ metadata['name'] }} </p>
                     <p class="sd-card-body-text"> {{ metadata['description'] }} </p>
                     <p class="sd-card-text">
-                        <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ family.capitalize() }}</span>
+                        {% for family in families %}
+                        <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ family }}</span>
+                        {% endfor %}
                         {% for tag in metadata['tags'] %}
                         <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ tag }}</span>
                         {% endfor %}
