@@ -540,14 +540,19 @@ def setup(app: sphinx.application.Sphinx):
     app.connect("builder-inited", resize_thumbnails)
     app.connect("builder-inited", fetch_release_branches_and_python_limits)
 
-    # Reverting the thumbnails - no local changes
-    app.connect("build-finished", revert_thumbnails)
     app.connect("doctree-resolved", collect_blog_metadata)
 
+    # Reverting the thumbnails - no local changes
+    app.connect("build-finished", revert_thumbnails)
+    
 
 def collect_blog_metadata(app, doctree, docname):
     """Collect metadata from blog posts and save to a JSON file."""
     meta = {}
+
+    if not app.builder.name == "html":
+        return
+
     if docname.startswith("blog/"):  # Check if it's a blog post
         for node in doctree.traverse(nodes.meta):
             meta[node["name"]] = node["content"]
@@ -561,7 +566,3 @@ def collect_blog_metadata(app, doctree, docname):
         with Path(app.builder.outdir + "/_static/blog_metadata.json").open("w") as json_file:
             json.dump(blog_data, json_file, indent=4)
 
-
-# html_additional_pages = {
-#     'blog': 'blog.html',
-# }
