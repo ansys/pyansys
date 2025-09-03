@@ -25,7 +25,7 @@
           <div class="carousel-content">
             <h2>Discover the project that best suits your needs</h2>
             <p>
-              The PyAnsys ecosystem contains a rich set of multi-physics Python APIs designed to empower engineers, researchers, 
+              The PyAnsys ecosystem contains a rich set of multi-physics Python APIs designed to empower engineers, researchers,
               and developers to interact seamlessly with Ansys simulation tools.
             </p>
             <a href="projects.html" class="btn btn-custom">Explore</a>
