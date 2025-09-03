@@ -44,9 +44,9 @@
         <!-- Fourth slide -->
         <div class="carousel-item" style="background-image: url('https://images.ansys.com/is/image/ansys/homepage-carousel-autonomous-w1920xh675v3?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: cover; background-position: center;">
           <div class="carousel-content">
-            <h2>Ocean Breeze</h2>
-            <p>Breathe in the salty air and feel the calm of the sea.</p>
-            <a href="#" class="btn btn-custom">Relax</a>
+            <h2>Contact us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to our support team.</p>
+            <a href="contact.html" class="btn btn-custom">Get in touch</a>
           </div>
         </div>
 
