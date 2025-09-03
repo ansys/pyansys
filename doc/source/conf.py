@@ -544,7 +544,7 @@ def setup(app: sphinx.application.Sphinx):
 
     # Reverting the thumbnails - no local changes
     app.connect("build-finished", revert_thumbnails)
-    
+
 
 def collect_blog_metadata(app, doctree, docname):
     """Collect metadata from blog posts and save to a JSON file."""
@@ -565,4 +565,3 @@ def collect_blog_metadata(app, doctree, docname):
         blog_data = app.env.blog_posts
         with Path(app.builder.outdir + "/_static/blog_metadata.json").open("w") as json_file:
             json.dump(blog_data, json_file, indent=4)
-
