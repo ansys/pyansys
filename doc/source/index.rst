@@ -84,7 +84,7 @@
         <!-- Card 2 -->
         <div class="col-md-4">
           <div class="card">
-            <iframe src='_static/static_viewer.html?fileURL=landing-page/vtksz/mesh.vtksz' width='100%%' height='400px' frameborder='0'></iframe>
+            <iframe src='_static/static_viewer.html?fileURL=landing-page/vtksz/mesh_2.vtksz' width='100%%' height='400px' frameborder='0'></iframe>
             <div class="card-body">
               <h5 class="card-title">Simulate and collect results</h5>
               <p class="card-text">Run high-fidelity simulations and gather comprehensive results that reflect the dynamics of your system. Leverage powerful computational tools to model complex scenarios, validate designs, and explore different configurations. These insights help you make informed decisions based on real-time simulation outputs.</p>
