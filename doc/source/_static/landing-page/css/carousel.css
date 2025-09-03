@@ -48,8 +48,7 @@
 .carousel-indicators {
   width: 100%;
   height: 4rem;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 0 65px 0;
 
   background-color: rgba(0, 0, 0, 1);
 
