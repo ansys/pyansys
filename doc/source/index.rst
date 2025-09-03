@@ -9,7 +9,7 @@
       <div class="carousel-inner">
 
         <!-- First slide -->
-        <div class="carousel-item active" style="background-image: url('https://picsum.photos/id/1025/1200/500'); background-size: contain; background-position: center;">
+        <div class="carousel-item active" style="background-image: url('https://images.ansys.com/is/image/ansys/engineers-around-ev-design?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: contain; background-position: center;">
           <div class="carousel-content">
             <h2>Automate your simulations using Python</h2>
             <p>
@@ -21,16 +21,19 @@
         </div>
 
         <!-- Second slide -->
-        <div class="carousel-item" style="background-image: url('https://picsum.photos/id/1025/1200/500'); background-size: cover; background-position: center;">
+        <div class="carousel-item" style="background-image: url('https://images.ansys.com/is/image/ansys/ansys-homepage-hero-space?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: cover; background-position: center;">
           <div class="carousel-content">
             <h2>Discover the project that best suits your needs</h2>
-            <p>The PyAnsys ecosystem contains a rich set of multi-physics Python APIs designed to empower engineers, researchers, and developers to interact seamlessly with Ansys simulation tools.</p>
+            <p>
+              The PyAnsys ecosystem contains a rich set of multi-physics Python APIs designed to empower engineers, researchers, 
+              and developers to interact seamlessly with Ansys simulation tools.
+            </p>
             <a href="projects.html" class="btn btn-custom">Explore</a>
           </div>
         </div>
 
         <!-- Third slide -->
-        <div class="carousel-item" style="background-image: url('https://picsum.photos/id/1039/1200/500'); background-size: cover; background-position: center;">
+        <div class="carousel-item" style="background-image: url('https://images.ansys.com/is/image/ansys/hero-optic-lidar-2?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: cover; background-position: center;">
           <div class="carousel-content">
             <h2>Read about the latest news of PyAnsys</h2>
             <p>Stay tuned for updates on new features, releases, community contributions, and how PyAnsys is transforming simulation workflows across industries.</p>
@@ -39,7 +42,7 @@
         </div>
 
         <!-- Fourth slide -->
-        <div class="carousel-item" style="background-image: url('https://picsum.photos/id/1043/1200/500'); background-size: cover; background-position: center;">
+        <div class="carousel-item" style="background-image: url('https://images.ansys.com/is/image/ansys/homepage-carousel-autonomous-w1920xh675v3?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: cover; background-position: center;">
           <div class="carousel-content">
             <h2>Ocean Breeze</h2>
             <p>Breathe in the salty air and feel the calm of the sea.</p>
