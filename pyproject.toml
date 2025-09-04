@@ -100,7 +100,7 @@ doc = [
     "ansys-sphinx-theme==1.6.0",
     "Jinja2 ==3.1.6",
     "Pillow==11.3.0",
-    "PyGithub==2.8.0",
+    "PyGithub==2.8.1",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.6.1",
     "sphinxcontrib-mermaid==1.0.0",
