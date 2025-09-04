@@ -77,6 +77,14 @@
     </div>
   </section>
 
+  <!-- Latest Blogs section -->
+
+  <section id="blogs">
+    <h2>PyAnsys Blogs <a href="projects.html" class="btn btn-link float-end">More blogs</a></h2>
+    <div class="blogs-landingpage" id="blogs-landingpage">
+    <script src="_static/landing-page/js/blogs.js"></script>
+  </section>
+
 
     <div class="section-divider">
       <span class="section-title">Explore PyAnsys possibilities</span>

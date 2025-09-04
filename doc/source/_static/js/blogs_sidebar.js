@@ -117,30 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // function updateProductFilter() {
-  //   const selectedTags = [...state.tags];
-  //   const selectedIndustries = [...state.industries];
-  //   const productSet = new Set();
-
-  //   for (const key in allPosts) {
-  //     const post = allPosts[key];
-  //     const postProducts = (post.products || "").split(",").map(p => p.trim());
-  //     const postIndustries = (post.industries || "").split(",").map(c => c.trim());
-  //     const matchTag = selectedTags.length === 0 || (post.tags || "").split(",").map(t => t.trim()).some(t => selectedTags.includes(t));
-  //     const matchIndustry = selectedIndustries.length === 0 || postIndustries.some(c => selectedIndustries.includes(c));
-
-  //     if (matchTag && matchIndustry) {
-  //       postProducts.filter(Boolean).forEach(p => productSet.add(p));
-  //     }
-  //   }
-
-  //   const container = document.querySelector("#product-filters .collapsible-content");
-  //   if (!container) return;
-
-  //   container.innerHTML = "";
-  //   [...productSet].sort().forEach(p => createCheckbox(p, "product-filters", "products"));
-  // }
-
   function updateIndustryFilter() {
     const selectedTags = [...state.tags];
     const selectedProducts = [...state.products];
