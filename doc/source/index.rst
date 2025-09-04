@@ -9,55 +9,20 @@
       <div class="carousel-inner">
 
         <!-- First slide -->
-        <div class="carousel-item active" style="background-image: url('https://images.ansys.com/is/image/ansys/engineers-around-ev-design?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: contain; background-position: center;">
+        <div class="carousel-background">
           <div class="carousel-content">
-            <h2>Automate your simulations using Python</h2>
+            <h2>PyAnsys</h2>
             <p>
                 PyAnsys provides Pythonic access to Ansys simulation tools, making automation,
                 scripting, and integration easier for engineers and developers.
             </p>
             <a href="getting-started.html" class="btn btn-custom">Getting started</a>
+            <a href="projects.html" class="btn btn-custom">Explore projects</a>
+            <a href="blog/index.html" class="btn btn-custom">Latest news</a>
+            <a href="contact.html" class="btn btn-custom">Contact us</a>
           </div>
         </div>
 
-        <!-- Second slide -->
-        <div class="carousel-item" style="background-image: url('https://images.ansys.com/is/image/ansys/ansys-homepage-hero-space?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: cover; background-position: center;">
-          <div class="carousel-content">
-            <h2>Discover the project that best suits your needs</h2>
-            <p>
-              The PyAnsys ecosystem contains a rich set of multi-physics Python APIs designed to empower engineers, researchers,
-              and developers to interact seamlessly with Ansys simulation tools.
-            </p>
-            <a href="projects.html" class="btn btn-custom">Explore</a>
-          </div>
-        </div>
-
-        <!-- Third slide -->
-        <div class="carousel-item" style="background-image: url('https://images.ansys.com/is/image/ansys/hero-optic-lidar-2?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: cover; background-position: center;">
-          <div class="carousel-content">
-            <h2>Read about the latest news of PyAnsys</h2>
-            <p>Stay tuned for updates on new features, releases, community contributions, and how PyAnsys is transforming simulation workflows across industries.</p>
-            <a href="#" class="btn btn-custom">Discover</a>
-          </div>
-        </div>
-
-        <!-- Fourth slide -->
-        <div class="carousel-item" style="background-image: url('https://images.ansys.com/is/image/ansys/homepage-carousel-autonomous-w1920xh675v3?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); background-size: cover; background-position: center;">
-          <div class="carousel-content">
-            <h2>Contact us</h2>
-            <p>If you have any questions or need assistance, feel free to reach out to our support team.</p>
-            <a href="contact.html" class="btn btn-custom">Get in touch</a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="discover-pyansys">Automate your simulations using Python</button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="pyansys-projects">Discover the projects</button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="City Lights">Latest news about PyAnsys</button>
-        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Ocean Breeze">Contact us</button>
       </div>
 
     </div>
