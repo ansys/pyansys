@@ -35,7 +35,7 @@
           <img class="project-thumbnail" src="_static/thumbnails/pymapdl.png" />
           <div class="sd-card-body">
               <p class="sd-card-title sd-font-weight-bold"> PyMAPDL </p>
-              <p class="sd-card-body-text"> Python interface to MAPDL (Mechanical APDL) </p>    
+              <p class="sd-card-body-text"> Python interface to MAPDL (Mechanical APDL) </p>
               <p class="sd-card-text">
                   <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">FEA</span>
                   <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">MAPDL</span>
@@ -48,7 +48,7 @@
           <img class="project-thumbnail" src="_static/thumbnails/pyfluent.png" />
           <div class="sd-card-body">
               <p class="sd-card-title sd-font-weight-bold"> PyFluent </p>
-              <p class="sd-card-body-text"> Python interface to Ansys Fluent </p>    
+              <p class="sd-card-body-text"> Python interface to Ansys Fluent </p>
               <p class="sd-card-text">
                   <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">CFD</span>
                   <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluent</span>
