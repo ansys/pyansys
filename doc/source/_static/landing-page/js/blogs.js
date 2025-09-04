@@ -24,7 +24,7 @@ fetch("_static/blog_metadata.json")
           ? description.slice(0, 100) + "..."
           : description;
       card.innerHTML = `
-        <img class="project-thumbnail" src="_static/${blog.image}" />
+        <img class="project-lp-thumbnail" src="_static/${blog.image}" />
         <div class="sd-card-body">
             <p class="sd-card-title sd-font-weight-bold"> ${blog.title} </p>
             <p class="sd-card-body-text"> ${shortDescription} </b

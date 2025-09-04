@@ -67,14 +67,6 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.projects-landingpage,
-.blogs-landingpage {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-}
-
 .project-card {
   display: flex;
   flex-direction: column;

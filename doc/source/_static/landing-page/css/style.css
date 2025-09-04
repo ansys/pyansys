@@ -14,3 +14,20 @@
 .carousel-control-next {
   filter: invert(1);
 }
+
+.projects-landingpage,
+.blogs-landingpage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.project-lp-thumbnail {
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.project-card .sd-card {
+  padding: 24px;
+}
