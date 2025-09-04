@@ -109,10 +109,8 @@
 
         <!-- Right column (dynamic testimonials) -->
         <div class="col-md-6">
-          <div class="bg-light p-3 rounded">
-            <div id="testimonials-container" class="row"></div>
+            <div id="testimonials-container" class="slider-viewport"></div>
             <div id="testimonials-dots" class="d-flex justify-content-center mt-3"></div>
-          </div>
         </div>
 
       </div>
