@@ -86,26 +86,44 @@
   </section>
 
 
-    <div class="section-divider">
-      <span class="section-title">Explore PyAnsys possibilities</span>
+  <section id="support" class="my-5">
+    <div class="container">
+      <h2 class="mb-4">How we support our users all over the world</h2>
+      <div class="row">
+        
+        <!-- Left column (static content) -->
+        <div class="col-md-6">
+          <div class="support-step">
+            <h5>Pre-simulation</h5>
+            <p>Define your simulation setup by specifying the geometry in a flexible, parametric format.</p>
+          </div>
+          <div class="support-step">
+            <h5>During simulation</h5>
+            <p>Run high-fidelity simulations and gather comprehensive results that reflect the dynamics of your system.</p>
+          </div>
+          <div class="support-step">
+            <h5>Post simulation</h5>
+            <p>Extract, visualize, and interpret key data from your simulation to drive the next phase of your project.</p>
+          </div>
+        </div>
+        
+        <!-- Right column (dynamic testimonials) -->
+        <div class="col-md-6">
+          <div class="bg-light p-3 rounded">
+            <div id="testimonials-container" class="row"></div>
+            <div id="testimonials-dots" class="d-flex justify-content-center mt-3"></div>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-
-    <!-- Testimonials Section -->
-    <div class="section-divider">
-      <span class="section-title">Testimonials</span>
-    </div>
-
-    <section class="bg-light py-2">
-      <div id="testimonials-container" class="row"></div>
-      <div id="testimonials-dots" class="d-flex justify-content-center mt-3"></div>
-    </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
     <script src="_static/landing-page/js/testimonials.js"></script>
+  </section>
 
 
 .. toctree::

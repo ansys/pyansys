@@ -28,30 +28,27 @@ fetch("_static/landing-page/js/testimonials.json")
         const col = document.createElement("div");
         col.className = "col-md-4 mb-4";
 
-        const author = document.createElement("h2");
-        author.className = "text-left";
-        author.textContent = testimonial.author;
-
-        const content = document.createElement("p");
-        content.className = "mb-0";
-        content.textContent = testimonial.content;
-
-        const logo = document.createElement("img");
-        logo.src = testimonial.logo;
-        logo.className = "rounded-circle mt-auto align-self-end";
-        logo.style.height = "80px";
-        logo.style.width = "auto";
-        logo.alt = testimonial.author || "Logo";
-
-        const topDiv = document.createElement("div");
-        topDiv.appendChild(author);
-        topDiv.appendChild(content);
-
+        // Card container
         const testimonialDiv = document.createElement("div");
         testimonialDiv.className =
-          "testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column";
-        testimonialDiv.appendChild(topDiv);
-        testimonialDiv.appendChild(logo);
+          "testimonial p-4 bg-white rounded shadow-sm h-100 d-flex flex-column text-center";
+
+        // Logo
+        if (testimonial.logo) {
+          const logo = document.createElement("img");
+          logo.src = testimonial.logo;
+          logo.alt = testimonial.author || "Logo";
+          logo.className = "rounded-circle mx-auto mb-3";
+          testimonialDiv.appendChild(logo);
+        }
+
+        // Content
+        const content = document.createElement("p");
+        content.className = "mb-3 text-muted";
+        content.textContent = testimonial.content;
+        testimonialDiv.appendChild(content);
+
+        // Author (optional)
 
         col.appendChild(testimonialDiv);
         container.appendChild(col);
@@ -67,14 +64,14 @@ fetch("_static/landing-page/js/testimonials.json")
         dot.className =
           "dot mx-1 rounded-circle" +
           (i === activeIndex ? " bg-dark" : " bg-secondary");
-        dot.style.width = "4px";
-        dot.style.height = "4px";
+        dot.style.width = "8px";
+        dot.style.height = "8px";
         dot.style.display = "inline-block";
         dot.style.cursor = "pointer";
         dot.addEventListener("click", () => {
           currentPage = i;
           renderPage(currentPage);
-          resetAutoSlide(); // reset timer on manual click
+          resetAutoSlide();
         });
         dotsContainer.appendChild(dot);
       }
@@ -82,9 +79,9 @@ fetch("_static/landing-page/js/testimonials.json")
 
     function startAutoSlide() {
       autoSlideInterval = setInterval(() => {
-        currentPage = (currentPage + 1) % totalPages; // loop back
+        currentPage = (currentPage + 1) % totalPages;
         renderPage(currentPage);
-      }, 5000); // change every 5 seconds
+      }, 5000);
     }
 
     function resetAutoSlide() {

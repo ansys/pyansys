@@ -5,3 +5,17 @@
 .testimonial:hover {
   transform: translateY(-5px);
 }
+
+#support {
+background-color: #f9f9f9;
+padding: 2rem 0;
+}
+
+.support-step {
+  margin-bottom: 2rem;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
