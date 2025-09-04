@@ -4,11 +4,7 @@
 
     <!-- Carousel: slides + indicators -->
     <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-
-      <!-- Slides -->
       <div class="carousel-inner">
-
-        <!-- First slide -->
         <div class="carousel-background">
           <div class="carousel-content">
             <h2>PyAnsys</h2>
@@ -22,9 +18,55 @@
             <a href="contact.html" class="btn btn-custom">Contact us</a>
           </div>
         </div>
-
       </div>
+    </div>
 
+    <!-- Pyansys libraries section -->
+
+    <div class="section-divider">
+      <span class="section-title">PyAnsys libraries</span>
+      <!-- additional libraries link on right -->
+      <a href="projects.html" class="btn btn-link float-end">See all libraries</a>
+    </div>
+
+      <!-- 3 library cards -->
+    <div class="projects">
+      <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
+          <img class="project-thumbnail" src="_static/thumbnails/pymapdl.png" />
+          <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold"> PyMAPDL </p>
+              <p class="sd-card-body-text"> Python interface to MAPDL (Mechanical APDL) </p>    
+              <p class="sd-card-text">
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">FEA</span>
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">MAPDL</span>
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
+              </p>
+          </div>
+        </div>
+
+      <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
+          <img class="project-thumbnail" src="_static/thumbnails/pyfluent.png" />
+          <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold"> PyFluent </p>
+              <p class="sd-card-body-text"> Python interface to Ansys Fluent </p>    
+              <p class="sd-card-text">
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">CFD</span>
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluent</span>
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
+              </p>
+          </div>
+        </div>
+
+        <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+                <p class="sd-card-title sd-font-weight-bold"> PyAnsys </p>
+                <p class="sd-card-body-text"> Python interface to Ansys </p>
+                <p class="sd-card-text">
+                    <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="section-divider">
