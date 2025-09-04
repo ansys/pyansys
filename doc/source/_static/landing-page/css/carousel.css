@@ -88,12 +88,19 @@
   margin-left: 2rem;
 }
 
-
 @keyframes slideBackground {
-  0%   { background-image: url('https://images.ansys.com/is/image/ansys/engineers-around-ev-design?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); }
-  33%  { background-image: url('https://images.ansys.com/is/image/ansys/ansys-homepage-hero-space?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); }
-  66%  { background-image: url('https://images.ansys.com/is/image/ansys/homepage-carousel-autonomous-w1920xh675v3?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); }
-  100% { background-image: url('https://images.ansys.com/is/image/ansys/hero-optic-lidar-2?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0'); }
+  0% {
+    background-image: url("https://images.ansys.com/is/image/ansys/engineers-around-ev-design?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  33% {
+    background-image: url("https://images.ansys.com/is/image/ansys/ansys-homepage-hero-space?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  66% {
+    background-image: url("https://images.ansys.com/is/image/ansys/homepage-carousel-autonomous-w1920xh675v3?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  100% {
+    background-image: url("https://images.ansys.com/is/image/ansys/hero-optic-lidar-2?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
 }
 .carousel-background {
   height: 240px;
