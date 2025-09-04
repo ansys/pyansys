@@ -4,7 +4,6 @@
 
     <!-- Carousel: slides + indicators -->
     <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
         <div class="carousel-background">
           <div class="carousel-content">
             <h2>PyAnsys</h2>
@@ -18,7 +17,6 @@
             <a href="contact.html" class="btn btn-custom">Contact us</a>
           </div>
         </div>
-      </div>
     </div>
 
     <!-- Pyansys libraries section -->
