@@ -23,7 +23,7 @@
 
   <section id="libraries">
     <h2>PyAnsys libraries <a href="projects.html" class="btn btn-link float-end">More libraries</a></h2>
-    <div class="projects">
+    <div class="projects-landingpage">
 
       <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
         <img class="project-thumbnail" src="_static/thumbnails/pymapdl.png" />
@@ -57,6 +57,19 @@
             <p class="sd-card-title sd-font-weight-bold"> PyAnsys </p>
             <p class="sd-card-body-text"> Python interface to Ansys </p>
             <p class="sd-card-text">
+                <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
+            </p>
+        </div>
+      </div>
+
+      <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
+        <img class="project-thumbnail" src="_static/thumbnails/pydpf-core.png" />
+        <div class="sd-card-body">
+            <p class="sd-card-title sd-font-weight-bold"> PyDPF-Core </p>
+            <p class="sd-card-body-text"> Python interface to Ansys DPF (Data Processing Framework) </p>
+            <p class="sd-card-text">
+                <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Post-processing</span>
+                <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">DPF</span>
                 <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
             </p>
         </div>

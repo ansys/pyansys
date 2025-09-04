@@ -549,10 +549,7 @@ def setup(app: sphinx.application.Sphinx):
 def collect_blog_metadata(app, doctree, docname):
     """Collect metadata from blog posts and save to a JSON file."""
     meta = {}
-
-    if not app.builder.name == "html":
-        return
-
+    static_blogs_metadata = Path(app.builder.outdir) / "_static" / "blog_metadata.json"
     if docname.startswith("blog/"):  # Check if it's a blog post
         for node in doctree.traverse(nodes.meta):
             meta[node["name"]] = node["content"]
@@ -563,5 +560,8 @@ def collect_blog_metadata(app, doctree, docname):
     # Save metadata to a JSON file in the build directory
     if hasattr(app.env, "blog_posts"):
         blog_data = app.env.blog_posts
-        with Path(app.builder.outdir + "/_static/blog_metadata.json").open("w") as json_file:
+        if not static_blogs_metadata.parent.exists():
+            return  # Directory does not exist, skip saving
+
+        with static_blogs_metadata.open("w", encoding="utf-8") as json_file:
             json.dump(blog_data, json_file, indent=4)
