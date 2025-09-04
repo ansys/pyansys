@@ -90,7 +90,7 @@
     <div class="container">
       <h2 class="mb-4">How we support our users all over the world</h2>
       <div class="row">
-        
+
         <!-- Left column (static content) -->
         <div class="col-md-6">
           <div class="support-step">
@@ -106,7 +106,7 @@
             <p>Extract, visualize, and interpret key data from your simulation to drive the next phase of your project.</p>
           </div>
         </div>
-        
+
         <!-- Right column (dynamic testimonials) -->
         <div class="col-md-6">
           <div class="bg-light p-3 rounded">
