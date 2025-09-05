@@ -32,7 +32,7 @@
 }
 
 .carousel-content .btn-custom {
-  background-color: #ffb71b;
+  background-color: white;
   color: black;
   border: none;
   border-radius: 0.25rem;
@@ -40,6 +40,11 @@
   font-weight: bold;
   padding: 0.75rem 1.25rem;
   text-transform: uppercase;
+}
+
+.carousel-content .btn-custom:hover {
+  background-color: #939393;
+  color: black;
 }
 
 @keyframes slideBackground {

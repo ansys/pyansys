@@ -31,3 +31,18 @@
 .project-card .sd-card {
   padding: 24px;
 }
+
+.bd-footer {
+    border-top: 10px solid #ffc107;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.footer-left h4, .footer-right h4 {
+    color: white;
+}
+
+.carousel {
+  background-color: #000 !important;
+}
