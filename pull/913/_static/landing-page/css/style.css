@@ -1,0 +1,49 @@
+.testimonial-card {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1);
+}
+
+.projects-landingpage,
+.blogs-landingpage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.project-lp-thumbnail {
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.project-card .sd-card {
+  padding: 24px;
+}
+
+.bd-footer {
+  border-top: 10px solid #ffc107;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+
+.footer-left h4,
+.footer-right h4 {
+  color: white;
+}
+
+.carousel {
+  background-color: #000 !important;
+}
