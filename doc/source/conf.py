@@ -7,6 +7,7 @@ from pathlib import Path
 import subprocess
 
 from ansys_sphinx_theme import ansys_favicon, get_version_match
+from docutils import nodes
 import github
 from PIL import Image
 import requests
@@ -71,7 +72,9 @@ html_short_title = html_title = "PyAnsys"
 html_favicon = ansys_favicon
 
 html_sidebars = {
-    "index": ["landing_page_sidebar.html"],
+    "index": [],
+    "projects": ["projects_sidebar.html"],
+    "blog": ["blogs_sidebar.html"],
 }
 
 extensions = [
@@ -84,7 +87,15 @@ extensions = [
 # Static files
 templates_path = ["_templates"]
 html_static_path = ["_static"]
-html_css_files = ["css/landing_page.css"]
+html_css_files = [
+    "css/style.css",
+    "css/projects_sidebar.css",
+    "css/blogs_sidebar.css",
+    # Landing page specific CSS files
+    "landing-page/css/carousel.css",
+    "landing-page/css/style.css",
+    "landing-page/css/testimonials.css",
+]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
@@ -159,6 +170,7 @@ html_context = {
             "needs_datatables": True,
         },
     },
+    "default_mode": "light",
 }
 
 html_theme_options = {
@@ -168,17 +180,13 @@ html_theme_options = {
     "show_breadcrumbs": True,
     "collapse_navigation": True,
     "use_edit_page_button": True,
-    "icon_links": [
-        {
-            "name": "Support",
-            "url": "https://github.com/ansys/pyansys/discussions",
-            "icon": "fa fa-comment fa-fw",
-        },
-        {
-            "name": "Contribute",
-            "url": "https://dev.docs.pyansys.com/how-to/contributing.html",
-            "icon": "fa fa-wrench",
-        },
+    "secondary_sidebar_items": {
+        "**": ["page-toc", "sourcelink"],
+        "index": ["page-toc"],
+    },
+    "navbar_end": [
+        "navbar-icon-links",
+        "version-switcher",
     ],
     "switcher": {
         "json_url": f"https://{cname}/versions.json",
@@ -190,6 +198,8 @@ html_theme_options = {
         "min_chars_for_search": 2,
         "ignoreLocation": True,
     },
+    "footer_start": ["footer_left.html"],
+    "footer_end": ["footer_right.html"],
 }
 
 # Check all references work fine
@@ -532,5 +542,28 @@ def setup(app: sphinx.application.Sphinx):
     app.connect("builder-inited", resize_thumbnails)
     app.connect("builder-inited", fetch_release_branches_and_python_limits)
 
+    app.connect("doctree-resolved", collect_blog_metadata)
+
     # Reverting the thumbnails - no local changes
     app.connect("build-finished", revert_thumbnails)
+
+
+def collect_blog_metadata(app, doctree, docname):
+    """Collect metadata from blog posts and save to a JSON file."""
+    meta = {}
+    static_blogs_metadata = Path(app.builder.outdir) / "_static" / "blog_metadata.json"
+    if docname.startswith("blog/"):  # Check if it's a blog post
+        for node in doctree.traverse(nodes.meta):
+            meta[node["name"]] = node["content"]
+        if not hasattr(app.env, "blog_posts"):
+            app.env.blog_posts = {}
+        app.env.blog_posts[docname] = meta
+
+    # Save metadata to a JSON file in the build directory
+    if hasattr(app.env, "blog_posts"):
+        blog_data = app.env.blog_posts
+        if not static_blogs_metadata.parent.exists():
+            return  # Directory does not exist, skip saving
+
+        with static_blogs_metadata.open("w", encoding="utf-8") as json_file:
+            json.dump(blog_data, json_file, indent=4)

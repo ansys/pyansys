@@ -1,0 +1,105 @@
+.carousel-item {
+  height: 30rem;
+  color: white;
+  border: thin solid black;
+}
+
+.carousel-item::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+}
+
+.carousel-content {
+  padding: 12px;
+  margin-left: 12px;
+}
+
+.carousel-content h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.carousel-content p {
+  margin: 2rem 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.carousel-content .btn-custom {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+}
+
+.carousel-content .btn-custom:hover {
+  background-color: #939393;
+  color: black;
+}
+
+@keyframes slideBackground {
+  0% {
+    background-image: url("https://images.ansys.com/is/image/ansys/engineers-around-ev-design?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  33% {
+    background-image: url("https://images.ansys.com/is/image/ansys/ansys-homepage-hero-space?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  66% {
+    background-image: url("https://images.ansys.com/is/image/ansys/homepage-carousel-autonomous-w1920xh675v3?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  100% {
+    background-image: url("https://images.ansys.com/is/image/ansys/hero-optic-lidar-2?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+}
+.carousel-background {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  animation: slideBackground 15s infinite;
+}
+
+/* CSS */
+.simulation-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 16px;
+  width: 500px;
+}
+
+.step .icon {
+  background: #f3f0fa; /* light background for the icon */
+  color: #6a1b9a; /* purple icon color */
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.step .text h4 {
+  margin: 0 16px 16px 0;
+  font-weight: bold;
+}
