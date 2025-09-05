@@ -33,14 +33,15 @@
 }
 
 .bd-footer {
-    border-top: 10px solid #ffc107;
-    width: 100%;
-    color: white;
-    background-color: black;
+  border-top: 10px solid #ffc107;
+  width: 100%;
+  color: white;
+  background-color: black;
 }
 
-.footer-left h4, .footer-right h4 {
-    color: white;
+.footer-left h4,
+.footer-right h4 {
+  color: white;
 }
 
 .carousel {
