@@ -93,18 +93,35 @@
 
         <!-- Left column (static content) -->
         <div class="col-md-6">
-          <div class="support-step">
-            <h5>Pre-simulation</h5>
-            <p>Define your simulation setup by specifying the geometry in a flexible, parametric format.</p>
-          </div>
-          <div class="support-step">
-            <h5>During simulation</h5>
-            <p>Run high-fidelity simulations and gather comprehensive results that reflect the dynamics of your system.</p>
-          </div>
-          <div class="support-step">
-            <h5>Post simulation</h5>
-            <p>Extract, visualize, and interpret key data from your simulation to drive the next phase of your project.</p>
-          </div>
+                  <div class="step">
+    <div class="icon">
+      <i class="fas fa-power-off"></i>
+    </div>
+    <div class="text">
+      <h4>Pre-simulation</h4>
+      <p>Define your simulation setup by specifying the geometry in a flexible, parametric format.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="icon">
+      <i class="fas fa-rocket"></i>
+    </div>
+    <div class="text">
+      <h4>During simulation</h4>
+      <p>Run high-fidelity simulations and gather comprehensive results that reflect the dynamics of your system.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="icon">
+      <i class="fas fa-chart-bar"></i>
+    </div>
+    <div class="text">
+      <h4 >Post simulation</h3>
+      <p>Extract, visualize, and interpret key data from your simulation to drive the next phase of your project.</p>
+    </div>
+  </div>
         </div>
 
         <!-- Right column (dynamic testimonials) -->
@@ -122,6 +139,7 @@
     <!-- Custom JS -->
     <script src="_static/landing-page/js/testimonials.js"></script>
   </section>
+
 
 
 
