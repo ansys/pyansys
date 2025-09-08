@@ -33,10 +33,13 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  margin: 0 4px;
   background: #adb5bd;
   border: none;
-  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  min-width: 0;
+  min-height: 0;
+  flex: 0 0 auto;
 }
 #testimonials-dots .dot.active {
   background: #ffb71b;
