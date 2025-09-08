@@ -44,6 +44,45 @@
   color: white;
 }
 
+.bd-footer a {
+  color: white;
+}
+
 .carousel {
   background-color: #000 !important;
+}
+
+/** Footer styles **/
+.external-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.external-link .link-text {
+  display: inline-block;
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.external-link i {
+  font-size: 0.85em;
+}
+
+.footer-right .social-icons a {
+  margin-right: 12px; /* space between icons */
+  color: #fff; /* default icon color */
+  text-decoration: none;
+}
+
+.footer-right .social-icons i {
+  font-size: 24px; /* 👈 control size here */
+  transition: color 0.3s; /* smooth hover effect */
+}
+
+.footer-right .social-icons a:hover i {
+  color: #ffb71b; /* highlight color on hover */
 }
