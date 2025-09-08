@@ -12,7 +12,6 @@
           PyAnsys provides Pythonic access to Ansys simulation tools, making automation,
           scripting, and integration easier for engineers and developers.
         </p>
-        <a href="getting-started.html" class="btn btn-custom">Getting started</a>
         <a href="projects.html" class="btn btn-custom">Explore projects</a>
         <a href="blog/index.html" class="btn btn-custom">Latest news</a>
         <a href="contact.html" class="btn btn-custom">Contact us</a>

@@ -73,16 +73,18 @@
 }
 
 .footer-right .social-icons a {
-  margin-right: 12px; /* space between icons */
-  color: #fff; /* default icon color */
+  color: #fff;
   text-decoration: none;
 }
 
-.footer-right .social-icons i {
-  font-size: 24px; /* 👈 control size here */
-  transition: color 0.3s; /* smooth hover effect */
+.footer-right .social-icons a:hover i {
+  color: #ffb71b;
 }
 
-.footer-right .social-icons a:hover i {
-  color: #ffb71b; /* highlight color on hover */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+  width: 100%;
 }
