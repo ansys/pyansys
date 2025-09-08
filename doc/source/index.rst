@@ -1,4 +1,5 @@
 
+
 .. title:: PyAnsys
 
 .. raw:: html
@@ -13,14 +14,13 @@
           scripting, and integration easier for engineers and developers.
         </p>
         <a href="projects.html" class="btn btn-custom">Explore projects</a>
-        <a href="blog/index.html" class="btn btn-custom">Latest news</a>
+        <a href="blog.html" class="btn btn-custom">Latest news</a>
         <a href="contact.html" class="btn btn-custom">Contact us</a>
       </div>
     </div>
   </div>
 
   <!-- PyAnsys libraries section -->
-
   <section id="libraries">
     <h2>PyAnsys libraries
       <a href="projects.html" class="btn btn-link float-end">More libraries</a>
@@ -76,7 +76,6 @@
   </section>
 
   <!-- Latest Blogs section -->
-
   <section id="blogs">
     <h2>PyAnsys Blogs
       <a href="projects.html" class="btn btn-link float-end">More blogs</a>
@@ -86,44 +85,42 @@
   </section>
 
   <section id="support" class="my-5">
-    <div class="container">
-      <h2 class="mb-4">How we support our users all over the world</h2>
-      <div class="row">
-        <!-- Left column (static content) -->
-        <div class="col-md-6">
-          <div class="step">
-            <div class="icon">
-              <i class="fas fa-power-off"></i>
-            </div>
-            <div class="text">
-              <h4>Pre-simulation</h4>
-              <p>Define your simulation setup by specifying the geometry in a flexible, parametric format.</p>
-            </div>
+    <h2 class="mb-4">How we support our users all over the world</h2>
+    <div class="row">
+      <!-- Left column (static content) -->
+      <div class="col-md-6">
+        <div class="step">
+          <div class="icon">
+            <i class="fas fa-power-off"></i>
           </div>
-          <div class="step">
-            <div class="icon">
-              <i class="fas fa-rocket"></i>
-            </div>
-            <div class="text">
-              <h4>During simulation</h4>
-              <p>Run high-fidelity simulations and gather comprehensive results that reflect the dynamics of your system.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="icon">
-              <i class="fas fa-chart-bar"></i>
-            </div>
-            <div class="text">
-              <h4>Post simulation</h4>
-              <p>Extract, visualize, and interpret key data from your simulation to drive the next phase of your project.</p>
-            </div>
+          <div class="text">
+            <h4>Pre-simulation</h4>
+            <p>Define your simulation setup by specifying the geometry in a flexible, parametric format.</p>
           </div>
         </div>
-        <!-- Right column (dynamic testimonials) -->
-        <div class="col-md-6">
-          <div id="testimonials-container" class="slider-viewport"></div>
-          <div id="testimonials-dots" class="d-flex justify-content-center mt-3"></div>
+        <div class="step">
+          <div class="icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="text">
+            <h4>During simulation</h4>
+            <p>Run high-fidelity simulations and gather comprehensive results that reflect the dynamics of your system.</p>
+          </div>
         </div>
+        <div class="step">
+          <div class="icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <div class="text">
+            <h4>Post simulation</h4>
+            <p>Extract, visualize, and interpret key data from your simulation to drive the next phase of your project.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Right column (dynamic testimonials) -->
+      <div class="col-md-6">
+        <div id="testimonials-container" class="slider-viewport"></div>
+        <div id="testimonials-dots" class="d-flex justify-content-center mt-3"></div>
       </div>
     </div>
     <!-- Bootstrap JS -->
