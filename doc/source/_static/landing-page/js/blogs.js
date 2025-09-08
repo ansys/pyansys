@@ -27,7 +27,7 @@ fetch("_static/blog_metadata.json")
         <img class="project-lp-thumbnail" src="_static/${blog.image}" />
         <div class="sd-card-body">
             <p class="sd-card-title sd-font-weight-bold"> ${blog.title} </p>
-            <p class="sd-card-body-text"> ${shortDescription} </b
+            <p class="sd-card-body-text"> ${shortDescription} </br></p>
                 <i class="fa fa-user"></i> ${blog.author || "PyAnsys Team"}<br/>
               <i class="fa fa-calendar"></i> ${blog.date || "Unknown Date"}<br/>
             </p>

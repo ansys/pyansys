@@ -5,7 +5,7 @@
    :tags: mapdl, python
    :industries: Aerospace, Automotive
    :products: PyMAPDL
-   :image: thumbnails/5gwizard.png
+   :image: thumbnails/pyensight.png
    :title: Blog Title One
    :description: This is a sample blog post description.
 
