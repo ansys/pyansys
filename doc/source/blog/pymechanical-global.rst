@@ -6,11 +6,11 @@
    :industries: Mechanical, CAD
    :products: PyMechanical
    :image: thumbnails/pymechanical.png
-   :title: Globals parameter in the embedded app
-   :description: what's new with globals parameter in the embedded app
+   :title: Global parameter in the embedded app
+   :description: what's new with global parameter in the embedded app
 
-Globals parameter in the embedded app
-======================================
+Global parameter in the embedded app
+=====================================
 
 The ``globals`` parameter of the `App <api/ansys/mechanical/core/embedding/app/App.html>`_
 class is used to update the global variables. This parameter is optional and interchangeable
@@ -37,7 +37,7 @@ Using the ``update_globals`` method:
     app = App()
     app.update_globals(globals())
 
-Using the ``update_globals`` method excluding enums from global variables:
+Using the ``update_globals`` method excluding ``enums`` from global variables:
 
 .. code:: python
 
