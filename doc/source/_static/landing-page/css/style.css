@@ -88,3 +88,27 @@
   justify-content: flex-end;
   width: 100%;
 }
+
+/**
+* Swiper styles for project carousel
+*/
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper-slide {
+  display: flex;
+}
+.swiper-slide .project-card {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.swiper-pagination {
+  position: initial !important;
+}
