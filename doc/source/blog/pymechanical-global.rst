@@ -9,6 +9,8 @@
    :title: Global parameter in the embedded app
    :description: what's new with global parameter in the embedded app
 
+.. vale off
+
 Global parameter in the embedded app
 =====================================
 
@@ -46,3 +48,5 @@ Using the ``update_globals`` method excluding ``enums`` from global variables:
     # Initialize the app and update globals
     app = App()
     app.update_globals(globals(), False)
+
+.. vale on
