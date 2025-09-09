@@ -7,7 +7,7 @@
    :products: PyMechanical
    :image: thumbnails/pymechanical.png
    :title: Globals parameter in the embedded app
-   :description: whats new with globals parameter in the embedded app
+   :description: what's new with globals parameter in the embedded app
 
 Globals parameter in the embedded app
 ======================================

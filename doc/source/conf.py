@@ -557,7 +557,7 @@ def collect_blog_metadata(app, doctree, docname):
         if not hasattr(app.env, "blog_posts"):
             app.env.blog_posts = {}
         app.env.blog_posts[f"{docname}.html"] = meta
-        
+
     # from the date, sort the blog posts in descending order
     if hasattr(app.env, "blog_posts"):
         app.env.blog_posts = dict(
