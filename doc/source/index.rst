@@ -71,8 +71,8 @@
 
     <!-- ===================== Blogs Section ===================== -->
     <section id="blogs">
-      <h2>PyAnsys Blogs
-        <a href="projects.html" class="btn btn-link float-end">More blogs</a>
+      <h2>Recent Blogs
+        <a href="blog.html" class="btn btn-link float-end">More blogs</a>
       </h2>
       <div class="blogs-landingpage" id="blogs-landingpage"></div>
       <script src="_static/landing-page/js/blogs.js"></script>

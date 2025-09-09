@@ -88,7 +88,6 @@ extensions = [
 templates_path = ["_templates"]
 html_static_path = ["_static"]
 html_css_files = [
-    "css/style.css",
     "css/projects_sidebar.css",
     "css/blogs_sidebar.css",
     # Landing page specific CSS files
