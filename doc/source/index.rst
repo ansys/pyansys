@@ -20,60 +20,84 @@
     </div>
   </div>
 
-  <!-- PyAnsys libraries section -->
-  <section id="libraries">
-    <h2>PyAnsys libraries
-      <a href="projects.html" class="btn btn-link float-end">More libraries</a>
-    </h2>
-    <div class="projects-landingpage">
-      <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
-        <img class="project-lp-thumbnail" src="_static/thumbnails/pymapdl.png" />
-        <div class="sd-card-body">
-          <p class="sd-card-title sd-font-weight-bold">PyMAPDL</p>
-          <p class="sd-card-body-text">Python interface to MAPDL (Mechanical APDL)</p>
-          <p class="sd-card-text">
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">FEA</span>
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">MAPDL</span>
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
-          </p>
+
+.. jinja:: project_context
+
+  .. raw:: html
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- PyAnsys libraries section -->
+    <!-- PyAnsys libraries section -->
+    <section id="libraries">
+      <h2>PyAnsys libraries
+        <a href="projects.html" class="btn btn-link float-end">More libraries</a>
+      </h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {% for project, metadata in projects['projects'].items() %}
+            {% set families = metadata.get('families', ['Other']) %}
+            {% set family_display = families[0] | lower | replace(' ', '-') %}
+            {% set tags = metadata.get('tags', []) %}
+
+            <div class="swiper-slide">
+              <div
+                  class="project-card sd-card sd-shadow-sm sd-card-hover"
+                  data-families="{{ families }}"
+                  data-family="{{ family_display }}"
+                  data-tags="{{ tags }}"
+                  onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
+              >
+                  <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
+                  <div class="sd-card-body">
+                      <p class="sd-card-title sd-font-weight-bold"> {{ metadata['name'] }} </p>
+                      <p class="sd-card-body-text"> {{ metadata['description'] }} </p>
+                      <p class="sd-card-text">
+                          {% for family in families %}
+                          <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ family }}</span>
+                          {% endfor %}
+                          {% for tag in metadata['tags'] %}
+                          <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ tag }}</span>
+                          {% endfor %}
+                      </p>
+                  </div>
+              </div>
+            </div>
+          {% endfor %}
         </div>
+
+        <!-- Pagination dots -->
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
-        <img class="project-lp-thumbnail" src="_static/thumbnails/pyfluent.png" />
-        <div class="sd-card-body">
-          <p class="sd-card-title sd-font-weight-bold">PyFluent</p>
-          <p class="sd-card-body-text">Python interface to Ansys Fluent</p>
-          <p class="sd-card-text">
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">CFD</span>
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluent</span>
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
-          </p>
-        </div>
-      </div>
-      <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
-        <img class="project-lp-thumbnail" src="_static/thumbnails/intro.png" />
-        <div class="sd-card-body">
-          <p class="sd-card-title sd-font-weight-bold">PyAnsys</p>
-          <p class="sd-card-body-text">Python interface to Ansys</p>
-          <p class="sd-card-text">
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
-          </p>
-        </div>
-      </div>
-      <div class="project-card sd-card sd-shadow-sm sd-card-hover" onclick="window.location.href='https://docs.pyansys.com/';">
-        <img class="project-lp-thumbnail" src="_static/thumbnails/pydpf-core.png" />
-        <div class="sd-card-body">
-          <p class="sd-card-title sd-font-weight-bold">PyDPF-Core</p>
-          <p class="sd-card-body-text">Python interface to Ansys DPF (Data Processing Framework)</p>
-          <p class="sd-card-text">
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Post-processing</span>
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">DPF</span>
-            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Automation</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,              // infinite loop
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          320: { slidesPerView: 1 },  /* mobile */
+          768: { slidesPerView: 2 },  /* tablet */
+          1024: { slidesPerView: 4 }, /* desktop */
+        },
+      });
+    </script>
+
+
+
+.. raw:: html
 
   <!-- Latest Blogs section -->
   <section id="blogs">
