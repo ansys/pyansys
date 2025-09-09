@@ -585,7 +585,7 @@ projects:
 
   magnet-segmentation-toolkit:
     name: Magnet Segmentation Toolkit
-    description: Python wrapper for automating the segmentation and skew of interior permanent magnet (IPM) and surface permanent magnet (SPM) motors using Ansys Electronics Desktop (AEDT)
+    description: A Python wrapper that automates segmentation and skewing of IPM and SPM motors using Ansys Electronics Desktop (AEDT)
     thumbnail: _static/thumbnails/intro.png
     repository:
     families: [Tools]
