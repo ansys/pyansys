@@ -17,7 +17,7 @@
             scripting, and integration easier for engineers and developers.
           </p>
           <a href="projects.html" class="btn btn-custom">Explore projects</a>
-          <a href="blog.html" class="btn btn-custom">Latest news</a>
+          <a href="blogs.html" class="btn btn-custom">Latest news</a>
           <a href="contact.html" class="btn btn-custom">Contact us</a>
         </div>
       </div>
@@ -72,7 +72,7 @@
     <!-- ===================== Blogs Section ===================== -->
     <section id="blogs">
       <h2>Recent Blogs
-        <a href="blog.html" class="btn btn-link float-end">More blogs</a>
+        <a href="blogs.html" class="btn btn-link float-end">More blogs</a>
       </h2>
       <div class="blogs-landingpage" id="blogs-landingpage"></div>
       <script src="_static/landing-page/js/blogs.js"></script>
@@ -130,4 +130,4 @@
 
    getting-started
    projects
-   blog
+   blogs

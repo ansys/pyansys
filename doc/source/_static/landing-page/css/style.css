@@ -159,3 +159,15 @@
 .fade-in {
   opacity: 1;
 }
+
+/* Contact Us section */
+.mb-3 .form-control {
+  width: 30rem;
+}
+textarea.form-control {
+  height: 10rem;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
+  background: #ffb71b !important;
+}

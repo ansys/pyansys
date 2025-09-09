@@ -1,5 +1,7 @@
 :orphan:
 
+.. title:: Contact Us
+
 .. raw:: html
 
     <div class="container py-4">
@@ -18,7 +20,9 @@
                                 <div class="mb-3">
                                     <textarea class="form-control border border-secondary" id="emailContent" rows="5" placeholder="Message"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Send to pyansys.core@ansys.com</button>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary">Send to pyansys.core@ansys.com</button>
+                                </div>
                         </form>
                         <hr>
                         <div class="mt-3">

@@ -74,7 +74,7 @@ html_favicon = ansys_favicon
 html_sidebars = {
     "index": [],
     "projects": ["projects_sidebar.html"],
-    "blog": ["blogs_sidebar.html"],
+    "blogs": ["blogs_sidebar.html"],
 }
 
 extensions = [
@@ -556,7 +556,17 @@ def collect_blog_metadata(app, doctree, docname):
             meta[node["name"]] = node["content"]
         if not hasattr(app.env, "blog_posts"):
             app.env.blog_posts = {}
-        app.env.blog_posts[docname] = meta
+        app.env.blog_posts[f"{docname}.html"] = meta
+        
+    # from the date, sort the blog posts in descending order
+    if hasattr(app.env, "blog_posts"):
+        app.env.blog_posts = dict(
+            sorted(
+                app.env.blog_posts.items(),
+                key=lambda item: item[1].get("date", ""),
+                reverse=True,
+            )
+        )
 
     # Save metadata to a JSON file in the build directory
     if hasattr(app.env, "blog_posts"):

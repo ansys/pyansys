@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createCheckbox(name, containerId, type) {
     const id = `${type}-${name}`;
 
+    console.log(`Creating checkbox for ${name} in ${containerId}`);
     const wrapper = document.createElement("div");
     wrapper.className = "checkbox-wrapper";
 
