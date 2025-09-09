@@ -23,6 +23,18 @@
   margin-bottom: 32px;
 }
 
+@media (max-width: 1200px) {
+  .projects-landingpage,
+  .blogs-landingpage {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+.bd-page-width {
+  max-width: min(100%, 1550px) !important;
+}
+
 .project-lp-thumbnail {
   padding: 24px;
   border-radius: 8px;
