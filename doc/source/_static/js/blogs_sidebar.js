@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
             : description;
 
         postCard.innerHTML = `
-          ${post.image ? `<img class="project-thumbnail" src="/_static/${post.image}" alt="${post.title || key}">` : ""}
+          ${post.image ? `<img class="project-thumbnail" src="_static/${post.image}" alt="${post.title || key}">` : ""}
           <div class="sd-card-body">
             <p class="sd-card-title sd-font-weight-bold">${post.title || key}</p>
             <p class="sd-card-body-text">${shortDescription}</p>

@@ -89,6 +89,9 @@ function displayFamilies(familyData) {
     } else if (window.location.pathname.includes("version/stable")) {
       // If the path is versioned, default to current page
       basePath = "";
+    } else if (window.location.pathname.includes("pull/")) {
+      // If the path is a PR, default to dev
+      basePath = "";
     } else {
       // If the path is not versioned, default to dev
       basePath = "version/dev/";
