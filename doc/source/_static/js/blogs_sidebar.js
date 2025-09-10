@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  fetch("_static/blog_metadata.json")
+  fetch(BLOG_FILE)
     .then((res) => res.json())
     .then((data) => {
       allPosts = data;
