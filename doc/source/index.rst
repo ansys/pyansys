@@ -78,6 +78,7 @@
       <script src="_static/landing-page/js/blogs.js"></script>
     </section>
 
+
     <!-- ===================== Support Section ===================== -->
     <section id="support" class="my-5">
       <h2 class="mb-4">How we support our users all over the world</h2>
@@ -112,15 +113,20 @@
             </div>
           </div>
         </div>
-        <!-- Right column: dynamic testimonials -->
+        <!-- Right column: testimonials carousel using Swiper -->
         <div class="col-md-6">
-          <div id="testimonials-container" class="slider-viewport"></div>
-          <div id="testimonials-dots" class="d-flex justify-content-center mt-3"></div>
+          <div class="swiper" id="testimonials-swiper">
+            <div class="swiper-wrapper" id="testimonials-wrapper">
+              <!-- Testimonials will be injected here by testimonials.js -->
+            </div>
+            <!-- Pagination dots -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
       <!-- Bootstrap JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- Custom JS -->
+      <!-- Swiper logic for testimonials -->
       <script src="_static/landing-page/js/testimonials.js"></script>
     </section>
 

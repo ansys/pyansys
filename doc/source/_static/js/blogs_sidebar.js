@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (matchProduct && matchIndustry && matchTag) {
         const postCard = document.createElement("div");
         postCard.className = "project-card sd-card sd-shadow-sm sd-card-hover";
-        postCard.onclick = () => (window.location.href = `${key}.html`);
+        postCard.onclick = () => (window.location.href = `${key}`);
 
         const description = post.description || "";
         const shortDescription =
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <i class="fa fa-user"></i> ${post.author || "PyAnsys Team"}<br/>
               <i class="fa fa-calendar"></i> ${post.date || "Unknown Date"}
             </p>
-            <a class="sd-btn sd-btn-outline-primary" href="${key}.html">Read More</a>
+            <a class="sd-btn sd-btn-outline-primary" href="${key}">Read More</a>
           </div>
         `;
         blogContainer.appendChild(postCard);

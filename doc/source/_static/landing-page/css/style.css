@@ -84,15 +84,6 @@
   font-size: 0.85em;
 }
 
-.footer-right .social-icons a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-right .social-icons a:hover i {
-  color: #ffb71b;
-}
-
 .footer-right {
   display: flex;
   align-items: center;
@@ -170,4 +161,52 @@ textarea.form-control {
 
 .swiper-pagination-clickable .swiper-pagination-bullet-active {
   background: #ffb71b !important;
+}
+
+/* Footer right social icons */
+.footer-right .social-icons .icon {
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.2s;
+}
+.footer-right .social-icons .icon-youtube {
+  background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-youtube-white.png);
+  width: 29px;
+}
+.footer-right .social-icons .icon-youtube:hover {
+  background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-youtube-color.png);
+}
+.footer-right .social-icons .icon-facebook {
+  background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-facebook-white.png);
+}
+.footer-right .social-icons .icon-facebook:hover {
+  background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-facebook-color.png);
+}
+.footer-right .social-icons .icon-linkedin {
+  background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-linkedin-white.png);
+}
+.footer-right .social-icons .icon-linkedin:hover {
+  background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-linkedin-color.png);
+}
+/* GitHub uses FontAwesome icon in white */
+.footer-right .social-icons .icon-github {
+  background: none;
+  font-size: 22px;
+}
+.footer-right .social-icons .icon-github:hover {
+  color: black;
+}
+
+/* features section */
+.step .icon {
+  background: #ececec;
+  color: #000;
+}
+
+.sd-badge {
+  margin-right: 5px;
 }

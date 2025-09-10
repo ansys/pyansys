@@ -1,35 +1,21 @@
-fetch("_static/landing-page/js/testimonials.json")
-  .then((r) => r.json())
-  .then((data) => {
-    const viewport = document.getElementById("testimonials-container");
-    const dotsWrap = document.getElementById("testimonials-dots");
-    const track = document.createElement("div");
-    track.className = "slider-track";
-    viewport.appendChild(track);
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("_static/landing-page/js/testimonials.json")
+    .then((r) => r.json())
+    .then((data) => {
+      const wrapper = document.getElementById("testimonials-wrapper");
+      if (!wrapper) return;
 
-    const cardsPerPage = 3;
-    const totalPages = Math.ceil(data.length / cardsPerPage); // 👈 dots depend on this
-    let current = 0,
-      timer;
-
-    // Build pages (each is 3 testimonials)
-    for (let p = 0; p < totalPages; p++) {
-      const page = document.createElement("div");
-      page.className = "slider-page";
-      const row = document.createElement("div");
-      row.className = "row g-3";
-
-      data.slice(p * cardsPerPage, (p + 1) * cardsPerPage).forEach((t) => {
-        const col = document.createElement("div");
-        col.className = "col-md-4";
+      data.forEach((t) => {
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
 
         const card = document.createElement("div");
-        card.className = "testimonial d-flex flex-column h-100";
+        card.className = "testimonial d-flex flex-column h-100 p-3";
 
         // logo
         if (t.logo) {
           const logoWrap = document.createElement("div");
-          logoWrap.className = "logo-wrap mb-2";
+          logoWrap.className = "logo-wrap mb-2 text-center";
           const img = document.createElement("img");
           img.src = t.logo;
           img.alt = t.author || "Logo";
@@ -46,52 +32,35 @@ fetch("_static/landing-page/js/testimonials.json")
         // author
         if (t.author) {
           const author = document.createElement("h6");
-          author.className = "fw-bold mb-0";
+          author.className = "fw-bold mb-0 mt-2 text-end";
           author.textContent = t.author;
           card.appendChild(author);
         }
 
-        col.appendChild(card);
-        row.appendChild(col);
+        slide.appendChild(card);
+        wrapper.appendChild(slide);
       });
 
-      page.appendChild(row);
-      track.appendChild(page);
-    }
-
-    // Dots builder (number of dots == totalPages)
-    function buildDots() {
-      dotsWrap.innerHTML = "";
-      for (let i = 0; i < totalPages; i++) {
-        const dot = document.createElement("button");
-        dot.type = "button";
-        dot.className = "dot" + (i === 0 ? " active" : "");
-        dot.addEventListener("click", () => {
-          goTo(i);
-          restart();
-        });
-        dotsWrap.appendChild(dot);
-      }
-    }
-
-    function goTo(i) {
-      current = i;
-      track.style.transform = `translateX(-${i * 100}%)`;
-      [...dotsWrap.children].forEach((d, j) =>
-        d.classList.toggle("active", j === i),
-      );
-    }
-
-    function start() {
-      timer = setInterval(() => goTo((current + 1) % totalPages), 5000);
-    }
-    function restart() {
-      clearInterval(timer);
-      start();
-    }
-
-    buildDots();
-    goTo(0);
-    start();
-  })
-  .catch((err) => console.error("Testimonials error:", err));
+      // Initialize Swiper
+      new Swiper("#testimonials-swiper", {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 20,
+        loop: false,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: { slidesPerView: 1, slidesPerGroup: 1 },
+          768: { slidesPerView: 2, slidesPerGroup: 2 },
+          1024: { slidesPerView: 3, slidesPerGroup: 3 },
+        },
+      });
+    })
+    .catch((err) => console.error("Testimonials error:", err));
+});
