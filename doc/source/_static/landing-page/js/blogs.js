@@ -47,7 +47,7 @@ fetch("_static/blog_metadata.json")
             .join("")}
         </p>
         <p class="sd-card-title sd-font-weight-bold" style="margin: 0;">${blog.title}</p>
-          <p style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95em; margin: 0; padding: 0;">
+          <p class="blog-meta-row" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95em; margin: 0; padding: 0;">
             <span style="white-space: nowrap;"><span style="display:inline-block;width:1.5em;height:1.5em;border-radius:50%;background:#008000;color:#fff;text-align:center;line-height:1.5em;font-family:sans-serif;margin-right:0.3em;">A</span>${blog.author || "PyAnsys Team"}</span>
             <span style="white-space: nowrap;"><i class="fa fa-calendar"></i> ${blog.date || "Unknown Date"}</span>
           </p>

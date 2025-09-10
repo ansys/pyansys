@@ -210,3 +210,11 @@ textarea.form-control {
 .sd-badge {
   margin-right: 5px;
 }
+
+@media (max-width: 600px) {
+  .blog-meta-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.2em;
+  }
+}
