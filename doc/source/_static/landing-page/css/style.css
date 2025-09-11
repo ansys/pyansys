@@ -218,3 +218,55 @@ textarea.form-control {
     gap: 0.2em;
   }
 }
+
+/* PyAnsys Landing Page Custom Styles */
+
+.workflow-cta {
+  margin: 2.5em 0 2em 0;
+  padding: 24px 32px;
+  background: #ececec;
+  border-radius: 1.5em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2em;
+}
+.workflow-cta-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  flex: 1;
+  min-width: 300px;
+}
+.workflow-cta-icon {
+  margin-top: 0.2em;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  aspect-ratio: 1/1;
+  background: white;
+}
+.workflow-cta-title {
+  margin: 0 0 0.5em 0;
+}
+.workflow-cta-btn {
+  display: flex;
+  height: 40px;
+  max-width: 280px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff !important;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-color: #000;
+  text-decoration: none;
+}
+
+.workflow-cta-btn:hover {
+  background: #333 !important;
+}

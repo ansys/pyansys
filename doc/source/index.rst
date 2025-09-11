@@ -31,48 +31,29 @@
 
 
             <!-- ===================== Workflows Call-to-Action ===================== -->
-    <div style="
-      margin: 2.5em 0 2em 0;
-      padding: 24px 32px;
-      background: #ececec;
-      border-radius: 1.5em;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 2em;
-    ">
+    <l />
+    <div class="workflow-cta">
       <!-- Left side (icon + title + content) -->
-      <div style="display: flex; align-items: flex-start; gap: 1em; flex: 1; min-width: 300px;">
+      <div class="workflow-cta-left">
         <!-- Icon -->
-        <div style="margin-top: 0.2em;">
-          <i class="fa-layer-group" style="font-size: 2.5em;"></i>
+        <div class="workflow-cta-icon">
+          <script src="https://unpkg.com/lucide@latest"></script>
+          <i data-lucide="layers"></i>
+          <script>
+            lucide.createIcons();
+          </script>
         </div>
         <!-- Title and content -->
         <div>
-          <h3 style="margin: 0 0 0.5em 0; ">PyAnsys Workflows</h3>
-          <div class="workflow-content" style=" font-size: 1.13em; line-height: 1.7; opacity: 0.9;">
+          <h3 class="workflow-cta-title">PyAnsys Workflows</h3>
+          <div class="workflow-content">
             Your gateway to advanced engineering automation. Discover how to seamlessly combine multiple PyAnsys libraries to build powerful, real-world simulation and data processing pipelines.
           </div>
         </div>
       </div>
-
       <!-- Right side (button) -->
       <div style="align-self: flex-start;">
-        <a href="https://workflows.docs.pyansys.com/" class="btn btn-primary" style="
-          font-size: 1.1em;
-          padding: 0.7em 2em;
-          background: #000;
-          color: #fff;
-          border: none;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-          text-decoration: none;
-          transition: background 0.2s;
-          font-weight: 600;
-          letter-spacing: 0.01em;
-          white-space: nowrap;
-          display: inline-block;
-        ">
+        <a href="https://workflows.docs.pyansys.com/" class="workflow-cta-btn btn btn-primary">
           Explore
         </a>
       </div>
