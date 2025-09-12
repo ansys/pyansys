@@ -20,4 +20,5 @@ and provides insights into how to use the various PyAnsys packages effectively.
     blog/pystk-release
     blog/pymechanical-global
     blog/blog3
+    blog/welcome-landing-page
 
