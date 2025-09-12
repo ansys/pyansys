@@ -1,7 +1,52 @@
+/* ============================= */
+/*        CSS Variables          */
+/* ============================= */
+:root {
+  --carousel-item-height: 30rem;
+  --carousel-item-color: #fff;
+  --carousel-item-border: thin solid #000;
+  --carousel-gradient: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1)
+  );
+  --carousel-content-padding: 0.75rem;
+  --carousel-content-margin-left: 0.75rem;
+  --carousel-h2-size: 2.5rem;
+  --carousel-h2-color: #fff;
+  --carousel-p-margin: 2rem 0;
+  --carousel-p-size: 1rem;
+  --carousel-p-color: #fff;
+  --btn-bg: #fff;
+  --btn-color: #000;
+  --btn-radius: 0.25rem;
+  --btn-size: 0.75rem;
+  --btn-weight: bold;
+  --btn-padding: 0.75rem 1.25rem;
+  --btn-mr: 1rem;
+  --btn-hover-bg: #939393;
+  --carousel-bg-height: 15rem;
+  --carousel-bg-animation: slideBackground 15s infinite;
+  --steps-gap: 1.25rem;
+  --step-gap: 0.9375rem;
+  --step-mt: 1rem;
+  --step-width: 31.25rem;
+  --icon-bg: #f3f0fa;
+  --icon-color: #6a1b9a;
+  --icon-size: 1.25rem;
+  --icon-dim: 2.5rem;
+  --icon-radius: 0.5rem;
+  --text-h4-m: 0 1rem 1rem 0;
+  --text-h4-weight: bold;
+}
+
+/* ============================= */
+/*        Carousel Item          */
+/* ============================= */
 .carousel-item {
-  height: 30rem;
-  color: white;
-  border: thin solid black;
+  height: var(--carousel-item-height);
+  color: var(--carousel-item-color);
+  border: var(--carousel-item-border);
 }
 
 .carousel-item::before {
@@ -12,41 +57,44 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  background: var(--carousel-gradient);
 }
 
+/* ============================= */
+/*        Carousel Content       */
+/* ============================= */
 .carousel-content {
-  padding: 12px;
-  margin-left: 12px;
+  padding: var(--carousel-content-padding);
+  margin-left: var(--carousel-content-margin-left);
 }
 
 .carousel-content h2 {
-  font-size: 2.5rem;
-  color: white;
+  font-size: var(--carousel-h2-size);
+  color: var(--carousel-h2-color);
 }
 
 .carousel-content p {
-  margin: 2rem 0;
-  font-size: 1rem;
-  color: white;
+  margin: var(--carousel-p-margin);
+  font-size: var(--carousel-p-size);
+  color: var(--carousel-p-color);
 }
 
 .carousel-content .btn-custom {
-  background-color: white;
-  color: black;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
   border: none;
-  border-radius: 0.25rem;
-  font-size: 0.75rem;
-  font-weight: bold;
-  padding: 0.75rem 1.25rem;
+  border-radius: var(--btn-radius);
+  font-size: var(--btn-size);
+  font-weight: var(--btn-weight);
+  padding: var(--btn-padding);
   text-transform: uppercase;
-  margin-right: 16px;
+  margin-right: var(--btn-mr);
 }
 
 @media (max-width: 1200px) {
   .carousel-content .btn-custom {
     padding: 0.4rem;
-    margin-right: 4px;
+    margin-right: 0.25rem;
   }
   .carousel-content p {
     margin: 1rem 0;
@@ -57,8 +105,8 @@
 }
 
 .carousel-content .btn-custom:hover {
-  background-color: #939393;
-  color: black;
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-color);
 }
 
 @keyframes slideBackground {
@@ -76,37 +124,36 @@
   }
 }
 .carousel-background {
-  height: 240px;
+  height: var(--carousel-bg-height);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-size: cover;
   background-position: center;
-  animation: slideBackground 15s infinite;
+  animation: var(--carousel-bg-animation);
 }
 
-/* CSS */
 .simulation-steps {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--steps-gap);
 }
 
 .step {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
-  margin-top: 16px;
-  width: 500px;
+  gap: var(--step-gap);
+  margin-top: var(--step-mt);
+  width: var(--step-width);
 }
 
 .step .icon {
-  background: #f3f0fa; /* light background for the icon */
-  color: #6a1b9a; /* purple icon color */
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  background: var(--icon-bg);
+  color: var(--icon-color);
+  font-size: var(--icon-size);
+  width: var(--icon-dim);
+  height: var(--icon-dim);
+  border-radius: var(--icon-radius);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +161,6 @@
 }
 
 .step .text h4 {
-  margin: 0 16px 16px 0;
-  font-weight: bold;
+  margin: var(--text-h4-m);
+  font-weight: var(--text-h4-weight);
 }

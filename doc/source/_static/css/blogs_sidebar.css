@@ -1,54 +1,86 @@
+:root {
+  --blog-card-bg: #fff;
+  --blog-card-radius: 0.75rem;
+  --blog-card-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  --blog-card-padding: 1rem;
+  --blog-image-height: 11.25rem; /* 180px */
+  --blog-image-radius: 0.5rem;
+  --blog-title-size: 1.125rem;
+  --blog-title-weight: bold;
+  --blog-title-margin: 0.625rem 0;
+  --blog-meta-size: 0.875rem;
+  --blog-meta-color: #666;
+  --blog-meta-margin: 0 0 0.625rem;
+  --blog-meta-li-margin: 0 0 0.25rem 0;
+  --read-more-color: #0066cc;
+  --read-more-weight: bold;
+  --collapsible-bg: #f8f9fa;
+  --collapsible-active-bg: #e9ecef;
+  --collapsible-padding: 0.625rem;
+  --collapsible-font-weight: bold;
+  --collapsible-transition: background-color 0.3s;
+  --collapsible-arrow-transition: transform 0.3s ease;
+  --collapsible-content-padding: 0.3125rem 0.9375rem;
+  --checkbox-wrapper-margin: 0 0 0.3125rem 0;
+  --show-more-color: #007bff;
+  --show-more-padding: 0.3125rem;
+  --show-more-font-size: 0.9em;
+  --blog-container-gap: 1.25rem;
+  --blog-container-padding: 1.25rem;
+  --blog-container-max-width: 75rem;
+}
+
 #blog-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr)); /* 280px */
+  gap: var(--blog-container-gap);
+  padding: var(--blog-container-padding);
+  max-width: var(--blog-container-max-width);
   margin: auto;
 }
 
 .blog-card {
-  background-color: #fff;
-  border-radius: 12px;
+  background-color: var(--blog-card-bg);
+  border-radius: var(--blog-card-radius);
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--blog-card-shadow);
   transition: transform 0.2s ease;
-  padding: 16px;
+  padding: var(--blog-card-padding);
 }
 
 .blog-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.3125rem); /* -5px */
 }
 
 .blog-card .blog-image {
   width: 100%;
-  height: 180px;
+  height: var(--blog-image-height);
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 12px;
+  border-radius: var(--blog-image-radius);
+  margin-bottom: 0.75rem;
 }
 
 .blog-card .blog-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0;
+  font-size: var(--blog-title-size);
+  font-weight: var(--blog-title-weight);
+  margin: var(--blog-title-margin);
 }
 
 .blog-meta {
   list-style: none;
   padding: 0;
-  margin: 0 0 10px;
-  font-size: 14px;
-  color: #666;
+  margin: var(--blog-meta-margin);
+  font-size: var(--blog-meta-size);
+  color: var(--blog-meta-color);
 }
 
 .blog-meta li {
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 .read-more {
-  color: #0066cc;
-  font-weight: bold;
+  color: var(--read-more-color);
+  font-weight: var(--read-more-weight);
   text-decoration: none;
 }
 
@@ -57,26 +89,26 @@
 }
 
 .collapsible {
-  background-color: #f8f9fa;
+  background-color: var(--collapsible-bg);
   cursor: pointer;
-  padding: 10px;
-  font-weight: bold;
+  padding: var(--collapsible-padding);
+  font-weight: var(--collapsible-font-weight);
   border: none;
   width: 100%;
   text-align: left;
   outline: none;
-  transition: background-color 0.3s;
+  transition: var(--collapsible-transition);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .collapsible.active {
-  background-color: #e9ecef;
+  background-color: var(--collapsible-active-bg);
 }
 
 .arrow {
-  transition: transform 0.3s ease;
+  transition: var(--collapsible-arrow-transition);
 }
 
 .collapsible.active .arrow {
@@ -84,20 +116,20 @@
 }
 
 .collapsible-content {
-  padding: 5px 15px;
+  padding: var(--collapsible-content-padding);
   display: block; /* OPEN by default */
 }
 
 .checkbox-wrapper {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .show-more-btn {
   display: block;
-  color: #007bff;
+  color: var(--show-more-color);
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px;
-  font-size: 0.9em;
+  padding: var(--show-more-padding);
+  font-size: var(--show-more-font-size);
 }

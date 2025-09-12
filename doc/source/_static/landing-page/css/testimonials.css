@@ -1,25 +1,56 @@
+/* ============================= */
+/*        CSS Variables          */
+/* ============================= */
+:root {
+  --testimonial-bg: #fff;
+  --testimonial-radius: 0.5rem;
+  --testimonial-padding: 1rem;
+  --testimonial-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.1);
+  --testimonial-text-align: center;
+  --logo-wrap-height: 6.25rem; /* 100px */
+  --logo-wrap-margin-bottom: 1rem;
+  --logo-img-max-height: 5rem; /* 80px */
+  --swiper-slide-height: auto;
+  --st0-fill: #000;
+}
+
+/* ============================= */
+/*        Testimonial Card       */
+/* ============================= */
 .testimonial {
-  background: #fff;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background: var(--testimonial-bg);
+  border-radius: var(--testimonial-radius);
+  padding: var(--testimonial-padding);
+  box-shadow: var(--testimonial-shadow);
+  text-align: var(--testimonial-text-align);
   height: 100%;
 }
+
+/* ============================= */
+/*        Logo Section           */
+/* ============================= */
 .logo-wrap {
-  height: 100px;
+  height: var(--logo-wrap-height);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: var(--logo-wrap-margin-bottom);
 }
 .logo-wrap img {
-  max-height: 80px;
+  max-height: var(--logo-img-max-height);
   object-fit: contain;
 }
+
+/* ============================= */
+/*        Swiper Slide           */
+/* ============================= */
 .swiper-slide {
-  height: auto !important;
+  height: var(--swiper-slide-height) !important;
 }
+
+/* ============================= */
+/*        SVG Fill               */
+/* ============================= */
 .st0 {
-  fill: #000;
+  fill: var(--st0-fill);
 }

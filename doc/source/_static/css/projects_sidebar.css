@@ -1,77 +1,117 @@
+:root {
+  --sidebar-margin-top: 2rem;
+  --sidebar-padding-x: 2rem;
+  --sidebar-section-margin-bottom: 2rem;
+  --sidebar-section-gap: 0.25rem;
+  --show-more-margin-top: 1rem;
+  --sidebar-section-font-size: 0.85rem;
+  --row-margin-y: 0.3125rem;
+  --row-padding: 0.25rem;
+  --input-margin-right: 0.625rem;
+  --input-size: 1rem;
+  --count-margin-left: auto;
+  --count-bg: var(--ast-sidebar-hover-background);
+  --count-radius: 50%;
+  --count-padding: 0.25rem 0.75rem;
+  --selected-gap: 0.5rem;
+  --remove-family-color: black;
+  --remove-family-weight: bold;
+  --projects-grid-gap: 2rem;
+  --projects-margin-bottom: 1.5rem;
+  --project-card-radius: 0.5rem;
+  --project-card-bg: #fff;
+  --project-title-size: 1.2rem;
+  --project-title-weight: bold;
+  --project-title-padding: 0.5rem 0 0.5rem 1rem;
+  --project-description-margin-top: 1rem;
+  --project-description-padding: 0.5rem 0 0.5rem 1rem;
+  --sd-bg-muted-radius: 999px;
+  --sd-bg-muted-font-size: 0.75rem;
+  --sd-bg-muted-line-height: 1rem;
+  --selected-tag-padding: 0.25rem 0.5rem;
+  --selected-tag-radius: 0.25rem;
+  --selected-tag-margin: 0.25em;
+  --selected-tag-weight: 600;
+  --ansys-icon-size: 1.5rem;
+  --ansys-icon-margin-right: 0.3125rem;
+  --ansys-icon-padding: 0rem;
+  --project-thumbnail-radius: 0.5rem;
+}
+
 html {
   overflow-y: scroll !important;
 }
 
 .projects-page-sidebar {
-  margin-top: 2rem;
+  margin-top: var(--sidebar-margin-top);
   display: flex;
   flex-direction: column;
-  padding: 0rem 2rem;
+  padding: 0 var(--sidebar-padding-x);
 }
 .projects-page-sidebar-section {
-  margin-bottom: 2rem;
+  margin-bottom: var(--sidebar-section-margin-bottom);
   font-weight: 700;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: var(--sidebar-section-gap);
 }
 
 .show-more {
-  margin-top: 1rem;
+  margin-top: var(--show-more-margin-top);
 }
 
 .projects-page-sidebar-section span {
-  font-size: 0.85rem;
+  font-size: var(--sidebar-section-font-size);
 }
 
 .family-row,
 .tag-row {
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  margin: var(--row-margin-y) 0;
   font-weight: 400;
-  padding: 0.25rem;
+  padding: var(--row-padding);
 }
 
 .family-row input,
 .tag-row input {
-  margin-right: 0.625rem;
-  height: 1rem;
-  width: 1rem;
+  margin-right: var(--input-margin-right);
+  height: var(--input-size);
+  width: var(--input-size);
 }
 
 .family-count,
 .tag-count {
-  margin-left: auto;
-  background-color: var(--ast-sidebar-hover-background);
-  border-radius: 50%;
-  padding: 0.25rem 0.75rem;
+  margin-left: var(--count-margin-left);
+  background-color: var(--count-bg);
+  border-radius: var(--count-radius);
+  padding: var(--count-padding);
 }
 .selected-families {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--selected-gap);
 }
 
 .remove-family {
   cursor: pointer;
-  color: black;
-  font-weight: bold;
+  color: var(--remove-family-color);
+  font-weight: var(--remove-family-weight);
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 1.5rem;
+  gap: var(--projects-grid-gap);
+  margin-bottom: var(--projects-margin-bottom);
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
-  background-color: white;
+  border-radius: var(--project-card-radius);
+  background-color: var(--project-card-bg);
 }
 .project-card:hover {
   cursor: pointer;
@@ -79,35 +119,33 @@ html {
 
 .project-thumbnail {
   padding: 0;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  border-top-right-radius: var(--project-thumbnail-radius);
+  border-top-left-radius: var(--project-thumbnail-radius);
 }
 
 .project-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0rem;
-  padding: 0.5rem;
-  padding-left: 1rem;
+  font-size: var(--project-title-size);
+  font-weight: var(--project-title-weight);
+  margin-bottom: 0;
+  padding: var(--project-title-padding);
 }
 
 .project-description {
-  margin-top: 1rem;
-  padding: 0.5rem;
-  padding-left: 1rem;
+  margin-top: var(--project-description-margin-top);
+  padding: var(--project-description-padding);
 }
 .sd-bg-muted {
   background-color: var(--ast-sidebar-hover-background) !important;
-  border-radius: 999px;
-  font-size: 12px;
-  line-height: 16px;
+  border-radius: var(--sd-bg-muted-radius);
+  font-size: var(--sd-bg-muted-font-size);
+  line-height: var(--sd-bg-muted-line-height);
 }
 
 [data-theme="dark"] .sd-bg-muted {
   background-color: #3d3d3d !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .projects {
     grid-template-columns: 1fr;
   }
@@ -126,16 +164,16 @@ html {
 .selected-family {
   display: inline-block;
   background-color: var(--ast-sidebar-hover-background);
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  margin: 0.25em;
-  font-weight: 600;
+  padding: var(--selected-tag-padding);
+  border-radius: var(--selected-tag-radius);
+  margin: var(--selected-tag-margin);
+  font-weight: var(--selected-tag-weight);
 }
 
 .ansys-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.3125rem;
+  width: var(--ansys-icon-size);
+  height: var(--ansys-icon-size);
+  margin-right: var(--ansys-icon-margin-right);
   vertical-align: middle;
-  padding: 0rem;
+  padding: var(--ansys-icon-padding);
 }
