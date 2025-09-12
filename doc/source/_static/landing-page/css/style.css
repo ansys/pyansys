@@ -1,7 +1,48 @@
+:root {
+  --card-bg: #fff;
+  --card-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  --card-radius: 0.5rem;
+  --landing-gap: 1.5rem;
+  --landing-gap-mobile: 1rem;
+  --landing-mb: 2rem;
+  --landing-mb-mobile: 1rem;
+  --page-width: min(100%, 96.875rem); /* 1550px */
+  --thumbnail-padding: 1.5rem;
+  --thumbnail-radius: 0.5rem;
+  --footer-border: 0.75rem solid #ffc107;
+  --footer-bg: #000;
+  --footer-color: #fff;
+  --footer-gap: 0.75rem;
+  --footer-social-icon-size: 1.25rem;
+  --footer-social-icon-height: 1.5rem;
+  --footer-social-gap: 0.75rem;
+  --swiper-slide-height: 29.375rem; /* 470px */
+  --swiper-slide-mb: 1.25rem;
+  --swiper-pagination-active: #ffb71b;
+  --form-width: 30rem;
+  --form-height: 10rem;
+  --badge-mr: 0.3125rem;
+  --workflow-cta-mt: 2.5em;
+  --workflow-cta-mb: 2em;
+  --workflow-cta-padding: 1.5rem 2rem;
+  --workflow-cta-bg: #ececec;
+  --workflow-cta-radius: 1.5em;
+  --workflow-cta-gap: 2em;
+  --workflow-cta-icon-size: 3rem;
+  --workflow-cta-icon-gap: 0.625rem;
+  --workflow-cta-btn-h: 2.5rem;
+  --workflow-cta-btn-maxw: 17.5rem;
+  --workflow-cta-btn-padding: 0.5rem 1rem;
+  --workflow-cta-btn-bg: #000;
+  --workflow-cta-btn-color: #fff;
+  --workflow-cta-btn-radius: 0.25rem;
+  --workflow-cta-btn-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
+  --workflow-cta-btn-hover-bg: #333;
+}
 .testimonial-card {
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  border-radius: 0.5rem;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
   height: 100%;
 }
 
@@ -9,49 +50,49 @@
 .blogs-landingpage {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-bottom: 32px;
+  gap: var(--landing-gap);
+  margin-bottom: var(--landing-mb);
 }
 
 @media (max-width: 1200px) {
   .projects-landingpage,
   .blogs-landingpage {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: var(--landing-gap-mobile);
   }
 }
 
 .bd-page-width {
-  max-width: min(100%, 1550px) !important;
+  max-width: var(--page-width) !important;
 }
 
 .project-lp-thumbnail {
-  padding: 24px;
-  border-radius: 8px;
+  padding: var(--thumbnail-padding);
+  border-radius: var(--thumbnail-radius);
 }
 
 .project-card .sd-card {
-  padding: 24px;
+  padding: var(--thumbnail-padding);
 }
 
 .bd-footer {
-  border-top: 12px solid #ffc107;
+  border-top: var(--footer-border);
   width: 100%;
-  color: white;
-  background-color: black;
+  color: var(--footer-color);
+  background-color: var(--footer-bg);
 }
 
 .footer-left h4,
 .footer-right h4 {
-  color: white;
+  color: var(--footer-color);
 }
 
 .bd-footer a {
-  color: white;
+  color: var(--footer-color);
 }
 
 .carousel {
-  background-color: #000 !important;
+  background-color: var(--footer-bg) !important;
 }
 
 /** Footer styles **/
@@ -59,12 +100,12 @@
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .external-link .link-text {
   display: inline-block;
-  width: 120px;
+  width: 7.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -77,7 +118,7 @@
 .footer-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--footer-gap);
   justify-content: flex-end;
   width: 100%;
 }
@@ -95,11 +136,11 @@
   display: flex;
 }
 .swiper-slide .project-card {
-  height: 470px;
+  height: var(--swiper-slide-height);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: var(--swiper-slide-mb);
 }
 
 .swiper-pagination {
@@ -143,21 +184,21 @@
 
 /* Contact Us section */
 .mb-3 .form-control {
-  width: 30rem;
+  width: var(--form-width);
 }
 textarea.form-control {
-  height: 10rem;
+  height: var(--form-height);
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet-active {
-  background: #ffb71b !important;
+  background: var(--swiper-pagination-active) !important;
 }
 
 /* Footer right social icons */
 .footer-right .social-icons .icon {
   display: inline-block;
-  width: 20px;
-  height: 24px;
+  width: var(--footer-social-icon-size);
+  height: var(--footer-social-icon-height);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -165,7 +206,7 @@ textarea.form-control {
 }
 .footer-right .social-icons .icon-youtube {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-youtube-white.png);
-  width: 29px;
+  width: 1.8125rem;
 }
 .footer-right .social-icons .icon-youtube:hover {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-youtube-color.png);
@@ -185,20 +226,20 @@ textarea.form-control {
 /* GitHub uses FontAwesome icon in white */
 .footer-right .social-icons .icon-github {
   background: none;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .footer-right .social-icons .icon-github:hover {
-  color: black;
+  color: #000;
 }
 
 /* features section */
 .step .icon {
-  background: #ececec;
+  background: var(--workflow-cta-bg);
   color: #000;
 }
 
 .sd-badge {
-  margin-right: 5px;
+  margin-right: var(--badge-mr);
 }
 
 @media (max-width: 600px) {
@@ -212,51 +253,51 @@ textarea.form-control {
 /* PyAnsys Landing Page Custom Styles */
 
 .workflow-cta {
-  margin: 2.5em 0 2em 0;
-  padding: 24px 32px;
-  background: #ececec;
-  border-radius: 1.5em;
+  margin: var(--workflow-cta-mt) 0 var(--workflow-cta-mb) 0;
+  padding: var(--workflow-cta-padding);
+  background: var(--workflow-cta-bg);
+  border-radius: var(--workflow-cta-radius);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 2em;
+  gap: var(--workflow-cta-gap);
 }
 .workflow-cta-left {
   display: flex;
   align-items: flex-start;
   gap: 1em;
   flex: 1;
-  min-width: 300px;
+  min-width: 18.75rem;
 }
 .workflow-cta-icon {
   margin-top: 0.2em;
   display: flex;
-  width: 48px;
-  height: 48px;
+  width: var(--workflow-cta-icon-size);
+  height: var(--workflow-cta-icon-size);
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: var(--workflow-cta-icon-gap);
   aspect-ratio: 1/1;
-  background: white;
+  background: #fff;
 }
 .workflow-cta-title {
   margin: 0 0 0.5em 0;
 }
 .workflow-cta-btn {
   display: flex;
-  height: 40px;
-  max-width: 280px;
-  padding: 8px 16px;
+  height: var(--workflow-cta-btn-h);
+  max-width: var(--workflow-cta-btn-maxw);
+  padding: var(--workflow-cta-btn-padding);
   justify-content: center;
   align-items: center;
-  background: #000;
-  color: #fff !important;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  border-color: #000;
+  background: var(--workflow-cta-btn-bg);
+  color: var(--workflow-cta-btn-color) !important;
+  border-radius: var(--workflow-cta-btn-radius);
+  box-shadow: var(--workflow-cta-btn-shadow);
+  border-color: var(--workflow-cta-btn-bg);
   text-decoration: none;
 }
 
 .workflow-cta-btn:hover {
-  background: #333 !important;
+  background: var(--workflow-cta-btn-hover-bg) !important;
 }
