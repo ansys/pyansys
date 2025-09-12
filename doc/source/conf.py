@@ -551,7 +551,7 @@ def collect_blog_metadata(app, doctree, docname):
     """Collect metadata from blog posts and save to a JSON file."""
     meta = {}
     static_blogs_metadata = Path(app.builder.outdir) / "_static" / "blog_metadata.json"
-    if docname.startswith("blog/"):  # Check if it's a blog post
+    if docname.startswith("blogs/"):  # Check if it's a blog post
         for node in doctree.traverse(nodes.meta):
             meta[node["name"]] = node["content"]
         if not hasattr(app.env, "blog_posts"):

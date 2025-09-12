@@ -15,5 +15,5 @@ and provides insights into how to use the various PyAnsys packages effectively.
     :maxdepth: 2
     :hidden:
 
-    blog/welcome-landing-page
+    blogs/pyansys-landing-page
 
