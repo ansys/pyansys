@@ -195,6 +195,19 @@ textarea.form-control {
 }
 
 /* Footer right social icons */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer-right .social-icons {
+  display: flex;
+  gap: 0.5em;
+}
+
 .footer-right .social-icons .icon {
   display: inline-block;
   width: var(--footer-social-icon-size);
