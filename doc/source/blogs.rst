@@ -15,10 +15,5 @@ and provides insights into how to use the various PyAnsys packages effectively.
     :maxdepth: 2
     :hidden:
 
-    blog/blog1
-    blog/blog2
-    blog/pystk-release
-    blog/pymechanical-global
-    blog/blog3
     blog/welcome-landing-page
 
