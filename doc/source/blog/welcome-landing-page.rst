@@ -13,9 +13,9 @@
 Welcome to the New PyAnsys Landing Page!
 ========================================
 
-We are delighted to introduce the newly enhanced PyAnsys landing page—a major step forward in how we present and support the PyAnsys ecosystem. 
+We are delighted to introduce the newly enhanced PyAnsys landing page—a major step forward in how we present and support the PyAnsys ecosystem.
 
-This release is not just a visual refresh—it is a comprehensive rethinking of how we present, organize, and support the PyAnsys ecosystem. 
+This release is not just a visual refresh—it is a comprehensive rethinking of how we present, organize, and support the PyAnsys ecosystem.
 This update is the culmination of extensive collaboration, thoughtful design, and valuable feedback from our community. Our goal is to make it easier than ever for users and contributors to discover resources, explore projects, and stay connected with the latest developments.
 
 Key Improvements
