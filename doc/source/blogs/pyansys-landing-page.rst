@@ -15,8 +15,8 @@ PyAnsys landing page update
 
 The PyAnsys landing page has been redesigned to deliver a more professional, user-friendly, and accessible experience.
 
-This update improves the presentation, organization, and discoverability of the PyAnsys ecosystem. It reflects extensive collaboration,
-design enhancements, and feedback from users and contributors. The goal is to help the community more easily explore projects,
+This update improves the presentation, organization, and ease of navigation across the PyAnsys ecosystem.
+It reflects collaboration with contributors and feedback from the community. The goal is to help users quickly find projects,
 access resources, and stay informed about recent developments.
 
 
@@ -34,11 +34,11 @@ Key improvements
 Commitment to the PyAnsys ecosystem
 -----------------------------------
 
-The new landing page demonstrates the PyAnsys core Team’s continued commitment to the PyAnsys ecosystem. Our focus remains on:
+The redesigned landing page reflects a continued commitment to the PyAnsys ecosystem. The PyAnsys team remains focused on:
 
 - **Continuous improvement:** Evolving the platform based on user needs and technology trends.
-- **Open collaboration:** Encouraging contributions and feedback via GitHub and community channels.
-- **Community support:** Making simulation and automation more accessible, effective, and rewarding for all users.
+- **Open collaboration:** Contributions and feedback are encouraged through GitHub and community channels.
+- **Community support:** Expanding access to simulation and automation, making them more effective and rewarding for all users.
 
 Thank you for supporting the PyAnsys project.
 
