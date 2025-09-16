@@ -13,6 +13,10 @@
 PyAnsys landing page update
 ============================
 
+.. image:: /_static/pyansys_banner.svg
+   :alt: PyAnsys ecosystem banner
+   :width: 1000px
+
 The PyAnsys landing page has been redesigned to deliver a more professional, user-friendly, and accessible experience.
 
 This update improves the presentation, organization, and ease of navigation across the PyAnsys ecosystem.
