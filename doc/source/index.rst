@@ -169,4 +169,4 @@
 
    getting-started
    projects
-   blogs
+   blog
