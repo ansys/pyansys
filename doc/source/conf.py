@@ -249,10 +249,10 @@ html_theme_options = {
         "**": ["page-toc", "sourcelink"],
         "index": ["page-toc"],
     },
-    # "navbar_end": [
-    #     "navbar-icon-links",
-    #     "version-switcher",
-    # ],
+    "navbar_end": [
+        "navbar-icon-links",
+        "version-switcher",
+    ],
     "switcher": {
         "json_url": f"https://{cname}/versions.json",
         "version_match": switcher_version,
