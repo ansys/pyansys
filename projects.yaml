@@ -518,7 +518,6 @@ projects:
       api: https://stk.docs.pyansys.com/version/stable/api.html
 
   pysystemcoupling:
-    starred: true
     name: PySystemCoupling
     repository: https://github.com/ansys/pysystemcoupling
     description: Pythonic interface to Ansys System Coupling
