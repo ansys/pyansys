@@ -138,6 +138,72 @@ def get_last_metapackage_release():
     return last_release.tag_name
 
 
+def convert_yaml_to_json(app: sphinx.application.Sphinx):
+    """
+    Convert a YAML file to a JSON file.
+
+    Parameters:
+    yaml_path (Path): Path to the YAML file.
+    json_path (Path): Path to save the JSON file.
+
+    Returns:
+    None
+    """
+    if not metadata.exists() or not metadata.is_file():
+        raise FileNotFoundError(f"The file {metadata} does not exist or is not a file.")
+
+    try:
+        with metadata.open("r", encoding="utf-8") as yaml_file:
+            yaml_content = yaml.safe_load(yaml_file) or {}
+    except yaml.YAMLError as e:
+        raise ValueError(f"Error parsing YAML file: {e}") from e
+
+    projects = yaml_content.get("projects", {})
+    starred, others = [], []
+
+    github_token = os.getenv("GITHUB_TOKEN")
+    gh_client = github.Github(github_token) if github_token else None
+
+    for repo_name, proj in projects.items():
+        if proj.get("starred"):
+            if gh_client:
+                try:
+                    repository = gh_client.get_repo(f"ansys/{repo_name}")
+                    proj["github_stars"] = repository.stargazers_count
+                except Exception:
+                    others.append(proj)
+                    continue
+            starred.append(proj)
+        else:
+            others.append(proj)
+
+    starred.sort(key=lambda x: x.get("github_stars", 0), reverse=True)
+    projects_sorted = starred + others
+    projects_dict = {proj["name"]: proj for proj in projects_sorted}
+
+    output = {"projects": projects_dict}
+
+    json_path = Path(__file__).parent / "_static" / "projects.json"
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with json_path.open("w", encoding="utf-8") as json_file:
+        json.dump(output, json_file, indent=4)
+        print(f"JSON file successfully written to {json_path}")
+
+
+def read_project_json():
+    """Read the projects.json file and return its content."""
+    json_path = Path(__file__).parent / "_static" / "projects.json"
+    if not json_path.exists() or not json_path.is_file():
+        raise FileNotFoundError(f"The file {json_path} does not exist or is not a file.")
+    with json_path.open("r", encoding="utf-8") as json_file:
+        try:
+            json_content = json.load(json_file)
+            return json_content
+        except json.JSONDecodeError as e:
+            raise ValueError(f"Error parsing JSON file: {e}")
+
+
 jinja_globals = {
     "LAST_RELEASE": get_last_metapackage_release(),
     "VERSION": version,
@@ -145,7 +211,7 @@ jinja_globals = {
     "SUPPORTED_PLATFORMS": ["Windows", "macOS", "Linux"],
 }
 jinja_contexts = {
-    "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
+    "project_context": {"projects": read_project_json()},
     "dependencies": {"dependencies": read_dependencies_from_pyproject()},
     "optional_dependencies": {"optional_dependencies": read_optional_dependencies_from_pyproject()},
     "wheelhouse": {
@@ -454,32 +520,6 @@ def revert_thumbnails(app: sphinx.application.Sphinx, exception):
     thumbnail_dir = Path(__file__).parent.absolute() / "_static" / "thumbnails"
 
     subprocess.run(["git", "checkout", "--", thumbnail_dir])
-
-
-def convert_yaml_to_json(app: sphinx.application.Sphinx):
-    """
-    Convert a YAML file to a JSON file.
-
-    Parameters:
-    yaml_path (Path): Path to the YAML file.
-    json_path (Path): Path to save the JSON file.
-
-    Returns:
-    None
-    """
-    if not metadata.exists() or not metadata.is_file():
-        raise FileNotFoundError(f"The file {metadata} does not exist or is not a file.")
-
-    with metadata.open("r", encoding="utf-8") as yaml_file:
-        try:
-            yaml_content = yaml.safe_load(yaml_file)
-        except yaml.YAMLError as e:
-            raise ValueError(f"Error parsing YAML file: {e}")
-
-    json_path = Path(__file__).parent / "_static" / "projects.json"
-    with json_path.open("w", encoding="utf-8") as json_file:
-        json.dump(yaml_content, json_file, indent=4)
-        print(f"JSON file successfully written to {json_path}")
 
 
 def fetch_release_branches_and_python_limits(app: sphinx.application.Sphinx):
