@@ -1,0 +1,13 @@
+{
+    "blog/pyansys-landing-page.html": {
+        "author": "PyAnsys core team",
+        "date": "2025-09-15",
+        "categories": "Announcement",
+        "tags": "pyansys, update",
+        "industries": "General",
+        "products": "PyAnsys",
+        "image": "thumbnails/pyansys-common.png",
+        "title": "PyAnsys landing page update",
+        "description": "The PyAnsys landing page has been redesigned for improved usability, navigation, and accessibility, based on community feedback and collaboration."
+    }
+}
