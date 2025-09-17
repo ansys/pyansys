@@ -138,7 +138,7 @@ def get_last_metapackage_release():
     return last_release.tag_name
 
 
-def convert_yaml_to_json(app: sphinx.application.Sphinx):
+def convert_yaml_to_json():
     """
     Convert a YAML file to a JSON file.
 
@@ -193,6 +193,7 @@ def convert_yaml_to_json(app: sphinx.application.Sphinx):
 
 def read_project_json():
     """Read the projects.json file and return its content."""
+    convert_yaml_to_json()  # Ensure the JSON is up to date
     json_path = Path(__file__).parent / "_static" / "projects.json"
     if not json_path.exists() or not json_path.is_file():
         raise FileNotFoundError(f"The file {json_path} does not exist or is not a file.")
@@ -577,7 +578,6 @@ def setup(app: sphinx.application.Sphinx):
         Sphinx instance containing all the configuration for the documentation build.
     """
     # At the beginning of the build process - update the version in cheatsheet
-    app.connect("builder-inited", convert_yaml_to_json)
     app.connect("builder-inited", resize_thumbnails)
     app.connect("builder-inited", fetch_release_branches_and_python_limits)
 
