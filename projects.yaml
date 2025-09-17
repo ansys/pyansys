@@ -253,7 +253,6 @@ projects:
       api: https://visualization.fluent.docs.pyansys.com/version/stable/visualization/visualization_contents.html
 
   pygranta:
-    starred: true
     name: PyGranta
     repository: https://github.com/ansys/pygranta
     description: Pythonic interface to Ansys Granta MI services
