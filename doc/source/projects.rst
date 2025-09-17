@@ -20,20 +20,36 @@ Projects
                 data-tags="{{ tags }}"
                 onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
             >
+                {% if metadata.get('starred', False) %}
+                <span class="star-icon" title="Highlighted project">&#9733;</span>
+                {% endif %}
                 <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
                 <div class="sd-card-body">
-                    <p class="sd-card-title sd-font-weight-bold"> {{ metadata['name'] }} </p>
+                    <p class="sd-card-title sd-font-weight-bold">
+                        {{ metadata['name'] }}
+                    </p>
                     <p class="sd-card-body-text"> {{ metadata['description'] }} </p>
                     <p class="sd-card-text">
                         {% for family in families %}
-                        <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ family }}</span>
+                            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ family }}</span>
                         {% endfor %}
                         {% for tag in metadata['tags'] %}
-                        <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ tag }}</span>
+                            <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ tag }}</span>
                         {% endfor %}
-                        </p>
+                    </p>
                 </div>
             </div>
 
             {% endfor %}
+            <style>
+            .star-icon {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                color: #ffb71b;
+                font-size: 1.5em;
+                z-index: 2;
+                padding: 2px 6px;
+                }
+            </style>
         </div>
