@@ -16,7 +16,6 @@
   --footer-social-icon-size: 1.25rem;
   --footer-social-icon-height: 1.5rem;
   --footer-social-gap: 0.75rem;
-  --swiper-slide-height: 29.375rem; /* 470px */
   --swiper-slide-mb: 1.25rem;
   --swiper-pagination-active: #ffb71b;
   --form-width: 30rem;
@@ -151,7 +150,7 @@ html[data-theme="dark"] {
   display: flex;
 }
 .swiper-slide .project-card {
-  height: var(--swiper-slide-height);
+  height: 470px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -338,12 +337,4 @@ textarea.form-control {
   font-size: 1.5em;
   z-index: 2;
   padding: 2px 6px;
-}
-
-.swiper-slide {
-  height: 470px !important;
-}
-
-.project-card .sd-card .sd-card-body {
-  height: 170px;
 }
