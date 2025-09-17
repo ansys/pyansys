@@ -62,7 +62,6 @@ projects:
       api: https://geometry.docs.pyansys.com/version/stable/api/index.html
 
   pyansys-math:
-    starred: true
     name: PyAnsys Math
     repository: https://github.com/ansys/pyansys-math
     description: Pythonic interface to PyAnsys Math libraries
@@ -92,7 +91,6 @@ projects:
       api: https://sound.docs.pyansys.com/version/stable/api/index.html
 
   pyconceptev:
-    starred: true
     name: PyConceptEV
     repository: https://github.com/ansys/pyconceptev
     description: Pythonic interface to Ansys ConceptEV library
@@ -122,6 +120,7 @@ projects:
       api: https://dpf.docs.pyansys.com/version/stable/api/index.html
 
   pydpf-post:
+    starred: true
     name: PyDPF - Post
     repository: https://github.com/ansys/pydpf-post
     description: Pythonic interface to access and postprocess Ansys solver result files
@@ -136,7 +135,6 @@ projects:
       api: https://post.docs.pyansys.com/version/stable/api/index.html
 
   pydpf-composites:
-    starred: true
     name: PyDPF - Composites
     repository: https://github.com/ansys/pydpf-composites
     description: Pythonic interface to postprocess layered and short-fiber composite models
@@ -172,7 +170,7 @@ projects:
     description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
     thumbnail: _static/thumbnails/pydynamicreporting.png
     families: [Fluids, Electronics]
-    tags: [Tools]
+    tags: [Flagship]
     icon: _static/icons/platform.svg
     documentation:
       base: https://dynamicreporting.docs.pyansys.com/version/stable
@@ -241,7 +239,6 @@ projects:
       api: https://fluent.docs.pyansys.com/version/stable/api/api_contents.html
 
   pyfluent-visualization:
-    starred: true
     name: PyFluent - Visualization
     repository: https://github.com/ansys/pyfluent-visualization
     description: Pythonic interface to visualize Ansys Fluent simulations
@@ -277,7 +274,7 @@ projects:
     description: Pythonic interface to Ansys HPC Platform Services (HPS)
     thumbnail: _static/thumbnails/intro.png
     families: [Platform]
-    tags: [Tools]
+    tags: [Flagship]
     icon: _static/icons/platform.svg
     documentation:
       base: https://hps.docs.pyansys.com/version/stable
@@ -286,7 +283,6 @@ projects:
       api: https://hps.docs.pyansys.com/version/stable/api/index.html
 
   pyhps-data-transfer:
-    starred: true
     name: PyHPS Data Transfer
     repository: https://github.com/ansys/pyhps-data-transfer
     description: A Python client for Data Transfer in Ansys HPC Platform Services
@@ -316,7 +312,6 @@ projects:
       api: https://mapdl.docs.pyansys.com/version/stable/api/index.html
 
   pymapdl-reader:
-    starred: true
     name: PyMAPDL Reader
     repository: https://github.com/ansys/pymapdl-reader
     description: A legacy Python library to read MAPDL result files (MAPDL 14.5 and later)
@@ -391,7 +386,6 @@ projects:
       api: https://optislang.docs.pyansys.com/version/stable/api/index.html
 
   pypim:
-    starred: true
     name: PyPIM
     repository: https://github.com/ansys/pypim
     description: Pythonic interface to the Ansys PIM (Product Instance Management) API
@@ -436,7 +430,6 @@ projects:
       api: https://rocky.docs.pyansys.com/version/stable/api/index.html
 
   pyscadeone:
-    starred: true
     name: PyScadeOne
     repository: https://github.com/ansys/pyscadeone
     description: Pythonic interface to Ansys Scade One

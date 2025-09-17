@@ -38,6 +38,7 @@
   --workflow-cta-btn-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
   --workflow-cta-btn-hover-bg: #333;
   --star-icon-color: #ffb71b;
+  --star-text-color: #353535;
 }
 
 html[data-theme="dark"] {
@@ -51,6 +52,7 @@ html[data-theme="dark"] {
   --workflow-cta-btn-border: 1px solid #353535;
   --workflow-cta-btn-hover-bg: #ccc;
   --star-icon-color: #cd8d00;
+  --star-text-color: #ececec;
 }
 
 .testimonial-card {
@@ -329,12 +331,17 @@ textarea.form-control {
   background: var(--workflow-cta-btn-hover-bg) !important;
 }
 
+.star-starcount-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: middle;
+}
 .star-icon {
-  position: absolute;
-  top: 8px;
-  left: 8px;
   color: var(--star-icon-color);
-  font-size: 1.5em;
-  z-index: 2;
-  padding: 2px 6px;
+  font-size: 1.2em;
+}
+.star-count {
+  font-weight: bold;
+  color: var(--star-text-color);
 }

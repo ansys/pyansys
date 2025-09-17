@@ -20,9 +20,11 @@ Projects
                 data-tags="{{ tags }}"
                 onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
             >
-                {% if metadata.get('starred', False) %}
-                <span class="star-icon" title="Highlighted project">&#9733;</span>
-                {% endif %}
+                                {% if metadata.get('starred', False) %}
+                                <span class="star-starcount-wrapper">
+                                    <span class="star-icon" title="Highlighted project">&#9733;</span><span class="star-count">{{ metadata.get('github_stars', 0) }}</span>
+                                </span>
+                                {% endif %}
                 <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
                 <div class="sd-card-body">
                     <p class="sd-card-title sd-font-weight-bold">
@@ -41,4 +43,4 @@ Projects
             </div>
 
             {% endfor %}
-        </div>
+                </div>
