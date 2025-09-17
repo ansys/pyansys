@@ -41,15 +41,4 @@ Projects
             </div>
 
             {% endfor %}
-            <style>
-            .star-icon {
-                position: absolute;
-                top: 8px;
-                left: 8px;
-                color: #ffb71b;
-                font-size: 1.5em;
-                z-index: 2;
-                padding: 2px 6px;
-                }
-            </style>
         </div>

@@ -33,12 +33,27 @@
   --workflow-cta-btn-h: 2.5rem;
   --workflow-cta-btn-maxw: 17.5rem;
   --workflow-cta-btn-padding: 0.5rem 1rem;
-  --workflow-cta-btn-bg: #000;
-  --workflow-cta-btn-color: #fff;
+  --workflow-cta-btn-bg: #fff;
+  --workflow-cta-btn-color: #000;
   --workflow-cta-btn-radius: 0.25rem;
   --workflow-cta-btn-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
   --workflow-cta-btn-hover-bg: #333;
+  --star-icon-color: #ffb71b;
 }
+
+html[data-theme="dark"] {
+  --card-bg: #1e1e1e;
+  --card-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
+  --footer-bg: #121212;
+  --footer-color: #fff;
+  --workflow-cta-bg: #353535;
+  --workflow-cta-btn-bg: #000;
+  --workflow-cta-btn-color: #fff;
+  --workflow-cta-btn-border: 1px solid #353535;
+  --workflow-cta-btn-hover-bg: #ccc;
+  --star-icon-color: #cd8d00;
+}
+
 .testimonial-card {
   background: var(--card-bg);
   box-shadow: var(--card-shadow);
@@ -248,7 +263,7 @@ textarea.form-control {
 /* features section */
 .step .icon {
   background: var(--workflow-cta-bg);
-  color: #000;
+  color: var(--workflow-cta-btn-color);
 }
 
 .sd-badge {
@@ -291,7 +306,7 @@ textarea.form-control {
   align-items: center;
   gap: var(--workflow-cta-icon-gap);
   aspect-ratio: 1/1;
-  background: #fff;
+  background: var(--workflow-cta-btn-bg);
 }
 .workflow-cta-title {
   margin: 0 0 0.5em 0;
@@ -313,4 +328,22 @@ textarea.form-control {
 
 .workflow-cta-btn:hover {
   background: var(--workflow-cta-btn-hover-bg) !important;
+}
+
+.star-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: var(--star-icon-color);
+  font-size: 1.5em;
+  z-index: 2;
+  padding: 2px 6px;
+}
+
+.swiper-slide {
+  height: 470px !important;
+}
+
+.project-card .sd-card .sd-card-body {
+  height: 170px;
 }

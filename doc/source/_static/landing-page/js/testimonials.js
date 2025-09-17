@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // content
         const content = document.createElement("p");
-        content.className = "text-muted flex-grow-1 mb-2";
+        content.className = "flex-grow-1 mb-2";
         content.textContent = t.content || "";
         card.appendChild(content);
 
