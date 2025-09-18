@@ -164,14 +164,13 @@ def convert_yaml_to_json():
     gh_client = github.Github(os.getenv("GITHUB_TOKEN", None))
 
     for repo_name, proj in projects.items():
-        if proj.get("starred"):
-            if gh_client:
-                try:
-                    repository = gh_client.get_repo(f"ansys/{repo_name}")
-                    proj["github_stars"] = repository.stargazers_count
-                except Exception:
-                    others.append(proj)
-                    continue
+        if gh_client:
+            try:
+                repository = gh_client.get_repo(f"ansys/{repo_name}")
+                proj["github_stars"] = repository.stargazers_count
+            except Exception:
+                others.append(proj)
+                continue
             starred.append(proj)
         else:
             others.append(proj)
@@ -249,10 +248,6 @@ html_theme_options = {
         "**": ["page-toc", "sourcelink"],
         "index": ["page-toc"],
     },
-    "navbar_end": [
-        "navbar-icon-links",
-        "version-switcher",
-    ],
     "switcher": {
         "json_url": f"https://{cname}/versions.json",
         "version_match": switcher_version,

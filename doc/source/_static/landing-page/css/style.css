@@ -345,3 +345,24 @@ textarea.form-control {
   font-weight: bold;
   color: var(--star-text-color);
 }
+
+/* Project Card Top-Right Star Badge */
+.project-star-badge {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: #ececec;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  z-index: 2;
+  padding: 0px 4px;
+}
+.project-star-icon {
+  color: #222;
+}
+.project-star-count {
+  color: #222;
+  font-weight: 600;
+}

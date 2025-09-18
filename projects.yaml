@@ -2,7 +2,6 @@ projects:
 
   # Projects icons from https://github.com/ansys-internal/pyansys-marketing/blob/main/doc/source/conf.py#L15
   pyacp:
-    starred: true
     name: PyACP
     repository: https://github.com/ansys/pyacp
     description: Pythonic interface to Ansys Composite PrepPost (ACP)
@@ -17,7 +16,6 @@ projects:
       api: https://acp.docs.pyansys.com/version/stable/api/index.html
 
   pyadditive:
-    starred: true
     name: PyAdditive
     repository: https://github.com/ansys/pyadditive
     description: Pythonic interface to the Ansys Additive service
@@ -32,7 +30,6 @@ projects:
       api: https://additive.docs.pyansys.com/version/stable/api/index.html
 
   pyaedt:
-    starred: true
     name: PyAEDT
     repository: https://github.com/ansys/pyaedt
     description: Pythonic interface to Ansys Electronics Desktop (AEDT)
@@ -47,7 +44,6 @@ projects:
       api: https://aedt.docs.pyansys.com/version/stable/API/index.html
 
   pyansys-geometry:
-    starred: true
     name: PyAnsys Geometry
     repository: https://github.com/ansys/pyansys-geometry
     description: Pythonic interface to the Ansys Geometry service
@@ -76,7 +72,6 @@ projects:
       api: https://math.docs.pyansys.com/version/stable/api/index.html
 
   pyansys-sound:
-    starred: true
     name: PyAnsys Sound
     repository: https://github.com/ansys/pyansys-sound
     description: Pythonic interface to Ansys Sound
@@ -105,7 +100,6 @@ projects:
       api: https://conceptev.docs.pyansys.com/version/stable/api_ref.html
 
   pydpf-core:
-    starred: true
     name: PyDPF - Core
     repository: https://github.com/ansys/pydpf-core
     description: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows
@@ -120,7 +114,6 @@ projects:
       api: https://dpf.docs.pyansys.com/version/stable/api/index.html
 
   pydpf-post:
-    starred: true
     name: PyDPF - Post
     repository: https://github.com/ansys/pydpf-post
     description: Pythonic interface to access and postprocess Ansys solver result files
@@ -149,7 +142,6 @@ projects:
       api: https://composites.dpf.docs.pyansys.com/version/stable/api/index.html
 
   pydyna:
-    starred: true
     name: PyDYNA
     repository: https://github.com/ansys/pydyna
     description: Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results
@@ -164,7 +156,6 @@ projects:
       api: https://dyna.docs.pyansys.com/version/stable/autoapi/index.html
 
   pydynamicreporting:
-    starred: true
     name: PyDynamicReporting
     repository: https://github.com/ansys/pydynamicreporting
     description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
@@ -179,7 +170,6 @@ projects:
       api: https://dynamicreporting.docs.pyansys.com/version/stable/class_documentation.html
 
   pyedb:
-    starred: true
     name: PyEDB
     repository: https://github.com/ansys/pyedb
     description: Pythonic interface to the Ansys Electronics Database (EDB) client library
@@ -194,7 +184,6 @@ projects:
       api: https://edb.docs.pyansys.com/version/stable/dotnet_api/index.html
 
   pyedb-core:
-    starred: true
     name: PyEDB - Core
     repository: https://github.com/ansys/pyedb-core
     description: Pythonic interface to Ansys Electronics Database (EDB)
@@ -209,7 +198,6 @@ projects:
       api: https://edb.core.docs.pyansys.com/version/stable/api/index.html
 
   pyensight:
-    starred: true
     name: PyEnSight
     repository: https://github.com/ansys/pyensight
     description: Pythonic interface to EnSight, the Ansys simulation postprocessor
@@ -224,7 +212,6 @@ projects:
       api: https://ensight.docs.pyansys.com/version/stable/class_documentation.html
 
   pyfluent:
-    starred: true
     name: PyFluent
     repository: https://github.com/ansys/pyfluent
     description:  Pythonic interface to Ansys Fluent
@@ -267,7 +254,6 @@ projects:
       api: https://grantami.docs.pyansys.com/version/stable/api.html
 
   pyhps:
-    starred: true
     name: PyHPS
     repository: https://github.com/ansys/pyhps
     description: Pythonic interface to Ansys HPC Platform Services (HPS)
@@ -325,7 +311,6 @@ projects:
       api: https://reader.docs.pyansys.com/version/stable/api/index.html
 
   pymechanical:
-    starred: true
     name: PyMechanical
     repository: https://github.com/ansys/pymechanical
     description: Pythonic interface to Ansys Mechanical
@@ -340,7 +325,6 @@ projects:
       api: https://mechanical.docs.pyansys.com/version/stable/api/index.html
 
   pymodelcenter:
-    starred: true
     name: PyModelCenter
     repository: https://github.com/ansys/pymodelcenter
     description: Pythonic interface to Ansys ModelCenter
@@ -355,7 +339,6 @@ projects:
       api: https://modelcenter.docs.pyansys.com/version/stable/api/index.html
 
   pymotorcad:
-    starred: true
     name: PyMotorCAD
     repository: https://github.com/ansys/pymotorcad
     description: Pythonic interface to Ansys Motor-CAD
@@ -370,7 +353,6 @@ projects:
       api: https://motorcad.docs.pyansys.com/version/stable/methods/index.html
 
   pyoptislang:
-    starred: true
     name: PyOptislang
     repository: https://github.com/ansys/pyoptislang
     description: Pythonic interface to Ansys optiSLang
@@ -399,7 +381,6 @@ projects:
       api: https://pypim.docs.pyansys.com/version/stable/api/index.html
 
   pyprimemesh:
-    starred: true
     name: PyPrimeMesh
     repository: https://github.com/ansys/pyprimemesh
     description: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers
@@ -414,7 +395,6 @@ projects:
       api: https://prime.docs.pyansys.com/version/stable/api/index.html
 
   pyrocky:
-    starred: true
     name: PyRocky
     repository: https://github.com/ansys/pyrocky
     description: Python interface to Ansys Rocky using Rocky PrePost API
@@ -443,7 +423,6 @@ projects:
       api: https://scadeone.docs.pyansys.com/version/stable/api/index.html
 
   pyseascape:
-    starred: true
     name: PySeascape
     repository: https://github.com/ansys/pyseascape
     description: Pythonic interface to Ansys RedHawkSC and TotemSC
@@ -458,7 +437,6 @@ projects:
       api: https://seascape.docs.pyansys.com/version/stable/#usage
 
   pysherlock:
-    starred: true
     name: PySherlock
     repository: https://github.com/ansys/pysherlock
     description: Pythonic interface to Ansys Sherlock
@@ -473,7 +451,6 @@ projects:
       api: https://sherlock.docs.pyansys.com/version/stable/api/index.html
 
   pysimai:
-    starred: true
     name: PySimAI
     repository: https://github.com/ansys/pysimai
     description: Pythonic interface to SimAI
@@ -488,7 +465,6 @@ projects:
       api: https://simai.docs.pyansys.com/version/stable/api_reference.html
 
   pyspeos:
-    starred: true
     name: PySpeos
     description: A Python wrapper for Ansys Speos
     thumbnail: _static/thumbnails/pyspeos.png
@@ -503,7 +479,6 @@ projects:
       api: https://speos.docs.pyansys.com/version/stable/api/index.html
 
   pystk:
-    starred: true
     name: PySTK
     repository: https://github.com/ansys/pystk
     description: Next generation Python API for STK
@@ -532,7 +507,6 @@ projects:
       api: https://systemcoupling.docs.pyansys.com/version/stable/api/index.html
 
   pyturbogrid:
-    starred: true
     name: PyTurboGrid
     repository: https://github.com/ansys/pyturbogrid
     description: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app
@@ -547,7 +521,6 @@ projects:
       api: https://turbogrid.docs.pyansys.com/version/stable/api_reference/index.html
 
   pytwin:
-    starred: true
     name: PyTwin
     repository: https://github.com/ansys/pytwin
     description: Pythonic interface to communicate with consumption workflows for Ansys digital twins
@@ -562,7 +535,6 @@ projects:
       api: https://twin.docs.pyansys.com/version/stable/api/index.html
 
   pyworkbench:
-    starred: true
     name: PyWorkbench
     repository: https://github.com/ansys/pyworkbench
     description: Pythonic interface to Ansys Workbench
