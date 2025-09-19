@@ -32,40 +32,40 @@ dependencies = [
     "ansys-dpf-core==0.14.1",
     "ansys-dpf-post==0.10.1",
     "ansys-dyna-core==0.9.0",
-    "ansys-dynamicreporting-core==0.10.1",
+    "ansys-dynamicreporting-core==0.10.2",
     "ansys-edb-core==0.2.1",
     "ansys-fluent-core==0.34.2",
-    "ansys-geometry-core==0.11.2",
+    "ansys-geometry-core==0.11.3",
     "ansys-hps-client==0.11.1",
     "ansys-hps-data-transfer-client==0.3.0",
     "ansys-mapdl-core==0.71.0",
     "ansys-math-core==0.2.4",
-    "ansys-mechanical-core==0.11.32",
-    "ansys-meshing-prime==0.9.1",
+    "ansys-mechanical-core==0.11.33",
+    "ansys-meshing-prime==0.9.2",
     "ansys-modelcenter-workflow==0.1.1",
     "ansys-motorcad-core==0.7.4",
-    "ansys-optislang-core==1.0.0",
+    "ansys-optislang-core==1.1.0",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.10.10",
+    "ansys-pyensight-core==0.10.12",
     "ansys-rocky-core==0.3.2",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.9.0",
     "ansys-simai-core==0.3.3",
     "ansys-sound-core==0.2.1",
-    "ansys-speos-core==0.6.0",
-    "ansys-stk==0.1.1",
+    "ansys-speos-core==0.6.3",
+    "ansys-stk==0.1.2",
     "ansys-systemcoupling-core==0.10.1",
-    "ansys-turbogrid-core==0.4.7",
+    "ansys-turbogrid-core==0.5.1",
     "ansys-workbench-core==0.9.0",
     "pyaedt==0.19.0",
-    "pyedb==0.55.0",
+    "pyedb==0.57.0",
     "pygranta==2025.2.1",
     "pytwin==0.9.2",
 ]
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.55.1"]
-fluent-all = ["ansys-fluent-visualization==0.21.1"]
+fluent-all = ["ansys-fluent-visualization==0.22.1"]
 tools = [
     "ansys-materials-manager==0.3.0",
     "ansys-tools-filetransfer==0.1.1",
@@ -74,7 +74,7 @@ tools = [
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.11.0",
     "ansys-units==0.7.0",
-    "pyansys-tools-report==0.8.2",
+    "pyansys-tools-report==0.8.3",
     "pyansys-tools-versioning==0.6.0",
     "pyansys-tools-variableinterop==0.1.1",
 ]
@@ -82,7 +82,7 @@ all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.55.1",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.21.1",
+    "ansys-fluent-visualization==0.22.1",
     # TOOLS
     "ansys-materials-manager==0.3.0",
     "ansys-tools-filetransfer==0.1.1",
@@ -91,13 +91,13 @@ all = [
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.11.0",
     "ansys-units==0.7.0",
-    "pyansys-tools-report==0.8.2",
+    "pyansys-tools-report==0.8.3",
     "pyansys-tools-versioning==0.6.0",
     "pyansys-tools-variableinterop==0.1.1",
 ]
 doc = [
     "Sphinx==8.2.3",
-    "ansys-sphinx-theme==1.6.0",
+    "ansys-sphinx-theme==1.6.1",
     "Jinja2 ==3.1.6",
     "Pillow==11.3.0",
     "PyGithub==2.8.1",
