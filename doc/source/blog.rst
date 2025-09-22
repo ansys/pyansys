@@ -16,5 +16,5 @@ like to showcase your work, please reach out to us at `pyansys.core@ansys.com
     :maxdepth: 2
     :hidden:
 
-    blog/pyansys-landing-page
+    blog/2025-09-30-newsletter
 
