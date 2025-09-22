@@ -289,7 +289,7 @@ linkcheck_ignore = [
     r"https://ansunits.docs.*",
     r"https://download.ansys.com/.*",
     r"https://github.com/ansys/pyansys/releases/download/*",
-    r" https://download.ansys.com",
+    r"https://download.ansys.com",
 ]
 
 # User agent
