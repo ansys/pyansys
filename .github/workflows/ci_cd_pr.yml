@@ -30,8 +30,10 @@ jobs:
   check-vulnerabilities:
     name: "Check vulnerabilities"
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: ansys/actions/check-vulnerabilities@v10
+      - uses: ansys/actions/check-vulnerabilities@e0de7dd89b2a4c100f74327666d5521cfda17950 # v10.1.1
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
