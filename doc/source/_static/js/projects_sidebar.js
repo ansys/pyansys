@@ -11,9 +11,7 @@ function collectFamilies(data) {
   for (const project of projects) {
     if (!project || typeof project !== "object") continue;
 
-    // Handle families array
     const projectFamilies = project.families || ["Other"];
-
     const icon = project.icon || "ansys-icon-light.svg"; // Fallback icon
 
     projectFamilies.forEach((family) => {
@@ -73,7 +71,7 @@ function displayFamilies(familyData) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `family-${CSS.escape(family)}`;
-    checkbox.dataset.family = family; // Store exact JSON value
+    checkbox.dataset.family = family;
     checkbox.addEventListener("change", handleFamilySelection);
 
     const familyName = document.createElement("span");
@@ -83,25 +81,20 @@ function displayFamilies(familyData) {
     const iconImage = document.createElement("img");
     iconImage.alt = `${family} icon`;
     iconImage.className = "ansys-icon";
+
     let basePath = "version/dev/";
-    if (window.location.pathname.includes("version/dev")) {
+    if (
+      window.location.pathname.includes("version/dev") ||
+      window.location.pathname.includes("version/stable") ||
+      window.location.pathname.includes("pull/")
+    ) {
       basePath = "";
-    } else if (window.location.pathname.includes("version/stable")) {
-      // If the path is versioned, default to current page
-      basePath = "";
-    } else if (window.location.pathname.includes("pull/")) {
-      // If the path is a PR, default to dev
-      basePath = "";
-    } else {
-      // If the path is not versioned, default to dev
-      basePath = "version/dev/";
     }
 
     const iconName =
       theme === "dark" && icon === "ansys-icon-light.svg"
         ? "ansys-icon-dark.svg"
         : `${icon}`;
-
     iconImage.src = `${basePath}${iconName}`;
 
     const familyCountElement = document.createElement("span");
@@ -116,15 +109,13 @@ function displayFamilies(familyData) {
     familiesContainer.appendChild(familyRow);
   });
 
-  // Handle "Show more" click
+  // Show more/less toggle
   const showMoreButton = document.querySelector(".product-families .show-more");
   const FamilyRows = document.querySelectorAll(".family-row");
   showMoreButton.addEventListener("click", () => {
     if (showMoreClicked) {
       FamilyRows.forEach((row, index) => {
-        if (index >= maxVisible) {
-          row.style.display = "none";
-        }
+        if (index >= maxVisible) row.style.display = "none";
       });
       showMoreButton.textContent = "Show more";
       showMoreClicked = false;
@@ -143,7 +134,7 @@ function displayTags(tagCounts) {
   tagsContainer.innerHTML = "";
 
   const sortedTags = Object.keys(tagCounts).sort();
-  const maxVisible = 5; // Show only first 5 initially
+  const maxVisible = 5;
   let showMoreClicked = false;
 
   sortedTags.forEach((tag, index) => {
@@ -151,12 +142,12 @@ function displayTags(tagCounts) {
 
     const tagRow = document.createElement("div");
     tagRow.className = "tag-row";
-    if (index >= maxVisible) tagRow.style.display = "none"; // Hide extra items initially
+    if (index >= maxVisible) tagRow.style.display = "none";
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `tag-${CSS.escape(tag)}`;
-    checkbox.dataset.tag = tag; // store exact tag name
+    checkbox.dataset.tag = tag;
     checkbox.addEventListener("change", handleTagSelection);
 
     const tagName = document.createElement("span");
@@ -179,9 +170,7 @@ function displayTags(tagCounts) {
   showMoreButton.addEventListener("click", () => {
     if (showMoreClicked) {
       TagRows.forEach((row, index) => {
-        if (index >= maxVisible) {
-          row.style.display = "none";
-        }
+        if (index >= maxVisible) row.style.display = "none";
       });
       showMoreButton.textContent = "Show more";
       showMoreClicked = false;
@@ -204,88 +193,75 @@ function handleTagSelection() {
 }
 
 function applyFilters() {
-  const SelectedTagsContainer = document.getElementById(
-    "selected-product-tags-list",
-  );
-  const SelectedFamiliesContainer = document.getElementById(
-    "selected-product-families-list",
-  );
+  const SelectedTagsContainer = document.getElementById("selected-product-tags-list");
+  const SelectedFamiliesContainer = document.getElementById("selected-product-families-list");
   SelectedTagsContainer.innerHTML = "";
   SelectedFamiliesContainer.innerHTML = "";
 
   const selectedFamilies = Array.from(
-    document.querySelectorAll(
-      '#product-families-list input[type="checkbox"]:checked',
-    ),
-  ).map((checkbox) => checkbox.dataset.family);
+    document.querySelectorAll('#product-families-list input[type="checkbox"]:checked')
+  ).map((cb) => cb.dataset.family);
 
   const selectedTags = Array.from(
-    document.querySelectorAll(
-      '#product-tags-list input[type="checkbox"]:checked',
-    ),
-  ).map((checkbox) => checkbox.dataset.tag);
+    document.querySelectorAll('#product-tags-list input[type="checkbox"]:checked')
+  ).map((cb) => cb.dataset.tag);
 
-  for (const tag of selectedTags) {
-    const selectedTag = document.createElement("span");
-    selectedTag.className = "selected-tag";
-    selectedTag.textContent = tag;
-    SelectedTagsContainer.appendChild(selectedTag);
-  }
+  // Pills
+  selectedTags.forEach((tag) => {
+    const pill = document.createElement("span");
+    pill.className = "selected-tag";
+    pill.textContent = tag;
+    SelectedTagsContainer.appendChild(pill);
+  });
 
-  for (const family of selectedFamilies) {
-    const selectedFamily = document.createElement("span");
-    selectedFamily.className = "selected-family";
-    selectedFamily.textContent = family;
-    SelectedFamiliesContainer.appendChild(selectedFamily);
-  }
+  selectedFamilies.forEach((fam) => {
+    const pill = document.createElement("span");
+    pill.className = "selected-family";
+    pill.textContent = fam;
+    SelectedFamiliesContainer.appendChild(pill);
+  });
 
-  console.log("Selected families:", selectedFamilies);
-  console.log("Selected tags:", selectedTags);
-
+  // Filter project cards
   const projectCards = document.querySelectorAll(".project-card");
-
   projectCards.forEach((card) => {
-    const rawFamilies = card.getAttribute("data-families");
-    let cardFamilies = [];
+    const cardFamilies = JSON.parse(card.getAttribute("data-families").replace(/'/g, '"') || "[]");
+    const cardTags = JSON.parse(card.getAttribute("data-tags").replace(/'/g, '"') || "[]");
 
-    if (rawFamilies) {
-      try {
-        cardFamilies = JSON.parse(rawFamilies.replace(/'/g, '"'));
-      } catch {
-        cardFamilies = [rawFamilies];
-      }
-    }
+    const matchesFamily =
+      selectedFamilies.length === 0 || selectedFamilies.some((f) => cardFamilies.includes(f));
+    const matchesTag =
+      selectedTags.length === 0 || selectedTags.every((t) => cardTags.includes(t));
 
-    const rawTags = card.getAttribute("data-tags");
-    let cardTags = [];
-    if (rawTags) {
-      try {
-        cardTags = JSON.parse(rawTags.replace(/'/g, '"'));
-      } catch (error) {
-        console.error("Error parsing data-tags:", rawTags, error);
-      }
-    }
+    card.style.display = matchesFamily && matchesTag ? "flex" : "none";
+  });
 
-    // Check if the card matches the selected families
-    const matchesAllFamilies =
-      selectedFamilies.length === 0 ||
-      selectedFamilies.some((selectedFamily) =>
-        cardFamilies.includes(selectedFamily),
-      );
+  // Hide families not in visible projects
+  const familyRows = document.querySelectorAll("#product-families-list .family-row");
+  familyRows.forEach((row) => {
+    const fam = row.querySelector("input").dataset.family;
+    const anyCardVisible = Array.from(projectCards).some(
+      (c) =>
+        c.style.display !== "none" &&
+        JSON.parse(c.getAttribute("data-families").replace(/'/g, '"')).includes(fam)
+    );
+    row.style.display = anyCardVisible ? "flex" : "none";
+  });
 
-    // Check if the card matches the selected tags
-    const matchesAllTags =
-      selectedTags.length === 0 ||
-      selectedTags.every((tag) => cardTags.includes(tag));
-
-    // Show only if both family & tag filters match (or if no filter is applied)
-    card.style.display = matchesAllFamilies && matchesAllTags ? "flex" : "none";
+  // Hide tags not in visible projects
+  const tagRows = document.querySelectorAll("#product-tags-list .tag-row");
+  tagRows.forEach((row) => {
+    const tag = row.querySelector("input").dataset.tag;
+    const anyCardVisible = Array.from(projectCards).some(
+      (c) =>
+        c.style.display !== "none" &&
+        JSON.parse(c.getAttribute("data-tags").replace(/'/g, '"')).includes(tag)
+    );
+    row.style.display = anyCardVisible ? "flex" : "none";
   });
 }
 
 function initializeAllCards() {
-  const articleElement = document.querySelector("article");
-  const projects = articleElement.querySelectorAll(".project-card");
+  const projects = document.querySelectorAll(".project-card");
   projects.forEach((project) => {
     project.style.display = "flex";
   });
@@ -294,21 +270,16 @@ function initializeAllCards() {
 document.addEventListener("DOMContentLoaded", () => {
   fetch(PROJECTS_FILE)
     .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
+      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
       return response.json();
     })
     .then((data) => {
-      // Display families
       const familyData = collectFamilies(data);
       displayFamilies(familyData);
 
-      // Display tags
       const tagCounts = collectTags(data);
       displayTags(tagCounts);
 
-      // Render all cards
       initializeAllCards();
     })
     .catch((error) => {
@@ -323,16 +294,10 @@ function updateIcon() {
   if (icons) {
     icons.forEach((iconImage) => {
       if (theme === "dark" && iconImage.src.includes("ansys-icon-light.svg")) {
-        iconImage.src = iconImage.src.replace(
-          "ansys-icon-light.svg",
-          "ansys-icon-dark.svg",
-        );
+        iconImage.src = iconImage.src.replace("ansys-icon-light.svg", "ansys-icon-dark.svg");
       }
       if (theme === "light" && iconImage.src.includes("ansys-icon-dark.svg")) {
-        iconImage.src = iconImage.src.replace(
-          "ansys-icon-dark.svg",
-          "ansys-icon-light.svg",
-        );
+        iconImage.src = iconImage.src.replace("ansys-icon-dark.svg", "ansys-icon-light.svg");
       }
     });
   }
@@ -344,5 +309,5 @@ observer.observe(document.documentElement, {
   attributeFilter: ["data-theme"],
 });
 
-// Initial call to set the icon on page load
+// Initial call
 updateIcon();

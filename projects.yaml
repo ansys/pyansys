@@ -91,7 +91,7 @@ projects:
     description: Pythonic interface to Ansys ConceptEV library
     thumbnail: _static/thumbnails/pyconceptev.png
     families: [Electronics]
-    tags: [Tools]
+    tags: [Flagship]
     icon: _static/icons/electromagnetics.svg
     documentation:
       base: https://conceptev.docs.pyansys.com/version/stable
@@ -414,7 +414,7 @@ projects:
     description: Pythonic interface to Ansys Scade One
     thumbnail: _static/thumbnails/pyscadeone.png
     families: [Embedded Software]
-    tags: [Software]
+    tags: [Flagship]
     icon: _static/icons/embedded-software.svg
     documentation:
       base: https://scadeone.docs.pyansys.com/version/stable
@@ -553,8 +553,8 @@ projects:
     repository: https://github.com/ansys/openapi-common
     description: Shared Ansys software components to enable package interoperability and minimize maintenance
     thumbnail: _static/thumbnails/intro.png
-    families: [Other]
-    tags: [Tools]
+    families: [Tools]
+    tags: [Common]
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://shared.docs.pyansys.com
@@ -567,8 +567,8 @@ projects:
     description: Shared Ansys Electronics Desktop (AEDT) toolkit components to enable package interoperability and minimize maintenance
     thumbnail: _static/thumbnails/intro.png
     repository: https://github.com/ansys/pyaedt-toolkits-common
-    families: [Tools]
-    tags: [PyAEDT toolkits]
+    families: [Electronics]
+    tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://aedt.common.toolkit.docs.pyansys.com/version/stable/index.html
@@ -578,8 +578,8 @@ projects:
     description: Python wrapper for modeling antennas using Ansys Electronics Desktop (AEDT) via PyAEDT
     thumbnail: _static/thumbnails/intro.png
     repository:
-    families: [Tools]
-    tags: [PyAEDT toolkits]
+    families: [Electronics]
+    tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://aedt.antenna.toolkit.docs.pyansys.com/version/stable/index.html
@@ -589,8 +589,8 @@ projects:
     description: A Python wrapper that automates segmentation and skewing of IPM and SPM motors using Ansys Electronics Desktop (AEDT)
     thumbnail: _static/thumbnails/intro.png
     repository:
-    families: [Tools]
-    tags: [PyAEDT toolkits]
+    families: [Electronics]
+    tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://magnet.segmentation.toolkit.docs.pyansys.com/version/stable/index.html
