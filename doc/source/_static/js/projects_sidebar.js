@@ -235,28 +235,43 @@ function applyFilters() {
     card.style.display = matchesFamily && matchesTag ? "flex" : "none";
   });
 
-  // Hide families not in visible projects
-  const familyRows = document.querySelectorAll("#product-families-list .family-row");
-  familyRows.forEach((row) => {
-    const fam = row.querySelector("input").dataset.family;
-    const anyCardVisible = Array.from(projectCards).some(
-      (c) =>
-        c.style.display !== "none" &&
-        JSON.parse(c.getAttribute("data-families").replace(/'/g, '"')).includes(fam)
-    );
-    row.style.display = anyCardVisible ? "flex" : "none";
+  // === Update dynamic counts ===
+  const visibleCards = Array.from(projectCards).filter((c) => c.style.display !== "none");
+
+  // Count visible families
+  const familyCounts = {};
+  visibleCards.forEach((card) => {
+    const fams = JSON.parse(card.getAttribute("data-families").replace(/'/g, '"') || "[]");
+    fams.forEach((f) => {
+      familyCounts[f] = (familyCounts[f] || 0) + 1;
+    });
   });
 
-  // Hide tags not in visible projects
-  const tagRows = document.querySelectorAll("#product-tags-list .tag-row");
-  tagRows.forEach((row) => {
+  // Count visible tags
+  const tagCounts = {};
+  visibleCards.forEach((card) => {
+    const tags = JSON.parse(card.getAttribute("data-tags").replace(/'/g, '"') || "[]");
+    tags.forEach((t) => {
+      tagCounts[t] = (tagCounts[t] || 0) + 1;
+    });
+  });
+
+  // Update family count spans & hide if 0
+  document.querySelectorAll("#product-families-list .family-row").forEach((row) => {
+    const fam = row.querySelector("input").dataset.family;
+    const countSpan = row.querySelector(".family-count");
+    const count = familyCounts[fam] || 0;
+    countSpan.textContent = count;
+    row.style.display = count > 0 ? "flex" : "none";
+  });
+
+  // Update tag count spans & hide if 0
+  document.querySelectorAll("#product-tags-list .tag-row").forEach((row) => {
     const tag = row.querySelector("input").dataset.tag;
-    const anyCardVisible = Array.from(projectCards).some(
-      (c) =>
-        c.style.display !== "none" &&
-        JSON.parse(c.getAttribute("data-tags").replace(/'/g, '"')).includes(tag)
-    );
-    row.style.display = anyCardVisible ? "flex" : "none";
+    const countSpan = row.querySelector(".tag-count");
+    const count = tagCounts[tag] || 0;
+    countSpan.textContent = count;
+    row.style.display = count > 0 ? "flex" : "none";
   });
 }
 
