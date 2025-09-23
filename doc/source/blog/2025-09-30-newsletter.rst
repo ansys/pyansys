@@ -31,7 +31,7 @@ elements:
 Other updates
 =============
 
-The landing page is not the only section that has been revisited. The top
+The landing page is not the only section that has been enhanced. The top
 navigation bar contains now four main sections:
 
 -  `Home <../index>`_, for quickly accessing the main page of the project

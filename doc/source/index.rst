@@ -45,7 +45,8 @@
         </div>
         <!-- Title and content -->
         <div>
-          <h3 class="workflow-cta-title">PyAnsys Workflows</h3>
+          <h3 class="workflow-cta-title">PyAnsys workflows</h3>
+
           <div class="workflow-content">
             Your gateway to advanced engineering automation. Discover how to seamlessly combine multiple PyAnsys libraries to build powerful, real-world simulation and data processing pipelines.
           </div>
@@ -104,7 +105,8 @@
 
     <!-- ===================== Blogs Section ===================== -->
     <section id="blogs">
-      <h2>Recent Blogs
+      <h2>Recent blogs
+
         <a href="blogs.html" class="btn btn-link float-end">More blogs</a>
       </h2>
       <div class="blogs-landingpage" id="blogs-landingpage"></div>
@@ -123,7 +125,8 @@
               <i class="fas fa-power-off"></i>
             </div>
             <div class="text">
-              <h4>Pre-simulation</h4>
+              <h4>Pre simulation</h4>
+
               <p>Define your simulation setup by specifying the geometry in a flexible, parametric format.</p>
             </div>
           </div>
