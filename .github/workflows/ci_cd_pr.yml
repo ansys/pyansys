@@ -32,7 +32,7 @@ jobs:
     name: "Check vulnerabilities"
     runs-on: ubuntu-latest
     env:
-      UV_PRERELEASE: 'f-necessary-or-explicit'
+      UV_PRERELEASE: 'if-necessary-or-explicit'
     steps:
       - uses: ansys/actions/check-vulnerabilities@v10
         with:
