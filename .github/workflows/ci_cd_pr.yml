@@ -1,4 +1,5 @@
 name: pull-request
+
 on:
   pull_request:
     types: [opened, synchronize, reopened, labeled, unlabeled]
@@ -30,6 +31,8 @@ jobs:
   check-vulnerabilities:
     name: "Check vulnerabilities"
     runs-on: ubuntu-latest
+    env:
+      UV_PRERELEASE: 'disallow'
     steps:
       - uses: ansys/actions/check-vulnerabilities@v10
         with:
