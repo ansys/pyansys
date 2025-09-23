@@ -13,7 +13,6 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
-  UV_PRERELEASE: "allow"  # TEMP - remove once PyGranta's full 2025R2 release is out
 
 jobs:
 
@@ -31,8 +30,6 @@ jobs:
   check-vulnerabilities:
     name: "Check vulnerabilities"
     runs-on: ubuntu-latest
-    env:
-      UV_PRERELEASE: 'if-necessary-or-explicit'
     steps:
       - uses: ansys/actions/check-vulnerabilities@v10
         with:
