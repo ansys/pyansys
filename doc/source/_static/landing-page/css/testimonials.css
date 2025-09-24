@@ -1,6 +1,4 @@
-/* ============================= */
-/*        CSS Variables          */
-/* ============================= */
+/* CSS Variables */
 :root {
   --testimonial-bg: #fff;
   --testimonial-radius: 0.5rem;
@@ -24,9 +22,7 @@ html[data-theme="dark"] {
   --swiper-pagination-bullet-inactive-color: #ececec;
 }
 
-/* ============================= */
-/*        Testimonial Card       */
-/* ============================= */
+/* Testimonial Card */
 .testimonial {
   background: var(--testimonial-bg);
   border-radius: var(--testimonial-radius);
@@ -36,9 +32,7 @@ html[data-theme="dark"] {
   height: 100%;
 }
 
-/* ============================= */
-/*        Logo Section           */
-/* ============================= */
+/* Logo Section */
 .logo-wrap {
   height: var(--logo-wrap-height);
   display: flex;
@@ -51,16 +45,12 @@ html[data-theme="dark"] {
   object-fit: contain;
 }
 
-/* ============================= */
-/*        Swiper Slide           */
-/* ============================= */
+/* Swiper Slide */
 .swiper-slide {
   height: var(--swiper-slide-height) !important;
 }
 
-/* ============================= */
-/*        SVG Fill               */
-/* ============================= */
+/* SVG Fill */
 .st0 {
   fill: var(--st0-fill);
 }

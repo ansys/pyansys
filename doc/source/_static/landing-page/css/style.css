@@ -1,14 +1,27 @@
+/**
+ * CSS Variables
+ * Centralized theme variables for
+ * standardizing card styles, layout spacing,
+ * background, and step-by-step layout.
+ */
 :root {
+  /* Card */
   --card-bg: #fff;
   --card-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
   --card-radius: 0.5rem;
+
+  /* Landing Page */
   --landing-gap: 1.5rem;
   --landing-gap-mobile: 1rem;
   --landing-mb: 2rem;
   --landing-mb-mobile: 1rem;
   --page-width: min(100%, 96.875rem); /* 1550px */
+
+  /* Thumbnails */
   --thumbnail-padding: 1.5rem;
   --thumbnail-radius: 0.5rem;
+
+  /* Footer */
   --footer-border: 0.75rem solid #ffc107;
   --footer-bg: #000;
   --footer-color: #fff;
@@ -16,11 +29,19 @@
   --footer-social-icon-size: 1.25rem;
   --footer-social-icon-height: 1.5rem;
   --footer-social-gap: 0.75rem;
+
+  /* Swiper */
   --swiper-slide-mb: 1.25rem;
   --swiper-pagination-active: #ffb71b;
+
+  /* Forms */
   --form-width: 30rem;
   --form-height: 10rem;
+
+  /* Badges */
   --badge-mr: 0.3125rem;
+
+  /* Workflow CTA */
   --workflow-cta-mt: 2.5em;
   --workflow-cta-mb: 2em;
   --workflow-cta-padding: 1.5rem 2rem;
@@ -29,6 +50,8 @@
   --workflow-cta-gap: 2em;
   --workflow-cta-icon-size: 3rem;
   --workflow-cta-icon-gap: 0.625rem;
+
+  /* Workflow CTA Button */
   --workflow-cta-btn-h: 2.5rem;
   --workflow-cta-btn-maxw: 17.5rem;
   --workflow-cta-btn-padding: 0.5rem 1rem;
@@ -37,10 +60,15 @@
   --workflow-cta-btn-radius: 0.25rem;
   --workflow-cta-btn-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
   --workflow-cta-btn-hover-bg: #333;
+
+  /* Stars */
   --star-icon-color: #ffb71b;
   --star-text-color: #353535;
 }
 
+/**
+ * Dark Theme Variables
+ */
 html[data-theme="dark"] {
   --card-bg: #1e1e1e;
   --card-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
@@ -55,6 +83,9 @@ html[data-theme="dark"] {
   --star-text-color: #ececec;
 }
 
+/**
+ * Card Styles
+ */
 .testimonial-card {
   background: var(--card-bg);
   box-shadow: var(--card-shadow);
@@ -62,6 +93,9 @@ html[data-theme="dark"] {
   height: 100%;
 }
 
+/**
+ * Landing Page Layout
+ */
 .projects-landingpage,
 .blogs-landingpage {
   display: grid;
@@ -82,6 +116,9 @@ html[data-theme="dark"] {
   max-width: var(--page-width) !important;
 }
 
+/**
+ * Thumbnails
+ */
 .project-lp-thumbnail {
   padding: var(--thumbnail-padding);
   border-radius: var(--thumbnail-radius);
@@ -91,6 +128,9 @@ html[data-theme="dark"] {
   padding: var(--thumbnail-padding);
 }
 
+/**
+ * Footer
+ */
 .bd-footer {
   border-top: var(--footer-border);
   width: 100%;
@@ -111,7 +151,9 @@ html[data-theme="dark"] {
   background-color: var(--footer-bg) !important;
 }
 
-/** Footer styles **/
+/**
+ * Footer Links
+ */
 .external-link {
   display: inline-flex;
   align-items: center;
@@ -140,9 +182,8 @@ html[data-theme="dark"] {
 }
 
 /**
-* Swiper styles for project carousel
-*/
-
+ * Swiper (Project Carousel)
+ */
 .swiper-wrapper {
   display: flex;
   align-items: stretch;
@@ -151,6 +192,7 @@ html[data-theme="dark"] {
 .swiper-slide {
   display: flex;
 }
+
 .swiper-slide .project-card {
   height: 470px;
   display: flex;
@@ -163,14 +205,13 @@ html[data-theme="dark"] {
   position: initial !important;
 }
 
-/* general styles */
-
-/* Remove breadcrumbs */
+/**
+ * General Overrides
+ */
 .bd-header-article {
   display: none !important;
 }
 
-/* Maximize the width of the content area */
 .bd-main .bd-content {
   display: flex !important;
   height: 100% !important;
@@ -198,10 +239,13 @@ html[data-theme="dark"] {
   opacity: 1;
 }
 
-/* Contact Us section */
+/**
+ * Contact Us
+ */
 .mb-3 .form-control {
   width: var(--form-width);
 }
+
 textarea.form-control {
   height: var(--form-height);
 }
@@ -210,7 +254,9 @@ textarea.form-control {
   background: var(--swiper-pagination-active) !important;
 }
 
-/* Footer right social icons */
+/**
+ * Footer Social Icons
+ */
 .footer-right {
   display: flex;
   align-items: center;
@@ -233,35 +279,44 @@ textarea.form-control {
   background-position: center;
   transition: background-image 0.2s;
 }
+
 .footer-right .social-icons .icon-youtube {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-youtube-white.png);
   width: 1.8125rem;
 }
+
 .footer-right .social-icons .icon-youtube:hover {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-youtube-color.png);
 }
+
 .footer-right .social-icons .icon-facebook {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-facebook-white.png);
 }
+
 .footer-right .social-icons .icon-facebook:hover {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-facebook-color.png);
 }
+
 .footer-right .social-icons .icon-linkedin {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-linkedin-white.png);
 }
+
 .footer-right .social-icons .icon-linkedin:hover {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-linkedin-color.png);
 }
-/* GitHub uses FontAwesome icon in white */
+
 .footer-right .social-icons .icon-github {
   background: none;
   font-size: 1.375rem;
 }
+
 .footer-right .social-icons .icon-github:hover {
   color: #000;
 }
 
-/* features section */
+/**
+ * Features Section
+ */
 .step .icon {
   background: var(--workflow-cta-bg);
   color: var(--workflow-cta-btn-color);
@@ -279,8 +334,9 @@ textarea.form-control {
   }
 }
 
-/* PyAnsys Landing Page Custom Styles */
-
+/**
+ * PyAnsys Landing Page
+ */
 .workflow-cta {
   margin: var(--workflow-cta-mt) 0 var(--workflow-cta-mb) 0;
   padding: var(--workflow-cta-padding);
@@ -291,6 +347,7 @@ textarea.form-control {
   justify-content: space-between;
   gap: var(--workflow-cta-gap);
 }
+
 .workflow-cta-left {
   display: flex;
   align-items: flex-start;
@@ -298,6 +355,7 @@ textarea.form-control {
   flex: 1;
   min-width: 18.75rem;
 }
+
 .workflow-cta-icon {
   margin-top: 0.2em;
   display: flex;
@@ -309,9 +367,11 @@ textarea.form-control {
   aspect-ratio: 1/1;
   background: var(--workflow-cta-btn-bg);
 }
+
 .workflow-cta-title {
   margin: 0 0 0.5em 0;
 }
+
 .workflow-cta-btn {
   display: flex;
   height: var(--workflow-cta-btn-h);
@@ -331,22 +391,29 @@ textarea.form-control {
   background: var(--workflow-cta-btn-hover-bg) !important;
 }
 
+/**
+ * GitHub Stars
+ */
 .star-starcount-wrapper {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   vertical-align: middle;
 }
+
 .star-icon {
   color: var(--star-icon-color);
   font-size: 1.2em;
 }
+
 .star-count {
   font-weight: bold;
   color: var(--star-text-color);
 }
 
-/* Project Card Top-Right Star Badge */
+/**
+ * Project Card Star Badge
+ */
 .project-star-badge {
   position: absolute;
   top: 12px;
@@ -359,9 +426,11 @@ textarea.form-control {
   z-index: 2;
   padding: 0px 4px;
 }
+
 .project-star-icon {
   color: #222;
 }
+
 .project-star-count {
   color: #222;
   font-weight: 600;
