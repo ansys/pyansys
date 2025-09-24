@@ -230,19 +230,17 @@ function applyFilters() {
   });
 
   const clearTagButton = document.getElementById("clear-tags-button");
-  clearTagButton.style.display =
-    selectedTags.length > 0 || selectedFamilies.length > 0
-      ? "inline-block"
-      : "none";
-
   const clearFamilyButton = document.getElementById("clear-product-families");
-  clearFamilyButton.style.display =
-    selectedFamilies.length > 0 || selectedTags.length > 0
-      ? "inline-block"
-      : "none";
+  // Show clear button only if its own filters are active
+  clearTagButton.style.display =
+    selectedTags.length > 0 ? "inline-block" : "none";
 
-  // Filter project cards
+  clearFamilyButton.style.display =
+    selectedFamilies.length > 0 ? "inline-block" : "none";
+
+  // === Filter project cards ===
   const projectCards = document.querySelectorAll(".project-card");
+
   projectCards.forEach((card) => {
     const cardFamilies = JSON.parse(
       card.getAttribute("data-families").replace(/'/g, '"') || "[]",
@@ -251,24 +249,43 @@ function applyFilters() {
       card.getAttribute("data-tags").replace(/'/g, '"') || "[]",
     );
 
-    const matchesFamily =
-      selectedFamilies.length === 0 ||
-      selectedFamilies.some((f) => cardFamilies.includes(f));
-    const matchesTag =
-      selectedTags.length === 0 ||
-      selectedTags.every((t) => cardTags.includes(t));
+    let shouldShow = true;
 
-    card.style.display = matchesFamily && matchesTag ? "flex" : "none";
+    if (selectedTags.length > 0) {
+      // Tags filter strictly
+      shouldShow = selectedTags.every((t) => cardTags.includes(t));
+    } else if (selectedFamilies.length > 0) {
+      // Families selected → always show all projects
+      shouldShow = true;
+    }
+
+    card.style.display = shouldShow ? "flex" : "none";
   });
 
-  // === Update dynamic counts ===
-  const visibleCards = Array.from(projectCards).filter(
-    (c) => c.style.display !== "none",
-  );
+  // === Update counts ===
+  let relevantCards = [];
 
-  // Count visible families
+  if (selectedTags.length > 0) {
+    // Tags control visibility → use only visible projects
+    relevantCards = Array.from(projectCards).filter(
+      (c) => c.style.display !== "none",
+    );
+  } else if (selectedFamilies.length > 0) {
+    // Families chosen → include projects belonging to those families
+    relevantCards = Array.from(projectCards).filter((card) => {
+      const fams = JSON.parse(
+        card.getAttribute("data-families").replace(/'/g, '"') || "[]",
+      );
+      return selectedFamilies.some((f) => fams.includes(f));
+    });
+  } else {
+    // Nothing selected → everything is relevant
+    relevantCards = Array.from(projectCards);
+  }
+
+  // Count families
   const familyCounts = {};
-  visibleCards.forEach((card) => {
+  relevantCards.forEach((card) => {
     const fams = JSON.parse(
       card.getAttribute("data-families").replace(/'/g, '"') || "[]",
     );
@@ -277,9 +294,9 @@ function applyFilters() {
     });
   });
 
-  // Count visible tags
+  // Count tags
   const tagCounts = {};
-  visibleCards.forEach((card) => {
+  relevantCards.forEach((card) => {
     const tags = JSON.parse(
       card.getAttribute("data-tags").replace(/'/g, '"') || "[]",
     );
@@ -288,7 +305,7 @@ function applyFilters() {
     });
   });
 
-  // Update family count spans & hide if 0
+  // Update family list
   document
     .querySelectorAll("#product-families-list .family-row")
     .forEach((row) => {
@@ -299,7 +316,7 @@ function applyFilters() {
       row.style.display = count > 0 ? "flex" : "none";
     });
 
-  // Update tag count spans & hide if 0
+  // Update tag list
   document.querySelectorAll("#product-tags-list .tag-row").forEach((row) => {
     const tag = row.querySelector("input").dataset.tag;
     const countSpan = row.querySelector(".tag-count");
@@ -308,6 +325,27 @@ function applyFilters() {
     row.style.display = count > 0 ? "flex" : "none";
   });
 }
+
+//   // Update family count spans & hide if 0
+//   document
+//     .querySelectorAll("#product-families-list .family-row")
+//     .forEach((row) => {
+//       const fam = row.querySelector("input").dataset.family;
+//       const countSpan = row.querySelector(".family-count");
+//       const count = familyCounts[fam] || 0;
+//       countSpan.textContent = count;
+//       row.style.display = count > 0 ? "flex" : "none";
+//     });
+
+//   // Update tag count spans & hide if 0
+//   document.querySelectorAll("#product-tags-list .tag-row").forEach((row) => {
+//     const tag = row.querySelector("input").dataset.tag;
+//     const countSpan = row.querySelector(".tag-count");
+//     const count = tagCounts[tag] || 0;
+//     countSpan.textContent = count;
+//     row.style.display = count > 0 ? "flex" : "none";
+//   });
+// }
 
 function initializeAllCards() {
   const projects = document.querySelectorAll(".project-card");
