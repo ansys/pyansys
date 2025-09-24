@@ -34,7 +34,7 @@ Other updates
 The landing page is not the only section that has been enhanced. The top
 navigation bar contains now four main sections:
 
--  `Home <../index>`_, for quickly accessing the main page of the project
-- `Getting started <../getting-started>`_,
-- `Projects <../projects>`_, for quickly finding the projects that fit your needs
-- `Blog <../blog>`_, containing articles and news about the ecosystem
+-  :ref:`Home <ref_index>`: for quickly accessing the main page of the project
+-  :ref:`Getting started <ref_getting-started>`: for quick access to installation instructions and tutorials
+-  :ref:`Projects <ref_projects>`: for quickly finding the projects that fit your needs
+-  :ref:`Blog <ref_blog>`: containing articles and news about the ecosystem

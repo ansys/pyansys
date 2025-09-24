@@ -1,5 +1,4 @@
-
-
+.. _ref_index:
 
 .. title:: PyAnsys
 
