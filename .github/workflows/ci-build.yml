@@ -164,7 +164,7 @@ jobs:
         uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
-          dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
+          # dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
 
   doc-deploy-dev:
       name: "Deploy development docs"
