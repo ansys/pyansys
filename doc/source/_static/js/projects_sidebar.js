@@ -326,27 +326,6 @@ function applyFilters() {
   });
 }
 
-//   // Update family count spans & hide if 0
-//   document
-//     .querySelectorAll("#product-families-list .family-row")
-//     .forEach((row) => {
-//       const fam = row.querySelector("input").dataset.family;
-//       const countSpan = row.querySelector(".family-count");
-//       const count = familyCounts[fam] || 0;
-//       countSpan.textContent = count;
-//       row.style.display = count > 0 ? "flex" : "none";
-//     });
-
-//   // Update tag count spans & hide if 0
-//   document.querySelectorAll("#product-tags-list .tag-row").forEach((row) => {
-//     const tag = row.querySelector("input").dataset.tag;
-//     const countSpan = row.querySelector(".tag-count");
-//     const count = tagCounts[tag] || 0;
-//     countSpan.textContent = count;
-//     row.style.display = count > 0 ? "flex" : "none";
-//   });
-// }
-
 function initializeAllCards() {
   const projects = document.querySelectorAll(".project-card");
   projects.forEach((project) => {
