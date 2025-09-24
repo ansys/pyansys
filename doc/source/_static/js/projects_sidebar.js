@@ -221,6 +221,12 @@ function applyFilters() {
     SelectedFamiliesContainer.appendChild(pill);
   });
 
+  const clearTagButton = document.getElementById("clear-tags-button");
+  clearTagButton.style.display = selectedTags.length > 0 || selectedFamilies.length > 0 ? "inline-block" : "none"; 
+
+  const clearFamilyButton = document.getElementById("clear-product-families");
+  clearFamilyButton.style.display = selectedFamilies.length > 0 || selectedTags.length > 0 ? "inline-block" : "none";
+
   // Filter project cards
   const projectCards = document.querySelectorAll(".project-card");
   projectCards.forEach((card) => {
@@ -317,6 +323,16 @@ function updateIcon() {
     });
   }
 }
+
+document.getElementById("clear-tags-button").addEventListener("click", () => {
+  document.querySelectorAll('#product-tags-list input[type="checkbox"]').forEach(cb => cb.checked = false);
+  applyFilters();
+});
+
+document.getElementById("clear-product-families").addEventListener("click", () => {
+  document.querySelectorAll('#product-families-list input[type="checkbox"]').forEach(cb => cb.checked = false);
+  applyFilters();
+});
 
 const observer = new MutationObserver(updateIcon);
 observer.observe(document.documentElement, {
