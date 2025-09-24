@@ -193,17 +193,25 @@ function handleTagSelection() {
 }
 
 function applyFilters() {
-  const SelectedTagsContainer = document.getElementById("selected-product-tags-list");
-  const SelectedFamiliesContainer = document.getElementById("selected-product-families-list");
+  const SelectedTagsContainer = document.getElementById(
+    "selected-product-tags-list",
+  );
+  const SelectedFamiliesContainer = document.getElementById(
+    "selected-product-families-list",
+  );
   SelectedTagsContainer.innerHTML = "";
   SelectedFamiliesContainer.innerHTML = "";
 
   const selectedFamilies = Array.from(
-    document.querySelectorAll('#product-families-list input[type="checkbox"]:checked')
+    document.querySelectorAll(
+      '#product-families-list input[type="checkbox"]:checked',
+    ),
   ).map((cb) => cb.dataset.family);
 
   const selectedTags = Array.from(
-    document.querySelectorAll('#product-tags-list input[type="checkbox"]:checked')
+    document.querySelectorAll(
+      '#product-tags-list input[type="checkbox"]:checked',
+    ),
   ).map((cb) => cb.dataset.tag);
 
   // Pills
@@ -222,32 +230,48 @@ function applyFilters() {
   });
 
   const clearTagButton = document.getElementById("clear-tags-button");
-  clearTagButton.style.display = selectedTags.length > 0 || selectedFamilies.length > 0 ? "inline-block" : "none"; 
+  clearTagButton.style.display =
+    selectedTags.length > 0 || selectedFamilies.length > 0
+      ? "inline-block"
+      : "none";
 
   const clearFamilyButton = document.getElementById("clear-product-families");
-  clearFamilyButton.style.display = selectedFamilies.length > 0 || selectedTags.length > 0 ? "inline-block" : "none";
+  clearFamilyButton.style.display =
+    selectedFamilies.length > 0 || selectedTags.length > 0
+      ? "inline-block"
+      : "none";
 
   // Filter project cards
   const projectCards = document.querySelectorAll(".project-card");
   projectCards.forEach((card) => {
-    const cardFamilies = JSON.parse(card.getAttribute("data-families").replace(/'/g, '"') || "[]");
-    const cardTags = JSON.parse(card.getAttribute("data-tags").replace(/'/g, '"') || "[]");
+    const cardFamilies = JSON.parse(
+      card.getAttribute("data-families").replace(/'/g, '"') || "[]",
+    );
+    const cardTags = JSON.parse(
+      card.getAttribute("data-tags").replace(/'/g, '"') || "[]",
+    );
 
     const matchesFamily =
-      selectedFamilies.length === 0 || selectedFamilies.some((f) => cardFamilies.includes(f));
+      selectedFamilies.length === 0 ||
+      selectedFamilies.some((f) => cardFamilies.includes(f));
     const matchesTag =
-      selectedTags.length === 0 || selectedTags.every((t) => cardTags.includes(t));
+      selectedTags.length === 0 ||
+      selectedTags.every((t) => cardTags.includes(t));
 
     card.style.display = matchesFamily && matchesTag ? "flex" : "none";
   });
 
   // === Update dynamic counts ===
-  const visibleCards = Array.from(projectCards).filter((c) => c.style.display !== "none");
+  const visibleCards = Array.from(projectCards).filter(
+    (c) => c.style.display !== "none",
+  );
 
   // Count visible families
   const familyCounts = {};
   visibleCards.forEach((card) => {
-    const fams = JSON.parse(card.getAttribute("data-families").replace(/'/g, '"') || "[]");
+    const fams = JSON.parse(
+      card.getAttribute("data-families").replace(/'/g, '"') || "[]",
+    );
     fams.forEach((f) => {
       familyCounts[f] = (familyCounts[f] || 0) + 1;
     });
@@ -256,20 +280,24 @@ function applyFilters() {
   // Count visible tags
   const tagCounts = {};
   visibleCards.forEach((card) => {
-    const tags = JSON.parse(card.getAttribute("data-tags").replace(/'/g, '"') || "[]");
+    const tags = JSON.parse(
+      card.getAttribute("data-tags").replace(/'/g, '"') || "[]",
+    );
     tags.forEach((t) => {
       tagCounts[t] = (tagCounts[t] || 0) + 1;
     });
   });
 
   // Update family count spans & hide if 0
-  document.querySelectorAll("#product-families-list .family-row").forEach((row) => {
-    const fam = row.querySelector("input").dataset.family;
-    const countSpan = row.querySelector(".family-count");
-    const count = familyCounts[fam] || 0;
-    countSpan.textContent = count;
-    row.style.display = count > 0 ? "flex" : "none";
-  });
+  document
+    .querySelectorAll("#product-families-list .family-row")
+    .forEach((row) => {
+      const fam = row.querySelector("input").dataset.family;
+      const countSpan = row.querySelector(".family-count");
+      const count = familyCounts[fam] || 0;
+      countSpan.textContent = count;
+      row.style.display = count > 0 ? "flex" : "none";
+    });
 
   // Update tag count spans & hide if 0
   document.querySelectorAll("#product-tags-list .tag-row").forEach((row) => {
@@ -291,7 +319,8 @@ function initializeAllCards() {
 document.addEventListener("DOMContentLoaded", () => {
   fetch(PROJECTS_FILE)
     .then((response) => {
-      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+      if (!response.ok)
+        throw new Error(`HTTP error! Status: ${response.status}`);
       return response.json();
     })
     .then((data) => {
@@ -315,24 +344,36 @@ function updateIcon() {
   if (icons) {
     icons.forEach((iconImage) => {
       if (theme === "dark" && iconImage.src.includes("ansys-icon-light.svg")) {
-        iconImage.src = iconImage.src.replace("ansys-icon-light.svg", "ansys-icon-dark.svg");
+        iconImage.src = iconImage.src.replace(
+          "ansys-icon-light.svg",
+          "ansys-icon-dark.svg",
+        );
       }
       if (theme === "light" && iconImage.src.includes("ansys-icon-dark.svg")) {
-        iconImage.src = iconImage.src.replace("ansys-icon-dark.svg", "ansys-icon-light.svg");
+        iconImage.src = iconImage.src.replace(
+          "ansys-icon-dark.svg",
+          "ansys-icon-light.svg",
+        );
       }
     });
   }
 }
 
 document.getElementById("clear-tags-button").addEventListener("click", () => {
-  document.querySelectorAll('#product-tags-list input[type="checkbox"]').forEach(cb => cb.checked = false);
+  document
+    .querySelectorAll('#product-tags-list input[type="checkbox"]')
+    .forEach((cb) => (cb.checked = false));
   applyFilters();
 });
 
-document.getElementById("clear-product-families").addEventListener("click", () => {
-  document.querySelectorAll('#product-families-list input[type="checkbox"]').forEach(cb => cb.checked = false);
-  applyFilters();
-});
+document
+  .getElementById("clear-product-families")
+  .addEventListener("click", () => {
+    document
+      .querySelectorAll('#product-families-list input[type="checkbox"]')
+      .forEach((cb) => (cb.checked = false));
+    applyFilters();
+  });
 
 const observer = new MutationObserver(updateIcon);
 observer.observe(document.documentElement, {
