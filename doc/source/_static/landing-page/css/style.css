@@ -59,7 +59,7 @@
   --workflow-cta-btn-color: #000;
   --workflow-cta-btn-radius: 0.25rem;
   --workflow-cta-btn-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
-  --workflow-cta-btn-hover-bg: #333;
+  --workflow-cta-btn-hover-bg: #ececec;
 
   /* Stars */
   --star-icon-color: #ffb71b;
