@@ -89,7 +89,7 @@
 }
 
 .collapsible {
-  background-color: var(--collapsible-bg);
+  background-color: transparent;
   cursor: pointer;
   padding: var(--collapsible-padding);
   font-weight: var(--collapsible-font-weight);
