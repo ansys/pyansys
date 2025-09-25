@@ -232,11 +232,10 @@ function applyFilters() {
   const clearTagButton = document.getElementById("clear-tags-button");
   const clearFamilyButton = document.getElementById("clear-product-families");
   // Show clear button only if its own filters are active
-  clearTagButton.style.display =
-    selectedTags.length > 0 ? "inline-block" : "none";
+  clearTagButton.style.display = selectedTags.length > 0 ? "flex" : "none";
 
   clearFamilyButton.style.display =
-    selectedFamilies.length > 0 ? "inline-block" : "none";
+    selectedFamilies.length > 0 ? "flex" : "none";
 
   // === Filter project cards ===
   const projectCards = document.querySelectorAll(".project-card");

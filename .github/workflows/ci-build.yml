@@ -165,7 +165,6 @@ jobs:
         uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
-          dependencies: 'pandoc'
           # dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
         env:
           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
