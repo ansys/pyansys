@@ -32,7 +32,7 @@ dependencies = [
     "ansys-dpf-core==0.14.1",
     "ansys-dpf-post==0.10.1",
     "ansys-dyna-core==0.9.0",
-    "ansys-dynamicreporting-core==0.10.3",
+    "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.2.1",
     "ansys-fluent-core==0.35.0",
     "ansys-geometry-core==0.11.3",
