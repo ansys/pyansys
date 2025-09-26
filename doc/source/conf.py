@@ -168,12 +168,11 @@ def convert_yaml_to_json():
             try:
                 repository = gh_client.get_repo(f"ansys/{repo_name}")
                 proj["github_stars"] = repository.stargazers_count
+                starred.append(proj)
             except Exception:
                 others.append(proj)
                 continue
-            starred.append(proj)
-        else:
-            others.append(proj)
+            
 
     starred.sort(key=lambda x: x.get("github_stars", 0), reverse=True)
     projects_sorted = starred + others
