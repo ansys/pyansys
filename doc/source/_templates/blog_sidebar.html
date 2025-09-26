@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="{{ pathto('_static/css/blog_sidebar.css', 1) }}">
+
+<div class="blog-page-sidebar" id="blog-page-sidebar">
+  <h2>Filters</h2>
+
+  <!-- Product filter section -->
+  <div id="product-filters" class="filter-section">
+    <button class="collapsible">
+      Products <span class="arrow">&#9662;</span>
+    </button>
+    <div class="collapsible-content"></div>
+  </div>
+
+  <!-- Industry filter section -->
+  <div id="industry-filters" class="filter-section">
+    <button class="collapsible">
+      Industries <span class="arrow">&#9662;</span>
+    </button>
+    <div class="collapsible-content"></div>
+  </div>
+
+  <!-- Tag filter section -->
+  <div id="tag-filters" class="filter-section">
+    <button class="collapsible">
+      Tags <span class="arrow">&#9662;</span>
+    </button>
+    <div class="collapsible-content"></div>
+  </div>
+
+</div>
+
+<script>
+  const BLOG_FILE = "{{ pathto('_static/blog_metadata.json', 1) }}";
+</script>
+<script src="{{ pathto('_static/js/blog_sidebar.js', 1) }}"></script>
