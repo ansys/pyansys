@@ -172,7 +172,6 @@ def convert_yaml_to_json():
             except Exception:
                 others.append(proj)
                 continue
-            
 
     starred.sort(key=lambda x: x.get("github_stars", 0), reverse=True)
     projects_sorted = starred + others
