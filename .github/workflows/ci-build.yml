@@ -157,6 +157,7 @@ jobs:
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
+          skip-dependencies-cache: true
 
   doc-deploy-dev:
       name: "Deploy development docs"
