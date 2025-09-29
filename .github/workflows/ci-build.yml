@@ -18,7 +18,6 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
-  UV_PRERELEASE: "allow"  # TEMP - remove once PyGranta's full 2025R2 release is out
   GITHUB_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
 
 jobs:
