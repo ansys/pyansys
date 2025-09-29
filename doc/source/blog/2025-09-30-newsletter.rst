@@ -11,8 +11,8 @@
                  usability, navigation, and accessibility, based on community
                  feedback and collaboration.
 
-Newletter 2025-09-30
-####################
+Newsletter 2025-09-30
+#####################
 
 Welcome to the first newsletter article of the PyAnsys ecosystem. In this
 article, the new landing page of the project is presented together with the
