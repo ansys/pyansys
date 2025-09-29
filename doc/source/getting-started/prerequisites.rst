@@ -26,13 +26,15 @@ implies that PyAnsys packages drop support for a Python version three years
 after their initial release:
 
 .. mermaid::
-   :caption: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
-   :alt: Current Python versions supported by the PyAnsys metapackage
-   :align: center
+    :caption: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
+    :alt: Current Python versions supported by the PyAnsys metapackage
+    :align: center
 
     gantt
+        title Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported
         dateFormat YYYY-MM-DD
         axisFormat %Y-%m
+
         Python 3.7  :done,   des1, 2018-06-27, 3y
         Python 3.8  :done,   des2, 2019-10-14, 3y
         Python 3.9  :done,   des3, 2020-10-05, 3y
@@ -40,7 +42,7 @@ after their initial release:
         Python 3.11 :active, des5, 2022-10-24, 3y
         Python 3.12 :active, des6, 2023-10-02, 3y
         Python 3.13 :active, des7, 2024-10-01, 3y
-        Python 3.14 :,       des8, 2025-10-07, 3y
+        Python 3.14 :crit,   des8, 2025-10-07, 3y
 
 In previous diagram:
 
