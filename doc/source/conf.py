@@ -285,7 +285,7 @@ linkcheck_ignore = [
     r"https://www.ansys.com.*",
     rf"https://pypi.org/project/pyansys/{switcher_version}.*",
     r"https://ansunits.docs.*",
-    r"https://download.ansys.com/.*",
+    r"https://download.ansys.com.*",
     r"https://github.com/ansys/pyansys/releases/download/*",
     r"https://download.ansys.com",
 ]
