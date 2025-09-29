@@ -282,7 +282,6 @@ projects:
       api: https://data-transfer.hps.docs.pyansys.com/version/stable/api/index.html
 
   pymapdl:
-    starred: true
     name: PyMAPDL
     repository: https://github.com/ansys/pymapdl
     description: A Python client library for Ansys MAPDL (Mechanical APDL)
@@ -586,7 +585,7 @@ projects:
 
   magnet-segmentation-toolkit:
     name: Magnet Segmentation Toolkit
-    description: A Python wrapper that automates segmentation and skewing of IPM and SPM motors using Ansys Electronics Desktop (AEDT)
+    description: Python wrapper that automates segmentation and skewing of IPM and SPM motors using Ansys Electronics Desktop (AEDT)
     thumbnail: _static/thumbnails/intro.png
     repository:
     families: [Electronics]
