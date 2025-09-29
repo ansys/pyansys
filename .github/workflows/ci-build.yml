@@ -18,7 +18,6 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
-  UV_PRERELEASE: "allow"  # TEMP - remove once PyGranta's full 2025R2 release is out
 
 jobs:
   check-vulnerabilities:
@@ -164,7 +163,8 @@ jobs:
         uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
-          # dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
+          dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
+          skip-dependencies-cache: true
 
   doc-deploy-dev:
       name: "Deploy development docs"
