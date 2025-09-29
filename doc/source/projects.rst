@@ -43,9 +43,6 @@ Projects
                     </p>
                         <p class="sd-card-body-text"> {{ metadata['description'] }} </p>
                             {% if metadata.get('github_stars', 0) > 0 %}
-                            <span class="star-starcount-wrapper" style="margin-left: 10px;">
-                                <span class="star-icon" title="Highlighted project">&#9733;</span><span class="star-count">{{ metadata.get('github_stars', 0) }}</span>
-                            </span>
                             {% endif %}
 
 
