@@ -4,6 +4,7 @@
     <div class="projects-page-sidebar-section product-families">
         <span>Product families</span>
         <div id="selected-product-families-list"></div>
+        <button id="clear-product-families" style="display:none;" class="clear-tags-btn">&times; Clear</button>
         <div id="product-families-list"></div>
         <a class="show-more">Show more</a>
     </div>
@@ -14,9 +15,26 @@
     <div class="projects-page-sidebar-section product-tags">
         <span>Tags</span>
         <div id="selected-product-tags-list"></div>
+        <button id="clear-tags-button" style="display:none;" class="clear-tags-btn">&times; Clear</button>
         <div id="product-tags-list"></div>
         <a class="show-more">Show more</a>
     </div>
+
+    <style>
+.clear-tags-btn {
+  background: none;
+  border: none;
+  color: var(--ast-color-link);       /* icon color */
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.clear-tags-btn:hover {
+  color: var(--ast-color-link-hover);   /* change color on hover */
+}
+
+    </style>
 
 </div>
 

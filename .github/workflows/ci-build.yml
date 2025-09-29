@@ -18,6 +18,7 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
+  GITHUB_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
 
 jobs:
   check-vulnerabilities:
@@ -165,6 +166,8 @@ jobs:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
           skip-dependencies-cache: true
+        env:
+          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
 
   doc-deploy-dev:
       name: "Deploy development docs"
