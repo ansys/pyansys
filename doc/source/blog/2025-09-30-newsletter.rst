@@ -6,7 +6,7 @@
    :industries: General
    :products: PyAnsys
    :image: thumbnails/pyansys-common.png
-   :title: PyAnsys landing page update
+   :title: Newsletter 2025-09-30
    :description: The PyAnsys landing page has been redesigned for improved
                  usability, navigation, and accessibility, based on community
                  feedback and collaboration.
