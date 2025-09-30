@@ -216,7 +216,7 @@ projects:
     repository: https://github.com/ansys/pyfluent
     description:  Pythonic interface to Ansys Fluent
     thumbnail: _static/thumbnails/pyfluent.png
-    families: [Fluids]
+    families: [Fluids, Meshing]
     tags: [Flagship, Visualization]
     icon: _static/icons/fluids.svg
     documentation:
