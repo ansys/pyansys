@@ -1,6 +1,7 @@
 name: GitHub CI
 on:
   pull_request:
+    types: [opened, reopened, synchronize, edited, closed]
   workflow_dispatch:
   push:
     tags:
@@ -17,6 +18,7 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
+  GITHUB_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
 
 jobs:
   check-vulnerabilities:
@@ -25,7 +27,7 @@ jobs:
     steps:
       - name: PyAnsys Vulnerability Check (on PRs)
         if: github.event_name == 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v8
+        uses: ansys/actions/check-vulnerabilities@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -34,7 +36,7 @@ jobs:
 
       - name: PyAnsys Vulnerability Check (any other case)
         if: github.event_name != 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v8
+        uses: ansys/actions/check-vulnerabilities@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -43,40 +45,44 @@ jobs:
   check-licenses:
     name: Check depencencies' licenses
     runs-on: ubuntu-latest
+    if: github.event.action != 'closed'
     steps:
       - name: PyAnsys Licenses Check
-        uses: ansys/actions/check-licenses@main
+        uses: ansys/actions/check-licenses@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
-          whitelist-license-check: "attrs,referencing,jeepney" # This has MIT license but fails the check
+          whitelist-license-check: "attrs,referencing,jeepney,paramiko,ansys-dpf-post" # This has MIT license but fails the check, paramiko and ansys-dpf-post need to be removed eventually from the whitelist
 
   docs-style:
     name: Documentation Style Check
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@v8
+        uses: ansys/actions/doc-style@v10
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
   smoke-tests-core:
     name: Build core PyAnsys packages
+    if: github.event.action != 'closed'
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12']
+        python-version: ['3.10', '3.11', '3.12', '3.13']
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install the latest version of uv and set the python version
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install core PyAnsys packages
         run: |
@@ -87,23 +93,25 @@ jobs:
 
   smoke-tests-extras:
     name: Build extras PyAnsys packages
+    if: github.event.action != 'closed'
     runs-on: ${{ matrix.os }}
     needs: [smoke-tests-core]
     strategy:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12']
+        python-version: ['3.10', '3.11', '3.12', '3.13']
         extras-version: ['fluent-all', 'mapdl-all', 'tools']
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install the latest version of uv and set the python version
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
@@ -114,17 +122,18 @@ jobs:
 
   wheelhouse-all:
     name: Build PyAnsys package wheelhouse
+    if: github.event.action != 'closed'
     runs-on: ${{ matrix.os }}
     needs: [smoke-tests-core]
     strategy:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
-        python-version: ['3.10', '3.11', '3.12']
+        python-version: ['3.10', '3.11', '3.12', '3.13']
 
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@v8
+        uses: ansys/actions/build-wheelhouse@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           operating-system: ${{ runner.os }}
@@ -146,15 +155,19 @@ jobs:
 
   docs-build:
     name: Building Documentation
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     needs: [docs-style]
 
     steps:
       - name: Build documentation
-        uses: ansys/actions/doc-build@v8
+        uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
+          skip-dependencies-cache: true
+        env:
+          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
 
   doc-deploy-dev:
       name: "Deploy development docs"
@@ -163,7 +176,7 @@ jobs:
       needs: [package]
       steps:
         - name: Deploy the latest documentation
-          uses: ansys/actions/doc-deploy-dev@v8
+          uses: ansys/actions/doc-deploy-dev@v10
           with:
             cname: ${{ env.DOCUMENTATION_CNAME }}
             token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -181,10 +194,25 @@ jobs:
     needs: [docs-build, smoke-tests-core]
     steps:
       - name: Build library source and wheel artifacts
-        uses: ansys/actions/build-library@v8
+        uses: ansys/actions/build-library@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
+
+  doc-deploy-pr:
+    name: "Deploy PR documentation"
+    runs-on: ubuntu-latest
+    needs: [docs-build]
+    # Run when the PR is closed i.e. when docs job is skipped
+    if: always() && (needs.docs-build.result == 'success' || needs.docs-build.result == 'skipped')
+    steps:
+      - uses: ansys/actions/doc-deploy-pr@v10
+        with:
+          cname: ${{ env.DOCUMENTATION_CNAME }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+          bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
+          maximum-pr-doc-deployments: 20
 
   release:
     name: Release project
@@ -195,17 +223,17 @@ jobs:
       contents: write
     steps:
       - name: Release to PyPI repository
-        uses: ansys/actions/release-pypi-public@v8
+        uses: ansys/actions/release-pypi-public@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           twine-username: __token__
           twine-token: ${{ secrets.PYPI_TOKEN }}
 
       - name: Release to GitHub
-        uses: ansys/actions/release-github@v8
+        uses: ansys/actions/release-github@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
-          additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12'
+          additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Linux-3.13 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-Windows-3.13 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12 all-deps-macOS-3.13'
           token: ${{ secrets.GITHUB_TOKEN }}
 
   docs-release:
@@ -214,7 +242,7 @@ jobs:
     needs: [release]
     steps:
       - name: Deploy the latest release documentation
-        uses: ansys/actions/doc-deploy-stable@v8
+        uses: ansys/actions/doc-deploy-stable@v10
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -236,7 +264,7 @@ jobs:
        pull-requests: write
      steps:
        - name: Automerge PRs
-         uses: ansys/actions/hk-automerge-prs@v8
+         uses: ansys/actions/hk-automerge-prs@v10
          with:
            approver: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
            approver-token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}

@@ -12,18 +12,21 @@ Download and install PyAnsys from `PyPI`_:
 .. tab-set::
 
     .. tab-item:: :fab:`windows` **Windows**
+        :name: windows
 
         .. code-block:: bash
 
             python -m pip install pyansys
 
     .. tab-item:: :fab:`apple` **MacOS**
+        :name: macos
 
         .. code-block:: bash
 
             python -m pip install pyansys
 
     .. tab-item:: :fab:`linux` **Linux**
+        :name: linux
 
         .. code-block:: bash
 
@@ -122,7 +125,7 @@ Start by downloading the wheelhouse artifact for your platform:
 
     .. csv-table::
        :header-rows: 1
-       :widths: 16, 28, 28, 28
+       :widths: 16, 28, 28, 28, 28
 
        :fas:`laptop` Platform,
        {%- for python in SUPPORTED_PYTHON_VERSIONS -%}
@@ -152,3 +155,30 @@ Finally, install the PyAnsys metapackage using previously downloaded wheelhouse:
 .. code-block:: bash
 
     python -m pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
+
+
+.. DO NOT MODIFY THE FOLLOWING SECTION
+
+.. raw:: html
+
+    <!-- For landing page tabset to work -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const hash = window.location.hash; // e.g., "#online-installation?tab=sd-tab-item-0"
+        if (!hash.includes('?tab=')) return;
+
+        const [section, tabPart] = hash.split('?tab=');
+        const tabId = tabPart;
+        const input = document.getElementById(tabId);
+
+        if (input && input.type === "radio") {
+            input.checked = true;
+        }
+
+        // Optional: scroll to section
+        const target = document.querySelector(section);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+        })
+    </script>

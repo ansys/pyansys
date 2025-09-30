@@ -11,15 +11,17 @@ function collectFamilies(data) {
   for (const project of projects) {
     if (!project || typeof project !== "object") continue;
 
-    const family = project.family;
+    const projectFamilies = project.families || ["Other"];
     const icon = project.icon || "ansys-icon-light.svg"; // Fallback icon
 
-    if (family) {
-      if (!familyData[family]) {
-        familyData[family] = { count: 0, icon: icon };
+    projectFamilies.forEach((family) => {
+      if (family) {
+        if (!familyData[family]) {
+          familyData[family] = { count: 0, icon: icon };
+        }
+        familyData[family].count += 1;
       }
-      familyData[family].count += 1;
-    }
+    });
   }
 
   return familyData;
@@ -69,6 +71,7 @@ function displayFamilies(familyData) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `family-${CSS.escape(family)}`;
+    checkbox.dataset.family = family;
     checkbox.addEventListener("change", handleFamilySelection);
 
     const familyName = document.createElement("span");
@@ -78,22 +81,20 @@ function displayFamilies(familyData) {
     const iconImage = document.createElement("img");
     iconImage.alt = `${family} icon`;
     iconImage.className = "ansys-icon";
+
     let basePath = "version/dev/";
-    if (window.location.pathname.includes("version/dev")) {
+    if (
+      window.location.pathname.includes("version/dev") ||
+      window.location.pathname.includes("version/stable") ||
+      window.location.pathname.includes("pull/")
+    ) {
       basePath = "";
-    } else if (window.location.pathname.includes("version/stable")) {
-      // If the path is versioned, default to current page
-      basePath = "";
-    } else {
-      // If the path is not versioned, default to dev
-      basePath = "version/dev/";
     }
 
     const iconName =
       theme === "dark" && icon === "ansys-icon-light.svg"
         ? "ansys-icon-dark.svg"
         : `${icon}`;
-
     iconImage.src = `${basePath}${iconName}`;
 
     const familyCountElement = document.createElement("span");
@@ -108,15 +109,13 @@ function displayFamilies(familyData) {
     familiesContainer.appendChild(familyRow);
   });
 
-  // Handle "Show more" click
+  // Show more/less toggle
   const showMoreButton = document.querySelector(".product-families .show-more");
   const FamilyRows = document.querySelectorAll(".family-row");
   showMoreButton.addEventListener("click", () => {
     if (showMoreClicked) {
       FamilyRows.forEach((row, index) => {
-        if (index >= maxVisible) {
-          row.style.display = "none";
-        }
+        if (index >= maxVisible) row.style.display = "none";
       });
       showMoreButton.textContent = "Show more";
       showMoreClicked = false;
@@ -135,7 +134,7 @@ function displayTags(tagCounts) {
   tagsContainer.innerHTML = "";
 
   const sortedTags = Object.keys(tagCounts).sort();
-  const maxVisible = 5; // Show only first 5 initially
+  const maxVisible = 5;
   let showMoreClicked = false;
 
   sortedTags.forEach((tag, index) => {
@@ -143,11 +142,12 @@ function displayTags(tagCounts) {
 
     const tagRow = document.createElement("div");
     tagRow.className = "tag-row";
-    if (index >= maxVisible) tagRow.style.display = "none"; // Hide extra items initially
+    if (index >= maxVisible) tagRow.style.display = "none";
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `tag-${CSS.escape(tag)}`;
+    checkbox.dataset.tag = tag;
     checkbox.addEventListener("change", handleTagSelection);
 
     const tagName = document.createElement("span");
@@ -165,15 +165,12 @@ function displayTags(tagCounts) {
     tagsContainer.appendChild(tagRow);
   });
 
-  // Handle "Show more" click
   const showMoreButton = document.querySelector(".product-tags .show-more");
   const TagRows = document.querySelectorAll(".tag-row");
   showMoreButton.addEventListener("click", () => {
     if (showMoreClicked) {
       TagRows.forEach((row, index) => {
-        if (index >= maxVisible) {
-          row.style.display = "none";
-        }
+        if (index >= maxVisible) row.style.display = "none";
       });
       showMoreButton.textContent = "Show more";
       showMoreClicked = false;
@@ -204,72 +201,132 @@ function applyFilters() {
   );
   SelectedTagsContainer.innerHTML = "";
   SelectedFamiliesContainer.innerHTML = "";
+
   const selectedFamilies = Array.from(
     document.querySelectorAll(
       '#product-families-list input[type="checkbox"]:checked',
     ),
-  ).map((checkbox) =>
-    checkbox.id.replace("family-", "").replace("\\ ", "-").toLowerCase(),
-  );
+  ).map((cb) => cb.dataset.family);
 
   const selectedTags = Array.from(
     document.querySelectorAll(
       '#product-tags-list input[type="checkbox"]:checked',
     ),
-  ).map((checkbox) =>
-    checkbox.id.replace("tag-", "").replace("\\ ", "-").toLowerCase(),
-  );
-  for (const tag of selectedTags) {
-    const selectedTag = document.createElement("span");
-    selectedTag.className = "selected-tag";
-    selectedTag.textContent = tag;
-    SelectedTagsContainer.appendChild(selectedTag);
-  }
+  ).map((cb) => cb.dataset.tag);
 
-  for (const family of selectedFamilies) {
-    const selectedFamily = document.createElement("span");
-    selectedFamily.className = "selected-family";
-    selectedFamily.textContent = family;
-    SelectedFamiliesContainer.appendChild(selectedFamily);
-  }
+  // Pills
+  selectedTags.forEach((tag) => {
+    const pill = document.createElement("span");
+    pill.className = "selected-tag";
+    pill.textContent = tag;
+    SelectedTagsContainer.appendChild(pill);
+  });
 
-  console.log("Selected families:", selectedFamilies);
-  console.log("Selected tags:", selectedTags);
+  selectedFamilies.forEach((fam) => {
+    const pill = document.createElement("span");
+    pill.className = "selected-family";
+    pill.textContent = fam;
+    SelectedFamiliesContainer.appendChild(pill);
+  });
 
+  const clearTagButton = document.getElementById("clear-tags-button");
+  const clearFamilyButton = document.getElementById("clear-product-families");
+  // Show clear button only if its own filters are active
+  clearTagButton.style.display = selectedTags.length > 0 ? "flex" : "none";
+
+  clearFamilyButton.style.display =
+    selectedFamilies.length > 0 ? "flex" : "none";
+
+  // === Filter project cards ===
   const projectCards = document.querySelectorAll(".project-card");
 
   projectCards.forEach((card) => {
-    const family = card.getAttribute("data-family").toLowerCase();
-    const rawTags = card.getAttribute("data-tags");
+    const cardFamilies = JSON.parse(
+      card.getAttribute("data-families").replace(/'/g, '"') || "[]",
+    );
+    const cardTags = JSON.parse(
+      card.getAttribute("data-tags").replace(/'/g, '"') || "[]",
+    );
 
-    let cardTags = [];
-    if (rawTags) {
-      try {
-        cardTags = JSON.parse(rawTags.replace(/'/g, '"')).map((tag) =>
-          tag.toLowerCase(),
-        );
-      } catch (error) {
-        console.error("Error parsing data-tags:", rawTags, error);
-      }
+    let shouldShow = true;
+
+    if (selectedTags.length > 0) {
+      // Tags filter strictly
+      shouldShow = selectedTags.every((t) => cardTags.includes(t));
+    } else if (selectedFamilies.length > 0) {
+      // Families selected → always show all projects
+      shouldShow = true;
     }
 
-    // Check if the card matches the selected families
-    const matchesAllFamilies =
-      selectedFamilies.length === 0 || selectedFamilies.includes(family);
+    card.style.display = shouldShow ? "flex" : "none";
+  });
 
-    // Check if the card matches the selected tags
-    const matchesAllTags =
-      selectedTags.length === 0 ||
-      selectedTags.every((tag) => cardTags.includes(tag));
+  // === Update counts ===
+  let relevantCards = [];
 
-    // Show only if both family & tag filters match (or if no filter is applied)
-    card.style.display = matchesAllFamilies && matchesAllTags ? "flex" : "none";
+  if (selectedTags.length > 0) {
+    // Tags control visibility → use only visible projects
+    relevantCards = Array.from(projectCards).filter(
+      (c) => c.style.display !== "none",
+    );
+  } else if (selectedFamilies.length > 0) {
+    // Families chosen → include projects belonging to those families
+    relevantCards = Array.from(projectCards).filter((card) => {
+      const fams = JSON.parse(
+        card.getAttribute("data-families").replace(/'/g, '"') || "[]",
+      );
+      return selectedFamilies.some((f) => fams.includes(f));
+    });
+  } else {
+    // Nothing selected → everything is relevant
+    relevantCards = Array.from(projectCards);
+  }
+
+  // Count families
+  const familyCounts = {};
+  relevantCards.forEach((card) => {
+    const fams = JSON.parse(
+      card.getAttribute("data-families").replace(/'/g, '"') || "[]",
+    );
+    fams.forEach((f) => {
+      familyCounts[f] = (familyCounts[f] || 0) + 1;
+    });
+  });
+
+  // Count tags
+  const tagCounts = {};
+  relevantCards.forEach((card) => {
+    const tags = JSON.parse(
+      card.getAttribute("data-tags").replace(/'/g, '"') || "[]",
+    );
+    tags.forEach((t) => {
+      tagCounts[t] = (tagCounts[t] || 0) + 1;
+    });
+  });
+
+  // Update family list
+  document
+    .querySelectorAll("#product-families-list .family-row")
+    .forEach((row) => {
+      const fam = row.querySelector("input").dataset.family;
+      const countSpan = row.querySelector(".family-count");
+      const count = familyCounts[fam] || 0;
+      countSpan.textContent = count;
+      row.style.display = count > 0 ? "flex" : "none";
+    });
+
+  // Update tag list
+  document.querySelectorAll("#product-tags-list .tag-row").forEach((row) => {
+    const tag = row.querySelector("input").dataset.tag;
+    const countSpan = row.querySelector(".tag-count");
+    const count = tagCounts[tag] || 0;
+    countSpan.textContent = count;
+    row.style.display = count > 0 ? "flex" : "none";
   });
 }
 
 function initializeAllCards() {
-  const articleElement = document.querySelector("article");
-  const projects = articleElement.querySelectorAll(".project-card");
+  const projects = document.querySelectorAll(".project-card");
   projects.forEach((project) => {
     project.style.display = "flex";
   });
@@ -278,21 +335,17 @@ function initializeAllCards() {
 document.addEventListener("DOMContentLoaded", () => {
   fetch(PROJECTS_FILE)
     .then((response) => {
-      if (!response.ok) {
+      if (!response.ok)
         throw new Error(`HTTP error! Status: ${response.status}`);
-      }
       return response.json();
     })
     .then((data) => {
-      // Display families
       const familyData = collectFamilies(data);
       displayFamilies(familyData);
 
-      // Display tags
       const tagCounts = collectTags(data);
       displayTags(tagCounts);
 
-      // Render all cards
       initializeAllCards();
     })
     .catch((error) => {
@@ -322,11 +375,27 @@ function updateIcon() {
   }
 }
 
+document.getElementById("clear-tags-button").addEventListener("click", () => {
+  document
+    .querySelectorAll('#product-tags-list input[type="checkbox"]')
+    .forEach((cb) => (cb.checked = false));
+  applyFilters();
+});
+
+document
+  .getElementById("clear-product-families")
+  .addEventListener("click", () => {
+    document
+      .querySelectorAll('#product-families-list input[type="checkbox"]')
+      .forEach((cb) => (cb.checked = false));
+    applyFilters();
+  });
+
 const observer = new MutationObserver(updateIcon);
 observer.observe(document.documentElement, {
   attributes: true,
   attributeFilter: ["data-theme"],
 });
 
-// Initial call to set the icon on page load
+// Initial call
 updateIcon();

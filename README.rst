@@ -46,7 +46,6 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 
 - `PyACP <https://acp.docs.pyansys.com/>`_: Pythonic interface to Ansys Composite PrepPost (ACP).
 - `PyAdditive <https://additive.docs.pyansys.com/>`_: Pythonic interface to the Ansys Additive service.
-- `PyAdditive Widgets <https://widgets.additive.docs.pyansys.com/>`_: PyAdditive widget toolkit to visualize additive parametric study results.
 - `PyAEDT <https://aedt.docs.pyansys.com/>`_: Pythonic interface to Ansys Electronics Desktop (AEDT).
 - `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
@@ -77,6 +76,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
 - `PySimAI <https://simai.docs.pyansys.com/>`_: Pythonic interface to use SimAI.
+- `PySpeos <https://speos.docs.pyansys.com/>`_: Python library that gathers functionalities and tools based on Speos software remote API.
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
@@ -105,7 +105,6 @@ By default, the PyAnsys metapackage installs these core modules:
 
 - `PyACP`_
 - `PyAdditive`_
-- `PyAdditive Widgets`_
 - `PyAEDT`_
 - `PyAnsys Geometry`_
 - `PyAnsys Math`_
@@ -132,6 +131,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySeascape`_
 - `PySherlock`_
 - `PySimAI`_
+- `PySpeos`_
 - `PySystemCoupling`_
 - `PyTurboGrid`_
 - `PyTwin`_
@@ -189,7 +189,7 @@ the ``pyansys`` metapackage is downloading the wheelhouse archive from the
 `Releases Page <https://github.com/ansys/pyansys/releases>`_ for your corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install the ``pyansys`` metapackage from
-scratch on Windows, Linux, and MacOS from Python 3.10 to 3.12. You can install this on an isolated system with
+scratch on Windows, Linux, and MacOS from Python 3.10 to 3.13. You can install this on an isolated system with
 a fresh Python installation or on a virtual environment.
 
 For example, on Linux with Python 3.10, unzip the wheelhouse archive and install it with the following
