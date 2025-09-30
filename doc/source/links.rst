@@ -11,10 +11,12 @@
 
 .. ANSYS and products
 .. _ANSYS, Inc.: https://www.ansys.com
+.. _Ansys: https://www.ansys.com
 .. _Ansys products: https://www.ansys.com/products
 .. _Ansys Customer Portal: https://download.ansys.com
 
 .. Python libraries
+.. _Python: https://www.python.org/
 .. _PyPI: https://pypi.org/
 .. _Numpy: https://numpy.org/
 .. _SciPy: https://www.scipy.org/
@@ -27,3 +29,8 @@
 .. _NEP 29: https://numpy.org/neps/nep-0029-deprecation_policy.html
 .. _SPEC-0: https://scientific-python.org/specs/spec-0000/
 
+.. Contacts and support
+.. _PyAnsys support: mailto:pyansys.core@ansys.com
+.. _Github issues: https://github.com/ansys/pyansys/issues
+.. _PyAnsys discussions: https://github.com/ansys/pyansys/discussions
+.. _Developer Forum: https://discuss.ansys.com/

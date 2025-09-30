@@ -7,6 +7,7 @@ from pathlib import Path
 import subprocess
 
 from ansys_sphinx_theme import ansys_favicon, get_version_match
+from docutils import nodes
 import github
 from PIL import Image
 import requests
@@ -71,7 +72,9 @@ html_short_title = html_title = "PyAnsys"
 html_favicon = ansys_favicon
 
 html_sidebars = {
-    "index": ["landing_page_sidebar.html"],
+    "index": [],
+    "projects": ["projects_sidebar.html"],
+    "blog": ["blog_sidebar.html"],
 }
 
 extensions = [
@@ -84,7 +87,14 @@ extensions = [
 # Static files
 templates_path = ["_templates"]
 html_static_path = ["_static"]
-html_css_files = ["css/landing_page.css"]
+html_css_files = [
+    "css/projects_sidebar.css",
+    "css/blogs_sidebar.css",
+    # Landing page specific CSS files
+    "landing-page/css/carousel.css",
+    "landing-page/css/style.css",
+    "landing-page/css/testimonials.css",
+]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
@@ -128,6 +138,69 @@ def get_last_metapackage_release():
     return last_release.tag_name
 
 
+def convert_yaml_to_json():
+    """
+    Convert a YAML file to a JSON file.
+
+    Parameters:
+    yaml_path (Path): Path to the YAML file.
+    json_path (Path): Path to save the JSON file.
+
+    Returns:
+    None
+    """
+    if not metadata.exists() or not metadata.is_file():
+        raise FileNotFoundError(f"The file {metadata} does not exist or is not a file.")
+
+    try:
+        with metadata.open("r", encoding="utf-8") as yaml_file:
+            yaml_content = yaml.safe_load(yaml_file) or {}
+    except yaml.YAMLError as e:
+        raise ValueError(f"Error parsing YAML file: {e}") from e
+
+    projects = yaml_content.get("projects", {})
+    starred, others = [], []
+
+    gh_client = github.Github(os.getenv("GITHUB_TOKEN", None))
+
+    for repo_name, proj in projects.items():
+        if gh_client:
+            try:
+                repository = gh_client.get_repo(f"ansys/{repo_name}")
+                proj["github_stars"] = repository.stargazers_count
+                starred.append(proj)
+            except Exception:
+                others.append(proj)
+                continue
+
+    starred.sort(key=lambda x: x.get("github_stars", 0), reverse=True)
+    projects_sorted = starred + others
+    projects_dict = {proj["name"]: proj for proj in projects_sorted}
+
+    output = {"projects": projects_dict}
+
+    json_path = Path(__file__).parent / "_static" / "projects.json"
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with json_path.open("w", encoding="utf-8") as json_file:
+        json.dump(output, json_file, indent=4)
+        print(f"JSON file successfully written to {json_path}")
+
+
+def read_project_json():
+    """Read the projects.json file and return its content."""
+    convert_yaml_to_json()  # Ensure the JSON is up to date
+    json_path = Path(__file__).parent / "_static" / "projects.json"
+    if not json_path.exists() or not json_path.is_file():
+        raise FileNotFoundError(f"The file {json_path} does not exist or is not a file.")
+    with json_path.open("r", encoding="utf-8") as json_file:
+        try:
+            json_content = json.load(json_file)
+            return json_content
+        except json.JSONDecodeError as e:
+            raise ValueError(f"Error parsing JSON file: {e}")
+
+
 jinja_globals = {
     "LAST_RELEASE": get_last_metapackage_release(),
     "VERSION": version,
@@ -135,7 +208,7 @@ jinja_globals = {
     "SUPPORTED_PLATFORMS": ["Windows", "macOS", "Linux"],
 }
 jinja_contexts = {
-    "project_context": {"projects": yaml.safe_load(metadata.read_text(encoding="utf-8"))},
+    "project_context": {"projects": read_project_json()},
     "dependencies": {"dependencies": read_dependencies_from_pyproject()},
     "optional_dependencies": {"optional_dependencies": read_optional_dependencies_from_pyproject()},
     "wheelhouse": {
@@ -159,6 +232,7 @@ html_context = {
             "needs_datatables": True,
         },
     },
+    "default_mode": "light",
 }
 
 html_theme_options = {
@@ -168,18 +242,10 @@ html_theme_options = {
     "show_breadcrumbs": True,
     "collapse_navigation": True,
     "use_edit_page_button": True,
-    "icon_links": [
-        {
-            "name": "Support",
-            "url": "https://github.com/ansys/pyansys/discussions",
-            "icon": "fa fa-comment fa-fw",
-        },
-        {
-            "name": "Contribute",
-            "url": "https://dev.docs.pyansys.com/how-to/contributing.html",
-            "icon": "fa fa-wrench",
-        },
-    ],
+    "secondary_sidebar_items": {
+        "**": ["page-toc", "sourcelink"],
+        "index": ["page-toc"],
+    },
     "switcher": {
         "json_url": f"https://{cname}/versions.json",
         "version_match": switcher_version,
@@ -190,6 +256,8 @@ html_theme_options = {
         "min_chars_for_search": 2,
         "ignoreLocation": True,
     },
+    "footer_start": ["footer_left.html"],
+    "footer_end": ["footer_right.html"],
 }
 
 # Check all references work fine
@@ -219,6 +287,7 @@ linkcheck_ignore = [
     r"https://ansunits.docs.*",
     r"https://download.ansys.com.*",
     r"https://github.com/ansys/pyansys/releases/download/*",
+    r"https://download.ansys.com",
 ]
 
 # User agent
@@ -447,32 +516,6 @@ def revert_thumbnails(app: sphinx.application.Sphinx, exception):
     subprocess.run(["git", "checkout", "--", thumbnail_dir])
 
 
-def convert_yaml_to_json(app: sphinx.application.Sphinx):
-    """
-    Convert a YAML file to a JSON file.
-
-    Parameters:
-    yaml_path (Path): Path to the YAML file.
-    json_path (Path): Path to save the JSON file.
-
-    Returns:
-    None
-    """
-    if not metadata.exists() or not metadata.is_file():
-        raise FileNotFoundError(f"The file {metadata} does not exist or is not a file.")
-
-    with metadata.open("r", encoding="utf-8") as yaml_file:
-        try:
-            yaml_content = yaml.safe_load(yaml_file)
-        except yaml.YAMLError as e:
-            raise ValueError(f"Error parsing YAML file: {e}")
-
-    json_path = Path(__file__).parent / "_static" / "projects.json"
-    with json_path.open("w", encoding="utf-8") as json_file:
-        json.dump(yaml_content, json_file, indent=4)
-        print(f"JSON file successfully written to {json_path}")
-
-
 def fetch_release_branches_and_python_limits(app: sphinx.application.Sphinx):
     """Retrieve the release branches in the PyAnsys metapackage."""
     # Get the PyAnsys metapackage repository
@@ -528,9 +571,41 @@ def setup(app: sphinx.application.Sphinx):
         Sphinx instance containing all the configuration for the documentation build.
     """
     # At the beginning of the build process - update the version in cheatsheet
-    app.connect("builder-inited", convert_yaml_to_json)
     app.connect("builder-inited", resize_thumbnails)
     app.connect("builder-inited", fetch_release_branches_and_python_limits)
 
+    app.connect("doctree-resolved", collect_blog_metadata)
+
     # Reverting the thumbnails - no local changes
     app.connect("build-finished", revert_thumbnails)
+
+
+def collect_blog_metadata(app, doctree, docname):
+    """Collect metadata from blog posts and save to a JSON file."""
+    meta = {}
+    static_blogs_metadata = Path(app.builder.outdir) / "_static" / "blog_metadata.json"
+    if docname.startswith("blog/"):  # Check if it's a blog post
+        for node in doctree.traverse(nodes.meta):
+            meta[node["name"]] = node["content"]
+        if not hasattr(app.env, "blog_posts"):
+            app.env.blog_posts = {}
+        app.env.blog_posts[f"{docname}.html"] = meta
+
+    # from the date, sort the blog posts in descending order
+    if hasattr(app.env, "blog_posts"):
+        app.env.blog_posts = dict(
+            sorted(
+                app.env.blog_posts.items(),
+                key=lambda item: item[1].get("date", ""),
+                reverse=True,
+            )
+        )
+
+    # Save metadata to a JSON file in the build directory
+    if hasattr(app.env, "blog_posts"):
+        blog_data = app.env.blog_posts
+        if not static_blogs_metadata.parent.exists():
+            return  # Directory does not exist, skip saving
+
+        with static_blogs_metadata.open("w", encoding="utf-8") as json_file:
+            json.dump(blog_data, json_file, indent=4)
