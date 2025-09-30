@@ -16,7 +16,7 @@
             scripting, and integration easier for engineers and developers.
           </p>
           <a href="projects.html" class="btn btn-custom">Explore projects</a>
-          <a href="blogs.html" class="btn btn-custom">Latest news</a>
+          <a href="blog.html" class="btn btn-custom">Latest news</a>
           <a href="mailto:pyansys.core@ansys.com" class="btn btn-custom">Contact us</a>
         </div>
       </div>
