@@ -96,6 +96,7 @@ html_css_files = [
     "landing-page/css/testimonials.css",
 ]
 html_js_files = [
+    # Landing page specific JS files
     "landing-page/js/blogs.js",
     "landing-page/js/testimonials.js",
 ]
