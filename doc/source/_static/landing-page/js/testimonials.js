@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     basePath = "";
   }
   const BASE_PATH = basePath;
-  fetch(`${BASE_PATH}/_static/landing-page/js/testimonials.json`)
+  fetch(`${BASE_PATH}_static/landing-page/js/testimonials.json`)
     .then((r) => r.json())
     .then((data) => {
       const wrapper = document.getElementById("testimonials-wrapper");
