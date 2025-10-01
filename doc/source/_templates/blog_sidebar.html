@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="{{ pathto('_static/css/blog_sidebar.css', 1) }}">
-
 <div class="blog-page-sidebar" id="blog-page-sidebar">
   <h2>Filters</h2>
 
@@ -30,6 +28,15 @@
 </div>
 
 <script>
-  const BLOG_FILE = "{{ pathto('_static/blog_metadata.json', 1) }}";
+  let basePath = "version/dev/";
+  if (
+    window.location.pathname.includes("version/dev") ||
+    window.location.pathname.includes("version/stable") ||
+    window.location.pathname.includes("pull/")
+  ) {
+    basePath = "";
+  }
+  const BASE_PATH = basePath;
+  const BLOG_FILE = `${BASE_PATH}/_static/blog_metadata.json`;
 </script>
 <script src="{{ pathto('_static/js/blog_sidebar.js', 1) }}"></script>
