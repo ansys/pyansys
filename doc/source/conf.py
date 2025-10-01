@@ -95,6 +95,10 @@ html_css_files = [
     "landing-page/css/style.css",
     "landing-page/css/testimonials.css",
 ]
+html_js_files = [
+    "landing-page/js/blogs.js",
+    "landing-page/js/testimonials.js",
+]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
 
