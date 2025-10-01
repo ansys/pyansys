@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("_static/landing-page/js/testimonials.json")
+  let basePath = "version/dev/";
+  if (
+    window.location.pathname.includes("version/dev") ||
+    window.location.pathname.includes("version/stable") ||
+    window.location.pathname.includes("pull/")
+  ) {
+    basePath = "";
+  }
+  const BASE_PATH = basePath;
+  fetch(`${BASE_PATH}/_static/landing-page/js/testimonials.json`)
     .then((r) => r.json())
     .then((data) => {
       const wrapper = document.getElementById("testimonials-wrapper");
