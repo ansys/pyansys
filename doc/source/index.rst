@@ -22,19 +22,14 @@
       </div>
     </div>
 
-
-
     <!-- Swiper CSS/JS for carousels -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
-            <!-- ===================== Workflows Call-to-Action ===================== -->
-    <l />
+    <!-- ===================== Workflows Call-to-Action ===================== -->
     <div class="workflow-cta">
-      <!-- Left side (icon + title + content) -->
       <div class="workflow-cta-left">
-        <!-- Icon -->
         <div class="workflow-cta-icon">
           <script src="https://unpkg.com/lucide@latest"></script>
           <i data-lucide="layers"></i>
@@ -42,16 +37,13 @@
             lucide.createIcons();
           </script>
         </div>
-        <!-- Title and content -->
         <div>
           <h3 class="workflow-cta-title">PyAnsys workflows</h3>
-
           <div class="workflow-content">
             Your gateway to advanced engineering automation. Discover how to seamlessly combine multiple PyAnsys libraries to build powerful, real-world simulation and data processing pipelines.
           </div>
         </div>
       </div>
-      <!-- Right side (button) -->
       <div style="align-self: flex-start;">
         <a href="https://workflows.docs.pyansys.com/" class="workflow-cta-btn btn btn-primary">
           Explore
@@ -109,7 +101,6 @@
         <a href="blogs.html" class="btn btn-link float-end">More blogs</a>
       </h2>
       <div class="blogs-landingpage" id="blogs-landingpage"></div>
-      <script src="_static/landing-page/js/blogs.js"></script>
     </section>
 
 
@@ -117,7 +108,6 @@
     <section id="support" class="my-5">
       <h2 class="mb-4">How we support our users all over the world</h2>
       <div class="row">
-        <!-- Left column: static content -->
         <div class="col-md-6">
           <div class="step">
             <div class="icon">
@@ -125,7 +115,6 @@
             </div>
             <div class="text">
               <h4>Pre simulation</h4>
-
               <p>Define your simulation setup by specifying the geometry in a flexible, parametric format.</p>
             </div>
           </div>
@@ -159,10 +148,6 @@
           </div>
         </div>
       </div>
-      <!-- Bootstrap JS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- Swiper logic for testimonials -->
-      <script src="_static/landing-page/js/testimonials.js"></script>
     </section>
 
 .. toctree::
