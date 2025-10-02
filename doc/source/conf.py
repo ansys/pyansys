@@ -99,6 +99,7 @@ html_js_files = [
     # Landing page specific JS files
     "landing-page/js/blogs.js",
     "landing-page/js/testimonials.js",
+    "js/blog_sidebar.js",
 ]
 
 metadata = Path(__file__).parent.parent.parent / "projects.yaml"
