@@ -162,7 +162,6 @@
       <!-- Bootstrap JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Swiper logic for testimonials -->
-      <script src="_static/landing-page/js/testimonials.js"></script>
     </section>
 
 .. toctree::
