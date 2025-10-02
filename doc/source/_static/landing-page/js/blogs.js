@@ -1,4 +1,4 @@
-fetch("_static/blog_metadata.json")
+fetch(BLOG_FILE)
   .then((response) => response.json())
   .then((data) => {
     const container = document.getElementById("blogs-landingpage");
