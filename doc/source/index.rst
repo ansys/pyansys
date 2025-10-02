@@ -148,7 +148,7 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
 .. toctree::
    :maxdepth: 2

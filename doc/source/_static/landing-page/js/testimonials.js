@@ -75,5 +75,5 @@ document.addEventListener("DOMContentLoaded", function () {
         window.testimonialsSwiperInitialized = true;
       }
     })
-  .catch((err) => console.error("Testimonials error:", err));
+    .catch((err) => console.error("Testimonials error:", err));
 });
