@@ -59,7 +59,7 @@ LaTeXBuilder.supported_image_types = [
 project = "pyansys"
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = "ANSYS Inc."
-cname = os.getenv("DOCUMENTATION_CNAME", default="nocname.com")
+cname = os.getenv("DOCUMENTATION_CNAME", default="docs.pyansys.com")
 switcher_version = get_version_match(pyansys_version)
 
 # Get the PyAnsys version
