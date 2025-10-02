@@ -1,13 +1,13 @@
-let basePath = "version/dev/";
+document.addEventListener("DOMContentLoaded", function () {
+  let blogsJs_basePath = "version/dev/";
 if (
   window.location.pathname.includes("version/dev") ||
   window.location.pathname.includes("version/stable") ||
   window.location.pathname.includes("pull/")
 ) {
-  basePath = "";
+  blogsJs_basePath = "";
 }
-const BASE_PATH = basePath;
-fetch(`${BASE_PATH}_static/blog_metadata.json`)
+fetch(`${blogsJs_basePath}_static/blog_metadata.json`)
   .then((response) => response.json())
   .then((data) => {
     const container = document.getElementById("blogs-landingpage");
@@ -71,3 +71,5 @@ fetch(`${BASE_PATH}_static/blog_metadata.json`)
     // Optionally log or display error
     console.error("Failed to load blog metadata:", error);
   });
+
+});

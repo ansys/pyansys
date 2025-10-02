@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let basePath = "version/dev/";
+  // Use a unique variable name to avoid conflicts
+  let testimonialsBasePath = "version/dev/";
   if (
     window.location.pathname.includes("version/dev") ||
     window.location.pathname.includes("version/stable") ||
     window.location.pathname.includes("pull/")
   ) {
-    basePath = "";
+    testimonialsBasePath = "";
   }
-  const BASE_PATH = basePath;
+  const BASE_PATH = testimonialsBasePath;
   fetch(`${BASE_PATH}_static/landing-page/js/testimonials.json`)
     .then((r) => r.json())
     .then((data) => {
@@ -50,26 +51,29 @@ document.addEventListener("DOMContentLoaded", function () {
         wrapper.appendChild(slide);
       });
 
-      // Initialize Swiper
-      new Swiper("#testimonials-swiper", {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 20,
-        loop: false,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          320: { slidesPerView: 1, slidesPerGroup: 1 },
-          768: { slidesPerView: 2, slidesPerGroup: 2 },
-          1024: { slidesPerView: 3, slidesPerGroup: 3 },
-        },
-      });
+      // Only initialize Swiper if not already initialized
+      if (!window.testimonialsSwiperInitialized) {
+        new Swiper("#testimonials-swiper", {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20,
+          loop: false,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            320: { slidesPerView: 1, slidesPerGroup: 1 },
+            768: { slidesPerView: 2, slidesPerGroup: 2 },
+            1024: { slidesPerView: 3, slidesPerGroup: 3 },
+          },
+        });
+        window.testimonialsSwiperInitialized = true;
+      }
     })
-    .catch((err) => console.error("Testimonials error:", err));
+  .catch((err) => console.error("Testimonials error:", err));
 });
