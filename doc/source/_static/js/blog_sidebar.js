@@ -219,6 +219,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  let basePath = "version/dev/";
+  if (
+    window.location.pathname.includes("version/dev") ||
+    window.location.pathname.includes("version/stable") ||
+    window.location.pathname.includes("pull/")
+  ) {
+    basePath = "";
+  }
+  const BASE_PATH = basePath;
+  const BLOG_FILE = `${BASE_PATH}_static/blog_metadata.json`;
+
   fetch(BLOG_FILE)
     .then((res) => res.json())
     .then((data) => {
