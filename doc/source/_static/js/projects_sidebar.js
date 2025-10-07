@@ -251,11 +251,11 @@ function applyFilters() {
     let shouldShow = true;
 
     if (selectedTags.length > 0) {
-      // Tags filter strictly
       shouldShow = selectedTags.every((t) => cardTags.includes(t));
+      console.log("Tag filter", {selectedTags, cardTags, shouldShow});
     } else if (selectedFamilies.length > 0) {
-      // Families selected → always show all projects
-      shouldShow = true;
+      shouldShow = selectedFamilies.some((f) => cardFamilies.includes(f));
+      console.log("Family filter", {selectedFamilies, cardFamilies, shouldShow});
     }
 
     card.style.display = shouldShow ? "flex" : "none";
@@ -351,6 +351,23 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => {
       console.error("Error fetching the projects data:", error);
     });
+
+  // Attach clear button listeners after DOM is ready
+  document.getElementById("clear-tags-button").addEventListener("click", () => {
+    document
+      .querySelectorAll('#product-tags-list input[type="checkbox"]')
+      .forEach((cb) => (cb.checked = false));
+    applyFilters();
+  });
+
+  document
+    .getElementById("clear-product-families")
+    .addEventListener("click", () => {
+      document
+        .querySelectorAll('#product-families-list input[type="checkbox"]')
+        .forEach((cb) => (cb.checked = false));
+      applyFilters();
+    });
 });
 
 function updateIcon() {
@@ -374,22 +391,6 @@ function updateIcon() {
     });
   }
 }
-
-document.getElementById("clear-tags-button").addEventListener("click", () => {
-  document
-    .querySelectorAll('#product-tags-list input[type="checkbox"]')
-    .forEach((cb) => (cb.checked = false));
-  applyFilters();
-});
-
-document
-  .getElementById("clear-product-families")
-  .addEventListener("click", () => {
-    document
-      .querySelectorAll('#product-families-list input[type="checkbox"]')
-      .forEach((cb) => (cb.checked = false));
-    applyFilters();
-  });
 
 const observer = new MutationObserver(updateIcon);
 observer.observe(document.documentElement, {
