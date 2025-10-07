@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         card.className = "project-card sd-card sd-shadow-sm sd-card-hover";
         // blog link is the key of the dict
         card.onclick = () => {
-          window.location.href = `${blog.key}`;
+          window.location.href = `${blogsJs_basePath}${blog.key}`;
         };
 
         // Normalize tags to array
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Key is the link to the docs
 
         card.innerHTML = `
-        <img class="project-lp-thumbnail" src="_static/${blog.image}" alt="${blog.title}" />
+        <img class="project-lp-thumbnail" src="${blogsJs_basePath}_static/${blog.image}" alt="${blog.title}" />
         <div class="sd-card-body" style="display: flex; flex-direction: column; height: 100%; justify-content: flex-start; gap: 0.75em;">
         <p class="sd-card-text" style="margin: 0;">
           ${tags
