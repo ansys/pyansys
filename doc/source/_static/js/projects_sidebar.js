@@ -252,10 +252,14 @@ function applyFilters() {
 
     if (selectedTags.length > 0) {
       shouldShow = selectedTags.every((t) => cardTags.includes(t));
-      console.log("Tag filter", {selectedTags, cardTags, shouldShow});
+      console.log("Tag filter", { selectedTags, cardTags, shouldShow });
     } else if (selectedFamilies.length > 0) {
       shouldShow = selectedFamilies.some((f) => cardFamilies.includes(f));
-      console.log("Family filter", {selectedFamilies, cardFamilies, shouldShow});
+      console.log("Family filter", {
+        selectedFamilies,
+        cardFamilies,
+        shouldShow,
+      });
     }
 
     card.style.display = shouldShow ? "flex" : "none";
