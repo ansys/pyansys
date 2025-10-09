@@ -196,7 +196,7 @@ function applyFamilyFilters() {
   // When a family is seected, the count of familites are not changing, tags modified
   // based on the selected families
   // Update tag list
-const SelectedTagsContainer = document.getElementById(
+  const SelectedTagsContainer = document.getElementById(
     "selected-product-tags-list",
   );
   const SelectedFamiliesContainer = document.getElementById(
@@ -306,9 +306,7 @@ const SelectedTagsContainer = document.getElementById(
     countSpan.textContent = count;
     row.style.display = count > 0 ? "flex" : "none";
   });
-
 }
-
 
 function applyTagFilters() {
   const SelectedTagsContainer = document.getElementById(
@@ -425,7 +423,6 @@ function applyTagFilters() {
       tagCounts[t] = (tagCounts[t] || 0) + 1;
     });
   });
-
 
   // Update family list
   document
