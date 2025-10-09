@@ -185,14 +185,132 @@ function displayTags(tagCounts) {
 }
 
 function handleFamilySelection() {
-  applyFilters();
+  applyFamilyFilters();
 }
 
 function handleTagSelection() {
-  applyFilters();
+  applyTagFilters();
 }
 
-function applyFilters() {
+function applyFamilyFilters() {
+  // When a family is seected, the count of familites are not changing, tags modified
+  // based on the selected families
+  // Update tag list
+const SelectedTagsContainer = document.getElementById(
+    "selected-product-tags-list",
+  );
+  const SelectedFamiliesContainer = document.getElementById(
+    "selected-product-families-list",
+  );
+  SelectedTagsContainer.innerHTML = "";
+  SelectedFamiliesContainer.innerHTML = "";
+
+  const selectedFamilies = Array.from(
+    document.querySelectorAll(
+      '#product-families-list input[type="checkbox"]:checked',
+    ),
+  ).map((cb) => cb.dataset.family);
+
+  const selectedTags = Array.from(
+    document.querySelectorAll(
+      '#product-tags-list input[type="checkbox"]:checked',
+    ),
+  ).map((cb) => cb.dataset.tag);
+
+  // Pills
+  selectedTags.forEach((tag) => {
+    const pill = document.createElement("span");
+    pill.className = "selected-tag";
+    pill.textContent = tag;
+    SelectedTagsContainer.appendChild(pill);
+  });
+
+  selectedFamilies.forEach((fam) => {
+    const pill = document.createElement("span");
+    pill.className = "selected-family";
+    pill.textContent = fam;
+    SelectedFamiliesContainer.appendChild(pill);
+  });
+
+  const clearTagButton = document.getElementById("clear-tags-button");
+  const clearFamilyButton = document.getElementById("clear-product-families");
+  // Show clear button only if its own filters are active
+  clearTagButton.style.display = selectedTags.length > 0 ? "flex" : "none";
+
+  clearFamilyButton.style.display =
+    selectedFamilies.length > 0 ? "flex" : "none";
+
+  // === Filter project cards ===
+  const projectCards = document.querySelectorAll(".project-card");
+
+  projectCards.forEach((card) => {
+    const cardFamilies = JSON.parse(
+      card.getAttribute("data-families").replace(/'/g, '"') || "[]",
+    );
+    const cardTags = JSON.parse(
+      card.getAttribute("data-tags").replace(/'/g, '"') || "[]",
+    );
+
+    let shouldShow = true;
+
+    if (selectedTags.length > 0) {
+      shouldShow = selectedTags.every((t) => cardTags.includes(t));
+      console.log("Tag filter", { selectedTags, cardTags, shouldShow });
+    } else if (selectedFamilies.length > 0) {
+      shouldShow = selectedFamilies.some((f) => cardFamilies.includes(f));
+      console.log("Family filter", {
+        selectedFamilies,
+        cardFamilies,
+        shouldShow,
+      });
+    }
+
+    card.style.display = shouldShow ? "flex" : "none";
+  });
+
+  // === Update counts ===
+  let relevantCards = [];
+
+  if (selectedTags.length > 0) {
+    // Tags control visibility → use only visible projects
+    relevantCards = Array.from(projectCards).filter(
+      (c) => c.style.display !== "none",
+    );
+  } else if (selectedFamilies.length > 0) {
+    // Families chosen → include projects belonging to those families
+    relevantCards = Array.from(projectCards).filter((card) => {
+      const fams = JSON.parse(
+        card.getAttribute("data-families").replace(/'/g, '"') || "[]",
+      );
+      return selectedFamilies.some((f) => fams.includes(f));
+    });
+  } else {
+    // Nothing selected → everything is relevant
+    relevantCards = Array.from(projectCards);
+  }
+
+  // Count tags
+  const tagCounts = {};
+  relevantCards.forEach((card) => {
+    const tags = JSON.parse(
+      card.getAttribute("data-tags").replace(/'/g, '"') || "[]",
+    );
+    tags.forEach((t) => {
+      tagCounts[t] = (tagCounts[t] || 0) + 1;
+    });
+  });
+  document.querySelectorAll("#product-tags-list .tag-row").forEach((row) => {
+    const tag = row.querySelector("input").dataset.tag;
+    const countSpan = row.querySelector(".tag-count");
+    const count = tagCounts[tag] || 0;
+    countSpan.textContent = count;
+    row.style.display = count > 0 ? "flex" : "none";
+  });
+
+}
+
+
+function applyTagFilters() {
   const SelectedTagsContainer = document.getElementById(
     "selected-product-tags-list",
   );
@@ -307,6 +425,7 @@ function applyFilters() {
       tagCounts[t] = (tagCounts[t] || 0) + 1;
     });
   });
+
 
   // Update family list
   document
