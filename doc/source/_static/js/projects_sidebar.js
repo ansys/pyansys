@@ -294,13 +294,13 @@ function updateCountsFromVisible() {
 }
 
 function resetAllCounts() {
-  // ✅ Show all project cards again
+  // Show all project cards again
   DOM.qsa(".project-card").forEach((card) => (card.style.display = "flex"));
 
   const familyCounts = {};
   const tagCounts = {};
 
-  // ✅ Count all projects (no filters)
+  // Count all projects (no filters)
   DOM.qsa(".project-card").forEach((card) => {
     const fams = parseArrayFromAttr(card.getAttribute("data-families"));
     const tags = parseArrayFromAttr(card.getAttribute("data-tags"));
@@ -308,7 +308,7 @@ function resetAllCounts() {
     tags.forEach((t) => (tagCounts[t] = (tagCounts[t] || 0) + 1));
   });
 
-  // ✅ Reset family list counts and show all families
+  // Reset family list counts and show all families
   DOM.qsa("#product-families-list .family-row").forEach((row) => {
     const fam = row.querySelector("input")?.dataset.family;
     const countSpan = row.querySelector(".family-count");
@@ -317,7 +317,7 @@ function resetAllCounts() {
     row.style.display = "flex";
   });
 
-  // ✅ Reset tag list counts and show all tags
+  // Reset tag list counts and show all tags
   DOM.qsa("#product-tags-list .tag-row").forEach((row) => {
     const tag = row.querySelector("input")?.dataset.tag;
     const countSpan = row.querySelector(".tag-count");
@@ -326,7 +326,7 @@ function resetAllCounts() {
     row.style.display = "flex";
   });
 
-  // ✅ Restore sidebar “Show more” truncation (optional)
+  // Restore sidebar “Show more” truncation (optional)
   setupShowMore(
     ".product-families .show-more",
     "#product-families-list .family-row",
