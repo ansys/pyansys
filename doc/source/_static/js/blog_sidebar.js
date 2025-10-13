@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
             : description;
 
         postCard.innerHTML = `
-          ${post.image ? `<img class="project-thumbnail" src="_static/${post.image}" alt="${post.title || key}">` : ""}
+          ${post.image ? `<img class="project-thumbnail" src="${BASE_PATH}_static/${post.image}" alt="${post.title || key}">` : ""}
           <div class="sd-card-body">
             <p class="sd-card-title sd-font-weight-bold">${post.title || key}</p>
             <p class="sd-card-body-text">${shortDescription}</p>
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <i class="fa fa-user"></i> ${post.author || "PyAnsys Team"}<br/>
               <i class="fa fa-calendar"></i> ${post.date || "Unknown Date"}
             </p>
-            <a class="sd-btn sd-btn-outline-primary" href="${key}">Read More</a>
+            <a class="sd-btn sd-btn-outline-primary" href="${BASE_PATH}${key}">Read More</a>
           </div>
         `;
         blogContainer.appendChild(postCard);
