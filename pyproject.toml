@@ -60,7 +60,7 @@ dependencies = [
     "pyaedt==0.21.0",
     "pyedb==0.60.0",
     "pygranta==2025.2.1",
-    "pytwin==0.10.1",
+    "pytwin==0.10.2",
 ]
 
 [project.optional-dependencies]
