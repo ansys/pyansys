@@ -43,11 +43,11 @@
             Your gateway to advanced engineering automation. Discover how to seamlessly combine multiple PyAnsys libraries to build powerful, real-world simulation and data processing pipelines.
           </div>
         </div>
-      </div>
-      <div style="align-self: flex-start;">
-        <a href="https://workflows.docs.pyansys.com/" class="workflow-cta-btn btn btn-primary">
-          Explore
-        </a>
+        <div class="workflow-cta-btn-container">
+          <a href="https://workflows.docs.pyansys.com/" class="workflow-cta-btn btn btn-primary">
+            Explore
+          </a>
+        </div>
       </div>
     </div>
 

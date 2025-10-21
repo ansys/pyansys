@@ -370,6 +370,10 @@ textarea.form-control {
   margin: 0 0 0.5rem 0;
 }
 
+.workflow-cta-btn-container {
+  align-self: flex-start;
+}
+
 .workflow-cta-btn {
   display: flex;
   height: var(--workflow-cta-btn-h);
