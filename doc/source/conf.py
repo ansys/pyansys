@@ -262,7 +262,8 @@ html_theme_options = {
         "min_chars_for_search": 2,
         "ignoreLocation": True,
     },
-    "footer_start": ["footer_left.html"],
+    # "footer_start": ["footer_left.html"],
+    "footer_center": ["footer_center.html"],
     "footer_end": ["footer_right.html"],
 }
 
