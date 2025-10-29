@@ -145,6 +145,11 @@ html[data-theme="dark"] {
   color: var(--footer-color);
 }
 
+.footer-ansys-logo {
+  width: 6.34375rem; /* 101.5px */
+  object-fit: contain;
+}
+
 .carousel {
   background-color: var(--footer-bg) !important;
 }
@@ -192,7 +197,7 @@ html[data-theme="dark"] {
 }
 
 .swiper-slide .project-card {
-  height: 29.375rem; /* 470px */
+  height: 29.375rem; /* Already in rem */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -280,7 +285,7 @@ textarea.form-control {
 
 .footer-right .social-icons .icon-youtube {
   background-image: url(https://www.ansys.com/etc.clientlibs/ansysincprogram/clientlibs/clientlib-site/resources/images/icon-youtube-white.png);
-  width: 1.8125rem;
+  width: 1.8125rem; /* Already in rem */
 }
 
 .footer-right .social-icons .icon-youtube:hover {
@@ -306,6 +311,7 @@ textarea.form-control {
 .footer-right .social-icons .icon-github {
   background: none;
   font-size: 1.375rem;
+  color: #fff;
 }
 
 .footer-right .social-icons .icon-github:hover {
@@ -409,17 +415,18 @@ textarea.form-control {
 .project-star-badge {
   color: #615655;
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 0.75rem; /* Already in rem */
+  right: 1rem; /* Already in rem */
   background: #f7f7f7;
-  box-shadow: 0 1px 2px 0
-    var(rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12));
-  border-radius: 0.5rem;
+  box-shadow:
+    0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.08),
+    0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.12); /* 1px = 0.0625rem, 2px = 0.125rem, 4px = 0.25rem */
+  border-radius: 0.5rem; /* Already in rem */
   display: flex;
   align-items: center;
-  gap: 0.125rem;
+  gap: 0.125rem; /* Already in rem */
   z-index: 2;
-  padding: 0 0.25rem;
+  padding: 0 0.25rem; /* Already in rem */
 }
 
 .project-star-count {
