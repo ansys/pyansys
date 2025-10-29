@@ -10,8 +10,8 @@ description = "Pythonic interfaces to Ansys products"
 readme = "README.rst"
 requires-python = ">=3.10,<4"
 license = { file = "LICENSE" }
-authors = [{ name = "ANSYS, Inc.", email = "pyansys.support@ansys.com" }]
-maintainers = [{ name = "PyAnsys developers", email = "pyansys.maintainers@ansys.com" }]
+authors = [{ name = "ANSYS, Inc.", email = "pyansys.core@ansys.com" }]
+maintainers = [{ name = "ANSYS, Inc.", email = "pyansys.core@ansys.com" }]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
@@ -143,5 +143,6 @@ convention = "numpy"
 [tool.ruff.lint.isort]
 combine-as-imports = true
 force-sort-within-sections = true
+
 
 
