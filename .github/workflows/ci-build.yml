@@ -19,6 +19,9 @@ env:
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
   GITHUB_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+  # attrs,referencing,jeepney - This has MIT license but fails the check
+  # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
+  LICENSE_WHITELISTING: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary" 
 
 jobs:
   check-vulnerabilities:
@@ -52,7 +55,7 @@ jobs:
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
-          whitelist-license-check: "attrs,referencing,jeepney,paramiko,ansys-dpf-post" # This has MIT license but fails the check, paramiko and ansys-dpf-post need to be removed eventually from the whitelist
+          whitelist-license-check: ${{ env.LICENSE_WHITELISTING }}
 
   docs-style:
     name: Documentation Style Check
@@ -139,9 +142,7 @@ jobs:
           operating-system: ${{ runner.os }}
           python-version: ${{ matrix.python-version }}
           target: "all"
-          whitelist-license-check: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary" 
-          # attrs,referencing,jeepney - This has MIT license but fails the check
-          # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
+          whitelist-license-check: ${{ env.LICENSE_WHITELISTING }}
 
       - name: List dependencies (pip freeze)
         run: |
