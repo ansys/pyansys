@@ -139,7 +139,9 @@ jobs:
           operating-system: ${{ runner.os }}
           python-version: ${{ matrix.python-version }}
           target: "all"
-          whitelist-license-check: "attrs,referencing,jeepney" # This has MIT license but fails the check
+          whitelist-license-check: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary" 
+          # attrs,referencing,jeepney - This has MIT license but fails the check
+          # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
 
       - name: List dependencies (pip freeze)
         run: |
