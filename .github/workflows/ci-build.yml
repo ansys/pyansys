@@ -21,7 +21,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
   # attrs,referencing,jeepney - This has MIT license but fails the check
   # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
-  LICENSE_WHITELISTING: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary" 
+  LICENSE_WHITELISTING: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary"
 
 jobs:
   check-vulnerabilities:
