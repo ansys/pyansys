@@ -7,6 +7,7 @@ on:
       - "*"
     branches:
       - main
+      - release/2025.1
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,46 +18,31 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
+  GITHUB_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+  # attrs,referencing,jeepney - This has MIT license but fails the check
+  # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
+  LICENSE_WHITELISTING: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary"
+  UV_PRERELEASE: "allow"
 
 jobs:
-  check-vulnerabilities:
-    name: Check third-party dependencies for vulnerabilities
-    runs-on: ubuntu-latest
-    steps:
-      - name: PyAnsys Vulnerability Check (on PRs)
-        if: github.event_name == 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v8
-        with:
-          python-version: ${{ env.MAIN_PYTHON_VERSION }}
-          python-package-name: ${{ env.PACKAGE_NAME }}
-          token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
-          dev-mode: true
-
-      - name: PyAnsys Vulnerability Check (any other case)
-        if: github.event_name != 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v8
-        with:
-          python-version: ${{ env.MAIN_PYTHON_VERSION }}
-          python-package-name: ${{ env.PACKAGE_NAME }}
-          token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
-
   check-licenses:
     name: Check depencencies' licenses
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys Licenses Check
-        uses: ansys/actions/check-licenses@main
+        uses: ansys/actions/check-licenses@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
-          whitelist-license-check: "attrs,referencing,jeepney" # This has MIT license but fails the check
+          whitelist-license-check: ${{ env.LICENSE_WHITELISTING }}
+          use-uv: false
 
   docs-style:
     name: Documentation Style Check
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@v8
+        uses: ansys/actions/doc-style@v10
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -70,16 +56,18 @@ jobs:
         python-version: ['3.10', '3.11', '3.12']
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install the latest version of uv and set the python version
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v7
         with:
           python-version: ${{ matrix.python-version }}
           cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install core PyAnsys packages
         run: |
+          uv pip install ansys-api-edb==1.0.10 # Workaround for yanked version
           uv pip install .
 
       - name: Smoke test
@@ -97,16 +85,18 @@ jobs:
         extras-version: ['fluent-all', 'mapdl-all', 'tools']
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install the latest version of uv and set the python version
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v7
         with:
           python-version: ${{ matrix.python-version }}
           cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
+          uv pip install ansys-api-edb==1.0.10 # Workaround for yanked version
           uv pip install .[${{ matrix.extras-version }}]
 
       - name: Smoke test
@@ -124,13 +114,14 @@ jobs:
 
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@v8
+        uses: ansys/actions/build-wheelhouse@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           operating-system: ${{ runner.os }}
           python-version: ${{ matrix.python-version }}
           target: "all"
-          whitelist-license-check: "attrs,referencing,jeepney" # This has MIT license but fails the check
+          use-uv: false
+          check-licenses: false
 
       - name: List dependencies (pip freeze)
         run: |
@@ -138,7 +129,7 @@ jobs:
           cat all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
 
       - name: Upload dependencies list
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: all-deps-${{ runner.os }}-${{ matrix.python-version }}
           path: all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
@@ -151,29 +142,15 @@ jobs:
 
     steps:
       - name: Build documentation
-        uses: ansys/actions/doc-build@v8
+        uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
-
-  doc-deploy-dev:
-      name: "Deploy development docs"
-      if: github.ref == 'refs/heads/main'
-      runs-on: ubuntu-latest
-      needs: [package]
-      steps:
-        - name: Deploy the latest documentation
-          uses: ansys/actions/doc-deploy-dev@v8
-          with:
-            cname: ${{ env.DOCUMENTATION_CNAME }}
-            token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
-            bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
-            bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
-
-  adapt-landing-page-dev:
-    uses: ./.github/workflows/update-gh-pages.yml
-    needs: [doc-deploy-dev]
-    secrets: inherit
+          skip-dependencies-cache: true
+          use-uv: false
+          check-links: false
+        env:
+          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
 
   package:
     name: Package library
@@ -181,29 +158,33 @@ jobs:
     needs: [docs-build, smoke-tests-core]
     steps:
       - name: Build library source and wheel artifacts
-        uses: ansys/actions/build-library@v8
+        uses: ansys/actions/build-library@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          use-uv: false
 
   release:
     name: Release project
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags')
     needs: [package, smoke-tests-extras, wheelhouse-all]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Release to PyPI repository
-        uses: ansys/actions/release-pypi-public@v8
+        uses: ansys/actions/release-pypi-public@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           twine-username: __token__
           twine-token: ${{ secrets.PYPI_TOKEN }}
 
       - name: Release to GitHub
-        uses: ansys/actions/release-github@v8
+        uses: ansys/actions/release-github@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   docs-release:
     name: Deploy release docs
@@ -211,7 +192,7 @@ jobs:
     needs: [release]
     steps:
       - name: Deploy the latest release documentation
-        uses: ansys/actions/doc-deploy-stable@v8
+        uses: ansys/actions/doc-deploy-stable@v10
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
