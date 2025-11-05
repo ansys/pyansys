@@ -7,6 +7,7 @@ on:
       - "*"
     branches:
       - main
+      - release/2024.2
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,48 +18,31 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
-  MEILISEARCH_API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
-  MEILISEARCH_PUBLIC_API_KEY: ${{ secrets.MEILISEARCH_PUBLIC_API_KEY }}
+  GITHUB_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+  # attrs,referencing,jeepney - This has MIT license but fails the check
+  # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
+  LICENSE_WHITELISTING: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary"
+  UV_PRERELEASE: "allow"
 
 jobs:
-  check-vulnerabilities:
-    name: Check third-party dependencies for vulnerabilities
-    runs-on: ubuntu-latest
-    steps:
-      - name: PyAnsys Vulnerability Check (on PRs)
-        if: github.event_name == 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v7
-        with:
-          python-version: ${{ env.MAIN_PYTHON_VERSION }}
-          python-package-name: ${{ env.PACKAGE_NAME }}
-          token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
-          dev-mode: true
-
-      - name: PyAnsys Vulnerability Check (any other case)
-        if: github.event_name != 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@v7
-        with:
-          python-version: ${{ env.MAIN_PYTHON_VERSION }}
-          python-package-name: ${{ env.PACKAGE_NAME }}
-          token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
-
   check-licenses:
     name: Check depencencies' licenses
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys Licenses Check
-        uses: ansys/actions/check-licenses@main
+        uses: ansys/actions/check-licenses@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
-          whitelist-license-check: "attrs" # This has MIT license but fails the check
+          whitelist-license-check: ${{ env.LICENSE_WHITELISTING }}
+          use-uv: false
 
   docs-style:
     name: Documentation Style Check
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@v8
+        uses: ansys/actions/doc-style@v10
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -72,18 +56,19 @@ jobs:
         python-version: ['3.9', '3.10', '3.11', '3.12']
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+      - name: Install the latest version of uv and set the python version
+        uses: astral-sh/setup-uv@v7
         with:
           python-version: ${{ matrix.python-version }}
-          cache: 'pip'
-          cache-dependency-path: 'pyproject.toml'
+          cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install core PyAnsys packages
         run: |
-          pip install .
+          uv pip install ansys-api-edb==1.0.10 # Workaround for yanked version
+          uv pip install .
 
       - name: Smoke test
         run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
@@ -100,18 +85,19 @@ jobs:
         extras-version: ['fluent-all', 'mapdl-all', 'tools']
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+      - name: Install the latest version of uv and set the python version
+        uses: astral-sh/setup-uv@v7
         with:
           python-version: ${{ matrix.python-version }}
-          cache: 'pip'
-          cache-dependency-path: 'pyproject.toml'
+          cache-dependency-glob: '**/pyproject.toml'
+          activate-environment: true
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
-          pip install .[${{ matrix.extras-version }}]
+          uv pip install ansys-api-edb==1.0.10 # Workaround for yanked version
+          uv pip install .[${{ matrix.extras-version }}]
 
       - name: Smoke test
         run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
@@ -128,13 +114,14 @@ jobs:
 
     steps:
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@v8
+        uses: ansys/actions/build-wheelhouse@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           operating-system: ${{ runner.os }}
           python-version: ${{ matrix.python-version }}
           target: "all"
-          whitelist-license-check: "attrs" # This has MIT license but fails the check
+          use-uv: false
+          check-licenses: false
 
       - name: List dependencies (pip freeze)
         run: |
@@ -142,7 +129,7 @@ jobs:
           cat all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
 
       - name: Upload dependencies list
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: all-deps-${{ runner.os }}-${{ matrix.python-version }}
           path: all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
@@ -152,44 +139,17 @@ jobs:
     name: Building Documentation
     runs-on: ubuntu-latest
     needs: [docs-style]
-
     steps:
       - name: Build documentation
-        uses: ansys/actions/doc-build@v7
+        uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
-
-  doc-deploy-dev:
-      name: "Deploy development docs"
-      if: github.ref == 'refs/heads/main'
-      runs-on: ubuntu-latest
-      needs: [package]
-      steps:
-        - name: Deploy the latest documentation
-          uses: ansys/actions/doc-deploy-dev@v7
-          with:
-            cname: ${{ env.DOCUMENTATION_CNAME }}
-            token: ${{ secrets.GITHUB_TOKEN }}
-
-  adapt-landing-page-dev:
-    uses: ./.github/workflows/update-gh-pages.yml
-    needs: [doc-deploy-dev]
-    secrets: inherit
-
-  doc-index-dev:
-    name: "Deploy dev docs index"
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    needs: [doc-deploy-dev]
-    steps:
-      - name: "Deploy the dev documentation index"
-        uses: ansys/actions/doc-deploy-index@v7
-        with:
-          cname: ${{ env.DOCUMENTATION_CNAME }}/version/dev
-          index-name: pyansys-vdev
-          host-url: ${{ vars.MEILISEARCH_HOST_URL }}
-          api-key: ${{ env.MEILISEARCH_API_KEY }}
+          skip-dependencies-cache: true
+          use-uv: false
+          check-links: false
+        env:
+          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
 
   package:
     name: Package library
@@ -197,29 +157,33 @@ jobs:
     needs: [docs-build, smoke-tests-core]
     steps:
       - name: Build library source and wheel artifacts
-        uses: ansys/actions/build-library@v7
+        uses: ansys/actions/build-library@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          use-uv: false
 
   release:
     name: Release project
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags')
     needs: [package, smoke-tests-extras, wheelhouse-all]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Release to PyPI repository
-        uses: ansys/actions/release-pypi-public@v7
+        uses: ansys/actions/release-pypi-public@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           twine-username: __token__
           twine-token: ${{ secrets.PYPI_TOKEN }}
 
       - name: Release to GitHub
-        uses: ansys/actions/release-github@v7
+        uses: ansys/actions/release-github@v10
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           additional-artifacts: 'all-deps-Linux-3.9 all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Windows-3.9 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-macOS-3.9 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   docs-release:
     name: Deploy release docs
@@ -227,42 +191,14 @@ jobs:
     needs: [release]
     steps:
       - name: Deploy the latest release documentation
-        uses: ansys/actions/doc-deploy-stable@v7
+        uses: ansys/actions/doc-deploy-stable@v10
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
+          bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+          bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
 
   adapt-landing-page-release:
     uses: ./.github/workflows/update-gh-pages.yml
     needs: [docs-release]
     secrets: inherit
-
-  doc-index-release:
-    name: "Deploy release docs index"
-    runs-on: ubuntu-latest
-    needs: docs-release
-    steps:
-      - name: "Install Git and clone project"
-        uses: actions/checkout@v4
-
-      - name: "Install the library to get the version"
-        shell: bash
-        run: |
-          python -m pip install -e .
-
-      - name: "Get the version of the library"
-        run: |
-          VERSION=$(python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print('.'.join(__version__.split('.')[:2]))")
-          VERSION_MEILI=$(python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print('-'.join(__version__.split('.')[:2]))")
-          echo "Calculated VERSION: $VERSION"
-          echo "Calculated VERSION_MEILI: $VERSION_MEILI"
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-          echo "VERSION_MEILI=$VERSION_MEILI" >> $GITHUB_ENV
-
-      - name: "Deploy the latest documentation index"
-        uses: ansys/actions/doc-deploy-index@v7
-        with:
-          cname: ${{ env.DOCUMENTATION_CNAME }}/version/${{ env.VERSION }}
-          index-name: pyansys-v${{ env.VERSION_MEILI }}
-          host-url: ${{ vars.MEILISEARCH_HOST_URL }}
-          api-key: ${{ env.MEILISEARCH_API_KEY }}
