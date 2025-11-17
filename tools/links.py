@@ -35,6 +35,7 @@ LINKS = {
     "ansys-fluent-core": "https://fluent.docs.pyansys.com/version/stable",
     "ansys-hps-client": "https://hps.docs.pyansys.com/version/stable",
     "ansys-hps-data-transfer-client": "https://data-transfer.hps.docs.pyansys.com/version/stable",  # noqa: E501
+    "ansys-lumerical-core": "https://lumerical.docs.pyansys.com/version/stable",
     "ansys-mapdl-core": "https://mapdl.docs.pyansys.com/version/stable",
     "ansys-math-core": "https://math.docs.pyansys.com/version/stable",
     "ansys-sound-core": "https://sound.docs.pyansys.com/version/stable",

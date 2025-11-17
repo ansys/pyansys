@@ -281,6 +281,20 @@ projects:
       examples: https://data-transfer.hps.docs.pyansys.com/version/stable/examples/index.html
       api: https://data-transfer.hps.docs.pyansys.com/version/stable/api/index.html
 
+  pylumerical:
+    name: PyLumerical
+    repository: https://github.com/ansys/pylumerical
+    description: A Python client library for Ansys Lumerical
+    thumbnail: _static/thumbnails/pylumerical.png
+    families: [Optics]
+    tags: [Flagship]
+    icon: _static/icons/optics.svg
+    documentation:
+      base: https://lumerical.docs.pyansys.com/version/stable
+      user_guide: https://lumerical.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://lumerical.docs.pyansys.com/version/stable/examples.html
+      api: https://lumerical.docs.pyansys.com/version/stable/api/index.html
+
   pymapdl:
     name: PyMAPDL
     repository: https://github.com/ansys/pymapdl
