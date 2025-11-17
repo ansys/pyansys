@@ -62,7 +62,8 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyFluent <https://fluent.docs.pyansys.com/>`_: Pythonic interface to Ansys Fluent.
 - `PyFluent - Visualization <https://visualization.fluent.docs.pyansys.com/>`_: Pythonic interface to visualize Ansys Fluent simulations.
 - `PyGranta <https://grantami.docs.pyansys.com/>`_: Pythonic interface to Ansys Granta MI services.
-- `PyHPS <https://hps.docs.pyansys.com/version/dev/>`_: A Python client for Ansys HPC Platform Services (HPS).
+- `PyHPS <https://hps.docs.pyansys.com/>`_: A Python client for Ansys HPC Platform Services (HPS).
+- `PyLumerical <https://lumerical.docs.pyansys.com/>`_: Pythonic interface to Ansys Lumerical.
 - `PyMAPDL <https://mapdl.docs.pyansys.com/>`_: Pythonic interface to Ansys MAPDL (Mechanical APDL).
 - `PyMAPDL Reader <https://reader.docs.pyansys.com/>`_: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later).
 - `PyMechanical <https://mechanical.docs.pyansys.com/>`_: Pythonic interface to Ansys Mechanical.
@@ -121,6 +122,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyFluent`_
 - `PyGranta`_
 - `PyHPS`_
+- `PyLumerical`_
 - `PyMAPDL`_
 - `PyMechanical`_
 - `PyMotorCAD`_
