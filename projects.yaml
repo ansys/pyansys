@@ -284,7 +284,7 @@ projects:
   pylumerical:
     name: PyLumerical
     repository: https://github.com/ansys/pylumerical
-    description: A Python client library for Ansys Lumerical
+    description: Pythonic interface to Ansys Lumerical products
     thumbnail: _static/thumbnails/pylumerical.png
     families: [Optics]
     tags: [Flagship]
