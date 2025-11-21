@@ -48,7 +48,7 @@ In previous diagram:
 
 * Python versions in gray are no longer supported
 * Python versions in light blue are currently supported
-* Python versions in dark blue are not supported yet
+* Python versions in red are not supported yet
 
 .. note::
 
