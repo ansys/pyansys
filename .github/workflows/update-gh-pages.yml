@@ -28,7 +28,7 @@ jobs:
         python -m pip install requests
 
     - name: Checkout repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Copy tools folder to /tmp and run sitemap script
       working-directory: /tmp
@@ -37,7 +37,7 @@ jobs:
         python ./tools/catsitemap.py
 
     - name: Checkout repository gh-pages branch
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         ref: gh-pages
 
