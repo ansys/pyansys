@@ -79,18 +79,18 @@ corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install
 ``pyansys`` metapackage from scratch on Windows, Linux, and MacOS from Python
-3.9 to 3.12. You can install this on an isolated system with a fresh Python
+3.10 to 3.12. You can install this on an isolated system with a fresh Python
 installation or on a virtual environment.
 
-For example, on Linux with Python 3.9, unzip the wheelhouse archive and install
+For example, on Linux with Python 3.10, unzip the wheelhouse archive and install
 it with the following:
 
 .. code:: bash
 
-    unzip pyansys-v2024.2.5-wheelhouse-Linux-3.9-core.zip wheelhouse
+    unzip pyansys-v2024.2.5-wheelhouse-Linux-3.10-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
-If you're on Windows with Python 3.9, unzip to a wheelhouse directory and install using the same command as above.
+If you're on Windows with Python 3.10, unzip to a wheelhouse directory and install using the same command as above.
 
 Consider installing using a `virtual environment <venv_docs_>`_.
 

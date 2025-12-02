@@ -188,18 +188,18 @@ the ``pyansys`` metapackage is downloading the wheelhouse archive from the
 `Releases Page <https://github.com/ansys/pyansys/releases>`_ for your corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install the ``pyansys`` metapackage from
-scratch on Windows, Linux, and MacOS from Python 3.9 to 3.12. You can install this on an isolated system with
+scratch on Windows, Linux, and MacOS from Python 3.10 to 3.12. You can install this on an isolated system with
 a fresh Python installation or on a virtual environment.
 
-For example, on Linux with Python 3.9, unzip the wheelhouse archive and install it with the following
+For example, on Linux with Python 3.10, unzip the wheelhouse archive and install it with the following
 commands:
 
 .. code:: bash
 
-    unzip pyansys-v2024.2.5-wheelhouse-Linux-3.9-core.zip wheelhouse
+    unzip pyansys-v2024.2.5-wheelhouse-Linux-3.10-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
-If you're on Windows with Python 3.9, unzip to a wheelhouse directory and then install using
+If you're on Windows with Python 3.10, unzip to a wheelhouse directory and then install using
 the same ``pip`` command as in the previous example.
 
 Consider installing using a `virtual environment <https://docs.python.org/3/library/venv.html>`_.
