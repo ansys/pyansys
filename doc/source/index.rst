@@ -98,7 +98,7 @@
     <section id="blogs">
       <h2>Recent blogs
 
-        <a href="blogs.html" class="btn btn-link float-end">More blogs</a>
+        <a href="blog.html" class="btn btn-link float-end">More blogs</a>
       </h2>
       <div class="blogs-landingpage" id="blogs-landingpage"></div>
     </section>
