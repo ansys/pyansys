@@ -43,7 +43,7 @@ dependencies = [
     "ansys-math-core==0.2.4",
     "ansys-mechanical-core==0.11.38",
     "ansys-meshing-prime==0.9.4",
-    "ansys-modelcenter-workflow==0.1.1",
+    "ansys-modelcenter-workflow==0.1.3",
     "ansys-motorcad-core==0.8.4",
     "ansys-optislang-core==1.4.1",
     "ansys-platform-instancemanagement==1.1.2",
@@ -65,7 +65,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-mapdl-all = ["ansys-mapdl-reader==0.55.1"]
+mapdl-all = ["ansys-mapdl-reader==0.55.2"]
 fluent-all = ["ansys-fluent-visualization==0.24.0"]
 tools = [
     "ansys-materials-manager==0.3.1",
@@ -81,7 +81,7 @@ tools = [
 ]
 all = [
     # MAPDL - ALL
-    "ansys-mapdl-reader==0.55.1",
+    "ansys-mapdl-reader==0.55.2",
     # FLUENT - ALL
     "ansys-fluent-visualization==0.24.0",
     # TOOLS
