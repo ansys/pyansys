@@ -37,6 +37,9 @@
     <loc>https://docs.pyansys.com/sitemap/ansys-hps-data-transfer-client_sitemap.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://docs.pyansys.com/sitemap/ansys-lumerical-core_sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://docs.pyansys.com/sitemap/ansys-mapdl-core_sitemap.xml</loc>
   </sitemap>
   <sitemap>
