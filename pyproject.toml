@@ -33,7 +33,7 @@ dependencies = [
     "ansys-dpf-post==0.11.0",
     "ansys-dyna-core==0.9.1",
     "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
-    "ansys-edb-core==0.2.4",
+    "ansys-edb-core==0.2.5",
     "ansys-fluent-core==0.37.1",
     "ansys-geometry-core==0.14.2",
     "ansys-hps-client==0.11.1",
@@ -59,7 +59,7 @@ dependencies = [
     "ansys-turbogrid-core==0.5.4",
     "ansys-workbench-core==0.10.0",
     "pyaedt==0.24.0",
-    "pyedb==0.66.1",
+    "pyedb==0.67.0",
     "pygranta==2025.2.1",
     "pytwin==0.10.2",
 ]
