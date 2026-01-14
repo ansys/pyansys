@@ -53,12 +53,12 @@ dependencies = [
     "ansys-sherlock-core==0.9.0",
     "ansys-simai-core==0.3.7",
     "ansys-sound-core==0.2.1",
-    "ansys-speos-core==0.7.0",
+    "ansys-speos-core==0.7.1",
     "ansys-stk==0.2.1",
     "ansys-systemcoupling-core==0.11.3",
     "ansys-turbogrid-core==0.5.4",
     "ansys-workbench-core==0.10.0",
-    "pyaedt==0.24.0",
+    "pyaedt==0.24.1",
     "pyedb==0.67.0",
     "pygranta==2025.2.1",
     "pytwin==0.10.2",
@@ -104,7 +104,7 @@ doc = [
     "PyGithub==2.8.1",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.6.1",
-    "sphinxcontrib-mermaid==1.2.3",
+    "sphinxcontrib-mermaid==2.0.0",
     "sphinx-jinja==2.0.2",
 ]
 
