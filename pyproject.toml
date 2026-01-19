@@ -51,7 +51,7 @@ dependencies = [
     "ansys-rocky-core==0.4.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.9.0",
-    "ansys-simai-core==0.3.7",
+    "ansys-simai-core==0.3.8",
     "ansys-sound-core==0.2.1",
     "ansys-speos-core==0.7.1",
     "ansys-stk==0.2.1",
@@ -59,9 +59,9 @@ dependencies = [
     "ansys-turbogrid-core==0.5.4",
     "ansys-workbench-core==0.10.0",
     "pyaedt==0.24.1",
-    "pyedb==0.67.0",
+    "pyedb==0.67.1",
     "pygranta==2025.2.1",
-    "pytwin==0.10.2",
+    "pytwin==0.11.0",
 ]
 
 [project.optional-dependencies]
@@ -74,7 +74,7 @@ tools = [
     "ansys-tools-path==0.8.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.12.1",
-    "ansys-units==0.9.1",
+    "ansys-units==0.10.0",
     "pyansys-tools-report==0.9.0",
     "pyansys-tools-versioning==0.7.0",
     "pyansys-tools-variableinterop==0.1.2",
@@ -91,7 +91,7 @@ all = [
     "ansys-tools-path==0.8.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.12.1",
-    "ansys-units==0.9.1",
+    "ansys-units==0.10.0",
     "pyansys-tools-report==0.9.0",
     "pyansys-tools-versioning==0.7.0",
     "pyansys-tools-variableinterop==0.1.2",
