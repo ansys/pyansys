@@ -608,6 +608,17 @@ projects:
     documentation:
       base: https://magnet.segmentation.toolkit.docs.pyansys.com/version/stable/index.html
 
+  ansys-aedt-toolkits-radar-explorer:
+    name: Radar Explorer Toolkit
+    description: User-friendly interface for creating and analyzing radar simulations
+    thumbnail: _static/thumbnails/intro.png
+    repository: https://github.com/ansys/ansys-aedt-toolkits-radar-explorer
+    families: [Electronics]
+    tags: [Tools]
+    icon: _static/icons/ansys-icon-light.svg
+    documentation:
+      base: https://aedt.radar.explorer.toolkit.docs.pyansys.com/version/stable/index.html
+
   ansys-python-manager:
     name: Ansys Python Manager
     description: Simple cross-platform QT application to install Python and PyAnsys packages
