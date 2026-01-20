@@ -85,6 +85,20 @@ projects:
       examples: https://sound.docs.pyansys.com/version/stable/examples/index.html
       api: https://sound.docs.pyansys.com/version/stable/api/index.html
 
+  pychemkin:
+    name: PyChemkin
+    repository: https://github.com/ansys/pychemkin
+    description: Pythonic APIs to the Ansys Chemkin utilities and reactor models.
+    thumbnail: _static/thumbnails/pychemkin.png
+    families: [Fluids]
+    tags: [Flagship]
+    icon: _static/icons/fluids.svg
+    documentation:
+      base: https://chemkin.docs.pyansys.com/version/stable
+      user_guide: https://chemkin.docs.pyansys.com/version/stable/user-guide.html
+      examples: https://chemkin.docs.pyansys.com/version/stable/examples/index.html
+      api: https://chemkin.docs.pyansys.com/version/stable/api/index.html
+
   pyconceptev:
     name: PyConceptEV
     repository: https://github.com/ansys/pyconceptev
