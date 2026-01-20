@@ -507,10 +507,10 @@ projects:
 
   pysystemcoupling:
     name: PySystemCoupling
-    repository: https://github.com/ansys/pysystemcoupling
+    repository: https://github.com/ansys/pysystem-coupling
     description: Pythonic interface to Ansys System Coupling
     thumbnail: _static/thumbnails/pysystem-coupling.png
-    families: [Structures]
+    families: [Multiphysics, Fluids, Structures]
     tags: [Flagship]
     icon: _static/icons/design.svg
     documentation:
