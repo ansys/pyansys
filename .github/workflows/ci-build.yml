@@ -140,7 +140,7 @@ jobs:
 
       - name: List dependencies (pip freeze)
         run: |
-          pip freeze > all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
+          uv pip freeze > all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
           cat all-deps-${{ runner.os }}-${{ matrix.python-version }}.txt
 
       - name: Upload dependencies list
