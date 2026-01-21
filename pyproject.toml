@@ -147,7 +147,3 @@ convention = "numpy"
 [tool.ruff.lint.isort]
 combine-as-imports = true
 force-sort-within-sections = true
-
-
-
-
