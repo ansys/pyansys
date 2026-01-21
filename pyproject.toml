@@ -33,7 +33,9 @@ dependencies = [
     "ansys-dpf-core==0.15.0",
     "ansys-dpf-post==0.11.0",
     "ansys-dyna-core==0.9.1",
-    "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
+    # TODO: To be reinstated once PyDynamicReporting supports
+    # Python 3.13 and Numpy 2.X
+    # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.2.5",
     "ansys-fluent-core==0.37.1",
     "ansys-geometry-core==0.14.2",
@@ -145,6 +147,3 @@ convention = "numpy"
 [tool.ruff.lint.isort]
 combine-as-imports = true
 force-sort-within-sections = true
-
-
-

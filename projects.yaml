@@ -169,19 +169,21 @@ projects:
       examples: https://dyna.docs.pyansys.com/version/stable/examples/index.html
       api: https://dyna.docs.pyansys.com/version/stable/autoapi/index.html
 
-  pydynamicreporting:
-    name: PyDynamicReporting
-    repository: https://github.com/ansys/pydynamicreporting
-    description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
-    thumbnail: _static/thumbnails/pydynamicreporting.png
-    families: [Fluids, Electronics]
-    tags: [Flagship]
-    icon: _static/icons/platform.svg
-    documentation:
-      base: https://dynamicreporting.docs.pyansys.com/version/stable
-      user_guide: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
-      examples: https://dynamicreporting.docs.pyansys.com/version/stable/examples/index.html
-      api: https://dynamicreporting.docs.pyansys.com/version/stable/class_documentation.html
+  # TODO: To be reinstated once PyDynamicReporting supports
+  # Python 3.13 and Numpy 2.X
+  # pydynamicreporting:
+  #   name: PyDynamicReporting
+  #   repository: https://github.com/ansys/pydynamicreporting
+  #   description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
+  #   thumbnail: _static/thumbnails/pydynamicreporting.png
+  #   families: [Fluids, Electronics]
+  #   tags: [Flagship]
+  #   icon: _static/icons/platform.svg
+  #   documentation:
+  #     base: https://dynamicreporting.docs.pyansys.com/version/stable
+  #     user_guide: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
+  #     examples: https://dynamicreporting.docs.pyansys.com/version/stable/examples/index.html
+  #     api: https://dynamicreporting.docs.pyansys.com/version/stable/class_documentation.html
 
   pyedb:
     name: PyEDB
