@@ -50,7 +50,7 @@ dependencies = [
     "ansys-motorcad-core==0.8.4",
     "ansys-optislang-core==1.4.1",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.11.2",
+    "ansys-pyensight-core==0.11.0",
     "ansys-rocky-core==0.4.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==0.9.1",
