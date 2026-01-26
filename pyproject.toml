@@ -26,7 +26,7 @@ classifiers = [
 
 dependencies = [
     "ansys-acp-core==0.3.1",
-    "ansys-additive-core==0.20.0",
+    "ansys-additive-core==0.20.1",
     "ansys-chemkin-core==0.1.1",
     "ansys-conceptev-core==0.10.2",
     "ansys-dpf-composites==0.7.0",
@@ -53,7 +53,7 @@ dependencies = [
     "ansys-pyensight-core==0.11.2",
     "ansys-rocky-core==0.4.0",
     "ansys-seascape==0.2.0",
-    "ansys-sherlock-core==0.9.1",
+    "ansys-sherlock-core==1.0.0",
     "ansys-simai-core==0.3.9",
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.7.1",
