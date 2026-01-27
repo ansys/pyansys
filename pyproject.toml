@@ -26,7 +26,7 @@ classifiers = [
 
 dependencies = [
     "ansys-acp-core==0.3.0",
-    "ansys-additive-core==0.20.0",
+    "ansys-additive-core==0.20.1",
     "ansys-conceptev-core==0.9.4",
     "ansys-dpf-composites==0.7.0",
     "ansys-dpf-core==0.15.0",
@@ -38,7 +38,7 @@ dependencies = [
     "ansys-geometry-core==0.14.1",
     "ansys-hps-client==0.10.1",
     "ansys-hps-data-transfer-client==0.2.1",
-    "ansys-mapdl-core==0.70.2",
+    "ansys-mapdl-core==0.72.0",
     "ansys-math-core==0.2.4",
     "ansys-mechanical-core==0.12.0",
     "ansys-meshing-prime==0.9.4",
@@ -49,7 +49,7 @@ dependencies = [
     "ansys-pyensight-core==0.10.0.post1",
     "ansys-rocky-core==0.3.2",
     "ansys-seascape==0.2.0",
-    "ansys-sherlock-core==0.9.0",
+    "ansys-sherlock-core==0.9.2",
     "ansys-simai-core==0.3.3",
     "ansys-sound-core==0.2.1",
     "ansys-speos-core==0.7.0",
