@@ -197,7 +197,7 @@ commands:
 
 .. code:: bash
 
-    unzip pyansys-v2025.2.5-wheelhouse-Linux-3.10-core.zip wheelhouse
+    unzip pyansys-v2025.2.6-wheelhouse-Linux-3.10-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
 If you're on Windows with Python 3.10, unzip to a wheelhouse directory and then install using
