@@ -32,7 +32,7 @@ dependencies = [
     "ansys-dpf-composites==0.7.0",
     "ansys-dpf-core==0.15.0",
     "ansys-dpf-post==0.11.0",
-    "ansys-dyna-core==0.9.1",
+    "ansys-dyna-core==0.10.0",
     # TODO: To be reinstated once PyDynamicReporting supports
     # Python 3.13 and Numpy 2.X
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
@@ -62,7 +62,7 @@ dependencies = [
     "ansys-turbogrid-core==0.5.4",
     "ansys-workbench-core==0.10.0",
     "pyaedt==0.24.1",
-    "pyedb==0.67.3",
+    "pyedb==0.68.0",
     "pygranta==2025.2.1",
     "pytwin==0.11.0",
 ]
@@ -101,7 +101,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.2.3",
-    "ansys-sphinx-theme==1.6.4",
+    "ansys-sphinx-theme==1.7.0",
     "Jinja2 ==3.1.6",
     "Pillow==12.1.0",
     "PyGithub==2.8.1",
