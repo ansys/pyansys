@@ -1,6 +1,5 @@
 projects:
 
-  # Projects icons from https://github.com/ansys-internal/pyansys-marketing/blob/main/doc/source/conf.py#L15
   pyacp:
     name: PyACP
     repository: https://github.com/ansys/pyacp
