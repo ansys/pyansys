@@ -88,7 +88,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 Other tools delivered as part of the metapackage are:
 
 - `Ansys FileTransfer Tool <https://filetransfer.tools.docs.pyansys.com/>`_: Simple gRPC API tool for moving files between a client and a remote server.
-- `Ansys Tools Common <https://tools.docs.pyansys.com/>`_: A collection of tools for the PyAnsys ecosystem.
+- `Ansys Tools Common <https://tools.docs.pyansys.com/>`_: A collection of tools for the PyAnsys ecosystem. It provides shared utilities for discovering local Ansys product installations, launching products, managing version compatibility, and reporting Python environment package versions and system information.
 - `Ansys Tools Protobuf Compilation Helper <https://ansys.github.io/ansys-tools-protoc-helper/>`_: Utility library to compile ``.proto`` files to Python source when building the package wheel.
 - `Ansys Tools Visualization Interface <https://visualization-interface.tools.docs.pyansys.com/>`_: Python interface between PyAnsys libraries and plotting backends
 - `PyAnsys Tools Variable Interop <https://variableinterop.docs.pyansys.com/>`_: Tool for defining basic variables, types, metadata, and values intended to provide interoperability between all products.
