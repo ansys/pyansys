@@ -88,13 +88,10 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 Other tools delivered as part of the metapackage are:
 
 - `Ansys FileTransfer Tool <https://filetransfer.tools.docs.pyansys.com/>`_: Simple gRPC API tool for moving files between a client and a remote server.
-- `Ansys Local Product Launcher <https://local-product-launcher.tools.docs.pyansys.com/>`_: Python utility for launching Ansys products on a local machine and configuring their launch settings.
-- `Ansys Tools Path <https://path.tools.docs.pyansys.com/>`_: Library to locate Ansys products in a local machine.
+- `Ansys Tools Common <https://tools.docs.pyansys.com/>`_: A collection of tools for the PyAnsys ecosystem. It provides shared utilities for discovering local Ansys product installations, launching products, managing version compatibility, and reporting Python environment package versions and system information.
 - `Ansys Tools Protobuf Compilation Helper <https://ansys.github.io/ansys-tools-protoc-helper/>`_: Utility library to compile ``.proto`` files to Python source when building the package wheel.
 - `Ansys Tools Visualization Interface <https://visualization-interface.tools.docs.pyansys.com/>`_: Python interface between PyAnsys libraries and plotting backends
-- `PyAnsys Tools Report <https://report.tools.docs.pyansys.com/>`_:  Tool for reporting your Python environment's package versions and hardware resources in a standardized way.
 - `PyAnsys Tools Variable Interop <https://variableinterop.docs.pyansys.com/>`_: Tool for defining basic variables, types, metadata, and values intended to provide interoperability between all products.
-- `PyAnsys Tools Versioning <https://versioning.tools.docs.pyansys.com/>`_: Tool for backwards and forwards server support.
 - `PyAnsys Units <https://units.docs.pyansys.com/>`_: Pythonic interface for units, unit systems, and unit conversions.
 - `PyMaterials Manager <https://manager.materials.docs.pyansys.com/>`_: Python package for unifying material management across the Ansys portfolio.
 
@@ -147,7 +144,7 @@ can be installed upon request:
 
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
 - **fluent-all**: This target installs the core packages, and `PyFluent - Visualization`_.
-- **tools**: This target installs the core packages, `Ansys FileTransfer Tool`_, `Ansys Local Product Launcher`_, `Ansys Tools Path`_, `Ansys Tools Protobuf Compilation Helper`_, `PyAnsys Tools Report`_, `PyAnsys Tools Variable Interop`_, `PyAnsys Tools Versioning`_, `PyAnsys Units`_, and `PyMaterials Manager`_.
+- **tools**: This target installs the core packages, `Ansys FileTransfer Tool`_, `Ansys Tools Common`_, `PyAnsys Tools Variable Interop`_, `PyAnsys Units`_, and `PyMaterials Manager`_.
 - **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation
