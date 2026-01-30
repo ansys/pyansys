@@ -1,6 +1,5 @@
 projects:
 
-  # Projects icons from https://github.com/ansys-internal/pyansys-marketing/blob/main/doc/source/conf.py#L15
   pyacp:
     name: PyACP
     repository: https://github.com/ansys/pyacp
@@ -755,17 +754,6 @@ projects:
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://review-bot.docs.pyansys.com/version/stable/index.html
-
-  pymeilisearch:
-    name: PyMeilisearch
-    description: Enhanced Python API to Meilisearch
-    thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://pymeilisearch.docs.ansys.com/version/stable/index.html
-    families: [Others]
-    tags: [Tools]
-    icon: _static/icons/ansys-icon-light.svg
-    documentation:
-      base: https://pymeilisearch.docs.ansys.com/version/stable/index.html
 
   pyconverter-xml2py:
     name: PyConverter-XML2Py
