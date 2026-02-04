@@ -37,7 +37,7 @@ dependencies = [
     # Python 3.13 and Numpy 2.X
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.2.5",
-    "ansys-fluent-core==0.37.1",
+    "ansys-fluent-core==0.37.2",
     "ansys-geometry-core==0.14.2",
     "ansys-hps-client==0.11.1",
     "ansys-hps-data-transfer-client==0.3.1",
@@ -62,7 +62,7 @@ dependencies = [
     "ansys-turbogrid-core==0.5.4",
     "ansys-workbench-core==0.11.0",
     "pyaedt==0.24.1",
-    "pyedb==0.68.0",
+    "pyedb==0.68.1",
     "pygranta==2025.2.1",
     "pytwin==0.11.0",
 ]
