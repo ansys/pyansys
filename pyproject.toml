@@ -50,7 +50,7 @@ dependencies = [
     "ansys-motorcad-core==0.8.4",
     "ansys-optislang-core==1.4.1",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.11.2",
+    "ansys-pyensight-core==0.11.3",
     "ansys-rocky-core==0.4.0",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==1.0.0",
@@ -72,7 +72,7 @@ mapdl-all = ["ansys-mapdl-reader==0.55.2"]
 fluent-all = ["ansys-fluent-visualization==0.24.0"]
 tools = [
     "ansys-materials-manager==0.3.1",
-    "ansys-tools-common==0.4.2",
+    "ansys-tools-common==0.4.3",
     "ansys-tools-filetransfer==0.2.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.12.1",
@@ -86,7 +86,7 @@ all = [
     "ansys-fluent-visualization==0.24.0",
     # TOOLS
     "ansys-materials-manager==0.3.1",
-    "ansys-tools-common==0.4.2",
+    "ansys-tools-common==0.4.3",
     "ansys-tools-filetransfer==0.2.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.12.1",
