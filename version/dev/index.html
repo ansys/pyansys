@@ -1,0 +1,2293 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PyAnsys &#8212; PyAnsys</title>
+  
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/ansys-sphinx-theme.css?v=a23b20f3" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/ansys-sphinx-theme.css?v=a23b20f3" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.nerdfonts.com/assets/css/webfont.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/projects_sidebar.css?v=af7464a6" />
+    <link rel="stylesheet" type="text/css" href="_static/css/blog_sidebar.css?v=519f7593" />
+    <link rel="stylesheet" type="text/css" href="_static/landing-page/css/carousel.css?v=0c0ee983" />
+    <link rel="stylesheet" type="text/css" href="_static/landing-page/css/style.css?v=3c8dc83b" />
+    <link rel="stylesheet" type="text/css" href="_static/landing-page/css/testimonials.css?v=73c4ebce" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+
+  <!-- Include desired assets -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  
+  
+  
+
+  
+    <link href="_static/css/breadcrumbs.css" rel="stylesheet" />
+  
+    <script src="_static/documentation_options.js?v=12cdd5ae"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.pyansys.com/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <script src="_static/landing-page/js/blogs.js?v=465e8460"></script>
+    <script src="_static/landing-page/js/testimonials.js?v=2b3fb6d2"></script>
+    <script src="_static/js/blog_sidebar.js?v=fe58aa6f"></script>
+    <link rel="icon" href="_static/ansys-favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting started" href="getting-started.html" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="2025.1.dev0" />
+  <link rel="canonical" href="https://docs.pyansys.com/version/stable/index.html" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="https://docs.pyansys.com/">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="_static/pyansys_logo_transparent_black.png" class="logo__image only-light" alt="PyAnsys - Home"/>
+    <img src="_static/pyansys_logo_transparent_white.png" class="logo__image only-dark pst-js-only" alt="PyAnsys - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="#">
+    Home
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="getting-started.html">
+    Getting started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="projects.html">
+    Projects
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="blog.html">
+    Blog
+  </a>
+</li>
+
+  </ul>
+</nav>
+</div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+<div class="search-bar pst-js-only" id="search-bar">
+  <form class="bd-search d-flex align-items-center" action="search.html" method="get">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" class="form-control" name="q" placeholder="Search the docs ..."
+      aria-label="Search the docs ..." autocomplete="off" autocorrect="off"
+      autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut">
+      <kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd>
+    </span>
+  </form>
+  
+  <div id="static-search-results" class="static-search-results" style="display:none;" tabindex="0"></div>
+  
+</div></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pyansys" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+</div>
+
+    </header>
+  
+  
+    
+<!--
+  Announcement Version Loader
+  Dynamically loads the announcement.html content into the announcement_msg div.
+-->
+<div id="announcement_msg" aria-live="polite"></div>
+<script>
+  // Fetch and inject the announcement HTML content
+  fetch("announcement.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status} Announcement.html file not found, Please ignore this, if you are in dev/stable documentation`);
+      }
+      return response.text();
+    })
+    .then((text) => {
+      var msgDiv = document.getElementById("announcement_msg");
+      if (msgDiv) {
+        msgDiv.innerHTML = text;
+      }
+    })
+    .catch((error) => {
+      // Log only unexpected fetch errors
+      if (!(error.message && error.message.startsWith("HTTP error: 404"))) {
+        console.error(`Fetch problem: ${error.message} Announcement.html could not be loaded.`);
+      }
+    });
+</script>
+  
+
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="#">
+    Home
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="getting-started.html">
+    Getting started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="projects.html">
+    Projects
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="blog.html">
+    Blog
+  </a>
+</li>
+
+  </ul>
+</nav>
+</div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="search-bar pst-js-only" id="search-bar">
+  <form class="bd-search d-flex align-items-center" action="search.html" method="get">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" class="form-control" name="q" placeholder="Search the docs ..."
+      aria-label="Search the docs ..." autocomplete="off" autocorrect="off"
+      autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut">
+      <kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd>
+    </span>
+  </form>
+  
+  <div id="static-search-results" class="static-search-results" style="display:none;" tabindex="0"></div>
+  
+</div></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pyansys" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+     
+    <li class="breadcrumb-item breadcrumb-home">
+      <a
+        href="#"
+        class="nav-link"
+        aria-label="Home"
+      >
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+      
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- ===================== Carousel Section ===================== -->
+<div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-background">
+    <div class="carousel-content">
+      <h2>PyAnsys</h2>
+      <p>
+        PyAnsys provides Pythonic access to Ansys simulation tools, making automation,
+        scripting, and integration easier for engineers and developers.
+      </p>
+      <a href="projects.html" class="btn btn-custom">Explore projects</a>
+      <a href="blog.html" class="btn btn-custom">Latest news</a>
+      <a href="mailto:pyansys.core@ansys.com" class="btn btn-custom">Contact us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Swiper CSS/JS for carousels -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- ===================== Workflows Call-to-Action ===================== -->
+<div class="workflow-cta">
+  <div class="workflow-cta-left">
+    <div class="workflow-cta-icon">
+      <script src="https://unpkg.com/lucide@latest"></script>
+      <i data-lucide="layers"></i>
+      <script>
+        lucide.createIcons();
+      </script>
+    </div>
+    <div>
+      <h3 class="workflow-cta-title">PyAnsys workflows</h3>
+      <div class="workflow-content">
+        Your gateway to advanced engineering automation. Discover how to seamlessly combine multiple PyAnsys libraries to build powerful, real-world simulation and data processing pipelines.
+      </div>
+    </div>
+    <div class="workflow-cta-btn-container">
+      <a href="https://workflows.docs.pyansys.com/" class="workflow-cta-btn btn btn-primary">
+        Explore
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== Libraries Section ===================== -->
+<section id="libraries">
+  <h2>PyAnsys libraries
+    <a href="projects.html" class="btn btn-link float-end">More libraries</a>
+  </h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://mapdl.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pymapdl.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyMAPDL</p>
+              <p class="sd-card-body-text">A Python client library for Ansys MAPDL (Mechanical APDL)</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Fluids', 'Meshing']"
+            data-family="fluids"
+            data-tags="['Flagship', 'Visualization']"
+            onclick="window.location.href='https://fluent.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyfluent.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyFluent</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Fluent</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluids</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Meshing</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Visualization</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://aedt.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyaedt.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyAEDT</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Electronics Desktop (AEDT)</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Post-processing', 'Flagship']"
+            onclick="window.location.href='https://dpf.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pydpf-core.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyDPF - Core</p>
+              <p class="sd-card-body-text">Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Post-processing</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['CAD']"
+            data-family="cad"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://geometry.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-geometry.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyAnsys Geometry</p>
+              <p class="sd-card-body-text">Pythonic interface to the Ansys Geometry service</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">CAD</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://dyna.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pydyna.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyDYNA</p>
+              <p class="sd-card-body-text">Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://mechanical.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pymechanical.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyMechanical</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Mechanical</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://reader.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pymapdl.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyMAPDL Reader</p>
+              <p class="sd-card-body-text">A legacy Python library to read MAPDL result files (MAPDL 14.5 and later)</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Post-processing', 'Flagship']"
+            onclick="window.location.href='https://post.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pydpf-post.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyDPF - Post</p>
+              <p class="sd-card-body-text">Pythonic interface to access and postprocess Ansys solver result files</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Post-processing</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Fluids']"
+            data-family="fluids"
+            data-tags="['Tools', 'Visualization']"
+            onclick="window.location.href='https://visualization.fluent.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyfluent-visualization.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyFluent - Visualization</p>
+              <p class="sd-card-body-text">Pythonic interface to visualize Ansys Fluent simulations</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluids</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Visualization</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Digital Twin']"
+            data-family="digital-twin"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://twin.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pytwin.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyTwin</p>
+              <p class="sd-card-body-text">Pythonic interface to communicate with consumption workflows for Ansys digital twins</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Digital Twin</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://sphinxdocs.ansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Ansys Sphinx Theme</p>
+              <p class="sd-card-body-text">Extension of the popular PyData Sphinx Theme that is used by Numpy, Pandas, PyVista, and many more scientific Python packages</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Meshing', 'CAD']"
+            data-family="meshing"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://prime.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyprimemesh.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyPrimeMesh</p>
+              <p class="sd-card-body-text">Python library to acquire geometries and prepare surface and volume meshes for multiple solvers</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Meshing</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">CAD</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://edb.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyedb.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyEDB</p>
+              <p class="sd-card-body-text">Pythonic interface to the Ansys Electronics Database (EDB) client library</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Digital Mission Engineering']"
+            data-family="digital-mission-engineering"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://stk.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pystk.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PySTK</p>
+              <p class="sd-card-body-text">Next generation Python API for STK</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Digital Mission Engineering</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://motorcad.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pymotorcad.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyMotorCAD</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Motor-CAD</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Connect']"
+            data-family="connect"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://optislang.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyoptislang.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyOptislang</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys optiSLang</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Connect</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Optics']"
+            data-family="optics"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://lumerical.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pylumerical.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyLumerical</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Lumerical products</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Optics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Optics']"
+            data-family="optics"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://speos.docs.pyansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyspeos.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PySpeos</p>
+              <p class="sd-card-body-text">A Python wrapper for Ansys Speos</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Optics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Fluids']"
+            data-family="fluids"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://rocky.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyrocky.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyRocky</p>
+              <p class="sd-card-body-text">Python interface to Ansys Rocky using Rocky PrePost API</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluids</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://aedt.antenna.toolkit.docs.pyansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyAEDT Antenna Toolkit</p>
+              <p class="sd-card-body-text">Python wrapper for modeling antennas using Ansys Electronics Desktop (AEDT) via PyAEDT</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['AI']"
+            data-family="ai"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://simai.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pysimai.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PySimAI</p>
+              <p class="sd-card-body-text">Pythonic interface to SimAI</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">AI</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Post-processing', 'Composites']"
+            onclick="window.location.href='https://composites.dpf.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pydpf-composites.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyDPF - Composites</p>
+              <p class="sd-card-body-text">Pythonic interface to postprocess layered and short-fiber composite models</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Post-processing</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Composites</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Fluids']"
+            data-family="fluids"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://turbogrid.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyturbogrid.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyTurboGrid</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluids</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Fluids']"
+            data-family="fluids"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://ensight.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyensight.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyEnSight</p>
+              <p class="sd-card-body-text">Pythonic interface to EnSight, the Ansys simulation postprocessor</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluids</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics', 'Multiphysics', 'Structures']"
+            data-family="electronics"
+            data-tags="['Flagship', 'Thermal']"
+            onclick="window.location.href='https://sherlock.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pysherlock.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PySherlock</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Sherlock</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Multiphysics</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Thermal</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://apieigen.docs.ansys.com/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">API Eigen Example</p>
+              <p class="sd-card-body-text">Demonstrating the REST and gRPC communication protocols via client-server interactions</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://ansys.github.io/ansys-tools-repo-sync/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Ansys Tools Repository Sync</p>
+              <p class="sd-card-body-text">Ansys tool intended to synchronize the content of two different repositories</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://review-bot.docs.pyansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Reviewer Bot</p>
+              <p class="sd-card-body-text">Python development tool for leveraging the power of OpenAI to automatically generate suggestions for improving GitHub pull requests</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Flagship', 'Composites']"
+            onclick="window.location.href='https://acp.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyacp.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyACP</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Composite PrepPost (ACP)</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Composites</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://edb.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyedb.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyEDB - Core</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Electronics Database (EDB)</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Embedded Software']"
+            data-family="embedded-software"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://scadeone.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyscadeone.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyScadeOne</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Scade One</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Embedded Software</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Semiconductors']"
+            data-family="semiconductors"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://seascape.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PySeascape</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys RedHawkSC and TotemSC</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Semiconductors</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyConverter-XML2Py</p>
+              <p class="sd-card-body-text">A Python wrapper to convert XML documentation into Python source code with its Sphinx documentation.</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://math.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-math.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyAnsys Math</p>
+              <p class="sd-card-body-text">Pythonic interface to PyAnsys Math libraries</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Platform']"
+            data-family="platform"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://pypim.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyPIM</p>
+              <p class="sd-card-body-text">Pythonic interface to the Ansys PIM (Product Instance Management) API</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Platform</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Platform', 'Multiphysics']"
+            data-family="platform"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://workbench.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyWorkbench</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Workbench</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Platform</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Multiphysics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://magnet.segmentation.toolkit.docs.pyansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Magnet Segmentation Toolkit</p>
+              <p class="sd-card-body-text">Python wrapper that automates segmentation and skewing of IPM and SPM motors using Ansys Electronics Desktop (AEDT)</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Acoustics']"
+            data-family="acoustics"
+            data-tags="['Post-processing', 'Flagship']"
+            onclick="window.location.href='https://sound.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-sound.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyAnsys Sound</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Sound</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Acoustics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Post-processing</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Connect']"
+            data-family="connect"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://modelcenter.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pymodelcenter.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyModelCenter</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys ModelCenter</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Connect</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Structures']"
+            data-family="structures"
+            data-tags="['Flagship', 'Composites']"
+            onclick="window.location.href='https://additive.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyAdditive</p>
+              <p class="sd-card-body-text">Pythonic interface to the Ansys Additive service</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Composites</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Platform']"
+            data-family="platform"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://hps.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyHPS</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys HPC Platform Services (HPS)</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Platform</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://github.com/ansys/ansys-all-members';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Ansys ``all-members`` team</p>
+              <p class="sd-card-body-text">Repository for updating an organization's ``all-members`` team automatically</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://conceptev.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyconceptev.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyConceptEV</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys ConceptEV library</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://aedt.radar.explorer.toolkit.docs.pyansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Radar Explorer Toolkit</p>
+              <p class="sd-card-body-text">User-friendly interface for creating and analyzing radar simulations</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Fluids']"
+            data-family="fluids"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://chemkin.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pychemkin.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyChemkin</p>
+              <p class="sd-card-body-text">Pythonic APIs to the Ansys Chemkin utilities and reactor models.</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluids</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Materials']"
+            data-family="materials"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://grantami.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pygranta.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyGranta</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys Granta MI services</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Materials</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Platform']"
+            data-family="platform"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://data-transfer.hps.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyHPS Data Transfer</p>
+              <p class="sd-card-body-text">A Python client for Data Transfer in Ansys HPC Platform Services</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Platform</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Multiphysics', 'Fluids', 'Structures']"
+            data-family="multiphysics"
+            data-tags="['Flagship']"
+            onclick="window.location.href='https://systemcoupling.docs.pyansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pysystem-coupling.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PySystemCoupling</p>
+              <p class="sd-card-body-text">Pythonic interface to Ansys System Coupling</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Multiphysics</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Fluids</span>
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Structures</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Flagship</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://shared.docs.pyansys.com';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Shared Components - OpenAPI Common</p>
+              <p class="sd-card-body-text">Shared Ansys software components to enable package interoperability and minimize maintenance</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Electronics']"
+            data-family="electronics"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://aedt.common.toolkit.docs.pyansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/intro.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyAEDT Common Toolkit</p>
+              <p class="sd-card-body-text">Shared Ansys Electronics Desktop (AEDT) toolkit components to enable package interoperability and minimize maintenance</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Electronics</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://installer.docs.pyansys.com/version/stable/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/ansys-python-manager.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Ansys Python Manager</p>
+              <p class="sd-card-body-text">Simple cross-platform QT application to install Python and PyAnsys packages</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://cheatsheets.docs.pyansys.com/index.html';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-cheat-sheets.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">PyAnsys Cheat Sheets</p>
+              <p class="sd-card-body-text">PyAnsys cheat sheets for different libraries as quick reference guides</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://github.com/ansys/5G-Wizard';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/5gwizard.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Ansys 5G Wizard</p>
+              <p class="sd-card-body-text">Ansys project used to calculate Power Density or Cumulative Distribution Function</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://templates.ansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Ansys Repository Templates</p>
+              <p class="sd-card-body-text">Ansys tool for creating new projects according to Ansys guidelines</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://actions.docs.ansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Ansys GitHub Actions</p>
+              <p class="sd-card-body-text">Collection of GitHub Workflows to be reused by projects in the Ansys ecosystem</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        <div class="swiper-slide">
+          <div
+            class="project-card sd-card sd-shadow-sm sd-card-hover"
+            data-families="['Others']"
+            data-family="others"
+            data-tags="['Tools']"
+            onclick="window.location.href='https://pre-commit-hooks.docs.ansys.com/version/stable';"
+          >
+            <img class="project-thumbnail" src="_static/thumbnails/pyansys-common.png" />
+            <div class="sd-card-body">
+              <p class="sd-card-title sd-font-weight-bold">Ansys pre-commit Hooks</p>
+              <p class="sd-card-body-text">Ansys repository containing customized pre-commit hooks</p>
+              <p class="sd-card-text">
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Others</span>
+                
+                
+                  <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">Tools</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="_static/landing-page/js/project_cards.js"></script>
+</section>
+
+<!-- ===================== Blogs Section ===================== -->
+<section id="blogs">
+  <h2>Recent blogs
+
+    <a href="blog.html" class="btn btn-link float-end">More blogs</a>
+  </h2>
+  <div class="blogs-landingpage" id="blogs-landingpage"></div>
+</section>
+
+
+<!-- ===================== Support Section ===================== -->
+<section id="support" class="my-5">
+  <h2 class="mb-4">How we support our users all over the world</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="step">
+        <div class="icon">
+          <i class="fas fa-power-off"></i>
+        </div>
+        <div class="text">
+          <h4>Pre simulation</h4>
+          <p>Define your simulation setup by specifying the geometry in a flexible, parametric format.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <div class="text">
+          <h4>During simulation</h4>
+          <p>Run high-fidelity simulations and gather comprehensive results that reflect the dynamics of your system.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="text">
+          <h4>Post simulation</h4>
+          <p>Extract, visualize, and interpret key data from your simulation to drive the next phase of your project.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Right column: testimonials carousel using Swiper -->
+    <div class="col-md-6">
+      <div class="swiper" id="testimonials-swiper">
+        <div class="swiper-wrapper" id="testimonials-wrapper">
+          <!-- Testimonials will be injected here by testimonials.js -->
+        </div>
+        <!-- Pagination dots -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section><div class="toctree-wrapper compound">
+</div>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+
+  <!-- Include desired assets -->
+  
+  
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.7/require.min.js"></script>
+
+<script>
+// Passing the search options to the search.js file
+const SEARCH_OPTIONS = JSON.parse('{"ignoreLocation": true, "keys": ["title", "text", "objectID"], "limit": 10, "min_chars_for_search": 2, "threshold": 0.5}');
+const SEARCH_FILE = "_static/search.json";
+const ADVANCE_SEARCH_PATH = "search.html";
+const EXTRA_SOURCES = JSON.parse('""');
+</script>
+
+
+<script src="_static/js/search.js"></script>
+
+  
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div class="footer-items__start">
+    <div class="footer-item">
+        <img src="_static/ansys_logo_transparent_white.png" alt="Ansys Logo" class="footer-ansys-logo">
+    </div>
+
+    <!-- Copyright notice -->
+    <div class="footer-item"><br>
+        <p>© Copyright (c) 2025 ANSYS, Inc. All rights reserved.</p>
+    </div>
+
+</div></div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item"><div class="footer-items__start">
+
+    <!-- Documentation links-->
+    <div class="connect-with-ansys">
+        <p>Latest documentation</p> <br>
+        <a href="https://www.ansys.com/" class="external-link" target="_blank" rel="noopener noreferrer">
+            <span class="link-text">Ansys.com</span>
+            <i class="fas fa-up-right-from-square"></i>
+        </a><br>
+        <a href="https://www.ansys.com/services/ansys-learning-hub" class="external-link" target="_blank" rel="noopener noreferrer">
+            <span class="link-text">Ansys Learning</span>
+            <i class="fas fa-up-right-from-square"></i>
+        </a><br>
+        <a href="https://www.ansys.com/support" class="external-link" target="_blank" rel="noopener noreferrer">
+            <span class="link-text">Ansys Support</span>
+            <i class="fas fa-up-right-from-square"></i>
+        </a>
+    </div>
+</div></div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><div class="footer-right">
+
+  <!-- Social media icons -->
+  <span>Connect with Ansys</span>
+  <div class="social-icons">
+    <a href="https://www.youtube.com/user/ansysinc" target="_blank" rel="noopener" class="icon icon-youtube" aria-label="Youtube"><span class="sr-only">Youtube</span></a>
+    <a href="https://www.facebook.com/ansys" target="_blank" rel="noopener" class="icon icon-facebook" aria-label="Facebook"><span class="sr-only">Facebook</span></a>
+    <a href="https://www.linkedin.com/company/ansys-inc" target="_blank" rel="noopener" class="icon icon-linkedin" aria-label="Linkedin"><span class="sr-only">Linkedin</span></a>
+    <a href="https://github.com/ansys" target="_blank" rel="noopener" class="icon icon-github" aria-label="GitHub"><i class="fab fa-github"></i><span class="sr-only">GitHub</span></a>
+  </div>
+
+</div></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
