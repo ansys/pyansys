@@ -54,7 +54,7 @@ dependencies = [
     "ansys-rocky-core==0.4.1",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==1.0.1",
-    "ansys-simai-core==0.3.9",
+    "ansys-simai-core==0.3.10",
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.7.2",
     "ansys-stk==0.2.1",
@@ -72,7 +72,7 @@ mapdl-all = ["ansys-mapdl-reader==0.55.2"]
 fluent-all = ["ansys-fluent-visualization==0.24.0"]
 tools = [
     "ansys-materials-manager==0.3.1",
-    "ansys-tools-common==0.4.3",
+    "ansys-tools-common==0.4.4",
     "ansys-tools-filetransfer==0.2.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.12.1",
@@ -86,7 +86,7 @@ all = [
     "ansys-fluent-visualization==0.24.0",
     # TOOLS
     "ansys-materials-manager==0.3.1",
-    "ansys-tools-common==0.4.3",
+    "ansys-tools-common==0.4.4",
     "ansys-tools-filetransfer==0.2.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.12.1",
