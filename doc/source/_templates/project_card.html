@@ -1,9 +1,10 @@
 {%- macro render_card(metadata, show_families=True) -%}
 <div
     class="project-card sd-card sd-shadow-sm sd-card-hover"
-    data-families="{{ metadata.get('families', []) }}"
-    data-family="{{ (metadata.get('families') or ['Other'])[0] | lower | replace(' ', '-') }}"
-    data-tags="{{ metadata.get('tags', []) }}"
+    data-families='{{ (metadata.get("families") or ["Others"]) | tojson }}'
+    data-family="{{ (metadata.get('families') or ['Others'])[0] | lower | replace(' ', '-') }}"
+    data-tags='{{ (metadata.get("tags") or []) | tojson }}'
+    data-icon="{{ metadata.get('icon', '_static/icons/ansys-icon-light.svg') }}"
     onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
 >
     {%- if metadata.get('github_stars', 0) > 0 %}
