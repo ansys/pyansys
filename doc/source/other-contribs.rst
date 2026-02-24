@@ -7,7 +7,7 @@ Beyond the PyAnsys simulation libraries, the Ansys team actively maintains and
 contributes a collection of **open-source tools and utilities** made freely
 available to the broader engineering and scientific Python community. These
 projects support developer workflows, documentation, code quality, and
-repository management. We are open to contributions from anyone.
+repository management. They are open to contributions from anyone.
 
 .. note::
 
