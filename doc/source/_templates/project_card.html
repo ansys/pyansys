@@ -1,0 +1,31 @@
+{%- macro render_card(metadata, show_families=True) -%}
+<div
+    class="project-card sd-card sd-shadow-sm sd-card-hover"
+    data-families="{{ metadata.get('families', []) }}"
+    data-family="{{ metadata.get('families', ['other'])[0] | lower | replace(' ', '-') }}"
+    data-tags="{{ metadata.get('tags', []) }}"
+    onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
+>
+    {%- if metadata.get('github_stars', 0) > 0 %}
+        <span class="project-star-badge">
+            <span class="project-star-icon">&#9733;</span>
+            <span class="project-star-count">{{ metadata.get('github_stars', 0) }}</span>
+        </span>
+    {%- endif %}
+    <img class="project-thumbnail" src="{{ metadata['thumbnail'] }}" />
+    <div class="sd-card-body">
+        <p class="sd-card-title sd-font-weight-bold">{{ metadata['name'] }}</p>
+        <p class="sd-card-text">
+            {%- if show_families %}
+                {%- for family in metadata.get('families', []) %}
+                    <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ family }}</span>
+                {%- endfor %}
+            {%- endif %}
+            {%- for tag in metadata.get('tags', []) %}
+                <span class="sd-sphinx-override sd-badge sd-bg-muted sd-text-primary">{{ tag }}</span>
+            {%- endfor %}
+        </p>
+        <p class="sd-card-body-text"> {{ metadata['description'] }} </p>
+    </div>
+</div>
+{%- endmacro %}
