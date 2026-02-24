@@ -2,7 +2,7 @@
 <div
     class="project-card sd-card sd-shadow-sm sd-card-hover"
     data-families="{{ metadata.get('families', []) }}"
-    data-family="{{ (metadata.get('families') or ['others'])[0] | lower | replace(' ', '-') }}"
+    data-family="{{ (metadata.get('families') or [''Other'])[0] | lower | replace(' ', '-') }}"
     data-tags="{{ metadata.get('tags', []) }}"
     onclick="window.location.href='{{ metadata['documentation']['base'] }}';"
 >
