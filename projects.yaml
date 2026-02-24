@@ -605,7 +605,7 @@ projects:
     name: PyAEDT Antenna Toolkit
     description: Python wrapper for modeling antennas using Ansys Electronics Desktop (AEDT) via PyAEDT
     thumbnail: _static/thumbnails/intro.png
-    repository:
+    repository: https://github.com/ansys/pyaedt-antenna-toolkit
     families: [Electronics]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -616,7 +616,7 @@ projects:
     name: Magnet Segmentation Toolkit
     description: Python wrapper that automates segmentation and skewing of IPM and SPM motors using Ansys Electronics Desktop (AEDT)
     thumbnail: _static/thumbnails/intro.png
-    repository:
+    repository: https://github.com/ansys/magnet-segmentation-toolkit
     families: [Electronics]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -638,7 +638,7 @@ projects:
     name: Ansys Python Manager
     description: Simple cross-platform QT application to install Python and PyAnsys packages
     thumbnail: _static/thumbnails/ansys-python-manager.png
-    repository:
+    repository: https://github.com/ansys/python-installer-qt-gui
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -649,7 +649,7 @@ projects:
     name: PyAnsys Cheat Sheets
     description: PyAnsys cheat sheets for different libraries as quick reference guides
     thumbnail: _static/thumbnails/pyansys-cheat-sheets.png
-    repository:
+    repository: https://github.com/ansys/pyansys-cheat-sheet
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -671,7 +671,7 @@ projects:
     name: API Eigen Example
     description: Demonstrating the REST and gRPC communication protocols via client-server interactions
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository:
+    repository: https://github.com/ansys/api-eigen-example
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
