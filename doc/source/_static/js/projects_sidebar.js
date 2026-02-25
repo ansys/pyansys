@@ -1,23 +1,14 @@
 /**
- * Utility: Safely extract object values
+ * Collect family data with counts and icons from DOM cards on the current page
  */
-function getProjects(data) {
-  if (!data?.projects || typeof data.projects !== "object") {
-    console.error("Invalid projects data structure:", data.projects);
-    return [];
-  }
-  return Object.values(data.projects).filter((p) => typeof p === "object");
-}
+function collectFamilies() {
+  return DOM.qsa(".project-card").reduce((acc, card) => {
+    const families = parseArrayFromAttr(card.getAttribute("data-families"));
+    const icon =
+      card.getAttribute("data-icon") || "_static/icons/ansys-icon-light.svg";
+    const effectiveFamilies = families.length ? families : ["Others"];
 
-/**
- * Collect family data with counts and icons
- */
-function collectFamilies(data) {
-  return getProjects(data).reduce((acc, project) => {
-    const families = project.families?.length ? project.families : ["Other"];
-    const icon = project.icon || "ansys-icon-light.svg";
-
-    families.forEach((family) => {
+    effectiveFamilies.forEach((family) => {
       if (!family) return;
       if (!acc[family]) acc[family] = { count: 0, icon };
       acc[family].count += 1;
@@ -27,11 +18,11 @@ function collectFamilies(data) {
 }
 
 /**
- * Collect tag counts across all projects
+ * Collect tag counts from DOM cards on the current page
  */
-function collectTags(data) {
-  return getProjects(data).reduce((acc, project) => {
-    (project.tags || []).forEach((tag) => {
+function collectTags() {
+  return DOM.qsa(".project-card").reduce((acc, card) => {
+    parseArrayFromAttr(card.getAttribute("data-tags")).forEach((tag) => {
       acc[tag] = (acc[tag] || 0) + 1;
     });
     return acc;
@@ -183,12 +174,8 @@ function parseArrayFromAttr(value) {
   try {
     return JSON.parse(value);
   } catch {
-    try {
-      return JSON.parse(value.replace(/'/g, '"'));
-    } catch {
-      console.warn("Unable to parse data attribute:", value);
-      return [];
-    }
+    console.warn("Unable to parse data attribute:", value);
+    return [];
   }
 }
 
@@ -410,16 +397,8 @@ observer.observe(document.documentElement, {
  * Initialization
  */
 document.addEventListener("DOMContentLoaded", () => {
-  fetch(PROJECTS_FILE)
-    .then((res) => {
-      if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-      return res.json();
-    })
-    .then((data) => {
-      displayFamilies(collectFamilies(data));
-      displayTags(collectTags(data));
-    })
-    .catch((err) => console.error("Error loading project data:", err));
+  displayFamilies(collectFamilies());
+  displayTags(collectTags());
 
   DOM.qs("#clear-tags-button")?.addEventListener("click", () => {
     DOM.qsa('#product-tags-list input[type="checkbox"]').forEach(
