@@ -169,10 +169,12 @@ def convert_yaml_to_json():
 
     gh_client = github.Github(os.getenv("GITHUB_TOKEN", None))
 
-    for repo_name, proj in projects.items():
+    for _, proj in projects.items():
         if gh_client:
             try:
-                repository = gh_client.get_repo(f"ansys/{repo_name}")
+                # Extract the repository name from the URL
+                repo_name: str = proj["repository"].split("https://github.com/")[-1].rstrip("/")
+                repository = gh_client.get_repo(repo_name)
                 proj["github_stars"] = repository.stargazers_count
                 starred.append(proj)
             except Exception:
