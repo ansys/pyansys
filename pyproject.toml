@@ -72,7 +72,7 @@ mapdl-all = ["ansys-mapdl-reader==0.55.2"]
 fluent-all = ["ansys-fluent-visualization==0.24.0"]
 tools = [
     "ansys-materials-manager==0.3.1",
-    "ansys-tools-common==0.4.4",
+    "ansys-tools-common==0.4.5",
     "ansys-tools-filetransfer==0.2.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.12.1",
@@ -86,7 +86,7 @@ all = [
     "ansys-fluent-visualization==0.24.0",
     # TOOLS
     "ansys-materials-manager==0.3.1",
-    "ansys-tools-common==0.4.4",
+    "ansys-tools-common==0.4.5",
     "ansys-tools-filetransfer==0.2.1",
     # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
     "ansys-tools-visualization-interface==0.12.1",
@@ -95,7 +95,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.2.3",
-    "ansys-sphinx-theme==1.7.1",
+    "ansys-sphinx-theme==1.7.2",
     "Jinja2 ==3.1.6",
     "Pillow==12.1.1",
     "PyGithub==2.8.1",
