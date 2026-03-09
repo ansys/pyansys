@@ -38,7 +38,7 @@ dependencies = [
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.2.6",
     "ansys-fluent-core==0.38.0",
-    "ansys-geometry-core==0.14.2",
+    "ansys-geometry-core==0.15.0",
     "ansys-hps-client==0.11.1",
     "ansys-hps-data-transfer-client==0.3.1",
     "ansys-lumerical-core==0.2.0",
@@ -63,7 +63,7 @@ dependencies = [
     "ansys-workbench-core==0.11.0",
     "pyaedt==0.25.1",
     "pyedb==0.69.0",
-    "pygranta==2025.2.1",
+    "pygranta==2026.1.0",
     "pytwin==0.11.0",
 ]
 
