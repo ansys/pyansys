@@ -156,4 +156,5 @@
 
    getting-started
    projects
+   other-contribs
    blog

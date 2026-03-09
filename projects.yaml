@@ -1,6 +1,5 @@
 projects:
 
-  # Projects icons from https://github.com/ansys-internal/pyansys-marketing/blob/main/doc/source/conf.py#L15
   pyacp:
     name: PyACP
     repository: https://github.com/ansys/pyacp
@@ -169,21 +168,19 @@ projects:
       examples: https://dyna.docs.pyansys.com/version/stable/examples/index.html
       api: https://dyna.docs.pyansys.com/version/stable/autoapi/index.html
 
-  # TODO: To be reinstated once PyDynamicReporting supports
-  # Python 3.13 and Numpy 2.X
-  # pydynamicreporting:
-  #   name: PyDynamicReporting
-  #   repository: https://github.com/ansys/pydynamicreporting
-  #   description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
-  #   thumbnail: _static/thumbnails/pydynamicreporting.png
-  #   families: [Fluids, Electronics]
-  #   tags: [Flagship]
-  #   icon: _static/icons/platform.svg
-  #   documentation:
-  #     base: https://dynamicreporting.docs.pyansys.com/version/stable
-  #     user_guide: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
-  #     examples: https://dynamicreporting.docs.pyansys.com/version/stable/examples/index.html
-  #     api: https://dynamicreporting.docs.pyansys.com/version/stable/class_documentation.html
+  pydynamicreporting:
+    name: PyDynamicReporting
+    repository: https://github.com/ansys/pydynamicreporting
+    description: Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports
+    thumbnail: _static/thumbnails/pydynamicreporting.png
+    families: [Fluids, Electronics]
+    tags: [Flagship]
+    icon: _static/icons/platform.svg
+    documentation:
+      base: https://dynamicreporting.docs.pyansys.com/version/stable
+      user_guide: https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html
+      examples: https://dynamicreporting.docs.pyansys.com/version/stable/examples/index.html
+      api: https://dynamicreporting.docs.pyansys.com/version/stable/class_documentation.html
 
   pyedb:
     name: PyEDB
@@ -497,7 +494,7 @@ projects:
     name: PySpeos
     description: A Python wrapper for Ansys Speos
     thumbnail: _static/thumbnails/pyspeos.png
-    repository: https://speos.docs.pyansys.com/version/stable/index.html
+    repository: https://github.com/ansys/pyspeos
     families: [Optics]
     tags: [Flagship]
     icon: _static/icons/optics.svg
@@ -606,7 +603,7 @@ projects:
     name: PyAEDT Antenna Toolkit
     description: Python wrapper for modeling antennas using Ansys Electronics Desktop (AEDT) via PyAEDT
     thumbnail: _static/thumbnails/intro.png
-    repository:
+    repository: https://github.com/ansys/pyaedt-antenna-toolkit
     families: [Electronics]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -617,7 +614,7 @@ projects:
     name: Magnet Segmentation Toolkit
     description: Python wrapper that automates segmentation and skewing of IPM and SPM motors using Ansys Electronics Desktop (AEDT)
     thumbnail: _static/thumbnails/intro.png
-    repository:
+    repository: https://github.com/ansys/magnet-segmentation-toolkit
     families: [Electronics]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -639,7 +636,7 @@ projects:
     name: Ansys Python Manager
     description: Simple cross-platform QT application to install Python and PyAnsys packages
     thumbnail: _static/thumbnails/ansys-python-manager.png
-    repository:
+    repository: https://github.com/ansys/python-installer-qt-gui
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -650,7 +647,7 @@ projects:
     name: PyAnsys Cheat Sheets
     description: PyAnsys cheat sheets for different libraries as quick reference guides
     thumbnail: _static/thumbnails/pyansys-cheat-sheets.png
-    repository:
+    repository: https://github.com/ansys/pyansys-cheat-sheet
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -672,7 +669,7 @@ projects:
     name: API Eigen Example
     description: Demonstrating the REST and gRPC communication protocols via client-server interactions
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository:
+    repository: https://github.com/ansys/api-eigen-example
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -683,7 +680,7 @@ projects:
     name: Ansys Repository Templates
     description: Ansys tool for creating new projects according to Ansys guidelines
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://templates.ansys.com/version/stable
+    repository: https://github.com/ansys/ansys-templates
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -694,7 +691,7 @@ projects:
     name: Ansys GitHub Actions
     description: Collection of GitHub Workflows to be reused by projects in the Ansys ecosystem
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://actions.docs.ansys.com/version/stable
+    repository: https://github.com/ansys/actions
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -705,7 +702,7 @@ projects:
     name: Ansys pre-commit Hooks
     description: Ansys repository containing customized pre-commit hooks
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://pre-commit-hooks.docs.ansys.com/version/stable
+    repository: https://github.com/ansys/pre-commit-hooks
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -716,7 +713,7 @@ projects:
     name: Ansys Tools Repository Sync
     description: Ansys tool intended to synchronize the content of two different repositories
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://ansys.github.io/ansys-tools-repo-sync/version/stable
+    repository: https://github.com/ansys/ansys-tools-repo-sync
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -738,7 +735,7 @@ projects:
     name: Ansys Sphinx Theme
     description: Extension of the popular PyData Sphinx Theme that is used by Numpy, Pandas, PyVista, and many more scientific Python packages
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://sphinxdocs.ansys.com/version/stable/index.html
+    repository: https://github.com/ansys/ansys-sphinx-theme
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -749,29 +746,18 @@ projects:
     name: Reviewer Bot
     description: Python development tool for leveraging the power of OpenAI to automatically generate suggestions for improving GitHub pull requests
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://review-bot.docs.pyansys.com/version/stable/index.html
+    repository: https://github.com/ansys/review-bot
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://review-bot.docs.pyansys.com/version/stable/index.html
 
-  pymeilisearch:
-    name: PyMeilisearch
-    description: Enhanced Python API to Meilisearch
-    thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://pymeilisearch.docs.ansys.com/version/stable/index.html
-    families: [Others]
-    tags: [Tools]
-    icon: _static/icons/ansys-icon-light.svg
-    documentation:
-      base: https://pymeilisearch.docs.ansys.com/version/stable/index.html
-
   pyconverter-xml2py:
     name: PyConverter-XML2Py
     description: A Python wrapper to convert XML documentation into Python source code with its Sphinx documentation.
     thumbnail: _static/thumbnails/pyansys-common.png
-    repository: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
+    repository: https://github.com/ansys/pyconverter-xml2py
     families: [Others]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
