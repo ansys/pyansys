@@ -188,6 +188,10 @@ jobs:
     name: Package library
     runs-on: ubuntu-latest
     needs: [docs-build, smoke-tests-core]
+    permissions:
+      attestations: write # Required to upload provenance attestations
+      contents: read
+      id-token: write # Required for OIDC authentication to upload provenance attestations
     steps:
       - name: Build library source and wheel artifacts
         uses: ansys/actions/build-library@1f4f0896a8e49d3aec2f02ced215b04a32c85f28 # v10.2.7
