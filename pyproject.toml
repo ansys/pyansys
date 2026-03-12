@@ -25,6 +25,7 @@ classifiers = [
 ]
 
 dependencies = [
+    "grpcio>=1.71.2",  # This is the latest version used by the ansys-tools-protoc-helper
     "ansys-acp-core==0.3.1",
     "ansys-additive-core==0.20.1",
     "ansys-chemkin-core==0.1.1",
@@ -141,4 +142,5 @@ convention = "numpy"
 [tool.ruff.lint.isort]
 combine-as-imports = true
 force-sort-within-sections = true
+
 
