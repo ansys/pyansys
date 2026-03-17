@@ -113,7 +113,8 @@ def read_dependencies_from_pyproject():
 
     pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
     dependencies = pyproject_content["project"]["dependencies"]
-    return {pkg.split("==")[0]: pkg.split("==")[1] for pkg in dependencies}
+    # Only consider pinned dependencies (PyAnsys packages)
+    return {pkg.split("==")[0]: pkg.split("==")[1] for pkg in dependencies if "==" in pkg}
 
 
 def read_optional_dependencies_from_pyproject():
