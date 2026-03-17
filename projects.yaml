@@ -522,7 +522,7 @@ projects:
     name: PySAM SysML2
     repository: https://github.com/ansys/pysam-sysml2
     description: Python interface for working with SysML v2 models
-    thumbnail: _static/thumbnails/pyansys-common.png
+    thumbnail: _static/thumbnails/pysam-sysml2.png
     families: [Others]
     tags: [Flagship]
     icon: _static/icons/ansys-icon-light.svg
