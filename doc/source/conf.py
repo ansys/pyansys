@@ -116,6 +116,7 @@ def read_dependencies_from_pyproject():
     # Only consider pinned dependencies (PyAnsys packages)
     return {pkg.split("==")[0]: pkg.split("==")[1] for pkg in dependencies if "==" in pkg}
 
+
 def read_optional_dependencies_from_pyproject():
     """Read the extra dependencies declared in the project file."""
     pyproject = Path(__file__).parent.parent.parent / "pyproject.toml"
