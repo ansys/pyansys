@@ -73,7 +73,7 @@ mapdl-all = ["ansys-mapdl-reader==0.55.2"]
 fluent-all = ["ansys-fluent-visualization==0.25.1"]
 tools = [
     "ansys-materials-manager==0.3.1",
-    "ansys-tools-common==0.4.5",
+    "ansys-tools-common==0.5.0",
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.12.1",
@@ -87,7 +87,7 @@ all = [
     "ansys-fluent-visualization==0.25.1",
     # TOOLS
     "ansys-materials-manager==0.3.1",
-    "ansys-tools-common==0.4.5",
+    "ansys-tools-common==0.5.0",
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.12.1",
