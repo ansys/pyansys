@@ -89,7 +89,7 @@ all = [
     "ansys-materials-manager==0.3.1",
     "ansys-tools-common==0.4.5",
     "ansys-tools-filetransfer==0.2.2",
-    # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
+    "ansys-tools-protoc-helper==0.4.0",
     "ansys-tools-visualization-interface==0.12.1",
     "ansys-units==0.10.1",
     "pyansys-tools-variableinterop==0.1.2",
