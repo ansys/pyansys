@@ -25,6 +25,7 @@ classifiers = [
 ]
 
 dependencies = [
+    "grpcio>=1.71.2",  # This is the latest version used by the ansys-tools-protoc-helper
     "ansys-acp-core==0.3.1",
     "ansys-additive-core==0.20.1",
     "ansys-chemkin-core==0.1.1",
@@ -53,7 +54,7 @@ dependencies = [
     "ansys-pyensight-core==0.11.6",
     "ansys-rocky-core==0.5.0",
     "ansys-seascape==0.2.0",
-    "ansys-sherlock-core==1.0.1",
+    "ansys-sherlock-core==1.0.2",
     "ansys-simai-core==0.3.10",
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.7.2",
@@ -74,7 +75,7 @@ tools = [
     "ansys-materials-manager==0.3.1",
     "ansys-tools-common==0.4.5",
     "ansys-tools-filetransfer==0.2.2",
-    # "ansys-tools-protoc-helper==0.4.0; python_version<='3.10'",
+    "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.12.1",
     "ansys-units==0.10.1",
     "pyansys-tools-variableinterop==0.1.2",
