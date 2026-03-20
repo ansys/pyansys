@@ -39,7 +39,7 @@ dependencies = [
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.2.6",
     "ansys-fluent-core==0.38.0",
-    "ansys-geometry-core==0.15.0",
+    "ansys-geometry-core==0.15.1",
     "ansys-hps-client==0.11.1",
     "ansys-hps-data-transfer-client==0.3.1",
     "ansys-lumerical-core==0.2.0",
@@ -78,7 +78,7 @@ tools = [
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.12.1",
-    "ansys-units==0.10.1",
+    "ansys-units==0.11.0",
     "pyansys-tools-variableinterop==0.1.2",
 ]
 all = [
@@ -92,7 +92,7 @@ all = [
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.12.1",
-    "ansys-units==0.10.1",
+    "ansys-units==0.11.0",
     "pyansys-tools-variableinterop==0.1.2",
 ]
 doc = [
