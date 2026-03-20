@@ -524,7 +524,7 @@ projects:
     description: Python interface for working with SysML v2 models
     thumbnail: _static/thumbnails/pysam-sysml2.png
     families: [Platform]
-    tags: [Flagship]
+    tags: [Flagship, Tools]
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://sysml2.docs.pyansys.com/version/stable
