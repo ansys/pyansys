@@ -518,6 +518,20 @@ projects:
       examples: https://stk.docs.pyansys.com/version/stable/examples.html
       api: https://stk.docs.pyansys.com/version/stable/api.html
 
+  pysam-sysml2:
+    name: PySAM SysML2
+    repository: https://github.com/ansys/pysam-sysml2
+    description: Python interface for working with SysML v2 models
+    thumbnail: _static/thumbnails/pysam-sysml2.png
+    families: [Platform]
+    tags: [Flagship, Tools]
+    icon: _static/icons/ansys-icon-light.svg
+    documentation:
+      base: https://sysml2.docs.pyansys.com/version/stable
+      user_guide: https://sysml2.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://sysml2.docs.pyansys.com/version/stable/examples/index.html
+      api: https://sysml2.docs.pyansys.com/version/stable/api/index.html
+
   pysystemcoupling:
     name: PySystemCoupling
     repository: https://github.com/ansys/pysystem-coupling

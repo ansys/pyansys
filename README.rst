@@ -79,6 +79,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
 - `PySimAI <https://simai.docs.pyansys.com/>`_: Pythonic interface to use SimAI.
 - `PySpeos <https://speos.docs.pyansys.com/>`_: Python library that gathers functionalities and tools based on Speos software remote API.
+- `PySAM SysML2 <https://sysml2.docs.pyansys.com/>`_: Python interface for working with SysML v2 models.
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
@@ -134,6 +135,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySimAI`_
 - `PySpeos`_
 - `PySystemCoupling`_
+- `PySAM SysML2`_
 - `PyTurboGrid`_
 - `PyTwin`_
 - `PyWorkbench`_
