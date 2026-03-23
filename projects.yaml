@@ -131,7 +131,7 @@ projects:
     repository: https://github.com/ansys/pydpf-post
     description: Pythonic interface to access and postprocess Ansys solver result files
     thumbnail: _static/thumbnails/pydpf-post.png
-    families: [Structures]
+    families: [Structures, Multiphysics, Fluids]
     tags: [Post-processing, Flagship]
     icon: _static/icons/platform.svg
     documentation:
@@ -145,7 +145,7 @@ projects:
     repository: https://github.com/ansys/pydpf-composites
     description: Pythonic interface to postprocess layered and short-fiber composite models
     thumbnail: _static/thumbnails/pydpf-composites.png
-    families: [Structures]
+    families: [Structures, Multiphysics, Fluids]
     tags: [Post-processing, Composites]
     icon: _static/icons/structures.svg
     documentation:
