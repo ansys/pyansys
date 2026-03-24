@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: PyAnsys Vulnerability Check (on PRs)
         if: github.event_name == 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@90a4cd10a7253a205f71ee8619aefb8142c16f47 # v10.2.10
+        uses: ansys/actions/check-vulnerabilities@feat/cleanup
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -38,7 +38,7 @@ jobs:
 
       - name: PyAnsys Vulnerability Check (any other case)
         if: github.event_name != 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@90a4cd10a7253a205f71ee8619aefb8142c16f47 # v10.2.10
+        uses: ansys/actions/check-vulnerabilities@feat/cleanup
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
