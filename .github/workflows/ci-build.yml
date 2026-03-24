@@ -31,6 +31,8 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: ansys/actions/check-vulnerabilities@feat/cleanup
         with:
+          hide-log: false
+          upload-reports: true
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -40,6 +42,8 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: ansys/actions/check-vulnerabilities@feat/cleanup
         with:
+          hide-log: false
+          upload-reports: true
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
