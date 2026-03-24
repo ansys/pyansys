@@ -145,7 +145,7 @@ projects:
     repository: https://github.com/ansys/pydpf-composites
     description: Pythonic interface to postprocess layered and short-fiber composite models
     thumbnail: _static/thumbnails/pydpf-composites.png
-    families: [Structures, Multiphysics, Fluids]
+    families: [Structures]
     tags: [Post-processing, Composites]
     icon: _static/icons/structures.svg
     documentation:
