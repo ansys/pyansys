@@ -117,7 +117,7 @@ projects:
     repository: https://github.com/ansys/pydpf-core
     description: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows
     thumbnail: _static/thumbnails/pydpf-core.png
-    families: [Structures]
+    families: [Structures, Multiphysics, Fluids]
     tags: [Post-processing, Flagship]
     icon: _static/icons/platform.svg
     documentation:
@@ -131,7 +131,7 @@ projects:
     repository: https://github.com/ansys/pydpf-post
     description: Pythonic interface to access and postprocess Ansys solver result files
     thumbnail: _static/thumbnails/pydpf-post.png
-    families: [Structures]
+    families: [Structures, Multiphysics, Fluids]
     tags: [Post-processing, Flagship]
     icon: _static/icons/platform.svg
     documentation:
