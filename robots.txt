@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /version/2025.2
+Disallow: /version/2025.1
+Disallow: /version/2024.2
+Disallow: /version/2024.1
+Disallow: /version/2023.2
+Disallow: /pull/
+
+Sitemap: https://docs.pyansys.com/sitemap.xml
