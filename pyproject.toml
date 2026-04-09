@@ -37,7 +37,7 @@ dependencies = [
     # TODO: To be reinstated once PyDynamicReporting supports
     # Python 3.13 and Numpy 2.X
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
-    "ansys-edb-core==0.2.6",
+    "ansys-edb-core==0.3.0",
     "ansys-fluent-core==0.38.1",
     "ansys-geometry-core==0.15.1",
     "ansys-hps-client==0.12.0",
