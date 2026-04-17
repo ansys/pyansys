@@ -90,6 +90,7 @@ html_static_path = ["_static"]
 html_css_files = [
     "css/projects_sidebar.css",
     "css/blog_sidebar.css",
+    "css/mermaid.css",
     # Landing page specific CSS files
     "landing-page/css/carousel.css",
     "landing-page/css/style.css",

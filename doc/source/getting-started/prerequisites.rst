@@ -29,7 +29,6 @@ after their initial release:
     :caption: Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported (color coded)
     :alt: Current Python versions supported by the PyAnsys metapackage
     :align: center
-    :config: {"theme": "base"}
 
     gantt
         title Python versions supported by SPEC-0 policy (red line) and PyAnsys Python versions supported
