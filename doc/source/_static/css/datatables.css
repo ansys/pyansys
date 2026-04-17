@@ -14,13 +14,11 @@ html[data-theme="dark"] table.dataTable.display tbody tr.even > * {
   color: var(--ast-color-table-cell-text) !important;
 }
 
-html[data-theme="dark"]
-  .dataTables_wrapper
-  .dataTables_length
-  .dataTables_wrapper
-  .dataTables_filter,
+/* DataTables hardcodes color:#333 on these controls in jquery.dataTables.min.css */
+html[data-theme="dark"] .dataTables_wrapper .dataTables_length,
+html[data-theme="dark"] .dataTables_wrapper .dataTables_filter,
 html[data-theme="dark"] .dataTables_wrapper .dataTables_info,
 html[data-theme="dark"] .dataTables_wrapper .dataTables_processing,
 html[data-theme="dark"] .dataTables_wrapper .dataTables_paginate {
-  color: var(--ast-color-table-cell-text) !important;
+  color: var(--ast-color-text) !important;
 }
