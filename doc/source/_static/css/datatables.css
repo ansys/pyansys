@@ -1,0 +1,26 @@
+/* ============================================================
+   DataTables dark mode background fix — Ansys Sphinx Theme.
+   ============================================================ */
+
+/* DataTables hardcodes a white background; override it in dark mode. */
+html[data-theme="dark"] table.dataTable,
+html[data-theme="dark"] table.dataTable thead th,
+html[data-theme="dark"] table.dataTable thead td,
+html[data-theme="dark"] table.dataTable tbody tr,
+html[data-theme="dark"] table.dataTable tbody tr td,
+html[data-theme="dark"] table.dataTable.display tbody tr.odd > *,
+html[data-theme="dark"] table.dataTable.display tbody tr.even > * {
+  background-color: var(--ast-color-table-background) !important;
+  color: var(--ast-color-table-cell-text) !important;
+}
+
+html[data-theme="dark"]
+  .dataTables_wrapper
+  .dataTables_length
+  .dataTables_wrapper
+  .dataTables_filter,
+html[data-theme="dark"] .dataTables_wrapper .dataTables_info,
+html[data-theme="dark"] .dataTables_wrapper .dataTables_processing,
+html[data-theme="dark"] .dataTables_wrapper .dataTables_paginate {
+  color: var(--ast-color-table-cell-text) !important;
+}
