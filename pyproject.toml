@@ -37,7 +37,7 @@ dependencies = [
     # TODO: To be reinstated once PyDynamicReporting supports
     # Python 3.13 and Numpy 2.X
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
-    "ansys-edb-core==0.2.6",
+    "ansys-edb-core==0.3.1",
     "ansys-fluent-core==0.38.1",
     "ansys-geometry-core==0.15.2",
     "ansys-hps-client==0.12.1",
@@ -51,12 +51,12 @@ dependencies = [
     "ansys-motorcad-core==0.8.6",
     "ansys-optislang-core==1.4.1",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.11.8",
+    "ansys-pyensight-core==0.11.9",
     "ansys-rocky-core==0.6.0",
     "ansys-sam-sysml2==0.3.1",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==1.0.2",
-    "ansys-simai-core==0.4.1",
+    "ansys-simai-core==0.4.2",
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.7.3",
     "ansys-stk==0.3.0",
