@@ -28,7 +28,7 @@ dependencies = [
     "grpcio>=1.71.2",  # This is the latest version used by the ansys-tools-protoc-helper
     "ansys-acp-core==0.3.1",
     "ansys-additive-core==0.20.1",
-    "ansys-chemkin-core==0.1.1",
+    "ansys-chemkin-core==0.2.0",
     "ansys-conceptev-core==0.10.2",
     "ansys-dpf-composites==0.7.0",
     "ansys-dpf-core==0.16.0",
@@ -64,7 +64,7 @@ dependencies = [
     "ansys-turbogrid-core==0.6.0",
     "ansys-workbench-core==0.12.0",
     "pyaedt==0.26.2",
-    "pyedb==0.72.0",
+    "pyedb==0.74.0",
     "pygranta==2026.1.1",
     "pytwin==0.11.0",
 ]
