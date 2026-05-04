@@ -656,6 +656,9 @@ projects:
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://etk.docs.pyansys.com/version/stable/index.html
+      user_guide: https://etk.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://etk.docs.pyansys.com/version/stable/examples/index.html
+      api: https://etk.docs.pyansys.com/version/stable/api/index.html
 
   ansys-python-manager:
     name: Ansys Python Manager
