@@ -647,7 +647,7 @@ projects:
       base: https://aedt.radar.explorer.toolkit.docs.pyansys.com/version/stable/index.html
 
   ansys-pyetk:
-    name: Electronic Transformer ToolKit 
+    name: Electronic Transformer ToolKit
     description: User-friendly interface providing a full setup of electronic transformers
     thumbnail: _static/thumbnails/intro.png
     repository: https://github.com/ansys/ansys-pyetk
