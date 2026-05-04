@@ -18,9 +18,8 @@ env:
   PACKAGE_NAMESPACE: pyansys
   MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
-  # attrs,referencing,jeepney - This has MIT license but fails the check
   # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
-  LICENSE_WHITELISTING: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary"
+  LICENSE_WHITELISTING: "paramiko,psycopg,psycopg-binary"
 
 jobs:
   check-vulnerabilities:
