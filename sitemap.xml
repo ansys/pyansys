@@ -7,61 +7,61 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/index.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/index.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/projects.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/projects.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/_static/webpack-macros.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/_static/webpack-macros.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/blog/2025-09-30-newsletter.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/blog/2025-09-30-newsletter.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/getting-started.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/getting-started.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/other-contribs.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/other-contribs.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/getting-started/prerequisites.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/getting-started/prerequisites.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/getting-started/install.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/getting-started/install.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/getting-started/about.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/getting-started/about.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://docs.pyansys.com/version/stable/blog.html</loc>
+    <loc>https://docs.pyansys.com/version/dev/blog.html</loc>
     <lastmod>2026-05-04T20:33:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
