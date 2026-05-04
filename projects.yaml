@@ -646,6 +646,20 @@ projects:
     documentation:
       base: https://aedt.radar.explorer.toolkit.docs.pyansys.com/version/stable/index.html
 
+  ansys-pyetk:
+    name: Electronic Transformer ToolKit
+    description: User-friendly interface providing a full setup of electronic transformers
+    thumbnail: _static/thumbnails/intro.png
+    repository: https://github.com/ansys/ansys-pyetk
+    families: [Electronics]
+    tags: [Tools]
+    icon: _static/icons/ansys-icon-light.svg
+    documentation:
+      base: https://etk.docs.pyansys.com/version/stable/index.html
+      user_guide: https://etk.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://etk.docs.pyansys.com/version/stable/examples/index.html
+      api: https://etk.docs.pyansys.com/version/stable/api/index.html
+
   ansys-python-manager:
     name: Ansys Python Manager
     description: Simple cross-platform QT application to install Python and PyAnsys packages
