@@ -1,0 +1,40 @@
+/* ============================================================
+   DataTables dark mode background fix — Ansys Sphinx Theme.
+   ============================================================ */
+
+/* DataTables hardcodes a white background; override it in dark mode. */
+html[data-theme="dark"] table.dataTable,
+html[data-theme="dark"] table.dataTable thead th,
+html[data-theme="dark"] table.dataTable thead td,
+html[data-theme="dark"] table.dataTable tbody tr,
+html[data-theme="dark"] table.dataTable tbody tr td,
+html[data-theme="dark"] table.dataTable.display tbody tr.odd > *,
+html[data-theme="dark"] table.dataTable.display tbody tr.even > * {
+  background-color: var(--ast-color-table-background) !important;
+  color: var(--ast-color-table-cell-text) !important;
+}
+
+/* DataTables hardcodes color:#333 on these controls in jquery.dataTables.min.css */
+html[data-theme="dark"] .dataTables_wrapper .dataTables_length,
+html[data-theme="dark"] .dataTables_wrapper .dataTables_filter,
+html[data-theme="dark"] .dataTables_wrapper .dataTables_info,
+html[data-theme="dark"] .dataTables_wrapper .dataTables_processing,
+html[data-theme="dark"] .dataTables_wrapper .dataTables_paginate {
+  color: var(--ast-color-text) !important;
+}
+
+/* .paginate_button has its own color:#333 !important rule — needs explicit override */
+html[data-theme="dark"]
+  .dataTables_wrapper
+  .dataTables_paginate
+  .paginate_button {
+  color: var(--ast-color-text) !important;
+}
+
+/* Current page button — dark background with light text */
+html[data-theme="dark"]
+  .dataTables_wrapper
+  .dataTables_paginate
+  .paginate_button.current {
+  color: #333 !important;
+}
