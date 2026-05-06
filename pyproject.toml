@@ -78,7 +78,7 @@ tools = [
     "ansys-tools-common==0.5.0",
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
-    "ansys-tools-visualization-interface==0.12.1",
+    "ansys-tools-visualization-interface==0.13.1",
     "ansys-units==0.10.1",
     "pyansys-tools-variableinterop==0.1.2",
 ]
@@ -92,7 +92,7 @@ all = [
     "ansys-tools-common==0.5.0",
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
-    "ansys-tools-visualization-interface==0.12.1",
+    "ansys-tools-visualization-interface==0.13.1",
     "ansys-units==0.10.1",
     "pyansys-tools-variableinterop==0.1.2",
 ]
@@ -104,7 +104,7 @@ doc = [
     "PyGithub==2.9.1",
     "sphinx-copybutton==0.5.2",
     "sphinx-design==0.6.1",
-    "sphinxcontrib-mermaid==2.0.1",
+    "sphinxcontrib-mermaid==2.0.2",
     "sphinx-jinja==2.0.2",
 ]
 
