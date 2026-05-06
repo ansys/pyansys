@@ -50,6 +50,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
 - `PyAnsys Sound <https://sound.docs.pyansys.com/>`_: Pythonic interface to Ansys Sound.
+- `PyCFX <https://cfx.docs.pyansys.com/>`_:Pythonic interface to Ansys CFX.
 - `PyChemkin <https://chemkin.docs.pyansys.com/>`_: Pythonic APIs to the Ansys Chemkin utilities and reactor models.
 - `PyConceptEV <https://conceptev.docs.pyansys.com/>`_: Pythonic interface to Ansys ConceptEV library.
 - `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows.
@@ -109,6 +110,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyAnsys Geometry`_
 - `PyAnsys Math`_
 - `PyAnsys Sound`_
+- `PyCFX`_
 - `PyChemkin`_
 - `PyConceptEV`_
 - `PyDPF - Core`_
