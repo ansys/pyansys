@@ -87,7 +87,7 @@ projects:
   pycfx:
     name: PyCFX
     repository: https://github.com/ansys/pycfx
-    description: Pythonic APIs to the Ansys CFX product.
+    description: Pythonic interface to Ansys CFX.
     thumbnail: _static/thumbnails/intro.png
     families: [Fluids]
     tags: [Flagship]
