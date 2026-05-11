@@ -51,19 +51,19 @@ dependencies = [
     "ansys-motorcad-core==0.8.6",
     "ansys-optislang-core==1.4.1",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.11.10",
+    "ansys-pyensight-core==0.11.11",
     "ansys-rocky-core==0.6.0",
     "ansys-sam-sysml2==0.3.1",
     "ansys-seascape==0.2.0",
     "ansys-sherlock-core==1.0.2",
     "ansys-simai-core==0.4.2",
     "ansys-sound-core==0.3.0",
-    "ansys-speos-core==0.7.3",
+    "ansys-speos-core==0.8.0",
     "ansys-stk==0.3.0",
     "ansys-systemcoupling-core==0.12.0",
     "ansys-turbogrid-core==0.6.0",
     "ansys-workbench-core==0.14.0",
-    "pyaedt==0.26.3",
+    "pyaedt==0.27.0",
     "pyedb==0.74.0",
     "pygranta==2026.1.1",
     "pytwin==0.11.0",
@@ -79,7 +79,7 @@ tools = [
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.13.1",
     "ansys-units==0.10.1",
-    "pyansys-tools-variableinterop==0.1.2",
+    "pyansys-tools-variableinterop==0.1.3",
 ]
 all = [
     # MAPDL - ALL
@@ -93,7 +93,7 @@ all = [
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.13.1",
     "ansys-units==0.10.1",
-    "pyansys-tools-variableinterop==0.1.2",
+    "pyansys-tools-variableinterop==0.1.3",
 ]
 doc = [
     "Sphinx==8.2.3",
