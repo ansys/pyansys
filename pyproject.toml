@@ -62,7 +62,7 @@ dependencies = [
     "ansys-speos-core==0.8.0",
     "ansys-stk==0.3.0",
     "ansys-systemcoupling-core==0.12.0",
-    "ansys-turbogrid-core==0.6.0",
+    "ansys-turbogrid-core==0.6.1",
     "ansys-workbench-core==0.14.0",
     "pyaedt==0.27.1",
     "pyedb==0.75.0",
