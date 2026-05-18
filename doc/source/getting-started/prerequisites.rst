@@ -42,7 +42,8 @@ after their initial release:
         Python 3.11 :active, des5, 2022-10-24, 3y
         Python 3.12 :active, des6, 2023-10-02, 3y
         Python 3.13 :active, des7, 2024-10-01, 3y
-        Python 3.14 :crit,   des8, 2025-10-07, 3y
+        Python 3.14 :active, des8, 2025-10-07, 3y
+        Python 3.15 :crit,   des8, 2026-10-01, 3y
 
 In previous diagram:
 

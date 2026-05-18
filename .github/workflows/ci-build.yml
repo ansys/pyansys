@@ -71,7 +71,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13']
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
 
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd #v6.0.2
@@ -88,7 +88,11 @@ jobs:
           uv pip install .
 
       - name: Smoke test
-        run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
+        run: |
+          # Check Python version
+          uv run python --version
+          # Check installed package version
+          uv run python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
 
   smoke-tests-extras:
     name: Build extras PyAnsys packages
@@ -98,7 +102,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13']
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
         extras-version: ['fluent-all', 'mapdl-all', 'tools']
 
     steps:
@@ -116,7 +120,11 @@ jobs:
           uv pip install .[${{ matrix.extras-version }}]
 
       - name: Smoke test
-        run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
+        run: |
+          # Check Python version
+          uv run python --version
+          # Check installed package version
+          uv run python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
 
   wheelhouse-all:
     name: Build PyAnsys package wheelhouse
@@ -126,7 +134,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13']
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
 
     steps:
       - name: Build wheelhouse and perform smoke test
@@ -229,7 +237,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           library-name: ${{ env.PACKAGE_NAME }}
-          additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Linux-3.13 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-Windows-3.13 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12 all-deps-macOS-3.13'
+          additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Linux-3.13 all-deps-Linux-3.14 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-Windows-3.13 all-deps-Windows-3.14 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12 all-deps-macOS-3.13 all-deps-macOS-3.14'
           add-artifact-attestation-notes: true
           changelog-release-notes: true
 
