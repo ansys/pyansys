@@ -59,7 +59,7 @@ dependencies = [
     "ansys-sherlock-core==1.0.2",
     "ansys-simai-core==0.4.3",
     "ansys-sound-core==0.3.0",
-    "ansys-speos-core==0.8.0",
+    "ansys-speos-core==0.8.1",
     "ansys-stk==0.3.0",
     "ansys-systemcoupling-core==0.12.0",
     "ansys-turbogrid-core==0.6.1",
@@ -98,7 +98,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.2.3",
-    "ansys-sphinx-theme==1.8.0",
+    "ansys-sphinx-theme==1.8.1",
     "Jinja2 ==3.1.6",
     "Pillow==12.2.0",
     "PyGithub==2.9.1",
