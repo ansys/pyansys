@@ -29,7 +29,7 @@ dependencies = [
     "ansys-acp-core==0.3.2",
     "ansys-additive-core==0.20.1",
     "ansys-chemkin-core==0.2.0",
-    "ansys-cfx-core==0.2.4",
+    "ansys-cfx-core==0.2.5",
     "ansys-conceptev-core==0.10.2",
     "ansys-dpf-composites==0.7.0",
     "ansys-dpf-core==0.16.0",
@@ -98,7 +98,7 @@ all = [
 ]
 doc = [
     "Sphinx==8.2.3",
-    "ansys-sphinx-theme==1.8.1",
+    "ansys-sphinx-theme==1.8.2",
     "Jinja2 ==3.1.6",
     "Pillow==12.2.0",
     "PyGithub==2.9.1",
