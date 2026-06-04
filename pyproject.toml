@@ -106,15 +106,15 @@ name = "pyansys"
 
 [dependency-groups]
 doc = [
-    "Sphinx==8.2.3; python_version >= '3.11'",
-    "ansys-sphinx-theme==1.8.2; python_version >= '3.11'",
-    "Jinja2==3.1.6; python_version >= '3.11'",
-    "Pillow==12.2.0; python_version >= '3.11'",
-    "PyGithub==2.9.1; python_version >= '3.11'",
-    "sphinx-copybutton==0.5.2; python_version >= '3.11'",
-    "sphinx-design==0.6.1; python_version >= '3.11'",
-    "sphinxcontrib-mermaid==2.0.2; python_version >= '3.11'",
-    "sphinx-jinja==2.0.2; python_version >= '3.11'",
+    "Sphinx>=8,<9",
+    "ansys-sphinx-theme>=1.8.2",
+    "Jinja2>=3.1.6",
+    "Pillow>=12.2.0",
+    "PyGithub>=2.9.1",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx-design>=0.6.1",
+    "sphinxcontrib-mermaid>=2.0.2",
+    "sphinx-jinja>=2.0.2",
 ]
 
 [tool.ruff]
