@@ -71,7 +71,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13']
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
 
     steps:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 #v6.0.3
@@ -86,9 +86,14 @@ jobs:
       - name: Install core PyAnsys packages
         run: |
           uv pip install .
+          uv pip check
 
       - name: Smoke test
-        run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
+        run: |
+          # Check Python version
+          uv run python --version
+          # Check installed package version
+          uv run python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
 
   smoke-tests-extras:
     name: Build extras PyAnsys packages
@@ -98,7 +103,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13']
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
         extras-version: ['fluent-all', 'mapdl-all', 'tools']
 
     steps:
@@ -114,9 +119,14 @@ jobs:
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
           uv pip install .[${{ matrix.extras-version }}]
+          uv pip check
 
       - name: Smoke test
-        run: python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
+        run: |
+          # Check Python version
+          uv run python --version
+          # Check installed package version
+          uv run python -c "from ${{ env.PACKAGE_NAMESPACE }} import __version__; print(__version__)"
 
   wheelhouse-all:
     name: Build PyAnsys package wheelhouse
@@ -126,7 +136,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13']
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
 
     steps:
       - name: Build wheelhouse and perform smoke test
@@ -230,7 +240,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           library-name: ${{ env.PACKAGE_NAME }}
-          additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Linux-3.13 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-Windows-3.13 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12 all-deps-macOS-3.13'
+          additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Linux-3.13 all-deps-Linux-3.14 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-Windows-3.13 all-deps-Windows-3.14 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12 all-deps-macOS-3.13 all-deps-macOS-3.14'
           add-artifact-attestation-notes: true
           changelog-release-notes: true
 
