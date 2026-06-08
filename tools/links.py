@@ -23,6 +23,7 @@ DOCS_DIRECTORY = ROOT_DIR / "doc" / "source"
 LINKS = {
     "ansys-acp-core": None,  # Once stable release is out "https://acp.docs.pyansys.com/version/stable", # noqa: E501
     "ansys-additive-core": "https://additive.docs.pyansys.com/version/stable",
+    "ansys-cfx-core": "https://cfx.docs.pyansys.com/version/stable",
     "ansys-chemkin-core": "https://chemkin.docs.pyansys.com/version/stable",
     "ansys-conceptev-core": "https://conceptev.docs.pyansys.com/version/stable",
     "ansys-dpf-composites": "https://composites.dpf.docs.pyansys.com/version/stable",  # noqa: E501
@@ -49,6 +50,7 @@ LINKS = {
     "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
     "ansys-rocky-core": "https://rocky.docs.pyansys.com/version/stable",
+    "ansys-sam-sysml2": "https://sysml2.docs.pyansys.com/version/stable",
     "ansys-seascape": "https://seascape.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
     "ansys-simai-core": "https://simai.docs.pyansys.com/version/stable",

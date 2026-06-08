@@ -50,6 +50,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyAnsys Geometry <https://geometry.docs.pyansys.com/>`_: Pythonic interface to the Ansys Geometry service.
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
 - `PyAnsys Sound <https://sound.docs.pyansys.com/>`_: Pythonic interface to Ansys Sound.
+- `PyCFX <https://cfx.docs.pyansys.com/>`_: Pythonic interface to Ansys CFX.
 - `PyChemkin <https://chemkin.docs.pyansys.com/>`_: Pythonic APIs to the Ansys Chemkin utilities and reactor models.
 - `PyConceptEV <https://conceptev.docs.pyansys.com/>`_: Pythonic interface to Ansys ConceptEV library.
 - `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows.
@@ -79,6 +80,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
 - `PySimAI <https://simai.docs.pyansys.com/>`_: Pythonic interface to use SimAI.
 - `PySpeos <https://speos.docs.pyansys.com/>`_: Python library that gathers functionalities and tools based on Speos software remote API.
+- `PySAM SysML2 <https://sysml2.docs.pyansys.com/>`_: Python interface for working with SysML v2 models.
 - `PySystemCoupling <https://systemcoupling.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys System Coupling.
 - `PyTurboGrid <https://turbogrid.docs.pyansys.com/>`_: Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app.
 - `PyTwin <https://twin.docs.pyansys.com/>`_: Pythonic interface to communicate with consumption workflows for Ansys digital twins.
@@ -108,6 +110,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyAnsys Geometry`_
 - `PyAnsys Math`_
 - `PyAnsys Sound`_
+- `PyCFX`_
 - `PyChemkin`_
 - `PyConceptEV`_
 - `PyDPF - Core`_
@@ -134,6 +137,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PySimAI`_
 - `PySpeos`_
 - `PySystemCoupling`_
+- `PySAM SysML2`_
 - `PyTurboGrid`_
 - `PyTwin`_
 - `PyWorkbench`_
@@ -190,7 +194,7 @@ the ``pyansys`` metapackage is downloading the wheelhouse archive from the
 `Releases Page <https://github.com/ansys/pyansys/releases>`_ for your corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install the ``pyansys`` metapackage from
-scratch on Windows, Linux, and MacOS from Python 3.10 to 3.13. You can install this on an isolated system with
+scratch on Windows, Linux, and MacOS from Python 3.10 to 3.14. You can install this on an isolated system with
 a fresh Python installation or on a virtual environment.
 
 For example, on Linux with Python 3.10, unzip the wheelhouse archive and install it with the following

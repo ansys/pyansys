@@ -84,6 +84,20 @@ projects:
       examples: https://sound.docs.pyansys.com/version/stable/examples/index.html
       api: https://sound.docs.pyansys.com/version/stable/api/index.html
 
+  pycfx:
+    name: PyCFX
+    repository: https://github.com/ansys/pycfx
+    description: Pythonic interface to Ansys CFX.
+    thumbnail: _static/thumbnails/intro.png
+    families: [Fluids]
+    tags: [Flagship]
+    icon: _static/icons/fluids.svg
+    documentation:
+      base: https://cfx.docs.pyansys.com/version/stable
+      user_guide: https://cfx.docs.pyansys.com/version/stable/user_guide/user_guide_contents.html
+      examples: https://cfx.docs.pyansys.com/version/stable/examples/index.html
+      api: https://cfx.docs.pyansys.com/version/stable/api/api_contents.html
+
   pychemkin:
     name: PyChemkin
     repository: https://github.com/ansys/pychemkin
@@ -117,7 +131,7 @@ projects:
     repository: https://github.com/ansys/pydpf-core
     description: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows
     thumbnail: _static/thumbnails/pydpf-core.png
-    families: [Structures]
+    families: [Structures, Multiphysics, Fluids]
     tags: [Post-processing, Flagship]
     icon: _static/icons/platform.svg
     documentation:
@@ -131,7 +145,7 @@ projects:
     repository: https://github.com/ansys/pydpf-post
     description: Pythonic interface to access and postprocess Ansys solver result files
     thumbnail: _static/thumbnails/pydpf-post.png
-    families: [Structures]
+    families: [Structures, Multiphysics, Fluids]
     tags: [Post-processing, Flagship]
     icon: _static/icons/platform.svg
     documentation:
@@ -518,6 +532,20 @@ projects:
       examples: https://stk.docs.pyansys.com/version/stable/examples.html
       api: https://stk.docs.pyansys.com/version/stable/api.html
 
+  pysam-sysml2:
+    name: PySAM SysML2
+    repository: https://github.com/ansys/pysam-sysml2
+    description: Python interface for working with SysML v2 models
+    thumbnail: _static/thumbnails/pysam-sysml2.png
+    families: [Platform, Connect]
+    tags: [Flagship, Tools]
+    icon: _static/icons/ansys-icon-light.svg
+    documentation:
+      base: https://sysml2.docs.pyansys.com/version/stable
+      user_guide: https://sysml2.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://sysml2.docs.pyansys.com/version/stable/examples/index.html
+      api: https://sysml2.docs.pyansys.com/version/stable/api/index.html
+
   pysystemcoupling:
     name: PySystemCoupling
     repository: https://github.com/ansys/pysystem-coupling
@@ -631,6 +659,20 @@ projects:
     icon: _static/icons/ansys-icon-light.svg
     documentation:
       base: https://aedt.radar.explorer.toolkit.docs.pyansys.com/version/stable/index.html
+
+  ansys-pyetk:
+    name: Electronic Transformer ToolKit
+    description: User-friendly interface providing a full setup of electronic transformers
+    thumbnail: _static/thumbnails/intro.png
+    repository: https://github.com/ansys/ansys-pyetk
+    families: [Electronics]
+    tags: [Tools]
+    icon: _static/icons/ansys-icon-light.svg
+    documentation:
+      base: https://etk.docs.pyansys.com/version/stable/index.html
+      user_guide: https://etk.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://etk.docs.pyansys.com/version/stable/examples/index.html
+      api: https://etk.docs.pyansys.com/version/stable/api/index.html
 
   ansys-python-manager:
     name: Ansys Python Manager

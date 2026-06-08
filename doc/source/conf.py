@@ -90,6 +90,8 @@ html_static_path = ["_static"]
 html_css_files = [
     "css/projects_sidebar.css",
     "css/blog_sidebar.css",
+    "css/mermaid.css",
+    "css/datatables.css",
     # Landing page specific CSS files
     "landing-page/css/carousel.css",
     "landing-page/css/style.css",
@@ -213,7 +215,7 @@ def read_project_json():
 jinja_globals = {
     "LAST_RELEASE": get_last_metapackage_release(),
     "VERSION": version,
-    "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12", "3.13"],
+    "SUPPORTED_PYTHON_VERSIONS": ["3.10", "3.11", "3.12", "3.13", "3.14"],
     "SUPPORTED_PLATFORMS": ["Windows", "macOS", "Linux"],
 }
 jinja_contexts = {
