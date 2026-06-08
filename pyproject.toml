@@ -33,7 +33,7 @@ dependencies = [
     "ansys-cfx-core==0.2.5",
     "ansys-conceptev-core==0.10.2",
     "ansys-dpf-composites==0.7.0",
-    "ansys-dpf-core==0.16.0",
+    "ansys-dpf-core==0.16.1",
     "ansys-dpf-post==0.12.0",
     "ansys-dyna-core==0.12.1",
     # TODO: To be reinstated once PyDynamicReporting supports
@@ -66,7 +66,7 @@ dependencies = [
     "ansys-turbogrid-core==0.8.0",
     "ansys-workbench-core==0.14.0",
     "pyaedt==1.0.1",
-    "pyedb==0.76.0",
+    "pyedb==0.77.0",
     "pygranta==2026.1.1",
     "pytwin==0.12.0",
 ]
