@@ -1,0 +1,1034 @@
+{
+    "projects": {
+        "pyacp": {
+            "name": "PyACP",
+            "repository": "https://github.com/ansys/pyacp",
+            "description": "Pythonic interface to Ansys Composite PrepPost (ACP)",
+            "thumbnail": "_static/thumbnails/pyacp.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Flagship",
+                "Composites"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://acp.docs.pyansys.com/version/stable",
+                "user_guide": "https://acp.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://acp.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://acp.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyadditive": {
+            "name": "PyAdditive",
+            "repository": "https://github.com/ansys/pyadditive",
+            "description": "Pythonic interface to the Ansys Additive service",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Flagship",
+                "Composites"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://additive.docs.pyansys.com/version/stable",
+                "user_guide": "https://additive.docs.pyansys.com/version/stable/getting-started/index.html",
+                "examples": "https://additive.docs.pyansys.com/version/stable/examples/gallery_examples/index.html",
+                "api": "https://additive.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyaedt": {
+            "name": "PyAEDT",
+            "repository": "https://github.com/ansys/pyaedt",
+            "description": "Pythonic interface to Ansys Electronics Desktop (AEDT)",
+            "thumbnail": "_static/thumbnails/pyaedt.png",
+            "families": [
+                "Electronics"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/electromagnetics.svg",
+            "documentation": {
+                "base": "https://aedt.docs.pyansys.com/version/stable",
+                "user_guide": "https://aedt.docs.pyansys.com/version/stable/User_guide/index.html",
+                "examples": "https://examples.aedt.docs.pyansys.com/version/dev/index.html",
+                "api": "https://aedt.docs.pyansys.com/version/stable/API/index.html"
+            }
+        },
+        "pyansys-geometry": {
+            "name": "PyAnsys Geometry",
+            "repository": "https://github.com/ansys/pyansys-geometry",
+            "description": "Pythonic interface to the Ansys Geometry service",
+            "thumbnail": "_static/thumbnails/pyansys-geometry.png",
+            "families": [
+                "CAD"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/design.svg",
+            "documentation": {
+                "base": "https://geometry.docs.pyansys.com/version/stable",
+                "user_guide": "https://geometry.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://geometry.docs.pyansys.com/version/stable/examples.html",
+                "api": "https://geometry.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyansys-math": {
+            "name": "PyAnsys Math",
+            "repository": "https://github.com/ansys/pyansys-math",
+            "description": "Pythonic interface to PyAnsys Math libraries",
+            "thumbnail": "_static/thumbnails/pyansys-math.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Tools"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://math.docs.pyansys.com/version/stable",
+                "user_guide": "https://math.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://math.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://math.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyansys-sound": {
+            "name": "PyAnsys Sound",
+            "repository": "https://github.com/ansys/pyansys-sound",
+            "description": "Pythonic interface to Ansys Sound",
+            "thumbnail": "_static/thumbnails/pyansys-sound.png",
+            "families": [
+                "Acoustics"
+            ],
+            "tags": [
+                "Post-processing",
+                "Flagship"
+            ],
+            "icon": "_static/icons/sound.svg",
+            "documentation": {
+                "base": "https://sound.docs.pyansys.com/version/stable",
+                "user_guide": "https://sound.docs.pyansys.com/version/stable/user_guide.html",
+                "examples": "https://sound.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://sound.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyconceptev": {
+            "name": "PyConceptEV",
+            "repository": "https://github.com/ansys/pyconceptev",
+            "description": "Pythonic interface to Ansys ConceptEV library",
+            "thumbnail": "_static/thumbnails/pyconceptev.png",
+            "families": [
+                "Electronics"
+            ],
+            "tags": [
+                "Tools"
+            ],
+            "icon": "_static/icons/electromagnetics.svg",
+            "documentation": {
+                "base": "https://conceptev.docs.pyansys.com/version/stable",
+                "user_guide": "https://conceptev.docs.pyansys.com/version/stable/user_guide.html",
+                "examples": "https://conceptev.docs.pyansys.com/version/stable/auto_examples/index.html",
+                "api": "https://conceptev.docs.pyansys.com/version/stable/api_ref.html"
+            }
+        },
+        "pydpf-core": {
+            "name": "PyDPF - Core",
+            "repository": "https://github.com/ansys/pydpf-core",
+            "description": "Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows",
+            "thumbnail": "_static/thumbnails/pydpf-core.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Post-processing",
+                "Flagship"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://dpf.docs.pyansys.com/version/stable",
+                "user_guide": "https://dpf.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://dpf.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://dpf.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pydpf-post": {
+            "name": "PyDPF - Post",
+            "repository": "https://github.com/ansys/pydpf-post",
+            "description": "Pythonic interface to access and postprocess Ansys solver result files",
+            "thumbnail": "_static/thumbnails/pydpf-post.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Post-processing",
+                "Flagship"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://post.docs.pyansys.com/version/stable",
+                "user_guide": "https://post.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://post.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://post.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pydpf-composites": {
+            "name": "PyDPF - Composites",
+            "repository": "https://github.com/ansys/pydpf-composites",
+            "description": "Pythonic interface to postprocess layered and short-fiber composite models",
+            "thumbnail": "_static/thumbnails/pydpf-composites.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Post-processing",
+                "Composites"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://composites.dpf.docs.pyansys.com/version/stable",
+                "user_guide": "https://composites.dpf.docs.pyansys.com/version/stable/intro.html",
+                "examples": "https://composites.dpf.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://composites.dpf.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pydyna": {
+            "name": "PyDYNA",
+            "repository": "https://github.com/ansys/pydyna",
+            "description": "Pythonic interface to build the Ansys DYNA input deck, submit it to the Ansys LS-DYNA solver, and postprocess its results",
+            "thumbnail": "_static/thumbnails/pydyna.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://dyna.docs.pyansys.com/version/stable",
+                "user_guide": "https://dyna.docs.pyansys.com/version/stable/user-guide/index.html",
+                "examples": "https://dyna.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://dyna.docs.pyansys.com/version/stable/autoapi/index.html"
+            }
+        },
+        "pydynamicreporting": {
+            "name": "PyDynamicReporting",
+            "repository": "https://github.com/ansys/pydynamicreporting",
+            "description": "Pythonic interface to Ansys Dynamic Reporting for service and control of its database and reports",
+            "thumbnail": "_static/thumbnails/pydynamicreporting.png",
+            "families": [
+                "Fluids",
+                "Electronics"
+            ],
+            "tags": [
+                "Tools"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://dynamicreporting.docs.pyansys.com/version/stable",
+                "user_guide": "https://dynamicreporting.docs.pyansys.com/version/stable/userguide/index.html",
+                "examples": "https://dynamicreporting.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://dynamicreporting.docs.pyansys.com/version/stable/class_documentation.html"
+            }
+        },
+        "pyedb": {
+            "name": "PyEDB",
+            "repository": "https://github.com/ansys/pyedb",
+            "description": "Pythonic interface to the Ansys Electronics Database (EDB) client library",
+            "thumbnail": "_static/thumbnails/pyedb.png",
+            "families": [
+                "Electronics"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/electromagnetics.svg",
+            "documentation": {
+                "base": "https://edb.docs.pyansys.com/version/stable",
+                "user_guide": "https://edb.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://examples.aedt.docs.pyansys.com/version/dev/index.html",
+                "api": "https://edb.docs.pyansys.com/version/stable/dotnet_api/index.html"
+            }
+        },
+        "pyedb-core": {
+            "name": "PyEDB - Core",
+            "repository": "https://github.com/ansys/pyedb-core",
+            "description": "Pythonic interface to Ansys Electronics Database (EDB)",
+            "thumbnail": "_static/thumbnails/pyedb.png",
+            "families": [
+                "Electronics"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/electromagnetics.svg",
+            "documentation": {
+                "base": "https://edb.docs.pyansys.com/version/stable",
+                "user_guide": "https://edb.core.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://edb.core.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://edb.core.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyensight": {
+            "name": "PyEnSight",
+            "repository": "https://github.com/ansys/pyensight",
+            "description": "Pythonic interface to EnSight, the Ansys simulation postprocessor",
+            "thumbnail": "_static/thumbnails/pyensight.png",
+            "families": [
+                "Fluids"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/fluids.svg",
+            "documentation": {
+                "base": "https://ensight.docs.pyansys.com/version/stable",
+                "user_guide": "https://ensight.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://ensight.docs.pyansys.com/version/stable/_examples/index.html",
+                "api": "https://ensight.docs.pyansys.com/version/stable/class_documentation.html"
+            }
+        },
+        "pyfluent": {
+            "name": "PyFluent",
+            "repository": "https://github.com/ansys/pyfluent",
+            "description": "Pythonic interface to Ansys Fluent",
+            "thumbnail": "_static/thumbnails/pyfluent.png",
+            "families": [
+                "Fluids"
+            ],
+            "tags": [
+                "Flagship",
+                "Visualization"
+            ],
+            "icon": "_static/icons/fluids.svg",
+            "documentation": {
+                "base": "https://fluent.docs.pyansys.com/version/stable",
+                "user_guide": "https://fluent.docs.pyansys.com/version/stable/user_guide/user_guide_contents.html",
+                "examples": "https://fluent.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://fluent.docs.pyansys.com/version/stable/api/api_contents.html"
+            }
+        },
+        "pyfluent-visualization": {
+            "name": "PyFluent - Visualization",
+            "repository": "https://github.com/ansys/pyfluent-visualization",
+            "description": "Pythonic interface to visualize Ansys Fluent simulations",
+            "thumbnail": "_static/thumbnails/pyfluent-visualization.png",
+            "families": [
+                "Fluids"
+            ],
+            "tags": [
+                "Tools",
+                "Visualization"
+            ],
+            "icon": "_static/icons/fluids.svg",
+            "documentation": {
+                "base": "https://visualization.fluent.docs.pyansys.com/version/stable",
+                "user_guide": "https://visualization.fluent.docs.pyansys.com/version/stable/users_guide/index.html",
+                "examples": "https://visualization.fluent.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://visualization.fluent.docs.pyansys.com/version/stable/visualization/visualization_contents.html"
+            }
+        },
+        "pygranta": {
+            "name": "PyGranta",
+            "repository": "https://github.com/ansys/pygranta",
+            "description": "Pythonic interface to Ansys Granta MI services",
+            "thumbnail": "_static/thumbnails/pygranta.png",
+            "families": [
+                "Materials"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/materials.svg",
+            "documentation": {
+                "base": "https://grantami.docs.pyansys.com/version/stable",
+                "user_guide": "https://grantami.docs.pyansys.com/version/stable/user_guide.html",
+                "examples": "https://grantami.docs.pyansys.com/version/stable/examples.html",
+                "api": "https://grantami.docs.pyansys.com/version/stable/api.html"
+            }
+        },
+        "pyhps": {
+            "name": "PyHPS",
+            "repository": "https://github.com/ansys/pyhps",
+            "description": "Pythonic interface to Ansys HPC Platform Services (HPS)",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "families": [
+                "Platform"
+            ],
+            "tags": [
+                "Tools"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://hps.docs.pyansys.com/version/stable",
+                "user_guide": "https://hps.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://hps.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://hps.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyhps-data-transfer": {
+            "name": "PyHPS Data Transfer",
+            "repository": "https://github.com/ansys/pyhps-data-transfer",
+            "description": "A Python client for Data Transfer in Ansys HPC Platform Services",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "families": [
+                "Platform"
+            ],
+            "tags": [
+                "Tools"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://data-transfer.hps.docs.pyansys.com/version/stable",
+                "user_guide": "https://data-transfer.hps.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://data-transfer.hps.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://data-transfer.hps.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pymapdl": {
+            "name": "PyMAPDL",
+            "repository": "https://github.com/ansys/pymapdl",
+            "description": "A Python client library for Ansys MAPDL (Mechanical APDL)",
+            "thumbnail": "_static/thumbnails/pymapdl.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://mapdl.docs.pyansys.com/version/stable",
+                "user_guide": "https://mapdl.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://mapdl.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://mapdl.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pymapdl-reader": {
+            "name": "PyMAPDL Reader",
+            "repository": "https://github.com/ansys/pymapdl-reader",
+            "description": "A legacy Python library to read MAPDL result files (MAPDL 14.5 and later)",
+            "thumbnail": "_static/thumbnails/pymapdl.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Tools"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://reader.docs.pyansys.com/version/stable",
+                "user_guide": "https://reader.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://reader.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://reader.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pymechanical": {
+            "name": "PyMechanical",
+            "repository": "https://github.com/ansys/pymechanical",
+            "description": "Pythonic interface to Ansys Mechanical",
+            "thumbnail": "_static/thumbnails/pymechanical.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://mechanical.docs.pyansys.com/version/stable",
+                "user_guide": "https://mechanical.docs.pyansys.com/version/stable/index.html",
+                "examples": "https://mechanical.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://mechanical.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pymodelcenter": {
+            "name": "PyModelCenter",
+            "repository": "https://github.com/ansys/pymodelcenter",
+            "description": "Pythonic interface to Ansys ModelCenter",
+            "thumbnail": "_static/thumbnails/pymodelcenter.png",
+            "families": [
+                "Connect"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/connect.svg",
+            "documentation": {
+                "base": "https://modelcenter.docs.pyansys.com/version/stable",
+                "user_guide": "https://modelcenter.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://modelcenter.docs.pyansys.com/version/stable/getting_started/index.html",
+                "api": "https://modelcenter.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pymotorcad": {
+            "name": "PyMotorCAD",
+            "repository": "https://github.com/ansys/pymotorcad",
+            "description": "Pythonic interface to Ansys Motor-CAD",
+            "thumbnail": "_static/thumbnails/pymotorcad.png",
+            "families": [
+                "Electronics"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/electromagnetics.svg",
+            "documentation": {
+                "base": "https://motorcad.docs.pyansys.com/version/stable",
+                "user_guide": "https://motorcad.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://motorcad.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://motorcad.docs.pyansys.com/version/stable/methods/index.html"
+            }
+        },
+        "pyoptislang": {
+            "name": "PyOptislang",
+            "repository": "https://github.com/ansys/pyoptislang",
+            "description": "Pythonic interface to Ansys optiSLang",
+            "thumbnail": "_static/thumbnails/pyoptislang.png",
+            "families": [
+                "Connect"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://optislang.docs.pyansys.com/version/stable",
+                "user_guide": "https://optislang.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://optislang.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://optislang.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pypim": {
+            "name": "PyPIM",
+            "repository": "https://github.com/ansys/pypim",
+            "description": "Pythonic interface to the Ansys PIM (Product Instance Management) API",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "families": [
+                "Platform"
+            ],
+            "tags": [
+                "Tools"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://pypim.docs.pyansys.com/version/stable",
+                "user_guide": "https://pypim.docs.pyansys.com/version/stable/index.html#getting-started",
+                "examples": "https://pypim.docs.pyansys.com/version/stable/integration.html",
+                "api": "https://pypim.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyprimemesh": {
+            "name": "PyPrimeMesh",
+            "repository": "https://github.com/ansys/pyprimemesh",
+            "description": "Python library to acquire geometries and prepare surface and volume meshes for multiple solvers",
+            "thumbnail": "_static/thumbnails/pyprimemesh.png",
+            "families": [
+                "Meshing",
+                "CAD"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://prime.docs.pyansys.com/version/stable",
+                "user_guide": "https://prime.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://prime.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://prime.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyrocky": {
+            "name": "PyRocky",
+            "repository": "https://github.com/ansys/pyrocky",
+            "description": "Python interface to Ansys Rocky using Rocky PrePost API",
+            "thumbnail": "_static/thumbnails/pyrocky.png",
+            "families": [
+                "Fluids"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/fluids.svg",
+            "documentation": {
+                "base": "https://rocky.docs.pyansys.com/version/stable",
+                "user_guide": "https://rocky.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://rocky.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://rocky.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyscadeone": {
+            "name": "PyScadeOne",
+            "repository": "https://github.com/ansys/pyscadeone",
+            "description": "Pythonic interface to Ansys Scade One",
+            "thumbnail": "_static/thumbnails/pyscadeone.png",
+            "families": [
+                "Embedded Software"
+            ],
+            "tags": [
+                "Software"
+            ],
+            "icon": "_static/icons/embedded-software.svg",
+            "documentation": {
+                "base": "https://scadeone.docs.pyansys.com/version/stable",
+                "user_guide": "https://scadeone.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://scadeone.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://scadeone.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyseascape": {
+            "name": "PySeascape",
+            "repository": "https://github.com/ansys/pyseascape",
+            "description": "Pythonic interface to Ansys RedHawkSC and TotemSC",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "families": [
+                "Semiconductors"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/semiconductors.svg",
+            "documentation": {
+                "base": "https://seascape.docs.pyansys.com/version/stable",
+                "user_guide": "https://seascape.docs.pyansys.com/version/stable/#usage",
+                "examples": "https://seascape.docs.pyansys.com/version/stable/#examples",
+                "api": "https://seascape.docs.pyansys.com/version/stable/#usage"
+            }
+        },
+        "pysherlock": {
+            "name": "PySherlock",
+            "repository": "https://github.com/ansys/pysherlock",
+            "description": "Pythonic interface to Ansys Sherlock",
+            "thumbnail": "_static/thumbnails/pysherlock.png",
+            "families": [
+                "Electronics",
+                "Multiphysics",
+                "Structures"
+            ],
+            "tags": [
+                "Flagship",
+                "Thermal"
+            ],
+            "icon": "_static/icons/structures.svg",
+            "documentation": {
+                "base": "https://sherlock.docs.pyansys.com/version/stable",
+                "user_guide": "https://sherlock.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://sherlock.docs.pyansys.com/version/stable/getting_started/index.html",
+                "api": "https://sherlock.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pysimai": {
+            "name": "PySimAI",
+            "repository": "https://github.com/ansys/pysimai",
+            "description": "Pythonic interface to SimAI",
+            "thumbnail": "_static/thumbnails/pysimai.png",
+            "families": [
+                "AI"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/ai-ml.svg",
+            "documentation": {
+                "base": "https://simai.docs.pyansys.com/version/stable",
+                "user_guide": "https://simai.docs.pyansys.com/version/stable/user_guide.html",
+                "examples": "https://simai.docs.pyansys.com/version/stable/index.html",
+                "api": "https://simai.docs.pyansys.com/version/stable/api_reference.html"
+            }
+        },
+        "pyspeos": {
+            "name": "PySpeos",
+            "description": "A Python wrapper for Ansys Speos",
+            "thumbnail": "_static/thumbnails/pyspeos.png",
+            "repository": "https://speos.docs.pyansys.com/version/stable/index.html",
+            "families": [
+                "Optics"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/optics.svg",
+            "documentation": {
+                "base": "https://speos.docs.pyansys.com/version/stable/index.html",
+                "user_guide": "https://speos.docs.pyansys.com/version/stable/getting_started/index.html",
+                "examples": "https://speos.docs.pyansys.com/version/stable/examples.html",
+                "api": "https://speos.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pystk": {
+            "name": "PySTK",
+            "repository": "https://github.com/ansys/pystk",
+            "description": "Next generation Python API for STK",
+            "thumbnail": "_static/thumbnails/pystk.png",
+            "families": [
+                "Digital Mission Engineering"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/dme.svg",
+            "documentation": {
+                "base": "https://stk.docs.pyansys.com/version/stable",
+                "user_guide": "https://stk.docs.pyansys.com/version/stable/user-guide.html",
+                "examples": "https://stk.docs.pyansys.com/version/stable/examples.html",
+                "api": "https://stk.docs.pyansys.com/version/stable/api.html"
+            }
+        },
+        "pysystemcoupling": {
+            "name": "PySystemCoupling",
+            "repository": "https://github.com/ansys/pysystemcoupling",
+            "description": "Pythonic interface to Ansys System Coupling",
+            "thumbnail": "_static/thumbnails/pysystem-coupling.png",
+            "families": [
+                "Structures"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/design.svg",
+            "documentation": {
+                "base": "https://systemcoupling.docs.pyansys.com/version/stable",
+                "user_guide": "https://systemcoupling.docs.pyansys.com/version/stable/users_guide/index.html",
+                "examples": "https://systemcoupling.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://systemcoupling.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyturbogrid": {
+            "name": "PyTurboGrid",
+            "repository": "https://github.com/ansys/pyturbogrid",
+            "description": "Pythonic interface to Ansys TurboGrid, a high-quality turbomachinery meshing software app",
+            "thumbnail": "_static/thumbnails/pyturbogrid.png",
+            "families": [
+                "Fluids"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/fluids.svg",
+            "documentation": {
+                "base": "https://turbogrid.docs.pyansys.com/version/stable",
+                "user_guide": "https://turbogrid.docs.pyansys.com/version/stable/getting_started/index.html",
+                "examples": "https://turbogrid.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://turbogrid.docs.pyansys.com/version/stable/api_reference/index.html"
+            }
+        },
+        "pytwin": {
+            "name": "PyTwin",
+            "repository": "https://github.com/ansys/pytwin",
+            "description": "Pythonic interface to communicate with consumption workflows for Ansys digital twins",
+            "thumbnail": "_static/thumbnails/pytwin.png",
+            "families": [
+                "Digital Twin"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/digital-twins.svg",
+            "documentation": {
+                "base": "https://twin.docs.pyansys.com/version/stable",
+                "user_guide": "https://twin.docs.pyansys.com/version/stable/user_guide/index.html",
+                "examples": "https://twin.docs.pyansys.com/version/stable/examples/index.html",
+                "api": "https://twin.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyworkbench": {
+            "name": "PyWorkbench",
+            "repository": "https://github.com/ansys/pyworkbench",
+            "description": "Pythonic interface to Ansys Workbench",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "families": [
+                "Platform",
+                "Multiphysics"
+            ],
+            "tags": [
+                "Flagship"
+            ],
+            "icon": "_static/icons/platform.svg",
+            "documentation": {
+                "base": "https://workbench.docs.pyansys.com/version/stable",
+                "user_guide": "https://workbench.docs.pyansys.com/version/stable/user-guide.html",
+                "examples": "https://workbench.docs.pyansys.com/version/stable/examples.html",
+                "api": "https://workbench.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "shared-components-openapi-common": {
+            "name": "Shared Components - OpenAPI Common",
+            "repository": "https://github.com/ansys/openapi-common",
+            "description": "Shared Ansys software components to enable package interoperability and minimize maintenance",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "families": [
+                "Other"
+            ],
+            "tags": [
+                "Tools"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://shared.docs.pyansys.com",
+                "user_guide": "https://openapi.docs.pyansys.com/version/stable/index.html",
+                "examples": "https://openapi.docs.pyansys.com/version/stable/index.html",
+                "api": "https://openapi.docs.pyansys.com/version/stable/api/index.html"
+            }
+        },
+        "pyaedt-common-toolkit": {
+            "name": "PyAEDT Common Toolkit",
+            "description": "Shared Ansys Electronics Desktop (AEDT) toolkit components to enable package interoperability and minimize maintenance",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "repository": "https://github.com/ansys/pyaedt-toolkits-common",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "PyAEDT toolkits"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://aedt.common.toolkit.docs.pyansys.com/version/stable/index.html"
+            }
+        },
+        "pyaedt-antenna-toolkit": {
+            "name": "PyAEDT Antenna Toolkit",
+            "description": "Python wrapper for modeling antennas using Ansys Electronics Desktop (AEDT) via PyAEDT",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "repository": null,
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "PyAEDT toolkits"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://aedt.antenna.toolkit.docs.pyansys.com/version/stable/index.html"
+            }
+        },
+        "magnet-segmentation-toolkit": {
+            "name": "Magnet Segmentation Toolkit",
+            "description": "Python wrapper for automating the segmentation and skew of interior permanent magnet (IPM) and surface permanent magnet (SPM) motors using Ansys Electronics Desktop (AEDT)",
+            "thumbnail": "_static/thumbnails/intro.png",
+            "repository": null,
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "PyAEDT toolkits"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://magnet.segmentation.toolkit.docs.pyansys.com/version/stable/index.html"
+            }
+        },
+        "ansys-python-manager": {
+            "name": "Ansys Python Manager",
+            "description": "Simple cross-platform QT application to install Python and PyAnsys packages",
+            "thumbnail": "_static/thumbnails/ansys-python-manager.png",
+            "repository": null,
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "General purpose"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://installer.docs.pyansys.com/version/stable/index.html"
+            }
+        },
+        "pyansys-cheat-sheets": {
+            "name": "PyAnsys Cheat Sheets",
+            "description": "PyAnsys cheat sheets for different libraries as quick reference guides",
+            "thumbnail": "_static/thumbnails/pyansys-cheat-sheets.png",
+            "repository": null,
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "General purpose"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://cheatsheets.docs.pyansys.com/index.html"
+            }
+        },
+        "ansys-5g-wizard": {
+            "name": "Ansys 5G Wizard",
+            "description": "Ansys project used to calculate Power Density or Cumulative Distribution Function",
+            "thumbnail": "_static/thumbnails/5gwizard.png",
+            "repository": "https://github.com/ansys/5G-Wizard",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "General purpose"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://github.com/ansys/5G-Wizard"
+            }
+        },
+        "api-eigen-example": {
+            "name": "API Eigen Example",
+            "description": "Demonstrating the REST and gRPC communication protocols via client-server interactions",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": null,
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Demo"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://apieigen.docs.ansys.com/index.html"
+            }
+        },
+        "ansys-repository-templates": {
+            "name": "Ansys Repository Templates",
+            "description": "Ansys tool for creating new projects according to Ansys guidelines",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://templates.ansys.com/version/stable",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Repository management"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://templates.ansys.com/version/stable"
+            }
+        },
+        "ansys-github-actions": {
+            "name": "Ansys GitHub Actions",
+            "description": "Collection of GitHub Workflows to be reused by projects in the Ansys ecosystem",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://actions.docs.ansys.com/version/stable",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Repository management"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://actions.docs.ansys.com/version/stable"
+            }
+        },
+        "ansys-pre-commit-hooks": {
+            "name": "Ansys pre-commit Hooks",
+            "description": "Ansys repository containing customized pre-commit hooks",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://pre-commit-hooks.docs.ansys.com/version/stable",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Repository management"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://pre-commit-hooks.docs.ansys.com/version/stable"
+            }
+        },
+        "ansys-tools-repo-sync": {
+            "name": "Ansys Tools Repository Sync",
+            "description": "Ansys tool intended to synchronize the content of two different repositories",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://ansys.github.io/ansys-tools-repo-sync/version/stable",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Repository management"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://ansys.github.io/ansys-tools-repo-sync/version/stable"
+            }
+        },
+        "ansys-all-members": {
+            "name": "Ansys ``all-members`` team",
+            "description": "Repository for updating an organization's ``all-members`` team automatically",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://github.com/ansys/ansys-all-members",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Repository management"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://github.com/ansys/ansys-all-members"
+            }
+        },
+        "ansys-sphinx-theme": {
+            "name": "Ansys Sphinx Theme",
+            "description": "Extension of the popular PyData Sphinx Theme that is used by Numpy, Pandas, PyVista, and many more scientific Python packages",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://sphinxdocs.ansys.com/version/stable/index.html",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Documentation"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://sphinxdocs.ansys.com/version/stable/index.html"
+            }
+        },
+        "review-bot": {
+            "name": "Reviewer Bot",
+            "description": "Python development tool for leveraging the power of OpenAI to automatically generate suggestions for improving GitHub pull requests",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://review-bot.docs.pyansys.com/version/stable/index.html",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Artificial intelligence"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://review-bot.docs.pyansys.com/version/stable/index.html"
+            }
+        },
+        "pymeilisearch": {
+            "name": "PyMeilisearch",
+            "description": "Enhanced Python API to Meilisearch",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://pymeilisearch.docs.ansys.com/version/stable/index.html",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Documentation"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://pymeilisearch.docs.ansys.com/version/stable/index.html"
+            }
+        },
+        "pyconverter-xml2py": {
+            "name": "PyConverter-XML2Py",
+            "description": "A Python wrapper to convert XML documentation into Python source code with its Sphinx documentation.",
+            "thumbnail": "_static/thumbnails/pyansys-common.png",
+            "repository": "https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html",
+            "families": [
+                "Tools"
+            ],
+            "tags": [
+                "Documentation"
+            ],
+            "icon": "_static/icons/ansys-icon-light.svg",
+            "documentation": {
+                "base": "https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html"
+            }
+        }
+    }
+}
