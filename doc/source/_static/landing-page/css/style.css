@@ -435,6 +435,8 @@ textarea.form-control {
 
 /* Override ansys-sphinx-theme PR #943: the theme hides the primary sidebar when
    there are no nav <li> items (hidden toctree). Force it to show on the index page. */
-#pst-primary-sidebar.bd-sidebar-primary:not(:has(nav.bd-links li)):not(:has(.ast-sidebar-widget)) {
+#pst-primary-sidebar.bd-sidebar-primary:not(:has(nav.bd-links li)):not(
+    :has(.ast-sidebar-widget)
+  ) {
   display: flex;
 }
