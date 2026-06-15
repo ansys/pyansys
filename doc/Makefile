@@ -26,3 +26,10 @@ pdf:
 
 clean:
 	rm -rf $(BUILDDIR)
+
+# Run sphinx-autobuild to automatically rebuild the docs when changes are made
+autobuild:
+	sphinx-autobuild "$(SOURCEDIR)" "$(BUILDDIR)/html" \
+		--ignore="$(SOURCEDIR)/_static/projects.json" \
+		--ignore="$(SOURCEDIR)/_static/blog_metadata.json" \
+		$(SPHINXOPTS)
