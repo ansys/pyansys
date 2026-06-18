@@ -35,8 +35,6 @@ after their initial release:
         dateFormat YYYY-MM-DD
         axisFormat %Y-%m
 
-        Python 3.7  :done,   des1, 2018-06-27, 3y
-        Python 3.8  :done,   des2, 2019-10-14, 3y
         Python 3.9  :done,   des3, 2020-10-05, 3y
         Python 3.10 :done,   des4, 2021-10-04, 3y
         Python 3.11 :done,   des5, 2022-10-24, 3y
