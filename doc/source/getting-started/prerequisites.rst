@@ -38,8 +38,8 @@ after their initial release:
         Python 3.7  :done,   des1, 2018-06-27, 3y
         Python 3.8  :done,   des2, 2019-10-14, 3y
         Python 3.9  :done,   des3, 2020-10-05, 3y
-        Python 3.10 :active, des4, 2021-10-04, 3y
-        Python 3.11 :active, des5, 2022-10-24, 3y
+        Python 3.10 :done,   des4, 2021-10-04, 3y
+        Python 3.11 :done,   des5, 2022-10-24, 3y
         Python 3.12 :active, des6, 2023-10-02, 3y
         Python 3.13 :active, des7, 2024-10-01, 3y
         Python 3.14 :active, des8, 2025-10-07, 3y
