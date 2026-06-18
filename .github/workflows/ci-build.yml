@@ -16,7 +16,7 @@ concurrency:
 env:
   PACKAGE_NAME: pyansys
   PACKAGE_NAMESPACE: pyansys
-  MAIN_PYTHON_VERSION: '3.11'
+  MAIN_PYTHON_VERSION: '3.14'
   DOCUMENTATION_CNAME: "docs.pyansys.com"
   # attrs,referencing,jeepney - This has MIT license but fails the check
   # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
@@ -71,7 +71,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
+        python-version: ['3.12', '3.13', '3.14']
 
     steps:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 #v6.0.3
@@ -103,7 +103,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
+        python-version: ['3.12', '3.13', '3.14']
         extras-version: ['fluent-all', 'mapdl-all', 'tools']
 
     steps:
@@ -136,7 +136,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
+        python-version: ['3.12', '3.13', '3.14']
 
     steps:
       - name: Build wheelhouse and perform smoke test
@@ -240,7 +240,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           library-name: ${{ env.PACKAGE_NAME }}
-          additional-artifacts: 'all-deps-Linux-3.10 all-deps-Linux-3.11 all-deps-Linux-3.12 all-deps-Linux-3.13 all-deps-Linux-3.14 all-deps-Windows-3.10 all-deps-Windows-3.11 all-deps-Windows-3.12 all-deps-Windows-3.13 all-deps-Windows-3.14 all-deps-macOS-3.10 all-deps-macOS-3.11 all-deps-macOS-3.12 all-deps-macOS-3.13 all-deps-macOS-3.14'
+          additional-artifacts: 'all-deps-Linux-3.12 all-deps-Linux-3.13 all-deps-Linux-3.14 all-deps-Windows-3.12 all-deps-Windows-3.13 all-deps-Windows-3.14 all-deps-macOS-3.12 all-deps-macOS-3.13 all-deps-macOS-3.14'
           add-artifact-attestation-notes: true
           changelog-release-notes: true
 
