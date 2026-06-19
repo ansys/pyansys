@@ -61,7 +61,7 @@ dependencies = [
     "ansys-speos-core==0.9.0",
     "ansys-stk==0.3.0",
     "ansys-systemcoupling-core==0.12.0",
-    "ansys-turbogrid-core==0.8.0",
+    "ansys-turbogrid-core==0.9.0",
     "ansys-workbench-core==0.14.0",
     "pyaedt==1.1.0",
     "pyedb==0.77.0",
@@ -105,7 +105,7 @@ name = "pyansys"
 
 [dependency-groups]
 doc = [
-    "Sphinx>=8,<9",
+    "Sphinx>=8,<10",
     "ansys-sphinx-theme>=1.8.2",
     "Jinja2>=3.1.6",
     "Pillow>=12.2.0",
