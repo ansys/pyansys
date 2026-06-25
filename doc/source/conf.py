@@ -65,6 +65,8 @@ switcher_version = get_version_match(pyansys_version)
 # Get the PyAnsys version
 release = version = pyansys_version
 
+html_baseurl = f"https://{cname}/version/{switcher_version}"
+
 html_theme = "ansys_sphinx_theme"
 html_short_title = html_title = "PyAnsys"
 
