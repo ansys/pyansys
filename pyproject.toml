@@ -38,8 +38,8 @@ dependencies = [
     # Python 3.13 and Numpy 2.X
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.3.3",
-    "ansys-fluent-core==0.39.1",
-    "ansys-geometry-core==0.15.5",
+    "ansys-fluent-core==0.40.1",
+    "ansys-geometry-core==0.16.0",
     "ansys-hps-client==0.12.1",
     "ansys-hps-data-transfer-client==0.4.0",
     "ansys-lumerical-core==0.3.0",
