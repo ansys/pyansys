@@ -97,6 +97,11 @@ Other tools delivered as part of the metapackage are:
 - `PyAnsys Units <https://units.docs.pyansys.com/>`_: Pythonic interface for units, unit systems, and unit conversions.
 - `PyMaterials Manager <https://manager.materials.docs.pyansys.com/>`_: Python package for unifying material management across the Ansys portfolio.
 
+Currently, the ``pyansys`` metapackage is also delivering PyAnsys-based MCP (Model Context Protocol) packages, which are:
+
+- `PyMAPDL MCP <https://mapdl-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys MAPDL through PyMAPDL.
+- `PyLumerical MCP <https://lumerical-mcp.docs.pyansys.com/>`_: MCP server server that lets AI agents drive Ansys Lumerical tools using PyLumerical.
+
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page
 for each package, you can post issues and request new features. You can also feel
@@ -149,6 +154,7 @@ can be installed upon request:
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
 - **fluent-all**: This target installs the core packages, and `PyFluent - Visualization`_.
 - **tools**: This target installs the core packages, `Ansys FileTransfer Tool`_, `Ansys Tools Common`_, `PyAnsys Tools Variable Interop`_, `PyAnsys Units`_, and `PyMaterials Manager`_.
+- **mcp**: This target installs the core packages, as well as the MCP-related solutions.
 - **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation
