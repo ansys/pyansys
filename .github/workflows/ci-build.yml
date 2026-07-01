@@ -104,7 +104,7 @@ jobs:
       matrix:
         os: [windows-latest, ubuntu-latest]
         python-version: ['3.12', '3.13', '3.14']
-        extras-version: ['fluent-all', 'mapdl-all', 'tools']
+        extras-version: ['fluent-all', 'mapdl-all', 'tools', 'mcp']
 
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 #v7.0.0
