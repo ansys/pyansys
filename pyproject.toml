@@ -81,6 +81,10 @@ tools = [
     "ansys-units==0.12.1",
     "pyansys-tools-variableinterop==0.1.4",
 ]
+mcp = [
+    "ansys-mapdl-mcp==0.2.1",
+    "ansys-lumerical-mcp==0.1.0",
+]
 all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.56.0",
@@ -94,6 +98,9 @@ all = [
     "ansys-tools-visualization-interface==0.13.3",
     "ansys-units==0.12.1",
     "pyansys-tools-variableinterop==0.1.4",
+    # MCP
+    "ansys-mapdl-mcp==0.2.1",
+    "ansys-lumerical-mcp==0.1.0",
 ]
 
 [project.urls]

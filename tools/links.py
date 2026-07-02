@@ -74,6 +74,9 @@ LINKS = {
     "ansys-tools-visualization-interface": "https://visualization-interface.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-units": "https://units.docs.pyansys.com/version/stable",
     "pyansys-tools-variableinterop": "https://variableinterop.docs.pyansys.com/version/stable",  # noqa: E501
+    # MCP
+    "ansys-mapdl-mcp": "https://mapdl-mcp.docs.pyansys.com/version/stable",
+    "ansys-lumerical-mcp": "https://lumerical-mcp.docs.pyansys.com/version/stable",
 }
 """Dictionary with PyAnsys packages and their multi-version docs site."""
 

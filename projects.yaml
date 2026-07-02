@@ -806,3 +806,30 @@ projects:
     documentation:
       base: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
 
+  pymapdl-mcp:
+    name: PyMAPDL MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys MAPDL through PyMAPDL.
+    thumbnail: _static/thumbnails/pymapdl.png
+    repository: https://github.com/ansys/pymapdl-mcp
+    families: [Structures, AI]
+    tags: [Tools]
+    icon: _static/icons/structures.svg
+    documentation:
+      base: https://mapdl-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://mapdl-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://mapdl-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://mapdl-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pylumerical-mcp:
+    name: PyLumerical MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys Lumerical through PyLumerical.
+    thumbnail: _static/thumbnails/pylumerical.png
+    repository: https://github.com/ansys/pylumerical-mcp
+    families: [Optical, AI]
+    tags: [Tools]
+    icon: _static/icons/optical.svg
+    documentation:
+      base: https://lumerical-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://lumerical-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://lumerical-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://lumerical-mcp.docs.pyansys.com/version/stable/api/index.html
