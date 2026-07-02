@@ -631,7 +631,7 @@ projects:
     name: PyAEDT Antenna Toolkit
     description: Python wrapper for modeling antennas using Ansys Electronics Desktop (AEDT) via PyAEDT
     thumbnail: _static/thumbnails/intro.png
-    repository: https://github.com/ansys/pyaedt-antenna-toolkit
+    repository: https://github.com/ansys/pyaedt-toolkits-antenna
     families: [Electronics]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
