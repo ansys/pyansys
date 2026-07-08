@@ -60,11 +60,11 @@ dependencies = [
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.9.0",
     "ansys-stk==0.3.0",
-    "ansys-systemcoupling-core==0.12.0",
+    "ansys-systemcoupling-core==0.13.0",
     "ansys-turbogrid-core==0.9.1",
     "ansys-workbench-core==0.14.0",
     "pyaedt==1.2.0",
-    "pyedb==0.80.0",
+    "pyedb==0.80.1",
     "pygranta==2026.1.1",
     "pytwin==0.12.0",
 ]
