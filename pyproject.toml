@@ -60,18 +60,18 @@ dependencies = [
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.9.0",
     "ansys-stk==0.3.0",
-    "ansys-systemcoupling-core==0.12.0",
+    "ansys-systemcoupling-core==0.13.0",
     "ansys-turbogrid-core==0.9.1",
     "ansys-workbench-core==0.14.0",
     "pyaedt==1.2.0",
-    "pyedb==0.80.0",
+    "pyedb==0.80.1",
     "pygranta==2026.1.1",
     "pytwin==0.12.0",
 ]
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.56.0"]
-fluent-all = ["ansys-fluent-visualization==0.26.1"]
+fluent-all = ["ansys-fluent-visualization==0.27.0"]
 tools = [
     "ansys-materials-manager==0.4.0",
     "ansys-tools-common==0.5.1",
@@ -89,7 +89,7 @@ all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.56.0",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.26.1",
+    "ansys-fluent-visualization==0.27.0",
     # TOOLS
     "ansys-materials-manager==0.4.0",
     "ansys-tools-common==0.5.1",
