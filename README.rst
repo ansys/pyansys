@@ -100,7 +100,9 @@ Other tools delivered as part of the metapackage are:
 Currently, the ``pyansys`` metapackage is also delivering PyAnsys-based MCP (Model Context Protocol) packages, which are:
 
 - `PyMAPDL MCP <https://mapdl-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys MAPDL through PyMAPDL.
-- `PyLumerical MCP <https://lumerical-mcp.docs.pyansys.com/>`_: MCP server server that lets AI agents drive Ansys Lumerical tools using PyLumerical.
+- `PyLumerical MCP <https://lumerical-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Lumerical through PyLumerical.
+- `PyFluent MCP <https://fluent-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Fluent through PyFluent.
+- `PyMechanical MCP <https://mechanical-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Mechanical through PyMechanical.
 
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page

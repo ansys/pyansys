@@ -833,3 +833,31 @@ projects:
       user_guide: https://lumerical-mcp.docs.pyansys.com/version/stable/user_guide/index.html
       examples: https://lumerical-mcp.docs.pyansys.com/version/stable/examples/index.html
       api: https://lumerical-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pyfluent-mcp:
+    name: PyFluent MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys Fluent through PyFluent.
+    thumbnail: _static/thumbnails/pyfluent.png
+    repository: https://github.com/ansys/pyfluent-mcp
+    families: [Fluids, AI]
+    tags: [Tools]
+    icon: _static/icons/fluids.svg
+    documentation:
+      base: https://fluent-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://fluent-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://fluent-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://fluent-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pymechanical-mcp:
+    name: PyMechanical MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys Mechanical through PyMechanical.
+    thumbnail: _static/thumbnails/pymechanical.png
+    repository: https://github.com/ansys/pymechanical-mcp
+    families: [Structures, AI]
+    tags: [Tools]
+    icon: _static/icons/structures.svg
+    documentation:
+      base: https://mechanical-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://mechanical-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://mechanical-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://mechanical-mcp.docs.pyansys.com/version/stable/api/index.html

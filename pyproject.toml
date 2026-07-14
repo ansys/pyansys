@@ -84,6 +84,8 @@ tools = [
 mcp = [
     "ansys-mapdl-mcp==0.2.1",
     "ansys-lumerical-mcp==0.1.0",
+    "ansys-fluent-mcp==0.1.0",
+    "ansys-mechanical-mcp==0.1.1",
 ]
 all = [
     # MAPDL - ALL
@@ -101,6 +103,8 @@ all = [
     # MCP
     "ansys-mapdl-mcp==0.2.1",
     "ansys-lumerical-mcp==0.1.0",
+    "ansys-fluent-mcp==0.1.0",
+    "ansys-mechanical-mcp==0.1.1",
 ]
 
 [project.urls]
