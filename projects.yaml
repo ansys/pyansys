@@ -861,3 +861,17 @@ projects:
       user_guide: https://mechanical-mcp.docs.pyansys.com/version/stable/user_guide/index.html
       examples: https://mechanical-mcp.docs.pyansys.com/version/stable/examples/index.html
       api: https://mechanical-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pyaedt-mcp:
+    name: PyAEDT MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys Electronic Desktop through PyAEDT.
+    thumbnail: _static/thumbnails/pyaedt.png
+    repository: https://github.com/ansys/pyaedt-mcp
+    families: [Electronics, AI]
+    tags: [Tools]
+    icon: _static/icons/ansys-icon-light.svg
+    documentation:
+      base: https://aedt-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://aedt-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://aedt-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://aedt-mcp.docs.pyansys.com/version/stable/api/index.html

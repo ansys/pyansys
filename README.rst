@@ -103,6 +103,7 @@ Currently, the ``pyansys`` metapackage is also delivering PyAnsys-based MCP (Mod
 - `PyLumerical MCP <https://lumerical-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Lumerical through PyLumerical.
 - `PyFluent MCP <https://fluent-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Fluent through PyFluent.
 - `PyMechanical MCP <https://mechanical-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Mechanical through PyMechanical.
+- `PyAEDT MCP <https://aedt-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Electronic Desktop through PyAEDT.
 
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page
