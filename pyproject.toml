@@ -77,7 +77,7 @@ tools = [
     "ansys-tools-common==0.5.1",
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
-    "ansys-tools-visualization-interface==0.13.3",
+    "ansys-tools-visualization-interface==0.14.0",
     "ansys-units==0.12.1",
     "pyansys-tools-variableinterop==0.1.4",
 ]
@@ -98,7 +98,7 @@ all = [
     "ansys-tools-common==0.5.1",
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
-    "ansys-tools-visualization-interface==0.13.3",
+    "ansys-tools-visualization-interface==0.14.0",
     "ansys-units==0.12.1",
     "pyansys-tools-variableinterop==0.1.4",
     # MCP
