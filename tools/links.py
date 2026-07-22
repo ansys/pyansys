@@ -77,6 +77,9 @@ LINKS = {
     # MCP
     "ansys-mapdl-mcp": "https://mapdl-mcp.docs.pyansys.com/version/stable",
     "ansys-lumerical-mcp": "https://lumerical-mcp.docs.pyansys.com/version/stable",
+    "ansys-fluent-mcp": "https://fluent-mcp.docs.pyansys.com/version/stable",
+    "ansys-mechanical-mcp": "https://mechanical-mcp.docs.pyansys.com/version/stable",
+    "ansys-aedt-mcp": "https://aedt-mcp.docs.pyansys.com/version/stable",
 }
 """Dictionary with PyAnsys packages and their multi-version docs site."""
 
