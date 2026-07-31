@@ -875,3 +875,17 @@ projects:
       user_guide: https://aedt-mcp.docs.pyansys.com/version/stable/user_guide/index.html
       examples: https://aedt-mcp.docs.pyansys.com/version/stable/examples/index.html
       api: https://aedt-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pycfx-mcp:
+    name: PyCFX MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys CFX through PyCFX.
+    thumbnail: _static/thumbnails/pycfx.png
+    repository: https://github.com/ansys/pycfx-mcp
+    families: [Fluids, AI]
+    tags: [Tools]
+    icon: _static/icons/fluids.svg
+    documentation:
+      base: https://cfx-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://cfx-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://cfx-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://cfx-mcp.docs.pyansys.com/version/stable/api/index.html
