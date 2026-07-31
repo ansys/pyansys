@@ -87,6 +87,7 @@ mcp = [
     "ansys-fluent-mcp==0.2.0",
     "ansys-mechanical-mcp==0.1.2",
     "ansys-aedt-mcp==0.1.2",
+    "ansys-cfx-mcp==0.1.0",
 ]
 all = [
     # MAPDL - ALL
@@ -107,6 +108,7 @@ all = [
     "ansys-fluent-mcp==0.2.0",
     "ansys-mechanical-mcp==0.1.2",
     "ansys-aedt-mcp==0.1.2",
+    "ansys-cfx-mcp==0.1.0",
 ]
 
 [project.urls]
