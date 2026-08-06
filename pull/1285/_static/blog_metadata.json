@@ -1,0 +1,13 @@
+{
+    "blog/2025-09-30-newsletter.html": {
+        "author": "PyAnsys Core Team",
+        "date": "2025-09-30",
+        "categories": "Newsletter",
+        "tags": "news",
+        "industries": "General",
+        "products": "PyAnsys",
+        "image": "thumbnails/pyansys-common.png",
+        "title": "Newsletter 2025-09-30",
+        "description": "The PyAnsys landing page has been redesigned for improved usability, navigation, and accessibility, based on community feedback and collaboration."
+    }
+}
