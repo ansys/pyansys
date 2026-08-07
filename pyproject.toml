@@ -41,7 +41,7 @@ dependencies = [
     "ansys-fluent-core==0.39.1",
     "ansys-geometry-core==0.16.3",
     "ansys-hps-client==0.12.1",
-    "ansys-hps-data-transfer-client==0.4.0",
+    "ansys-hps-data-transfer-client==0.5.0",
     "ansys-lumerical-core==0.3.0",
     "ansys-mapdl-core==0.73.2",
     "ansys-math-core==0.2.5",
@@ -84,10 +84,10 @@ tools = [
 mcp = [
     "ansys-mapdl-mcp==0.2.1",
     "ansys-lumerical-mcp==0.1.0",
-    "ansys-fluent-mcp==0.2.0",
+    "ansys-fluent-mcp==0.3.0",
     "ansys-mechanical-mcp==0.1.2",
     "ansys-aedt-mcp==0.1.2",
-    "ansys-cfx-mcp==0.1.0",
+    "ansys-cfx-mcp==0.1.1",
 ]
 all = [
     # MAPDL - ALL
@@ -105,10 +105,10 @@ all = [
     # MCP
     "ansys-mapdl-mcp==0.2.1",
     "ansys-lumerical-mcp==0.1.0",
-    "ansys-fluent-mcp==0.2.0",
+    "ansys-fluent-mcp==0.3.0",
     "ansys-mechanical-mcp==0.1.2",
     "ansys-aedt-mcp==0.1.2",
-    "ansys-cfx-mcp==0.1.0",
+    "ansys-cfx-mcp==0.1.1",
 ]
 
 [project.urls]
