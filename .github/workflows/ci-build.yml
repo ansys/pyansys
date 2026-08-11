@@ -132,6 +132,8 @@ jobs:
     name: Build PyAnsys package wheelhouse
     runs-on: ${{ matrix.os }}
     needs: [smoke-tests-core]
+    env:
+      SETUPTOOLS_ALLOW_DEPRECATED_LICENSES: "1"
     strategy:
       fail-fast: false
       matrix:
