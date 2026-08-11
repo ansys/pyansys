@@ -116,6 +116,17 @@ jobs:
           cache-dependency-glob: '**/pyproject.toml'
           activate-environment: true
 
+      - name: Set GRPC_PYTHON_CFLAGS for Python 3.14 on Windows
+        if: matrix.python-version == '3.14' && runner.os == 'Windows'
+        shell: bash
+        run: |
+          # grpcio-tools 1.71.2 setup.py sets both /std:c++17 and /std:c11 for MSVC.
+          # The _spawn_patch.py in grpcio-tools is supposed to split them per file
+          # type, but it doesn't work with newer setuptools used on Python 3.14.
+          # GRPC_PYTHON_CFLAGS overrides the default flags entirely, removing /std:c11
+          # to prevent the incompatible-flag error when compiling C++ files.
+          echo "GRPC_PYTHON_CFLAGS=/std:c++17 /MT" >> "$GITHUB_ENV"
+
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
           uv pip install .[${{ matrix.extras-version }}]
@@ -141,6 +152,17 @@ jobs:
         python-version: ['3.12', '3.13', '3.14']
 
     steps:
+      - name: Set GRPC_PYTHON_CFLAGS for Python 3.14 on Windows
+        if: matrix.python-version == '3.14' && runner.os == 'Windows'
+        shell: bash
+        run: |
+          # grpcio-tools 1.71.2 setup.py sets both /std:c++17 and /std:c11 for MSVC.
+          # The _spawn_patch.py in grpcio-tools is supposed to split them per file
+          # type, but it doesn't work with newer setuptools used on Python 3.14.
+          # GRPC_PYTHON_CFLAGS overrides the default flags entirely, removing /std:c11
+          # to prevent the incompatible-flag error when compiling C++ files.
+          echo "GRPC_PYTHON_CFLAGS=/std:c++17 /MT" >> "$GITHUB_ENV"
+
       - name: Build wheelhouse and perform smoke test
         uses: ansys/actions/build-wheelhouse@9dc4e3161033d2c2485fbf9687d40cfb7a661fb2 # v10.3.6
         with:
