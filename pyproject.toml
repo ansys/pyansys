@@ -51,7 +51,7 @@ dependencies = [
     "ansys-motorcad-core==0.8.8",
     "ansys-optislang-core==1.5.0",
     "ansys-platform-instancemanagement==1.1.2",
-    "ansys-pyensight-core==0.11.17",
+    "ansys-pyensight-core==0.11.18",
     "ansys-rocky-core==0.6.1",
     "ansys-sam-sysml2==0.3.1",
     "ansys-seascape==0.2.0",
@@ -63,7 +63,7 @@ dependencies = [
     "ansys-systemcoupling-core==0.13.0",
     "ansys-turbogrid-core==0.9.4",
     "ansys-workbench-core==0.14.0",
-    "pyaedt==1.3.0",
+    "pyaedt==1.4.0",
     "pyedb==0.81.0",
     "pygranta==2026.1.1",
     "pytwin==0.12.0",
@@ -74,7 +74,7 @@ mapdl-all = ["ansys-mapdl-reader==0.56.0"]
 fluent-all = ["ansys-fluent-visualization==0.28.0"]
 tools = [
     "ansys-materials-manager==0.4.0",
-    "ansys-tools-common==0.5.1",
+    "ansys-tools-common==0.5.2",
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.14.0",
@@ -85,7 +85,7 @@ mcp = [
     "ansys-mapdl-mcp==0.2.1",
     "ansys-lumerical-mcp==0.1.0",
     "ansys-fluent-mcp==0.3.0",
-    "ansys-mechanical-mcp==0.1.2",
+    "ansys-mechanical-mcp==0.2.0",
     "ansys-aedt-mcp==0.1.3",
     "ansys-cfx-mcp==0.1.1",
 ]
@@ -96,7 +96,7 @@ all = [
     "ansys-fluent-visualization==0.28.0",
     # TOOLS
     "ansys-materials-manager==0.4.0",
-    "ansys-tools-common==0.5.1",
+    "ansys-tools-common==0.5.2",
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.14.0",
@@ -106,7 +106,7 @@ all = [
     "ansys-mapdl-mcp==0.2.1",
     "ansys-lumerical-mcp==0.1.0",
     "ansys-fluent-mcp==0.3.0",
-    "ansys-mechanical-mcp==0.1.2",
+    "ansys-mechanical-mcp==0.2.0",
     "ansys-aedt-mcp==0.1.3",
     "ansys-cfx-mcp==0.1.1",
 ]
