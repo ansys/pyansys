@@ -50,7 +50,7 @@ dependencies = [
     "ansys-modelcenter-workflow==0.1.3",
     "ansys-motorcad-core==0.8.8",
     "ansys-optislang-core==1.5.0",
-    "ansys-platform-instancemanagement==1.1.2",
+    "ansys-platform-instancemanagement==1.2.0",
     "ansys-pyensight-core==0.11.18",
     "ansys-rocky-core==0.6.1",
     "ansys-sam-sysml2==0.3.1",
@@ -84,7 +84,7 @@ tools = [
 mcp = [
     "ansys-mapdl-mcp==0.2.1",
     "ansys-lumerical-mcp==0.1.0",
-    "ansys-fluent-mcp==0.3.0",
+    "ansys-fluent-mcp==0.4.0",
     "ansys-mechanical-mcp==0.2.0",
     "ansys-aedt-mcp==0.1.3",
     "ansys-cfx-mcp==0.1.1",
@@ -105,7 +105,7 @@ all = [
     # MCP
     "ansys-mapdl-mcp==0.2.1",
     "ansys-lumerical-mcp==0.1.0",
-    "ansys-fluent-mcp==0.3.0",
+    "ansys-fluent-mcp==0.4.0",
     "ansys-mechanical-mcp==0.2.0",
     "ansys-aedt-mcp==0.1.3",
     "ansys-cfx-mcp==0.1.1",
