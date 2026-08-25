@@ -39,7 +39,7 @@ dependencies = [
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.3.3",
     "ansys-fluent-core==0.41.0",
-    "ansys-geometry-core==0.17.0",
+    "ansys-geometry-core==0.17.1",
     "ansys-hps-client==0.13.0",
     "ansys-hps-data-transfer-client==0.5.0",
     "ansys-lumerical-core==0.3.0",
