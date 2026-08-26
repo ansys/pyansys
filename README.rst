@@ -76,7 +76,6 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyPrimeMesh <https://prime.docs.pyansys.com/>`_: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers.
 - `PyRocky <https://rocky.docs.pyansys.com/>`_: Python library to communicate with Ansys Rocky using Rocky PrePost API.
 - `PyScadeOne <https://scadeone.docs.pyansys.com/>`_: Pythonic interface for Ansys Scade One.
-- `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
 - `PySimAI <https://simai.docs.pyansys.com/>`_: Pythonic interface to use SimAI.
 - `PySpeos <https://speos.docs.pyansys.com/>`_: Python library that gathers functionalities and tools based on Speos software remote API.
@@ -141,7 +140,6 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyPIM`_
 - `PyPrimeMesh`_
 - `PyRocky`_
-- `PySeascape`_
 - `PySherlock`_
 - `PySimAI`_
 - `PySpeos`_

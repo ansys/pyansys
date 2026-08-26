@@ -462,20 +462,6 @@ projects:
       examples: https://scadeone.docs.pyansys.com/version/stable/examples/index.html
       api: https://scadeone.docs.pyansys.com/version/stable/api/index.html
 
-  pyseascape:
-    name: PySeascape
-    repository: https://github.com/ansys/pyseascape
-    description: Pythonic interface to Ansys RedHawkSC and TotemSC
-    thumbnail: _static/thumbnails/intro.png
-    families: [Semiconductors]
-    tags: [Flagship]
-    icon: _static/icons/semiconductors.svg
-    documentation:
-      base: https://seascape.docs.pyansys.com/version/stable
-      user_guide: https://seascape.docs.pyansys.com/version/stable/#usage
-      examples: https://seascape.docs.pyansys.com/version/stable/#examples
-      api: https://seascape.docs.pyansys.com/version/stable/#usage
-
   pysherlock:
     name: PySherlock
     repository: https://github.com/ansys/pysherlock

@@ -54,7 +54,6 @@ dependencies = [
     "ansys-pyensight-core==0.11.18",
     "ansys-rocky-core==0.6.1",
     "ansys-sam-sysml2==0.3.1",
-    "ansys-seascape==0.2.0",
     "ansys-sherlock-core==1.0.2",
     "ansys-simai-core==0.4.6",
     "ansys-sound-core==0.3.0",
