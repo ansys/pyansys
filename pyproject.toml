@@ -38,7 +38,7 @@ dependencies = [
     # Python 3.13 and Numpy 2.X
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.3.3",
-    "ansys-fluent-core==0.41.0",
+    "ansys-fluent-core==0.42.0",
     "ansys-geometry-core==0.17.1",
     "ansys-hps-client==0.13.0",
     "ansys-hps-data-transfer-client==0.5.0",
@@ -63,7 +63,7 @@ dependencies = [
     "ansys-turbogrid-core==0.9.4",
     "ansys-workbench-core==0.14.0",
     "pyaedt==1.4.0",
-    "pyedb==0.82.0",
+    "pyedb==0.83.0",
     "pygranta==2026.1.1",
     "pytwin==0.12.0",
 ]
@@ -77,7 +77,7 @@ tools = [
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.14.0",
-    "ansys-units==0.12.1",
+    "ansys-units==0.13.0",
     "pyansys-tools-variableinterop==0.1.4",
 ]
 mcp = [
@@ -99,7 +99,7 @@ all = [
     "ansys-tools-filetransfer==0.2.2",
     "ansys-tools-protoc-helper==0.7.0",
     "ansys-tools-visualization-interface==0.14.0",
-    "ansys-units==0.12.1",
+    "ansys-units==0.13.0",
     "pyansys-tools-variableinterop==0.1.4",
     # MCP
     "ansys-mapdl-mcp==0.2.1",
