@@ -38,11 +38,11 @@ dependencies = [
     # Python 3.13 and Numpy 2.X
     # "ansys-dynamicreporting-core==0.10.3; python_version<'3.13'",
     "ansys-edb-core==0.3.3",
-    "ansys-fluent-core==0.41.0",
+    "ansys-fluent-core==0.42.0",
     "ansys-geometry-core==0.17.1",
     "ansys-hps-client==0.13.0",
     "ansys-hps-data-transfer-client==0.5.0",
-    "ansys-lumerical-core==0.3.0",
+    "ansys-lumerical-core==0.4.0",
     "ansys-mapdl-core==0.74.1",
     "ansys-math-core==0.2.5",
     "ansys-mechanical-core==0.13.2",
@@ -63,7 +63,7 @@ dependencies = [
     "ansys-turbogrid-core==0.9.4",
     "ansys-workbench-core==0.14.0",
     "pyaedt==1.4.0",
-    "pyedb==0.82.0",
+    "pyedb==0.83.0",
     "pygranta==2026.1.1",
     "pytwin==0.12.0",
 ]
