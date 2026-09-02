@@ -98,6 +98,20 @@ projects:
       examples: https://cfx.docs.pyansys.com/version/stable/examples/index.html
       api: https://cfx.docs.pyansys.com/version/stable/api/api_contents.html
 
+  pyresult-explorer:
+    name: PyResultExplorer
+    repository: https://github.com/ansys/pyresultexplorer
+    description: Python client library for Ansys Result Explorer to explore and visualize structural simulation results
+    thumbnail: _static/thumbnails/intro.png
+    families: [Structures]
+    tags: [Post-processing]
+    icon: _static/icons/structures.svg
+    documentation:
+      base: https://result-explorer.docs.pyansys.com/version/stable
+      user_guide: https://result-explorer.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://result-explorer.docs.pyansys.com/version/stable/examples/index.html
+      api: https://result-explorer.docs.pyansys.com/version/stable/api/index.html
+
   pychemkin:
     name: PyChemkin
     repository: https://github.com/ansys/pychemkin
