@@ -49,6 +49,7 @@ LINKS = {
     "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",
     "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
+    "ansys-result-explorer-core": "https://result-explorer.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-rocky-core": "https://rocky.docs.pyansys.com/version/stable",
     "ansys-sam-sysml2": "https://sysml2.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
