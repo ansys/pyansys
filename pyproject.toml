@@ -1,6 +1,6 @@
 [build-system]
-requires = ["flit_core >=3.2,<5"]
-build-backend = "flit_core.buildapi"
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
 
 [project]
 # Check https://flit.readthedocs.io/en/latest/pyproject_toml.html for all available sections
@@ -115,10 +115,14 @@ all = [
 Source = "https://github.com/ansys/pyansys"
 Documentation = "https://docs.pyansys.com"
 
-[tool.flit.module]
-name = "pyansys"
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyansys"]
 
 [dependency-groups]
+dev = [
+    "pre-commit==4.6.2",
+    { include-group = "doc" },
+]
 doc = [
     "Sphinx>=8,<10",
     "ansys-sphinx-theme>=1.8.2",
