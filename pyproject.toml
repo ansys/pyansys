@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling>=1.27,<2"]
+requires = ["hatchling>=1.32.0,<2"]
 build-backend = "hatchling.build"
 
 [project]
@@ -24,7 +24,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "grpcio>=1.71.2",  # This is the latest version used by the ansys-tools-protoc-helper
+    "grpcio>=1.83.1",  # This is the latest version used by the ansys-tools-protoc-helper
     "ansys-acp-core==0.3.2",
     "ansys-additive-core==0.20.1",
     "ansys-chemkin-core==0.2.0",
@@ -49,13 +49,13 @@ dependencies = [
     "ansys-meshing-prime==0.10.4",
     "ansys-modelcenter-workflow==0.1.3",
     "ansys-motorcad-core==0.8.8",
-    "ansys-optislang-core==1.5.0",
+    "ansys-optislang-core==1.6.0",
     "ansys-platform-instancemanagement==1.2.0",
-    "ansys-pyensight-core==0.11.18",
+    "ansys-pyensight-core==0.11.19",
     "ansys-result-explorer-core==0.1.1",
     "ansys-rocky-core==0.6.1",
-    "ansys-sam-sysml2==0.3.1",
-    "ansys-sherlock-core==1.0.2",
+    "ansys-sam-sysml2==0.3.2",
+    "ansys-sherlock-core==2.0.0",
     "ansys-simai-core==0.4.6",
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.9.1",
@@ -124,15 +124,15 @@ dev = [
     { include-group = "doc" },
 ]
 doc = [
-    "Sphinx>=8,<10",
-    "ansys-sphinx-theme>=1.8.2",
+    "Sphinx>=9.0.4,<10",
+    "ansys-sphinx-theme>=1.11.0",
     "Jinja2>=3.1.6",
-    "Pillow>=12.2.0",
-    "PyGithub>=2.9.1",
-    "sphinx-autobuild>=2024.10.3",
+    "Pillow>=12.3.0",
+    "PyGithub>=2.10.0",
+    "sphinx-autobuild>=2025.8.25",
     "sphinx-copybutton>=0.5.2",
-    "sphinx-design>=0.6.1",
-    "sphinxcontrib-mermaid>=2.0.2",
+    "sphinx-design>=0.7.0",
+    "sphinxcontrib-mermaid>=2.1.1",
     "sphinx-jinja>=2.0.2",
 ]
 
