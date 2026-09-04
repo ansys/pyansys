@@ -36,7 +36,6 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    versioning-strategy: "increase"
     commit-message:
       prefix: "build(pip-relock)"
     cooldown:
