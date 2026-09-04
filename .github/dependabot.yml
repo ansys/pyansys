@@ -5,6 +5,16 @@ updates:
     insecure-external-code-execution: allow
     schedule:
       interval: "daily"
+    cooldown:
+      # Specifically set to 0 for PyAnsys ecosystem related packages
+      default-days: 0
+      include:
+       - ansys-*
+       - pyansys-*
+       - pyaedt
+       - pyedb
+       - pygranta
+       - pytwin
     groups:
        deps:
           patterns:
