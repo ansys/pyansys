@@ -4,6 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    # Always bump the pinned version, even when it conflicts with other dependencies.
+    versioning-strategy: "increase"
     cooldown:
       # Specifically set to 0 for PyAnsys ecosystem related packages
       default-days: 1
@@ -14,10 +16,9 @@ updates:
        - "pyedb"
        - "pygranta"
        - "pytwin"
-    groups:
-       deps:
-          patterns:
-            - "*"
+    # Intentionally not grouped: a single incompatible/unresolvable package in a
+    # combined group can cause Dependabot to silently drop it from the group PR.
+    # Individual PRs surface every available upgrade, even incompatible ones.
 
   - package-ecosystem: "github-actions"
     directory: "/"
