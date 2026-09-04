@@ -48,8 +48,6 @@ metapackage release.
    {%- endfor %}
 """
 
-TMP_FILE = Path("tmp_pyproject.toml")
-
 LaTeXBuilder.supported_image_types = [
     "image/png",
     "image/pdf",
@@ -381,12 +379,9 @@ def build_versions_table(branch: str) -> list[str]:
     """Build the versions table for the PyAnsys libraries."""
     # Download the pyproject.toml file
     resp = requests.get(f"https://raw.githubusercontent.com/ansys/pyansys/{branch}/pyproject.toml")
-    with TMP_FILE.open("wb") as file:
-        file.write(resp.content)
 
     # Load the pyproject.toml file using TOML parser
-    with TMP_FILE.open("rb") as file:
-        pyproject_toml = tomllib.load(file)
+    pyproject_toml = tomllib.loads(resp.text)
 
     # Check if it is poetrty based or flit based and
     # load the PyAnsys library versions
@@ -416,9 +411,6 @@ def build_versions_table(branch: str) -> list[str]:
         list_pyansys_libraries = [
             entry for entry in list_pyansys_libraries if not entry.startswith("importlib-metadata")
         ]
-
-    # Delete the temporary file
-    TMP_FILE.unlink()
 
     # Build the table
     table = []
