@@ -119,6 +119,10 @@ Documentation = "https://docs.pyansys.com"
 packages = ["src/pyansys"]
 
 [dependency-groups]
+dev = [
+    "pre-commit==4.6.2",
+    { include-group = "doc" },
+]
 doc = [
     "Sphinx>=8,<10",
     "ansys-sphinx-theme>=1.8.2",
