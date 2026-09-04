@@ -6,8 +6,10 @@ updates:
       interval: "daily"
     # Always bump the pinned version, even when it conflicts with other dependencies.
     versioning-strategy: "increase"
+    commit-message:
+      prefix: "build(uv)"
     cooldown:
-      # Specifically set to 0 for PyAnsys ecosystem related packages
+      # Specifically set to 1 for PyAnsys ecosystem related packages
       default-days: 1
       include:
        - "ansys-*"
@@ -16,14 +18,48 @@ updates:
        - "pyedb"
        - "pygranta"
        - "pytwin"
-    # Intentionally not grouped: a single incompatible/unresolvable package in a
-    # combined group can cause Dependabot to silently drop it from the group PR.
-    # Individual PRs surface every available upgrade, even incompatible ones.
+    # The "pip" ecosystem entry below catches upgrades uv silently skips due to
+    # unresolvable conflicts, and a workflow relocks/verifies those PRs. So it's
+    # safe to group here for fewer PRs.
+    groups:
+       deps:
+          patterns:
+            - "*"
+
+  # Duplicate of the "uv" entry above: uv-based updates don't surface a bump if
+  # the new version can't be resolved alongside the rest of the lockfile, so
+  # incompatible releases go unnoticed. This "pip" entry edits pyproject.toml
+  # pins directly without requiring a resolvable uv.lock, and a companion
+  # workflow (see .github/workflows/dependabot-relock.yml) relocks the
+  # environment against the bumped pin to surface any real incompatibility.
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    versioning-strategy: "increase"
+    commit-message:
+      prefix: "build(pip-relock)"
+    cooldown:
+      # Distinct cooldown than for uv to avoid overlapping updates.
+      default-days: 2
+      include:
+       - "ansys-*"
+       - "pyansys-*"
+       - "pyaedt"
+       - "pyedb"
+       - "pygranta"
+       - "pytwin"
+    groups:
+       deps:
+          patterns:
+            - "*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "build(github-actions)"
     groups:
        actions:
           patterns:
