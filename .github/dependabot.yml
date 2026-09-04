@@ -7,14 +7,14 @@ updates:
       interval: "daily"
     cooldown:
       # Specifically set to 0 for PyAnsys ecosystem related packages
-      default-days: 0
+      default-days: 1
       include:
-       - ansys-*
-       - pyansys-*
-       - pyaedt
-       - pyedb
-       - pygranta
-       - pytwin
+       - "ansys-*"
+       - "pyansys-*"
+       - "pyaedt"
+       - "pyedb"
+       - "pygranta"
+       - "pytwin"
     groups:
        deps:
           patterns:
