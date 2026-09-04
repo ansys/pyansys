@@ -56,7 +56,7 @@ dependencies = [
     "ansys-result-explorer-core==0.1.1",
     "ansys-rocky-core==0.6.1",
     "ansys-sam-sysml2==0.3.3",
-    "ansys-sherlock-core==2.0.0",
+    # "ansys-sherlock-core==2.0.0",
     "ansys-simai-core==0.4.6",
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.9.1",
