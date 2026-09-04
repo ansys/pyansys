@@ -430,15 +430,15 @@ wheels = [
 
 [[package]]
 name = "ansys-api-pyensight"
-version = "0.4.15"
+version = "0.4.16"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c5/90/24bed7a3e34335ed2805ab1ef7e71c6d7b17bc9ca97c5dda1d5a72e5f7fe/ansys_api_pyensight-0.4.15.tar.gz", hash = "sha256:13450e035e00159b479ba0c697a2827ae0af1de28bd01b15a581badfc0404a15", size = 1197812, upload-time = "2026-07-24T14:57:20.709Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/41/6a/72ab7f6c3a691e926da5aaf6314d81ec2b86566a1e2e809c1d0700148662/ansys_api_pyensight-0.4.16.tar.gz", hash = "sha256:05bebeb1875ee6581d51d3b09e3c13b99288bd9a41362b96a9dead2abd25ac1d", size = 1198424, upload-time = "2026-08-18T14:54:11.013Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a6/08/8d352a0fbec7b0809331d4aba8f925bc6c56514b47a063c91a0943b9f674/ansys_api_pyensight-0.4.15-py3-none-any.whl", hash = "sha256:13ec5f8636eaf5a7d8923ef529bf5fb8124cb36c1d0d0ebcbfa60866cd49d9e4", size = 1341207, upload-time = "2026-07-24T14:57:19.084Z" },
+    { url = "https://files.pythonhosted.org/packages/46/f0/6de8fb3626d61f9ed4691cf4609bd026dd52e8b701f04c48ab68afd33b42/ansys_api_pyensight-0.4.16-py3-none-any.whl", hash = "sha256:d899f5e647596fc16e3db798ffa96cd1371910413477e97682357906ab166f05", size = 1341214, upload-time = "2026-08-18T14:54:08.42Z" },
 ]
 
 [[package]]
@@ -708,7 +708,7 @@ wheels = [
 
 [[package]]
 name = "ansys-fluent-core"
-version = "0.42.0"
+version = "0.42.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-fluent" },
@@ -729,9 +729,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fe/08/2ca9ceb888a5c9190b1ab03ba41b2a7ddcbce8ed26733ac6e17f179781d8/ansys_fluent_core-0.42.0.tar.gz", hash = "sha256:feff76547b942140315bfa53d06d415fb6c92ccf975ddad05823cd2f36fffef7", size = 22333096, upload-time = "2026-08-22T02:55:04.234Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/31/f8/6ee0d7cc8d29d3ed310082be4946c11c938998f0ee6afde52742b9b2b7bb/ansys_fluent_core-0.42.1.tar.gz", hash = "sha256:b2657cec1af3b5808c73b6cffc681cde29bfec4725b710cb4de55600c3ccbc1a", size = 22335878, upload-time = "2026-09-02T16:37:24.639Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bc/29/2f9bab160c8de0e69620f2c4ca7f3719900953b4fadc4482142434a24373/ansys_fluent_core-0.42.0-py3-none-any.whl", hash = "sha256:2c1d0faa9f69fd6c6530e2c4cc1b229d9d74d57535a36d94e6a5dde0b643a330", size = 6825433, upload-time = "2026-08-22T02:55:01.866Z" },
+    { url = "https://files.pythonhosted.org/packages/03/bf/711f2a6830a80da00849b205bf21f3445d56959630828c3e40018e668f59/ansys_fluent_core-0.42.1-py3-none-any.whl", hash = "sha256:5d451ef50ea9d5ce801f0b776c8993c4a55d858c77d34ae42600d5d8f6ff6b12", size = 6827689, upload-time = "2026-09-02T16:37:21.298Z" },
 ]
 
 [[package]]
@@ -1170,16 +1170,16 @@ wheels = [
 
 [[package]]
 name = "ansys-optislang-core"
-version = "1.5.0"
+version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "deprecated" },
     { name = "psutil" },
     { name = "pywin32", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/dc/40/7237421b8638590eb4048c6542e25f045275e70525673da2b8e8e8f6848f/ansys_optislang_core-1.5.0.tar.gz", hash = "sha256:7a5d3a59e9590dc24ef876dd143e2daafa99517d05457234406a4cade268c321", size = 767269, upload-time = "2026-06-04T09:53:45.269Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a3/84/9fe584875704da0364d275dad3dbe985c053eec40284d90718b288db5cbd/ansys_optislang_core-1.6.0.tar.gz", hash = "sha256:bec9016bcf691320f92774aa6a703a4f35a64638638f0a5904afbeb1cc136c4c", size = 781709, upload-time = "2026-09-02T07:33:01.357Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1a/40/ae885c80e3751b2892f9e147519ce4046de7a8b98526c818d01c3cf72fc4/ansys_optislang_core-1.5.0-py3-none-any.whl", hash = "sha256:4495d482a9c42183069df79a0ad20cfcfff9010e3f7922865e4fd0b2a9985ddb", size = 825194, upload-time = "2026-06-04T09:53:43.811Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/a3/354cccbd008fa19f0df363fabd226a0c868045acdb42ad69e8438d8411ec/ansys_optislang_core-1.6.0-py3-none-any.whl", hash = "sha256:26142068bd1eefe408804603d7b4b9f526891d260a2c0a639e8c04a369c97883", size = 844617, upload-time = "2026-09-02T07:32:59.65Z" },
 ]
 
 [[package]]
@@ -1198,7 +1198,7 @@ wheels = [
 
 [[package]]
 name = "ansys-pyensight-core"
-version = "0.11.18"
+version = "0.11.20"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-pyensight" },
@@ -1214,9 +1214,9 @@ dependencies = [
     { name = "urllib3" },
     { name = "usd-core", marker = "python_full_version < '3.14' and platform_machine != 'aarch64'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5a/d8/d7cb5ecd586e59985157c322a83dbb67ff25fcd5833137a78a22c8e1c948/ansys_pyensight_core-0.11.18.tar.gz", hash = "sha256:85312a06ab4ac492dbca4a939af2ba4c59be806677789e1cf009cea8703667f9", size = 9031030, upload-time = "2026-08-11T17:08:03.276Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f2/7d/6321762bd14a39620d3edaa724f15eac023cdc2728dfeacd1be050ebc45c/ansys_pyensight_core-0.11.20.tar.gz", hash = "sha256:28ebd0943229d63c479ca4f0d4a12fd6d03f4e5267fbbf6d90c450ff08584f31", size = 9031037, upload-time = "2026-09-03T09:54:40.098Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5c/b4/cd6a58470c9892f7a5a1a95e2d8112c4d781c4a46def392b95943bb4d9ea/ansys_pyensight_core-0.11.18-py3-none-any.whl", hash = "sha256:53f78e9bd42f947243e9367e358432510ddab1ab5fa96c40ee9c8abc5a52c567", size = 9052539, upload-time = "2026-08-11T17:08:00.339Z" },
+    { url = "https://files.pythonhosted.org/packages/72/a3/a20a35fab514d691eb2caf8fd0713d37745b129accbbd5dc157f3d00aba7/ansys_pyensight_core-0.11.20-py3-none-any.whl", hash = "sha256:0e9fd4aeed9f8f6c3e520f4f2f0c9fee70243a496ffc1b4cf1549b8d0b2c640d", size = 9052578, upload-time = "2026-09-03T09:54:37.298Z" },
 ]
 
 [[package]]
@@ -1266,25 +1266,18 @@ wheels = [
 
 [[package]]
 name = "ansys-sam-sysml2"
-version = "0.3.1"
+version = "0.3.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
     { name = "charset-normalizer" },
-    { name = "click" },
-    { name = "colorama" },
-    { name = "flask" },
     { name = "idna" },
-    { name = "itsdangerous" },
-    { name = "jinja2" },
-    { name = "markupsafe" },
     { name = "requests" },
     { name = "urllib3" },
-    { name = "werkzeug" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bd/9f/23bbe04ae22716b8a9d8419bfcf2f8b25fef9916a9de00758bbdbfb3be36/ansys_sam_sysml2-0.3.1.tar.gz", hash = "sha256:ab3f78dfe6c666a497da2761f32834178ba444742a7538e7cee52bcc82d605ab", size = 77528, upload-time = "2026-04-13T13:20:28.833Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a7/08/70d1f1687eb8a59c35b002020a9cd1e1bc65b9227f2d460fb41189e7ac0b/ansys_sam_sysml2-0.3.3.tar.gz", hash = "sha256:976b1783874f62e4716299379d4c51b0ab8bd52631a79414830a59a6a6aa7e34", size = 77784, upload-time = "2026-09-03T08:05:25.488Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/54/eb/3706ee1c43c81e305781ad7acce94ca1a2ad0ed999e3201c44768df9176f/ansys_sam_sysml2-0.3.1-py3-none-any.whl", hash = "sha256:56168759e50735525fb7b4ff84098a8122aef97dae3e637fa16780bb0be31472", size = 314572, upload-time = "2026-04-13T13:20:27.393Z" },
+    { url = "https://files.pythonhosted.org/packages/c1/b0/3dd2612934f78451aff39beeea1737448d4a99079ad9a6737bc017767e32/ansys_sam_sysml2-0.3.3-py3-none-any.whl", hash = "sha256:700e91249e455c2551bde2a9b74a1a85a638ade8b6f98f7ef221171cf42582ad", size = 314665, upload-time = "2026-09-03T08:05:23.775Z" },
 ]
 
 [[package]]
@@ -1722,15 +1715,6 @@ wheels = [
 [package.optional-dependencies]
 css = [
     { name = "tinycss2" },
-]
-
-[[package]]
-name = "blinker"
-version = "1.9.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/21/28/9b3f50ce0e048515135495f198351908d99540d69bfdc8c1d15b73dc55ce/blinker-1.9.0.tar.gz", hash = "sha256:b4ce2265a7abece45e7cc896e98dbebe6cead56bcf805a3d23136d145f5445bf", size = 22460, upload-time = "2024-11-08T17:25:47.436Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/10/cb/f2ad4230dc2eb1a74edf38f1a38b9b52277f75bef262d8908e60d957e13c/blinker-1.9.0-py3-none-any.whl", hash = "sha256:ba0efaa9080b619ff2f3459d1d500c57bddea4a6b424b60a91141db6fd2f08bc", size = 8458, upload-time = "2024-11-08T17:25:46.184Z" },
 ]
 
 [[package]]
@@ -2558,23 +2542,6 @@ wheels = [
 ]
 
 [[package]]
-name = "flask"
-version = "3.1.3"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "blinker" },
-    { name = "click" },
-    { name = "itsdangerous" },
-    { name = "jinja2" },
-    { name = "markupsafe" },
-    { name = "werkzeug" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/26/00/35d85dcce6c57fdc871f3867d465d780f302a175ea360f62533f12b27e2b/flask-3.1.3.tar.gz", hash = "sha256:0ef0e52b8a9cd932855379197dd8f94047b359ca0a78695144304cb45f87c9eb", size = 759004, upload-time = "2026-02-19T05:00:57.678Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7f/9c/34f6962f9b9e9c71f6e5ed806e0d0ff03c9d1b0b2340088a0cf4bce09b18/flask-3.1.3-py3-none-any.whl", hash = "sha256:f4bcbefc124291925f1a26446da31a5178f9483862233b23c0c96a20701f670c", size = 103424, upload-time = "2026-02-19T05:00:56.027Z" },
-]
-
-[[package]]
 name = "flexcache"
 version = "0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -3219,15 +3186,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/7c/1a/3c8edc664e06e6bd06cce40c6b22da5f1429aa4224d0c590f3be21c91ead/isoduration-20.11.0.tar.gz", hash = "sha256:ac2f9015137935279eac671f94f89eb00584f940f5dc49462a0c4ee692ba1bd9", size = 11649, upload-time = "2020-11-01T11:00:00.312Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7b/55/e5326141505c5d5e34c5e0935d2908a74e4561eca44108fbfb9c13d2911a/isoduration-20.11.0-py3-none-any.whl", hash = "sha256:b2904c2a4228c3d44f409c8ae8e2370eb21a26f7ac2ec5446df141dde3452042", size = 11321, upload-time = "2020-11-01T10:59:58.02Z" },
-]
-
-[[package]]
-name = "itsdangerous"
-version = "2.2.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/9c/cb/8ac0172223afbccb63986cc25049b154ecfb5e85932587206f42317be31d/itsdangerous-2.2.0.tar.gz", hash = "sha256:e0050c0b7da1eea53ffaf149c0cfbb5c6e2e2b69c4bef22c81fa6eb73e5f6173", size = 54410, upload-time = "2024-04-16T21:28:15.614Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/04/96/92447566d16df59b2a776c0fb82dbc4d9e07cd95062562af01e408583fc4/itsdangerous-2.2.0-py3-none-any.whl", hash = "sha256:c6242fc49e35958c8b15141343aa660db5fc54d4f13a1db01a3f5891b98700ef", size = 16234, upload-time = "2024-04-16T21:28:14.499Z" },
 ]
 
 [[package]]
@@ -4822,7 +4780,7 @@ memory = [
 
 [[package]]
 name = "pyaedt"
-version = "1.4.0"
+version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-tools-common" },
@@ -4836,9 +4794,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "tomli-w" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/12/b2/86b33b7cd20b58f3ed149f899b01f83817a9ad0cf505ff329e23c7aa079c/pyaedt-1.4.0.tar.gz", hash = "sha256:b35066363896a5ac1318be5306ae95fe28ef337830a725475bdd8a7830e93a1c", size = 27683522, upload-time = "2026-08-13T09:40:38.005Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/b5/257882466c548ebc6363e3aa799bf37396922a04c12c13f4632e9d758606/pyaedt-1.5.0.tar.gz", hash = "sha256:a2296aeb331a9585451d08b09d091fb7d87b6923bb744e7588dd3d3bfd2198f3", size = 27653875, upload-time = "2026-09-02T17:16:18.475Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/de/8a/67ee2fc959439f3522b9c77b8f46ef55fd7917ee378f8c53d64a04acea4d/pyaedt-1.4.0-py3-none-any.whl", hash = "sha256:06ce66da33f0c7b19620f209fc55d63515b880cab0ab9c2cfc35a8d1de0c890e", size = 7612475, upload-time = "2026-08-13T09:40:33.963Z" },
+    { url = "https://files.pythonhosted.org/packages/77/cd/7aad8293a439577b7b36d044f8d785d88af2765d85f003202100f1078ad1/pyaedt-1.5.0-py3-none-any.whl", hash = "sha256:a56af0bb413f48df725af0c3fbdd2c88e42791b15e3e9e1fee1b525910598bd1", size = 7658124, upload-time = "2026-09-02T17:16:16.186Z" },
 ]
 
 [[package]]
@@ -4973,7 +4931,7 @@ requires-dist = [
     { name = "ansys-dpf-post", specifier = "==0.12.0" },
     { name = "ansys-dyna-core", specifier = "==0.12.1" },
     { name = "ansys-edb-core", specifier = "==0.3.3" },
-    { name = "ansys-fluent-core", specifier = "==0.42.0" },
+    { name = "ansys-fluent-core", specifier = "==0.42.1" },
     { name = "ansys-fluent-mcp", marker = "extra == 'all'", specifier = "==0.4.0" },
     { name = "ansys-fluent-mcp", marker = "extra == 'mcp'", specifier = "==0.4.0" },
     { name = "ansys-fluent-visualization", marker = "extra == 'all'", specifier = "==0.28.0" },
@@ -4998,12 +4956,12 @@ requires-dist = [
     { name = "ansys-meshing-prime", specifier = "==0.10.4" },
     { name = "ansys-modelcenter-workflow", specifier = "==0.1.3" },
     { name = "ansys-motorcad-core", specifier = "==0.8.8" },
-    { name = "ansys-optislang-core", specifier = "==1.5.0" },
+    { name = "ansys-optislang-core", specifier = "==1.6.0" },
     { name = "ansys-platform-instancemanagement", specifier = "==1.2.0" },
-    { name = "ansys-pyensight-core", specifier = "==0.11.18" },
+    { name = "ansys-pyensight-core", specifier = "==0.11.20" },
     { name = "ansys-result-explorer-core", specifier = "==0.1.1" },
     { name = "ansys-rocky-core", specifier = "==0.6.1" },
-    { name = "ansys-sam-sysml2", specifier = "==0.3.1" },
+    { name = "ansys-sam-sysml2", specifier = "==0.3.3" },
     { name = "ansys-sherlock-core", specifier = "==1.0.2" },
     { name = "ansys-simai-core", specifier = "==0.4.6" },
     { name = "ansys-sound-core", specifier = "==0.3.0" },
@@ -5023,7 +4981,7 @@ requires-dist = [
     { name = "ansys-units", marker = "extra == 'tools'", specifier = "==0.12.1" },
     { name = "ansys-workbench-core", specifier = "==0.14.0" },
     { name = "grpcio", specifier = ">=1.71.2" },
-    { name = "pyaedt", specifier = "==1.4.0" },
+    { name = "pyaedt", specifier = "==1.5.0" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'all'", specifier = "==0.1.4" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'tools'", specifier = "==0.1.4" },
     { name = "pyedb", specifier = "==0.83.0" },
@@ -7022,18 +6980,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/49/b2/b6987faf330f5af5c787a2610124c2e8403d51724f9001ec4fff6311fe7a/websockets-16.1.1-cp314-cp314t-win32.whl", hash = "sha256:8483c2096363120eea8b07c06ae7304d520f686665fffd4811fad423930a65d7", size = 179729, upload-time = "2026-07-17T22:50:53.269Z" },
     { url = "https://files.pythonhosted.org/packages/a2/6e/fbac6ed878dd362fbad7d415fa4f84d38e3e33fed8cde45c64e783acf826/websockets-16.1.1-cp314-cp314t-win_amd64.whl", hash = "sha256:bcce07e23e5769375158f5efdcdafa8d5cd014b93c6683865b840ed65b96f231", size = 180072, upload-time = "2026-07-17T22:50:54.969Z" },
     { url = "https://files.pythonhosted.org/packages/be/4d/2d0d67834092e354d2b0498f014a41249a89556bc406cf86f3e1557bb463/websockets-16.1.1-py3-none-any.whl", hash = "sha256:6abbd3e82c731c8e531714466acd5d87b5e88ac3243465337ba71d68e23ae7e3", size = 173814, upload-time = "2026-07-17T22:51:04.184Z" },
-]
-
-[[package]]
-name = "werkzeug"
-version = "3.1.8"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "markupsafe" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/dd/b2/381be8cfdee792dd117872481b6e378f85c957dd7c5bca38897b08f765fd/werkzeug-3.1.8.tar.gz", hash = "sha256:9bad61a4268dac112f1c5cd4630a56ede601b6ed420300677a869083d70a4c44", size = 875852, upload-time = "2026-04-02T18:49:14.268Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/8c/2e650f2afeb7ee576912636c23ddb621c91ac6a98e66dc8d29c3c69446e1/werkzeug-3.1.8-py3-none-any.whl", hash = "sha256:63a77fb8892bf28ebc3178683445222aa500e48ebad5ec77b0ad80f8726b1f50", size = 226459, upload-time = "2026-04-02T18:49:12.72Z" },
 ]
 
 [[package]]
