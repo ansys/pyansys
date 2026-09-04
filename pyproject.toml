@@ -26,7 +26,8 @@ classifiers = [
 dependencies = [
     "grpcio>=1.71.2",  # This is the latest version used by the ansys-tools-protoc-helper
     "ansys-acp-core==0.3.2",
-    "ansys-additive-core==0.20.1",
+    # TODO: To be reinstated once issues are fixed with deps
+    # "ansys-additive-core==0.20.1",
     "ansys-chemkin-core==0.2.0",
     "ansys-cfx-core==0.3.0",
     "ansys-conceptev-core==0.11.1",
