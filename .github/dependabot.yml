@@ -35,23 +35,12 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "tuesday"
     commit-message:
       prefix: "build(pip-relock)"
     cooldown:
-      # Distinct cooldown than for uv to avoid overlapping updates.
-      default-days: 2
-      include:
-       - "ansys-*"
-       - "pyansys-*"
-       - "pyaedt"
-       - "pyedb"
-       - "pygranta"
-       - "pytwin"
-    groups:
-       deps:
-          patterns:
-            - "*"
+      default-days: 3
 
   - package-ecosystem: "github-actions"
     directory: "/"
