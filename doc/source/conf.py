@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import tomllib
 
 from ansys_sphinx_theme import ansys_favicon, get_version_match
 from docutils import nodes
@@ -13,7 +14,6 @@ from PIL import Image
 import requests
 import sphinx
 from sphinx.builders.latex import LaTeXBuilder
-import toml
 import yaml
 
 from pyansys import __version__ as pyansys_version
@@ -113,7 +113,7 @@ def read_dependencies_from_pyproject():
     if not pyproject.exists():
         raise ValueError(f"The file {pyproject} does not exist.")
 
-    pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
+    pyproject_content = tomllib.loads(pyproject.read_text(encoding="utf-8"))
     dependencies = pyproject_content["project"]["dependencies"]
     # Only consider pinned dependencies (PyAnsys packages)
     return {pkg.split("==")[0]: pkg.split("==")[1] for pkg in dependencies if "==" in pkg}
@@ -125,7 +125,7 @@ def read_optional_dependencies_from_pyproject():
     if not pyproject.exists():
         raise ValueError(f"The file {pyproject} does not exist.")
 
-    pyproject_content = toml.loads(pyproject.read_text(encoding="utf-8"))
+    pyproject_content = tomllib.loads(pyproject.read_text(encoding="utf-8"))
     exclude_targets = ["doc"]
     optional_dependencies = {
         target: {pkg.split("==")[0]: pkg.split("==")[1] for pkg in deps}
@@ -385,7 +385,8 @@ def build_versions_table(branch: str) -> list[str]:
         file.write(resp.content)
 
     # Load the pyproject.toml file using TOML parser
-    pyproject_toml = toml.load(TMP_FILE)
+    with TMP_FILE.open("rb") as file:
+        pyproject_toml = tomllib.load(file)
 
     # Check if it is poetrty based or flit based and
     # load the PyAnsys library versions
@@ -544,7 +545,7 @@ def fetch_release_branches_and_python_limits(app: sphinx.application.Sphinx):
 
         # Inspect the pyproject.toml file to get the Python limits
         pyproject = repository.get_contents("pyproject.toml", ref=branch.name)
-        content = toml.loads(pyproject.decoded_content.decode("utf-8"))
+        content = tomllib.loads(pyproject.decoded_content.decode("utf-8"))
 
         # Extract the latest version and the Python limits
         branch_name = branch.name
