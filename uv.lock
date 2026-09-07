@@ -201,7 +201,7 @@ wheels = [
 
 [[package]]
 name = "ansys-additive-core"
-version = "0.20.1"
+version = "0.21.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-additive" },
@@ -222,9 +222,9 @@ dependencies = [
     { name = "six" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/35/76/1c06ece5d1c18ddac98eb3c9f4947df9300ae2cdc1b0d3e5b5dd071a806a/ansys_additive_core-0.20.1.tar.gz", hash = "sha256:b72ebea76eabc16f7613a56b58c6e8965fde968a4b31bb6b524332ff45867ba5", size = 73731, upload-time = "2026-01-23T14:32:36.597Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9d/52/fb5bd34dfd5e28076ac20c8aba5782dc0d35bed967ac71692ea8fe972cbf/ansys_additive_core-0.21.0.tar.gz", hash = "sha256:130e24ea743d709ce3ad8f7fdb6bb36c837317dfc97eb82bed8478fe0123f1ad", size = 79063, upload-time = "2026-09-04T13:26:49.405Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/26/7d/8f02b808aecee0edde6419e16c656ed56d825a15e659453e0baf5de588ce/ansys_additive_core-0.20.1-py3-none-any.whl", hash = "sha256:34995b46463a8c041ce6abe05e30ba54e92dd1fadd8f1690e2f755290846fe24", size = 107290, upload-time = "2026-01-23T14:32:34.552Z" },
+    { url = "https://files.pythonhosted.org/packages/1f/ed/94678aea14f64853967c8a441b85875236afabc4874e41f0894a477a0ef1/ansys_additive_core-0.21.0-py3-none-any.whl", hash = "sha256:71e3e4e988450add968c4547ff06bcd71c4f62c76814273da6860863a0b5d13e", size = 112946, upload-time = "2026-09-04T13:26:47.965Z" },
 ]
 
 [[package]]
@@ -260,15 +260,15 @@ wheels = [
 
 [[package]]
 name = "ansys-api-additive"
-version = "5.0.3"
+version = "5.1.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1b/c5/8e793053b46c513117e9a7c40aeea002a4c3ca953f4886b4a9258a760faf/ansys_api_additive-5.0.3.tar.gz", hash = "sha256:cbc6a4bf27d5051ac993721572ce0edc7f9655c75149743f85224d105ef3ef16", size = 28327, upload-time = "2025-04-14T21:18:43.713Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4c/df/8fd476de44d8baadb66dccd5104f29fdfce1337796c6d5613d3ecfa88419/ansys_api_additive-5.1.6.tar.gz", hash = "sha256:dc8beb5d16f3c04526796ed22f80024a348c83b2fda0d3f5912b393d6107e458", size = 28555, upload-time = "2025-11-04T22:55:07.987Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/cf/7b/86880a0c521570112b98deabdf5d86e88bc5248bec724d296d962cc910ce/ansys_api_additive-5.0.3-py3-none-any.whl", hash = "sha256:ba7863f3041cdb256d25842d74cabaa750b776e99f4ed491f260635f0fe33dfd", size = 110745, upload-time = "2025-04-14T21:18:41.779Z" },
+    { url = "https://files.pythonhosted.org/packages/68/ee/11edf5c89e3035f81f598bc6877eb985bfa16dc23b4f1486e142c42a8b4f/ansys_api_additive-5.1.6-py3-none-any.whl", hash = "sha256:9479d592074c3fce2aad1191f7412cc4b30742438af4bd31c17edd9ff58c0710", size = 111754, upload-time = "2025-11-04T22:55:06.227Z" },
 ]
 
 [[package]]
@@ -1198,7 +1198,7 @@ wheels = [
 
 [[package]]
 name = "ansys-pyensight-core"
-version = "0.11.20"
+version = "0.11.21"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-pyensight" },
@@ -1214,9 +1214,9 @@ dependencies = [
     { name = "urllib3" },
     { name = "usd-core", marker = "python_full_version < '3.14' and platform_machine != 'aarch64'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f2/7d/6321762bd14a39620d3edaa724f15eac023cdc2728dfeacd1be050ebc45c/ansys_pyensight_core-0.11.20.tar.gz", hash = "sha256:28ebd0943229d63c479ca4f0d4a12fd6d03f4e5267fbbf6d90c450ff08584f31", size = 9031037, upload-time = "2026-09-03T09:54:40.098Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2b/1c/3b9c6cdfe0d2845cfdfe825aad759d12f41012a82247becc37fe7ddbcd00/ansys_pyensight_core-0.11.21.tar.gz", hash = "sha256:e29ef5fd61403bd575574037c860241e97d511561c8e11ebc818119c7f2ce88e", size = 9030968, upload-time = "2026-09-04T15:58:45.935Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/72/a3/a20a35fab514d691eb2caf8fd0713d37745b129accbbd5dc157f3d00aba7/ansys_pyensight_core-0.11.20-py3-none-any.whl", hash = "sha256:0e9fd4aeed9f8f6c3e520f4f2f0c9fee70243a496ffc1b4cf1549b8d0b2c640d", size = 9052578, upload-time = "2026-09-03T09:54:37.298Z" },
+    { url = "https://files.pythonhosted.org/packages/71/24/440e8df0830149ecf6ed4dca07231944a915519609daf7ab8b0eaaf3d618/ansys_pyensight_core-0.11.21-py3-none-any.whl", hash = "sha256:bbf2916fcb1560c888ff3dfbba847d78fb2e9b827137bf14089b5b13799923e6", size = 9052541, upload-time = "2026-09-04T15:58:43.269Z" },
 ]
 
 [[package]]
@@ -4918,7 +4918,7 @@ doc = [
 [package.metadata]
 requires-dist = [
     { name = "ansys-acp-core", specifier = "==0.3.2" },
-    { name = "ansys-additive-core", specifier = "==0.20.1" },
+    { name = "ansys-additive-core", specifier = "==0.21.0" },
     { name = "ansys-aedt-mcp", marker = "extra == 'all'", specifier = "==0.1.4" },
     { name = "ansys-aedt-mcp", marker = "extra == 'mcp'", specifier = "==0.1.4" },
     { name = "ansys-cfx-core", specifier = "==0.3.0" },
@@ -4958,7 +4958,7 @@ requires-dist = [
     { name = "ansys-motorcad-core", specifier = "==0.8.8" },
     { name = "ansys-optislang-core", specifier = "==1.6.0" },
     { name = "ansys-platform-instancemanagement", specifier = "==1.2.0" },
-    { name = "ansys-pyensight-core", specifier = "==0.11.20" },
+    { name = "ansys-pyensight-core", specifier = "==0.11.21" },
     { name = "ansys-result-explorer-core", specifier = "==0.1.1" },
     { name = "ansys-rocky-core", specifier = "==0.6.1" },
     { name = "ansys-sam-sysml2", specifier = "==0.3.3" },
