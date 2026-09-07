@@ -26,7 +26,7 @@ classifiers = [
 dependencies = [
     "grpcio>=1.71.2",  # This is the latest version used by the ansys-tools-protoc-helper
     "ansys-acp-core==0.3.2",
-    "ansys-additive-core==0.20.1",
+    "ansys-additive-core==0.21.0",
     "ansys-chemkin-core==0.2.0",
     "ansys-cfx-core==0.3.0",
     "ansys-conceptev-core==0.11.1",
@@ -51,7 +51,7 @@ dependencies = [
     "ansys-motorcad-core==0.8.8",
     "ansys-optislang-core==1.6.0",
     "ansys-platform-instancemanagement==1.2.0",
-    "ansys-pyensight-core==0.11.20",
+    "ansys-pyensight-core==0.11.21",
     "ansys-result-explorer-core==0.1.1",
     "ansys-rocky-core==0.6.1",
     "ansys-sam-sysml2==0.3.3",
