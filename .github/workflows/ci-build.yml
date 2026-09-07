@@ -85,7 +85,7 @@ jobs:
 
       - name: Install core PyAnsys packages
         run: |
-          uv pip install .
+          uv sync --frozen --no-dev
           uv pip check
 
       - name: Smoke test
@@ -129,7 +129,7 @@ jobs:
 
       - name: Install ${{ matrix.extras-version }} PyAnsys packages
         run: |
-          uv pip install .[${{ matrix.extras-version }}]
+          uv sync --frozen --no-dev --extra ${{ matrix.extras-version }}
           uv pip check
 
       - name: Smoke test
