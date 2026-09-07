@@ -4801,7 +4801,7 @@ wheels = [
 
 [[package]]
 name = "pyansys"
-version = "2025.1.dev0"
+version = "2027.1.0b2"
 source = { editable = "." }
 dependencies = [
     { name = "ansys-acp-core" },
