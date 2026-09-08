@@ -182,7 +182,7 @@ wheels = [
 
 [[package]]
 name = "ansys-acp-core"
-version = "0.3.2"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-acp" },
@@ -192,11 +192,10 @@ dependencies = [
     { name = "networkx" },
     { name = "numpy" },
     { name = "packaging" },
-    { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2b/0f/506e3b451b86fd2ebb0fe67f665a98783f89a049b286391fcb765a28c8da/ansys_acp_core-0.3.2.tar.gz", hash = "sha256:543ccc9a9227ac42dfb967de05957e600da0abb3bd6f371375773f3ee6fb8a09", size = 126490, upload-time = "2026-05-18T15:02:21.092Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/12/ff0561f9378ecd7ae8e16a687823463dd730608a7d371577b0dfcdfeb835/ansys_acp_core-0.4.0.tar.gz", hash = "sha256:ab21d667a3ae8c7857498793a49de326b1b114e88ac64a65774eb719aeecebb4", size = 7519, upload-time = "2026-09-08T11:42:18.822Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1c/7a/c8a6488c5b347fceba2fd485647ecabde07847b71486d4f67717009c0a30/ansys_acp_core-0.3.2-py3-none-any.whl", hash = "sha256:e633d9176d5b76fce9537b791a8bf8c088a13e80a0d442cba5ec189bd978b959", size = 267484, upload-time = "2026-05-18T15:02:19.432Z" },
+    { url = "https://files.pythonhosted.org/packages/d7/90/9d8c439bd0975f1e75f24322554fa019584db86edaae09623239fc9d32df/ansys_acp_core-0.4.0-py3-none-any.whl", hash = "sha256:9d6b9dbda561873b2415488f2bd30e5a2f25099cc9566c3aa641eb6255b6d1b2", size = 7295, upload-time = "2026-09-08T11:42:17.628Z" },
 ]
 
 [[package]]
@@ -247,15 +246,15 @@ wheels = [
 
 [[package]]
 name = "ansys-api-acp"
-version = "0.3.1"
+version = "0.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/25/c4/67dc7609d894686f77d0469c4ed496559d099356c6728068e2be22237681/ansys_api_acp-0.3.1.tar.gz", hash = "sha256:bcef570ac7de6f9817e5c179bb017a853f439e8f0695f884bc1a4e71cb0261f1", size = 164995, upload-time = "2025-08-07T13:47:08.993Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7b/c3/41d50b8b5f0eb173e83437eb369aa6ab98df92e331ed5c8e267ebc82cce7/ansys_api_acp-0.5.0.tar.gz", hash = "sha256:412ad1a97fcdaa4f4d7b508cfcd30d138e888c42c1c3a93a676c66f1f251bc21", size = 282188, upload-time = "2026-09-02T12:12:40.098Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f3/17/ed7d50215fa0968dfbc10b231d6f1704163b1481d0ae75401b5fd5c79b55/ansys_api_acp-0.3.1-py3-none-any.whl", hash = "sha256:6ecd0939c31d08df95723207c2fa748561ce5a873c41f2b7bde0b897803cdb65", size = 350951, upload-time = "2025-08-07T13:47:07.221Z" },
+    { url = "https://files.pythonhosted.org/packages/3f/10/e143c306b93b94d4aae79d8c830e69a7f5e54bc1a599a0d1d47b5537955b/ansys_api_acp-0.5.0-py3-none-any.whl", hash = "sha256:fad2eceee3f49957a512fd8772546fa5b14cce9125858cd11b38cc26cd502ebc", size = 520470, upload-time = "2026-09-02T12:12:38.735Z" },
 ]
 
 [[package]]
@@ -4917,7 +4916,7 @@ doc = [
 
 [package.metadata]
 requires-dist = [
-    { name = "ansys-acp-core", specifier = "==0.3.2" },
+    { name = "ansys-acp-core", specifier = "==0.4.0" },
     { name = "ansys-additive-core", specifier = "==0.21.0" },
     { name = "ansys-aedt-mcp", marker = "extra == 'all'", specifier = "==0.1.4" },
     { name = "ansys-aedt-mcp", marker = "extra == 'mcp'", specifier = "==0.1.4" },
