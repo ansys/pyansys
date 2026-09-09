@@ -182,7 +182,7 @@ wheels = [
 
 [[package]]
 name = "ansys-acp-core"
-version = "0.3.2"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-acp" },
@@ -192,11 +192,10 @@ dependencies = [
     { name = "networkx" },
     { name = "numpy" },
     { name = "packaging" },
-    { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2b/0f/506e3b451b86fd2ebb0fe67f665a98783f89a049b286391fcb765a28c8da/ansys_acp_core-0.3.2.tar.gz", hash = "sha256:543ccc9a9227ac42dfb967de05957e600da0abb3bd6f371375773f3ee6fb8a09", size = 126490, upload-time = "2026-05-18T15:02:21.092Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/12/ff0561f9378ecd7ae8e16a687823463dd730608a7d371577b0dfcdfeb835/ansys_acp_core-0.4.0.tar.gz", hash = "sha256:ab21d667a3ae8c7857498793a49de326b1b114e88ac64a65774eb719aeecebb4", size = 7519, upload-time = "2026-09-08T11:42:18.822Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1c/7a/c8a6488c5b347fceba2fd485647ecabde07847b71486d4f67717009c0a30/ansys_acp_core-0.3.2-py3-none-any.whl", hash = "sha256:e633d9176d5b76fce9537b791a8bf8c088a13e80a0d442cba5ec189bd978b959", size = 267484, upload-time = "2026-05-18T15:02:19.432Z" },
+    { url = "https://files.pythonhosted.org/packages/d7/90/9d8c439bd0975f1e75f24322554fa019584db86edaae09623239fc9d32df/ansys_acp_core-0.4.0-py3-none-any.whl", hash = "sha256:9d6b9dbda561873b2415488f2bd30e5a2f25099cc9566c3aa641eb6255b6d1b2", size = 7295, upload-time = "2026-09-08T11:42:17.628Z" },
 ]
 
 [[package]]
@@ -247,15 +246,15 @@ wheels = [
 
 [[package]]
 name = "ansys-api-acp"
-version = "0.3.1"
+version = "0.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/25/c4/67dc7609d894686f77d0469c4ed496559d099356c6728068e2be22237681/ansys_api_acp-0.3.1.tar.gz", hash = "sha256:bcef570ac7de6f9817e5c179bb017a853f439e8f0695f884bc1a4e71cb0261f1", size = 164995, upload-time = "2025-08-07T13:47:08.993Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7b/c3/41d50b8b5f0eb173e83437eb369aa6ab98df92e331ed5c8e267ebc82cce7/ansys_api_acp-0.5.0.tar.gz", hash = "sha256:412ad1a97fcdaa4f4d7b508cfcd30d138e888c42c1c3a93a676c66f1f251bc21", size = 282188, upload-time = "2026-09-02T12:12:40.098Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f3/17/ed7d50215fa0968dfbc10b231d6f1704163b1481d0ae75401b5fd5c79b55/ansys_api_acp-0.3.1-py3-none-any.whl", hash = "sha256:6ecd0939c31d08df95723207c2fa748561ce5a873c41f2b7bde0b897803cdb65", size = 350951, upload-time = "2025-08-07T13:47:07.221Z" },
+    { url = "https://files.pythonhosted.org/packages/3f/10/e143c306b93b94d4aae79d8c830e69a7f5e54bc1a599a0d1d47b5537955b/ansys_api_acp-0.5.0-py3-none-any.whl", hash = "sha256:fad2eceee3f49957a512fd8772546fa5b14cce9125858cd11b38cc26cd502ebc", size = 520470, upload-time = "2026-09-02T12:12:38.735Z" },
 ]
 
 [[package]]
@@ -299,16 +298,16 @@ wheels = [
 
 [[package]]
 name = "ansys-api-discovery"
-version = "1.2.12"
+version = "1.2.13"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-geometry" },
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a2/b4/a394e687179078fc1f60c73949ac592a2ca66c58de1e371dd93524816496/ansys_api_discovery-1.2.12.tar.gz", hash = "sha256:6bb861971eb1b6c8b8a624a1bdc5eef3932197a68d94af439bfda3bf29dbb2f7", size = 88663, upload-time = "2026-08-10T11:04:44.607Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/84/a9/2800b37cf9af1b730c81668cf05180301aa2bd04d41043985a34384a95cb/ansys_api_discovery-1.2.13.tar.gz", hash = "sha256:78f48c166b598f9dc36c6780dbe78074869198db99a223bbfbe70d0d518fb7d4", size = 88782, upload-time = "2026-08-21T10:59:13.806Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d7/2a/53bfe0f1db313155b0ce15098829001a2277316af520083a07239bb9f848/ansys_api_discovery-1.2.12-py3-none-any.whl", hash = "sha256:10e9fc372b373305e26741fe85e572e058509f383b4278616dcc7670d3fd4e7b", size = 1215508, upload-time = "2026-08-10T11:04:43.234Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/a4/c5d995289ef8c369ce88f5693be4854c15c770e172f45b07e33685c97d50/ansys_api_discovery-1.2.13-py3-none-any.whl", hash = "sha256:f9f9875ef1caaee6a6be95a08c3dc6d8f4d868b470239c209626e767eb84cda8", size = 1216085, upload-time = "2026-08-21T10:59:12.522Z" },
 ]
 
 [[package]]
@@ -456,15 +455,15 @@ wheels = [
 
 [[package]]
 name = "ansys-api-sherlock"
-version = "0.1.56"
+version = "2.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5b/e4/7feafc3e98675e09cefc44555cda48213f0e7752c518e85597ee64180e5d/ansys_api_sherlock-0.1.56.tar.gz", hash = "sha256:0f973305a602d37fe7f8b8eef378eff8c67151bfc61a810b7cc3ff678a41a674", size = 36619, upload-time = "2026-03-16T15:10:28.607Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/40/7b/5286e1918211cde5a9c77ef7ac05e8b381c6ec2fc12340558893a85681cd/ansys_api_sherlock-2.3.0.tar.gz", hash = "sha256:91ee6d14d4a50182cf25049f3557f609157e1895dc3b761553d7bacff15d28bf", size = 38044, upload-time = "2026-08-13T19:03:16.043Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/17/76/dea3e1872af079acbbccb9859ac44c8c3e49dfd7bfe6c302a88796f47b02/ansys_api_sherlock-0.1.56-py3-none-any.whl", hash = "sha256:df8bdd3392a98135cb6469cfa7eac720257e5238fff13c6f42394c11f6968606", size = 175555, upload-time = "2026-03-16T15:10:27.021Z" },
+    { url = "https://files.pythonhosted.org/packages/6d/e7/5461acbe9300bbad574f922c56c8d9de8c500c76e62fc43e0db612287a6d/ansys_api_sherlock-2.3.0-py3-none-any.whl", hash = "sha256:337efba7b9e2579bf51a855e61c43babd727c91a09017479ab98b98f835cccd2", size = 181237, upload-time = "2026-08-13T19:03:14.745Z" },
 ]
 
 [[package]]
@@ -765,7 +764,7 @@ wheels = [
 
 [[package]]
 name = "ansys-geometry-core"
-version = "0.17.1"
+version = "0.17.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-discovery" },
@@ -784,9 +783,9 @@ dependencies = [
     { name = "semver" },
     { name = "six" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4f/bf/844156efb72430d6895c4c794c94e63f62ab79de2cbf791a2b8aa678fc78/ansys_geometry_core-0.17.1.tar.gz", hash = "sha256:6435685750006ef811af4b252618fe20ab081ecb01316da11165ec4d6d185fec", size = 23150216, upload-time = "2026-08-21T13:52:37.411Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/25/ba/b6ede208f5db314aa41c6e3475a03a21bf8ca240c615869ca17773ad8877/ansys_geometry_core-0.17.2.tar.gz", hash = "sha256:234dd4cba4e9e9ed5e92b357fec641626ec7c81f17ff779fbed591b9af137a55", size = 23304040, upload-time = "2026-09-09T09:40:32.075Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/6d/9f0f9bfd7be1f228b358af83b192024ef8accb5f9d4c4550807becf578e4/ansys_geometry_core-0.17.1-py3-none-any.whl", hash = "sha256:b2e989ad0d6979a34208d1381dc8c9dab5c9595d32536fa6c7a43dd5e95f6015", size = 588626, upload-time = "2026-08-21T13:52:35.176Z" },
+    { url = "https://files.pythonhosted.org/packages/8f/d8/7afc1f9be4f4352deea959dadc127762ff41141b2430751615e8e2c80b59/ansys_geometry_core-0.17.2-py3-none-any.whl", hash = "sha256:08d265462bd6a42ce71e37ef4f17df688e027addc5de7535537d95c6f70a8145", size = 596128, upload-time = "2026-09-09T09:40:29.621Z" },
 ]
 
 [[package]]
@@ -1282,7 +1281,7 @@ wheels = [
 
 [[package]]
 name = "ansys-sherlock-core"
-version = "1.0.2"
+version = "2.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-sherlock" },
@@ -1290,9 +1289,9 @@ dependencies = [
     { name = "protobuf" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/91/80/a0abb391929544d6dbaa88b0d6deea48e85906b2964853042bfd4faca522/ansys_sherlock_core-1.0.2.tar.gz", hash = "sha256:ad111a3043bf6399d5768a89eea96d0d822d847236d14403de02be9745720c43", size = 98812, upload-time = "2026-03-16T17:52:27.031Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/9a/6b03ef439079fe2d1fc234c2cfbd799338ef6c12d0babda28f2cb68af048/ansys_sherlock_core-2.0.1.tar.gz", hash = "sha256:c83279b3f81161ae1ddb52fe50abe320f9a19338e8b591222ec8acfa023afc62", size = 102098, upload-time = "2026-09-08T20:09:46.434Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c3/5a/4b337cfb812914fdb681c143725fcbb2e96c35cb978c58b837e780e26c1d/ansys_sherlock_core-1.0.2-py3-none-any.whl", hash = "sha256:6302c90adad5fb11623e8e5539741f11706d4dc7e4a4f75ef057c4d41a2ed08d", size = 116531, upload-time = "2026-03-16T17:52:25.639Z" },
+    { url = "https://files.pythonhosted.org/packages/5e/60/e62a0208f89a7a9e36418c6193d1ab80beddf9c596473ed903f4397572e3/ansys_sherlock_core-2.0.1-py3-none-any.whl", hash = "sha256:e124e69b6e8df1560e3fabf9f5a7b0fdfd51e6427ebfb15148ad9be56709a4f9", size = 119923, upload-time = "2026-09-08T20:09:45.12Z" },
 ]
 
 [[package]]
@@ -4917,7 +4916,7 @@ doc = [
 
 [package.metadata]
 requires-dist = [
-    { name = "ansys-acp-core", specifier = "==0.3.2" },
+    { name = "ansys-acp-core", specifier = "==0.4.0" },
     { name = "ansys-additive-core", specifier = "==0.21.0" },
     { name = "ansys-aedt-mcp", marker = "extra == 'all'", specifier = "==0.1.4" },
     { name = "ansys-aedt-mcp", marker = "extra == 'mcp'", specifier = "==0.1.4" },
@@ -4936,7 +4935,7 @@ requires-dist = [
     { name = "ansys-fluent-mcp", marker = "extra == 'mcp'", specifier = "==0.4.0" },
     { name = "ansys-fluent-visualization", marker = "extra == 'all'", specifier = "==0.28.0" },
     { name = "ansys-fluent-visualization", marker = "extra == 'fluent-all'", specifier = "==0.28.0" },
-    { name = "ansys-geometry-core", specifier = "==0.17.1" },
+    { name = "ansys-geometry-core", specifier = "==0.17.2" },
     { name = "ansys-hps-client", specifier = "==0.13.0" },
     { name = "ansys-hps-data-transfer-client", specifier = "==0.5.0" },
     { name = "ansys-lumerical-core", specifier = "==0.4.0" },
@@ -4962,7 +4961,7 @@ requires-dist = [
     { name = "ansys-result-explorer-core", specifier = "==0.1.1" },
     { name = "ansys-rocky-core", specifier = "==0.6.1" },
     { name = "ansys-sam-sysml2", specifier = "==0.3.3" },
-    { name = "ansys-sherlock-core", specifier = "==1.0.2" },
+    { name = "ansys-sherlock-core", specifier = "==2.0.1" },
     { name = "ansys-simai-core", specifier = "==0.4.6" },
     { name = "ansys-sound-core", specifier = "==0.3.0" },
     { name = "ansys-speos-core", specifier = "==0.9.1" },
