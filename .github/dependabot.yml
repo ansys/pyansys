@@ -9,8 +9,8 @@ updates:
     commit-message:
       prefix: "build(uv)"
     cooldown:
-      # Specifically set to 1 for PyAnsys ecosystem related packages
-      default-days: 1
+      # Specifically set to 0 for PyAnsys ecosystem related packages
+      default-days: 0
       include:
        - "ansys-*"
        - "pyansys-*"
