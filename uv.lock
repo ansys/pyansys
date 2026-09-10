@@ -4779,7 +4779,7 @@ memory = [
 
 [[package]]
 name = "pyaedt"
-version = "1.5.0"
+version = "1.5.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-tools-common" },
@@ -4793,9 +4793,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "tomli-w" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7d/b5/257882466c548ebc6363e3aa799bf37396922a04c12c13f4632e9d758606/pyaedt-1.5.0.tar.gz", hash = "sha256:a2296aeb331a9585451d08b09d091fb7d87b6923bb744e7588dd3d3bfd2198f3", size = 27653875, upload-time = "2026-09-02T17:16:18.475Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/bb/cad703d6c02efe5cbf6641c58d7f719fe1cd8bdea45f9cf50e25deaa83d1/pyaedt-1.5.1.tar.gz", hash = "sha256:a729fbf36617050b8df1a9eb99a2bd783b97140c12d638bd3773c2f3d1433b2e", size = 27654569, upload-time = "2026-09-10T09:30:21.015Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/77/cd/7aad8293a439577b7b36d044f8d785d88af2765d85f003202100f1078ad1/pyaedt-1.5.0-py3-none-any.whl", hash = "sha256:a56af0bb413f48df725af0c3fbdd2c88e42791b15e3e9e1fee1b525910598bd1", size = 7658124, upload-time = "2026-09-02T17:16:16.186Z" },
+    { url = "https://files.pythonhosted.org/packages/4a/0a/65ea56a6199ddf4f2bea6cf78760471c0cf905ee1ff31de2168554a3f144/pyaedt-1.5.1-py3-none-any.whl", hash = "sha256:ee5c3e5d8539b9195fc0de8389e147ac50987704f62fee7ac41602b0d0d297e6", size = 7659259, upload-time = "2026-09-10T09:30:17.968Z" },
 ]
 
 [[package]]
@@ -4980,7 +4980,7 @@ requires-dist = [
     { name = "ansys-units", marker = "extra == 'tools'", specifier = "==0.12.1" },
     { name = "ansys-workbench-core", specifier = "==0.14.0" },
     { name = "grpcio", specifier = ">=1.71.2" },
-    { name = "pyaedt", specifier = "==1.5.0" },
+    { name = "pyaedt", specifier = "==1.5.1" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'all'", specifier = "==0.1.4" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'tools'", specifier = "==0.1.4" },
     { name = "pyedb", specifier = "==0.83.0" },
