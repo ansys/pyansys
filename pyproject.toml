@@ -25,7 +25,7 @@ classifiers = [
 
 dependencies = [
     "grpcio>=1.71.2",  # This is the latest version used by the ansys-tools-protoc-helper
-    "ansys-acp-core==0.4.0",
+    "ansys-acp-core==0.4.1",
     "ansys-additive-core==0.21.0",
     "ansys-chemkin-core==0.2.0",
     "ansys-cfx-core==0.3.0",
@@ -86,7 +86,7 @@ mcp = [
     "ansys-lumerical-mcp==0.1.0",
     "ansys-fluent-mcp==0.4.0",
     "ansys-mechanical-mcp==0.2.0",
-    "ansys-aedt-mcp==0.1.4",
+    "ansys-aedt-mcp==0.2.1",
     "ansys-cfx-mcp==0.2.0",
 ]
 all = [
@@ -107,7 +107,7 @@ all = [
     "ansys-lumerical-mcp==0.1.0",
     "ansys-fluent-mcp==0.4.0",
     "ansys-mechanical-mcp==0.2.0",
-    "ansys-aedt-mcp==0.1.4",
+    "ansys-aedt-mcp==0.2.1",
     "ansys-cfx-mcp==0.2.0",
 ]
 
