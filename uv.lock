@@ -182,7 +182,7 @@ wheels = [
 
 [[package]]
 name = "ansys-acp-core"
-version = "0.4.0"
+version = "0.4.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-acp" },
@@ -193,9 +193,9 @@ dependencies = [
     { name = "numpy" },
     { name = "packaging" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8c/12/ff0561f9378ecd7ae8e16a687823463dd730608a7d371577b0dfcdfeb835/ansys_acp_core-0.4.0.tar.gz", hash = "sha256:ab21d667a3ae8c7857498793a49de326b1b114e88ac64a65774eb719aeecebb4", size = 7519, upload-time = "2026-09-08T11:42:18.822Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5d/dc/1bb751d0469da0b1a8d5743c05c4d1ceeaa0a3e87ae01e05e64f5473bd0a/ansys_acp_core-0.4.1.tar.gz", hash = "sha256:8bbc783f7fab359b3f39e1ea2e262db6ef052183289bf4122fb442674b05512d", size = 129999, upload-time = "2026-09-10T15:42:39.714Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d7/90/9d8c439bd0975f1e75f24322554fa019584db86edaae09623239fc9d32df/ansys_acp_core-0.4.0-py3-none-any.whl", hash = "sha256:9d6b9dbda561873b2415488f2bd30e5a2f25099cc9566c3aa641eb6255b6d1b2", size = 7295, upload-time = "2026-09-08T11:42:17.628Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/7d/b05ce764a28dd706cc8374cb9df4810fb58b9c95e1a5a5909bc6cf19e4c5/ansys_acp_core-0.4.1-py3-none-any.whl", hash = "sha256:bb3fa9d92f3a7fc1ae8fca3e2882307c69371e32ce71ac8e3f0e185758c4ba24", size = 278089, upload-time = "2026-09-10T15:42:38.263Z" },
 ]
 
 [[package]]
@@ -228,7 +228,7 @@ wheels = [
 
 [[package]]
 name = "ansys-aedt-mcp"
-version = "0.1.4"
+version = "0.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-common-mcp" },
@@ -237,11 +237,12 @@ dependencies = [
     { name = "pillow" },
     { name = "pyaedt" },
     { name = "pyvista", extra = ["io"] },
+    { name = "typer" },
     { name = "vtk" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/56/34/41a6621f4e758911f29c0877ad7f40d433217a17bc3445c98ba941a420c4/ansys_aedt_mcp-0.1.4.tar.gz", hash = "sha256:0ee7c9b199d5a0350411fd8fc50b4572e54c204855705c8042218726e4cc18cf", size = 46854, upload-time = "2026-08-20T08:46:43.008Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0e/d2/7e53b33c2558ebeacb89db144dc027a8697d6af722d43d92694d9b171b62/ansys_aedt_mcp-0.2.1.tar.gz", hash = "sha256:71b90fe944ebe784898dd5c4520e47a1539b7b039facd75892bd5adf81e119be", size = 48472, upload-time = "2026-09-10T14:26:14.386Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5b/b4/ad805733ae6a71cf315d700676dc90c9d319631b46bcf4ace888a63dbc49/ansys_aedt_mcp-0.1.4-py3-none-any.whl", hash = "sha256:8110ef82054a33b040c4903f6e40ddaee1a78c94afc6572675b48b014943cd40", size = 50865, upload-time = "2026-08-20T08:46:41.896Z" },
+    { url = "https://files.pythonhosted.org/packages/3d/f7/1e6e70d59f3a4beaa3a3068236e451a1709decf148110fea4b9097d90706/ansys_aedt_mcp-0.2.1-py3-none-any.whl", hash = "sha256:3f3d3a020ebeccbe376f84c9166f9e6c806983029fbd8ff6e503fdc8d332e914", size = 52154, upload-time = "2026-09-10T14:26:12.28Z" },
 ]
 
 [[package]]
@@ -4916,10 +4917,10 @@ doc = [
 
 [package.metadata]
 requires-dist = [
-    { name = "ansys-acp-core", specifier = "==0.4.0" },
+    { name = "ansys-acp-core", specifier = "==0.4.1" },
     { name = "ansys-additive-core", specifier = "==0.21.0" },
-    { name = "ansys-aedt-mcp", marker = "extra == 'all'", specifier = "==0.1.4" },
-    { name = "ansys-aedt-mcp", marker = "extra == 'mcp'", specifier = "==0.1.4" },
+    { name = "ansys-aedt-mcp", marker = "extra == 'all'", specifier = "==0.2.1" },
+    { name = "ansys-aedt-mcp", marker = "extra == 'mcp'", specifier = "==0.2.1" },
     { name = "ansys-cfx-core", specifier = "==0.3.0" },
     { name = "ansys-cfx-mcp", marker = "extra == 'all'", specifier = "==0.2.0" },
     { name = "ansys-cfx-mcp", marker = "extra == 'mcp'", specifier = "==0.2.0" },
@@ -6580,7 +6581,7 @@ wheels = [
 
 [[package]]
 name = "typer"
-version = "0.27.2"
+version = "0.27.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "annotated-doc" },
@@ -6588,9 +6589,9 @@ dependencies = [
     { name = "rich" },
     { name = "shellingham" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/16/f7/57713ba479fd405eb76de31404b2c744c289e336b2d999511ebf51e496f7/typer-0.27.2.tar.gz", hash = "sha256:269b7eb9d3c202ca84b4bc9618cb04ebb43d3d4d1e567e4c768607232c05f945", size = 204045, upload-time = "2026-08-28T10:26:55.046Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ae/40/4a3db7990d1f62a53182aa96eaef57aeb2886a27f90a195bc66713565d31/typer-0.27.1.tar.gz", hash = "sha256:a79bef8469a79c45498e7b814ecf8d603cc7644e9acbd9e19cac0334240b18df", size = 203994, upload-time = "2026-08-03T14:41:03.438Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/dc/bf/205d0004930ede8f542fb58f601526fccf4ae7626075ca1e6c4de5d3d652/typer-0.27.2-py3-none-any.whl", hash = "sha256:b3a5fc4342d5fc8fda8fc3010b1cf117e9249aab7fae800c2eff62fd3842d97d", size = 123130, upload-time = "2026-08-28T10:26:53.752Z" },
+    { url = "https://files.pythonhosted.org/packages/43/89/9518bc0c3929bee36b3a4a8e3daddd6e03f92f9961c66d4983b837160543/typer-0.27.1-py3-none-any.whl", hash = "sha256:53150287edd11baeb4e4722c8e394fcdf8181c0ae89485cba8d25c778d5edd56", size = 122874, upload-time = "2026-08-03T14:41:04.391Z" },
 ]
 
 [[package]]
