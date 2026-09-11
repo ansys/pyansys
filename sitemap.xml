@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- managed-by: ansys/actions/_doc-gen-sitemap -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://docs.pyansys.com/</loc>
+    <lastmod>2026-09-11T11:38:24+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/other-contribs.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/projects.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/blog.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/index.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/getting-started.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/blog/2025-09-30-newsletter.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/getting-started/about.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/getting-started/install.html</loc>
+  </url>
+  <url>
+    <loc>https://docs.pyansys.com/version/stable/getting-started/prerequisites.html</loc>
+  </url>
+</urlset>
