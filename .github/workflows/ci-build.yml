@@ -55,6 +55,35 @@ jobs:
           target: "all"
           whitelist-license-check: ${{ env.LICENSE_WHITELISTING }}
 
+  verify-lockfile-pip:
+    name: Verify uv.lock is pip-resolvable
+    runs-on: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 #v7.0.1
+
+      - name: Install the latest version of uv and set the python version
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d #v10.0.1
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          cache-dependency-glob: '**/pyproject.toml'
+
+      # uv can be more lenient than pip when resolving version constraints, so
+      # dump the lockfile to a requirements file and let pip's own resolver
+      # double-check that every pinned version still satisfies its constraints.
+      - name: Export uv.lock to a pip-compatible requirements file
+        run: uv export --frozen --no-hashes --all-extras --output-file requirements-lock.txt
+
+      - name: Verify lockfile with pip's resolver
+        run: |
+          python -m venv .venv-pip-check
+          if [ "$(uname)" = "Darwin" ] || [ "$(uname)" = "Linux" ]; then
+            .venv-pip-check/bin/python -m pip install --upgrade pip
+            .venv-pip-check/bin/python -m pip install --dry-run -r requirements-lock.txt
+          else
+            .venv-pip-check\Scripts\python -m pip install --upgrade pip
+            .venv-pip-check\Scripts\python -m pip install --dry-run -r requirements-lock.txt
+          fi
+
   docs-style:
     name: Documentation Style Check
     runs-on: ubuntu-latest
