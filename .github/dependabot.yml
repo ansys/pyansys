@@ -18,6 +18,8 @@ updates:
        - "pyedb"
        - "pygranta"
        - "pytwin"
+    allow:
+      - dependency-type: "all"   # Include both direct and transitive dependencies
     # The "pip" ecosystem entry below catches upgrades uv silently skips due to
     # unresolvable conflicts, and a workflow relocks/verifies those PRs. So it's
     # safe to group here for fewer PRs.
