@@ -82,11 +82,12 @@ jobs:
         run: uv venv --seed --python ${{ matrix.python-version }} .venv-pip-check
 
       - name: Verify lockfile with pip's resolver
+        shell: bash
         run: |
           if [ "$(uname)" = "Darwin" ] || [ "$(uname)" = "Linux" ]; then
             .venv-pip-check/bin/python -m pip install --dry-run -r requirements-lock.txt
           else
-            .venv-pip-check\Scripts\python -m pip install --dry-run -r requirements-lock.txt
+            .venv-pip-check/Scripts/python -m pip install --dry-run -r requirements-lock.txt
           fi
 
   docs-style:
