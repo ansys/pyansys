@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mapdl-mcp.docs.pyansys.com/</loc>
-    <lastmod>2026-09-17T22:34:53+00:00</lastmod>
+    <lastmod>2026-09-18T18:48:55+00:00</lastmod>
   </url>
   <url>
     <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/user_guide/overview.html</loc>
@@ -57,12 +57,39 @@
     <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/index.html</loc>
   </url>
   <url>
-    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/context_objects.html</loc>
-  </url>
-  <url>
-    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/tools.html</loc>
-  </url>
-  <url>
     <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/tools/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/contexts/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/__main__/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/prompts/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/helpers/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/server/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/server/PyMAPDLMCP.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/server/SessionContext.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/server/PyMAPDLAppContext.html</loc>
+  </url>
+  <url>
+    <loc>https://mapdl-mcp.docs.pyansys.com/version/stable/api/ansys/mapdl/mcp/python_helper/startup_code/index.html</loc>
   </url>
 </urlset>
