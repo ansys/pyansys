@@ -1115,7 +1115,7 @@ wheels = [
 
 [[package]]
 name = "ansys-mechanical-core"
-version = "0.13.2"
+version = "0.13.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-mechanical" },
@@ -1131,9 +1131,9 @@ dependencies = [
     { name = "requests" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/57/9d/eac2c8c39ea4be357e1843f57e43ae01a3da69bff6974977f85f46d6c047/ansys_mechanical_core-0.13.2.tar.gz", hash = "sha256:950ebe32fef3fca5570ffa262a7ab19d33939025997312facd975838dd851fa1", size = 105667, upload-time = "2026-08-05T18:02:04.261Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cf/77/c08458879bdb10ae880dff22080e0d44aeec1d20b2d7b01d79dcd9837edd/ansys_mechanical_core-0.13.3.tar.gz", hash = "sha256:58d520f92e6f73f46a4b8b2e237c0882fa949b529198deb4326e4948e18f2d40", size = 105980, upload-time = "2026-09-17T17:38:32.445Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d9/61/9243dd0585e0122906e145ea9d1cd442d3029f0678a0600d932ec6c3f276/ansys_mechanical_core-0.13.2-py3-none-any.whl", hash = "sha256:a2a9372fb5a4af0aa521277b764ae817beed7561ef71329ce3ec8a8ec246cc95", size = 162351, upload-time = "2026-08-05T18:02:02.48Z" },
+    { url = "https://files.pythonhosted.org/packages/bd/18/c4d274acf358c8397682ce38eafa70ec6bc27a5c4cd4a3dfe8543bb539d0/ansys_mechanical_core-0.13.3-py3-none-any.whl", hash = "sha256:6b047be6e62c81536899382826e7218578f44555f01b121787798dd9efc73d46", size = 162657, upload-time = "2026-09-17T17:38:30.976Z" },
 ]
 
 [[package]]
@@ -1153,11 +1153,11 @@ wheels = [
 
 [[package]]
 name = "ansys-mechanical-stubs"
-version = "0.1.13"
+version = "0.1.15"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/76/24/378010e0a5349ee87c7d438c3763f9c1b29f3ab807295651d552a328468b/ansys_mechanical_stubs-0.1.13.tar.gz", hash = "sha256:9e68c3f4a802f233e1549038a652278667f182d7f0214a61fa8531bbd567b685", size = 5318988, upload-time = "2026-07-22T17:30:51.448Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/13/ee/41714ec9a853c33fa9c7fa0b546d391623834674d8b6a7ec3d1afa99dced/ansys_mechanical_stubs-0.1.15.tar.gz", hash = "sha256:e622efe52ca45b7129a1b6748eefcb45ea983e6eea0d1dc3d493fa47a0193b0c", size = 5386212, upload-time = "2026-08-18T20:48:35.658Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/68/bde5266e68259fdfed93cd44e023099726589ca7183e0c87cf5e3c783c33/ansys_mechanical_stubs-0.1.13-py3-none-any.whl", hash = "sha256:7d23caca26b70982073a32206d6cba8df620c3238e0d6187ecddec5c48702e62", size = 5715736, upload-time = "2026-07-22T17:30:49.577Z" },
+    { url = "https://files.pythonhosted.org/packages/67/9d/70554ef92fb1deaeddb06fa9b36de714d1b89d4b6b313622381e970e10bc/ansys_mechanical_stubs-0.1.15-py3-none-any.whl", hash = "sha256:b27bda364f51b8114c461a6242c79f87bdba724494f8fd1f8ed3d6a21a0a9d2b", size = 5771218, upload-time = "2026-08-18T20:48:33.555Z" },
 ]
 
 [[package]]
@@ -5510,7 +5510,7 @@ requires-dist = [
     { name = "ansys-materials-manager", marker = "extra == 'all'", specifier = "==0.4.0" },
     { name = "ansys-materials-manager", marker = "extra == 'tools'", specifier = "==0.4.0" },
     { name = "ansys-math-core", specifier = "==0.2.5" },
-    { name = "ansys-mechanical-core", specifier = "==0.13.2" },
+    { name = "ansys-mechanical-core", specifier = "==0.13.3" },
     { name = "ansys-mechanical-mcp", marker = "extra == 'all'", specifier = "==0.2.1" },
     { name = "ansys-mechanical-mcp", marker = "extra == 'mcp'", specifier = "==0.2.1" },
     { name = "ansys-meshing-prime", specifier = "==0.10.4" },
