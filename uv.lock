@@ -1043,15 +1043,15 @@ wheels = [
 
 [[package]]
 name = "ansys-mapdl-mcp"
-version = "0.2.1"
+version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-common-mcp" },
     { name = "ansys-mapdl-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e5/aa/b316f66aaabdd46946af493c9e8f6994588e048a5be01f4019bf95365c3c/ansys_mapdl_mcp-0.2.1.tar.gz", hash = "sha256:929a9f7bc8dd46b82646edb415100fc163df608fc0a08c69cd4658eed023a8cf", size = 32561, upload-time = "2026-06-10T09:34:58.457Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1f/4e/9c0568eeb27da8b6af0c17104c254d8a860886f5f00936b73c604c05eaf0/ansys_mapdl_mcp-0.3.0.tar.gz", hash = "sha256:f8ca649d62e8767fc26005a4496a0b9204273d065d90258d1ae535ebb26d2994", size = 38824, upload-time = "2026-09-18T18:41:07.41Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/31/63/e0094a1544218283ff78b354d8079fde156f9892c2d595a1cda4c4aafb2d/ansys_mapdl_mcp-0.2.1-py3-none-any.whl", hash = "sha256:55f05ad91c6a448acbccdf4cb496b9ad3a0df13d02dfb740b0f4ab4af39c3d58", size = 36588, upload-time = "2026-06-10T09:34:57.338Z" },
+    { url = "https://files.pythonhosted.org/packages/09/39/31a4be641a7013f2a12d0e86c6cc755626c423e61b9d5503aa1f39bf86c3/ansys_mapdl_mcp-0.3.0-py3-none-any.whl", hash = "sha256:b7933716c7bfb62cea53a5a2fb43e92a0a5e519f4c2d6e38456f0535ce08ca39", size = 42936, upload-time = "2026-09-18T18:41:06.15Z" },
 ]
 
 [[package]]
@@ -5503,8 +5503,8 @@ requires-dist = [
     { name = "ansys-lumerical-mcp", marker = "extra == 'all'", specifier = "==0.1.0" },
     { name = "ansys-lumerical-mcp", marker = "extra == 'mcp'", specifier = "==0.1.0" },
     { name = "ansys-mapdl-core", specifier = "==0.74.1" },
-    { name = "ansys-mapdl-mcp", marker = "extra == 'all'", specifier = "==0.2.1" },
-    { name = "ansys-mapdl-mcp", marker = "extra == 'mcp'", specifier = "==0.2.1" },
+    { name = "ansys-mapdl-mcp", marker = "extra == 'all'", specifier = "==0.3.0" },
+    { name = "ansys-mapdl-mcp", marker = "extra == 'mcp'", specifier = "==0.3.0" },
     { name = "ansys-mapdl-reader", marker = "extra == 'all'", specifier = "==0.56.0" },
     { name = "ansys-mapdl-reader", marker = "extra == 'mapdl-all'", specifier = "==0.56.0" },
     { name = "ansys-materials-manager", marker = "extra == 'all'", specifier = "==0.4.0" },
