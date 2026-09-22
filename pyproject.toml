@@ -80,7 +80,7 @@ tools = [
     "pyansys-tools-variableinterop==0.1.4",
 ]
 mcp = [
-    "ansys-mapdl-mcp==0.2.1",
+    "ansys-mapdl-mcp==0.3.0",
     "ansys-lumerical-mcp==0.1.0",
     "ansys-fluent-mcp==0.4.0",
     "ansys-mechanical-mcp==0.2.1",
@@ -101,7 +101,7 @@ all = [
     "ansys-units==0.12.1",
     "pyansys-tools-variableinterop==0.1.4",
     # MCP
-    "ansys-mapdl-mcp==0.2.1",
+    "ansys-mapdl-mcp==0.3.0",
     "ansys-lumerical-mcp==0.1.0",
     "ansys-fluent-mcp==0.4.0",
     "ansys-mechanical-mcp==0.2.1",
