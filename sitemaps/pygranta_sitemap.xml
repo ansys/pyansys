@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- managed-by: ansys/actions/_doc-gen-sitemap -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://grantami.docs.pyansys.com/</loc>
+    <lastmod>2026-09-18T15:49:44+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://grantami.docs.pyansys.com/version/stable/development_and_release_processes.html</loc>
+  </url>
+  <url>
+    <loc>https://grantami.docs.pyansys.com/version/stable/api.html</loc>
+  </url>
+  <url>
+    <loc>https://grantami.docs.pyansys.com/version/stable/examples.html</loc>
+  </url>
+  <url>
+    <loc>https://grantami.docs.pyansys.com/version/stable/getting_started.html</loc>
+  </url>
+  <url>
+    <loc>https://grantami.docs.pyansys.com/version/stable/index.html</loc>
+  </url>
+  <url>
+    <loc>https://grantami.docs.pyansys.com/version/stable/package_versions.html</loc>
+  </url>
+  <url>
+    <loc>https://grantami.docs.pyansys.com/version/stable/user_guide.html</loc>
+  </url>
+</urlset>
