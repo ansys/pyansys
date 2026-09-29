@@ -5337,7 +5337,7 @@ memory = [
 
 [[package]]
 name = "pyaedt"
-version = "1.6.0"
+version = "1.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-tools-common" },
@@ -5351,10 +5351,11 @@ dependencies = [
     { name = "pyedb" },
     { name = "pyyaml" },
     { name = "tomli-w" },
+    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/31/e6/e9914bb3927677de8367badbff34f87b7ceb26a774645ed6125c790ee1ee/pyaedt-1.6.0.tar.gz", hash = "sha256:8e7f2101735104f168fb8ca8d0357f68bbebd262c7f72333ae6cb06a07f49358", size = 27654192, upload-time = "2026-09-15T11:58:47.362Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fd/ee/600ae0a1a7c1a1b39e12d1f77dc5b3c0efc619bd0fe40ddcef3e2890c2f9/pyaedt-1.7.0.tar.gz", hash = "sha256:97cfa148aa02a77b30cec96eec3b1f277a2f32e9e5aab7f885aa5465cff17b27", size = 27673550, upload-time = "2026-09-25T11:00:35.464Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5b/2d/b8298ee336b959248827f27b4241c1d6385f886b8858bb90bf989355b9b9/pyaedt-1.6.0-py3-none-any.whl", hash = "sha256:02c667dba1716dce45daaf321d386e715af88bfbe49dde9f1a393b237f01446c", size = 7659726, upload-time = "2026-09-15T11:58:45.118Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/dc/793e915c706bf4ea92735c691a0e2bbff812649177fec32f66baf986bc33/pyaedt-1.7.0-py3-none-any.whl", hash = "sha256:ffcad8455a027b4e8d068106161e4456c46cbeb409af6b3685539c84a53f6655", size = 7662629, upload-time = "2026-09-25T11:00:30.959Z" },
 ]
 
 [[package]]
@@ -5541,7 +5542,7 @@ requires-dist = [
     { name = "ansys-units", marker = "extra == 'tools'", specifier = "==0.12.1" },
     { name = "ansys-workbench-core", specifier = "==0.14.0" },
     { name = "grpcio", specifier = ">=1.71.2" },
-    { name = "pyaedt", specifier = "==1.6.0" },
+    { name = "pyaedt", specifier = "==1.7.0" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'all'", specifier = "==0.1.4" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'tools'", specifier = "==0.1.4" },
     { name = "pyedb", specifier = "==0.84.2" },
