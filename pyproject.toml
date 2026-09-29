@@ -34,7 +34,7 @@ dependencies = [
     "ansys-dpf-core==0.16.1",
     "ansys-dpf-post==0.12.0",
     "ansys-dyna-core==0.12.1",
-    "ansys-dynamicreporting-core==1.0.0rc2",
+    "ansys-dynamicreporting-core==1.0.0rc3",
     "ansys-edb-core==0.3.3",
     "ansys-fluent-core==0.42.1",
     "ansys-geometry-core==0.17.2",
