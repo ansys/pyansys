@@ -5544,7 +5544,7 @@ requires-dist = [
     { name = "pyaedt", specifier = "==1.6.0" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'all'", specifier = "==0.1.4" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'tools'", specifier = "==0.1.4" },
-    { name = "pyedb", specifier = "==0.84.0" },
+    { name = "pyedb", specifier = "==0.84.2" },
     { name = "pygranta", specifier = "==2026.1.1" },
     { name = "pytwin", specifier = "==0.12.0" },
 ]
@@ -5752,7 +5752,7 @@ wheels = [
 
 [[package]]
 name = "pyedb"
-version = "0.84.0"
+version = "0.84.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-edb-core" },
@@ -5763,9 +5763,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "toml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a1/51/9018028b561d171f236b7ef578507f9331be582808f0d89a7dc0f021b44e/pyedb-0.84.0.tar.gz", hash = "sha256:5d95a057c838d578963115423943e02e3544575436a374c6022c3f990d2a7fef", size = 872671, upload-time = "2026-09-17T10:39:59.89Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ce/53/2b7955b0b5bcfb4fda234df89ecd438f320ca4bab4623f788ecc3c578f06/pyedb-0.84.2.tar.gz", hash = "sha256:5ba78f2324718403fdfbdc5f105fa2a8a1c6bc52e6d5a5f1605eaa2eaaef80f5", size = 874291, upload-time = "2026-09-25T10:58:47.204Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b9/1c/b8a66b89fb10b407366da027ff7df455f946753705ae0ea3d44dd54abfc5/pyedb-0.84.0-py3-none-any.whl", hash = "sha256:24418fd64b5f7e431ccb539871a3d3194aaae05eca28e0a9a7ae124fa5295a48", size = 1185747, upload-time = "2026-09-17T10:39:58.337Z" },
+    { url = "https://files.pythonhosted.org/packages/fe/65/8e593c31d747d043979b4ef6a667ee6e43fa29bb5ac5d13b9c144f7123dc/pyedb-0.84.2-py3-none-any.whl", hash = "sha256:a9439cd15ad8287c2673c1f318f40e08a26d6d92d64de1d6fb137be14fb7f629", size = 1187493, upload-time = "2026-09-25T10:58:45.154Z" },
 ]
 
 [[package]]
