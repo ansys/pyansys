@@ -692,7 +692,7 @@ wheels = [
 
 [[package]]
 name = "ansys-dynamicreporting-core"
-version = "1.0.0rc2"
+version = "1.0.0rc3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bleach" },
@@ -718,9 +718,9 @@ dependencies = [
     { name = "tzlocal" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bd/a3/7b221af3dcf80d44e5d1766ceaeabec4afc25b1ae4428a9051e798370986/ansys_dynamicreporting_core-1.0.0rc2.tar.gz", hash = "sha256:eca7d8fe6777f91523e01f0d7739fe9aea2c8562da732abfa6a02e3e9e86393c", size = 236575, upload-time = "2026-09-11T20:43:11.867Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7b/84/45f45c47a3ad1285df162fc2e5733f6f1132086032fcee74758ed87c64ae/ansys_dynamicreporting_core-1.0.0rc3.tar.gz", hash = "sha256:9b41638d3044d67ed4df7e48c938459fde4432368ca11d4bdb56dcf9679f8652", size = 248892, upload-time = "2026-09-22T00:14:00.078Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a7/a1/5d22ab73d4f78c9439bee182a2d1872ffe518e4eb7114d15a0ae1517b62e/ansys_dynamicreporting_core-1.0.0rc2-py3-none-any.whl", hash = "sha256:a31f772991c7f0559e909bcaa089091a14f3cf701d3afb6ee99b46f9b96fd4da", size = 246511, upload-time = "2026-09-11T20:43:09.835Z" },
+    { url = "https://files.pythonhosted.org/packages/e7/f4/5b4a2463e5cdb478878717c1c2b8f068cc4ba4cbcf6f6c429278c493b023/ansys_dynamicreporting_core-1.0.0rc3-py3-none-any.whl", hash = "sha256:1596ceef0d7bb546f2141c2f5d0c1987c583c168d6493d08570345d385cd232d", size = 259537, upload-time = "2026-09-22T00:13:58.496Z" },
 ]
 
 [[package]]
@@ -5489,7 +5489,7 @@ requires-dist = [
     { name = "ansys-dpf-core", specifier = "==0.16.1" },
     { name = "ansys-dpf-post", specifier = "==0.12.0" },
     { name = "ansys-dyna-core", specifier = "==0.12.1" },
-    { name = "ansys-dynamicreporting-core", specifier = "==1.0.0rc2" },
+    { name = "ansys-dynamicreporting-core", specifier = "==1.0.0rc3" },
     { name = "ansys-edb-core", specifier = "==0.3.3" },
     { name = "ansys-fluent-core", specifier = "==0.42.1" },
     { name = "ansys-fluent-mcp", marker = "extra == 'all'", specifier = "==0.4.0" },
