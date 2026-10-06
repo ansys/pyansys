@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.12, <4"
 resolution-markers = [
     "python_full_version >= '3.14'",
@@ -1344,7 +1344,7 @@ wheels = [
 
 [[package]]
 name = "ansys-sherlock-core"
-version = "2.0.1"
+version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-sherlock" },
@@ -1352,9 +1352,9 @@ dependencies = [
     { name = "protobuf" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/18/9a/6b03ef439079fe2d1fc234c2cfbd799338ef6c12d0babda28f2cb68af048/ansys_sherlock_core-2.0.1.tar.gz", hash = "sha256:c83279b3f81161ae1ddb52fe50abe320f9a19338e8b591222ec8acfa023afc62", size = 102098, upload-time = "2026-09-08T20:09:46.434Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c8/7a/3a9f778239735ec66fc43f08ebc827224255cf3dd91bda3b789957c718fe/ansys_sherlock_core-2.1.0.tar.gz", hash = "sha256:f35ed8569d1c02cc42e7d22e86c8bcf6dfa2916d0a1934c2db73e5703af2a028", size = 102510, upload-time = "2026-09-29T20:01:18.532Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5e/60/e62a0208f89a7a9e36418c6193d1ab80beddf9c596473ed903f4397572e3/ansys_sherlock_core-2.0.1-py3-none-any.whl", hash = "sha256:e124e69b6e8df1560e3fabf9f5a7b0fdfd51e6427ebfb15148ad9be56709a4f9", size = 119923, upload-time = "2026-09-08T20:09:45.12Z" },
+    { url = "https://files.pythonhosted.org/packages/ad/1b/2aa5e0d650afd2d6402891442f9ad9460b0f937774ea4a346758ea7ea6bc/ansys_sherlock_core-2.1.0-py3-none-any.whl", hash = "sha256:7a04b806a5f4afa18d7cbe28767bd89ebd8f3b99322b9410ec19d02a377cd865", size = 120751, upload-time = "2026-09-29T20:01:16.743Z" },
 ]
 
 [[package]]
@@ -5523,7 +5523,7 @@ requires-dist = [
     { name = "ansys-result-explorer-core", specifier = "==0.1.2" },
     { name = "ansys-rocky-core", specifier = "==0.6.1" },
     { name = "ansys-sam-sysml2", specifier = "==0.3.3" },
-    { name = "ansys-sherlock-core", specifier = "==2.0.1" },
+    { name = "ansys-sherlock-core", specifier = "==2.1.0" },
     { name = "ansys-simai-core", specifier = "==0.4.6" },
     { name = "ansys-sound-core", specifier = "==0.3.0" },
     { name = "ansys-speos-core", specifier = "==0.9.2" },
