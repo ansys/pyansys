@@ -597,7 +597,7 @@ wheels = [
 
 [[package]]
 name = "ansys-conceptev-core"
-version = "0.11.1"
+version = "0.12.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "email-validator" },
@@ -611,9 +611,9 @@ dependencies = [
     { name = "truststore" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4a/ca/49236772fa33ac65bc5e336a35b3befadef1ceeba1873b83f6b09233a488/ansys_conceptev_core-0.11.1.tar.gz", hash = "sha256:48a9f4da3706e18e977999fb7dd079d71712f6047c528ea24b02fa96c28d351f", size = 90842, upload-time = "2026-08-18T18:44:00Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b6/89/1e4e1aebcab8b949f412efd9f5dad83fbf5701a572849953bdd223bc7c12/ansys_conceptev_core-0.12.1.tar.gz", hash = "sha256:449d35aa41c78fb51e94bbc742f1bc5aa8d7b593e112dd702c0376d46a28287f", size = 92650, upload-time = "2026-09-28T14:14:27.389Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/40/7c/4d0c3a7017cf8e521f451ca2f55f30326e1303ddaae73a3e15062793a7b8/ansys_conceptev_core-0.11.1-py3-none-any.whl", hash = "sha256:8c694b4f4635aedf0a50b0097c94d0e3568e94834e533d8033ab53c2cce6b4ef", size = 251450, upload-time = "2026-08-18T18:43:58.246Z" },
+    { url = "https://files.pythonhosted.org/packages/2c/b9/78eb15d4d60b70e72fef87ebdcae13d5acfbdf26db35d8622a955b9f1972/ansys_conceptev_core-0.12.1-py3-none-any.whl", hash = "sha256:75e8adb40e6bd114b0e58372167bd7b6de33ec949b807861125463cb726301c5", size = 258122, upload-time = "2026-09-28T14:14:25.859Z" },
 ]
 
 [[package]]
@@ -5485,7 +5485,7 @@ requires-dist = [
     { name = "ansys-cfx-mcp", marker = "extra == 'all'", specifier = "==0.2.0" },
     { name = "ansys-cfx-mcp", marker = "extra == 'mcp'", specifier = "==0.2.0" },
     { name = "ansys-chemkin-core", specifier = "==0.2.0" },
-    { name = "ansys-conceptev-core", specifier = "==0.11.1" },
+    { name = "ansys-conceptev-core", specifier = "==0.12.1" },
     { name = "ansys-dpf-composites", specifier = "==0.8.0" },
     { name = "ansys-dpf-core", specifier = "==0.16.1" },
     { name = "ansys-dpf-post", specifier = "==0.12.0" },
