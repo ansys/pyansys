@@ -1230,16 +1230,16 @@ wheels = [
 
 [[package]]
 name = "ansys-optislang-core"
-version = "1.6.1"
+version = "1.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "deprecated" },
     { name = "psutil" },
     { name = "pywin32", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7b/ce/0d1442757a417c421a3360d2214bc064a193676f4ef1373f4f5202aabc1f/ansys_optislang_core-1.6.1.tar.gz", hash = "sha256:1522073b567a38a74da7691c425f87b42108c2663bbfe95efef36926e8c77a7e", size = 781636, upload-time = "2026-09-14T06:48:35.786Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/87/e7/a1d9a2d60c819ce2684273fb29bdbf20490e211ddc777788b0b979f1f6db/ansys_optislang_core-1.7.0.tar.gz", hash = "sha256:a31fa71ffe0f19d2753a5d1a931516807c38a17c999bcca37305a45dd0da43b8", size = 791811, upload-time = "2026-09-29T16:14:18.486Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a9/6d/0678d4c3e423ef94cf078f9882ee16ea305a68b2cb6efae24acc330f015d/ansys_optislang_core-1.6.1-py3-none-any.whl", hash = "sha256:b6ff23fcd4468d4bf85bd812546a7939403213e0f3dd7698c96afa9a6c7610d0", size = 844585, upload-time = "2026-09-14T06:48:34.125Z" },
+    { url = "https://files.pythonhosted.org/packages/c7/71/c383a95c213671a60e981cff989c341c08577f88918b6584a9d47598e54f/ansys_optislang_core-1.7.0-py3-none-any.whl", hash = "sha256:d4b992df7ac561f1403d095a48d0858f24b3fbc6b951243c59bb030bce719ccd", size = 854774, upload-time = "2026-09-29T16:14:16.606Z" },
 ]
 
 [[package]]
@@ -5517,7 +5517,7 @@ requires-dist = [
     { name = "ansys-meshing-prime", specifier = "==0.10.4" },
     { name = "ansys-modelcenter-workflow", specifier = "==0.1.3" },
     { name = "ansys-motorcad-core", specifier = "==0.9.0" },
-    { name = "ansys-optislang-core", specifier = "==1.6.1" },
+    { name = "ansys-optislang-core", specifier = "==1.7.0" },
     { name = "ansys-platform-instancemanagement", specifier = "==1.2.0" },
     { name = "ansys-pyensight-core", specifier = "==0.11.24" },
     { name = "ansys-result-explorer-core", specifier = "==0.1.2" },
