@@ -84,7 +84,7 @@ mcp = [
     "ansys-lumerical-mcp==0.1.0",
     "ansys-fluent-mcp==0.5.0",
     "ansys-mechanical-mcp==0.2.1",
-    "ansys-aedt-mcp==0.2.1",
+    "ansys-aedt-mcp==0.2.4",
     "ansys-cfx-mcp==0.2.0",
 ]
 all = [
@@ -105,7 +105,7 @@ all = [
     "ansys-lumerical-mcp==0.1.0",
     "ansys-fluent-mcp==0.5.0",
     "ansys-mechanical-mcp==0.2.1",
-    "ansys-aedt-mcp==0.2.1",
+    "ansys-aedt-mcp==0.2.4",
     "ansys-cfx-mcp==0.2.0",
 ]
 
