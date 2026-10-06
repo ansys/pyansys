@@ -1198,7 +1198,7 @@ wheels = [
 
 [[package]]
 name = "ansys-motorcad-core"
-version = "0.8.8"
+version = "0.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "importlib-metadata" },
@@ -1207,9 +1207,9 @@ dependencies = [
     { name = "psutil" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/e1/5678ebc622e3fd2d602bd045447f007dacd7acd4edccbcd339de3f7faba5/ansys_motorcad_core-0.8.8.tar.gz", hash = "sha256:b506f63239fecdf3c37a96c8f9be68293125d9a9296f0331a3098bcb8703f4f8", size = 86819, upload-time = "2026-08-11T10:32:05.202Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ca/2b/e51960d60c04d87187c83e770e628e7c60d12926cb6876b5b425b8393a92/ansys_motorcad_core-0.9.0.tar.gz", hash = "sha256:2705bb76f3fed4839ac9a4b9e20c6249df654e0b4394e0814b2268c3cd6e5417", size = 95828, upload-time = "2026-10-01T19:05:34.367Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bc/da/9fe0641b131908aa051e9874b8f242a70b9063387134e80a55fa5671015a/ansys_motorcad_core-0.8.8-py3-none-any.whl", hash = "sha256:ed321f42fd3f1e6790b9907e363ca9f4be6d33e8c274d852f3020dd83820912f", size = 113946, upload-time = "2026-08-11T10:32:03.355Z" },
+    { url = "https://files.pythonhosted.org/packages/4d/9a/a9f860d91436da29a7c79a3ba03b65127dcc80dc5f1c4480b9fb341c380e/ansys_motorcad_core-0.9.0-py3-none-any.whl", hash = "sha256:75ac8becfca755fef630a6a47057b3e8ac3119402373e4a96258854e14bb5db5", size = 126149, upload-time = "2026-10-01T19:05:33.022Z" },
 ]
 
 [[package]]
@@ -5516,7 +5516,7 @@ requires-dist = [
     { name = "ansys-mechanical-mcp", marker = "extra == 'mcp'", specifier = "==0.2.1" },
     { name = "ansys-meshing-prime", specifier = "==0.10.4" },
     { name = "ansys-modelcenter-workflow", specifier = "==0.1.3" },
-    { name = "ansys-motorcad-core", specifier = "==0.8.8" },
+    { name = "ansys-motorcad-core", specifier = "==0.9.0" },
     { name = "ansys-optislang-core", specifier = "==1.6.1" },
     { name = "ansys-platform-instancemanagement", specifier = "==1.2.0" },
     { name = "ansys-pyensight-core", specifier = "==0.11.21" },
