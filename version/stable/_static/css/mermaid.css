@@ -1,0 +1,94 @@
+/* Use AST font stack in all Mermaid text. */
+pre.mermaid svg text,
+.mermaid svg text {
+  font-family: var(--pst-font-family-base) !important;
+}
+
+/* =============================================================
+   LIGHT MODE  (Mermaid 'default' theme)
+ */
+/* Crit tasks — not yet supported → AST danger red (muted) */
+html[data-theme="light"] pre.mermaid svg rect[class*="crit"],
+html[data-theme="light"] .mermaid svg rect[class*="crit"] {
+  fill: rgba(229, 57, 53, 0.15) !important;
+  stroke: var(--ast-admonition-danger-border) !important;
+}
+
+/* Grid lines */
+html[data-theme="light"] pre.mermaid svg .grid line,
+html[data-theme="light"] .mermaid svg .grid line {
+  stroke: var(--ast-color-table-inner-border) !important;
+}
+
+html[data-theme="light"] pre.mermaid svg path.domain,
+html[data-theme="light"] .mermaid svg path.domain {
+  stroke: var(--pst-color-border) !important;
+}
+
+/* Text outside narrow bars */
+html[data-theme="light"] pre.mermaid svg .taskTextOutsideRight,
+html[data-theme="light"] pre.mermaid svg .taskTextOutsideLeft,
+html[data-theme="light"] .mermaid svg .taskTextOutsideRight,
+html[data-theme="light"] .mermaid svg .taskTextOutsideLeft {
+  fill: var(--ast-color-text) !important;
+}
+html[data-theme="light"] pre.mermaid svg .taskText,
+html[data-theme="light"] .mermaid svg .taskText {
+  fill: var(--pst-color-text-base) !important;
+}
+
+/* =============================================================
+   DARK MODE  (Mermaid 'dark' theme)
+ */
+
+/* All SVG text → AST light text color */
+html[data-theme="dark"] pre.mermaid svg text,
+html[data-theme="dark"] .mermaid svg text {
+  fill: var(--ast-color-text) !important;
+}
+
+/* Active tasks → Ansys blue (same as light) */
+html[data-theme="dark"] pre.mermaid svg rect[class*="active"],
+html[data-theme="dark"] .mermaid svg rect[class*="active"] {
+  fill: var(--ast-color-link) !important;
+  stroke: var(--ast-color-link-hover) !important;
+}
+
+/* Done tasks → AST dark surface */
+html[data-theme="dark"] pre.mermaid svg rect[class*="done"],
+html[data-theme="dark"] .mermaid svg rect[class*="done"] {
+  fill: var(--pst-color-on-surface) !important;
+  stroke: var(--pst-color-border) !important;
+}
+
+/* Crit tasks → muted danger red */
+html[data-theme="dark"] pre.mermaid svg rect[class*="crit"],
+html[data-theme="dark"] .mermaid svg rect[class*="crit"] {
+  fill: rgba(229, 57, 53, 0.25) !important;
+  stroke: var(--ast-admonition-danger-border) !important;
+}
+
+/* Grid lines */
+html[data-theme="dark"] pre.mermaid svg .grid line,
+html[data-theme="dark"] .mermaid svg .grid line {
+  stroke: var(--pst-color-on-surface) !important;
+}
+
+html[data-theme="dark"] pre.mermaid svg path.domain,
+html[data-theme="dark"] .mermaid svg path.domain {
+  stroke: var(--pst-color-border) !important;
+}
+
+/* Task label text */
+html[data-theme="dark"] pre.mermaid svg .taskText,
+html[data-theme="dark"] .mermaid svg .taskText {
+  fill: var(--pst-color-text-base) !important;
+}
+
+/* Text outside narrow bars */
+html[data-theme="dark"] pre.mermaid svg .taskTextOutsideRight,
+html[data-theme="dark"] pre.mermaid svg .taskTextOutsideLeft,
+html[data-theme="dark"] .mermaid svg .taskTextOutsideRight,
+html[data-theme="dark"] .mermaid svg .taskTextOutsideLeft {
+  fill: var(--ast-color-text) !important;
+}
