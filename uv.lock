@@ -1359,7 +1359,7 @@ wheels = [
 
 [[package]]
 name = "ansys-simai-core"
-version = "0.4.6"
+version = "0.4.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
@@ -1375,9 +1375,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "wakepy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/04/ec/66138ffa1e22a171249036eebdf921e90bed94cdcc4a55553059f46b783d/ansys_simai_core-0.4.6.tar.gz", hash = "sha256:648582fa3c40164ecb41a39c2f40b9fefc590ca4a1df47cb9cf39ee8fb5b7c64", size = 1029580, upload-time = "2026-08-18T12:35:29.275Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a7/1f/4fcd1750abafd8a1caabee5893baf7381fc0fd48194a14ea9ef748eba1e0/ansys_simai_core-0.4.7.tar.gz", hash = "sha256:7e74cca6a0b66b92031619074dc6f3721954041e6da2729306ee3716088ece86", size = 1036097, upload-time = "2026-09-29T14:30:57.626Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/77/7e/29fd702226b394a9e26b742f8f6261eaf5022a15f6b481af817475d2e7ff/ansys_simai_core-0.4.6-py3-none-any.whl", hash = "sha256:f8b24160f9d0e045dea6f6ef2a5136cca51fba3fd09dca483cb8f38fb354413e", size = 163700, upload-time = "2026-08-18T12:35:27.556Z" },
+    { url = "https://files.pythonhosted.org/packages/45/8b/b287f9e0526590a743e2d0d4388e6d4d306358368f8cebc0916d5ea119ae/ansys_simai_core-0.4.7-py3-none-any.whl", hash = "sha256:56c74ff78f1943b29da75c3f4f1419ae5d1d370d688a0a4a2992b2462a27643e", size = 164720, upload-time = "2026-09-29T14:30:55.867Z" },
 ]
 
 [[package]]
@@ -5524,7 +5524,7 @@ requires-dist = [
     { name = "ansys-rocky-core", specifier = "==0.6.1" },
     { name = "ansys-sam-sysml2", specifier = "==0.3.3" },
     { name = "ansys-sherlock-core", specifier = "==2.1.0" },
-    { name = "ansys-simai-core", specifier = "==0.4.6" },
+    { name = "ansys-simai-core", specifier = "==0.4.7" },
     { name = "ansys-sound-core", specifier = "==0.3.0" },
     { name = "ansys-speos-core", specifier = "==0.9.2" },
     { name = "ansys-stk", specifier = "==0.3.0" },
