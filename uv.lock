@@ -5325,7 +5325,7 @@ memory = [
 
 [[package]]
 name = "pyaedt"
-version = "1.8.0"
+version = "1.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-tools-common" },
@@ -5341,9 +5341,9 @@ dependencies = [
     { name = "tomli-w" },
     { name = "typing-extensions", marker = "python_full_version < '3.13'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bb/73/52f17699a55b22d6dc7f6a13a43a0d2189ef3d55ecde722ec197ab9cd839/pyaedt-1.8.0.tar.gz", hash = "sha256:e9c5a15266d594f69ab429a85853d097c97f628c16317e13a185ded3c8678958", size = 27678453, upload-time = "2026-10-02T14:14:25.017Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/33/4fd61364e4f7f474de0bb0b48d1d9246f18122adf04a806c12e70e202e29/pyaedt-1.9.0.tar.gz", hash = "sha256:9ae9d9ae03f9bd185c7a274670bdda1c0fc74de81c76c8385493a27d2e046dd8", size = 27683795, upload-time = "2026-10-10T15:36:44.718Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c9/0a/d7e68718419dede25799b1dd758bf354274fa2ca89578ddacef2ac70c202/pyaedt-1.8.0-py3-none-any.whl", hash = "sha256:b6c120f9d68bcfc87a8d9827bfa6f6c34483386686ae66f1ecdf0d47b5d64736", size = 7669689, upload-time = "2026-10-02T14:14:22.626Z" },
+    { url = "https://files.pythonhosted.org/packages/9c/3f/947318898b5597accd24e072c5f6468cc6b81d8a94bf50fa5ab994c3f32c/pyaedt-1.9.0-py3-none-any.whl", hash = "sha256:2db03d1e4c70c14fed8eb05f91cc68506932c173107c220f901a1a8b1b44cbc8", size = 7675096, upload-time = "2026-10-10T15:36:41.083Z" },
 ]
 
 [[package]]
@@ -5530,7 +5530,7 @@ requires-dist = [
     { name = "ansys-units", marker = "extra == 'tools'", specifier = "==0.12.1" },
     { name = "ansys-workbench-core", specifier = "==0.14.0" },
     { name = "grpcio", specifier = ">=1.71.2" },
-    { name = "pyaedt", specifier = "==1.8.0" },
+    { name = "pyaedt", specifier = "==1.9.0" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'all'", specifier = "==0.1.4" },
     { name = "pyansys-tools-variableinterop", marker = "extra == 'tools'", specifier = "==0.1.4" },
     { name = "pyedb", specifier = "==0.84.3" },
