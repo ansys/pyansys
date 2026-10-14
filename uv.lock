@@ -1344,7 +1344,7 @@ wheels = [
 
 [[package]]
 name = "ansys-sherlock-core"
-version = "2.1.0"
+version = "2.1.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-sherlock" },
@@ -1352,9 +1352,9 @@ dependencies = [
     { name = "protobuf" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c8/7a/3a9f778239735ec66fc43f08ebc827224255cf3dd91bda3b789957c718fe/ansys_sherlock_core-2.1.0.tar.gz", hash = "sha256:f35ed8569d1c02cc42e7d22e86c8bcf6dfa2916d0a1934c2db73e5703af2a028", size = 102510, upload-time = "2026-09-29T20:01:18.532Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ec/12/7aa1a1aed3a2b574cc552c6c2b0a9306fba05a96981a614d8593167e3daf/ansys_sherlock_core-2.1.1.tar.gz", hash = "sha256:1a7296dc0b6bbe96d1cb146c971e7356bb3610d866704d8d6bf2771be9587404", size = 102508, upload-time = "2026-10-06T22:19:05.591Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ad/1b/2aa5e0d650afd2d6402891442f9ad9460b0f937774ea4a346758ea7ea6bc/ansys_sherlock_core-2.1.0-py3-none-any.whl", hash = "sha256:7a04b806a5f4afa18d7cbe28767bd89ebd8f3b99322b9410ec19d02a377cd865", size = 120751, upload-time = "2026-09-29T20:01:16.743Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/82/6c9403a73fec189bb9cce0cc1455d2d872542f7a388aca266f02a279215c/ansys_sherlock_core-2.1.1-py3-none-any.whl", hash = "sha256:a882bdd3ad1a5a68c0d5e34063616c5e8bb7e24cda416c5319d925794d1b7ea5", size = 120772, upload-time = "2026-10-06T22:19:04.275Z" },
 ]
 
 [[package]]
@@ -5511,7 +5511,7 @@ requires-dist = [
     { name = "ansys-result-explorer-core", specifier = "==0.1.2" },
     { name = "ansys-rocky-core", specifier = "==0.6.1" },
     { name = "ansys-sam-sysml2", specifier = "==0.3.3" },
-    { name = "ansys-sherlock-core", specifier = "==2.1.0" },
+    { name = "ansys-sherlock-core", specifier = "==2.1.1" },
     { name = "ansys-simai-core", specifier = "==0.4.7" },
     { name = "ansys-sound-core", specifier = "==0.3.0" },
     { name = "ansys-speos-core", specifier = "==0.9.2" },
