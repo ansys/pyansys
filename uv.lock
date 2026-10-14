@@ -755,7 +755,7 @@ wheels = [
 
 [[package]]
 name = "ansys-fluent-core"
-version = "0.42.1"
+version = "0.42.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-fluent" },
@@ -777,9 +777,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/31/f8/6ee0d7cc8d29d3ed310082be4946c11c938998f0ee6afde52742b9b2b7bb/ansys_fluent_core-0.42.1.tar.gz", hash = "sha256:b2657cec1af3b5808c73b6cffc681cde29bfec4725b710cb4de55600c3ccbc1a", size = 22335878, upload-time = "2026-09-02T16:37:24.639Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ba/2b/602e0a3ac56e9fd9edcb205d4d07541785ea41acffa6edb9694211068eaa/ansys_fluent_core-0.42.2.tar.gz", hash = "sha256:558bcfc33adde5d6bc1d1e3d396bcd5e3628aaab89170429234bf88282147166", size = 6521764, upload-time = "2026-10-08T18:20:38.527Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/bf/711f2a6830a80da00849b205bf21f3445d56959630828c3e40018e668f59/ansys_fluent_core-0.42.1-py3-none-any.whl", hash = "sha256:5d451ef50ea9d5ce801f0b776c8993c4a55d858c77d34ae42600d5d8f6ff6b12", size = 6827689, upload-time = "2026-09-02T16:37:21.298Z" },
+    { url = "https://files.pythonhosted.org/packages/ee/41/bd3720b142a97e4c09289e8514dca16bc48df78dd6cb8c4b6fde381125c2/ansys_fluent_core-0.42.2-py3-none-any.whl", hash = "sha256:4f7b703b311820d17bdf1cd93394790a844b60f2a40dd8259f6154a16e9c9efc", size = 6830802, upload-time = "2026-10-08T18:20:35.858Z" },
 ]
 
 [[package]]
@@ -5480,7 +5480,7 @@ requires-dist = [
     { name = "ansys-dyna-core", specifier = "==0.12.1" },
     { name = "ansys-dynamicreporting-core", specifier = "==1.0.0rc3" },
     { name = "ansys-edb-core", specifier = "==0.3.3" },
-    { name = "ansys-fluent-core", specifier = "==0.42.1" },
+    { name = "ansys-fluent-core", specifier = "==0.42.2" },
     { name = "ansys-fluent-mcp", marker = "extra == 'all'", specifier = "==0.5.0" },
     { name = "ansys-fluent-mcp", marker = "extra == 'mcp'", specifier = "==0.5.0" },
     { name = "ansys-fluent-visualization", marker = "extra == 'all'", specifier = "==0.28.0" },
