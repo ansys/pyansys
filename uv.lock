@@ -1219,7 +1219,7 @@ wheels = [
 
 [[package]]
 name = "ansys-meshing-prime"
-version = "0.10.4"
+version = "0.10.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-meshing-prime" },
@@ -1229,9 +1229,9 @@ dependencies = [
     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.13.*'" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.14'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/20/3b/de6b8c9a47986a31764220eac3beb3682acf8073101c6fc66b3875f733d3/ansys_meshing_prime-0.10.4.tar.gz", hash = "sha256:2ee8db2b1d7e98f2cfee88b65d22ab799141618c4f2b5f707eeb567313705b33", size = 421079, upload-time = "2026-06-15T14:19:21.624Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/35/06/796ea6f3ef31ac1f3497234436f104667bd196e887c95c5584cd40d2baaf/ansys_meshing_prime-0.10.5.tar.gz", hash = "sha256:f3168c08a41331ab08d4fcea731de08d8770696e90fe185cad39aa055ee657af", size = 433328, upload-time = "2026-10-12T11:03:28.14Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c8/39/bc6be679514871d44853e1263a4e6ad13da8d2b1ef22a13a2c5e9b434c59/ansys_meshing_prime-0.10.4-py3-none-any.whl", hash = "sha256:81d2e2500bc88dca2bce55adf98549cd384d9821dc480303fcb7533159a94a9c", size = 578125, upload-time = "2026-06-15T14:19:20.082Z" },
+    { url = "https://files.pythonhosted.org/packages/75/1b/c1ff9643ef756d5a19bf4de94046cefcb8e944ce00b0566c2c7960c6f904/ansys_meshing_prime-0.10.5-py3-none-any.whl", hash = "sha256:46becd3b0e8a70c1128d6a6cbf264c76ff5c6ecef7fd75397ac09b5c5a4be2d9", size = 593093, upload-time = "2026-10-12T11:03:26.214Z" },
 ]
 
 [[package]]
@@ -5621,7 +5621,7 @@ requires-dist = [
     { name = "ansys-mechanical-core", specifier = "==0.13.3" },
     { name = "ansys-mechanical-mcp", marker = "extra == 'all'", specifier = "==0.3.0" },
     { name = "ansys-mechanical-mcp", marker = "extra == 'mcp'", specifier = "==0.3.0" },
-    { name = "ansys-meshing-prime", specifier = "==0.10.4" },
+    { name = "ansys-meshing-prime", specifier = "==0.10.5" },
     { name = "ansys-modelcenter-workflow", specifier = "==0.1.4" },
     { name = "ansys-motorcad-core", specifier = "==0.9.0" },
     { name = "ansys-optislang-core", specifier = "==1.7.0" },
