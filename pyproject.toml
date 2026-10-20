@@ -118,7 +118,7 @@ packages = ["src/pyansys"]
 
 [dependency-groups]
 dev = [
-    "pre-commit==4.6.2",
+    "pre-commit==4.7.0",
     { include-group = "doc" },
 ]
 doc = [
