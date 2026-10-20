@@ -348,16 +348,16 @@ wheels = [
 
 [[package]]
 name = "ansys-api-discovery"
-version = "1.2.17"
+version = "1.2.18"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-geometry" },
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/40/89/8b068a6400508da84d029d2ae20666f8f1f816d91257ce1ae98eaf22f9b2/ansys_api_discovery-1.2.17.tar.gz", hash = "sha256:be506ac48d899b8e7e116a857135fc384fe75b39d6a4e9bae06c240f00cb04f9", size = 93809, upload-time = "2026-09-28T14:56:16.841Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3c/34/c104c083f05bbb21faa69aa12eea0d02245b8ca2d05a4f141c1da09412e9/ansys_api_discovery-1.2.18.tar.gz", hash = "sha256:9e70f758e3eb450761985e251f3a520f883c2f9d17273395e63d5b19d49adde8", size = 98020, upload-time = "2026-10-08T13:32:12.67Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/57/3b48cf985ba8c15d4e182e47d080793d8680dbb6fd8310e855c194597c44/ansys_api_discovery-1.2.17-py3-none-any.whl", hash = "sha256:c42621dc0b812079625ce3acdca6b656fe6aa540646749193cf8539abdb372cd", size = 1268451, upload-time = "2026-09-28T14:56:15.031Z" },
+    { url = "https://files.pythonhosted.org/packages/92/95/b583cc195f61f5aa51a76350ebca13be8403f33122f5ab9cefebf01c402f/ansys_api_discovery-1.2.18-py3-none-any.whl", hash = "sha256:eb8af23304a2b5f5aec9a24ca3d9fda24125dcd9767932a0f04725c6fabcbd33", size = 1370939, upload-time = "2026-10-08T13:32:10.72Z" },
 ]
 
 [[package]]
@@ -855,7 +855,7 @@ wheels = [
 
 [[package]]
 name = "ansys-geometry-core"
-version = "0.18.1"
+version = "0.18.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-discovery" },
@@ -876,9 +876,9 @@ dependencies = [
     { name = "semver" },
     { name = "six" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6f/4e/163d7c67b9d29335cd72a973a5c7e1f0301643e47c0bfaa7a73fd2e492a4/ansys_geometry_core-0.18.1.tar.gz", hash = "sha256:69e8cf97ea649e82720c077f6fc738dbcbf2490f30b1ce77a413444d87f3712c", size = 23409488, upload-time = "2026-09-29T08:39:58.68Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7b/51/0098dad6b300453b63c0d097b95403a41ffeb2b20398a6e3bd98110e6604/ansys_geometry_core-0.18.2.tar.gz", hash = "sha256:e92ca6808c2d8ef9d2f947f8e33c3766fd0f64854b2e94e74ccf341fbe01fc32", size = 23429310, upload-time = "2026-10-12T19:15:41.212Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e7/ab/4aa7edda8b05626efc52c46ac7db2b842f336edd3efc15736481534f686d/ansys_geometry_core-0.18.1-py3-none-any.whl", hash = "sha256:490a9b98462a11850d0858a5604b65e6dbcd284010d1b45a7fd6a0f740331c58", size = 606428, upload-time = "2026-09-29T08:39:55.999Z" },
+    { url = "https://files.pythonhosted.org/packages/71/ad/3808bd43ffde496f4a62b2598cfe6ea5424fd70d44e3e08cd8d28c84c177/ansys_geometry_core-0.18.2-py3-none-any.whl", hash = "sha256:1d88b20417ac01c3ca78e7a17e70db087af8d4fac00ab64a9ed5c53d3792102b", size = 608932, upload-time = "2026-10-12T19:15:38.092Z" },
 ]
 
 [[package]]
@@ -5527,7 +5527,7 @@ requires-dist = [
     { name = "ansys-fluent-mcp", marker = "extra == 'mcp'", specifier = "==0.5.0" },
     { name = "ansys-fluent-visualization", marker = "extra == 'all'", specifier = "==0.28.0" },
     { name = "ansys-fluent-visualization", marker = "extra == 'fluent-all'", specifier = "==0.28.0" },
-    { name = "ansys-geometry-core", specifier = "==0.18.1" },
+    { name = "ansys-geometry-core", specifier = "==0.18.2" },
     { name = "ansys-hps-client", specifier = "==0.13.0" },
     { name = "ansys-hps-data-transfer-client", specifier = "==0.5.0" },
     { name = "ansys-lumerical-core", specifier = "==0.4.0" },
