@@ -1300,7 +1300,7 @@ wheels = [
 
 [[package]]
 name = "ansys-pyensight-core"
-version = "0.11.24"
+version = "0.12.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-pyensight" },
@@ -1317,9 +1317,9 @@ dependencies = [
     { name = "urllib3" },
     { name = "usd-core", marker = "python_full_version < '3.14' and platform_machine != 'aarch64'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4d/28/de190222bdee6267c5329830f6a264f1db3af12794b3ea19ca313c0cc408/ansys_pyensight_core-0.11.24.tar.gz", hash = "sha256:a0bb626c7732192da70abf917fc99759db1b443ff0edb14da28cfab2d2c680bb", size = 9031801, upload-time = "2026-10-02T13:30:28.556Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a0/4e/373cb50cff9c71f71c55e631937766eea3079d7b91378ef354795bac1df0/ansys_pyensight_core-0.12.0.tar.gz", hash = "sha256:0ab066cc3eef5c82dd7951c2e47512daf77f5877e901d50ad01791a25b54dbcb", size = 9031681, upload-time = "2026-10-05T14:38:17.757Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a9/b0/0b9c99fd7b8bc91bd91d70c52785b31758bdc6357e2e95a49c5911a4084c/ansys_pyensight_core-0.11.24-py3-none-any.whl", hash = "sha256:591ed0f68b72e0aeb5594fef839ed1b42463f2c1345a44fd64677607b1e8581d", size = 9053329, upload-time = "2026-10-02T13:30:25.64Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/ec/f96c96f73eddcb1580b4c1108a4eab07d346c8575605913c3ec1a98e233d/ansys_pyensight_core-0.12.0-py3-none-any.whl", hash = "sha256:fdb5f31c53329e1eef2f1bd13d39116a2b6e4022b0d643b29ede9c3dae25dfe4", size = 9053261, upload-time = "2026-10-05T14:38:14.686Z" },
 ]
 
 [[package]]
@@ -5549,7 +5549,7 @@ requires-dist = [
     { name = "ansys-motorcad-core", specifier = "==0.9.0" },
     { name = "ansys-optislang-core", specifier = "==1.7.0" },
     { name = "ansys-platform-instancemanagement", specifier = "==1.2.0" },
-    { name = "ansys-pyensight-core", specifier = "==0.11.24" },
+    { name = "ansys-pyensight-core", specifier = "==0.12.0" },
     { name = "ansys-result-explorer-core", specifier = "==0.1.2" },
     { name = "ansys-rocky-core", specifier = "==0.6.1" },
     { name = "ansys-sam-sysml2", specifier = "==0.3.3" },
