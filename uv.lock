@@ -1389,7 +1389,7 @@ wheels = [
 
 [[package]]
 name = "ansys-sam-sysml2"
-version = "0.3.3"
+version = "0.4.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
@@ -1398,9 +1398,9 @@ dependencies = [
     { name = "requests" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a7/08/70d1f1687eb8a59c35b002020a9cd1e1bc65b9227f2d460fb41189e7ac0b/ansys_sam_sysml2-0.3.3.tar.gz", hash = "sha256:976b1783874f62e4716299379d4c51b0ab8bd52631a79414830a59a6a6aa7e34", size = 77784, upload-time = "2026-09-03T08:05:25.488Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8d/1b/7fafd00a4a663f74ab55a7d19991f4654c6f797f9f45e9aa38f30510448b/ansys_sam_sysml2-0.4.1.tar.gz", hash = "sha256:a27b540a6ec8f4a0f7bbbc62aa21df447952e2b3aa71ff67bfd15d4d7623df18", size = 94644, upload-time = "2026-10-12T16:29:44.21Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/b0/3dd2612934f78451aff39beeea1737448d4a99079ad9a6737bc017767e32/ansys_sam_sysml2-0.3.3-py3-none-any.whl", hash = "sha256:700e91249e455c2551bde2a9b74a1a85a638ade8b6f98f7ef221171cf42582ad", size = 314665, upload-time = "2026-09-03T08:05:23.775Z" },
+    { url = "https://files.pythonhosted.org/packages/de/f8/b3606177ac72b7fbdd06b0e18d1fb3a33ee6c9b14b6349524e0dcd7a2da1/ansys_sam_sysml2-0.4.1-py3-none-any.whl", hash = "sha256:9c42634bb1cdef96b99310c50488525c66b1c4ae96a5bca3fa14dbefa2d1c14d", size = 354914, upload-time = "2026-10-12T16:29:42.815Z" },
 ]
 
 [[package]]
@@ -5629,7 +5629,7 @@ requires-dist = [
     { name = "ansys-pyensight-core", specifier = "==0.12.0" },
     { name = "ansys-result-explorer-core", specifier = "==0.1.2" },
     { name = "ansys-rocky-core", specifier = "==0.6.1" },
-    { name = "ansys-sam-sysml2", specifier = "==0.3.3" },
+    { name = "ansys-sam-sysml2", specifier = "==0.4.1" },
     { name = "ansys-sherlock-core", specifier = "==2.1.4" },
     { name = "ansys-simai-core", specifier = "==0.4.7" },
     { name = "ansys-sound-core", specifier = "==0.3.0" },
