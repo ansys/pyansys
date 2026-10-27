@@ -54,7 +54,7 @@ dependencies = [
     "ansys-rocky-core==0.6.1",
     "ansys-sam-sysml2==0.4.1",
     "ansys-sherlock-core==2.1.4",
-    "ansys-simai-core==0.4.7",
+    "ansys-simai-core==0.4.8",
     "ansys-sound-core==0.3.0",
     "ansys-speos-core==0.9.2",
     "ansys-stk==0.3.0",
