@@ -879,7 +879,7 @@ projects:
   pycfx-mcp:
     name: PyCFX MCP
     description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys CFX through PyCFX.
-    thumbnail: _static/thumbnails/pycfx.png
+    thumbnail: _static/thumbnails/intro.png
     repository: https://github.com/ansys/pycfx-mcp
     families: [Fluids, AI]
     tags: [Tools]
