@@ -230,7 +230,7 @@ wheels = [
 
 [[package]]
 name = "ansys-acp-core"
-version = "0.3.2"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-acp" },
@@ -243,9 +243,9 @@ dependencies = [
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.14'" },
     { name = "packaging" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2b/0f/506e3b451b86fd2ebb0fe67f665a98783f89a049b286391fcb765a28c8da/ansys_acp_core-0.3.2.tar.gz", hash = "sha256:543ccc9a9227ac42dfb967de05957e600da0abb3bd6f371375773f3ee6fb8a09", size = 126490, upload-time = "2026-05-18T15:02:21.092Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/12/ff0561f9378ecd7ae8e16a687823463dd730608a7d371577b0dfcdfeb835/ansys_acp_core-0.4.0.tar.gz", hash = "sha256:ab21d667a3ae8c7857498793a49de326b1b114e88ac64a65774eb719aeecebb4", size = 7519, upload-time = "2026-09-08T11:42:18.822Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1c/7a/c8a6488c5b347fceba2fd485647ecabde07847b71486d4f67717009c0a30/ansys_acp_core-0.3.2-py3-none-any.whl", hash = "sha256:e633d9176d5b76fce9537b791a8bf8c088a13e80a0d442cba5ec189bd978b959", size = 267484, upload-time = "2026-05-18T15:02:19.432Z" },
+    { url = "https://files.pythonhosted.org/packages/d7/90/9d8c439bd0975f1e75f24322554fa019584db86edaae09623239fc9d32df/ansys_acp_core-0.4.0-py3-none-any.whl", hash = "sha256:9d6b9dbda561873b2415488f2bd30e5a2f25099cc9566c3aa641eb6255b6d1b2", size = 7295, upload-time = "2026-09-08T11:42:17.628Z" },
 ]
 
 [[package]]
@@ -5560,7 +5560,7 @@ doc = [
 
 [package.metadata]
 requires-dist = [
-    { name = "ansys-acp-core", specifier = "==0.3.2" },
+    { name = "ansys-acp-core", specifier = "==0.4.0" },
     { name = "ansys-additive-core", specifier = "==0.21.0" },
     { name = "ansys-aedt-mcp", marker = "extra == 'all'", specifier = "==0.2.4" },
     { name = "ansys-aedt-mcp", marker = "extra == 'mcp'", specifier = "==0.2.4" },
