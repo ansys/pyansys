@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: PyAnsys Vulnerability Check (on PRs)
         if: github.event_name == 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/check-vulnerabilities@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -38,7 +38,7 @@ jobs:
 
       - name: PyAnsys Vulnerability Check (any other case)
         if: github.event_name != 'pull_request'
-        uses: ansys/actions/check-vulnerabilities@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/check-vulnerabilities@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           python-package-name: ${{ env.PACKAGE_NAME }}
@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys Licenses Check
-        uses: ansys/actions/check-licenses@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/check-licenses@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           target: "all"
@@ -95,7 +95,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/doc-style@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -199,7 +199,7 @@ jobs:
           echo "GRPC_PYTHON_CFLAGS=/std:c++17 /MT" >> "$GITHUB_ENV"
 
       - name: Build wheelhouse and perform smoke test
-        uses: ansys/actions/build-wheelhouse@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/build-wheelhouse@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           operating-system: ${{ runner.os }}
@@ -226,7 +226,7 @@ jobs:
 
     steps:
       - name: Build documentation
-        uses: ansys/actions/doc-build@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/doc-build@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks"
@@ -242,7 +242,7 @@ jobs:
       needs: [package]
       steps:
         - name: Deploy the latest documentation
-          uses: ansys/actions/doc-deploy-dev@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+          uses: ansys/actions/doc-deploy-dev@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
           with:
             cname: ${{ env.DOCUMENTATION_CNAME }}
             token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -264,7 +264,7 @@ jobs:
       id-token: write # Required for OIDC authentication to upload provenance attestations
     steps:
       - name: Build library source and wheel artifacts
-        uses: ansys/actions/build-library@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/build-library@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           library-name: ${{ env.PACKAGE_NAME }}
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
@@ -275,7 +275,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [docs-build]
     steps:
-      - uses: ansys/actions/doc-deploy-pr@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+      - uses: ansys/actions/doc-deploy-pr@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -295,7 +295,7 @@ jobs:
       contents: write # Required for GitHub release
     steps:
       - name: Release to GitHub
-        uses: ansys/actions/release-github@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/release-github@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           library-name: ${{ env.PACKAGE_NAME }}
@@ -334,7 +334,7 @@ jobs:
     needs: [release, release-pypi]
     steps:
       - name: Deploy the latest release documentation
-        uses: ansys/actions/doc-deploy-stable@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+        uses: ansys/actions/doc-deploy-stable@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
         with:
           cname: ${{ env.DOCUMENTATION_CNAME }}
           token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
@@ -356,7 +356,7 @@ jobs:
        pull-requests: write
      steps:
        - name: Automerge PRs
-         uses: ansys/actions/hk-automerge-prs@a5c8d0d92928e144130a3c64aa7200b9547785de # v11.1.3
+         uses: ansys/actions/hk-automerge-prs@87ff2e65e8884121f9afc97728ca9f213228ecc2 # v11.1.4
          with:
            approver: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
            approver-token: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
