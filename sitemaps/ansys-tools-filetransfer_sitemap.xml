@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- managed-by: ansys/actions/_doc-gen-sitemap -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/</loc>
+    <lastmod>2026-10-26T10:47:25+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/contribute.html</loc>
+  </url>
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/index.html</loc>
+  </url>
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/usage.html</loc>
+  </url>
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/index.html</loc>
+  </url>
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.from_transport_options.html</loc>
+  </url>
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.download_file.html</loc>
+  </url>
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.html</loc>
+  </url>
+  <url>
+    <loc>https://filetransfer.tools.docs.pyansys.com/version/stable/api/_autosummary/ansys.tools.filetransfer.Client.upload_file.html</loc>
+  </url>
+</urlset>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- managed-by: ansys/actions/_doc-gen-sitemap -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://motorcad.docs.pyansys.com/</loc>
+    <lastmod>2026-10-30T11:44:26+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://motorcad.docs.pyansys.com/version/stable/examples/links/ece_export_for_twinbuilder.html</loc>
+  </url>
+  <url>
+    <loc>https://motorcad.docs.pyansys.com/version/stable/examples/links/thermal_twinbuilder.html</loc>
+  </url>
+  <url>
+    <loc>https://motorcad.docs.pyansys.com/version/stable/examples/advanced/stress_postprocessing.html</loc>
+  </url>
+  <url>
+    <loc>https://motorcad.docs.pyansys.com/version/stable/examples/advanced/oil_cooling_calibration.html</loc>
+  </url>
+  <url>
+    <loc>https://motorcad.docs.pyansys.com/version/stable/methods/_autosummary/ansys.motorcad.core.motorcad_methods.MotorCADCompatibility.html</loc>
+  </url>
+</urlset>
