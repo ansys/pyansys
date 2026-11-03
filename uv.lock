@@ -1443,17 +1443,20 @@ wheels = [
 
 [[package]]
 name = "ansys-sound-core"
-version = "0.3.0"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-dpf-core" },
+    { name = "ansys-tools-common" },
     { name = "matplotlib" },
+    { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13'" },
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.13.*'" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.14'" },
     { name = "platformdirs" },
-    { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b1/26/8b5309249d10cc4f18ccccb2b4595c08a59b858d87bb8f56904bc63092a4/ansys_sound_core-0.3.0.tar.gz", hash = "sha256:d22cd75f8127f4d385c452c00c24c0a61368c1bb8aeec13aefe1447009e3607d", size = 99212, upload-time = "2026-01-21T07:27:16.953Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1c/53/bb1cdf317df317cc1f083e2539da852e6ee37cefe80d0a6b5397be886c51/ansys_sound_core-0.4.0.tar.gz", hash = "sha256:4d693a32411f72b251b7f480eba5624fac66b34168013c9f3c5355d909d0ef73", size = 108982, upload-time = "2026-10-27T16:21:02.475Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/39/a6/c906df0c9287359ee80e635cab7052e5a9686c13b7e1ac5a6aa2efb36709/ansys_sound_core-0.3.0-py3-none-any.whl", hash = "sha256:86b9d48e2fa278dadfbab74c0fb33ea42008de2c40df34ad4ffeb648434605de", size = 238188, upload-time = "2026-01-21T07:27:13.932Z" },
+    { url = "https://files.pythonhosted.org/packages/fb/40/ff5e74eb89a969c17f54e0fb1b0b3b53b765be3132e07dc80df2fbf195dd/ansys_sound_core-0.4.0-py3-none-any.whl", hash = "sha256:276c3c73488e16da423ae304002fbcaf15569e094230a3df3c5a9c501f196a12", size = 261015, upload-time = "2026-10-27T16:21:00.802Z" },
 ]
 
 [[package]]
@@ -5607,7 +5610,7 @@ requires-dist = [
     { name = "ansys-sam-sysml2", specifier = "==0.4.1" },
     { name = "ansys-sherlock-core", specifier = "==2.1.4" },
     { name = "ansys-simai-core", specifier = "==0.4.8" },
-    { name = "ansys-sound-core", specifier = "==0.3.0" },
+    { name = "ansys-sound-core", specifier = "==0.4.0" },
     { name = "ansys-speos-core", specifier = "==0.9.2" },
     { name = "ansys-stk", specifier = "==0.3.0" },
     { name = "ansys-systemcoupling-core", specifier = "==0.13.0" },
