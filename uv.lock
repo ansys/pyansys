@@ -1196,7 +1196,7 @@ wheels = [
 
 [[package]]
 name = "ansys-mechanical-mcp"
-version = "0.3.0"
+version = "0.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-common-mcp" },
@@ -1204,9 +1204,9 @@ dependencies = [
     { name = "matplotlib" },
     { name = "tabulate" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6f/97/93aacc3708a420628bbea5210976e399bacbb01b13050d8974d7301adac8/ansys_mechanical_mcp-0.3.0.tar.gz", hash = "sha256:9c8d24ae8be7ead99cfd287a8b0575af7b5628970bc29b2f672f5d70933bda3e", size = 75831, upload-time = "2026-10-14T16:46:25.104Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/54/54/6c2cd4c5cbb35de23a7b0b5166dfe3b022cefa9f739249dc96c1610d5ac3/ansys_mechanical_mcp-0.3.1.tar.gz", hash = "sha256:90f29829551dbdba364963ba5499e64bf5bcab46d8fc99b9b8a1f244c0c23303", size = 78793, upload-time = "2026-10-26T13:16:45.632Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/36/b8/591d286a21860fef6412dc5d14611b3ac688ea4678b7b0c59efc8f1b5963/ansys_mechanical_mcp-0.3.0-py3-none-any.whl", hash = "sha256:e08367576034b15aa8618e3f201d822d3d569851018bce977c27d67a42bb9b4a", size = 81482, upload-time = "2026-10-14T16:46:23.5Z" },
+    { url = "https://files.pythonhosted.org/packages/fc/40/8ad5c612c52c39fa3e4de29e77ce6b73a0da0c235b742c995485f48063b1/ansys_mechanical_mcp-0.3.1-py3-none-any.whl", hash = "sha256:ed5084a088df6eac0770d37301d97a94b5adb2add69c360a4feb88675c996c86", size = 84976, upload-time = "2026-10-26T13:16:44.003Z" },
 ]
 
 [[package]]
@@ -5594,8 +5594,8 @@ requires-dist = [
     { name = "ansys-materials-manager", marker = "extra == 'tools'", specifier = "==0.4.0" },
     { name = "ansys-math-core", specifier = "==0.2.5" },
     { name = "ansys-mechanical-core", specifier = "==0.13.4" },
-    { name = "ansys-mechanical-mcp", marker = "extra == 'all'", specifier = "==0.3.0" },
-    { name = "ansys-mechanical-mcp", marker = "extra == 'mcp'", specifier = "==0.3.0" },
+    { name = "ansys-mechanical-mcp", marker = "extra == 'all'", specifier = "==0.3.1" },
+    { name = "ansys-mechanical-mcp", marker = "extra == 'mcp'", specifier = "==0.3.1" },
     { name = "ansys-meshing-prime", specifier = "==0.10.5" },
     { name = "ansys-modelcenter-workflow", specifier = "==0.1.4" },
     { name = "ansys-motorcad-core", specifier = "==0.9.0" },
