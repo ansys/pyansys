@@ -1371,21 +1371,20 @@ wheels = [
 
 [[package]]
 name = "ansys-rocky-core"
-version = "0.6.1"
+version = "0.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-tools-common" },
     { name = "click" },
-    { name = "docker" },
     { name = "importlib-metadata" },
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13'" },
     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.13.*'" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.14'" },
     { name = "pyro5" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/81/88/081f785a81f8413cfcc439ec9824b34a482be98e76c7f1b85e4a142fb282/ansys_rocky_core-0.6.1.tar.gz", hash = "sha256:dd4dd66e8d5aad8ba4021e1a25c265c7f98ad7bb11307eff3e7bd077537f0311", size = 14242, upload-time = "2026-07-06T19:19:34.249Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7e/4f/71ff579026dbd7ac067930ad25cfa5e7df000f67283ba651e703c41c8b4a/ansys_rocky_core-0.6.2.tar.gz", hash = "sha256:a51bde5876e35b7702b67913f8d1b0ef715807bec2503bb1a7b9c6ccef077a89", size = 14453, upload-time = "2026-10-26T14:07:27.883Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a6/cb/994d2dd27a6c61d8033ae868a162543adac25c2255686bf2d8398c813b7d/ansys_rocky_core-0.6.1-py3-none-any.whl", hash = "sha256:dc387598900a25e401c45ddebb0e4fe93137d0c0244b73de616def640fcdc012", size = 19920, upload-time = "2026-07-06T19:19:32.933Z" },
+    { url = "https://files.pythonhosted.org/packages/ea/8f/c8129bdc296ded61554e688f2386b814c9b8834305398ee6589fc1bcdb9a/ansys_rocky_core-0.6.2-py3-none-any.whl", hash = "sha256:2e08a47d7ad3fec5546285cae4c092b2f7f72941ee3a5911ea38869a4062406a", size = 20151, upload-time = "2026-10-26T14:07:26.594Z" },
 ]
 
 [[package]]
@@ -2248,14 +2247,11 @@ wheels = [
 
 [[package]]
 name = "click"
-version = "8.4.1"
+version = "8.5.0"
 source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "colorama", marker = "sys_platform == 'win32'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/9b/98/518d8e5081007684232226f475082b30087d0f585e8457db087298259f49/click-8.4.1.tar.gz", hash = "sha256:918b5633eddf6b41c32d4f454bf0de810065c74e3f7dbf8ee5452f8be88d3e96", size = 353007, upload-time = "2026-05-22T04:08:37.769Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/0e/7fa0ef50764b67090eca4114772a2abf8b6148198475e54c660b97caeee6/click-8.5.0.tar.gz", hash = "sha256:ba0d2089de75ea0310e2dde03160e6ca10009947fb95a182f9b54021bb272e34", size = 382235, upload-time = "2026-08-26T13:33:14.56Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c7/0d/67e5b4109ea4a837e80daa87c2c696711955e40449a97e8926672534def2/click-8.4.1-py3-none-any.whl", hash = "sha256:482be17c6991b8c19c5429a1e995d9b0efdbb63172824c41f99965dc0ade8ec2", size = 116639, upload-time = "2026-05-22T04:08:35.26Z" },
+    { url = "https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl", hash = "sha256:255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360", size = 125251, upload-time = "2026-08-26T13:33:12.928Z" },
 ]
 
 [[package]]
@@ -5607,7 +5603,7 @@ requires-dist = [
     { name = "ansys-platform-instancemanagement", specifier = "==1.2.0" },
     { name = "ansys-pyensight-core", specifier = "==0.12.0" },
     { name = "ansys-result-explorer-core", specifier = "==0.1.2" },
-    { name = "ansys-rocky-core", specifier = "==0.6.1" },
+    { name = "ansys-rocky-core", specifier = "==0.6.2" },
     { name = "ansys-sam-sysml2", specifier = "==0.4.1" },
     { name = "ansys-sherlock-core", specifier = "==2.1.4" },
     { name = "ansys-simai-core", specifier = "==0.4.8" },
