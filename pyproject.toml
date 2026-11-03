@@ -51,7 +51,7 @@ dependencies = [
     "ansys-platform-instancemanagement==1.2.0",
     "ansys-pyensight-core==0.12.0",
     "ansys-result-explorer-core==0.1.2",
-    "ansys-rocky-core==0.6.1",
+    "ansys-rocky-core==0.6.2",
     "ansys-sam-sysml2==0.4.1",
     "ansys-sherlock-core==2.1.4",
     "ansys-simai-core==0.4.8",
