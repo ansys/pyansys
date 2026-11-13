@@ -614,18 +614,19 @@ wheels = [
 
 [[package]]
 name = "ansys-chemkin-core"
-version = "0.2.0"
+version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "matplotlib" },
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13'" },
     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.13.*'" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.14'" },
+    { name = "pandas" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/07/11/5daa2ace8ae19660e94340476a4ef7cc874cc5c7e452565738e0b6d5f668/ansys_chemkin_core-0.2.0.tar.gz", hash = "sha256:3a59fda82e630ae092c667e7fbede800cc2923d22a10140b9d578328167ff453", size = 216674, upload-time = "2026-04-27T22:06:32.186Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a7/68/e87cb446fbaf657755b55dfdb846a8b5aa212622b7368928b0f750ce0c61/ansys_chemkin_core-0.3.0.tar.gz", hash = "sha256:51993c04269ea94c91d39daccee834d4765f4773b02c18549bd1b147af043ddd", size = 239847, upload-time = "2026-11-09T16:36:02.412Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/e4/0d08fa2126a516df2b05c1bb72ae3f44289b7fbcf02dff2adf56012e1795/ansys_chemkin_core-0.2.0-py3-none-any.whl", hash = "sha256:7861c89ff8c92a181eb7f30e36ae1bcea96f37938f1ea97f0898af61f425c191", size = 240560, upload-time = "2026-04-27T22:06:30.617Z" },
+    { url = "https://files.pythonhosted.org/packages/5a/bc/62d1664789b276ea6a04766b3cd22cd32726820917e430edcb706e8dd4d7/ansys_chemkin_core-0.3.0-py3-none-any.whl", hash = "sha256:52843635e240fa6d0a00ce1b8e1c33f93fc6190b16fac076693bfdc8a39b03a3", size = 278540, upload-time = "2026-11-09T16:36:00.975Z" },
 ]
 
 [[package]]
@@ -5570,7 +5571,7 @@ requires-dist = [
     { name = "ansys-cfx-core", specifier = "==0.3.0" },
     { name = "ansys-cfx-mcp", marker = "extra == 'all'", specifier = "==0.2.0" },
     { name = "ansys-cfx-mcp", marker = "extra == 'mcp'", specifier = "==0.2.0" },
-    { name = "ansys-chemkin-core", specifier = "==0.2.0" },
+    { name = "ansys-chemkin-core", specifier = "==0.3.0" },
     { name = "ansys-conceptev-core", specifier = "==0.12.1" },
     { name = "ansys-dpf-composites", specifier = "==0.8.0" },
     { name = "ansys-dpf-core", specifier = "==0.16.3" },
