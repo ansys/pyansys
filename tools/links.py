@@ -72,7 +72,6 @@ LINKS = {
     "ansys-tools-filetransfer": "https://filetransfer.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-tools-protoc-helper": None,
     "ansys-tools-visualization-interface": "https://visualization-interface.tools.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-units": "https://units.docs.pyansys.com/version/stable",
     "pyansys-tools-variableinterop": "https://variableinterop.docs.pyansys.com/version/stable",  # noqa: E501
     # MCP
     "ansys-mapdl-mcp": "https://mapdl-mcp.docs.pyansys.com/version/stable",

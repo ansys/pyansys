@@ -5508,7 +5508,6 @@ all = [
     { name = "ansys-tools-filetransfer" },
     { name = "ansys-tools-protoc-helper" },
     { name = "ansys-tools-visualization-interface" },
-    { name = "ansys-units" },
     { name = "pyansys-tools-variableinterop" },
 ]
 fluent-all = [
@@ -5531,7 +5530,6 @@ tools = [
     { name = "ansys-tools-filetransfer" },
     { name = "ansys-tools-protoc-helper" },
     { name = "ansys-tools-visualization-interface" },
-    { name = "ansys-units" },
     { name = "pyansys-tools-variableinterop" },
 ]
 
@@ -5625,8 +5623,6 @@ requires-dist = [
     { name = "ansys-tools-visualization-interface", marker = "extra == 'all'", specifier = "==0.14.1" },
     { name = "ansys-tools-visualization-interface", marker = "extra == 'tools'", specifier = "==0.14.1" },
     { name = "ansys-turbogrid-core", specifier = "==0.9.4" },
-    { name = "ansys-units", marker = "extra == 'all'", specifier = "==0.12.1" },
-    { name = "ansys-units", marker = "extra == 'tools'", specifier = "==0.12.1" },
     { name = "ansys-workbench-core", specifier = "==0.14.0" },
     { name = "grpcio", specifier = ">=1.71.2" },
     { name = "pyaedt", specifier = "==1.9.0" },
