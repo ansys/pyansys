@@ -5634,7 +5634,7 @@ requires-dist = [
     { name = "pyansys-tools-variableinterop", marker = "extra == 'tools'", specifier = "==0.1.4" },
     { name = "pyedb", specifier = "==0.87.0" },
     { name = "pygranta", specifier = "==2026.1.1" },
-    { name = "pytwin", specifier = "==0.13.0" },
+    { name = "pytwin", specifier = "==0.13.1" },
 ]
 provides-extras = ["mapdl-all", "fluent-all", "tools", "mcp", "all"]
 
@@ -6141,7 +6141,7 @@ wheels = [
 
 [[package]]
 name = "pytwin"
-version = "0.13.0"
+version = "0.13.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13'" },
@@ -6151,9 +6151,9 @@ dependencies = [
     { name = "pywin32", marker = "sys_platform == 'win32'" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/06/ad/10e962464407df4cb8b70d457c178880d69a5df1560c970d2965c165d14a/pytwin-0.13.0.tar.gz", hash = "sha256:69809a3fb400fbbb7babf23dfb0ba749bd0dfdde39abfa760683ddbdf423aa26", size = 36126898, upload-time = "2026-10-13T08:18:01.96Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/66/50/e0fdad68b04bbaaf35dd7752a6f5f2678ead124dfce73aecc91f7de7156f/pytwin-0.13.1.tar.gz", hash = "sha256:ca188d73dc2afaac827d04f03f7192d2b86b3f2390dc6e915335eeef502f7481", size = 36129241, upload-time = "2026-11-09T15:38:08.605Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/27/70/3dd777aae60f6605a51e195947febffb7225bfb884f5ba4dd64621192266/pytwin-0.13.0-py3-none-any.whl", hash = "sha256:47430ffbbcde2749ca07860a857ce4cb52f84f034b0455bd05d3b50ad53fc0a5", size = 36326031, upload-time = "2026-10-13T08:17:57.75Z" },
+    { url = "https://files.pythonhosted.org/packages/af/60/029a7973af20ab4c9bb3bf178ae75c215407eeba7b0b402ae305e2912e19/pytwin-0.13.1-py3-none-any.whl", hash = "sha256:9359623a13f7a7c3544b10026b8a0089c8bf1ad6c36a755bdfb36962365a929a", size = 36327183, upload-time = "2026-11-09T15:38:05.202Z" },
 ]
 
 [[package]]
