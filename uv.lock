@@ -837,17 +837,18 @@ wheels = [
 
 [[package]]
 name = "ansys-fluent-mcp"
-version = "0.5.0"
+version = "0.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-common-mcp" },
     { name = "ansys-fluent-core" },
+    { name = "ansys-units" },
     { name = "httpx" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4a/7c/6fdd7cc67488277315b69bf330cc8036e2ddabfc538ca0d19ed30d1c0736/ansys_fluent_mcp-0.5.0.tar.gz", hash = "sha256:efef44ad3500b2f783c9705d112213c7c403edb0c0c10e1e4ad3d7b1ea2dc640", size = 941936, upload-time = "2026-09-25T13:10:24.801Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/00/50/5ab0d2cad39bae3114a1900362487848662d0bf60f2cdf397aeb5bc185a8/ansys_fluent_mcp-0.8.0.tar.gz", hash = "sha256:f94e7f11ad4fe4da0213ca84f56664cd9099f8bd75354c79a211809db10eb2e9", size = 987109, upload-time = "2026-11-05T16:34:17.786Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a3/0f/4533c45dc5f552a6acd9bf1fafe45c32df25ffbeeccd1591b42ede349944/ansys_fluent_mcp-0.5.0-py3-none-any.whl", hash = "sha256:2c49f27e6c97dc88a349280850d8d670813b88a798586ad8cb45e3bd0b7a39d3", size = 975825, upload-time = "2026-09-25T13:10:23Z" },
+    { url = "https://files.pythonhosted.org/packages/e4/58/a45fe4e3bb8b08a0df1617be6ba06340c3e543ca678855d59bb31f41fbc2/ansys_fluent_mcp-0.8.0-py3-none-any.whl", hash = "sha256:2395390ca7c79eacd2de3a555cb56f69a03ee0eef1f650a3c32f6322070cd212", size = 948816, upload-time = "2026-11-05T16:34:15.828Z" },
 ]
 
 [[package]]
@@ -1621,15 +1622,15 @@ wheels = [
 
 [[package]]
 name = "ansys-units"
-version = "0.12.1"
+version = "0.15.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pyyaml" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/41/f8/47223b8e37373fd40a1bd5ff58f491ab97cff680938bbdaf4af68cac81f7/ansys_units-0.12.1.tar.gz", hash = "sha256:ab125e8182c0e8518a42426dd09d4a56ff4b104e05951ef6fdc56aec2c5c2ebd", size = 46701, upload-time = "2026-06-16T10:57:03.413Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b9/d3/c7a8c2eb8ab11d1935f45c330f88602a35a4c1e65c3b7dd1edaf757232c7/ansys_units-0.15.0.tar.gz", hash = "sha256:8a1183e07204fd671d821f88c03e57e08606add362e87dd5a07a094948342e9c", size = 52196, upload-time = "2026-10-22T09:09:27.365Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b1/95/f9d779f62e7d69ec447c36064ae1337e8fa101473481286931544637a1cf/ansys_units-0.12.1-py3-none-any.whl", hash = "sha256:e86d13d8dfab25004818703f8743639a0b6ea87d4e6aad6cdd8b7d8fb3c6a7f6", size = 61196, upload-time = "2026-06-16T10:57:02.135Z" },
+    { url = "https://files.pythonhosted.org/packages/73/e4/28c3696addafed85851ee8b16aa4809e4fd1219f028979d53020429feef8/ansys_units-0.15.0-py3-none-any.whl", hash = "sha256:f24d1fe77b137a44313745c70e6b31ed70bf75b6888a9e01dd4de78df3b67b8b", size = 68925, upload-time = "2026-10-22T09:09:25.942Z" },
 ]
 
 [[package]]
@@ -5578,8 +5579,8 @@ requires-dist = [
     { name = "ansys-dynamicreporting-core", specifier = "==1.0.0rc4" },
     { name = "ansys-edb-core", specifier = "==0.3.3" },
     { name = "ansys-fluent-core", specifier = "==0.43.0" },
-    { name = "ansys-fluent-mcp", marker = "extra == 'all'", specifier = "==0.5.0" },
-    { name = "ansys-fluent-mcp", marker = "extra == 'mcp'", specifier = "==0.5.0" },
+    { name = "ansys-fluent-mcp", marker = "extra == 'all'", specifier = "==0.8.0" },
+    { name = "ansys-fluent-mcp", marker = "extra == 'mcp'", specifier = "==0.8.0" },
     { name = "ansys-fluent-visualization", marker = "extra == 'all'", specifier = "==0.28.0" },
     { name = "ansys-fluent-visualization", marker = "extra == 'fluent-all'", specifier = "==0.28.0" },
     { name = "ansys-geometry-core", specifier = "==0.18.4" },
