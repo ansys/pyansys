@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- managed-by: ansys/actions/_doc-gen-sitemap -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dynamicreporting.docs.pyansys.com/</loc>
+    <lastmod>2026-11-09T23:16:20+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://dynamicreporting.docs.pyansys.com/version/stable/lowlevelapi/TemplateObjects.html</loc>
+  </url>
+  <url>
+    <loc>https://dynamicreporting.docs.pyansys.com/version/stable/_autosummary/ansys.dynamicreporting.core.serverless.template.Template.html</loc>
+  </url>
+  <url>
+    <loc>https://dynamicreporting.docs.pyansys.com/version/stable/_autosummary/ansys.dynamicreporting.core.serverless.item.Table.html</loc>
+  </url>
+  <url>
+    <loc>https://dynamicreporting.docs.pyansys.com/version/stable/_autosummary/ansys.dynamicreporting.core.Item.html</loc>
+  </url>
+  <url>
+    <loc>https://dynamicreporting.docs.pyansys.com/version/stable/_autosummary/ansys.dynamicreporting.core.serverless.adr.ADR.html</loc>
+  </url>
+</urlset>
