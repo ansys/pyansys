@@ -1532,7 +1532,7 @@ wheels = [
 
 [[package]]
 name = "ansys-tools-common"
-version = "0.5.3"
+version = "0.5.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -1541,9 +1541,9 @@ dependencies = [
     { name = "scooby" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/04/0a/1291f8c5167c68a920361d214c6be8516f3452392dccbb72fb9f41a825ac/ansys_tools_common-0.5.3.tar.gz", hash = "sha256:f922fe151d76d94b42658c2f1a23111c9d05147a35aac0c88cba3155462bacae", size = 327064, upload-time = "2026-08-31T09:36:51.907Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/19/1d/ef8463cb01c03de816dc9939eb5740775796856664983820793a662d7d99/ansys_tools_common-0.5.4.tar.gz", hash = "sha256:ab460096ecf14341ba3fb3497083681c38359a3e7455d674659a346d8095a7f8", size = 327096, upload-time = "2026-11-12T07:47:56.364Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/62/fc/30cee1f72d0add309f45503255040087f65458b446b47743c550aa2ff707/ansys_tools_common-0.5.3-py3-none-any.whl", hash = "sha256:f1f70e424ba5f5ead6925b7d9471b0df691d80f8371f36997dcca63bdd11af85", size = 88760, upload-time = "2026-08-31T09:36:50.268Z" },
+    { url = "https://files.pythonhosted.org/packages/89/d2/42c7603d0943c0c2da41212525dc4905f556a9518a73cdb23d874b3297d2/ansys_tools_common-0.5.4-py3-none-any.whl", hash = "sha256:fb0d1eea20546483967a27a146f8393cfe9fe43aaaf73a70c37ea0c0a60c80ec", size = 88765, upload-time = "2026-11-12T07:47:54.863Z" },
 ]
 
 [[package]]
@@ -5615,8 +5615,8 @@ requires-dist = [
     { name = "ansys-speos-core", specifier = "==0.9.2" },
     { name = "ansys-stk", specifier = "==0.3.0" },
     { name = "ansys-systemcoupling-core", specifier = "==0.13.0" },
-    { name = "ansys-tools-common", marker = "extra == 'all'", specifier = "==0.5.3" },
-    { name = "ansys-tools-common", marker = "extra == 'tools'", specifier = "==0.5.3" },
+    { name = "ansys-tools-common", marker = "extra == 'all'", specifier = "==0.5.4" },
+    { name = "ansys-tools-common", marker = "extra == 'tools'", specifier = "==0.5.4" },
     { name = "ansys-tools-filetransfer", marker = "extra == 'all'", specifier = "==0.2.2" },
     { name = "ansys-tools-filetransfer", marker = "extra == 'tools'", specifier = "==0.2.2" },
     { name = "ansys-tools-protoc-helper", marker = "extra == 'all'", specifier = "==0.7.0" },
