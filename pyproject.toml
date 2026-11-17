@@ -36,7 +36,7 @@ dependencies = [
     "ansys-dyna-core==0.12.1",
     "ansys-dynamicreporting-core==1.0.0rc4",
     "ansys-edb-core==0.3.3",
-    "ansys-fluent-core==0.43.0",
+    "ansys-fluent-core==0.44.0",
     "ansys-geometry-core==0.18.4",
     "ansys-hps-client==0.13.0",
     "ansys-hps-data-transfer-client==0.5.0",
@@ -69,7 +69,7 @@ dependencies = [
 
 [project.optional-dependencies]
 mapdl-all = ["ansys-mapdl-reader==0.56.0"]
-fluent-all = ["ansys-fluent-visualization==0.28.0"]
+fluent-all = ["ansys-fluent-visualization==0.29.0"]
 tools = [
     "ansys-materials-manager==0.4.0",
     "ansys-tools-common==0.5.4",
@@ -81,7 +81,7 @@ tools = [
 mcp = [
     "ansys-mapdl-mcp==0.3.2",
     "ansys-lumerical-mcp==0.1.0",
-    "ansys-fluent-mcp==0.8.0",
+    "ansys-fluent-mcp==0.9.0",
     "ansys-mechanical-mcp==0.3.1",
     "ansys-aedt-mcp==0.2.4",
     "ansys-cfx-mcp==0.2.0",
@@ -90,7 +90,7 @@ all = [
     # MAPDL - ALL
     "ansys-mapdl-reader==0.56.0",
     # FLUENT - ALL
-    "ansys-fluent-visualization==0.28.0",
+    "ansys-fluent-visualization==0.29.0",
     # TOOLS
     "ansys-materials-manager==0.4.0",
     "ansys-tools-common==0.5.4",
@@ -101,7 +101,7 @@ all = [
     # MCP
     "ansys-mapdl-mcp==0.3.2",
     "ansys-lumerical-mcp==0.1.0",
-    "ansys-fluent-mcp==0.8.0",
+    "ansys-fluent-mcp==0.9.0",
     "ansys-mechanical-mcp==0.3.1",
     "ansys-aedt-mcp==0.2.4",
     "ansys-cfx-mcp==0.2.0",
