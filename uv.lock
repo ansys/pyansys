@@ -510,15 +510,15 @@ wheels = [
 
 [[package]]
 name = "ansys-api-sherlock"
-version = "2.3.0"
+version = "2.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/40/7b/5286e1918211cde5a9c77ef7ac05e8b381c6ec2fc12340558893a85681cd/ansys_api_sherlock-2.3.0.tar.gz", hash = "sha256:91ee6d14d4a50182cf25049f3557f609157e1895dc3b761553d7bacff15d28bf", size = 38044, upload-time = "2026-08-13T19:03:16.043Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/df/65/2378d80f84a473eeb65329b36a9a54b7568b773f1add600427cbe0c86f1b/ansys_api_sherlock-2.3.1.tar.gz", hash = "sha256:296a1e67362a605fbb756f5be3a2d09dd0b70dedb6fa24aaf7694b3af48b86c7", size = 38052, upload-time = "2026-11-12T20:17:51.136Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/e7/5461acbe9300bbad574f922c56c8d9de8c500c76e62fc43e0db612287a6d/ansys_api_sherlock-2.3.0-py3-none-any.whl", hash = "sha256:337efba7b9e2579bf51a855e61c43babd727c91a09017479ab98b98f835cccd2", size = 181237, upload-time = "2026-08-13T19:03:14.745Z" },
+    { url = "https://files.pythonhosted.org/packages/21/44/ecfc64661085bb9c9707130707d0c64c3c80f6bdf4d32b05e9a17cf34653/ansys_api_sherlock-2.3.1-py3-none-any.whl", hash = "sha256:d2358bf2d0251d9dffcf3819e46f4d95866500f0a5798d9ff761fa796a1ddd37", size = 181264, upload-time = "2026-11-12T20:17:49.845Z" },
 ]
 
 [[package]]
@@ -1409,7 +1409,7 @@ wheels = [
 
 [[package]]
 name = "ansys-sherlock-core"
-version = "2.1.6"
+version = "2.1.9"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-sherlock" },
@@ -1417,9 +1417,9 @@ dependencies = [
     { name = "protobuf" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/51/c6/58531ee63317ff324349a5cf43ec25268ce87039ebe7fe9d3a877ddb2fbe/ansys_sherlock_core-2.1.6.tar.gz", hash = "sha256:d396b1e0613861ff10094db601b89885a6bbcf6971d0ff736b5e24642a532935", size = 102556, upload-time = "2026-11-05T23:07:58.336Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/58/50/e59223b807ddc3d350fd2cf67a417e31aab97dd4a172834968808233985d/ansys_sherlock_core-2.1.9.tar.gz", hash = "sha256:36e48d1589c16c0160e21e300e5bb58863f1b049998fa996cb3ecfe105491e2c", size = 102523, upload-time = "2026-11-12T22:26:13.473Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2e/8a/b4e024c764821b8c7306c41f4ef48a4c90ab3be8e3903d80c2ff3af52bc6/ansys_sherlock_core-2.1.6-py3-none-any.whl", hash = "sha256:cddfd9c460cf39b2c8546c08141509b9741e26a4d8a9c36bb9700003e2102d4a", size = 120849, upload-time = "2026-11-05T23:07:56.751Z" },
+    { url = "https://files.pythonhosted.org/packages/c3/45/497671a99e4d94daa016e50d092c570d63666db48604d2900ea335e25441/ansys_sherlock_core-2.1.9-py3-none-any.whl", hash = "sha256:af4a13ff6cd8e97a7327e7e0c4a1d4f83d67e702ff8e5570cf82c9e8e5a31c7e", size = 120847, upload-time = "2026-11-12T22:26:12.214Z" },
 ]
 
 [[package]]
@@ -5620,7 +5620,7 @@ requires-dist = [
     { name = "ansys-result-explorer-core", specifier = "==0.1.2" },
     { name = "ansys-rocky-core", specifier = "==0.6.2" },
     { name = "ansys-sam-sysml2", specifier = "==0.4.1" },
-    { name = "ansys-sherlock-core", specifier = "==2.1.6" },
+    { name = "ansys-sherlock-core", specifier = "==2.1.9" },
     { name = "ansys-simai-core", specifier = "==0.4.9" },
     { name = "ansys-sound-core", specifier = "==0.4.0" },
     { name = "ansys-speos-core", specifier = "==0.10.0" },
