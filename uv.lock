@@ -576,7 +576,7 @@ wheels = [
 
 [[package]]
 name = "ansys-cfx-core"
-version = "0.3.0"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-cfx" },
@@ -593,9 +593,9 @@ dependencies = [
     { name = "psutil" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8c/81/b6dc4fd8ebc1d86ad07eaa0153337b4aebafea870f06526b45c326ab4495/ansys_cfx_core-0.3.0.tar.gz", hash = "sha256:e6fb0feb6d01b3c6c5b7b20e8d6f5eef7f3337f4df7afdb1619956bd191e00a2", size = 988299, upload-time = "2026-07-21T09:23:17.226Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/41/47/d21d9d1b941fb4d25a5ff527f0c3e027b92f75acffd21d457b6e44ab5202/ansys_cfx_core-0.4.0.tar.gz", hash = "sha256:61a4d5946b392d60f56de3650ce8ce8aaeda4777feffa241600641c94b669639", size = 1697699, upload-time = "2026-11-13T16:10:53.873Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/26/bc/8f7b796cd6964824e44ee7effd627716a574d5b011f2ef3ef067347af05d/ansys_cfx_core-0.3.0-py3-none-any.whl", hash = "sha256:888e0e28e362b1da431cd66044f4688d4fde7ec2ffac6dac0ddc55c331b6d0ae", size = 140275, upload-time = "2026-07-21T09:23:15.319Z" },
+    { url = "https://files.pythonhosted.org/packages/e7/f2/49b15d89a93f4097067cd6885c365d3f5a50e400a49897a11656c119b644/ansys_cfx_core-0.4.0-py3-none-any.whl", hash = "sha256:e4c95276b96a222b66435d45ff3da70deb2f8937e24d8450de25a4b55888c505", size = 10114563, upload-time = "2026-11-13T16:10:51.106Z" },
 ]
 
 [[package]]
@@ -5747,7 +5747,7 @@ requires-dist = [
     { name = "ansys-additive-core", specifier = "==0.21.0" },
     { name = "ansys-aedt-mcp", marker = "extra == 'all'", specifier = "==0.2.4" },
     { name = "ansys-aedt-mcp", marker = "extra == 'mcp'", specifier = "==0.2.4" },
-    { name = "ansys-cfx-core", specifier = "==0.3.0" },
+    { name = "ansys-cfx-core", specifier = "==0.4.0" },
     { name = "ansys-cfx-mcp", marker = "extra == 'all'", specifier = "==0.2.0" },
     { name = "ansys-cfx-mcp", marker = "extra == 'mcp'", specifier = "==0.2.0" },
     { name = "ansys-chemkin-core", specifier = "==0.3.0" },
