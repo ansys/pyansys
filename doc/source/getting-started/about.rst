@@ -20,7 +20,7 @@ PyAnsys shines in the following areas:
 - **Integration with the Python ecosystem:** users can leverage the Python
   ecosystem.
 
-- **Cross-product functionality:** PyAnsys provides Python APIs for various
+- **Cross-product capabilities:** PyAnsys provides Python APIs for various
   Ansys services and products. By allowing users to interact with multiple
   products in a single environment, PyAnsys enables users to streamline their
   workflows.
@@ -35,5 +35,5 @@ Communication between the product and the library is performed via `gRPC
 <grpc_>`_. Therefore, users can have the product installed remotely and connect
 to that remote instance.
 
-**Tools** are Python libraries that provide additional functionality to the
+**Tools** are Python libraries that provide additional capabilities to the
 wrappers.
