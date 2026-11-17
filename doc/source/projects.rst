@@ -5,7 +5,7 @@ Projects
 
 .. note::
 
-   Looking for open-source developer tools and shared infrastructure projects
+   Looking for open source developer tools and shared infrastructure projects
    contributed by the Ansys team to the wider community? Visit the
    :ref:`ref_other_contribs` page.
 
