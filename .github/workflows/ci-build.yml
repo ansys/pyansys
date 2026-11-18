@@ -20,7 +20,8 @@ env:
   DOCUMENTATION_CNAME: "docs.pyansys.com"
   # attrs,referencing,jeepney - This has MIT license but fails the check
   # paramiko,psycopg,psycopg-binary - LGPL licenses, being used by ansys-dynamicreporting-core and ansys-turbogrid-core
-  LICENSE_WHITELISTING: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary"
+  # tempora - This has Apache-2.0 license but was removed by accident https://github.com/jaraco/tempora/issues/61
+  LICENSE_WHITELISTING: "attrs,referencing,jeepney,paramiko,psycopg,psycopg-binary,tempora"
 
 jobs:
   check-vulnerabilities:
