@@ -40,7 +40,7 @@
                 "examples": "https://mapdl.docs.pyansys.com/version/stable/examples/index.html",
                 "api": "https://mapdl.docs.pyansys.com/version/stable/api/index.html"
             },
-            "github_stars": 529
+            "github_stars": 531
         },
         "PyAEDT": {
             "name": "PyAEDT",
@@ -60,7 +60,7 @@
                 "examples": "https://examples.aedt.docs.pyansys.com/version/dev/index.html",
                 "api": "https://aedt.docs.pyansys.com/version/stable/API/index.html"
             },
-            "github_stars": 423
+            "github_stars": 425
         },
         "PyAnsys Geometry": {
             "name": "PyAnsys Geometry",
@@ -80,7 +80,7 @@
                 "examples": "https://geometry.docs.pyansys.com/version/stable/examples.html",
                 "api": "https://geometry.docs.pyansys.com/version/stable/api/index.html"
             },
-            "github_stars": 101
+            "github_stars": 103
         },
         "PyMechanical": {
             "name": "PyMechanical",
@@ -100,7 +100,7 @@
                 "examples": "https://mechanical.docs.pyansys.com/version/stable/examples/index.html",
                 "api": "https://mechanical.docs.pyansys.com/version/stable/api/index.html"
             },
-            "github_stars": 97
+            "github_stars": 100
         },
         "PyDPF - Core": {
             "name": "PyDPF - Core",
@@ -164,7 +164,7 @@
                 "examples": "https://fluent-mcp.docs.pyansys.com/version/stable/examples/index.html",
                 "api": "https://fluent-mcp.docs.pyansys.com/version/stable/api/index.html"
             },
-            "github_stars": 72
+            "github_stars": 73
         },
         "PyMAPDL Reader": {
             "name": "PyMAPDL Reader",
@@ -248,7 +248,7 @@
                 "examples": "https://lumerical.docs.pyansys.com/version/stable/examples.html",
                 "api": "https://lumerical.docs.pyansys.com/version/stable/api/index.html"
             },
-            "github_stars": 54
+            "github_stars": 55
         },
         "Ansys Python Manager": {
             "name": "Ansys Python Manager",
@@ -286,7 +286,7 @@
                 "examples": "https://mechanical-mcp.docs.pyansys.com/version/stable/examples/index.html",
                 "api": "https://mechanical-mcp.docs.pyansys.com/version/stable/api/index.html"
             },
-            "github_stars": 42
+            "github_stars": 43
         },
         "PyAEDT MCP": {
             "name": "PyAEDT MCP",
@@ -503,7 +503,7 @@
                 "examples": "https://lumerical-mcp.docs.pyansys.com/version/stable/examples/index.html",
                 "api": "https://lumerical-mcp.docs.pyansys.com/version/stable/api/index.html"
             },
-            "github_stars": 23
+            "github_stars": 24
         },
         "PyRocky": {
             "name": "PyRocky",
