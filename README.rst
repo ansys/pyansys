@@ -51,6 +51,7 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyAnsys Math <https://math.docs.pyansys.com/>`_: Pythonic interface to PyAnsys Math libraries.
 - `PyAnsys Sound <https://sound.docs.pyansys.com/>`_: Pythonic interface to Ansys Sound.
 - `PyCFX <https://cfx.docs.pyansys.com/>`_: Pythonic interface to Ansys CFX.
+- `PyResultExplorer <https://result-explorer.docs.pyansys.com/>`_: Python client library for Ansys Result Explorer to explore and visualize structural simulation results.
 - `PyChemkin <https://chemkin.docs.pyansys.com/>`_: Pythonic APIs to the Ansys Chemkin utilities and reactor models.
 - `PyConceptEV <https://conceptev.docs.pyansys.com/>`_: Pythonic interface to Ansys ConceptEV library.
 - `PyDPF - Core <https://dpf.docs.pyansys.com/>`_: Pythonic interface to the Data Processing Framework (DPF) for building advanced and customized workflows.
@@ -76,7 +77,6 @@ The ``pyansys`` metapackage ensures compatibility between these PyAnsys packages
 - `PyPrimeMesh <https://prime.docs.pyansys.com/>`_: Python library to acquire geometries and prepare surface and volume meshes for multiple solvers.
 - `PyRocky <https://rocky.docs.pyansys.com/>`_: Python library to communicate with Ansys Rocky using Rocky PrePost API.
 - `PyScadeOne <https://scadeone.docs.pyansys.com/>`_: Pythonic interface for Ansys Scade One.
-- `PySeascape <https://seascape.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys RedHawkSC and TotemSC.
 - `PySherlock <https://sherlock.docs.pyansys.com/>`_: Pythonic interface to communicate with Ansys Sherlock.
 - `PySimAI <https://simai.docs.pyansys.com/>`_: Pythonic interface to use SimAI.
 - `PySpeos <https://speos.docs.pyansys.com/>`_: Python library that gathers functionalities and tools based on Speos software remote API.
@@ -97,6 +97,15 @@ Other tools delivered as part of the metapackage are:
 - `PyAnsys Units <https://units.docs.pyansys.com/>`_: Pythonic interface for units, unit systems, and unit conversions.
 - `PyMaterials Manager <https://manager.materials.docs.pyansys.com/>`_: Python package for unifying material management across the Ansys portfolio.
 
+Currently, the ``pyansys`` metapackage is also delivering PyAnsys-based MCP (Model Context Protocol) packages, which are:
+
+- `PyMAPDL MCP <https://mapdl-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys MAPDL through PyMAPDL.
+- `PyLumerical MCP <https://lumerical-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Lumerical through PyLumerical.
+- `PyFluent MCP <https://fluent-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Fluent through PyFluent.
+- `PyMechanical MCP <https://mechanical-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Mechanical through PyMechanical.
+- `PyAEDT MCP <https://aedt-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys Electronic Desktop through PyAEDT.
+- `PyCFX MCP <https://cfx-mcp.docs.pyansys.com/>`_: MCP server that provides seamless integration between AI assistants and Ansys CFX through PyCFX.
+
 Much effort is underway to continue expanding and developing packages in the
 `PyAnsys GitHub <https://github.com/ansys/>`__ account. On the ``Issues`` page
 for each package, you can post issues and request new features. You can also feel
@@ -111,6 +120,7 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyAnsys Math`_
 - `PyAnsys Sound`_
 - `PyCFX`_
+- `PyResultExplorer`_
 - `PyChemkin`_
 - `PyConceptEV`_
 - `PyDPF - Core`_
@@ -132,7 +142,6 @@ By default, the PyAnsys metapackage installs these core modules:
 - `PyPIM`_
 - `PyPrimeMesh`_
 - `PyRocky`_
-- `PySeascape`_
 - `PySherlock`_
 - `PySimAI`_
 - `PySpeos`_
@@ -149,6 +158,7 @@ can be installed upon request:
 - **mapdl-all**: This target installs the core packages and `PyMAPDL Reader`_.
 - **fluent-all**: This target installs the core packages, and `PyFluent - Visualization`_.
 - **tools**: This target installs the core packages, `Ansys FileTransfer Tool`_, `Ansys Tools Common`_, `PyAnsys Tools Variable Interop`_, `PyAnsys Units`_, and `PyMaterials Manager`_.
+- **mcp**: This target installs the core packages, as well as the MCP-related solutions.
 - **all**: This target installs all extra ``pyansys`` packages.
 
 Package installation
@@ -194,18 +204,18 @@ the ``pyansys`` metapackage is downloading the wheelhouse archive from the
 `Releases Page <https://github.com/ansys/pyansys/releases>`_ for your corresponding machine architecture.
 
 Each wheelhouse archive contains all the Python wheels necessary to install the ``pyansys`` metapackage from
-scratch on Windows, Linux, and MacOS from Python 3.10 to 3.13. You can install this on an isolated system with
+scratch on Windows, Linux, and MacOS from Python 3.12 to 3.14. You can install this on an isolated system with
 a fresh Python installation or on a virtual environment.
 
-For example, on Linux with Python 3.10, unzip the wheelhouse archive and install it with the following
+For example, on Linux with Python 3.12, unzip the wheelhouse archive and install it with the following
 commands:
 
 .. code:: bash
 
-    unzip pyansys-v2025.1.dev0-wheelhouse-Linux-3.10-core.zip wheelhouse
+    unzip pyansys-v2025.1.dev0-wheelhouse-Linux-3.12-core.zip wheelhouse
     pip install pyansys -f wheelhouse --no-index --upgrade --ignore-installed
 
-If you're on Windows with Python 3.10, unzip to a wheelhouse directory and then install using
+If you're on Windows with Python 3.12, unzip to a wheelhouse directory and then install using
 the same ``pip`` command as in the previous example.
 
 Consider installing using a `virtual environment <https://docs.python.org/3/library/venv.html>`_.

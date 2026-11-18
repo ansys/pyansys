@@ -3,5 +3,7 @@ pres
 WAN
 filname
 ans
+Synopsys
+synopsys
 tread
 wan

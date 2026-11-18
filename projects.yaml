@@ -98,6 +98,20 @@ projects:
       examples: https://cfx.docs.pyansys.com/version/stable/examples/index.html
       api: https://cfx.docs.pyansys.com/version/stable/api/api_contents.html
 
+  pyresult-explorer:
+    name: PyResultExplorer
+    repository: https://github.com/ansys/pyresultexplorer
+    description: Python client library for Ansys Result Explorer to explore and visualize structural simulation results
+    thumbnail: _static/thumbnails/intro.png
+    families: [Structures]
+    tags: [Post-processing]
+    icon: _static/icons/structures.svg
+    documentation:
+      base: https://result-explorer.docs.pyansys.com/version/stable
+      user_guide: https://result-explorer.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://result-explorer.docs.pyansys.com/version/stable/examples/index.html
+      api: https://result-explorer.docs.pyansys.com/version/stable/api/index.html
+
   pychemkin:
     name: PyChemkin
     repository: https://github.com/ansys/pychemkin
@@ -462,20 +476,6 @@ projects:
       examples: https://scadeone.docs.pyansys.com/version/stable/examples/index.html
       api: https://scadeone.docs.pyansys.com/version/stable/api/index.html
 
-  pyseascape:
-    name: PySeascape
-    repository: https://github.com/ansys/pyseascape
-    description: Pythonic interface to Ansys RedHawkSC and TotemSC
-    thumbnail: _static/thumbnails/intro.png
-    families: [Semiconductors]
-    tags: [Flagship]
-    icon: _static/icons/semiconductors.svg
-    documentation:
-      base: https://seascape.docs.pyansys.com/version/stable
-      user_guide: https://seascape.docs.pyansys.com/version/stable/#usage
-      examples: https://seascape.docs.pyansys.com/version/stable/#examples
-      api: https://seascape.docs.pyansys.com/version/stable/#usage
-
   pysherlock:
     name: PySherlock
     repository: https://github.com/ansys/pysherlock
@@ -631,7 +631,7 @@ projects:
     name: PyAEDT Antenna Toolkit
     description: Python wrapper for modeling antennas using Ansys Electronics Desktop (AEDT) via PyAEDT
     thumbnail: _static/thumbnails/intro.png
-    repository: https://github.com/ansys/pyaedt-antenna-toolkit
+    repository: https://github.com/ansys/pyaedt-toolkits-antenna
     families: [Electronics]
     tags: [Tools]
     icon: _static/icons/ansys-icon-light.svg
@@ -806,3 +806,86 @@ projects:
     documentation:
       base: https://pyconverter-xml2py.docs.pyansys.com/version/stable/index.html
 
+  pymapdl-mcp:
+    name: PyMAPDL MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys MAPDL through PyMAPDL.
+    thumbnail: _static/thumbnails/pymapdl.png
+    repository: https://github.com/ansys/pymapdl-mcp
+    families: [Structures, AI]
+    tags: [Tools]
+    icon: _static/icons/structures.svg
+    documentation:
+      base: https://mapdl-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://mapdl-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://mapdl-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://mapdl-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pylumerical-mcp:
+    name: PyLumerical MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys Lumerical through PyLumerical.
+    thumbnail: _static/thumbnails/pylumerical.png
+    repository: https://github.com/ansys/pylumerical-mcp
+    families: [Optical, AI]
+    tags: [Tools]
+    icon: _static/icons/optical.svg
+    documentation:
+      base: https://lumerical-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://lumerical-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://lumerical-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://lumerical-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pyfluent-mcp:
+    name: PyFluent MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys Fluent through PyFluent.
+    thumbnail: _static/thumbnails/pyfluent.png
+    repository: https://github.com/ansys/pyfluent-mcp
+    families: [Fluids, AI]
+    tags: [Tools]
+    icon: _static/icons/fluids.svg
+    documentation:
+      base: https://fluent-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://fluent-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://fluent-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://fluent-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pymechanical-mcp:
+    name: PyMechanical MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys Mechanical through PyMechanical.
+    thumbnail: _static/thumbnails/pymechanical.png
+    repository: https://github.com/ansys/pymechanical-mcp
+    families: [Structures, AI]
+    tags: [Tools]
+    icon: _static/icons/structures.svg
+    documentation:
+      base: https://mechanical-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://mechanical-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://mechanical-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://mechanical-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pyaedt-mcp:
+    name: PyAEDT MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys Electronic Desktop through PyAEDT.
+    thumbnail: _static/thumbnails/pyaedt.png
+    repository: https://github.com/ansys/pyaedt-mcp
+    families: [Electronics, AI]
+    tags: [Tools]
+    icon: _static/icons/ansys-icon-light.svg
+    documentation:
+      base: https://aedt-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://aedt-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://aedt-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://aedt-mcp.docs.pyansys.com/version/stable/api/index.html
+
+  pycfx-mcp:
+    name: PyCFX MCP
+    description: Model Context Protocol (MCP) server that provides seamless integration between AI assistants and Ansys CFX through PyCFX.
+    thumbnail: _static/thumbnails/intro.png
+    repository: https://github.com/ansys/pycfx-mcp
+    families: [Fluids, AI]
+    tags: [Tools]
+    icon: _static/icons/fluids.svg
+    documentation:
+      base: https://cfx-mcp.docs.pyansys.com/version/stable/index.html
+      user_guide: https://cfx-mcp.docs.pyansys.com/version/stable/user_guide/index.html
+      examples: https://cfx-mcp.docs.pyansys.com/version/stable/examples/index.html
+      api: https://cfx-mcp.docs.pyansys.com/version/stable/api/index.html

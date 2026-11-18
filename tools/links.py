@@ -49,9 +49,9 @@ LINKS = {
     "ansys-optislang-core": "https://optislang.docs.pyansys.com/version/stable",
     "ansys-platform-instancemanagement": "https://pypim.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-pyensight-core": "https://ensight.docs.pyansys.com/version/stable",
+    "ansys-result-explorer-core": "https://result-explorer.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-rocky-core": "https://rocky.docs.pyansys.com/version/stable",
     "ansys-sam-sysml2": "https://sysml2.docs.pyansys.com/version/stable",
-    "ansys-seascape": "https://seascape.docs.pyansys.com/version/stable",
     "ansys-sherlock-core": "https://sherlock.docs.pyansys.com/version/stable",
     "ansys-simai-core": "https://simai.docs.pyansys.com/version/stable",
     "ansys-speos-core": "https://speos.docs.pyansys.com/version/stable",
@@ -72,8 +72,14 @@ LINKS = {
     "ansys-tools-filetransfer": "https://filetransfer.tools.docs.pyansys.com/version/stable",  # noqa: E501
     "ansys-tools-protoc-helper": None,
     "ansys-tools-visualization-interface": "https://visualization-interface.tools.docs.pyansys.com/version/stable",  # noqa: E501
-    "ansys-units": "https://units.docs.pyansys.com/version/stable",
     "pyansys-tools-variableinterop": "https://variableinterop.docs.pyansys.com/version/stable",  # noqa: E501
+    # MCP
+    "ansys-mapdl-mcp": "https://mapdl-mcp.docs.pyansys.com/version/stable",
+    "ansys-lumerical-mcp": "https://lumerical-mcp.docs.pyansys.com/version/stable",
+    "ansys-fluent-mcp": "https://fluent-mcp.docs.pyansys.com/version/stable",
+    "ansys-mechanical-mcp": "https://mechanical-mcp.docs.pyansys.com/version/stable",
+    "ansys-aedt-mcp": "https://aedt-mcp.docs.pyansys.com/version/stable",
+    "ansys-cfx-mcp": "https://cfx-mcp.docs.pyansys.com/version/stable",
 }
 """Dictionary with PyAnsys packages and their multi-version docs site."""
 
