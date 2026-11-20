@@ -82,6 +82,10 @@ extensions = [
     "sphinx_jinja",
 ]
 
+sd_fontawesome_latex = "fontawesome5"
+# Use the same icon package for Sphinx and sphinx-design to avoid loading two versions.
+latex_elements = {"sphinxsetup": "iconpackage=fontawesome5"}
+
 mermaid_cmd = "npx --yes --package=@mermaid-js/mermaid-cli@11.17.0 mmdc"
 mermaid_params = ["-p", str(Path(__file__).parent / "puppeteer-config.json")]
 

@@ -250,7 +250,7 @@ jobs:
         uses: ansys/actions/doc-build@5a91d7c2c4da2e86f2b3b62ba62daad189a6b77c # v11.2.0
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
-          dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks nodejs npm"
+          dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks texlive-fonts-extra nodejs npm"
           group-dependencies-name: "doc"
           skip-dependencies-cache: true
           build-pdf: true
