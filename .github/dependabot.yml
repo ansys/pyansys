@@ -48,9 +48,32 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "ansys/actions/*"
+    labels:
+      - "maintenance"
     commit-message:
-      prefix: "build(github-actions)"
+      prefix: "chore(github-actions)"
     groups:
        actions:
           patterns:
             - "*"
+
+  - package-ecosystem: "pre-commit"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "ansys/pre-commit-hooks/*"
+    labels:
+      - "maintenance"
+    commit-message:
+      prefix: "chore(pre-commit)"
+    groups:
+      pre-commit-hooks:
+        patterns:
+          - "*"
