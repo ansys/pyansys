@@ -114,13 +114,30 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pull-requests: write
-      checks: write
     steps:
-      - name: PyAnsys documentation style checks
-        uses: ansys/actions/doc-style@5a91d7c2c4da2e86f2b3b62ba62daad189a6b77c # v11.2.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 #v7.0.1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
+
+      # Use Vale's exit status directly so Reviewdog reporting cannot fail the lint job.
+      - name: Run Vale
+        shell: bash
+        env:
+          VALE_VERSION: '3.25.1'
+          VALE_SHA256: 4bf5c5176b682b1da0830f471584d3494f1c2e27ee3029e1ad6f6661d4962182
+        run: |
+          python3 -m venv "$RUNNER_TEMP/vale-env"
+          source "$RUNNER_TEMP/vale-env/bin/activate"
+          python -m pip install 'docutils==0.22.4'
+
+          archive="$RUNNER_TEMP/vale.tar.gz"
+          curl --fail --silent --show-error --location --output "$archive" \
+            "https://github.com/vale-cli/vale/releases/download/v${VALE_VERSION}/vale_${VALE_VERSION}_Linux_64-bit.tar.gz"
+          echo "$VALE_SHA256  $archive" | sha256sum --check
+          tar -xzf "$archive" -C "$VIRTUAL_ENV/bin" vale
+
+          vale --config=doc/.vale.ini sync
+          vale --config=doc/.vale.ini doc
 
   smoke-tests-core:
     name: Build core PyAnsys packages
