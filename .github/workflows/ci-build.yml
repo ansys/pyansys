@@ -253,6 +253,7 @@ jobs:
           dependencies: "build-essential zip pandoc texlive-latex-extra latexmk texlive-pstricks nodejs npm"
           group-dependencies-name: "doc"
           skip-dependencies-cache: true
+          build-pdf: true
         env:
           GITHUB_TOKEN: ${{ secrets.PYANSYS_CI_BOT_TOKEN }}
 
