@@ -82,6 +82,9 @@ extensions = [
     "sphinx_jinja",
 ]
 
+mermaid_cmd = "npx --yes --package=@mermaid-js/mermaid-cli@11.17.0 mmdc"
+mermaid_params = ["-p", str(Path(__file__).parent / "puppeteer-config.json")]
+
 # Static files
 templates_path = ["_templates"]
 html_static_path = ["_static"]
