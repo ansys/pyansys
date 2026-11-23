@@ -484,15 +484,15 @@ wheels = [
 
 [[package]]
 name = "ansys-api-pyensight"
-version = "0.4.18"
+version = "0.4.19"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "grpcio" },
     { name = "protobuf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6d/db/29cac859f6ab3203ed4a3233186ae9b30eb6885e5a69b2450ffa5d5417f0/ansys_api_pyensight-0.4.18.tar.gz", hash = "sha256:b5e19a0da6e695f0f4a0bfde879af057e3531ea4a41359b4fa3c83ea6dc18553", size = 1198133, upload-time = "2026-09-28T09:35:44.108Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ff/af/ed25c7db8a88d62247e9761b26997e6388f1fc8f88cb703d4c1912875aef/ansys_api_pyensight-0.4.19.tar.gz", hash = "sha256:97e0cf971692c26adfd8f7f9872b9d40dfcec051aae30c498f634ad057d580c0", size = 1198069, upload-time = "2026-10-29T15:05:36.062Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c0/e1/f6a3cdf086abccec0f1c7b6275c284511325a30690feb54cdf7786e11dff/ansys_api_pyensight-0.4.18-py3-none-any.whl", hash = "sha256:62ff9a2080a3e8f1271539691f09bf61297a5d09dabf16db0ba44824a18beccd", size = 1340871, upload-time = "2026-09-28T09:35:41.854Z" },
+    { url = "https://files.pythonhosted.org/packages/73/4c/15b944e2d01d509695f86860d8975620ceea94a06c89d96e9fbdf3774d95/ansys_api_pyensight-0.4.19-py3-none-any.whl", hash = "sha256:609a4a15f93956c98ad9f607283b80a0d1bc5ddcf519d82c3bd65d6d0e9ffcfc", size = 1340885, upload-time = "2026-10-29T15:05:34.069Z" },
 ]
 
 [[package]]
@@ -1321,7 +1321,7 @@ wheels = [
 
 [[package]]
 name = "ansys-pyensight-core"
-version = "0.12.0"
+version = "0.12.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ansys-api-pyensight" },
@@ -1339,9 +1339,9 @@ dependencies = [
     { name = "urllib3" },
     { name = "usd-core", marker = "python_full_version < '3.14' and platform_machine != 'aarch64'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a0/4e/373cb50cff9c71f71c55e631937766eea3079d7b91378ef354795bac1df0/ansys_pyensight_core-0.12.0.tar.gz", hash = "sha256:0ab066cc3eef5c82dd7951c2e47512daf77f5877e901d50ad01791a25b54dbcb", size = 9031681, upload-time = "2026-10-05T14:38:17.757Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/70/a3/eb4ad15b3d4e945ab3e1a628c671f44cd5b1654728e57e6d8d05a7fb3243/ansys_pyensight_core-0.12.2.tar.gz", hash = "sha256:13f8e61deefe99e0395a56bf6abb4391e76b3d9c58aa70b28fb359bca04354f8", size = 9055670, upload-time = "2026-11-19T14:53:35.682Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f6/ec/f96c96f73eddcb1580b4c1108a4eab07d346c8575605913c3ec1a98e233d/ansys_pyensight_core-0.12.0-py3-none-any.whl", hash = "sha256:fdb5f31c53329e1eef2f1bd13d39116a2b6e4022b0d643b29ede9c3dae25dfe4", size = 9053261, upload-time = "2026-10-05T14:38:14.686Z" },
+    { url = "https://files.pythonhosted.org/packages/26/d7/4fb9ec924333da93b76c808c187bbbe2fe6a57ff9a85faf3378a520ba581/ansys_pyensight_core-0.12.2-py3-none-any.whl", hash = "sha256:0fe1f75fe60322b33583485c1e3d1c2079dd1f5d9a7005eeea25c5229ab6216c", size = 9077719, upload-time = "2026-11-19T14:53:32.832Z" },
 ]
 
 [[package]]
@@ -5785,7 +5785,7 @@ requires-dist = [
     { name = "ansys-motorcad-core", specifier = "==0.9.0" },
     { name = "ansys-optislang-core", specifier = "==1.7.0" },
     { name = "ansys-platform-instancemanagement", specifier = "==1.2.0" },
-    { name = "ansys-pyensight-core", specifier = "==0.12.0" },
+    { name = "ansys-pyensight-core", specifier = "==0.12.2" },
     { name = "ansys-result-explorer-core", specifier = "==0.1.2" },
     { name = "ansys-rocky-core", specifier = "==0.6.2" },
     { name = "ansys-sam-sysml2", specifier = "==0.4.1" },
