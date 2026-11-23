@@ -9,21 +9,21 @@ platform.
 
 .. grid:: 1 1 3 3
 
-    .. grid-item-card:: :fa:`info-circle` About PyAnsys
+    .. grid-item-card:: About PyAnsys
         :link: getting-started/about
         :link-type: doc
         :padding: 2 2 2 2
 
         Learn more about PyAnsys and its ecosystem
 
-    .. grid-item-card:: :fa:`tasks` Prerequisites
+    .. grid-item-card:: Prerequisites
         :link: getting-started/prerequisites
         :link-type: doc
         :padding: 2 2 2 2
 
         What you need prior installing PyAnsys
 
-    .. grid-item-card:: :fa:`download` Install
+    .. grid-item-card:: Install
         :link: getting-started/install
         :link-type: doc
         :padding: 2 2 2 2
@@ -37,4 +37,3 @@ platform.
     About<getting-started/about>
     Prerequisites<getting-started/prerequisites>
     Install<getting-started/install>
-
