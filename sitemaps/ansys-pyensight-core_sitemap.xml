@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ensight.docs.pyansys.com/</loc>
-    <lastmod>2026-11-19T15:23:45+00:00</lastmod>
+    <lastmod>2026-11-24T14:24:44+00:00</lastmod>
   </url>
   <url>
     <loc>https://ensight.docs.pyansys.com/version/stable/class_documentation.html</loc>
@@ -94,6 +94,12 @@
   </url>
   <url>
     <loc>https://ensight.docs.pyansys.com/version/stable/rest_api/rest_api.html</loc>
+  </url>
+  <url>
+    <loc>https://ensight.docs.pyansys.com/version/stable/_autosummary/ansys.api.pyensight.calc_funcs.ens_calculator.area.html</loc>
+  </url>
+  <url>
+    <loc>https://ensight.docs.pyansys.com/version/stable/_autosummary/ansys.api.pyensight.calc_funcs.ens_calculator.bl_agradofvelmag.html</loc>
   </url>
   <url>
     <loc>https://ensight.docs.pyansys.com/version/stable/_autosummary/ansys.api.pyensight.calc_funcs.ens_calculator.bl_cfedge.html</loc>
@@ -33499,12 +33505,6 @@
   </url>
   <url>
     <loc>https://ensight.docs.pyansys.com/version/stable/_autosummary/ansys.pyensight.core.utils.views.Views.views_dict.html</loc>
-  </url>
-  <url>
-    <loc>https://ensight.docs.pyansys.com/version/stable/_autosummary/ansys.api.pyensight.calc_funcs.ens_calculator.area.html</loc>
-  </url>
-  <url>
-    <loc>https://ensight.docs.pyansys.com/version/stable/_autosummary/ansys.api.pyensight.calc_funcs.ens_calculator.bl_agradofvelmag.html</loc>
   </url>
   <url>
     <loc>https://ensight.docs.pyansys.com/version/stable/object_documentation.html</loc>
