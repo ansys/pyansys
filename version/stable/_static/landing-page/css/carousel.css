@@ -1,0 +1,224 @@
+/**
+ * CSS Variables
+ * Centralized theme variables for
+ * carousel items, content, buttons,
+ * background, and step-by-step layout.
+ */
+:root {
+  /* Carousel Item */
+  --carousel-item-height: 30rem;
+  --carousel-item-color: #fff;
+  --carousel-item-border: thin solid #000;
+  --carousel-gradient: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1)
+  );
+
+  /* Carousel Content */
+  --carousel-content-padding: 0.75rem;
+  --carousel-content-margin-left: 0.75rem;
+  --carousel-h2-size: 2.5rem;
+  --carousel-h2-color: #fff;
+  --carousel-p-margin: 2rem 0;
+  --carousel-p-size: 1rem;
+  --carousel-p-color: #fff;
+
+  /* Buttons */
+  --btn-bg: #fff;
+  --btn-color: #000;
+  --btn-radius: 0.25rem;
+  --btn-size: 0.75rem;
+  --btn-weight: bold;
+  --btn-padding: 0.75rem 1.25rem;
+  --btn-mr: 1rem;
+  --btn-hover-bg: #939393;
+
+  /* Carousel Background */
+  --carousel-bg-height: 15rem;
+  --carousel-bg-animation: slideBackground 15s infinite;
+
+  /* Step Section */
+  --steps-gap: 1.25rem;
+  --step-gap: 0.9375rem;
+  --step-mt: 1rem;
+  --step-width: 31.25rem;
+
+  /* Step Icons */
+  --icon-bg: #f3f0fa;
+  --icon-color: #6a1b9a;
+  --icon-size: 1.25rem;
+  --icon-dim: 2.5rem;
+  --icon-radius: 0.5rem;
+
+  /* Step Text */
+  --text-h4-m: 0 1rem 1rem 0;
+  --text-h4-weight: bold;
+}
+
+/**
+ * Carousel Item
+ */
+.carousel-item {
+  height: var(--carousel-item-height);
+  color: var(--carousel-item-color);
+  border: var(--carousel-item-border);
+  position: relative;
+}
+
+/**
+ * Carousel Item Overlay
+ */
+.carousel-item::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--carousel-gradient);
+}
+
+/**
+ * Carousel Content
+ */
+.carousel-content {
+  padding: var(--carousel-content-padding);
+  margin-left: var(--carousel-content-margin-left);
+  position: relative;
+  z-index: 2;
+}
+
+/**
+ * Carousel Content Headings
+ */
+.carousel-content h2 {
+  font-size: var(--carousel-h2-size);
+  color: var(--carousel-h2-color);
+}
+
+/**
+ * Carousel Content Paragraphs
+ */
+.carousel-content p {
+  margin: var(--carousel-p-margin);
+  font-size: var(--carousel-p-size);
+  color: var(--carousel-p-color);
+}
+
+/**
+ * Carousel Content Buttons
+ */
+.carousel-content .btn-custom {
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border: none;
+  border-radius: var(--btn-radius);
+  font-size: var(--btn-size);
+  font-weight: var(--btn-weight);
+  padding: var(--btn-padding);
+  text-transform: uppercase;
+  margin-right: var(--btn-mr);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/**
+ * Carousel Content Buttons - Hover
+ */
+.carousel-content .btn-custom:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-color);
+}
+
+/**
+ * Carousel Content Responsive
+ */
+@media (max-width: 1200px) {
+  .carousel-content .btn-custom {
+    padding: 0.4rem;
+    margin-right: 0.25rem;
+  }
+  .carousel-content p {
+    margin: 1rem 0;
+  }
+  .carousel-content h2 {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+/**
+ * Carousel Background
+ */
+@keyframes slideBackground {
+  0% {
+    background-image: url("https://images.ansys.com/is/image/ansys/engineers-around-ev-design?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  33% {
+    background-image: url("https://images.ansys.com/is/image/ansys/ansys-homepage-hero-space?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  66% {
+    background-image: url("https://images.ansys.com/is/image/ansys/homepage-carousel-autonomous-w1920xh675v3?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+  100% {
+    background-image: url("https://images.ansys.com/is/image/ansys/hero-optic-lidar-2?wid=1850&fmt=png-alpha&op_usm=0.9,1.0,20,0&fit=constrain,0");
+  }
+}
+
+/**
+ * Carousel Background Container
+ */
+.carousel-background {
+  height: var(--carousel-bg-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  animation: var(--carousel-bg-animation);
+}
+
+/**
+ * Simulation Steps Section
+ */
+.simulation-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--steps-gap);
+}
+
+/**
+ * Step Layout
+ */
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--step-gap);
+  margin-top: var(--step-mt);
+  width: var(--step-width);
+}
+
+/**
+ * Step Icons
+ */
+.step .icon {
+  background: var(--icon-bg);
+  color: var(--icon-color);
+  font-size: var(--icon-size);
+  width: var(--icon-dim);
+  height: var(--icon-dim);
+  border-radius: var(--icon-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/**
+ * Step Text
+ */
+.step .text h4 {
+  margin: var(--text-h4-m);
+  font-weight: var(--text-h4-weight);
+}
